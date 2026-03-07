@@ -2,7 +2,7 @@
 
 # 🛡️ Daily Experiments
 
-[![Daily Scan](https://github.com/USER/daily-experiments/actions/workflows/daily_run.yml/badge.svg)](https://github.com/USER/daily-experiments/actions/workflows/daily_run.yml)
+[![Daily Scan](https://github.com/Atharv279/daily-experiments/actions/workflows/daily_run.yml/badge.svg)](https://github.com/Atharv279/daily-experiments/actions/workflows/daily_run.yml)
 ![Python](https://img.shields.io/badge/Python-3.11+-3776ab?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![NVD](https://img.shields.io/badge/Data-NIST%20NVD-orange)
