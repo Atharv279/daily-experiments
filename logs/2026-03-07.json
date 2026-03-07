@@ -1,0 +1,316 @@
+{
+  "timestamp": "2026-03-07T16:41:46.537941+00:00",
+  "scan_id": "74b42195f9",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 5,
+      "HIGH": 2,
+      "MEDIUM": 2,
+      "UNKNOWN": 11
+    },
+    "top_cwes": [
+      [
+        "CWE-269",
+        5
+      ],
+      [
+        "CWE-338",
+        3
+      ],
+      [
+        "CWE-340",
+        2
+      ],
+      [
+        "CWE-444",
+        2
+      ],
+      [
+        "CWE-732",
+        2
+      ]
+    ],
+    "threat_index": 261.8,
+    "critical_count": 5
+  },
+  "cves": [
+    {
+      "id": "CVE-2025-40926",
+      "description": "Plack::Middleware::Session::Simple versions through 0.04 for Perl generates session ids insecurely.\n\nThe default session id generator returns a SHA-1 hash seeded with the built-in rand function, the epoch time, and the PID. The PID will come from a small set of numbers, and the epoch time may be gue",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-338",
+        "CWE-340"
+      ],
+      "references": [
+        "https://github.com/kazeburo/Plack-Middleware-Session-Simple/commit/760bb358b8f53e52cf415888a4ac858fd99bb24e.patch",
+        "https://github.com/kazeburo/Plack-Middleware-Session-Simple/pull/4",
+        "https://metacpan.org/release/KAZEBURO/Plack-Middleware-Session-Simple-0.04/source/lib/Plack/Middleware/Session/Simple.pm#L43"
+      ],
+      "published": "2026-03-05T02:16:39.790"
+    },
+    {
+      "id": "CVE-2026-3257",
+      "description": "UnQLite versions through 0.06 for Perl uses a potentially insecure version of the UnQLite library.\n\nUnQLite for Perl embeds the UnQLite library.  Version 0.06 and earlier of the Perl module uses a version of the library from 2014 that may be vulnerable to a heap-based overflow.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [],
+      "references": [
+        "https://metacpan.org/release/TOKUHIROM/UnQLite-0.07/source/Changes",
+        "https://unqlite.symisc.net/",
+        "https://www.cve.org/CVERecord?id=CVE-2025-3791"
+      ],
+      "published": "2026-03-05T02:16:52.150"
+    },
+    {
+      "id": "CVE-2026-3381",
+      "description": "Compress::Raw::Zlib versions through 2.219 for Perl use potentially insecure versions of zlib.\n\nCompress::Raw::Zlib includes a copy of the zlib library. Compress::Raw::Zlib version 2.220 includes zlib 1.3.2, which addresses findings fron the 7ASecurity audit of zlib. The includes fixs for CVE-2026-2",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [],
+      "references": [
+        "https://7asecurity.com/blog/2026/02/zlib-7asecurity-audit/",
+        "https://github.com/madler/zlib",
+        "https://github.com/madler/zlib/releases/tag/v1.3.2"
+      ],
+      "published": "2026-03-05T02:16:52.267"
+    },
+    {
+      "id": "CVE-2025-40931",
+      "description": "Apache::Session::Generate::MD5 versions through 1.94 for Perl create insecure session id.\n\nApache::Session::Generate::MD5 generates session ids insecurely. The default session id generator returns a MD5 hash seeded with the built-in rand() function, the epoch time, and the PID. The PID will come fro",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-338",
+        "CWE-340"
+      ],
+      "references": [
+        "https://github.com/chorny/Apache-Session/issues/4",
+        "https://metacpan.org/dist/Apache-Session/source/lib/Apache/Session/Generate/MD5.pm#L27",
+        "https://rt.cpan.org/Ticket/Display.html?id=173631"
+      ],
+      "published": "2026-03-05T02:16:39.960"
+    },
+    {
+      "id": "CVE-2024-57854",
+      "description": "Net::NSCA::Client versions through 0.009002 for Perl uses a poor random number generator.\n\nVersion v0.003 switched to use Data::Rand::Obscure instead of Crypt::Random for generation of a random initialisation vectors.\n\nData::Rand::Obscure uses Perl's built-in rand() function, which is not suitable f",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-338"
+      ],
+      "references": [
+        "https://metacpan.org/release/DOUGDUDE/Net-NSCA-Client-0.009002/source/lib/Net/NSCA/Client/InitialPacket.pm#L119",
+        "https://patch-diff.githubusercontent.com/raw/dougwilson/perl5-net-nsca-client/pull/2.patch",
+        "http://www.openwall.com/lists/oss-security/2026/03/05/1"
+      ],
+      "published": "2026-03-05T03:15:53.953"
+    },
+    {
+      "id": "CVE-2026-26034",
+      "description": "UPS Multi-UPS Management Console (MUMC) version 01.06.0001 (A03) contains an Incorrect Default Permissions (CWE-276) vulnerability that allows an attacker to execute arbitrary code with SYSTEM privileges by causing the application to load a specially crafted DLL.",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-276"
+      ],
+      "references": [
+        "https://jvn.jp/en/jp/JVN56544509/",
+        "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=038h3"
+      ],
+      "published": "2026-03-05T03:15:54.540"
+    },
+    {
+      "id": "CVE-2026-2365",
+      "description": "The Fluent Forms Pro plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `fluentform_step_form_save_data` AJAX action in all versions up to, and including, 6.1.17. This is due to the draft form submission endpoint being publicly accessible without authentication or nonce verifi",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://fluentforms.com/docs/changelog/#3-toc-title",
+        "https://plugins.trac.wordpress.org/browser/fluentform/tags/6.1.12/app/Modules/Form/FormDataParser.php#L57",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/5e911b0a-a236-4df3-b997-3631412a1b55?source=cve"
+      ],
+      "published": "2026-03-05T04:15:56.783"
+    },
+    {
+      "id": "CVE-2026-26033",
+      "description": "UPS Multi-UPS Management Console (MUMC) version 01.06.0001 (A03) contains an Unquoted Search Path or Element (CWE-428) vulnerability, which allows a user with write access to a directory on the system drive to execute arbitrary code with SYSTEM privileges.",
+      "severity": "MEDIUM",
+      "score": 6.7,
+      "cwes": [
+        "CWE-428"
+      ],
+      "references": [
+        "https://jvn.jp/en/jp/JVN56544509/",
+        "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=038h3"
+      ],
+      "published": "2026-03-05T03:15:54.333"
+    },
+    {
+      "id": "CVE-2026-2899",
+      "description": "The Fluent Forms Pro Add On Pack plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 6.1.17. This is due to the `deleteFile()` method in the `Uploader` class lacking nonce verification and capability checks. The AJAX action is registered via `addPublicAj",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://fluentforms.com/docs/changelog/#3-toc-title",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/bb036338-abd7-4061-835d-038b765c68a6?source=cve"
+      ],
+      "published": "2026-03-05T04:15:57.233"
+    },
+    {
+      "id": "CVE-2026-22052",
+      "description": "ONTAP versions 9.12.1 and higher with S3 NAS buckets are susceptible to an information disclosure vulnerability. Successful exploit could allow an authenticated attacker to view a listing of the contents in a directory for which they lack permission.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-209"
+      ],
+      "references": [
+        "https://security.netapp.com/advisory/NTAP-20260304-0001"
+      ],
+      "published": "2026-03-05T00:15:56.550"
+    },
+    {
+      "id": "CVE-2026-2833",
+      "description": "An HTTP request smuggling vulnerability (CWE-444) was found in Pingora's handling of HTTP/1.1 connection upgrades. The issue occurs when a Pingora proxy reads a request containing an Upgrade header, causing the proxy to pass through the rest of the bytes on the connection to a backend before the bac",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-444"
+      ],
+      "references": [
+        "https://github.com/cloudflare/pingora"
+      ],
+      "published": "2026-03-05T00:15:57.650"
+    },
+    {
+      "id": "CVE-2026-2835",
+      "description": "An HTTP Request Smuggling vulnerability (CWE-444) has been found in Pingora's parsing of HTTP/1.0 and Transfer-Encoding requests. The issue occurs due to improperly allowing HTTP/1.0 request bodies to be close-delimited and incorrect handling of multiple Transfer-Encoding values, allowing attackers ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-444"
+      ],
+      "references": [
+        "https://github.com/cloudflare/pingora"
+      ],
+      "published": "2026-03-05T00:15:57.860"
+    },
+    {
+      "id": "CVE-2026-2836",
+      "description": "A cache poisoning vulnerability has been found in the Pingora HTTP proxy framework\u2019s default cache key construction. The issue occurs because the default HTTP cache key implementation generates cache keys using only the URI path, excluding critical factors such as the host header (authority). Operat",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-345"
+      ],
+      "references": [
+        "https://github.com/cloudflare/pingora"
+      ],
+      "published": "2026-03-05T00:15:58.053"
+    },
+    {
+      "id": "CVE-2026-29121",
+      "description": "International Data Casting (IDC) SFX2100 satellite receiver comes with the `/sbin/ip`\u00a0utility installed with the setuid bit set. This configuration grants elevated privileges to any local user who can execute the binary. A local actor is able to use the GTFObins resource to preform privileged file r",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://gtfobins.org/gtfobins/ip/",
+        "https://www.abdulmhsblog.com/posts/sfx2100-vulns/"
+      ],
+      "published": "2026-03-05T01:15:51.057"
+    },
+    {
+      "id": "CVE-2026-29122",
+      "description": "International Data Casting (IDC) SFX2100 satellite receiver comes with the `/bin/date`\u00a0utility installed with the setuid bit set. This configuration grants elevated privileges to any local user who can execute the binary. A local actor is able to use the GTFObins resource to preform privileged file ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://gtfobins.org/gtfobins/date/",
+        "https://www.abdulmhsblog.com/posts/sfx2100-vulns/"
+      ],
+      "published": "2026-03-05T02:16:51.373"
+    },
+    {
+      "id": "CVE-2026-29123",
+      "description": "A SUID root-owned binary in /home/xd/terminal/XDTerminal\u00a0in International Data Casting (IDC) SFX2100 on Linux allows a local actor to potentially preform local privilege escalation depending on conditions of the system via execution of the affected SUID binary. This can be via PATH hijacking, symlin",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://www.abdulmhsblog.com/posts/sfx2100-vulns/"
+      ],
+      "published": "2026-03-05T02:16:51.530"
+    },
+    {
+      "id": "CVE-2026-29124",
+      "description": "Multiple SUID root-owned binaries are found in /home/monitor/terminal, /home/monitor/kore-terminal, /home/monitor/IDE-DPack/terminal-dpack, and /home/monitor/IDE-DPack/terminal-dpack2\u00a0in International Data Casting (IDC) SFX2100 Satellite Receiver, which may lead to local privlidge escalation from th",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://www.abdulmhsblog.com/posts/sfx2100-vulns/"
+      ],
+      "published": "2026-03-05T02:16:51.687"
+    },
+    {
+      "id": "CVE-2026-29125",
+      "description": "IDC SFX2100 Satalite Recievers set the `/etc/resolv.conf` file to be world-writable by any local user, allowing DNS resolver tampering that can redirect network communications, facilitate man-in-the-middle attacks, and cause denial of service.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-732"
+      ],
+      "references": [
+        "https://www.abdulmhsblog.com/posts/sfx2100-vulns/"
+      ],
+      "published": "2026-03-05T02:16:51.833"
+    },
+    {
+      "id": "CVE-2026-29126",
+      "description": "Incorrect permission assignment (world-writable file) in /etc/udhcpc/default.script\u00a0in International Data Casting (IDC) SFX2100 Satellite Receiver allows a local unprivileged attacker to potentially execute arbitrary commands with root privileges (local privilege escalation and persistence) via modi",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-732"
+      ],
+      "references": [
+        "https://www.abdulmhsblog.com/posts/sfx2100-vulns/",
+        "https://www.abdulmhsblog.com/posts/sfx2100-vulns/"
+      ],
+      "published": "2026-03-05T02:16:51.993"
+    },
+    {
+      "id": "CVE-2026-29127",
+      "description": "The IDC SFX2100 Satellite Receiver sets overly permissive file system permissions on the monitor\u00a0user's home directory. The directory is configured with permissions 0777, granting read, write, and execute access to all local users on the system, which may cause local privilege escalation depending o",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://www.abdulmhsblog.com/posts/sfx2100-vulns/",
+        "https://www.abdulmhsblog.com/posts/sfx2100-vulns/"
+      ],
+      "published": "2026-03-05T03:15:54.713"
+    }
+  ]
+}
