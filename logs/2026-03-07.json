@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-03-07T16:41:46.537941+00:00",
-  "scan_id": "74b42195f9",
+  "timestamp": "2026-03-07T17:34:03.018289+00:00",
+  "scan_id": "683faefdad",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -33,6 +33,9 @@
     ],
     "threat_index": 261.8,
     "critical_count": 5
+  },
+  "delta": {
+    "status": "no_previous_data"
   },
   "cves": [
     {
