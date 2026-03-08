@@ -1,0 +1,328 @@
+{
+  "timestamp": "2026-03-08T07:44:43.141770+00:00",
+  "scan_id": "b3f64f7db8",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 5,
+      "MEDIUM": 14
+    },
+    "top_cwes": [
+      [
+        "CWE-863",
+        5
+      ],
+      [
+        "CWE-427",
+        3
+      ],
+      [
+        "CWE-522",
+        2
+      ],
+      [
+        "CWE-732",
+        2
+      ],
+      [
+        "CWE-306",
+        1
+      ]
+    ],
+    "threat_index": 294.1,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 294.1,
+        "yesterday": 261.8,
+        "change_pct": 12.3
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 5,
+        "change_pct": -80.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-22552",
+      "description": "WebSocket endpoints lack proper authentication mechanisms, enabling attackers to perform unauthorized station impersonation and manipulate data sent to the backend. An unauthenticated attacker can connect to the OCPP WebSocket endpoint using a known or discovered charging station identifier, then is",
+      "severity": "CRITICAL",
+      "score": 9.4,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://epower.ie/support/",
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-062-07.json",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-062-07"
+      ],
+      "published": "2026-03-06T00:16:10.347"
+    },
+    {
+      "id": "CVE-2026-28710",
+      "description": "Sensitive information disclosure and manipulation due to improper authentication. The following products are affected: Acronis Cyber Protect 17 (Linux, Windows) before build 41186.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-1390"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/advisories/SEC-9137"
+      ],
+      "published": "2026-03-06T00:16:11.300"
+    },
+    {
+      "id": "CVE-2026-27778",
+      "description": "The WebSocket Application Programming Interface lacks restrictions on the number of authentication requests. This absence of rate limiting may allow an attacker to conduct denial-of-service attacks by suppressing or mis-routing legitimate charger telemetry, or conduct brute-force attacks to gain una",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-307"
+      ],
+      "references": [
+        "https://epower.ie/support/",
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-062-07.json",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-062-07"
+      ],
+      "published": "2026-03-06T00:16:10.960"
+    },
+    {
+      "id": "CVE-2025-11792",
+      "description": "Local privilege escalation due to DLL hijacking vulnerability. The following products are affected: Acronis Cyber Protect Cloud Agent (Windows) before build 41124.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-427"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/advisories/SEC-9439"
+      ],
+      "published": "2026-03-06T00:16:09.757"
+    },
+    {
+      "id": "CVE-2026-24912",
+      "description": "The WebSocket backend uses charging station identifiers to uniquely associate sessions but allows multiple endpoints to connect using the same session identifier. This implementation results in predictable session identifiers and enables session hijacking or shadowing, where the most recent connecti",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-613"
+      ],
+      "references": [
+        "https://epower.ie/support/",
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-062-07.json",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-062-07"
+      ],
+      "published": "2026-03-06T00:16:10.553"
+    },
+    {
+      "id": "CVE-2026-28713",
+      "description": "Default credentials set for local privileged user in Virtual Appliance. The following products are affected: Acronis Cyber Protect Cloud Agent (VMware) before build 36943, Acronis Cyber Protect 17 (VMware) before build 41186.",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-1392"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/advisories/SEC-4168"
+      ],
+      "published": "2026-03-06T00:16:11.750"
+    },
+    {
+      "id": "CVE-2026-27770",
+      "description": "Charging station authentication identifiers are publicly accessible via web-based mapping platforms.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://epower.ie/support/",
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-062-07.json",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-062-07"
+      ],
+      "published": "2026-03-06T00:16:10.767"
+    },
+    {
+      "id": "CVE-2026-28715",
+      "description": "Sensitive information disclosure due to improper authorization checks. The following products are affected: Acronis Cyber Protect 17 (Linux, Windows) before build 41186.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/advisories/SEC-5910"
+      ],
+      "published": "2026-03-06T00:16:12.047"
+    },
+    {
+      "id": "CVE-2026-28711",
+      "description": "Local privilege escalation due to DLL hijacking vulnerability. The following products are affected: Acronis Cyber Protect 17 (Windows) before build 41186.",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-427"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/advisories/SEC-2330"
+      ],
+      "published": "2026-03-06T00:16:11.450"
+    },
+    {
+      "id": "CVE-2026-28712",
+      "description": "Local privilege escalation due to DLL hijacking vulnerability. The following products are affected: Acronis Cyber Protect 17 (Windows) before build 41186.",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-427"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/advisories/SEC-2332"
+      ],
+      "published": "2026-03-06T00:16:11.593"
+    },
+    {
+      "id": "CVE-2025-11791",
+      "description": "Sensitive information disclosure and manipulation due to insufficient authorization checks. The following products are affected: Acronis Cyber Protect 17 (Linux, macOS, Windows) before build 41186, Acronis Cyber Protect Cloud Agent (Linux, macOS, Windows) before build 41124.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/advisories/SEC-9405"
+      ],
+      "published": "2026-03-06T00:16:09.617"
+    },
+    {
+      "id": "CVE-2026-28718",
+      "description": "Denial of service due to insufficient input validation in authentication logging. The following products are affected: Acronis Cyber Protect 17 (Linux, Windows) before build 41186.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-779"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/advisories/SEC-8377"
+      ],
+      "published": "2026-03-06T00:16:12.553"
+    },
+    {
+      "id": "CVE-2026-28717",
+      "description": "Local privilege escalation due to improper directory permissions. The following products are affected: Acronis Cyber Protect 17 (Windows) before build 41186.",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-276"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/advisories/SEC-8363"
+      ],
+      "published": "2026-03-06T00:16:12.363"
+    },
+    {
+      "id": "CVE-2026-28714",
+      "description": "Unnecessary transmission of sensitive cryptographic material. The following products are affected: Acronis Cyber Protect 17 (Linux, Windows) before build 41186.",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/advisories/SEC-5383"
+      ],
+      "published": "2026-03-06T00:16:11.900"
+    },
+    {
+      "id": "CVE-2025-11790",
+      "description": "Credentials are not deleted from Acronis Agent after plan revocation. The following products are affected: Acronis Cyber Protect Cloud Agent (Linux, macOS, Windows) before build 41124.",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-732"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/SEC-8658",
+        "https://security-advisory.acronis.com/advisories/SEC-9386"
+      ],
+      "published": "2026-03-06T00:16:09.450"
+    },
+    {
+      "id": "CVE-2025-30413",
+      "description": "Credentials are not deleted from Acronis Agent after plan revocation. The following products are affected: Acronis Cyber Protect Cloud Agent (Linux, macOS, Windows) before build 40497, Acronis Cyber Protect 17 (Linux, macOS, Windows) before build 41186.",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-732"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/SEC-9386",
+        "https://security-advisory.acronis.com/advisories/SEC-8658"
+      ],
+      "published": "2026-03-06T00:16:10.047"
+    },
+    {
+      "id": "CVE-2026-28716",
+      "description": "Information disclosure and manipulation due to improper authorization checks. The following products are affected: Acronis Cyber Protect 17 (Linux, Windows) before build 41186.",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/advisories/SEC-3687"
+      ],
+      "published": "2026-03-06T00:16:12.190"
+    },
+    {
+      "id": "CVE-2026-28709",
+      "description": "Unauthorized resource manipulation due to improper authorization checks. The following products are affected: Acronis Cyber Protect 17 (Linux, Windows) before build 41186.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/advisories/SEC-5889"
+      ],
+      "published": "2026-03-06T00:16:11.153"
+    },
+    {
+      "id": "CVE-2026-28719",
+      "description": "Unauthorized resource manipulation due to improper authorization checks. The following products are affected: Acronis Cyber Protect 17 (Linux, Windows) before build 41186.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/advisories/SEC-8378"
+      ],
+      "published": "2026-03-06T00:16:12.727"
+    },
+    {
+      "id": "CVE-2026-28720",
+      "description": "Unauthorized modification of settings due to insufficient authorization checks. The following products are affected: Acronis Cyber Protect 17 (Linux, Windows) before build 41186.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://security-advisory.acronis.com/advisories/SEC-8379"
+      ],
+      "published": "2026-03-06T00:16:12.910"
+    }
+  ]
+}
