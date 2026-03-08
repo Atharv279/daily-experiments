@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 """Daily Experiments — NIST NVD security scanner with threat visualization."""
-import json, os, datetime, hashlib, urllib.request, ssl, glob
+import json
+import os
+import datetime
+import hashlib
+import urllib.request
+import ssl
+import glob
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -144,7 +150,7 @@ def generate_charts(parsed, trends, date_str):
 def main():
     now = datetime.datetime.now(datetime.timezone.utc)
     date_str = now.strftime("%Y-%m-%d")
-    print(f"[daily-experiments] Fetching CVEs from NVD...")
+    print("[daily-experiments] Fetching CVEs from NVD...")
     vulns = fetch_recent_cves()
     parsed = [parse_cve(v) for v in vulns]
     parsed.sort(key=lambda x: x["score"], reverse=True)
