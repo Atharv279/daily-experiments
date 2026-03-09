@@ -1,0 +1,351 @@
+{
+  "timestamp": "2026-03-09T04:28:42.046924+00:00",
+  "scan_id": "a635f5b2f9",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 3,
+      "MEDIUM": 12,
+      "UNKNOWN": 5
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        5
+      ],
+      [
+        "CWE-862",
+        4
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-352",
+        2
+      ],
+      [
+        "CWE-502",
+        1
+      ]
+    ],
+    "threat_index": 188.0,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 188.0,
+        "yesterday": 294.1,
+        "change_pct": -36.1
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2025-14353",
+      "description": "The ZIP Code Based Content Protection plugin for WordPress is vulnerable to SQL Injection in all versions up to, and including, 1.0.2 via the 'zipcode' parameter. This is due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This ma",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/zip-code-based-content-protection/tags/1.0.1/public/class-zipcode-bcp-public.php#L335",
+        "https://plugins.trac.wordpress.org/browser/zip-code-based-content-protection/trunk/public/class-zipcode-bcp-public.php#L335",
+        "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=3464999%40zip-code-based-content-protection&new=3464999%40zip-code-based-content-protection&sfp_email=&sfph_mail="
+      ],
+      "published": "2026-03-07T02:16:09.017"
+    },
+    {
+      "id": "CVE-2026-2020",
+      "description": "The JS Archive List plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 6.1.7 via the 'included' shortcode attribute. This is due to the deserialization of untrusted input supplied via the 'included' parameter of the plugin's shortcode. This makes it poss",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/jquery-archive-list-widget/tags/6.1.7/classes/class-jq-archive-list-widget.php#L674",
+        "https://plugins.trac.wordpress.org/browser/jquery-archive-list-widget/tags/6.1.7/classes/class-js-archive-list-settings.php#L10",
+        "https://plugins.trac.wordpress.org/browser/jquery-archive-list-widget/trunk/classes/class-jq-archive-list-widget.php#L674"
+      ],
+      "published": "2026-03-07T02:16:12.077"
+    },
+    {
+      "id": "CVE-2026-3352",
+      "description": "The Easy PHP Settings plugin for WordPress is vulnerable to PHP Code Injection in all versions up to, and including, 1.0.4 via the `update_wp_memory_constants()` method. This is due to insufficient input validation on the `wp_memory_limit` and `wp_max_memory_limit` settings before writing them to `w",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/easy-php-settings/tags/1.0.4/class-easy-php-settings.php#L1800",
+        "https://plugins.trac.wordpress.org/browser/easy-php-settings/tags/1.0.5/class-easy-php-settings.php#L1998",
+        "https://plugins.trac.wordpress.org/browser/easy-php-settings/trunk/class-easy-php-settings.php#L1800"
+      ],
+      "published": "2026-03-07T02:16:13.330"
+    },
+    {
+      "id": "CVE-2026-1902",
+      "description": "The Hammas Calendar plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'apix' parameter in the 'hp-calendar-manage-redirect' shortcode in all versions up to, and including, 1.5.11 due to insufficient input sanitization and output escaping. This makes it possible for authentica",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/hammas-calendar/tags/1.5.11/hp-calendar.php#L37",
+        "https://plugins.trac.wordpress.org/browser/hammas-calendar/tags/1.5.11/src/HpPlugin.php#L54",
+        "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=3474583%40hammas-calendar&new=3474583%40hammas-calendar&sfp_email=&sfph_mail="
+      ],
+      "published": "2026-03-07T02:16:11.893"
+    },
+    {
+      "id": "CVE-2026-2431",
+      "description": "The CM Custom Reports plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'date_from' and 'date_to' parameters in all versions up to, and including, 1.2.7 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inje",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/cm-custom-reports/tags/1.2.7/backend/reports/RegisteredUsersReport.php#L19",
+        "https://plugins.trac.wordpress.org/browser/cm-custom-reports/trunk/backend/reports/RegisteredUsersReport.php#L19",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/e9b918e1-9bf7-4f90-9e77-829bc8012cbb?source=cve"
+      ],
+      "published": "2026-03-07T02:16:12.430"
+    },
+    {
+      "id": "CVE-2026-30247",
+      "description": "WeKnora is an LLM-powered framework designed for deep document understanding and semantic retrieval. Prior to version 0.2.12, the application's \"Import document via URL\" feature is vulnerable to Server-Side Request Forgery (SSRF) through HTTP redirects. While the backend implements comprehensive URL",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/Tencent/WeKnora/security/advisories/GHSA-595m-wc8g-6qgc"
+      ],
+      "published": "2026-03-07T04:15:54.560"
+    },
+    {
+      "id": "CVE-2026-2371",
+      "description": "The Greenshift \u2013 animation and page builder blocks plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 12.8.3. This is due to missing authorization and post status validation in the `gspb_el_reusable_load()` AJAX handler. The handler accepts a",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/greenshift-animation-and-page-builder-blocks/tags/12.7.1/settings.php#L1630",
+        "https://plugins.trac.wordpress.org/browser/greenshift-animation-and-page-builder-blocks/tags/12.7.1/settings.php#L1674",
+        "https://plugins.trac.wordpress.org/browser/greenshift-animation-and-page-builder-blocks/trunk/settings.php#L1674"
+      ],
+      "published": "2026-03-07T00:16:13.457"
+    },
+    {
+      "id": "CVE-2026-1650",
+      "description": "The MDJM Event Management plugin for WordPress is vulnerable to unauthorized data modification due to a missing capability check on the 'custom_fields_controller' function in all versions up to, and including, 1.7.8.1. This makes it possible for unauthenticated attackers to delete arbitrary custom e",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/mobile-dj-manager/tags/1.7.7/includes/admin/pages/event-fields.php#L100",
+        "https://plugins.trac.wordpress.org/browser/mobile-dj-manager/trunk/includes/admin/pages/event-fields.php#L100",
+        "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=3464190%40mobile-dj-manager&new=3464190%40mobile-dj-manager&sfp_email=&sfph_mail="
+      ],
+      "published": "2026-03-07T02:16:11.720"
+    },
+    {
+      "id": "CVE-2026-2429",
+      "description": "The Community Events plugin for WordPress is vulnerable to SQL Injection via the 'ce_venue_name' CSV field in the `on_save_changes_venues` function in all versions up to, and including, 1.5.8. This is due to insufficient escaping on the user-supplied CSV data and lack of sufficient preparation on th",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/community-events/tags/1.5.7/community-events.php#L743",
+        "https://plugins.trac.wordpress.org/browser/community-events/trunk/community-events.php#L743",
+        "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=3462021%40community-events&new=3462021%40community-events&sfp_email=&sfph_mail="
+      ],
+      "published": "2026-03-07T02:16:12.257"
+    },
+    {
+      "id": "CVE-2026-2721",
+      "description": "The MailArchiver plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 4.4.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and a",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/Pierre-Lannoy/wp-mailarchiver/commit/946c1a700bbecc6080a427fd428de800334af824",
+        "https://plugins.trac.wordpress.org/browser/mailarchiver/tags/4.4.0/includes/system/class-form.php#L126",
+        "https://plugins.trac.wordpress.org/browser/mailarchiver/tags/4.4.0/includes/system/class-form.php#L156"
+      ],
+      "published": "2026-03-07T02:16:12.963"
+    },
+    {
+      "id": "CVE-2026-2722",
+      "description": "The Stock Ticker plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 3.26.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and ",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/stock-ticker/tags/3.24.6/classes/class-wpau-stock-ticker-settings.php#L810",
+        "https://plugins.trac.wordpress.org/browser/stock-ticker/trunk/classes/class-wpau-stock-ticker-settings.php#L810",
+        "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=3474252%40stock-ticker&new=3474252%40stock-ticker&sfp_email=&sfph_mail="
+      ],
+      "published": "2026-03-07T02:16:13.147"
+    },
+    {
+      "id": "CVE-2026-1644",
+      "description": "The WP Frontend Profile plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.3.8. This is due to missing nonce validation on the 'update_action' function. This makes it possible for unauthenticated attackers to approve or reject user account regist",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-front-end-profile/tags/1.3.8/functions/wpfep-functions.php#L987",
+        "https://plugins.trac.wordpress.org/browser/wp-front-end-profile/trunk/functions/wpfep-functions.php#L987",
+        "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=3466608%40wp-front-end-profile&new=3466608%40wp-front-end-profile&sfp_email=&sfph_mail="
+      ],
+      "published": "2026-03-07T00:16:13.100"
+    },
+    {
+      "id": "CVE-2026-1981",
+      "description": "The HUMN-1 AI Website Scanner & Human Certification by Winston AI plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the winston_disconnect() function in all versions up to, and including, 0.0.3. This makes it possible for authenticated attac",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/winston-ai-wp/tags/0.0.3/ajax/Ajax_Admin.php#L193",
+        "https://plugins.trac.wordpress.org/browser/winston-ai-wp/tags/0.0.3/ajax/Ajax_Admin.php#L38",
+        "https://plugins.trac.wordpress.org/browser/winston-ai-wp/trunk/ajax/Ajax_Admin.php#L193"
+      ],
+      "published": "2026-03-07T00:16:13.280"
+    },
+    {
+      "id": "CVE-2026-2488",
+      "description": "The ProfileGrid \u2013 User Profiles, Groups and Communities plugin for WordPress is vulnerable to unauthorized message deletion due to a missing capability check on the pg_delete_msg() function in all versions up to, and including, 5.9.8.1. This is due to the function not verifying that the requesting u",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/profilegrid-user-profiles-groups-and-communities/tags/5.9.7.1/includes/class-profile-magic.php#L372",
+        "https://plugins.trac.wordpress.org/browser/profilegrid-user-profiles-groups-and-communities/tags/5.9.7.1/public/class-profile-magic-public.php#L5913",
+        "https://plugins.trac.wordpress.org/browser/profilegrid-user-profiles-groups-and-communities/trunk/includes/class-profile-magic.php#L372"
+      ],
+      "published": "2026-03-07T02:16:12.600"
+    },
+    {
+      "id": "CVE-2026-2494",
+      "description": "The ProfileGrid \u2013 User Profiles, Groups and Communities plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 5.9.8.2. This is due to missing nonce validation on the membership request management page (approve and decline actions). This makes it possi",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/profilegrid-user-profiles-groups-and-communities/tags/5.9.7.1/admin/partials/pm-membership-requests.php#L14",
+        "https://plugins.trac.wordpress.org/browser/profilegrid-user-profiles-groups-and-communities/trunk/admin/partials/pm-membership-requests.php#L14",
+        "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=3472582%40profilegrid-user-profiles-groups-and-communities&new=3472582%40profilegrid-user-profiles-groups-and-communities&sfp_email=&sfph_mail="
+      ],
+      "published": "2026-03-07T02:16:12.787"
+    },
+    {
+      "id": "CVE-2026-25070",
+      "description": "XikeStor SKS8310-8X Network Switch firmware versions 1.04.B07 and prior contain an OS command injection vulnerability in the /goform/PingTestSet endpoint that allows unauthenticated remote attackers to execute arbitrary operating system commands. Attackers can inject malicious commands through the d",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://openwrt.org/toh/xikestor/sks8310-8x?s%5B%5D=xikestor&s%5B%5D=sks8310&s%5B%5D=8x",
+        "https://www.aliexpress.com/i/3256808697772710.html"
+      ],
+      "published": "2026-03-07T01:15:57.427"
+    },
+    {
+      "id": "CVE-2026-25071",
+      "description": "XikeStor SKS8310-8X Network Switch firmware versions 1.04.B07 and prior contain a missing authentication vulnerability in the /switch_config.src endpoint that allows unauthenticated remote attackers to download device configuration files. Attackers can access this endpoint without credentials to ret",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://openwrt.org/toh/xikestor/sks8310-8x?s%5B%5D=xikestor&s%5B%5D=sks8310&s%5B%5D=8x",
+        "https://www.aliexpress.com/i/3256808697772710.html"
+      ],
+      "published": "2026-03-07T01:15:58.083"
+    },
+    {
+      "id": "CVE-2026-25072",
+      "description": "XikeStor SKS8310-8X Network Switch firmware versions 1.04.B07 and prior contain a predictable session identifier vulnerability in the /goform/SetLogin endpoint that allows remote attackers to hijack authenticated sessions. Attackers can predict session identifiers using insufficiently random cookie ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-330"
+      ],
+      "references": [
+        "https://openwrt.org/toh/xikestor/sks8310-8x?s%5B%5D=xikestor&s%5B%5D=sks8310&s%5B%5D=8x",
+        "https://www.aliexpress.com/i/3256808697772710.html"
+      ],
+      "published": "2026-03-07T01:15:58.253"
+    },
+    {
+      "id": "CVE-2026-25073",
+      "description": "XikeStor SKS8310-8X Network Switch firmware versions 1.04.B07 and prior contain a stored cross-site scripting vulnerability that allows authenticated attackers to inject arbitrary script content through the System Name field. Attackers can inject malicious scripts that execute in a victim's browser ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://openwrt.org/toh/xikestor/sks8310-8x?s%5B%5D=xikestor&s%5B%5D=sks8310&s%5B%5D=8x",
+        "https://www.aliexpress.com/i/3256808697772710.html"
+      ],
+      "published": "2026-03-07T01:15:58.413"
+    },
+    {
+      "id": "CVE-2026-30820",
+      "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to version 3.0.13, Flowise trusts any HTTP client that sets the header x-request-from: internal, allowing an authenticated tenant session to bypass all /api/v1/** authorization checks. With only a browser ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/FlowiseAI/Flowise/releases/tag/flowise%403.0.13",
+        "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-wvhq-wp8g-c7vq"
+      ],
+      "published": "2026-03-07T05:16:26.243"
+    }
+  ]
+}
