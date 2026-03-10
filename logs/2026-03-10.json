@@ -1,14 +1,13 @@
 {
-  "timestamp": "2026-03-10T15:13:41.783262+00:00",
-  "scan_id": "ba88f10038",
+  "timestamp": "2026-03-10T20:55:51.863068+00:00",
+  "scan_id": "85f4ed2c55",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
-      "CRITICAL": 1,
-      "HIGH": 9,
+      "CRITICAL": 2,
+      "HIGH": 10,
       "MEDIUM": 7,
-      "LOW": 1,
-      "UNKNOWN": 2
+      "LOW": 1
     },
     "top_cwes": [
       [
@@ -32,8 +31,8 @@
         3
       ]
     ],
-    "threat_index": 337.4,
-    "critical_count": 1
+    "threat_index": 399.1,
+    "critical_count": 2
   },
   "delta": {
     "status": "compared",
@@ -44,18 +43,33 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 337.4,
+        "today": 399.1,
         "yesterday": 188.0,
-        "change_pct": 79.5
+        "change_pct": 112.3
       },
       "critical_count": {
-        "today": 1,
+        "today": 2,
         "yesterday": 0,
         "change_pct": 0
       }
     }
   },
   "cves": [
+    {
+      "id": "CVE-2026-30909",
+      "description": "Crypt::NaCl::Sodium versions through 2.002 for Perl has potential integer overflows.\n\nbin2hex, encrypt, aes256gcm_encrypt_afternm and seal functions do not check that output size will be less than SIZE_MAX, which could lead to integer wraparound causing an undersized output buffer.\n\nEncountering thi",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/cpan-authors/crypt-nacl-sodium/pull/24.patch",
+        "https://metacpan.org/release/TIMLEGGE/Crypt-NaCl-Sodium-2.002/source/Sodium.xs#L2116",
+        "https://metacpan.org/release/TIMLEGGE/Crypt-NaCl-Sodium-2.002/source/Sodium.xs#L2310"
+      ],
+      "published": "2026-03-08T01:15:49.387"
+    },
     {
       "id": "CVE-2026-3703",
       "description": "A flaw has been found in Wavlink NU516U1 251208. This affects the function sub_401A10 of the file /cgi-bin/login.cgi. Executing a manipulation of the argument ipaddr can lead to out-of-bounds write. The attack may be performed from remote. The exploit has been published and may be used. Upgrading th",
@@ -137,6 +151,20 @@
       "published": "2026-03-08T05:16:28.517"
     },
     {
+      "id": "CVE-2026-30910",
+      "description": "Crypt::Sodium::XS versions through 0.001000 for Perl has potential integer overflows.\n\nCombined aead encryption, combined signature creation, and bin2hex functions do not check that output size will be less than SIZE_MAX, which could lead to integer wraparound causing an undersized output buffer. Th",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://metacpan.org/release/IAMB/Crypt-Sodium-XS-0.001001/changes",
+        "http://www.openwall.com/lists/oss-security/2026/03/08/2"
+      ],
+      "published": "2026-03-08T02:16:00.620"
+    },
+    {
       "id": "CVE-2026-3693",
       "description": "A flaw has been found in Shy2593666979 AgentChat up to 2.3.0. This issue affects the function get_user_info/update_user_info of the file /src/backend/agentchat/api/v1/user.py of the component User Endpoint. This manipulation of the argument user_id causes improper control of resource identifiers. It",
       "severity": "HIGH",
@@ -158,6 +186,7 @@
       "score": 7.3,
       "cwes": [
         "CWE-77",
+        "CWE-78",
         "CWE-78"
       ],
       "references": [
@@ -303,6 +332,7 @@
       "score": 4.7,
       "cwes": [
         "CWE-74",
+        "CWE-77",
         "CWE-77"
       ],
       "references": [
@@ -343,35 +373,6 @@
         "https://github.com/mkj/dropbear/issues/406#issue-3978907798"
       ],
       "published": "2026-03-08T05:16:31.847"
-    },
-    {
-      "id": "CVE-2026-30909",
-      "description": "Crypt::NaCl::Sodium versions through 2.002 for Perl has potential integer overflows.\n\nbin2hex, encrypt, aes256gcm_encrypt_afternm and seal functions do not check that output size will be less than SIZE_MAX, which could lead to integer wraparound causing an undersized output buffer.\n\nEncountering thi",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-190"
-      ],
-      "references": [
-        "https://github.com/cpan-authors/crypt-nacl-sodium/pull/24.patch",
-        "https://metacpan.org/release/TIMLEGGE/Crypt-NaCl-Sodium-2.002/source/Sodium.xs#L2116",
-        "https://metacpan.org/release/TIMLEGGE/Crypt-NaCl-Sodium-2.002/source/Sodium.xs#L2310"
-      ],
-      "published": "2026-03-08T01:15:49.387"
-    },
-    {
-      "id": "CVE-2026-30910",
-      "description": "Crypt::Sodium::XS versions through 0.001000 for Perl has potential integer overflows.\n\nCombined aead encryption, combined signature creation, and bin2hex functions do not check that output size will be less than SIZE_MAX, which could lead to integer wraparound causing an undersized output buffer. Th",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-190"
-      ],
-      "references": [
-        "https://metacpan.org/release/IAMB/Crypt-Sodium-XS-0.001001/changes",
-        "http://www.openwall.com/lists/oss-security/2026/03/08/2"
-      ],
-      "published": "2026-03-08T02:16:00.620"
     }
   ]
 }
