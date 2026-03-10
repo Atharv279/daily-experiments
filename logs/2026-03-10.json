@@ -1,0 +1,377 @@
+{
+  "timestamp": "2026-03-10T04:19:44.553784+00:00",
+  "scan_id": "318563b4bf",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 9,
+      "MEDIUM": 7,
+      "LOW": 1,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-119",
+        6
+      ],
+      [
+        "CWE-89",
+        6
+      ],
+      [
+        "CWE-74",
+        5
+      ],
+      [
+        "CWE-120",
+        4
+      ],
+      [
+        "CWE-190",
+        3
+      ]
+    ],
+    "threat_index": 337.4,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 337.4,
+        "yesterday": 188.0,
+        "change_pct": 79.5
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-3703",
+      "description": "A flaw has been found in Wavlink NU516U1 251208. This affects the function sub_401A10 of the file /cgi-bin/login.cgi. Executing a manipulation of the argument ipaddr can lead to out-of-bounds write. The attack may be performed from remote. The exploit has been published and may be used. Upgrading th",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-787"
+      ],
+      "references": [
+        "https://dl.wavlink.com/firmware/RD/WINSTAR_NU516U1-WO-A-2026-02-27-2fcf6ae-mt7628-squashfs-sysupgrade.bin",
+        "https://github.com/Wlz1112/Wavlink-NU516U1-V251208-/blob/main/ipaddr.md",
+        "https://github.com/Wlz1112/Wavlink-NU516U1-V251208-/blob/main/ipaddr.md#exp-exploit--poc"
+      ],
+      "published": "2026-03-08T05:16:29.080"
+    },
+    {
+      "id": "CVE-2026-3698",
+      "description": "A vulnerability was identified in UTT HiPER 810G up to 1.7.7-171114. This affects the function strcpy of the file /goform/NTP. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit is publicly available and might be used.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/7wkajk/CVE-VUL/blob/main/3.md",
+        "https://vuldb.com/?ctiid.349644",
+        "https://vuldb.com/?id.349644"
+      ],
+      "published": "2026-03-08T02:16:00.980"
+    },
+    {
+      "id": "CVE-2026-3699",
+      "description": "A security flaw has been discovered in UTT HiPER 810G up to 1.7.7-171114. This impacts the function strcpy of the file /goform/formRemoteControl. The manipulation results in buffer overflow. The attack may be launched remotely. The exploit has been released to the public and may be used for attacks.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/7wkajk/CVE-VUL/blob/main/2.md",
+        "https://vuldb.com/?ctiid.349645",
+        "https://vuldb.com/?id.349645"
+      ],
+      "published": "2026-03-08T03:16:04.017"
+    },
+    {
+      "id": "CVE-2026-3700",
+      "description": "A weakness has been identified in UTT HiPER 810G up to 1.7.7-171114. Affected is the function strcpy of the file /goform/formConfigDnsFilterGlobal. This manipulation causes buffer overflow. Remote exploitation of the attack is possible. The exploit has been made available to the public and could be ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/7wkajk/CVE-VUL/blob/main/1.md",
+        "https://vuldb.com/?ctiid.349646",
+        "https://vuldb.com/?id.349646"
+      ],
+      "published": "2026-03-08T03:16:05.177"
+    },
+    {
+      "id": "CVE-2026-3701",
+      "description": "A security vulnerability has been detected in H3C Magic B1 up to 100R004. Affected by this vulnerability is the function Edit_BasicSSID_5G of the file /goform/aspForm. Such manipulation of the argument param leads to buffer overflow. The attack can be executed remotely. The exploit has been disclose",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/saltedfisholdxu/vul/blob/main/Magic%20B1/6_b1-report.md",
+        "https://vuldb.com/?ctiid.349647",
+        "https://vuldb.com/?id.349647"
+      ],
+      "published": "2026-03-08T05:16:28.517"
+    },
+    {
+      "id": "CVE-2026-3693",
+      "description": "A flaw has been found in Shy2593666979 AgentChat up to 2.3.0. This issue affects the function get_user_info/update_user_info of the file /src/backend/agentchat/api/v1/user.py of the component User Endpoint. This manipulation of the argument user_id causes improper control of resource identifiers. It",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-99"
+      ],
+      "references": [
+        "https://github.com/CC-T-454455/Vulnerabilities/tree/master/agent-chat/vulnerability-1",
+        "https://github.com/CC-T-454455/Vulnerabilities/tree/master/agent-chat/vulnerability-2",
+        "https://vuldb.com/?ctiid.349640"
+      ],
+      "published": "2026-03-08T01:15:49.530"
+    },
+    {
+      "id": "CVE-2026-3696",
+      "description": "A vulnerability was found in Totolink N300RH 6..1c.1353_B20190305. The affected element is the function setWiFiWpsConfig of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Performing a manipulation results in os command injection. The attack can be initiated remotely. The exploit has bee",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/JXBbozaihuang/vuln-research/issues/2",
+        "https://vuldb.com/?ctiid.349642",
+        "https://vuldb.com/?id.349642"
+      ],
+      "published": "2026-03-08T01:15:49.943"
+    },
+    {
+      "id": "CVE-2026-3705",
+      "description": "A vulnerability was found in code-projects Simple Flight Ticket Booking System 1.0. This issue affects some unknown processing of the file /Adminsearch.php. The manipulation of the argument flightno results in sql injection. It is possible to launch the attack remotely. The exploit has been made pub",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/Owen-YuanW/CVE/issues/1",
+        "https://vuldb.com/?ctiid.349651"
+      ],
+      "published": "2026-03-08T05:16:29.313"
+    },
+    {
+      "id": "CVE-2026-3708",
+      "description": "A security flaw has been discovered in code-projects Simple Flight Ticket Booking System 1.0. The impacted element is an unknown function of the file /login.php. Performing a manipulation of the argument Username results in sql injection. The attack may be initiated remotely. The exploit has been re",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/Owen-YuanW/CVE/issues/2",
+        "https://vuldb.com/?ctiid.349654"
+      ],
+      "published": "2026-03-08T05:16:32.440"
+    },
+    {
+      "id": "CVE-2026-3709",
+      "description": "A weakness has been identified in code-projects Simple Flight Ticket Booking System 1.0. This affects an unknown function of the file /register.php. Executing a manipulation of the argument Username can lead to sql injection. The attack may be launched remotely. The exploit has been made available t",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/Owen-YuanW/CVE/issues/3",
+        "https://vuldb.com/?ctiid.349655"
+      ],
+      "published": "2026-03-08T06:16:10.797"
+    },
+    {
+      "id": "CVE-2026-3695",
+      "description": "A vulnerability has been found in SourceCodester Modern Image Gallery App 1.0. Impacted is an unknown function of the file /delete.php. Such manipulation of the argument filename leads to path traversal. It is possible to launch the attack remotely. The exploit has been disclosed to the public and m",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://gist.github.com/hackusman/e618b915514ed24b9333c72152bb7218",
+        "https://gist.github.com/hackusman/e618b915514ed24b9333c72152bb7218#-detailed-proof-of-concept-poc",
+        "https://vuldb.com/?ctiid.349641"
+      ],
+      "published": "2026-03-08T01:15:49.740"
+    },
+    {
+      "id": "CVE-2026-3682",
+      "description": "A security vulnerability has been detected in welovemedia FFmate up to 2.0.15. This vulnerability affects the function Execute of the file /internal/service/ffmpeg/ffmpeg.go. The manipulation leads to argument injection. The attack may be initiated remotely. The exploit has been disclosed publicly a",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-88"
+      ],
+      "references": [
+        "https://github.com/CC-T-454455/Vulnerabilities/tree/master/ffmate/vulnerability-3",
+        "https://vuldb.com/?ctiid.349584",
+        "https://vuldb.com/?id.349584"
+      ],
+      "published": "2026-03-08T00:16:13.780"
+    },
+    {
+      "id": "CVE-2026-3683",
+      "description": "A vulnerability was detected in bufanyun HotGo up to 2.0. This issue affects the function ImageTransferStorage of the file /server/internal/logic/common/upload.go of the component Endpoint. The manipulation results in server-side request forgery. The attack may be launched remotely. The exploit is n",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/CC-T-454455/Vulnerabilities/tree/master/hotgo/vulnerability-1",
+        "https://vuldb.com/?ctiid.349585",
+        "https://vuldb.com/?id.349585"
+      ],
+      "published": "2026-03-08T00:16:14.027"
+    },
+    {
+      "id": "CVE-2026-3697",
+      "description": "A vulnerability was determined in Planet ICG-2510 1.0_20250811. The impacted element is the function sub_40C8E4 of the file /usr/sbin/httpd of the component Language Package Configuration Handler. Executing a manipulation of the argument Language can lead to stack-based buffer overflow. The attack c",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/glkfc/IoT-Vulnerability/blob/main/PLANET/ICG-2510/vulnerability_report1.md",
+        "https://vuldb.com/?ctiid.349643",
+        "https://vuldb.com/?id.349643"
+      ],
+      "published": "2026-03-08T02:16:00.760"
+    },
+    {
+      "id": "CVE-2026-3707",
+      "description": "A vulnerability was identified in MrNanko webp4j up to 1.3.x. The affected element is the function DecodeGifFromMemory of the file src/main/c/gif_decoder.c. Such manipulation of the argument canvas_height leads to integer overflow. Local access is required to approach this attack. The exploit is pub",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-189",
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/MrNanko/webp4j/",
+        "https://github.com/MrNanko/webp4j/commit/89771b201c66d15d29e4cc016d8aae82b6a5fbe1",
+        "https://github.com/MrNanko/webp4j/issues/6"
+      ],
+      "published": "2026-03-08T05:16:32.193"
+    },
+    {
+      "id": "CVE-2026-3704",
+      "description": "A vulnerability has been found in Wavlink NU516U1 251208. This vulnerability affects the function sub_405B2C of the file /cgi-bin/firewall.cgi of the component Incomplete Fix CVE-2025-10959. The manipulation leads to command injection. It is possible to initiate the attack remotely. The exploit has ",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://dl.wavlink.com/firmware/RD/WINSTAR_NU516U1-WO-A-2026-02-27-2fcf6ae-mt7628-squashfs-sysupgrade.bin",
+        "https://github.com/Wlz1112/Wavlink-NU516U1-V251208-/blob/main/wavlink_DMZ.md",
+        "https://github.com/Wlz1112/Wavlink-NU516U1-V251208-/blob/main/wavlink_DMZ.md#exp"
+      ],
+      "published": "2026-03-08T04:15:59.543"
+    },
+    {
+      "id": "CVE-2026-3702",
+      "description": "A vulnerability was detected in SourceCodester Loan Management System 1.0. Affected by this issue is some unknown functionality of the file /index.php. Performing a manipulation of the argument page results in cross site scripting. The attack is possible to be carried out remotely. The exploit is no",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Loan-Management-System/XSS-Index-page.md",
+        "https://vuldb.com/?ctiid.349648",
+        "https://vuldb.com/?id.349648"
+      ],
+      "published": "2026-03-08T05:16:28.837"
+    },
+    {
+      "id": "CVE-2026-3706",
+      "description": "A vulnerability was determined in mkj Dropbear up to 2025.89. Impacted is the function unpackneg of the file src/curve25519.c of the component S Range Check. This manipulation causes improper verification of cryptographic signature. The attack can be initiated remotely. The attack is considered to h",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-345",
+        "CWE-347"
+      ],
+      "references": [
+        "https://github.com/mkj/dropbear/",
+        "https://github.com/mkj/dropbear/commit/fdec3c90a15447bd538641d85e5a3e3ac981011d",
+        "https://github.com/mkj/dropbear/issues/406#issue-3978907798"
+      ],
+      "published": "2026-03-08T05:16:31.847"
+    },
+    {
+      "id": "CVE-2026-30909",
+      "description": "Crypt::NaCl::Sodium versions through 2.002 for Perl has potential integer overflows.\n\nbin2hex, encrypt, aes256gcm_encrypt_afternm and seal functions do not check that output size will be less than SIZE_MAX, which could lead to integer wraparound causing an undersized output buffer.\n\nEncountering thi",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/cpan-authors/crypt-nacl-sodium/pull/24.patch",
+        "https://metacpan.org/release/TIMLEGGE/Crypt-NaCl-Sodium-2.002/source/Sodium.xs#L2116",
+        "https://metacpan.org/release/TIMLEGGE/Crypt-NaCl-Sodium-2.002/source/Sodium.xs#L2310"
+      ],
+      "published": "2026-03-08T01:15:49.387"
+    },
+    {
+      "id": "CVE-2026-30910",
+      "description": "Crypt::Sodium::XS versions through 0.001000 for Perl has potential integer overflows.\n\nCombined aead encryption, combined signature creation, and bin2hex functions do not check that output size will be less than SIZE_MAX, which could lead to integer wraparound causing an undersized output buffer. Th",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://metacpan.org/release/IAMB/Crypt-Sodium-XS-0.001001/changes",
+        "http://www.openwall.com/lists/oss-security/2026/03/08/2"
+      ],
+      "published": "2026-03-08T02:16:00.620"
+    }
+  ]
+}
