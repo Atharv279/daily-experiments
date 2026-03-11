@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-03-11T04:20:04.874829+00:00",
-  "scan_id": "cd139b62da",
+  "timestamp": "2026-03-11T09:02:56.446098+00:00",
+  "scan_id": "a863ff344e",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -175,7 +175,7 @@
     },
     {
       "id": "CVE-2026-3822",
-      "description": "Taipower APP developed by Taipower has an Improper Certificate Validation vulnerability. When establishing an HTTPS connection with the server, the application fails to verify the server-side TLS/SSL certificate. This flaw allows an unauthenticated remote attackers to exploit the vulnerability to pe",
+      "description": "Taipower APP for Andorid developed by Taipower has an Improper Certificate Validation vulnerability. When establishing an HTTPS connection with the server, the application fails to verify the server-side TLS/SSL certificate. This flaw allows an unauthenticated remote attackers to exploit the vulnera",
       "severity": "MEDIUM",
       "score": 6.5,
       "cwes": [
