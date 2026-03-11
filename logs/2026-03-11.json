@@ -1,0 +1,371 @@
+{
+  "timestamp": "2026-03-11T04:20:04.874829+00:00",
+  "scan_id": "cd139b62da",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 7,
+      "MEDIUM": 12
+    },
+    "top_cwes": [
+      [
+        "CWE-89",
+        8
+      ],
+      [
+        "CWE-74",
+        5
+      ],
+      [
+        "CWE-119",
+        4
+      ],
+      [
+        "CWE-121",
+        4
+      ],
+      [
+        "CWE-434",
+        4
+      ]
+    ],
+    "threat_index": 359.0,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 359.0,
+        "yesterday": 399.1,
+        "change_pct": -10.0
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 2,
+        "change_pct": -50.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-3630",
+      "description": "Delta Electronics COMMGR2 has \n\nStack-based Buffer Overflow vulnerability.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://filecenter.deltaww.com/news/download/doc/Delta-PCSA-2026-00005_COMMGR%202%20Multiple%20Vulnerabilities%20(CVE-2026-3630,%20CVE-2026-3631).pdf"
+      ],
+      "published": "2026-03-09T04:15:58.373"
+    },
+    {
+      "id": "CVE-2026-3799",
+      "description": "A flaw has been found in Tenda i3 1.0.0.6(2204). This impacts the function formSetCfm of the file /goform/setcfm. This manipulation of the argument funcpara1 causes stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been published and may be used.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Svigo-o/Tenda_vul/tree/main/tenda-i3-setcfm-funcpara1-buffer-overflow",
+        "https://vuldb.com/?ctiid.349766",
+        "https://vuldb.com/?id.349766"
+      ],
+      "published": "2026-03-09T04:16:04.720"
+    },
+    {
+      "id": "CVE-2026-3801",
+      "description": "A vulnerability was found in Tenda i3 1.0.0.6(2204). Affected by this vulnerability is the function formSetAutoPing of the file /goform/setAutoPing. Performing a manipulation of the argument ping1/ping2 results in stack-based buffer overflow. The attack is possible to be carried out remotely. The ex",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Svigo-o/Tenda_vul/tree/main/tenda-i3-setautoping-ping1-buffer-overflow",
+        "https://github.com/Svigo-o/Tenda_vul/tree/main/tenda-i3-setautoping-ping2-buffer-overflow",
+        "https://vuldb.com/?ctiid.349768"
+      ],
+      "published": "2026-03-09T04:16:08.643"
+    },
+    {
+      "id": "CVE-2026-3802",
+      "description": "A vulnerability was determined in Tenda i3 1.0.0.6(2204). Affected by this issue is the function formexeCommand of the file /goform/exeCommand. Executing a manipulation of the argument cmdinput can lead to stack-based buffer overflow. The attack may be performed from remote. The exploit has been pub",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Svigo-o/Tenda_vul/tree/main/tenda-i3-formexeCommand-cmdinput-buffer-overflow",
+        "https://vuldb.com/?ctiid.349769",
+        "https://vuldb.com/?id.349769"
+      ],
+      "published": "2026-03-09T05:15:48.403"
+    },
+    {
+      "id": "CVE-2026-3803",
+      "description": "A vulnerability was identified in Tenda i3 1.0.0.6(2204). This affects the function formWifiMacFilterGet of the file /goform/WifiMacFilterGet. The manipulation of the argument index leads to stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit is publicly availabl",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Svigo-o/Tenda_vul/tree/main/tenda-i3-formWifiMacFilterGet-index-buffer-overflow",
+        "https://vuldb.com/?ctiid.349770",
+        "https://vuldb.com/?id.349770"
+      ],
+      "published": "2026-03-09T06:16:08.723"
+    },
+    {
+      "id": "CVE-2026-30896",
+      "description": "The installer for Qsee Client versions 1.0.1 and prior insecurely load Dynamic Link Libraries (DLLs). When a user is directed to place some malicious DLL to the same directory and execute the affected installer, then arbitrary code may be executed with the administrative privilege.",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-427"
+      ],
+      "references": [
+        "https://jvn.jp/en/jp/JVN11676807/",
+        "https://www.q-see.com/pages/download"
+      ],
+      "published": "2026-03-09T06:16:08.420"
+    },
+    {
+      "id": "CVE-2026-3631",
+      "description": "Delta Electronics COMMGR2 has \n\nBuffer Over-read DoS vulnerability.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://filecenter.deltaww.com/news/download/doc/Delta-PCSA-2026-00005_COMMGR%202%20Multiple%20Vulnerabilities%20(CVE-2026-3630,%20CVE-2026-3631).pdf"
+      ],
+      "published": "2026-03-09T04:15:58.630"
+    },
+    {
+      "id": "CVE-2026-3794",
+      "description": "A vulnerability was identified in doramart DoraCMS 3.0.x. This issue affects some unknown processing of the file /api/v1/mail/send of the component Email API. Such manipulation leads to improper authentication. It is possible to launch the attack remotely. The exploit is publicly available and might",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://vuldb.com/?ctiid.349761",
+        "https://vuldb.com/?id.349761",
+        "https://vuldb.com/?submit.768239"
+      ],
+      "published": "2026-03-09T03:15:49.293"
+    },
+    {
+      "id": "CVE-2026-3822",
+      "description": "Taipower APP developed by Taipower has an Improper Certificate Validation vulnerability. When establishing an HTTPS connection with the server, the application fails to verify the server-side TLS/SSL certificate. This flaw allows an unauthenticated remote attackers to exploit the vulnerability to pe",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-295"
+      ],
+      "references": [
+        "https://www.twcert.org.tw/en/cp-139-10751-23871-2.html",
+        "https://www.twcert.org.tw/tw/cp-132-10750-3735f-1.html"
+      ],
+      "published": "2026-03-09T04:16:10.173"
+    },
+    {
+      "id": "CVE-2026-3788",
+      "description": "A security vulnerability has been detected in Bytedesk up to 1.3.9. This impacts the function getModels of the file source-code/src/main/java/com/bytedesk/ai/springai/providers/openrouter/SpringAIOpenrouterRestService.java of the component SpringAIOpenrouterRestController. Such manipulation of the a",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/Bytedesk/bytedesk/",
+        "https://github.com/Bytedesk/bytedesk/commit/975e39e4dd527596987559f56c5f9f973f64eff7",
+        "https://github.com/Bytedesk/bytedesk/issues/20"
+      ],
+      "published": "2026-03-09T00:16:01.247"
+    },
+    {
+      "id": "CVE-2026-3789",
+      "description": "A vulnerability was detected in Bytedesk up to 1.3.9. Affected is the function getModels of the file source-code/src/main/java/com/bytedesk/ai/springai/providers/gitee/SpringAIGiteeRestService.java of the component SpringAIGiteeRestController. Performing a manipulation of the argument apiUrl results",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/Bytedesk/bytedesk/",
+        "https://github.com/Bytedesk/bytedesk/commit/975e39e4dd527596987559f56c5f9f973f64eff7",
+        "https://github.com/Bytedesk/bytedesk/issues/21"
+      ],
+      "published": "2026-03-09T00:16:01.493"
+    },
+    {
+      "id": "CVE-2026-3790",
+      "description": "A flaw has been found in SourceCodester Sales and Inventory System 1.0. Affected by this vulnerability is an unknown functionality of the file check_supplier_details.php of the component POST Parameter Handler. Executing a manipulation of the argument stock_name1 can lead to sql injection. The attac",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Inventory-System/SQLi-CheckSupplierDetails-stockname1.md",
+        "https://vuldb.com/?ctiid.349757",
+        "https://vuldb.com/?id.349757"
+      ],
+      "published": "2026-03-09T00:16:01.723"
+    },
+    {
+      "id": "CVE-2026-3791",
+      "description": "A vulnerability has been found in SourceCodester Sales and Inventory System 1.0. Affected by this issue is some unknown functionality of the file dashboard.php of the component Search. The manipulation of the argument searchtxt leads to sql injection. The attack is possible to be carried out remotel",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Inventory-System/SQLi-Dashboard-searchtxt.md",
+        "https://vuldb.com/?ctiid.349758",
+        "https://vuldb.com/?id.349758"
+      ],
+      "published": "2026-03-09T01:15:47.383"
+    },
+    {
+      "id": "CVE-2026-3792",
+      "description": "A vulnerability was found in SourceCodester Sales and Inventory System 1.0. This affects an unknown part of the file purchase_invoice.php of the component GET Parameter Handler. The manipulation of the argument purchaseid results in sql injection. The attack may be performed from remote. The exploit",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Inventory-System/SQLi-PurchaseInvoice-purchaseid.md",
+        "https://vuldb.com/?ctiid.349759",
+        "https://vuldb.com/?id.349759"
+      ],
+      "published": "2026-03-09T02:15:47.413"
+    },
+    {
+      "id": "CVE-2026-3793",
+      "description": "A vulnerability was determined in SourceCodester Sales and Inventory System 1.0. This vulnerability affects unknown code of the file sales_invoice1.php of the component GET Parameter Handler. This manipulation of the argument sellid causes sql injection. It is possible to initiate the attack remotel",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Inventory-System/SQLi-SalesInvoice1-sellid.md",
+        "https://vuldb.com/?ctiid.349760",
+        "https://vuldb.com/?id.349760"
+      ],
+      "published": "2026-03-09T03:15:49.070"
+    },
+    {
+      "id": "CVE-2026-3795",
+      "description": "A security flaw has been discovered in doramart DoraCMS 3.0.x. Impacted is the function createFileBypath of the file /DoraCMS/server/app/router/api/v1.js. Performing a manipulation results in path traversal. The attack can be initiated remotely. The exploit has been released to the public and may be",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://vuldb.com/?ctiid.349762",
+        "https://vuldb.com/?id.349762",
+        "https://vuldb.com/?submit.768241"
+      ],
+      "published": "2026-03-09T03:15:49.490"
+    },
+    {
+      "id": "CVE-2026-3797",
+      "description": "A security vulnerability has been detected in Tiandy Video Surveillance System \u89c6\u9891\u76d1\u63a7\u5e73\u53f0 7.17.0. The impacted element is the function uploadFile of the file /src/com/tiandy/easy7/core/rest/CLS_REST_File.java. The manipulation of the argument fileName leads to unrestricted upload. The attack may be init",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434",
+        "CWE-434"
+      ],
+      "references": [
+        "https://my.feishu.cn/docx/P3Bgdl9BHocn66xCMpCcgCD7nhe?from=from_copylink",
+        "https://vuldb.com/?ctiid.349764",
+        "https://vuldb.com/?id.349764"
+      ],
+      "published": "2026-03-09T04:16:00.843"
+    },
+    {
+      "id": "CVE-2026-3800",
+      "description": "A vulnerability has been found in SourceCodester/janobe Resort Reservation System 1.0. Affected is the function doInsert of the file /controller.php?action=add. Such manipulation of the argument image leads to unrestricted upload. The attack can be executed remotely. The exploit has been disclosed t",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434",
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/xiahao90/CVEproject/blob/main/xiahao.webray.com.cn/Resort-Reservation-System---Unrestricted-Upload.md",
+        "https://vuldb.com/?ctiid.349767",
+        "https://vuldb.com/?id.349767"
+      ],
+      "published": "2026-03-09T04:16:05.770"
+    },
+    {
+      "id": "CVE-2026-3796",
+      "description": "A weakness has been identified in Qi-ANXIN QAX Virus Removal up to 2025-10-22. The affected element is the function ZwTerminateProcess in the library QKSecureIO_Imp.sys of the component Mini Filter Driver. Executing a manipulation can lead to improper access controls. The attack is restricted to loc",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/cwjchoi01/FocusKiller",
+        "https://github.com/cwjchoi01/FocusKiller/tree/main/FocusKiller",
+        "https://vuldb.com/?ctiid.349763"
+      ],
+      "published": "2026-03-09T04:15:58.877"
+    },
+    {
+      "id": "CVE-2026-3798",
+      "description": "A vulnerability was detected in Comfast CF-AC100 2.6.0.8. This affects the function sub_44AC14 of the file /cgi-bin/mbox-config?method=SET&section=ping_config of the component Request Path Handler. The manipulation results in command injection. The attack may be launched remotely. The exploit is now",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-77",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/jinhao118/cve/blob/main/ComFast%20CF-AC100-V2.6.0.8_1.md",
+        "https://vuldb.com/?ctiid.349765",
+        "https://vuldb.com/?id.349765"
+      ],
+      "published": "2026-03-09T04:16:02.397"
+    }
+  ]
+}
