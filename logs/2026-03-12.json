@@ -1,0 +1,332 @@
+{
+  "timestamp": "2026-03-12T04:23:25.885666+00:00",
+  "scan_id": "5c60b78303",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 5,
+      "MEDIUM": 11,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-125",
+        3
+      ],
+      [
+        "CWE-190",
+        3
+      ],
+      [
+        "CWE-121",
+        3
+      ],
+      [
+        "CWE-787",
+        2
+      ],
+      [
+        "CWE-862",
+        2
+      ]
+    ],
+    "threat_index": 240.1,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 240.1,
+        "yesterday": 359.0,
+        "change_pct": -33.1
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-28693",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2-16 and 6.9.13-41, an integer overflow in DIB coder can result in out of bounds read or write. This vulnerability is fixed in 7.1.2-16 and 6.9.13-41.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-125",
+        "CWE-190",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-hffp-q43q-qq76"
+      ],
+      "published": "2026-03-10T07:43:44.577"
+    },
+    {
+      "id": "CVE-2026-30929",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2-16 and 6.9.13-41, MagnifyImage uses a fixed-size stack buffer. When using a specific image it is possible to overflow this buffer and corrupt the stack. This vulnerability is fixed ",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-121",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-rqq8-jh93-f4vg"
+      ],
+      "published": "2026-03-10T07:44:57.127"
+    },
+    {
+      "id": "CVE-2026-28691",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2-16 and 6.9.13-41, an uninitialized pointer dereference vulnerability exists in the JBIG decoder due to a missing check. This vulnerability is fixed in 7.1.2-16 and 6.9.13-41.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-252",
+        "CWE-824"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-wj8w-pjxf-9g4f"
+      ],
+      "published": "2026-03-10T07:43:44.280"
+    },
+    {
+      "id": "CVE-2026-28494",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2-16 and 6.9.13-41, a stack buffer overflow exists in ImageMagick's morphology kernel parsing functions. User-controlled kernel strings exceeding a buffer are copied into fixed-size s",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-932h-jw47-73jm"
+      ],
+      "published": "2026-03-10T07:43:40.040"
+    },
+    {
+      "id": "CVE-2026-30926",
+      "description": "SiYuan is a personal knowledge management system. Prior to 3.5.10, a privilege escalation vulnerability exists in the publish service of SiYuan Note that allows low-privilege publish accounts (RoleReader) to modify notebook content via the /api/block/appendHeadingChildren API endpoint. The endpoint ",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-284",
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-f9cq-v43p-v523",
+        "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-f9cq-v43p-v523"
+      ],
+      "published": "2026-03-10T07:44:56.943"
+    },
+    {
+      "id": "CVE-2026-28690",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2-16 and 6.9.13-41, a stack buffer overflow vulnerability exists in the MNG encoder. There is a bounds checks missing that could corrupting the stack with attacker-controlled data. Th",
+      "severity": "MEDIUM",
+      "score": 6.9,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-7h7q-j33q-hvpf"
+      ],
+      "published": "2026-03-10T07:43:44.127"
+    },
+    {
+      "id": "CVE-2026-28686",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2-16 and 6.9.13-41, A heap-buffer-overflow vulnerability exists in the PCL encode due to an undersized output buffer allocation. This vulnerability is fixed in 7.1.2-16 and 6.9.13-41.",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-122",
+        "CWE-131"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-467j-76j7-5885"
+      ],
+      "published": "2026-03-10T07:43:43.500"
+    },
+    {
+      "id": "CVE-2026-30931",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2-16, a heap-based buffer overflow in the UHDR encoder can happen due to truncation of a value and it would allow an out of bounds write. This vulnerability is fixed in 7.1.2-16.",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-h95r-c8c7-mrwx"
+      ],
+      "published": "2026-03-10T07:44:57.303"
+    },
+    {
+      "id": "CVE-2026-28493",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2-16, an integer overflow vulnerability exists in the SIXEL decoer. The vulnerability allows an attacker to perform an out of bounds via a specially crafted image. This vulnerability ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-r39q-jr8h-gcq2"
+      ],
+      "published": "2026-03-10T07:43:39.867"
+    },
+    {
+      "id": "CVE-2026-26982",
+      "description": "Ghostty is a cross-platform terminal emulator. Ghostty allows control characters such as 0x03 (Ctrl+C) in pasted and dropped text. These can be used to execute arbitrary commands in some shell environments. This attack requires an attacker to convince the user to copy and paste or drag and drop mali",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/ghostty-org/ghostty/commit/fe7427ed2a1a02aef85495b384cfb8f11ee5efc9",
+        "https://github.com/ghostty-org/ghostty/pull/10746",
+        "https://github.com/ghostty-org/ghostty/security/advisories/GHSA-4jxv-xgrp-5m3r"
+      ],
+      "published": "2026-03-10T07:42:41.580"
+    },
+    {
+      "id": "CVE-2026-28689",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2-16 and 6.9.13-41, domain=\"path\" authorization is checked before final file open/use. A symlink swap between check-time and use-time bypasses policy-denied read/write. This vulnerabi",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-59",
+        "CWE-367"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-493f-jh8w-qhx3"
+      ],
+      "published": "2026-03-10T07:43:43.963"
+    },
+    {
+      "id": "CVE-2026-30883",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2-16 and 6.9.13-41, an extremely large image profile could result in a heap overflow when encoding a PNG image. This vulnerability is fixed in 7.1.2-16 and 6.9.13-41.",
+      "severity": "MEDIUM",
+      "score": 5.7,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-qmw5-2p58-xvrc"
+      ],
+      "published": "2026-03-10T07:44:56.543"
+    },
+    {
+      "id": "CVE-2026-28687",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2-16 and 6.9.13-41, a heap use-after-free vulnerability in ImageMagick's MSL decoder allows an attacker to trigger access to freed memory by crafting an MSL file. This vulnerability i",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-fpvf-frm6-625q"
+      ],
+      "published": "2026-03-10T07:43:43.660"
+    },
+    {
+      "id": "CVE-2026-28692",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2-16 and 6.9.13-41, MAT decoder uses 32-bit arithmetic due to incorrect parenthesization resulting in a heap over-read. This vulnerability is fixed in 7.1.2-16 and 6.9.13-41.",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-mrmj-x24c-wwcv"
+      ],
+      "published": "2026-03-10T07:43:44.430"
+    },
+    {
+      "id": "CVE-2026-30935",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2-16, BilateralBlurImage contains a heap buffer over-read caused by an incorrect conversion. When processing a crafted image with the -bilateral-blur operation an out of bounds read c",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-125",
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-cqw9-w2m7-r2m2"
+      ],
+      "published": "2026-03-10T07:44:57.483"
+    },
+    {
+      "id": "CVE-2026-28688",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2-16 and 6.9.13-41, a heap-use-after-free vulnerability exists in the MSL encoder, where a cloned image is destroyed twice. The MSL coder does not support writing MSL so the write cap",
+      "severity": "MEDIUM",
+      "score": 4.0,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-xxw5-m53x-j38c"
+      ],
+      "published": "2026-03-10T07:43:43.813"
+    },
+    {
+      "id": "CVE-2026-1776",
+      "description": "Camaleon CMS versions 2.4.5.0 through 2.9.0, prior to commit f54a77e, contain a path traversal vulnerability in the AWS S3 uploader implementation that allows authenticated users to read arbitrary files from the web server\u2019s filesystem. The issue occurs in the download_private_file functionality whe",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://camaleon.website/",
+        "https://github.com/owen2345/camaleon-cms/commit/f54a77e2a7be601215ea1b396038c589a0cab9af",
+        "https://github.com/owen2345/camaleon-cms/pull/1127"
+      ],
+      "published": "2026-03-10T07:38:01.950"
+    },
+    {
+      "id": "CVE-2026-28431",
+      "description": "Misskey is an open source, federated social media platform. All Misskey servers running versions 8.45.0 and later, but prior to 2026.3.1, contain a vulnerability that allows bad actors access to data that they ordinarily wouldn't be able to access due to insufficient permission checks and proper inp",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/misskey-dev/misskey/security/advisories/GHSA-r33c-qg3g-v9cr"
+      ],
+      "published": "2026-03-10T07:43:35.600"
+    },
+    {
+      "id": "CVE-2026-28432",
+      "description": "Misskey is an open source, federated social media platform. All Misskey servers prior to 2026.3.1 contain a vulnerability that allows bypassing HTTP signature verification. Although this is a vulnerability related to federation, it affects all servers regardless of whether federation is enabled or d",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://github.com/misskey-dev/misskey/security/advisories/GHSA-grwc-c762-gcvp"
+      ],
+      "published": "2026-03-10T07:43:35.770"
+    },
+    {
+      "id": "CVE-2026-28433",
+      "description": "Misskey is an open source, federated social media platform. All Misskey servers running versions 10.93.0 and later, but prior to 2026.3.1, contain a vulnerability that allows importing other users' data due to lack of ownership validation. The impact of this vulnerability is estimated to be relative",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-639",
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/misskey-dev/misskey/security/advisories/GHSA-g6hj-33h7-6fq8"
+      ],
+      "published": "2026-03-10T07:43:35.907"
+    }
+  ]
+}
