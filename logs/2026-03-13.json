@@ -1,0 +1,301 @@
+{
+  "timestamp": "2026-03-13T04:22:27.484788+00:00",
+  "scan_id": "b2250cd3a5",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "MEDIUM": 20
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        20
+      ]
+    ],
+    "threat_index": 218.0,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 218.0,
+        "yesterday": 240.1,
+        "change_pct": -9.2
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-2569",
+      "description": "The Dear Flipbook \u2013 PDF Flipbook, 3D Flipbook, PDF embed, PDF viewer plugin for WordPress is vulnerable to Stored Cross-Site Scripting via PDF page labels in all versions up to, and including, 2.4.20 due to insufficient input sanitization and output escaping. This makes it possible for authenticated",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3473595/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/4d89a4ca-c867-43bf-aace-295de8533fcd?source=cve"
+      ],
+      "published": "2026-03-11T00:16:20.047"
+    },
+    {
+      "id": "CVE-2026-27223",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by an attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they browse to the page ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:51.440"
+    },
+    {
+      "id": "CVE-2026-27224",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by an attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they browse to the page ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:51.620"
+    },
+    {
+      "id": "CVE-2026-27225",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they brows",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:51.803"
+    },
+    {
+      "id": "CVE-2026-27226",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by an attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they browse to the page ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:51.967"
+    },
+    {
+      "id": "CVE-2026-27228",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they brows",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:52.137"
+    },
+    {
+      "id": "CVE-2026-27229",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by an attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they browse to the page ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:52.300"
+    },
+    {
+      "id": "CVE-2026-27230",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they brows",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:52.473"
+    },
+    {
+      "id": "CVE-2026-27231",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by an attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they browse to the page ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:52.637"
+    },
+    {
+      "id": "CVE-2026-27232",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they brows",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:52.813"
+    },
+    {
+      "id": "CVE-2026-27233",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they brows",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:52.977"
+    },
+    {
+      "id": "CVE-2026-27234",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by an attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they browse to the page ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:53.143"
+    },
+    {
+      "id": "CVE-2026-27235",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they brows",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:53.300"
+    },
+    {
+      "id": "CVE-2026-27236",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they brows",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:53.477"
+    },
+    {
+      "id": "CVE-2026-27237",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they brows",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:53.647"
+    },
+    {
+      "id": "CVE-2026-27239",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by an attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they browse to the page ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:53.827"
+    },
+    {
+      "id": "CVE-2026-27240",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they brows",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:53.997"
+    },
+    {
+      "id": "CVE-2026-27241",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they brows",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:54.163"
+    },
+    {
+      "id": "CVE-2026-27242",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they brows",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:54.343"
+    },
+    {
+      "id": "CVE-2026-27244",
+      "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim\u2019s browser when they brows",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://helpx.adobe.com/security/products/experience-manager/apsb26-24.html"
+      ],
+      "published": "2026-03-11T01:16:54.520"
+    }
+  ]
+}
