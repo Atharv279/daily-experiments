@@ -1,0 +1,354 @@
+{
+  "timestamp": "2026-03-14T04:20:39.500976+00:00",
+  "scan_id": "bd51f7ca6f",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 9,
+      "MEDIUM": 7,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-119",
+        6
+      ],
+      [
+        "CWE-121",
+        6
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-74",
+        2
+      ],
+      [
+        "CWE-59",
+        1
+      ]
+    ],
+    "threat_index": 310.4,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 310.4,
+        "yesterday": 218.0,
+        "change_pct": 42.4
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2023-43010",
+      "description": "The issue was addressed with improved memory handling. This issue is fixed in iOS 17.2 and iPadOS 17.2, macOS Sonoma 14.2, Safari 17.2, iOS 16.7.15 and iPadOS 16.7.15, iOS 15.8.7 and iPadOS 15.8.7. Processing maliciously crafted web content may lead to memory corruption.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/120300",
+        "https://support.apple.com/en-us/120877",
+        "https://support.apple.com/en-us/120879"
+      ],
+      "published": "2026-03-12T01:15:54.493"
+    },
+    {
+      "id": "CVE-2026-3970",
+      "description": "A flaw has been found in Tenda i3 1.0.0.6(2204). Affected is the function formwrlSSIDget of the file /goform/wifiSSIDget. Executing a manipulation of the argument index can lead to stack-based buffer overflow. The attack may be launched remotely. The exploit has been published and may be used.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Svigo-o/Tenda_vul/tree/main/tenda-i3-formwrlSSIDget-index-buffer-overflow",
+        "https://vuldb.com/?ctiid.350405",
+        "https://vuldb.com/?id.350405"
+      ],
+      "published": "2026-03-12T01:15:55.420"
+    },
+    {
+      "id": "CVE-2026-3971",
+      "description": "A vulnerability has been found in Tenda i3 1.0.0.6(2204). Affected by this vulnerability is the function formwrlSSIDset of the file /goform/wifiSSIDset. The manipulation of the argument index/GO leads to stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Svigo-o/Tenda_vul/tree/main/tenda-i3-formwrlSSIDset-go-buffer-overflow",
+        "https://github.com/Svigo-o/Tenda_vul/tree/main/tenda-i3-formwrlSSIDset-index-buffer-overflow",
+        "https://vuldb.com/?ctiid.350406"
+      ],
+      "published": "2026-03-12T01:15:55.650"
+    },
+    {
+      "id": "CVE-2026-3972",
+      "description": "A vulnerability was found in Tenda W3 1.0.0.3(2204). Affected by this issue is the function formSetCfm of the file /goform/setcfm of the component HTTP Handler. The manipulation of the argument funcpara1 results in stack-based buffer overflow. The attack can only be performed from the local network.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Svigo-o/Tenda_vul/tree/main/tenda-w3-setcfm-funcpara1-buffer-overflow",
+        "https://vuldb.com/?ctiid.350407",
+        "https://vuldb.com/?id.350407"
+      ],
+      "published": "2026-03-12T02:15:58.607"
+    },
+    {
+      "id": "CVE-2026-3973",
+      "description": "A vulnerability was determined in Tenda W3 1.0.0.3(2204). This affects the function formSetAutoPing of the file /goform/setAutoPing of the component POST Parameter Handler. This manipulation of the argument ping1/ping2 causes stack-based buffer overflow. The attack is possible to be carried out remo",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Svigo-o/Tenda_vul/tree/main/tenda-w3-setautoping-ping1-buffer-overflow",
+        "https://github.com/Svigo-o/Tenda_vul/tree/main/tenda-w3-setautoping-ping2-buffer-overflow",
+        "https://vuldb.com/?ctiid.350408"
+      ],
+      "published": "2026-03-12T02:15:58.817"
+    },
+    {
+      "id": "CVE-2026-3974",
+      "description": "A vulnerability was identified in Tenda W3 1.0.0.3(2204). This vulnerability affects the function formexeCommand of the file /goform/exeCommand of the component HTTP Handler. Such manipulation of the argument cmdinput leads to stack-based buffer overflow. The attack may be performed from remote. The",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Svigo-o/Tenda_vul/tree/main/tenda-w3-formexeCommand-cmdinput-buffer-overflow",
+        "https://vuldb.com/?ctiid.350409",
+        "https://vuldb.com/?id.350409"
+      ],
+      "published": "2026-03-12T03:15:58.120"
+    },
+    {
+      "id": "CVE-2026-3975",
+      "description": "A security flaw has been discovered in Tenda W3 1.0.0.3(2204). This issue affects the function formWifiMacFilterGet of the file /goform/WifiMacFilterGet of the component POST Parameter Handler. Performing a manipulation of the argument wl_radio results in stack-based buffer overflow. It is possible ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Svigo-o/Tenda_vul/tree/main/tenda-w3-formWifiMacFilterGet-index-buffer-overflow",
+        "https://vuldb.com/?ctiid.350410",
+        "https://vuldb.com/?id.350410"
+      ],
+      "published": "2026-03-12T03:15:58.523"
+    },
+    {
+      "id": "CVE-2026-3657",
+      "description": "The My Sticky Bar plugin for WordPress is vulnerable to SQL injection via the `stickymenu_contact_lead_form` AJAX action in all versions up to, and including, 2.8.6. This is due to the handler using attacker-controlled POST parameter names directly as SQL column identifiers in `$wpdb->insert()`. Whi",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/mystickymenu/tags/2.8.6/mystickymenu.php#L2001",
+        "https://plugins.trac.wordpress.org/browser/mystickymenu/tags/2.8.6/mystickymenu.php#L2386",
+        "https://plugins.trac.wordpress.org/browser/mystickymenu/tags/2.8.6/mystickymenu.php#L2396"
+      ],
+      "published": "2026-03-12T03:15:57.923"
+    },
+    {
+      "id": "CVE-2026-3969",
+      "description": "A vulnerability was detected in FeMiner wms up to 1.0. This impacts an unknown function of the file /wms-master/src/basic/depart/depart_add_bg.php of the component Basic Organizational Structure Module. Performing a manipulation of the argument Name results in sql injection. The attack may be initia",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/yuan384/cve/issues/3",
+        "https://vuldb.com/?ctiid.350404",
+        "https://vuldb.com/?id.350404"
+      ],
+      "published": "2026-03-12T01:15:55.203"
+    },
+    {
+      "id": "CVE-2026-2808",
+      "description": "HashiCorp Consul and Consul Enterprise 1.18.20 up to 1.21.10 and 1.22.4 are vulnerable to arbitrary file read when configured with Kubernetes authentication. This vulnerability, CVE-2026-2808, is fixed in Consul 1.18.21, 1.21.11 and 1.22.5.",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-59"
+      ],
+      "references": [
+        "https://discuss.hashicorp.com/t/hcsec-2026-02-consul-vulnerable-to-arbitrary-file-reads-through-the-vault-kubernetes-authentication-provider/77232"
+      ],
+      "published": "2026-03-12T00:16:11.770"
+    },
+    {
+      "id": "CVE-2026-3965",
+      "description": "A security vulnerability has been detected in whyour qinglong up to 2.20.1. Affected is an unknown function of the file back/loaders/express.ts of the component API Interface. The manipulation of the argument command leads to protection mechanism failure. The attack may be initiated remotely. The ex",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-693"
+      ],
+      "references": [
+        "https://github.com/A7cc/cve/issues/6",
+        "https://github.com/A7cc/cve/issues/6#issue-3999235307",
+        "https://github.com/whyour/qinglong/"
+      ],
+      "published": "2026-03-12T00:16:11.963"
+    },
+    {
+      "id": "CVE-2026-3966",
+      "description": "A vulnerability was detected in 648540858 wvp-GB28181-pro up to 2.7.4-20260107. Affected by this vulnerability is the function getDownloadFilePath of the file /src/main/java/com/genersoft/iot/vmp/media/abl/ABLMediaNodeServerService.java of the component IP Address Handler. The manipulation of the ar",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/AnalogyC0de/public_exp/issues/15",
+        "https://vuldb.com/?ctiid.350395",
+        "https://vuldb.com/?id.350395"
+      ],
+      "published": "2026-03-12T00:16:12.230"
+    },
+    {
+      "id": "CVE-2026-3967",
+      "description": "A flaw has been found in Alfresco Activiti up to 7.19/8.8.0. Affected by this issue is the function deserialize/createObjectInputStream of the file activiti-core/activiti-engine/src/main/java/org/activiti/engine/impl/variable/SerializableType.java of the component Process Variable Serialization Syst",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-20",
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/AnalogyC0de/public_exp/issues/16",
+        "https://vuldb.com/?ctiid.350396",
+        "https://vuldb.com/?id.350396"
+      ],
+      "published": "2026-03-12T00:16:12.477"
+    },
+    {
+      "id": "CVE-2026-3968",
+      "description": "A vulnerability has been found in AutohomeCorp frostmourne up to 1.0. This affects the function scriptEngine.eval of the file ExpressionRule.java of the component Oracle Nashorn JavaScript Engine. Such manipulation of the argument EXPRESSION leads to code injection. The attack can be executed remote",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/AnalogyC0de/public_exp/issues/17",
+        "https://vuldb.com/?ctiid.350397",
+        "https://vuldb.com/?id.350397"
+      ],
+      "published": "2026-03-12T01:15:54.990"
+    },
+    {
+      "id": "CVE-2026-1182",
+      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 8.14 before 18.7.6, 18.8 before 18.8.6, and 18.9 before 18.9.2 that could have allowed an authenticated user to gain unauthorized access to confidential issue title created in public projects under certain circumstances.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-212"
+      ],
+      "references": [
+        "https://gitlab.com/gitlab-org/gitlab/-/work_items/586613",
+        "https://hackerone.com/reports/3515716"
+      ],
+      "published": "2026-03-12T02:15:58.433"
+    },
+    {
+      "id": "CVE-2026-3226",
+      "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to unauthorized email notification triggering due to missing capability checks on all 10 functions in the SendEmailAjax class in all versions up to, and including, 4.3.2.8. The AbstractAjax::catch_lp_ajax() dispatcher verifies ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/learnpress/tags/4.3.2.7/inc/Ajax/AbstractAjax.php#L17",
+        "https://plugins.trac.wordpress.org/browser/learnpress/tags/4.3.2.7/inc/Ajax/SendEmailAjax.php#L40",
+        "https://plugins.trac.wordpress.org/browser/learnpress/tags/4.3.2.7/inc/class-lp-assets.php#L123"
+      ],
+      "published": "2026-03-12T03:15:57.740"
+    },
+    {
+      "id": "CVE-2025-59388",
+      "description": "A use of hard-coded password vulnerability has been reported to affect Hyper Data Protector. The remote attackers can then exploit the vulnerability to gain unauthorized access.\n\nWe have already fixed the vulnerability in the following version:\nHyper Data Protector 2.3.1.455 and later",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-259"
+      ],
+      "references": [
+        "https://www.qnap.com/en/security-advisory/qsa-25-48"
+      ],
+      "published": "2026-03-12T02:15:58.223"
+    },
+    {
+      "id": "CVE-2025-15037",
+      "description": "An Incorrect\nPermission Assignment vulnerability exists in the ASUS Business\nSystem Control Interface driver. This vulnerability can be triggered by an unprivileged local user sending a\nspecially crafted IOCTL request,\npotentially leading to unauthorized access to sensitive hardware resources\nand ke",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-732"
+      ],
+      "references": [
+        "https://www.asus.com/content/security-advisory/"
+      ],
+      "published": "2026-03-12T03:15:56.353"
+    },
+    {
+      "id": "CVE-2025-15038",
+      "description": "An Out-of-Bounds\nRead vulnerability exists in the ASUS Business System\nControl Interface driver. This vulnerability can be triggered by an unprivileged local  user\nsending a specially crafted IOCTL \u00a0request, potentially leading\nto a disclosure of\nkernel information or a system crash. Refer to the \"S",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://www.asus.com/content/security-advisory"
+      ],
+      "published": "2026-03-12T03:15:57.403"
+    },
+    {
+      "id": "CVE-2026-1878",
+      "description": "An Insufficient Integrity Verification vulnerability in the ASUS ROG peripheral driver installation process allows privilege escalation to SYSTEM. The vulnerability is due to improper access control on the installation directory, which enables the exploitation of a race condition where the legitimat",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-494"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory/"
+      ],
+      "published": "2026-03-12T03:15:57.570"
+    }
+  ]
+}
