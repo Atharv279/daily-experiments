@@ -1,0 +1,316 @@
+{
+  "timestamp": "2026-03-15T04:42:24.281124+00:00",
+  "scan_id": "6f2ed087c2",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 2,
+      "MEDIUM": 11,
+      "LOW": 2,
+      "UNKNOWN": 5
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        4
+      ],
+      [
+        "CWE-306",
+        3
+      ],
+      [
+        "CWE-294",
+        1
+      ],
+      [
+        "CWE-89",
+        1
+      ],
+      [
+        "CWE-276",
+        1
+      ]
+    ],
+    "threat_index": 184.2,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 184.2,
+        "yesterday": 310.4,
+        "change_pct": -40.7
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2025-13777",
+      "description": "Authentication bypass by capture-replay vulnerability in ABB AWIN GW100 rev.2, ABB AWIN GW120.This issue affects AWIN GW100 rev.2: 2.0-0, 2.0-1; AWIN GW120: 1.2-0, 1.2-1.",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-294"
+      ],
+      "references": [
+        "https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch"
+      ],
+      "published": "2026-03-13T19:53:49.073"
+    },
+    {
+      "id": "CVE-2025-13779",
+      "description": "Missing authentication for critical function vulnerability in ABB AWIN GW100 rev.2, ABB AWIN GW120.This issue affects AWIN GW100 rev.2: 2.0-0, 2.0-1; AWIN GW120: 1.2-0, 1.2-1.",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch"
+      ],
+      "published": "2026-03-13T19:53:49.480"
+    },
+    {
+      "id": "CVE-2025-13778",
+      "description": "Missing authentication for critical function vulnerability in ABB AWIN GW100 rev.2, ABB AWIN GW120.This issue affects AWIN GW100 rev.2: 2.0-0, 2.0-1; AWIN GW120: 1.2-0, 1.2-1.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://search.abb.com/library/Download.aspx?DocumentID=4JNO000329&LanguageCode=en&DocumentPartId=&Action=Launch"
+      ],
+      "published": "2026-03-13T19:53:49.283"
+    },
+    {
+      "id": "CVE-2025-36368",
+      "description": "IBM Sterling B2B Integrator and IBM Sterling File Gateway 6.1.0.0 through 6.1.2.7_2, 6.2.0.0 through 6.2.0.5_1, and 6.2.1.0 through 6.2.1.1_1 are vulnerable to SQL injection. An administrative user could send specially crafted SQL statements, which could allow the attacker to view, add, modify, or d",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7263324"
+      ],
+      "published": "2026-03-13T19:53:50.813"
+    },
+    {
+      "id": "CVE-2025-57849",
+      "description": "A container privilege escalation flaw was found in certain Fuse images. This issue stems from the /etc/passwd file being created with group-writable permissions during build time. In certain conditions, an attacker who can execute commands within an affected container, even as a non-root user, can l",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-276"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2025-57849",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2391100"
+      ],
+      "published": "2026-03-13T19:53:52.313"
+    },
+    {
+      "id": "CVE-2025-60012",
+      "description": "Malicious configuration can lead to unauthorized file access in Apache Livy.\n\nThis issue affects Apache Livy 0.7.0 and 0.8.0 when connecting to Apache\u00a0Spark 3.1 or later.\n\nA request that includes a Spark configuration value supported from Apache\u00a0Spark version 3.1 can lead to users gaining access to ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://lists.apache.org/thread/gpc85fwrgrbglpk9gm8tmcjzqnctx64w",
+        "http://www.openwall.com/lists/oss-security/2026/03/12/1"
+      ],
+      "published": "2026-03-13T19:53:52.530"
+    },
+    {
+      "id": "CVE-2025-66249",
+      "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Apache Livy.\n\nThis issue affects Apache Livy: from 0.3.0 before 0.9.0.\n\nThe vulnerability can only be exploited with non-default Apache Livy Server settings. If\u00a0the configuration value \"livy.file.local-di",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://lists.apache.org/thread/1xwphsfn4jbtym4k4o0zlvwfogwqwwc3",
+        "http://www.openwall.com/lists/oss-security/2026/03/12/2"
+      ],
+      "published": "2026-03-13T19:53:52.757"
+    },
+    {
+      "id": "CVE-2025-13702",
+      "description": "IBM Sterling Partner Engagement Manager 6.2.3.0 through 6.2.3.5 and 6.2.4.0 through 6.2.4.2 is vulnerable to cross-site scripting. This vulnerability allows an authenticated user to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credenti",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7263391"
+      ],
+      "published": "2026-03-13T19:53:48.300"
+    },
+    {
+      "id": "CVE-2023-40693",
+      "description": "IBM Sterling B2B Integrator\u00a0and IBM Sterling File Gateway\u00a06.1.0.0 through 6.1.2.7_2, and 6.2.0.0 through 6.2.0.5_1, 6.2.1.0 through 6.2.1.1_1 are\u00a0vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functional",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7263329"
+      ],
+      "published": "2026-03-13T19:53:45.237"
+    },
+    {
+      "id": "CVE-2025-14504",
+      "description": "IBM Sterling B2B Integrator and IBM Sterling File Gateway 6.1.0.0 through 6.1.2.7_2, 6.2.0.0 through 6.2.0.5_1, 6.2.1.0 through 6.2.1.1_1, and 6.2.2.0 is vulnerable to cross-site scripting. This vulnerability allows an authenticated user to embed arbitrary JavaScript code in the Web UI thus altering",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7263327"
+      ],
+      "published": "2026-03-13T19:53:50.133"
+    },
+    {
+      "id": "CVE-2025-13723",
+      "description": "IBM Sterling Partner Engagement Manager 6.2.3.0 through 6.2.3.5 and 6.2.4.0 through 6.2.4.2 could allow an attacker to obtain sensitive user information using an expired access token",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-324"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7263391"
+      ],
+      "published": "2026-03-13T19:53:48.673"
+    },
+    {
+      "id": "CVE-2025-13726",
+      "description": "IBM Sterling Partner Engagement Manager 6.2.3.0 through 6.2.3.5 and 6.2.4.0 through 6.2.4.2 could allow a remote attacker to obtain sensitive information when detailed technical error messages are returned. This information could be used in further attacks against the system.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-209"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7263391"
+      ],
+      "published": "2026-03-13T19:53:48.870"
+    },
+    {
+      "id": "CVE-2025-14483",
+      "description": "IBM Sterling B2B Integrator\u00a0and IBM Sterling File Gateway\u00a06.1.0.0 through 6.1.2.7_2, 6.2.0.0 through 6.2.0.5_1, 6.2.1.0 through 6.2.1.1_1, and 6.2.2.0 could disclose sensitive host information to authenticated users in responses that could be used in further attacks against the system.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-201"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7263329"
+      ],
+      "published": "2026-03-13T19:53:49.933"
+    },
+    {
+      "id": "CVE-2025-13718",
+      "description": "IBM Sterling Partner Engagement Manager 6.2.3.0 through 6.2.3.5 and 6.2.4.0 through 6.2.4.2 could allow a remote attacker to obtain sensitive information in cleartext in a communication channel that can be sniffed by unauthorized actors.",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-319"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7263391"
+      ],
+      "published": "2026-03-13T19:53:48.473"
+    },
+    {
+      "id": "CVE-2025-14811",
+      "description": "IBM Sterling Partner Engagement Manager 6.2.3.0 through 6.2.3.5 and 6.2.4.0 through 6.2.4.2 could allow an attacker to obtain sensitive information from the query string of an HTTP GET method to process a request which could be obtained using man in the middle techniques.",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-598"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7263391"
+      ],
+      "published": "2026-03-13T19:53:50.353"
+    },
+    {
+      "id": "CVE-2025-12453",
+      "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in OpenText\u2122 Vertica allows Reflected XSS.\u00a0\nThe vulnerability could lead to Reflected XSS attack of cross-site scripting in Vertica management console application.This issue affects Vertica: from 10.0 ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://portal.microfocus.com/s/article/KM000045852?language=en_US"
+      ],
+      "published": "2026-03-13T19:53:47.427"
+    },
+    {
+      "id": "CVE-2025-12454",
+      "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in OpenText\u2122 Vertica allows Reflected XSS.\u00a0\nThe vulnerability could lead to Reflected XSS attack of cross-site scripting in Vertica management console application.This issue affects Vertica: from 10.0 ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://portal.microfocus.com/s/article/KM000045853?language=en_US"
+      ],
+      "published": "2026-03-13T19:53:47.667"
+    },
+    {
+      "id": "CVE-2025-12455",
+      "description": "Observable response discrepancy vulnerability in OpenText\u2122 Vertica allows Password Brute Forcing.\u00a0\u00a0\nThe vulnerability could lead to Password Brute Forcing in Vertica management console application.This issue affects Vertica: from 10.0 through 10.X, from 11.0 through 11.X, from 12.0 through 12.X.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-204"
+      ],
+      "references": [
+        "https://portal.microfocus.com/s/article/KM000045854?language=en_US"
+      ],
+      "published": "2026-03-13T19:53:47.873"
+    },
+    {
+      "id": "CVE-2025-13337",
+      "description": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-03-13T19:53:48.057"
+    },
+    {
+      "id": "CVE-2025-15515",
+      "description": "The authentication mechanism for a specific feature in the EasyShare module contains a vulnerability. If specific conditions are met on a local network, it can cause data leakage",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://www.vivo.com/en/support/security-advisory-detail?id=21"
+      ],
+      "published": "2026-03-13T19:53:50.557"
+    }
+  ]
+}
