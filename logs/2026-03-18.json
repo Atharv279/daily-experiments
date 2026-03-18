@@ -1,0 +1,358 @@
+{
+  "timestamp": "2026-03-18T04:33:57.761403+00:00",
+  "scan_id": "c529747055",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 3,
+      "HIGH": 7,
+      "MEDIUM": 10
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        9
+      ],
+      [
+        "CWE-352",
+        3
+      ],
+      [
+        "CWE-798",
+        2
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-538",
+        1
+      ]
+    ],
+    "threat_index": 393.7,
+    "critical_count": 3
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 393.7,
+        "yesterday": 393.7,
+        "change_pct": 0.0
+      },
+      "critical_count": {
+        "today": 3,
+        "yesterday": 3,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2016-20024",
+      "description": "ZKTeco ZKTime.Net 3.0.1.6 contains an insecure file permissions vulnerability that allows unprivileged users to escalate privileges by modifying executable files. Attackers can exploit world-writable permissions on the ZKTimeNet3.0 directory and its contents to replace executable files with maliciou",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-538"
+      ],
+      "references": [
+        "https://cxsecurity.com/issue/WLB-2016080264",
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/116487",
+        "https://packetstormsecurity.com/files/138565"
+      ],
+      "published": "2026-03-16T14:17:48.350"
+    },
+    {
+      "id": "CVE-2016-20026",
+      "description": "ZKTeco ZKBioSecurity 3.0 contains hardcoded credentials in the bundled Apache Tomcat server that allow unauthenticated attackers to access the manager application. Attackers can authenticate with hardcoded credentials stored in tomcat-users.xml to upload malicious WAR archives containing JSP applica",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-798"
+      ],
+      "references": [
+        "https://cxsecurity.com/issue/WLB-2016080266",
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/116484",
+        "https://packetstormsecurity.com/files/138567"
+      ],
+      "published": "2026-03-16T14:17:48.777"
+    },
+    {
+      "id": "CVE-2016-20030",
+      "description": "ZKTeco ZKBioSecurity 3.0 contains a user enumeration vulnerability that allows unauthenticated attackers to discover valid usernames by submitting partial characters via the username parameter. Attackers can send requests to the authLoginAction!login.do script with varying username inputs to enumera",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-551"
+      ],
+      "references": [
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/116485",
+        "https://packetstormsecurity.com/files/138573",
+        "https://www.vulncheck.com/advisories/zkteco-zkbiosecurity-user-enumeration-via-authloginaction"
+      ],
+      "published": "2026-03-16T14:17:49.727"
+    },
+    {
+      "id": "CVE-2016-20025",
+      "description": "ZKTeco ZKAccess Professional 3.5.3 contains an insecure file permissions vulnerability that allows authenticated users to escalate privileges by modifying executable files. Attackers can leverage the Modify permission granted to the Authenticated Users group to replace executable binaries with malic",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-552"
+      ],
+      "references": [
+        "https://cxsecurity.com/issue/WLB-2016080265",
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/116486",
+        "https://packetstormsecurity.com/files/138566"
+      ],
+      "published": "2026-03-16T14:17:48.573"
+    },
+    {
+      "id": "CVE-2015-20120",
+      "description": "Next Click Ventures RealtyScript 4.0.2 contains multiple time-based blind SQL injection vulnerabilities that allow unauthenticated attackers to extract database information by injecting SQL code into application parameters. Attackers can craft requests with time-delay payloads to infer database cont",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/38497",
+        "https://www.vulncheck.com/advisories/realtyscript-multiple-time-based-blind-sql-injection",
+        "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2015-5270.php"
+      ],
+      "published": "2026-03-16T14:17:47.957"
+    },
+    {
+      "id": "CVE-2015-20121",
+      "description": "Next Click Ventures RealtyScript 4.0.2 contains SQL injection vulnerabilities that allow unauthenticated attackers to manipulate database queries by injecting arbitrary SQL code through the GET parameter 'u_id' in /admin/users.php and the POST parameter 'agent[]' in /admin/mailer.php. Attackers can ",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "http://www.zeroscience.mk/en/vulnerabilities/ZSL-2015-5270.php",
+        "https://www.exploit-db.com/exploits/38497",
+        "https://www.vulncheck.com/advisories/realtyscript-sql-injection-via-u-id-and-agent-parameters"
+      ],
+      "published": "2026-03-16T14:17:48.160"
+    },
+    {
+      "id": "CVE-2013-20006",
+      "description": "Qool CMS contains multiple persistent cross-site scripting vulnerabilities in several administrative scripts where POST parameters are not properly sanitized before being stored and returned to users. Attackers can inject malicious JavaScript code through parameters like 'title', 'name', 'email', 'u",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "http://www.zeroscience.mk/en/vulnerabilities/ZSL-2013-5133.php",
+        "https://www.exploit-db.com/exploits/24627",
+        "https://www.vulncheck.com/advisories/qool-cms-multiple-persistent-cross-site-scripting-vulnerabilities"
+      ],
+      "published": "2026-03-16T14:17:46.170"
+    },
+    {
+      "id": "CVE-2015-20115",
+      "description": "Next Click Ventures RealtyScript 4.0.2 fails to properly sanitize file uploads, allowing attackers to store malicious scripts through the file POST parameter in admin/tools.php. Attackers can upload files containing JavaScript code that executes in the context of admin/tools.php when accessed by oth",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/38496",
+        "https://www.vulncheck.com/advisories/realtyscript-stored-cross-site-scripting-via-file-upload-parameter",
+        "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2015-5269.php"
+      ],
+      "published": "2026-03-16T14:17:46.883"
+    },
+    {
+      "id": "CVE-2015-20118",
+      "description": "Next Click Ventures RealtyScript 4.0.2 contains a stored cross-site scripting vulnerability in the location_name parameter of the admin locations interface. Attackers can submit POST requests to the locations.php endpoint with JavaScript payloads in the location_name field to execute arbitrary code ",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/38496",
+        "https://www.vulncheck.com/advisories/realtyscript-stored-cross-site-scripting-via-location-name-parameter",
+        "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2015-5269.php"
+      ],
+      "published": "2026-03-16T14:17:47.450"
+    },
+    {
+      "id": "CVE-2016-20032",
+      "description": "ZKTeco ZKAccess Security System 5.3.1 contains a stored cross-site scripting vulnerability that allows attackers to execute arbitrary HTML and script code by injecting malicious payloads through the 'holiday_name' and 'memo' POST parameters. Attackers can submit crafted requests with script code in ",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://cxsecurity.com/issue/WLB-2016090004",
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/116479",
+        "https://packetstormsecurity.com/files/138572"
+      ],
+      "published": "2026-03-16T14:17:50.097"
+    },
+    {
+      "id": "CVE-2015-20119",
+      "description": "Next Click Ventures RealtyScript 4.0.2 contains a stored cross-site scripting vulnerability that allows authenticated attackers to inject malicious HTML and iframe elements through the text parameter in the pages.php admin interface. Attackers can submit POST requests to the add page action with cra",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/38496",
+        "https://www.vulncheck.com/advisories/realtyscript-stored-cross-site-scripting-via-text-parameter-in-pages-php",
+        "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2015-5269.php"
+      ],
+      "published": "2026-03-16T14:17:47.680"
+    },
+    {
+      "id": "CVE-2016-20029",
+      "description": "ZKTeco ZKBioSecurity 3.0 contains a file path manipulation vulnerability that allows attackers to access arbitrary files by modifying file paths used to retrieve local resources. Attackers can manipulate path parameters to bypass access controls and retrieve sensitive information including configura",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-276"
+      ],
+      "references": [
+        "https://cxsecurity.com/issue/WLB-2016090001",
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/116489",
+        "https://packetstormsecurity.com/files/138570"
+      ],
+      "published": "2026-03-16T14:17:49.527"
+    },
+    {
+      "id": "CVE-2015-20114",
+      "description": "Next Click Ventures RealtyScript 4.0.2 contains a cross-site scripting vulnerability that allows attackers to execute arbitrary HTML and script code by injecting malicious input through multiple parameters that are not properly sanitized. Attackers can craft requests with injected script payloads in",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "http://www.zeroscience.mk/en/vulnerabilities/ZSL-2015-5269.php",
+        "https://www.exploit-db.com/exploits/38496",
+        "https://www.vulncheck.com/advisories/realtyscript-cross-site-scripting-via-multiple-parameters"
+      ],
+      "published": "2026-03-16T14:17:46.690"
+    },
+    {
+      "id": "CVE-2015-20116",
+      "description": "Next Click Ventures RealtyScript 4.0.2 fails to properly sanitize CSV file uploads, allowing attackers to inject malicious scripts through filename parameters in multipart form data. Attackers can upload files with XSS payloads in the filename field to execute arbitrary JavaScript in users' browsers",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/38496",
+        "https://www.vulncheck.com/advisories/realtyscript-stored-cross-site-scripting-via-csv-file-upload-filename",
+        "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2015-5269.php"
+      ],
+      "published": "2026-03-16T14:17:47.077"
+    },
+    {
+      "id": "CVE-2016-20027",
+      "description": "ZKTeco ZKBioSecurity 3.0 contains multiple reflected cross-site scripting vulnerabilities that allow attackers to execute arbitrary HTML and script code by injecting malicious payloads through unsanitized parameters in multiple scripts. Attackers can craft malicious URLs with XSS payloads in vulnera",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://cxsecurity.com/issue/WLB-2016080267",
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/116476",
+        "https://packetstormsecurity.com/files/138568"
+      ],
+      "published": "2026-03-16T14:17:49.117"
+    },
+    {
+      "id": "CVE-2016-20031",
+      "description": "ZKTeco ZKBioSecurity 3.0 contains a local authorization bypass vulnerability in visLogin.jsp that allows attackers to authenticate without valid credentials by spoofing localhost requests. Attackers can exploit the EnvironmentUtil.getClientIp() method which treats IPv6 loopback address 0:0:0:0:0:0:0",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-798"
+      ],
+      "references": [
+        "https://cxsecurity.com/issue/WLB-2016090003",
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/116488",
+        "https://packetstormsecurity.com/files/138571"
+      ],
+      "published": "2026-03-16T14:17:49.920"
+    },
+    {
+      "id": "CVE-2013-20005",
+      "description": "Qool CMS 2.0 RC2 contains a cross-site request forgery vulnerability that allows attackers to perform administrative actions by tricking logged-in users into visiting malicious web pages. Attackers can forge POST requests to the /admin/adduser endpoint with parameters like username, password, email,",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "http://www.zeroscience.mk/en/vulnerabilities/ZSL-2013-5134.php",
+        "https://www.exploit-db.com/exploits/24627",
+        "https://www.vulncheck.com/advisories/qool-cms-rc2-cross-site-request-forgery-via-adduser"
+      ],
+      "published": "2026-03-16T14:17:44.710"
+    },
+    {
+      "id": "CVE-2015-20113",
+      "description": "Next Click Ventures RealtyScript 4.0.2 contains cross-site request forgery and persistent cross-site scripting vulnerabilities that allow attackers to perform administrative actions and inject malicious scripts. Attackers can craft malicious web pages that execute unauthorized actions when logged-in",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/38496",
+        "https://www.vulncheck.com/advisories/realtyscript-multiple-cross-site-request-forgery",
+        "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2015-5269.php"
+      ],
+      "published": "2026-03-16T14:17:46.370"
+    },
+    {
+      "id": "CVE-2015-20117",
+      "description": "Next Click Ventures RealtyScript 4.0.2 contains a cross-site request forgery vulnerability that allows unauthenticated attackers to create unauthorized user accounts and administrative users by crafting malicious forms. Attackers can submit hidden form data to /admin/addusers.php and /admin/editadmi",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/38496",
+        "https://www.vulncheck.com/advisories/realtyscript-cross-site-request-forgery-unauthorized-user-creation",
+        "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2015-5269.php"
+      ],
+      "published": "2026-03-16T14:17:47.260"
+    },
+    {
+      "id": "CVE-2016-20028",
+      "description": "ZKTeco ZKBioSecurity 3.0 contains a cross-site request forgery vulnerability that allows attackers to perform administrative actions by tricking logged-in users into visiting malicious websites. Attackers can craft HTTP requests that add superadmin accounts without validity checks, enabling unauthor",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://cxsecurity.com/issue/WLB-2016080268",
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/116477",
+        "https://packetstormsecurity.com/files/138569"
+      ],
+      "published": "2026-03-16T14:17:49.333"
+    }
+  ]
+}
