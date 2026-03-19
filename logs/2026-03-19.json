@@ -1,0 +1,349 @@
+{
+  "timestamp": "2026-03-19T04:32:58.832242+00:00",
+  "scan_id": "07459d29a2",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 6,
+      "MEDIUM": 4,
+      "LOW": 3,
+      "UNKNOWN": 6
+    },
+    "top_cwes": [
+      [
+        "CWE-89",
+        4
+      ],
+      [
+        "CWE-74",
+        3
+      ],
+      [
+        "CWE-862",
+        3
+      ],
+      [
+        "CWE-22",
+        2
+      ],
+      [
+        "CWE-306",
+        1
+      ]
+    ],
+    "threat_index": 227.7,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 227.7,
+        "yesterday": 393.7,
+        "change_pct": -42.2
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 3,
+        "change_pct": -66.7
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-4312",
+      "description": "GCB/FCB Audit Software developed by DrangSoft has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to directly access certain APIs to create a new administrative account.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://www.twcert.org.tw/en/cp-139-10785-2cafe-2.html",
+        "https://www.twcert.org.tw/tw/cp-132-10784-4f67d-1.html"
+      ],
+      "published": "2026-03-17T08:15:57.417"
+    },
+    {
+      "id": "CVE-2026-0708",
+      "description": "A flaw was found in libucl. A remote attacker could exploit this by providing a specially crafted Universal Configuration Language (UCL) input that contains a key with an embedded null byte. This can cause a segmentation fault (SEGV fault) in the `ucl_object_emit` function when parsing and emitting ",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-0708",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2427770",
+        "https://github.com/vstakhov/libucl/issues/323"
+      ],
+      "published": "2026-03-17T04:16:07.750"
+    },
+    {
+      "id": "CVE-2026-2579",
+      "description": "The WowStore \u2013 Store Builder & Product Blocks for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the \u2018search\u2019 parameter in all versions up to, and including, 4.4.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/product-blocks/tags/4.4.0/classes/Functions.php#L2577",
+        "https://plugins.trac.wordpress.org/browser/product-blocks/tags/4.4.0/classes/REST_API.php#L116",
+        "https://plugins.trac.wordpress.org/browser/product-blocks/tags/4.4.0/classes/REST_API.php#L859"
+      ],
+      "published": "2026-03-17T02:16:13.860"
+    },
+    {
+      "id": "CVE-2026-4258",
+      "description": "All versions of the package sjcl are vulnerable to Improper Verification of Cryptographic Signature due to missing point-on-curve validation in sjcl.ecc.basicKey.publicKey(). An attacker can recover a victim's ECDH private key by sending crafted off-curve public keys and observing ECDH outputs. The ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-347",
+        "CWE-325"
+      ],
+      "references": [
+        "https://gist.github.com/Kr0emer/2560f98edb10b0b34f2438cd63913c47",
+        "https://github.com/bitwiseshiftleft/sjcl/blob/master/core/ecc.js%23L454-L461",
+        "https://github.com/bitwiseshiftleft/sjcl/commit/ee307459972442a17beebc29dc331fffd8aff796"
+      ],
+      "published": "2026-03-17T06:16:18.590"
+    },
+    {
+      "id": "CVE-2026-4287",
+      "description": "A security flaw has been discovered in Tiandy Easy7 Integrated Management Platform 7.17.0. The affected element is an unknown function of the file /rest/devStatus/queryResources of the component Endpoint. Performing a manipulation of the argument areaId results in sql injection. The attack can be in",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://my.feishu.cn/docx/F68OduQq8oI2MdxmjHlch8u5n8f?from=from_copylink",
+        "https://vuldb.com/?ctiid.351292",
+        "https://vuldb.com/?id.351292"
+      ],
+      "published": "2026-03-17T00:16:19.493"
+    },
+    {
+      "id": "CVE-2026-4288",
+      "description": "A weakness has been identified in Tiandy Easy7 Integrated Management Platform 7.17.0. The impacted element is an unknown function of the file /rest/devStatus/getDevDetailedInfo of the component Endpoint. Executing a manipulation of the argument ID can lead to sql injection. The attack can be launche",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://my.feishu.cn/docx/LgjudozCFo9rVTx57hJcDyk0nXd?from=from_copylink",
+        "https://vuldb.com/?ctiid.351293",
+        "https://vuldb.com/?id.351293"
+      ],
+      "published": "2026-03-17T00:16:19.700"
+    },
+    {
+      "id": "CVE-2026-4289",
+      "description": "A security vulnerability has been detected in Tiandy Easy7 Integrated Management Platform up to 7.17.0. This affects an unknown function of the file /rest/preSetTemplate/getRecByTemplateId. The manipulation of the argument ID leads to sql injection. The attack may be initiated remotely. The exploit ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://my.feishu.cn/docx/UmmudBVvYoMwpIxUtTicjsS8nDe?from=from_copylink",
+        "https://vuldb.com/?ctiid.351294",
+        "https://vuldb.com/?id.351294"
+      ],
+      "published": "2026-03-17T00:16:19.910"
+    },
+    {
+      "id": "CVE-2026-4308",
+      "description": "A weakness has been identified in frdel/agent0ai agent-zero 0.9.7. This affects the function handle_pdf_document of the file python/helpers/document_query.py. This manipulation causes server-side request forgery. The attack is possible to be carried out remotely. The exploit has been made available ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/c99c44aa019266a72636757308d43989",
+        "https://gist.github.com/YLChen-007/c99c44aa019266a72636757308d43989#poc",
+        "https://vuldb.com/?ctiid.351338"
+      ],
+      "published": "2026-03-17T04:16:24.207"
+    },
+    {
+      "id": "CVE-2026-2373",
+      "description": "The Royal Addons for Elementor \u2013 Addons and Templates Kit for Elementor plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 1.7.1049 via the get_main_query_args() function due to insufficient restrictions on which posts can be included. This makes it poss",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3475656/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/c4192a7f-b962-46f9-a524-7271ed6f4917?source=cve"
+      ],
+      "published": "2026-03-17T04:16:14.730"
+    },
+    {
+      "id": "CVE-2026-32586",
+      "description": "Missing Authorization vulnerability in Pluggabl Booster for WooCommerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Booster for WooCommerce: from n/a before 7.11.3.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://patchstack.com/database/wordpress/plugin/woocommerce-jetpack/vulnerability/wordpress-booster-for-woocommerce-plugin-7-11-3-broken-access-control-vulnerability?_s_id=cve"
+      ],
+      "published": "2026-03-17T09:16:14.440"
+    },
+    {
+      "id": "CVE-2026-4307",
+      "description": "A security flaw has been discovered in frdel/agent0ai agent-zero 0.9.7-10. The impacted element is the function get_abs_path of the file python/helpers/files.py. The manipulation results in path traversal. The attack can be executed remotely. The exploit has been released to the public and may be us",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/1819c843ad26aaaaecdc768a789df022",
+        "https://vuldb.com/?ctiid.351337",
+        "https://vuldb.com/?id.351337"
+      ],
+      "published": "2026-03-17T04:16:22.377"
+    },
+    {
+      "id": "CVE-2026-3632",
+      "description": "A flaw was found in libsoup, a library used by applications to send network requests. This vulnerability occurs because libsoup does not properly validate hostnames, allowing special characters to be injected into HTTP headers. A remote attacker could exploit this to perform HTTP smuggling, where th",
+      "severity": "LOW",
+      "score": 3.9,
+      "cwes": [
+        "CWE-1286"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-3632",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2445127",
+        "https://gitlab.gnome.org/GNOME/libsoup/-/issues/483"
+      ],
+      "published": "2026-03-17T10:16:00.297"
+    },
+    {
+      "id": "CVE-2026-3633",
+      "description": "A flaw was found in libsoup. A remote attacker, by controlling the method parameter of the `soup_message_new()` function, could inject arbitrary headers and additional request data. This vulnerability, known as CRLF (Carriage Return Line Feed) injection, occurs because the method value is not proper",
+      "severity": "LOW",
+      "score": 3.9,
+      "cwes": [
+        "CWE-93"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-3633",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2445128",
+        "https://gitlab.gnome.org/GNOME/libsoup/-/issues/484"
+      ],
+      "published": "2026-03-17T10:16:00.677"
+    },
+    {
+      "id": "CVE-2026-4285",
+      "description": "A vulnerability was identified in taoofagi easegen-admin up to 8f87936ac774065b92fb20aab55b274a6ea76433. Impacted is the function recognizeMarkdown of the file yudao-module-digitalcourse/yudao-module-digitalcourse-biz/src/main/java/cn/iocoder/yudao/module/digitalcourse/util/Pdf2MdUtil.java. Such man",
+      "severity": "LOW",
+      "score": 2.7,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://fx4tqqfvdw4.feishu.cn/docx/KezQdqzVGoTVj9x8SH1c9dNvnOg?from=from_copylink",
+        "https://vuldb.com/?ctiid.351291",
+        "https://vuldb.com/?id.351291"
+      ],
+      "published": "2026-03-17T00:16:19.280"
+    },
+    {
+      "id": "CVE-2026-3237",
+      "description": "In affected versions of Octopus Server it was possible for a low privileged user to manipulate an API request to change the signing key expiration and revocation time frames via an API endpoint that had incorrect permission validation. It was not possible to expose the signing keys using this vulner",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://advisories.octopus.com/post/2026/sa2026-03"
+      ],
+      "published": "2026-03-17T07:16:03.610"
+    },
+    {
+      "id": "CVE-2026-1323",
+      "description": "The extension fails to properly define allowed classes used when deserializing transport failure metadata. An attacker may exploit this to execute untrusted serialized code. Note that an active exploit requires write access to the directory configured at $GLOBALS['TYPO3_CONF_VARS']['MAIL']['transpor",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://typo3.org/security/advisory/typo3-ext-sa-2026-005"
+      ],
+      "published": "2026-03-17T09:16:13.507"
+    },
+    {
+      "id": "CVE-2026-4202",
+      "description": "The extension fails to verify, if an authenticated user has permissions to access to redirects resulting in exposure of redirect records when editing a page.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-200",
+        "CWE-862"
+      ],
+      "references": [
+        "https://typo3.org/security/advisory/typo3-ext-sa-2026-006"
+      ],
+      "published": "2026-03-17T09:16:14.627"
+    },
+    {
+      "id": "CVE-2026-4208",
+      "description": "The extension fails to properly reset the generated MFA code after successful authentication. This leads to a possible MFA bypass for future login attempts by providing an empty string as MFA code to the extensions MFA provider.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://typo3.org/security/advisory/typo3-ext-sa-2026-007"
+      ],
+      "published": "2026-03-17T09:16:14.810"
+    },
+    {
+      "id": "CVE-2025-71239",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naudit: add fchmodat2() to change attributes class\n\nfchmodat2(), introduced in version 6.6 is currently not in the change\nattribute class of audit. Calling fchmodat2() to change a file\nattribute in the same fashion than chmod() or f",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/3e762a03713e8c25ca0108c075d662c897fc0623",
+        "https://git.kernel.org/stable/c/4f493a6079b588cf1f04ce5ed6cdad45ab0d53dc",
+        "https://git.kernel.org/stable/c/4fed776ca86378da7dd743a7b648e20b025ba8ef"
+      ],
+      "published": "2026-03-17T10:15:59.010"
+    },
+    {
+      "id": "CVE-2026-23241",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naudit: add missing syscalls to read class\n\nThe \"at\" variant of getxattr() and listxattr() are missing from the\naudit read class. Calling getxattrat() or listxattrat() on a file to\nread its extended attributes will bypass audit rule",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/a2e8c144299c31d3972295ed80d4cb908daf4f6f",
+        "https://git.kernel.org/stable/c/ad37505ce869a8100ff23f24eea117de7a7516bf",
+        "https://git.kernel.org/stable/c/bcb90a2834c7393c26df9609b889a3097b7700cd"
+      ],
+      "published": "2026-03-17T10:16:00.127"
+    }
+  ]
+}
