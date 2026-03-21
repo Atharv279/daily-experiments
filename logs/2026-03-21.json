@@ -1,0 +1,354 @@
+{
+  "timestamp": "2026-03-21T04:15:42.183386+00:00",
+  "scan_id": "de7b6048ad",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 7,
+      "MEDIUM": 11,
+      "LOW": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-78",
+        7
+      ],
+      [
+        "CWE-918",
+        2
+      ],
+      [
+        "CWE-184",
+        2
+      ],
+      [
+        "CWE-863",
+        2
+      ],
+      [
+        "CWE-367",
+        2
+      ]
+    ],
+    "threat_index": 290.5,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 290.5,
+        "yesterday": 258.7,
+        "change_pct": 12.3
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-32255",
+      "description": "Kan is an open-source project management tool. In versions 0.5.4 and below, the /api/download/attatchment endpoint has no authentication and no URL validation. The Attachment Download endpoint accepts a user-supplied URL query parameter and passes it directly to fetch() server-side, and returns the ",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/kanbn/kan/commit/53397d8e81dc1494d94132848c1f0416f1152bd7",
+        "https://github.com/kanbn/kan/releases/tag/v0.5.5",
+        "https://github.com/kanbn/kan/security/advisories/GHSA-qrx8-9hc6-jvqg"
+      ],
+      "published": "2026-03-19T00:16:18.003"
+    },
+    {
+      "id": "CVE-2026-28461",
+      "description": "OpenClaw versions prior to 2026.3.1 contain an unbounded memory growth vulnerability in the Zalo webhook endpoint that allows unauthenticated attackers to trigger in-memory key accumulation by varying query strings. Remote attackers can exploit this by sending repeated requests with different query ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-wr6m-jg37-68xh",
+        "https://www.vulncheck.com/advisories/openclaw-unbounded-memory-growth-in-zalo-webhook-via-query-string-key-churn"
+      ],
+      "published": "2026-03-19T02:16:02.810"
+    },
+    {
+      "id": "CVE-2026-31989",
+      "description": "OpenClaw versions prior to 2026.3.1 contain a server-side request forgery vulnerability in web_search citation redirect resolution that uses a private-network-allowing SSRF policy. An attacker who can influence citation redirect targets can trigger internal-network requests from the OpenClaw host to",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-g99v-8hwm-g76g",
+        "https://www.vulncheck.com/advisories/openclaw-server-side-request-forgery-via-web-search-citation-redirect"
+      ],
+      "published": "2026-03-19T02:16:03.430"
+    },
+    {
+      "id": "CVE-2026-27566",
+      "description": "OpenClaw versions prior to 2026.2.22 contain an allowlist bypass vulnerability in system.run exec analysis that fails to unwrap env and shell-dispatch wrapper chains. Attackers can route execution through wrapper binaries like env bash to smuggle payloads that satisfy allowlist entries while executi",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/2b63592be57782c8946e521bc81286933f0f99c7",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-jj82-76v6-933r",
+        "https://www.vulncheck.com/advisories/openclaw-allowlist-bypass-via-wrapper-binary-unwrapping-in-system-run"
+      ],
+      "published": "2026-03-19T02:16:01.967"
+    },
+    {
+      "id": "CVE-2026-31992",
+      "description": "OpenClaw versions prior to 2026.2.23 contain an allowlist bypass vulnerability in system.run guardrails that allows authenticated operators to execute unintended commands. When /usr/bin/env is allowlisted, attackers can use env -S to bypass policy analysis and execute shell wrapper payloads at runti",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-184"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/3f923e831364d83d0f23499ee49961de334cf58b",
+        "https://github.com/openclaw/openclaw/commit/a1c4bf07c6baad3ef87a0e710fe9aef127b1f606",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-48wf-g7cp-gr3m"
+      ],
+      "published": "2026-03-19T02:16:04.070"
+    },
+    {
+      "id": "CVE-2026-31994",
+      "description": "OpenClaw versions prior to 2026.2.19 contain a local command injection vulnerability in Windows scheduled task script generation due to unsafe handling of cmd metacharacters and expansion-sensitive characters in gateway.cmd files. Local attackers with control over service script generation arguments",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/280c6b117b2f0e24f398e5219048cd4cc3b82396",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-mqr9-vqhq-3jxw",
+        "https://www.vulncheck.com/advisories/openclaw-local-command-injection-via-unsafe-cmd-argument-handling-in-windows-scheduled-task"
+      ],
+      "published": "2026-03-19T02:16:04.493"
+    },
+    {
+      "id": "CVE-2026-31998",
+      "description": "OpenClaw versions 2026.2.22 and 2026.2.23 contain an authorization bypass vulnerability in the synology-chat channel plugin where dmPolicy set to allowlist with empty allowedUserIds fails open. Attackers with Synology sender access can bypass authorization checks and trigger unauthorized agent dispa",
+      "severity": "HIGH",
+      "score": 7.0,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/0ee30361b8f6ef3f110f3a7b001da6dd3df96bb5",
+        "https://github.com/openclaw/openclaw/commit/7655c0cb3a47d0647cbbf5284e177f90b4b82ddb",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-gw85-xp4q-5gp9"
+      ],
+      "published": "2026-03-19T02:16:05.347"
+    },
+    {
+      "id": "CVE-2026-29608",
+      "description": "OpenClaw 2026.3.1 contains an approval integrity vulnerability in system.run node-host execution where argv rewriting changes command semantics. Attackers can place malicious local scripts in the working directory to execute unintended code despite operator approval of different command text.",
+      "severity": "MEDIUM",
+      "score": 6.7,
+      "cwes": [
+        "CWE-88"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/dded569626b0d8e7bdab10b5e7528b6caf73a0f1",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-h3rm-6x7g-882f",
+        "https://www.vulncheck.com/advisories/openclaw-approval-integrity-bypass-via-system-run-argv-rewriting"
+      ],
+      "published": "2026-03-19T02:16:03.223"
+    },
+    {
+      "id": "CVE-2026-32743",
+      "description": "PX4 is an open-source autopilot stack for drones and unmanned vehicles. Versions 1.17.0-rc2 and below are vulnerable to Stack-based Buffer Overflow through the MavlinkLogHandler, and are triggered via MAVLink log request. The LogEntry.filepath buffer is 60 bytes, but the sscanf function parses paths",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/PX4/PX4-Autopilot/commit/616b25a280e229c24d5cf12a03dbf248df89c474",
+        "https://github.com/PX4/PX4-Autopilot/security/advisories/GHSA-97c4-68r9-96p5"
+      ],
+      "published": "2026-03-19T00:16:18.177"
+    },
+    {
+      "id": "CVE-2026-29607",
+      "description": "OpenClaw versions prior to 2026.2.22 contain an authorization bypass vulnerability in allow-always wrapper persistence that allows attackers to bypass approval checks by persisting wrapper-level allowlist entries instead of validating inner executable intent. Remote attackers can approve benign wrap",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/24c954d972400f508814532dea0e4dcb38418bb0",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-6j27-pc5c-m8w8",
+        "https://www.vulncheck.com/advisories/openclaw-authorization-bypass-via-allow-always-wrapper-persistence"
+      ],
+      "published": "2026-03-19T02:16:03.010"
+    },
+    {
+      "id": "CVE-2026-22176",
+      "description": "OpenClaw versions prior to 2026.2.19 contain a command injection vulnerability in Windows Scheduled Task script generation where environment variables are written to gateway.cmd using unquoted set KEY=VALUE assignments, allowing shell metacharacters to break out of assignment context. Attackers can ",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/dafe52e8cf1a041d898cfb304a485fa05e5f58fb",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-pj5x-38rw-6fph",
+        "https://www.vulncheck.com/advisories/openclaw-command-injection-via-unescaped-environment-variables-in-windows-scheduled-task"
+      ],
+      "published": "2026-03-19T02:16:01.733"
+    },
+    {
+      "id": "CVE-2026-31990",
+      "description": "OpenClaw versions prior to 2026.3.2 contain a vulnerability in the stageSandboxMedia function in which it fails to validate destination symlinks during media staging, allowing writes to follow symlinks outside the sandbox workspace. Attackers can exploit this by placing symlinks in the media/inbound",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-59"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/17ede52a4be3034f6ec4b883ac6b81ad0101558a",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-cfvj-7rx7-fc7c",
+        "https://www.vulncheck.com/advisories/openclaw-symlink-traversal-in-stagesandboxmedia-destination"
+      ],
+      "published": "2026-03-19T02:16:03.647"
+    },
+    {
+      "id": "CVE-2026-31997",
+      "description": "OpenClaw versions prior to 2026.3.1 fail to pin executable identity for non-path-like argv[0] tokens in system.run approvals, allowing post-approval executable rebind attacks. Attackers can modify PATH resolution after approval to execute a different binary than the operator approved, enabling arbit",
+      "severity": "MEDIUM",
+      "score": 6.0,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-q399-23r3-hfx4",
+        "https://www.vulncheck.com/advisories/openclaw-executable-rebind-via-unbound-path-token-in-system-run-approvals"
+      ],
+      "published": "2026-03-19T02:16:05.130"
+    },
+    {
+      "id": "CVE-2026-28460",
+      "description": "OpenClaw versions prior to 2026.2.22 contain an allowlist bypass vulnerability in system.run that allows attackers to execute non-allowlisted commands by splitting command substitution using shell line-continuation characters. Attackers can bypass security analysis by injecting $\\\\ followed by a new",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/3f0b9dbb36c86e308267924c0d3d4a4e1fc4d1e9",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-9868-vxmx-w862",
+        "https://www.vulncheck.com/advisories/openclaw-allowlist-bypass-via-shell-line-continuation-command-substitution-in-system-run"
+      ],
+      "published": "2026-03-19T02:16:02.603"
+    },
+    {
+      "id": "CVE-2026-27670",
+      "description": "OpenClaw versions prior to 2026.3.2 contain a race condition vulnerability in ZIP extraction that allows local attackers to write files outside the intended destination directory. Attackers can exploit a time-of-check-time-of-use race between path validation and file write operations by rebinding pa",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/7dac9b05dd9d38dd3929637f26fa356fd8bdd107",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-r54r-wmmq-mh84",
+        "https://www.vulncheck.com/advisories/openclaw-arbitrary-file-write-via-zip-extraction-parent-symlink-race-condition"
+      ],
+      "published": "2026-03-19T02:16:02.173"
+    },
+    {
+      "id": "CVE-2026-31995",
+      "description": "OpenClaw versions 2026.1.21 prior to 2026.2.19 contain a command injection vulnerability in the Lobster extension's Windows shell fallback mechanism that allows attackers to inject arbitrary commands through tool-provided arguments. When spawn failures trigger shell fallback with shell: true, attack",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/ba7be018da354ea9f803ed356d20464df0437916",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-fg3m-vhrr-8gj6",
+        "https://www.vulncheck.com/advisories/openclaw-command-injection-via-windows-shell-fallback-in-lobster-extension"
+      ],
+      "published": "2026-03-19T02:16:04.707"
+    },
+    {
+      "id": "CVE-2026-28449",
+      "description": "OpenClaw versions prior to 2026.2.25 lack durable replay state for Nextcloud Talk webhook events, allowing valid signed webhook requests to be replayed without suppression. Attackers can capture and replay previously valid signed webhook requests to trigger duplicate inbound message processing and c",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-294"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/d512163d686ad6741783e7119ddb3437f493dbbc",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-r9q5-c7qc-p26w",
+        "https://www.vulncheck.com/advisories/openclaw-webhook-replay-attack-via-missing-durable-replay-suppression"
+      ],
+      "published": "2026-03-19T02:16:02.390"
+    },
+    {
+      "id": "CVE-2026-31993",
+      "description": "OpenClaw versions prior to 2026.2.22 contain an allowlist parsing mismatch vulnerability in the macOS companion app that allows authenticated operators to bypass exec approval checks. Attackers with operator.write privileges and a paired macOS beta node can craft shell-chain payloads that pass incom",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-184"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/5da03e622119fa012285cdb590fcf4264c965cb5",
+        "https://github.com/openclaw/openclaw/commit/e371da38aab99521c4e076cd3d95fd775e00b784",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-5f9p-f3w2-fwch"
+      ],
+      "published": "2026-03-19T02:16:04.277"
+    },
+    {
+      "id": "CVE-2026-31991",
+      "description": "OpenClaw versions prior to 2026.2.26 contain an authorization bypass vulnerability where Signal group allowlist policy incorrectly accepts sender identities from DM pairing-store approvals. Attackers can exploit this boundary weakness by obtaining DM pairing approval to bypass group allowlist checks",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/64de4b6d6ae81e269ceb4ca16f53cda99ced967a",
+        "https://github.com/openclaw/openclaw/commit/8bdda7a651c21e98faccdbbd73081e79cffe8be0",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-wm8r-w8pf-2v6w"
+      ],
+      "published": "2026-03-19T02:16:03.863"
+    },
+    {
+      "id": "CVE-2026-31996",
+      "description": "OpenClaw versions prior to 2026.2.19 tools.exec.safeBins contains an input validation bypass vulnerability that allows attackers to execute unintended filesystem operations through sort output flags or recursive grep flags. Attackers with command execution access can leverage sort -o flag for arbitr",
+      "severity": "LOW",
+      "score": 3.6,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/2c05cbb43e48ebad03626d3125746fb1b9a8520f",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-4685-c5cp-vp95",
+        "https://www.vulncheck.com/advisories/openclaw-safebins-stdin-only-bypass-via-sort-output-and-recursive-grep-flags"
+      ],
+      "published": "2026-03-19T02:16:04.917"
+    }
+  ]
+}
