@@ -1,0 +1,333 @@
+{
+  "timestamp": "2026-03-22T04:30:31.924358+00:00",
+  "scan_id": "410faebffb",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 6,
+      "MEDIUM": 6,
+      "LOW": 1,
+      "UNKNOWN": 6
+    },
+    "top_cwes": [
+      [
+        "CWE-639",
+        3
+      ],
+      [
+        "CWE-434",
+        2
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-22",
+        2
+      ],
+      [
+        "CWE-863",
+        2
+      ]
+    ],
+    "threat_index": 269.1,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 269.1,
+        "yesterday": 290.5,
+        "change_pct": -7.4
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-32985",
+      "description": "Xerte Online Toolkits versions 3.14 and earlier contain an unauthenticated arbitrary file upload vulnerability in the template import functionality that allows remote attackers to execute arbitrary code by uploading a crafted ZIP archive containing malicious PHP payloads. Attackers can bypass authen",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-306",
+        "CWE-434"
+      ],
+      "references": [
+        "https://packetstorm.news/files/id/216288/",
+        "https://xot.xerte.org.uk/"
+      ],
+      "published": "2026-03-20T00:16:18.260"
+    },
+    {
+      "id": "CVE-2026-32756",
+      "description": "Admidio is an open-source user management solution. Versions 5.0.6 and below contain a critical unrestricted file upload vulnerability in the Documents & Files module. Due to a design flaw in how CSRF token validation and file extension verification interact within UploadHandlerFile.php, an authenti",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/Admidio/admidio/releases/tag/v5.0.7",
+        "https://github.com/Admidio/admidio/security/advisories/GHSA-95cq-p4w2-32w5"
+      ],
+      "published": "2026-03-20T00:16:16.763"
+    },
+    {
+      "id": "CVE-2026-33288",
+      "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to versions 7.15.1 and 8.9.3, a SQL Injection vulnerability exists in the SuiteCRM authentication mechanisms when directory support is enabled. The application fails to properly sanitize t",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://docs.suitecrm.com/admin/releases/7.15.x",
+        "https://github.com/SuiteCRM/SuiteCRM/security/advisories/GHSA-7g39-m4fg-vrq7"
+      ],
+      "published": "2026-03-20T00:16:18.470"
+    },
+    {
+      "id": "CVE-2026-33289",
+      "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to versions 7.15.1 and 8.9.3, an LDAP Injection vulnerability exists in the SuiteCRM authentication flow. The application fails to properly sanitize user-supplied input before embedding it",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-90"
+      ],
+      "references": [
+        "https://docs.suitecrm.com/admin/releases/7.15.x",
+        "https://github.com/SuiteCRM/SuiteCRM/security/advisories/GHSA-26vx-rj47-x599"
+      ],
+      "published": "2026-03-20T00:16:18.647"
+    },
+    {
+      "id": "CVE-2026-22733",
+      "description": "Spring Boot applications with Actuator can be vulnerable to an \"Authentication Bypass\" vulnerability when an application endpoint that requires authentication is declared under the path used by the CloudFoundry Actuator endpoints.\u00a0This issue affects Spring Security: from 4.0.0 through 4.0.3, from 3.",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-288"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-22733"
+      ],
+      "published": "2026-03-20T00:16:15.513"
+    },
+    {
+      "id": "CVE-2026-32763",
+      "description": "Kysely is a type-safe TypeScript SQL query builder. Versions up to and including 0.28.11 has a SQL injection vulnerability in JSON path compilation for MySQL and SQLite dialects. The `visitJSONPathLeg()` function appends user-controlled values from `.key()` and `.at()` directly into single-quoted JS",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/kysely-org/kysely/commit/0a602bff2f442f6c26d5e047ca8f8715179f6d24",
+        "https://github.com/kysely-org/kysely/releases/tag/v0.28.12",
+        "https://github.com/kysely-org/kysely/security/advisories/GHSA-wmrf-hv6w-mr66"
+      ],
+      "published": "2026-03-20T00:16:17.790"
+    },
+    {
+      "id": "CVE-2026-29189",
+      "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to versions 7.15.1 and 8.9.3, the SuiteCRM REST API V8 has missing ACL (Access Control List) checks on several endpoints, allowing authenticated users to access and manipulate data they sh",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://docs.suitecrm.com/admin/releases/7.15.x",
+        "https://github.com/SuiteCRM/SuiteCRM/security/advisories/GHSA-m6x8-3hxp-qxwv"
+      ],
+      "published": "2026-03-20T00:16:16.303"
+    },
+    {
+      "id": "CVE-2026-29108",
+      "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to versions 8.9.3, an authenticated API endpoint allows any user to retrieve detailed information about any other user, including their password hash, username, and MFA configuration. As a",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://github.com/SuiteCRM/SuiteCRM-Core/security/advisories/GHSA-xc8w-xc9v-45w5"
+      ],
+      "published": "2026-03-20T00:16:15.983"
+    },
+    {
+      "id": "CVE-2026-32697",
+      "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to versions 8.9.3, the `RecordHandler::getRecord()` method retrieves any record by module and ID without checking the current user's ACL view permission. The companion `saveRecord()` metho",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/SuiteCRM/SuiteCRM-Core/security/advisories/GHSA-9p9g-224x-6rmm"
+      ],
+      "published": "2026-03-20T00:16:16.600"
+    },
+    {
+      "id": "CVE-2026-32758",
+      "description": "File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. Versions 2.61.2 and below are vulnerable to Path Traversal through the resourcePatchHandler (http/resource.go). The destination path in resourcePatchHandler is val",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22",
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/filebrowser/filebrowser/commit/4bd7d69c82163b201a987e99c0c50d7ecc6ee5f1",
+        "https://github.com/filebrowser/filebrowser/releases/tag/v2.62.0",
+        "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-9f3r-2vgw-m8xp"
+      ],
+      "published": "2026-03-20T00:16:17.093"
+    },
+    {
+      "id": "CVE-2026-32761",
+      "description": "File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. Versions 2.61.0 and below contain a permission enforcement bypass which allows users who are denied download privileges (perm.download = false) but granted share p",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-284",
+        "CWE-639",
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/filebrowser/filebrowser/commit/09a26166b4f79446e7174c017380f6db45444e32",
+        "https://github.com/filebrowser/filebrowser/releases/tag/v2.62.0",
+        "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-68j5-4m99-w9w9"
+      ],
+      "published": "2026-03-20T00:16:17.617"
+    },
+    {
+      "id": "CVE-2026-22737",
+      "description": "Use of Java scripting engine enabled (e.g. JRuby, Jython) template views in Spring MVC and Spring WebFlux applications can result in disclosure of content from files outside the configured locations for script template views.\u00a0This issue affects Spring Framework: from 7.0.0 through 7.0.5, from 6.2.0 ",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-22737"
+      ],
+      "published": "2026-03-20T00:16:15.837"
+    },
+    {
+      "id": "CVE-2026-32757",
+      "description": "Admidio is an open-source user management solution. In versions 5.0.6 and below, the eCard send handler uses a raw $_POST['ecard_message'] value instead of the HTMLPurifier-sanitized $formValues['ecard_message'] when constructing the greeting card HTML. This allows an authenticated attacker to injec",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/Admidio/admidio/releases/tag/v5.0.7",
+        "https://github.com/Admidio/admidio/security/advisories/GHSA-4wr4-f2qf-x5wj"
+      ],
+      "published": "2026-03-20T00:16:16.930"
+    },
+    {
+      "id": "CVE-2026-22735",
+      "description": "Spring MVC and WebFlux applications are vulnerable to stream corruption when using Server-Sent Events (SSE).\u00a0This issue affects Spring Foundation: from 7.0.0 through 7.0.5, from 6.2.0 through 6.2.16, from 6.1.0 through 6.1.25, from 5.3.0 through 5.3.46.",
+      "severity": "LOW",
+      "score": 2.6,
+      "cwes": [
+        "CWE-667"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-22735"
+      ],
+      "published": "2026-03-20T00:16:15.697"
+    },
+    {
+      "id": "CVE-2026-29109",
+      "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Versions up to and including 8.9.2 contain an unsafe deserialization vulnerability in the SavedSearch filter processing component that allows an authenticated administrator to execute arbitrary ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/SuiteCRM/SuiteCRM-Core/security/advisories/GHSA-mhq2-277m-6w24"
+      ],
+      "published": "2026-03-20T00:16:16.147"
+    },
+    {
+      "id": "CVE-2026-32759",
+      "description": "File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. In versions 2.61.2 and below, the TUS resumable upload handler parses the Upload-Length header as a signed 64-bit integer without validating that the value is non-",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/filebrowser/filebrowser/issues/5199",
+        "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-ffx7-75gc-jg7c"
+      ],
+      "published": "2026-03-20T00:16:17.270"
+    },
+    {
+      "id": "CVE-2026-32760",
+      "description": "File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. In versions 2.61.2 and below, any unauthenticated visitor can register a full administrator account when self-registration (signup = true) is enabled and the defau",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-269",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/filebrowser/filebrowser/commit/a63573b67eb302167b4c4f218361a2d0c138deab",
+        "https://github.com/filebrowser/filebrowser/releases/tag/v2.62.0",
+        "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-5gg9-5g7w-hm73"
+      ],
+      "published": "2026-03-20T00:16:17.440"
+    },
+    {
+      "id": "CVE-2026-32764",
+      "description": "Rejected reason: This repository is no longer public.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-03-20T00:16:17.960"
+    },
+    {
+      "id": "CVE-2026-32765",
+      "description": "Rejected reason: This repository is no longer public.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-03-20T00:16:18.037"
+    },
+    {
+      "id": "CVE-2026-32766",
+      "description": "astral-tokio-tar is a tar archive reading/writing library for async Rust. In versions 0.5.6 and earlier, malformed PAX extensions were silently skipped when parsing tar archives. This silent skipping (rather than rejection) of invalid PAX extensions could be used as a building block for a parser dif",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-436"
+      ],
+      "references": [
+        "https://github.com/astral-sh/tokio-tar/commit/e5e0139cae4577eeedf5fc16b65e690bf988ce52",
+        "https://github.com/astral-sh/tokio-tar/security/advisories/GHSA-6gx3-4362-rf54"
+      ],
+      "published": "2026-03-20T00:16:18.100"
+    }
+  ]
+}
