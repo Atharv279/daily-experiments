@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-03-23T15:31:37.725961+00:00",
-  "scan_id": "c287b0db34",
+  "timestamp": "2026-03-23T20:59:20.280856+00:00",
+  "scan_id": "09db2cbfcb",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -24,12 +24,12 @@
         3
       ],
       [
-        "CWE-863",
+        "CWE-319",
         2
       ],
       [
-        "CWE-319",
-        1
+        "CWE-605",
+        2
       ]
     ],
     "threat_index": 233.8,
@@ -62,6 +62,7 @@
       "severity": "CRITICAL",
       "score": 9.1,
       "cwes": [
+        "CWE-319",
         "CWE-319"
       ],
       "references": [
@@ -77,6 +78,7 @@
       "severity": "HIGH",
       "score": 7.7,
       "cwes": [
+        "CWE-605",
         "CWE-605"
       ],
       "references": [
@@ -92,6 +94,7 @@
       "severity": "HIGH",
       "score": 7.5,
       "cwes": [
+        "CWE-290",
         "CWE-290"
       ],
       "references": [
