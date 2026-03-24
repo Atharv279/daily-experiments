@@ -1,0 +1,362 @@
+{
+  "timestamp": "2026-03-24T04:29:22.353809+00:00",
+  "scan_id": "64944635da",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 4,
+      "MEDIUM": 15,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        3
+      ],
+      [
+        "CWE-1282",
+        3
+      ],
+      [
+        "CWE-119",
+        2
+      ],
+      [
+        "CWE-121",
+        2
+      ],
+      [
+        "CWE-79",
+        2
+      ]
+    ],
+    "threat_index": 282.7,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 282.7,
+        "yesterday": 233.8,
+        "change_pct": 20.9
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-4314",
+      "description": "The 'The Ultimate WordPress Toolkit \u2013 WP Extended' plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.2.4. This is due to the `isDashboardOrProfileRequest()` method in the Menu Editor module using an insecure `strpos()` check against `$_SERVER['REQUEST",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wpextended/tags/3.2.4/modules/menu-editor/Bootstrap.php#L135",
+        "https://plugins.trac.wordpress.org/browser/wpextended/tags/3.2.4/modules/menu-editor/Bootstrap.php#L207",
+        "https://plugins.trac.wordpress.org/changeset?old=3475963&old_path=wpextended%2Ftrunk%2Fmodules%2Fmenu-editor%2FBootstrap.php&new=&new_path=wpextended%2Ftrunk%2Fmodules%2Fmenu-editor%2FBootstrap.php"
+      ],
+      "published": "2026-03-22T04:16:26.180"
+    },
+    {
+      "id": "CVE-2026-4534",
+      "description": "A flaw has been found in Tenda FH451 1.0.0.9. This affects the function formWrlExtraSet of the file /goform/WrlExtraSet. This manipulation of the argument GO causes stack-based buffer overflow. The attack can be initiated remotely. The exploit has been published and may be used.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vul_db/blob/main/FH451/vul_41/README.md",
+        "https://vuldb.com/?ctiid.352322",
+        "https://vuldb.com/?id.352322"
+      ],
+      "published": "2026-03-22T05:16:19.273"
+    },
+    {
+      "id": "CVE-2026-4535",
+      "description": "A vulnerability has been found in Tenda FH451 1.0.0.9. This vulnerability affects the function WrlclientSet of the file /goform/WrlclientSet. Such manipulation of the argument GO leads to stack-based buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public a",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vul_db/blob/main/FH451/vul_42/README.md",
+        "https://vuldb.com/?ctiid.352323",
+        "https://vuldb.com/?id.352323"
+      ],
+      "published": "2026-03-22T05:16:19.640"
+    },
+    {
+      "id": "CVE-2026-4536",
+      "description": "A vulnerability was found in Acrel Environmental Monitoring Cloud Platform 1.1.0. This issue affects some unknown processing. Performing a manipulation results in unrestricted upload. The attack may be initiated remotely. The exploit has been made public and could be used. The vendor was contacted e",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/LTX-GOD/Mycve/blob/main/Acrel_Co_Ltd.md",
+        "https://vuldb.com/?ctiid.352324",
+        "https://vuldb.com/?id.352324"
+      ],
+      "published": "2026-03-22T05:16:19.850"
+    },
+    {
+      "id": "CVE-2026-33549",
+      "description": "SPIP 4.4.10 through 4.4.12 before 4.4.13 allows unintended privilege assignment (of administrator privileges) during the editing of an author data structure because of STATUT mishandling.",
+      "severity": "MEDIUM",
+      "score": 6.7,
+      "cwes": [
+        "CWE-688"
+      ],
+      "references": [
+        "https://blog.spip.net/Mise-a-jour-de-securite-sortie-de-SPIP-4-4-13.html?lang=fr",
+        "https://git.spip.net/spip/prive/-/commit/b8481a7feb00f301f0ff7d5ce2aad8a772d92c2e",
+        "https://git.spip.net/spip/prive/-/merge_requests/131"
+      ],
+      "published": "2026-03-22T03:16:01.237"
+    },
+    {
+      "id": "CVE-2025-71276",
+      "description": "SOGo before 5.12.5 is prone to a XSS vulnerability with events, tasks, and contacts categories.",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/Alinto/sogo/commit/e9b3f2a43d7557e8416f6749df4ab4f9128af2d1"
+      ],
+      "published": "2026-03-22T03:16:00.233"
+    },
+    {
+      "id": "CVE-2026-3427",
+      "description": "The Yoast SEO \u2013 Advanced SEO with real-time guidance and built-in AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the the `jsonText` block attribute in all versions up to, and including, 27.1.1 due to insufficient input sanitization and output escaping. This makes it possibl",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/Yoast/wordpress-seo/pull/23035",
+        "https://plugins.trac.wordpress.org/browser/wordpress-seo/tags/27.0/inc/class-wpseo-utils.php#L915",
+        "https://plugins.trac.wordpress.org/browser/wordpress-seo/tags/27.0/src/generators/schema/howto.php#L125"
+      ],
+      "published": "2026-03-22T04:16:24.197"
+    },
+    {
+      "id": "CVE-2026-4533",
+      "description": "A vulnerability was detected in code-projects Simple Food Ordering System 1.0. Affected by this issue is some unknown functionality of the file all-tickets.php. The manipulation of the argument Status results in sql injection. It is possible to launch the attack remotely. The exploit is now public a",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/ahmadmarz10-hub/CVEsMarz/blob/main/SQL%20Injection%20(Time-Based%20Blind)Simple%20Food%20Ordering%20System%20in%20PHP.md?plain=1",
+        "https://vuldb.com/?ctiid.352321"
+      ],
+      "published": "2026-03-22T03:16:01.587"
+    },
+    {
+      "id": "CVE-2019-25583",
+      "description": "RarmaRadio 2.72.3 contains a denial of service vulnerability in the Username field that allows local attackers to crash the application by submitting excessively long input. Attackers can paste a buffer of 5000 bytes into the Username field via Settings > Network to trigger an application crash.",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-1282"
+      ],
+      "references": [
+        "http://www.raimersoft.com/",
+        "https://www.exploit-db.com/exploits/46900",
+        "https://www.vulncheck.com/advisories/rarmaradio-username-field-denial-of-service"
+      ],
+      "published": "2026-03-22T01:16:56.110"
+    },
+    {
+      "id": "CVE-2019-25584",
+      "description": "RarmaRadio 2.72.3 contains a buffer overflow vulnerability in the Server field of the Network settings that allows local attackers to crash the application by supplying an excessively long string. Attackers can paste a malicious payload exceeding 4000 bytes into the Server field via the Settings men",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "http://www.raimersoft.com/",
+        "https://www.exploit-db.com/exploits/46899",
+        "https://www.vulncheck.com/advisories/rarmaradio-server-field-buffer-overflow-denial-of-service"
+      ],
+      "published": "2026-03-22T01:16:56.310"
+    },
+    {
+      "id": "CVE-2019-25585",
+      "description": "Deluge 1.3.15 contains a denial of service vulnerability that allows local attackers to crash the application by supplying an excessively long string in the Webseeds field. Attackers can paste a buffer of 5000 bytes into the Webseeds field during torrent creation to trigger an application crash.",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-1260"
+      ],
+      "references": [
+        "http://download.deluge-torrent.org/windows/deluge-1.3.15-win32-py2.7.exe",
+        "https://dev.deluge-torrent.org/",
+        "https://www.exploit-db.com/exploits/46884"
+      ],
+      "published": "2026-03-22T01:16:56.497"
+    },
+    {
+      "id": "CVE-2019-25586",
+      "description": "Deluge 1.3.15 contains a denial of service vulnerability that allows local attackers to crash the application by supplying an excessively long string in the URL field. Attackers can paste a buffer of 5000 characters into the 'From URL' field during torrent addition to trigger an application crash.",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-466"
+      ],
+      "references": [
+        "http://download.deluge-torrent.org/windows/deluge-1.3.15-win32-py2.7.exe",
+        "https://dev.deluge-torrent.org/",
+        "https://www.exploit-db.com/exploits/46883"
+      ],
+      "published": "2026-03-22T01:16:56.697"
+    },
+    {
+      "id": "CVE-2019-25587",
+      "description": "BulletProof FTP Server 2019.0.0.50 contains a denial of service vulnerability in the Storage-Path configuration parameter that allows local attackers to crash the application by supplying an excessively long string value. Attackers can enable the Override Storage-Path setting and paste a buffer of 5",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-1282"
+      ],
+      "references": [
+        "http://bpftpserver.com/",
+        "http://bpftpserver.com/products/bpftpserver/windows/download",
+        "https://www.exploit-db.com/exploits/46876"
+      ],
+      "published": "2026-03-22T01:16:56.897"
+    },
+    {
+      "id": "CVE-2019-25588",
+      "description": "BulletProof FTP Server 2019.0.0.50 contains a denial of service vulnerability in the DNS Address field that allows local attackers to crash the application by supplying an excessively long string. Attackers can enable the DNS Address option in the Firewall settings and paste a buffer of 700 bytes to",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-1282"
+      ],
+      "references": [
+        "http://bpftpserver.com/",
+        "http://bpftpserver.com/products/bpftpserver/windows/download",
+        "https://www.exploit-db.com/exploits/46875"
+      ],
+      "published": "2026-03-22T01:16:57.083"
+    },
+    {
+      "id": "CVE-2019-25589",
+      "description": "ZOC Terminal 7.23.4 contains a buffer overflow vulnerability in the Shell field of Program Settings that allows local attackers to crash the application by supplying an excessively long string. Attackers can paste a crafted payload into the Shell configuration field and trigger a crash when accessin",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "http://www.emtec.com/downloads/zoc/zoc7234_x64.exe",
+        "https://www.emtec.com",
+        "https://www.exploit-db.com/exploits/46857"
+      ],
+      "published": "2026-03-22T01:16:57.277"
+    },
+    {
+      "id": "CVE-2026-4530",
+      "description": "A security flaw has been discovered in apconw Aix-DB up to 1.2.3. This impacts an unknown function of the file agent/text2sql/rag/terminology_retriever.py. Performing a manipulation of the argument Description results in sql injection. The attack requires a local approach. The exploit has been relea",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Ka7arotto/cve/blob/main/Aix-DB-nl2sql.md",
+        "https://vuldb.com/?ctiid.352318",
+        "https://vuldb.com/?id.352318"
+      ],
+      "published": "2026-03-22T00:16:06.187"
+    },
+    {
+      "id": "CVE-2026-4531",
+      "description": "A weakness has been identified in Free5GC 4.1.0. Affected is the function HandleRegistrationComplete of the file internal/gmm/handler.go of the component AMF. Executing a manipulation can lead to denial of service. The attack may be performed from remote. This patch is called 52e9386401ce56ea773c5aa",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/free5gc/amf/commit/52e9386401ce56ea773c5aa587d4cdf7d53da799",
+        "https://github.com/free5gc/amf/pull/198",
+        "https://github.com/free5gc/free5gc/"
+      ],
+      "published": "2026-03-22T02:15:59.270"
+    },
+    {
+      "id": "CVE-2026-4532",
+      "description": "A security vulnerability has been detected in code-projects Simple Food Ordering System up to 1.0. Affected by this vulnerability is an unknown functionality of the file /food/sql/food.sql of the component Database Backup Handler. The manipulation leads to files or directories accessible. It is poss",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-425",
+        "CWE-552"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/ahmadmarz10-hub/CVEsMarz/blob/main/Simple%20Food%20Ordering%20System%20Information%20Disclosure%20%20.md",
+        "https://vuldb.com/?ctiid.352320"
+      ],
+      "published": "2026-03-22T02:16:00.640"
+    },
+    {
+      "id": "CVE-2026-4537",
+      "description": "A vulnerability was determined in Cudy TR1200 R46-2.4.15-20250721-164017. Impacted is the function action_ipsec_conn of the file /usr/bin/lib/lua/luci/controller/ipsec.lua. Executing a manipulation can lead to command injection. The attack may be launched remotely. The exploit has been publicly disc",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/qazmn/my_cve/blob/main/cudy_cve/Cudy_TR1200_Command_Injection.md",
+        "https://vuldb.com/?ctiid.352325",
+        "https://vuldb.com/?id.352325"
+      ],
+      "published": "2026-03-22T05:16:20.063"
+    },
+    {
+      "id": "CVE-2026-33550",
+      "description": "SOGo before 5.12.5 does not renew the OTP if a user disables/enables it, and has a too short length (only 12 digits instead of the 20 recommended).",
+      "severity": "LOW",
+      "score": 2.0,
+      "cwes": [
+        "CWE-308"
+      ],
+      "references": [
+        "https://github.com/Alinto/sogo/commit/83d4c522f87cfde0ba543837d9b24c3479083ec2",
+        "https://github.com/Alinto/sogo/releases/tag/SOGo-5.12.5"
+      ],
+      "published": "2026-03-22T03:16:01.413"
+    }
+  ]
+}
