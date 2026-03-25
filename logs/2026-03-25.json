@@ -1,0 +1,366 @@
+{
+  "timestamp": "2026-03-25T04:31:05.259418+00:00",
+  "scan_id": "6da5670be1",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 5,
+      "MEDIUM": 13,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-89",
+        8
+      ],
+      [
+        "CWE-74",
+        8
+      ],
+      [
+        "CWE-119",
+        3
+      ],
+      [
+        "CWE-285",
+        3
+      ],
+      [
+        "CWE-121",
+        2
+      ]
+    ],
+    "threat_index": 309.3,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 309.3,
+        "yesterday": 282.7,
+        "change_pct": 9.4
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-4567",
+      "description": "A vulnerability has been found in Tenda A15 15.13.07.13. The impacted element is the function UploadCfg of the file /cgi-bin/UploadCfg. The manipulation of the argument File leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and m",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/942384053/cve/issues/3",
+        "https://github.com/user-attachments/files/25824036/Tenda.A15.V15.13.07.13.Unauthenticated.Stack-based.Buffer.Overflow.in._cgi-bin_UploadCfg.zip",
+        "https://vuldb.com/?ctiid.352404"
+      ],
+      "published": "2026-03-23T03:16:00.387"
+    },
+    {
+      "id": "CVE-2026-4565",
+      "description": "A vulnerability was detected in Tenda AC21 16.03.08.16. Impacted is the function formSetQosBand of the file /goform/SetNetControlList. Performing a manipulation of the argument list results in buffer overflow. The attack can be initiated remotely. The exploit is now public and may be used.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/hellonestor/killallbug/issues/14",
+        "https://github.com/hellonestor/killallbug/releases/tag/poc",
+        "https://vuldb.com/?ctiid.352402"
+      ],
+      "published": "2026-03-23T01:16:43.803"
+    },
+    {
+      "id": "CVE-2026-4566",
+      "description": "A flaw has been found in Belkin F9K1122 1.00.33. The affected element is the function formWISP5G of the file /goform/formWISP5G. Executing a manipulation of the argument webpage can lead to stack-based buffer overflow. The attack can be launched remotely. The exploit has been published and may be us",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vul_db/blob/main/Belkin/vul_151/README.md",
+        "https://github.com/Litengzheng/vul_db/blob/main/Belkin/vul_151/README.md#proof-of-concept-poc",
+        "https://vuldb.com/?ctiid.352403"
+      ],
+      "published": "2026-03-23T03:16:00.083"
+    },
+    {
+      "id": "CVE-2026-2580",
+      "description": "The WP Maps \u2013 Store Locator,Google Maps,OpenStreetMap,Mapbox,Listing,Directory & Filters plugin for WordPress is vulnerable to time-based SQL Injection via the \u2018orderby\u2019 parameter in all versions up to, and including, 4.9.1 due to insufficient escaping on the user supplied parameter and lack of suff",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-google-map-plugin/tags/4.9.1/classes/wpgmp-helper.php#L127",
+        "https://plugins.trac.wordpress.org/browser/wp-google-map-plugin/tags/4.9.1/core/class.tabular.php#L780",
+        "https://plugins.trac.wordpress.org/browser/wp-google-map-plugin/tags/4.9.1/wp-google-map-plugin.php#L77"
+      ],
+      "published": "2026-03-23T00:16:51.453"
+    },
+    {
+      "id": "CVE-2026-4562",
+      "description": "A security flaw has been discovered in MacCMS 2025.1000.4052. This affects an unknown part of the file application/api/controller/Timming.php of the component Timming API Endpoint. The manipulation results in missing authentication. The attack may be performed from remote. The exploit has been relea",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/HuajiHD/CVE/issues/9",
+        "https://vuldb.com/?ctiid.352399",
+        "https://vuldb.com/?id.352399"
+      ],
+      "published": "2026-03-23T00:16:51.647"
+    },
+    {
+      "id": "CVE-2025-10679",
+      "description": "The ReviewX \u2013 WooCommerce Product Reviews with Multi-Criteria, Reminder Emails, Google Reviews, Schema & More plugin for WordPress is vulnerable to arbitrary method calls in all versions up to, and including, 2.2.12. This is due to insufficient input validation in the bulkTenReviews function that al",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/reviewx/tags/2.2.7/app/Rest/Controllers/ReviewController.php#L426",
+        "https://plugins.trac.wordpress.org/browser/reviewx/tags/2.2.7/app/Services/ReviewService.php#L731",
+        "https://plugins.trac.wordpress.org/browser/reviewx/tags/2.2.7/app/Utilities/Helper.php#L65"
+      ],
+      "published": "2026-03-23T06:16:17.797"
+    },
+    {
+      "id": "CVE-2025-10736",
+      "description": "The ReviewX \u2013 WooCommerce Product Reviews with Multi-Criteria, Reminder Emails, Google Reviews, Schema & More plugin for WordPress is vulnerable to unauthorized access of data due to improper authorization checks on the userAccessibility() function in all versions up to, and including, 2.2.10. This ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/reviewx/2.2.7/app/Rest/Middleware/AuthMiddleware.php#L41",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/505d7072-8fca-4b86-9b9c-3f39bc4dcfaf?source=cve"
+      ],
+      "published": "2026-03-23T05:16:04.823"
+    },
+    {
+      "id": "CVE-2026-4568",
+      "description": "A vulnerability was found in SourceCodester Sales and Inventory System 1.0. This affects an unknown function of the file /update_supplier.php of the component HTTP GET Request Handler. The manipulation of the argument sid results in sql injection. The attack may be launched remotely. The exploit has",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Inventory-System/SQLi-UpdateSupplier-sid.md?plain=1",
+        "https://vuldb.com/?ctiid.352405",
+        "https://vuldb.com/?id.352405"
+      ],
+      "published": "2026-03-23T03:16:00.610"
+    },
+    {
+      "id": "CVE-2026-4569",
+      "description": "A vulnerability was determined in SourceCodester Sales and Inventory System 1.0. This impacts an unknown function of the file /view_category.php of the component HTTP POST Request Handler. This manipulation of the argument searchtxt causes sql injection. Remote exploitation of the attack is possible",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Inventory-System/SQLi-ViewCategory-searchtxt.md",
+        "https://vuldb.com/?ctiid.352406",
+        "https://vuldb.com/?id.352406"
+      ],
+      "published": "2026-03-23T04:16:18.150"
+    },
+    {
+      "id": "CVE-2026-4570",
+      "description": "A vulnerability was identified in SourceCodester Sales and Inventory System 1.0. Affected is an unknown function of the file /view_customers.php of the component HTTP POST Request Handler. Such manipulation of the argument searchtxt leads to sql injection. The attack can be executed remotely. The ex",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Inventory-System/SQLi-ViewCustomers-searchtxt.md",
+        "https://vuldb.com/?ctiid.352407",
+        "https://vuldb.com/?id.352407"
+      ],
+      "published": "2026-03-23T05:16:06.940"
+    },
+    {
+      "id": "CVE-2026-4571",
+      "description": "A security flaw has been discovered in SourceCodester Sales and Inventory System 1.0. Affected by this vulnerability is an unknown functionality of the file /view_payments.php of the component HTTP POST Request Handler. Performing a manipulation of the argument searchtxt results in sql injection. Th",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Inventory-System/SQLi-ViewPayments-searchtxt.md",
+        "https://vuldb.com/?ctiid.352408",
+        "https://vuldb.com/?id.352408"
+      ],
+      "published": "2026-03-23T05:16:07.193"
+    },
+    {
+      "id": "CVE-2026-4572",
+      "description": "A weakness has been identified in SourceCodester Sales and Inventory System 1.0. Affected by this issue is some unknown functionality of the file /view_product.php of the component HTTP POST Request Handler. Executing a manipulation of the argument searchtxt can lead to sql injection. The attack may",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Inventory-System/SQLi-ViewProduct-searchtxt.md",
+        "https://vuldb.com/?ctiid.352409",
+        "https://vuldb.com/?id.352409"
+      ],
+      "published": "2026-03-23T05:16:07.437"
+    },
+    {
+      "id": "CVE-2026-4573",
+      "description": "A security vulnerability has been detected in SourceCodester Simple E-learning System 1.0. This affects an unknown part of the file /includes/form_handlers/delete_post.php of the component HTTP GET Parameter Handler. The manipulation of the argument post_id leads to sql injection. It is possible to ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Simple-E-learning-System/SQLi-DeletePost-postId.md",
+        "https://vuldb.com/?ctiid.352410",
+        "https://vuldb.com/?id.352410"
+      ],
+      "published": "2026-03-23T06:16:20.400"
+    },
+    {
+      "id": "CVE-2026-4574",
+      "description": "A vulnerability was detected in SourceCodester Simple E-learning System 1.0. This vulnerability affects unknown code of the component User Profile Update Handler. The manipulation of the argument firstName results in sql injection. It is possible to launch the attack remotely. The exploit is now pub",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Simple-E-learning-System/SQLi-UserProfile-firstName.md",
+        "https://vuldb.com/?ctiid.352411",
+        "https://vuldb.com/?id.352411"
+      ],
+      "published": "2026-03-23T06:16:20.657"
+    },
+    {
+      "id": "CVE-2025-10731",
+      "description": "The ReviewX \u2013 WooCommerce Product Reviews with Multi-Criteria, Reminder Emails, Google Reviews, Schema & More plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.2.12 via the allReminderSettings function. This makes it possible for unauthentic",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/reviewx/tags/2.2.7/app/Rest/Controllers/DataSyncController.php#L68",
+        "https://plugins.trac.wordpress.org/browser/reviewx/tags/2.2.7/app/Rest/Controllers/EmailTemplateController.php#L165",
+        "https://plugins.trac.wordpress.org/browser/reviewx/tags/2.2.7/app/Rest/Middleware/AdminMiddleware.php#L11"
+      ],
+      "published": "2026-03-23T06:16:18.133"
+    },
+    {
+      "id": "CVE-2025-10734",
+      "description": "The ReviewX \u2013 WooCommerce Product Reviews with Multi-Criteria, Reminder Emails, Google Reviews, Schema & More plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.2.12 via the syncedData function. This makes it possible for unauthenticated atta",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-922"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/reviewx/tags/2.2.7/app/Rest/Controllers/DataSyncController.php#L77",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/eb830ad3-50ba-4dfe-becb-351b227706c1?source=cve"
+      ],
+      "published": "2026-03-23T06:16:18.307"
+    },
+    {
+      "id": "CVE-2026-1969",
+      "description": "The trx_addons WordPress plugin before 2.38.5 does not correctly validate file types in one of its AJAX action, allowing unauthenticated users to upload arbitrary file. This is due to an incorrect fix of CVE-2024-13448",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/762530ae-80a5-4ff8-9725-6adab9498c33/"
+      ],
+      "published": "2026-03-23T06:16:20.257"
+    },
+    {
+      "id": "CVE-2026-4564",
+      "description": "A security vulnerability has been detected in yangzongzhuan RuoYi up to 4.8.2. This issue affects some unknown processing of the file /monitor/job/ of the component Quartz Job Handler. Such manipulation of the argument invokeTarget leads to code injection. It is possible to launch the attack remotel",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/M0onc/RuoYi-Quartz-RCE",
+        "https://vuldb.com/?ctiid.352401",
+        "https://vuldb.com/?id.352401"
+      ],
+      "published": "2026-03-23T00:16:52.100"
+    },
+    {
+      "id": "CVE-2026-4563",
+      "description": "A weakness has been identified in MacCMS up to 2025.1000.4052. This vulnerability affects the function order_info of the file application/index/controller/User.php of the component Member Order Detail Interface. This manipulation of the argument order_id causes authorization bypass. It is possible t",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/HuajiHD/CVE/issues/10",
+        "https://vuldb.com/?ctiid.352400",
+        "https://vuldb.com/?id.352400"
+      ],
+      "published": "2026-03-23T00:16:51.893"
+    },
+    {
+      "id": "CVE-2026-4606",
+      "description": "GV Edge Recording Manager (ERM) v2.3.1 improperly runs application components with SYSTEM-level privileges, allowing any local user to gain full control of the operating system.\u00a0\n\nDuring installation, ERM creates a Windows service that runs under the LocalSystem account.\u00a0\n\nWhen the ERM application i",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-250"
+      ],
+      "references": [
+        "https://https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-03-23T02:16:05.213"
+    }
+  ]
+}
