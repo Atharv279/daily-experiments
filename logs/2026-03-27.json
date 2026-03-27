@@ -1,0 +1,346 @@
+{
+  "timestamp": "2026-03-27T04:43:24.422514+00:00",
+  "scan_id": "a50f0556ef",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 4,
+      "MEDIUM": 14,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-284",
+        3
+      ],
+      [
+        "CWE-416",
+        2
+      ],
+      [
+        "CWE-787",
+        2
+      ],
+      [
+        "CWE-74",
+        2
+      ],
+      [
+        "CWE-89",
+        2
+      ]
+    ],
+    "threat_index": 293.6,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 293.6,
+        "yesterday": 466.8,
+        "change_pct": -37.1
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 5,
+        "change_pct": -80.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-20688",
+      "description": "A path handling issue was addressed with improved validation. This issue is fixed in iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4, visionOS 26.4. An app may be able to break out of its sandbox.",
+      "severity": "CRITICAL",
+      "score": 9.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/126792",
+        "https://support.apple.com/en-us/126794",
+        "https://support.apple.com/en-us/126795"
+      ],
+      "published": "2026-03-25T01:17:05.690"
+    },
+    {
+      "id": "CVE-2026-20631",
+      "description": "A logic issue was addressed with improved checks. This issue is fixed in macOS Tahoe 26.4. A user may be able to elevate privileges.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/126794"
+      ],
+      "published": "2026-03-25T01:17:04.003"
+    },
+    {
+      "id": "CVE-2026-20622",
+      "description": "A privacy issue was addressed with improved handling of temporary files. This issue is fixed in macOS Sequoia 15.7.4, macOS Tahoe 26.3. An app may be able to capture a user's screen.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/126348",
+        "https://support.apple.com/en-us/126349"
+      ],
+      "published": "2026-03-25T01:17:03.873"
+    },
+    {
+      "id": "CVE-2026-20639",
+      "description": "An integer overflow was addressed with improved input validation. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.3. Processing a maliciously crafted string may lead to heap corruption.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/126348",
+        "https://support.apple.com/en-us/126795",
+        "https://support.apple.com/en-us/126796"
+      ],
+      "published": "2026-03-25T01:17:04.443"
+    },
+    {
+      "id": "CVE-2026-20687",
+      "description": "A use after free issue was addressed with improved memory management. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Tahoe 26.4, tvOS 26.4, watchOS 26.4. An app may be able to cause unexpected system termination or write kernel memory.",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/126792",
+        "https://support.apple.com/en-us/126793",
+        "https://support.apple.com/en-us/126794"
+      ],
+      "published": "2026-03-25T01:17:05.587"
+    },
+    {
+      "id": "CVE-2025-43534",
+      "description": "A path handling issue was addressed with improved validation. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.2 and iPadOS 26.2. A user with physical access to an iOS device may be able to bypass Activation Lock.",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/125884",
+        "https://support.apple.com/en-us/126793"
+      ],
+      "published": "2026-03-25T01:17:01.690"
+    },
+    {
+      "id": "CVE-2026-20657",
+      "description": "The issue was addressed with improved memory handling. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5. Parsing a maliciously crafted file may lead to an unexpected app termination.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-119",
+        "CWE-125",
+        "CWE-787"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/126793",
+        "https://support.apple.com/en-us/126795",
+        "https://support.apple.com/en-us/126796"
+      ],
+      "published": "2026-03-25T01:17:04.847"
+    },
+    {
+      "id": "CVE-2026-20665",
+      "description": "This issue was addressed through improved state management. This issue is fixed in Safari 26.4, iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Tahoe 26.4, tvOS 26.4, visionOS 26.4, watchOS 26.4. Processing maliciously crafted web content may prevent Content Security Policy from being ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-693"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/126792",
+        "https://support.apple.com/en-us/126793",
+        "https://support.apple.com/en-us/126794"
+      ],
+      "published": "2026-03-25T01:17:05.050"
+    },
+    {
+      "id": "CVE-2026-4780",
+      "description": "A vulnerability was detected in SourceCodester Sales and Inventory System 1.0. Impacted is an unknown function of the file update_out_standing.php of the component HTTP GET Parameter Handler. Performing a manipulation of the argument sid results in sql injection. The attack is possible to be carried",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Inventory-System/SQLi-UpdateOutStanding-sid.md",
+        "https://vuldb.com/?ctiid.352798",
+        "https://vuldb.com/?id.352798"
+      ],
+      "published": "2026-03-25T00:16:41.097"
+    },
+    {
+      "id": "CVE-2026-4781",
+      "description": "A flaw has been found in SourceCodester Sales and Inventory System 1.0. The affected element is an unknown function of the file update_purchase.php of the component HTTP GET Parameter Handler. Executing a manipulation of the argument sid can lead to sql injection. The attack may be performed from re",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Inventory-System/SQLi-UpdatePurchase-sid.md",
+        "https://vuldb.com/?ctiid.352799",
+        "https://vuldb.com/?id.352799"
+      ],
+      "published": "2026-03-25T00:16:41.327"
+    },
+    {
+      "id": "CVE-2026-20637",
+      "description": "A use after free issue was addressed with improved memory management. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.3 and iPadOS 26.3, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.3, tvOS 26.3, visionOS 26.3, watchOS 26.3. An app may be able to cause unexpected system term",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/126346",
+        "https://support.apple.com/en-us/126348",
+        "https://support.apple.com/en-us/126351"
+      ],
+      "published": "2026-03-25T01:17:04.310"
+    },
+    {
+      "id": "CVE-2026-20651",
+      "description": "A privacy issue was addressed with improved handling of temporary files. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.4, macOS Tahoe 26.3. An app may be able to access sensitive user data.",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-377"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/126348",
+        "https://support.apple.com/en-us/126350",
+        "https://support.apple.com/en-us/126795"
+      ],
+      "published": "2026-03-25T01:17:04.743"
+    },
+    {
+      "id": "CVE-2026-20633",
+      "description": "This issue was addressed with improved handling of symlinks. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to access user-sensitive data.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-59"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/126794",
+        "https://support.apple.com/en-us/126795",
+        "https://support.apple.com/en-us/126796"
+      ],
+      "published": "2026-03-25T01:17:04.210"
+    },
+    {
+      "id": "CVE-2026-20668",
+      "description": "A logging issue was addressed with improved data redaction. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.3 and iPadOS 26.3, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.3, visionOS 26.3. An app may be able to access sensitive user data.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-532"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/126346",
+        "https://support.apple.com/en-us/126348",
+        "https://support.apple.com/en-us/126353"
+      ],
+      "published": "2026-03-25T01:17:05.160"
+    },
+    {
+      "id": "CVE-2026-20670",
+      "description": "An authorization issue was addressed with improved state management. This issue is fixed in macOS Sonoma 14.8.4, macOS Tahoe 26.3. An app may be able to access sensitive user data.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/126348",
+        "https://support.apple.com/en-us/126350"
+      ],
+      "published": "2026-03-25T01:17:05.283"
+    },
+    {
+      "id": "CVE-2026-20632",
+      "description": "A parsing issue in the handling of directory paths was addressed with improved path validation. This issue is fixed in macOS Tahoe 26.4. An app may be able to access sensitive user data.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/126794"
+      ],
+      "published": "2026-03-25T01:17:04.107"
+    },
+    {
+      "id": "CVE-2026-20686",
+      "description": "This issue was addressed with improved input validation. This issue is fixed in iOS 26.3 and iPadOS 26.3. An app may be able to access sensitive user data.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/126346"
+      ],
+      "published": "2026-03-25T01:17:05.487"
+    },
+    {
+      "id": "CVE-2026-20664",
+      "description": "The issue was addressed with improved memory handling. This issue is fixed in Safari 26.4, iOS 26.4 and iPadOS 26.4, macOS Tahoe 26.4, visionOS 26.4. Processing maliciously crafted web content may lead to an unexpected process crash.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/126792",
+        "https://support.apple.com/en-us/126794",
+        "https://support.apple.com/en-us/126799"
+      ],
+      "published": "2026-03-25T01:17:04.947"
+    },
+    {
+      "id": "CVE-2026-20607",
+      "description": "A permissions issue was addressed with additional restrictions. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to access protected user data.",
+      "severity": "MEDIUM",
+      "score": 4.0,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/126794",
+        "https://support.apple.com/en-us/126795",
+        "https://support.apple.com/en-us/126796"
+      ],
+      "published": "2026-03-25T01:17:03.763"
+    },
+    {
+      "id": "CVE-2026-20684",
+      "description": "A permissions issue was addressed with additional restrictions. This issue is fixed in macOS Tahoe 26.4. An app may bypass Gatekeeper checks.",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/126794"
+      ],
+      "published": "2026-03-25T01:17:05.387"
+    }
+  ]
+}
