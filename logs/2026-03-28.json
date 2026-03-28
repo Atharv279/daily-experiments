@@ -1,0 +1,364 @@
+{
+  "timestamp": "2026-03-28T04:30:26.965445+00:00",
+  "scan_id": "1c8ff5d0a5",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 11,
+      "MEDIUM": 6,
+      "NONE": 1,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-862",
+        4
+      ],
+      [
+        "CWE-89",
+        3
+      ],
+      [
+        "CWE-639",
+        3
+      ],
+      [
+        "CWE-22",
+        2
+      ],
+      [
+        "CWE-285",
+        2
+      ]
+    ],
+    "threat_index": 324.2,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 324.2,
+        "yesterday": 293.6,
+        "change_pct": 10.4
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-33917",
+      "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Versions prior to 8.0.0.3 contais a SQL injection vulnerability in the ajax_save CAMOS form that can be exploited by authenticated attackers. The vulnerability exists due to insufficient input va",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/openemr/openemr/commit/4d48821d18e4125508d8217c43b09233c7f7e17f",
+        "https://github.com/openemr/openemr/releases/tag/v8_0_0_3",
+        "https://github.com/openemr/openemr/security/advisories/GHSA-r6xq-mfwf-wgq8"
+      ],
+      "published": "2026-03-26T00:16:39.470"
+    },
+    {
+      "id": "CVE-2026-4758",
+      "description": "The WP Job Portal plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'WPJOBPORTALcustomfields::removeFileCustom' function in all versions up to, and including, 2.4.9. This makes it possible for authenticated attackers, with Subscriber-level ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-job-portal/tags/2.4.9/includes/classes/customfields.php#L1558",
+        "https://plugins.trac.wordpress.org/browser/wp-job-portal/tags/2.5.0/includes/classes/customfields.php?rev=3490490#L1558",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/e96f31e0-4b2e-4ea1-a3e5-fd7452a2fea9?source=cve"
+      ],
+      "published": "2026-03-26T00:16:41.570"
+    },
+    {
+      "id": "CVE-2026-34055",
+      "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the legacy patient notes functions in `library/pnotes.inc.php` perform updates and deletes using `WHERE id = ?` without verifying that the note belongs to a patient the ",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/openemr/openemr/commit/214c9b4585a6f1c8c22750172d47f0e258fec0bf",
+        "https://github.com/openemr/openemr/releases/tag/v8_0_0_3",
+        "https://github.com/openemr/openemr/security/advisories/GHSA-8gj5-r8vm-mghq"
+      ],
+      "published": "2026-03-26T00:16:41.227"
+    },
+    {
+      "id": "CVE-2026-34056",
+      "description": "OpenEMR is a free and open source electronic health records and medical practice management application. A Broken Access Control vulnerability in OpenEMR up to and including version 8.0.0.3 allows low-privilege users to view and download Ensora eRx error logs without proper authorization checks. Thi",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-285",
+        "CWE-425"
+      ],
+      "references": [
+        "https://github.com/openemr/openemr/releases/tag/v8_0_0_3",
+        "https://github.com/openemr/openemr/security/advisories/GHSA-6qg7-6jf3-xrfh"
+      ],
+      "published": "2026-03-26T00:16:41.400"
+    },
+    {
+      "id": "CVE-2026-33918",
+      "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the billing file-download endpoint `interface/billing/get_claim_file.php` only verifies that the caller has a valid session and CSRF token, but does not check any ACL pe",
+      "severity": "HIGH",
+      "score": 7.6,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/openemr/openemr/commit/f6d98d0102df0a8f131be560d9208fb65fba6188",
+        "https://github.com/openemr/openemr/releases/tag/v8_0_0_3",
+        "https://github.com/openemr/openemr/security/advisories/GHSA-g3p5-5grq-m65m"
+      ],
+      "published": "2026-03-26T00:16:39.627"
+    },
+    {
+      "id": "CVE-2026-33932",
+      "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, a stored cross-site scripting vulnerability in the CCDA document preview allows an attacker who can upload or send a CCDA document to execute arbitrary JavaScript in a c",
+      "severity": "HIGH",
+      "score": 7.6,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/openemr/openemr/commit/95e6078889b5399b12b59117f998560cd94bd47d",
+        "https://github.com/openemr/openemr/releases/tag/v8_0_0_3",
+        "https://github.com/openemr/openemr/security/advisories/GHSA-g77x-9p3x-2j8f"
+      ],
+      "published": "2026-03-26T00:16:39.953"
+    },
+    {
+      "id": "CVE-2026-32748",
+      "description": "Squid is a caching proxy for the Web. Prior to version 7.5, due to premature release of resource during expected lifetime and heap Use-After-Free bugs, Squid is vulnerable to Denial of Service when handling ICP traffic. This problem allows a remote attacker to perform a reliable and repeatable Denia",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-413",
+        "CWE-416",
+        "CWE-826"
+      ],
+      "references": [
+        "https://github.com/squid-cache/squid/commit/703e07d25ca6fa11f52d20bf0bb879e22ab7481b",
+        "https://github.com/squid-cache/squid/security/advisories/GHSA-f9p7-3jqg-hhvq",
+        "http://www.openwall.com/lists/oss-security/2026/03/25/3"
+      ],
+      "published": "2026-03-26T01:16:26.850"
+    },
+    {
+      "id": "CVE-2026-33285",
+      "description": "LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScript. Prior to version 10.25.1, LiquidJS's `memoryLimit` security mechanism can be completely bypassed by using reverse range expressions (e.g., `(100000000..1)`), allowing an attacker to allocate unlimited memory. Combine",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-20",
+        "CWE-400"
+      ],
+      "references": [
+        "https://github.com/harttle/liquidjs/commit/95ddefc056a11a44d9e753fd47a39db2c241e578",
+        "https://github.com/harttle/liquidjs/security/advisories/GHSA-9r5m-9576-7f6x"
+      ],
+      "published": "2026-03-26T01:16:27.363"
+    },
+    {
+      "id": "CVE-2026-33287",
+      "description": "LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScript. Prior to version 10.25.1, the `replace_first` filter in LiquidJS uses JavaScript's `String.prototype.replace()` which interprets `$&` as a back reference to the matched substring. The filter only charges `memoryLimit",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-20",
+        "CWE-400"
+      ],
+      "references": [
+        "https://github.com/harttle/liquidjs/commit/35d523026345d80458df24c72e653db78b5d061d",
+        "https://github.com/harttle/liquidjs/security/advisories/GHSA-6q5m-63h6-5x4v",
+        "https://github.com/harttle/liquidjs/security/advisories/GHSA-6q5m-63h6-5x4v"
+      ],
+      "published": "2026-03-26T01:16:27.530"
+    },
+    {
+      "id": "CVE-2026-33914",
+      "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the PostCalendar module contains a blind SQL injection vulnerability in the `categoriesUpdate` administrative function. The `dels` POST parameter is read via `pnVarClean",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/openemr/openemr/commit/1b851fc9af84f181ad7a84210a168d0d568cd442",
+        "https://github.com/openemr/openemr/releases/tag/v8_0_0_3",
+        "https://github.com/openemr/openemr/security/advisories/GHSA-rq3v-38x5-3rm5"
+      ],
+      "published": "2026-03-26T00:16:39.137"
+    },
+    {
+      "id": "CVE-2026-34053",
+      "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, missing authorization in the AJAX deletion endpoint `interface/forms/procedure_order/handle_deletions.php` allows any authenticated user, regardless of role, to irrevers",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/openemr/openemr/commit/7a16b731af7d34ffd92155fe2a5692fa1a67858e",
+        "https://github.com/openemr/openemr/releases/tag/v8_0_0_3",
+        "https://github.com/openemr/openemr/security/advisories/GHSA-3vvq-pfq6-pw98"
+      ],
+      "published": "2026-03-26T00:16:41.057"
+    },
+    {
+      "id": "CVE-2026-33931",
+      "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, an Insecure Direct Object Reference (IDOR) vulnerability in the patient portal payment page allows any authenticated portal patient to access other patients' payment rec",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/openemr/openemr/commit/7bf30e0ec5587f80c19094d58df09d46ac328806",
+        "https://github.com/openemr/openemr/releases/tag/v8_0_0_3",
+        "https://github.com/openemr/openemr/security/advisories/GHSA-hf37-5rp9-j27j"
+      ],
+      "published": "2026-03-26T00:16:39.787"
+    },
+    {
+      "id": "CVE-2026-4826",
+      "description": "A vulnerability was determined in SourceCodester Sales and Inventory System 1.0. This vulnerability affects unknown code of the file /update_stock.php of the component HTTP GET Parameter Handler. This manipulation of the argument sid causes sql injection. Remote exploitation of the attack is possibl",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/meifukun/Web-Security-PoCs/blob/main/Inventory-System/SQLi-UpdateStock-sid.md",
+        "https://vuldb.com/?ctiid.353126",
+        "https://vuldb.com/?id.353126"
+      ],
+      "published": "2026-03-26T00:16:41.750"
+    },
+    {
+      "id": "CVE-2026-33933",
+      "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Starting in version 7.0.2.1 and prior to version 8.0.0.3, a reflected cross-site scripting (XSS) vulnerability in the custom template editor allows an attacker to execute arbitrary JavaScript in ",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/openemr/openemr/commit/d5c8d49ef19983472b2d7db0dbebd2dac9d6a200",
+        "https://github.com/openemr/openemr/commit/de9b6eb0da574430e8223c014cf4a05b0adc29d8",
+        "https://github.com/openemr/openemr/releases/tag/v8_0_0_3"
+      ],
+      "published": "2026-03-26T00:16:40.120"
+    },
+    {
+      "id": "CVE-2026-33915",
+      "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, five insurance company REST API routes are missing the `RestConfig::request_authorization_check()` call that every other data-modifying route in the standard API uses. T",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/openemr/openemr/commit/976d2a85f024a730955578597a82c083067a72b4",
+        "https://github.com/openemr/openemr/releases/tag/v8_0_0_3",
+        "https://github.com/openemr/openemr/security/advisories/GHSA-ww94-26v7-x4gp"
+      ],
+      "published": "2026-03-26T00:16:39.303"
+    },
+    {
+      "id": "CVE-2026-34051",
+      "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Versions prior to 8.0.0.3 have an improper access control on the Import/Export functionality, allowing unauthorized users to perform import and export actions through direct request manipulation ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-285",
+        "CWE-425"
+      ],
+      "references": [
+        "https://github.com/openemr/openemr/commit/81c097f7852fc60d45adf6c13baa86cd0a1b400b",
+        "https://github.com/openemr/openemr/releases/tag/v8_0_0_3",
+        "https://github.com/openemr/openemr/security/advisories/GHSA-54m8-wpg9-9665"
+      ],
+      "published": "2026-03-26T00:16:40.850"
+    },
+    {
+      "id": "CVE-2026-33934",
+      "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Versions prior to 8.0.0.3 have a missing authorization check in `portal/sign/lib/show-signature.php` that allows any authenticated patient portal user to retrieve the drawn signature image of any",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639",
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/openemr/openemr/commit/ae7ee1872d2e6300b165e24687cc90cf6847a4e5",
+        "https://github.com/openemr/openemr/releases/tag/v8_0_0_3",
+        "https://github.com/openemr/openemr/security/advisories/GHSA-w9w5-7x6h-657q"
+      ],
+      "published": "2026-03-26T00:16:40.290"
+    },
+    {
+      "id": "CVE-2026-30892",
+      "description": "crun is an open source OCI Container Runtime fully written in C. In versions 1.19 through 1.26, the  `crun exec` option `-u` (`--user`) is incorrectly parsed. The value `1` is interpreted as UID 0 and GID 0 when it should have been UID 1 and  GID 0. The process thus runs with higher privileges than ",
+      "severity": "NONE",
+      "score": 0.0,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://github.com/containers/crun/commit/1bd7f42446999b0e76bc3d575392e05c943b0b01",
+        "https://github.com/containers/crun/releases/tag/1.27",
+        "https://github.com/containers/crun/security/advisories/GHSA-4vg2-xjqj-7chj"
+      ],
+      "published": "2026-03-26T00:16:38.953"
+    },
+    {
+      "id": "CVE-2026-33182",
+      "description": "Saloon is a PHP library that gives users tools to build API integrations and SDKs. Prior to version 4.0.0, when building the request URL, Saloon combined the connector's base URL with the request endpoint. If the endpoint was a valid absolute URL, the code used that URL as-is and ignored the base UR",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-522",
+        "CWE-918"
+      ],
+      "references": [
+        "https://docs.saloon.dev/upgrade/upgrading-from-v3-to-v4",
+        "https://github.com/saloonphp/saloon/security/advisories/GHSA-c83f-3xp6-hfcp"
+      ],
+      "published": "2026-03-26T01:16:27.043"
+    },
+    {
+      "id": "CVE-2026-33183",
+      "description": "Saloon is a PHP library that gives users tools to build API integrations and SDKs. Prior to version 4.0.0, fixture names were used to build file paths under the configured fixture directory without validation. A name containing path segments (e.g. ../traversal or ../../etc/passwd) resulted in a path",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://docs.saloon.dev/upgrade/upgrading-from-v3-to-v4",
+        "https://github.com/saloonphp/saloon/security/advisories/GHSA-f7xc-5852-fj99"
+      ],
+      "published": "2026-03-26T01:16:27.210"
+    }
+  ]
+}
