@@ -1,0 +1,349 @@
+{
+  "timestamp": "2026-03-29T04:57:39.486112+00:00",
+  "scan_id": "ba54241e69",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 8,
+      "MEDIUM": 6,
+      "LOW": 1,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-502",
+        3
+      ],
+      [
+        "CWE-639",
+        3
+      ],
+      [
+        "CWE-22",
+        2
+      ],
+      [
+        "CWE-119",
+        2
+      ],
+      [
+        "CWE-121",
+        2
+      ]
+    ],
+    "threat_index": 303.3,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 303.3,
+        "yesterday": 324.2,
+        "change_pct": -6.4
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-33945",
+      "description": "Incus is a system container and virtual machine manager. Incus instances have an option to provide credentials to systemd in the guest. For containers, this is handled through a shared directory. Prior to version 6.23.0, an attacker can set a configuration key named something like `systemd.credentia",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/lxc/incus/security/advisories/GHSA-q4q8-7f2j-9h9f"
+      ],
+      "published": "2026-03-27T00:16:23.633"
+    },
+    {
+      "id": "CVE-2026-27893",
+      "description": "vLLM is an inference and serving engine for large language models (LLMs). Starting in version 0.10.1 and prior to version 0.18.0, two model implementation files hardcode `trust_remote_code=True` when loading sub-components, bypassing the user's explicit `--trust-remote-code=False` security opt-out. ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-693"
+      ],
+      "references": [
+        "https://github.com/vllm-project/vllm/commit/00bd08edeee5dd4d4c13277c0114a464011acf72",
+        "https://github.com/vllm-project/vllm/pull/36192",
+        "https://github.com/vllm-project/vllm/security/advisories/GHSA-7972-pg2x-xr59"
+      ],
+      "published": "2026-03-27T00:16:22.333"
+    },
+    {
+      "id": "CVE-2026-33898",
+      "description": "Incus is a system container and virtual machine manager. Prior to version 6.23.0, the web server spawned by `incus webui` incorrectly validates the authentication token such that an invalid value will be accepted. `incus webui` runs a local web server on a random localhost port. For authentication, ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/lxc/incus/security/advisories/GHSA-453r-g2pg-cxxq"
+      ],
+      "published": "2026-03-27T00:16:23.333"
+    },
+    {
+      "id": "CVE-2026-4904",
+      "description": "A vulnerability has been found in Tenda AC5 15.03.06.47. This issue affects the function formSetCfm of the file /goform/setcfm of the component POST Request Handler. Such manipulation of the argument funcpara1 leads to stack-based buffer overflow. The attack may be launched remotely. The exploit has",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/Tenda_AC5_setcfm_funcpara1-32053a41781f8073a4d6ef8076abe644?source=copy_link",
+        "https://vuldb.com/?ctiid.353655",
+        "https://vuldb.com/?id.353655"
+      ],
+      "published": "2026-03-27T00:16:24.170"
+    },
+    {
+      "id": "CVE-2026-4905",
+      "description": "A vulnerability was found in Tenda AC5 15.03.06.47. Impacted is the function formWifiWpsOOB of the file /goform/WifiWpsOOB of the component POST Request Handler. Performing a manipulation of the argument index results in stack-based buffer overflow. Remote exploitation of the attack is possible. The",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/Tenda_AC5_WifiWpsOOB_index-32053a41781f8096a9b6e48177c25eb0?source=copy_link",
+        "https://vuldb.com/?ctiid.353656",
+        "https://vuldb.com/?id.353656"
+      ],
+      "published": "2026-03-27T00:16:24.393"
+    },
+    {
+      "id": "CVE-2026-33718",
+      "description": "OpenHands is software for AI-driven development. Starting in version 1.5.0, a Command Injection vulnerability exists in the `get_git_diff()` method at `openhands/runtime/utils/git_handler.py:134`. The `path` parameter from the `/api/conversations/{conversation_id}/git/diff` API endpoint is passed un",
+      "severity": "HIGH",
+      "score": 7.6,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://docs.python.org/3/library/shlex.html#shlex.quote",
+        "https://docs.python.org/3/library/subprocess.html#security-considerations",
+        "https://github.com/OpenHands/OpenHands/pull/13051"
+      ],
+      "published": "2026-03-27T01:16:19.483"
+    },
+    {
+      "id": "CVE-2026-33697",
+      "description": "Cocos AI is a confidential computing system for AI. The current implementation of attested TLS (aTLS) in CoCoS is vulnerable to a relay attack affecting all versions from v0.4.0 through v0.8.2. This vulnerability is present in both the AMD SEV-SNP and Intel TDX deployment targets supported by CoCoS.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-322",
+        "CWE-346"
+      ],
+      "references": [
+        "https://github.com/ultravioletrs/cocos/security/advisories/GHSA-vfgg-mvxx-mgg7"
+      ],
+      "published": "2026-03-27T00:16:23.133"
+    },
+    {
+      "id": "CVE-2026-33725",
+      "description": "Metabase is an open source business intelligence and embedded analytics tool. In Metabase Enterprise prior to versions 1.54.22, 1.55.22, 1.56.22, 1.57.16, 1.58.10, and 1.59.4, authenticated admins on Metabase Enterprise Edition can achieve Remote Code Execution (RCE) and Arbitrary File Read via the ",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/metabase/metabase/security/advisories/GHSA-fppj-vcm3-w229"
+      ],
+      "published": "2026-03-27T01:16:19.837"
+    },
+    {
+      "id": "CVE-2026-28788",
+      "description": "Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. Prior to version 0.8.6, any authenticated user can overwrite any file's content by ID through the `POST /api/v1/retrieval/process/files/batch` endpoint. The endpoint performs no ownership check, so a r",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/open-webui/open-webui/security/advisories/GHSA-jjp7-g2jw-wh3j"
+      ],
+      "published": "2026-03-27T00:16:22.673"
+    },
+    {
+      "id": "CVE-2026-33693",
+      "description": "Lemmy is a link aggregator and forum for the fediverse. Prior to version 0.7.0-beta.9, the `v4_is_invalid()` function in `activitypub-federation-rust` (`src/utils.rs`) does not check for `Ipv4Addr::UNSPECIFIED` (0.0.0.0). An unauthenticated attacker controlling a remote domain can point it to 0.0.0.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/LemmyNet/activitypub-federation-rust/commit/4ae8532b17bc35755240b7f55d4a5b7665351599",
+        "https://github.com/LemmyNet/lemmy/security/advisories/GHSA-q537-8fr5-cw35",
+        "https://github.com/advisories/GHSA-7723-35v7-qcxw"
+      ],
+      "published": "2026-03-27T01:16:18.983"
+    },
+    {
+      "id": "CVE-2026-33730",
+      "description": "Open Source Point of Sale (opensourcepos) is a web based point of sale application written in PHP using CodeIgniter framework. Prior to version 3.4.2, an Insecure Direct Object Reference (IDOR) vulnerability allows an authenticated low-privileged user to access the password change functionality of o",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/opensourcepos/opensourcepos/commit/ee4d44ed396097d6010c5490ab4fd7cfae694624",
+        "https://github.com/opensourcepos/opensourcepos/security/advisories/GHSA-mcc2-8rp2-q6ch"
+      ],
+      "published": "2026-03-27T01:16:20.577"
+    },
+    {
+      "id": "CVE-2026-29070",
+      "description": "Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. Prior to version 0.8.6, an access control check is missing when deleting a file from a knowledge base. The only check being done is that the user has write access to the knowledge base (or is admin), b",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/open-webui/open-webui/security/advisories/GHSA-26gm-93rw-cchf"
+      ],
+      "published": "2026-03-27T00:16:22.823"
+    },
+    {
+      "id": "CVE-2026-33726",
+      "description": "Cilium is a networking, observability, and security solution with an eBPF-based dataplane. Prior to versions 1.17.14, 1.18.8, and 1.19.2, Ingress Network Policies are not enforced for traffic from pods to L7 Services (Envoy, GAMMA) with a local backend on the same node, when Per-Endpoint Routing is ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-284",
+        "CWE-863"
+      ],
+      "references": [
+        "https://docs.cilium.io/en/stable/network/concepts/routing/#routing",
+        "https://docs.cilium.io/en/stable/network/kubernetes/policy/#network-policy",
+        "https://docs.cilium.io/en/stable/network/servicemesh/l7-traffic-management"
+      ],
+      "published": "2026-03-27T01:16:20.007"
+    },
+    {
+      "id": "CVE-2026-33721",
+      "description": "MapServer is a system for developing web-based GIS applications. Starting in version 4.2 and prior to version 8.6.1, a heap-buffer-overflow write in MapServer\u2019s SLD (Styled Layer Descriptor) parser lets a remote, unauthenticated attacker crash the MapServer process by sending a crafted SLD with more",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/MapServer/MapServer/releases/tag/rel-8-6-1",
+        "https://github.com/MapServer/MapServer/security/advisories/GHSA-cv4m-mr84-fgjp"
+      ],
+      "published": "2026-03-27T01:16:19.670"
+    },
+    {
+      "id": "CVE-2026-28786",
+      "description": "Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. Prior to version 0.8.6, an unsanitized filename field in the speech-to-text transcription endpoint allows any authenticated non-admin user to trigger a `FileNotFoundError` whose message \u2014 including the",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-22",
+        "CWE-209"
+      ],
+      "references": [
+        "https://github.com/open-webui/open-webui/security/advisories/GHSA-vvxm-vxmr-624h",
+        "https://github.com/open-webui/open-webui/security/advisories/GHSA-vvxm-vxmr-624h"
+      ],
+      "published": "2026-03-27T00:16:22.503"
+    },
+    {
+      "id": "CVE-2026-29071",
+      "description": "Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. Prior to version 0.8.6, any authenticated user can read other users' private memories via `/api/v1/retrieval/query/collection`. Version 0.8.6 patches the issue.",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/open-webui/open-webui/security/advisories/GHSA-w9f8-gxf9-rhvw"
+      ],
+      "published": "2026-03-27T00:16:22.983"
+    },
+    {
+      "id": "CVE-2026-33699",
+      "description": "pypdf is a free and open-source pure-python PDF library. Versions prior to 6.9.2 have a vulnerability in which an attacker can craft a PDF which leads to an infinite loop. This requires reading a file in non-strict mode. This has been fixed in pypdf 6.9.2. If users cannot upgrade yet, consider apply",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-835"
+      ],
+      "references": [
+        "https://github.com/py-pdf/pypdf/pull/3693",
+        "https://github.com/py-pdf/pypdf/releases/tag/6.9.2",
+        "https://github.com/py-pdf/pypdf/security/advisories/GHSA-87mj-5ggw-8qc3"
+      ],
+      "published": "2026-03-27T01:16:19.147"
+    },
+    {
+      "id": "CVE-2026-33701",
+      "description": "OpenTelemetry Java Instrumentation provides OpenTelemetry auto-instrumentation and instrumentation libraries for Java. In versions prior to 2.26.1, the RMI instrumentation registered a custom endpoint that deserialized incoming data without applying serialization filters. On JDK version 16 and earli",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/open-telemetry/opentelemetry-java-instrumentation/commit/9cf4fbaaa9e79226142b2ed42a6f6b4ac0be2197",
+        "https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/tag/v2.26.1",
+        "https://github.com/open-telemetry/opentelemetry-java-instrumentation/security/advisories/GHSA-xw7x-h9fj-p2c7"
+      ],
+      "published": "2026-03-27T01:16:19.313"
+    },
+    {
+      "id": "CVE-2026-33728",
+      "description": "dd-trace-java is a Datadog APM client for Java. In versions of dd-trace-java 0.40.0 through prior to 1.60.2, the RMI instrumentation registered a custom endpoint that deserialized incoming data without applying serialization filters. On JDK version 16 and earlier, an attacker with network access to ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/DataDog/dd-trace-java/releases/tag/v1.60.3",
+        "https://github.com/DataDog/dd-trace-java/security/advisories/GHSA-579q-h82j-r5v2"
+      ],
+      "published": "2026-03-27T01:16:20.203"
+    },
+    {
+      "id": "CVE-2026-33729",
+      "description": "OpenFGA is a high-performance and flexible authorization/permission engine built for developers and inspired by Google Zanzibar. In versions prior to 1.13.1, under specific conditions, models using conditions with caching enabled can result in two different check requests producing the same cache ke",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-20",
+        "CWE-345",
+        "CWE-1289"
+      ],
+      "references": [
+        "https://github.com/openfga/openfga/commit/049b50ccd2cc7e163bd897f3d17a7b859ad146f8",
+        "https://github.com/openfga/openfga/releases/tag/v1.13.1",
+        "https://github.com/openfga/openfga/security/advisories/GHSA-h6c8-cww8-35hf"
+      ],
+      "published": "2026-03-27T01:16:20.367"
+    }
+  ]
+}
