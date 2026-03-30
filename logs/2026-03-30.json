@@ -1,0 +1,350 @@
+{
+  "timestamp": "2026-03-30T05:08:36.048628+00:00",
+  "scan_id": "68bee3fe39",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 12,
+      "MEDIUM": 3,
+      "LOW": 3,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-787",
+        7
+      ],
+      [
+        "CWE-22",
+        2
+      ],
+      [
+        "CWE-200",
+        2
+      ],
+      [
+        "CWE-798",
+        2
+      ],
+      [
+        "CWE-20",
+        1
+      ]
+    ],
+    "threat_index": 337.5,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 337.5,
+        "yesterday": 303.3,
+        "change_pct": 11.3
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2016-20037",
+      "description": "xwpe 1.5.30a-2.1 and prior contains a stack-based buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying overly long input strings that exceed buffer boundaries. Attackers can craft malicious command-line arguments with 262 bytes of junk data followed by she",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "http://www.identicalsoftware.com/xwpe",
+        "https://www.exploit-db.com/exploits/39285",
+        "https://www.vulncheck.com/advisories/xwpe-30a-stack-based-buffer-overflow"
+      ],
+      "published": "2026-03-28T12:15:58.500"
+    },
+    {
+      "id": "CVE-2016-20038",
+      "description": "yTree 1.94-1.1 contains a stack-based buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an excessively long argument to the application. Attackers can craft a malicious command-line argument containing shellcode and a return address to overwrite the sta",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "http://www.han.de/~werner/ytree.html",
+        "https://www.exploit-db.com/exploits/39406",
+        "https://www.vulncheck.com/advisories/ytree-stack-based-buffer-overflow"
+      ],
+      "published": "2026-03-28T12:15:59.277"
+    },
+    {
+      "id": "CVE-2016-20039",
+      "description": "Multi Emulator Super System 0.154-3.1 contains a buffer overflow vulnerability in the gamma parameter handling that allows local attackers to crash the application or execute arbitrary code. Attackers can supply an oversized gamma parameter value to overflow the stack buffer and overwrite the instru",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "http://mamedev.org/",
+        "https://www.exploit-db.com/exploits/39673",
+        "https://www.vulncheck.com/advisories/multi-emulator-super-system-buffer-overflow"
+      ],
+      "published": "2026-03-28T12:15:59.473"
+    },
+    {
+      "id": "CVE-2016-20040",
+      "description": "TiEmu 3.03-nogdb+dfsg-3 contains a buffer overflow vulnerability in the ROM parameter handling that allows local attackers to crash the application or execute arbitrary code. Attackers can supply an oversized ROM parameter to the tiemu command-line interface to overflow the stack buffer and overwrit",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "http://lpg.ticalc.org/prj_tiemu/",
+        "https://www.exploit-db.com/exploits/39692",
+        "https://www.vulncheck.com/advisories/tiemu-nogdb-dfsg-3-buffer-overflow-via-rom-parameter"
+      ],
+      "published": "2026-03-28T12:15:59.670"
+    },
+    {
+      "id": "CVE-2016-20041",
+      "description": "Yasr 0.6.9-5 contains a buffer overflow vulnerability that allows local attackers to crash the application or execute arbitrary code by supplying an oversized argument to the -p parameter. Attackers can invoke yasr with a crafted payload containing junk data, shellcode, and a return address to overw",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "http://yasr.sourceforge.net/",
+        "https://www.exploit-db.com/exploits/39734",
+        "https://www.vulncheck.com/advisories/yasr-5-buffer-overflow-via-command-line-parameter"
+      ],
+      "published": "2026-03-28T12:15:59.860"
+    },
+    {
+      "id": "CVE-2016-20042",
+      "description": "TRN 3.6-23 contains a stack buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an oversized argument to the application. Attackers can craft a malicious command-line argument with 156 bytes of padding followed by a return address to overwrite the instruc",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://sourceforge.net/projects/trn/",
+        "https://www.exploit-db.com/exploits/39764",
+        "https://www.vulncheck.com/advisories/trn-23-stack-buffer-overflow-local-code-execution"
+      ],
+      "published": "2026-03-28T12:16:00.057"
+    },
+    {
+      "id": "CVE-2016-20043",
+      "description": "NRSS RSS Reader 0.3.9-1 contains a stack buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an oversized argument to the -F parameter. Attackers can craft a malicious input with 256 bytes of padding followed by a controlled EIP value to overwrite the ret",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "http://www.codezen.org/nrss/",
+        "https://www.exploit-db.com/exploits/39810",
+        "https://www.vulncheck.com/advisories/nrss-rss-reader-1-stack-buffer-overflow"
+      ],
+      "published": "2026-03-28T12:16:00.250"
+    },
+    {
+      "id": "CVE-2016-20044",
+      "description": "PInfo 0.6.9-5.1 contains a local buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an oversized argument to the -m parameter. Attackers can craft a malicious input string with 564 bytes of padding followed by a return address to overwrite the instructio",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "http://pinfo.alioth.debian.org/",
+        "https://www.exploit-db.com/exploits/40023",
+        "https://www.vulncheck.com/advisories/pinfo-local-buffer-overflow-via-m-parameter"
+      ],
+      "published": "2026-03-28T12:16:00.447"
+    },
+    {
+      "id": "CVE-2016-20045",
+      "description": "HNB Organizer 1.9.18-10 contains a local buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an oversized argument to the -rc command-line parameter. Attackers can craft a malicious input string exceeding 108 bytes containing shellcode and a return addres",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "http://hnb.sourceforge.net/",
+        "https://www.exploit-db.com/exploits/40025",
+        "https://www.vulncheck.com/advisories/hnb-organizer-10-local-buffer-overflow-via-rc-parameter"
+      ],
+      "published": "2026-03-28T12:16:00.630"
+    },
+    {
+      "id": "CVE-2026-4987",
+      "description": "The SureForms \u2013 Contact Form, Payment Form & Other Custom Form Builder plugin for WordPress is vulnerable to Payment Amount Bypass in all versions up to, and including, 2.5.2. This is due to the create_payment_intent() function performing a payment validation solely based on the value of a user-cont",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3488858/sureforms",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/c4772b32-a730-44f2-b43c-f9bd5abb6541?source=cve"
+      ],
+      "published": "2026-03-28T02:16:14.793"
+    },
+    {
+      "id": "CVE-2026-1679",
+      "description": "The eswifi socket offload driver copies user-provided payloads into a fixed buffer without checking available space; oversized sends overflow `eswifi->buf`, corrupting kernel memory (CWE-120). Exploit requires local code that can call the socket send API; no remote attacker can reach it directly.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-qx3g-5g22-fq5w"
+      ],
+      "published": "2026-03-28T00:16:04.740"
+    },
+    {
+      "id": "CVE-2025-12886",
+      "description": "The Oxygen Theme theme for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 6.0.8 via the laborator_calc_route AJAX action. This makes it possible for unauthenticated attackers to make web requests to arbitrary locations originating from the web applicatio",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://documentation.laborator.co/kb/oxygen/oxygen-release-notes/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/8c83f430-8a4d-40fa-890c-387c787a3b55?source=cve"
+      ],
+      "published": "2026-03-28T04:16:49.323"
+    },
+    {
+      "id": "CVE-2026-1307",
+      "description": "The Ninja Forms - The Contact Form Builder That Grows With You plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.14.1 via a callback function for the admin_enqueue_scripts action handler in blocks/bootstrap.php. This makes it possible for au",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3489168/ninja-forms",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/df4f4358-af6a-4a1a-bb83-afe31b3cdb9f?source=cve"
+      ],
+      "published": "2026-03-28T07:15:55.950"
+    },
+    {
+      "id": "CVE-2025-15445",
+      "description": "The Restaurant Cafeteria WordPress theme through 0.4.6 exposes insecure admin-ajax actions without nonce or capability checks, allowing any logged-in user, like subscriber, to perform privileged operations. An attacker can install and activate a  from a user-supplied URL, leading to arbitrary PHP co",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/f3f4a734-5828-4e3f-a170-28189aeda929/"
+      ],
+      "published": "2026-03-28T06:16:00.137"
+    },
+    {
+      "id": "CVE-2026-2442",
+      "description": "The Page Builder: Pagelayer \u2013 Drag and Drop website builder plugin for WordPress is vulnerable to Improper Neutralization of CRLF Sequences ('CRLF Injection') in all versions up to, and including, 2.0.7. This is due to the contact form handler performing placeholder substitution on attacker-controll",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-93"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3464204/pagelayer",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/ce101aad-10a3-4a8c-9f4a-0e38e35b4dab?source=cve"
+      ],
+      "published": "2026-03-28T10:16:30.980"
+    },
+    {
+      "id": "CVE-2026-4994",
+      "description": "A vulnerability was found in wandb OpenUI up to 1.0/3.5-turb. Affected is the function generic_exception_handler of the file backend/openui/server.py of the component APIStatusError Handler. The manipulation of the argument key results in information exposure through error message. Access to the loc",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-200",
+        "CWE-209"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/8c6ff147186855e4b716e7526de213e1",
+        "https://vuldb.com/?ctiid.353881",
+        "https://vuldb.com/?id.353881"
+      ],
+      "published": "2026-03-28T10:16:32.110"
+    },
+    {
+      "id": "CVE-2026-4995",
+      "description": "A vulnerability was determined in wandb OpenUI up to 1.0. Affected by this vulnerability is an unknown functionality of the file frontend/public/annotator/index.html of the component Window Message Event Handler. This manipulation causes cross site scripting. The attack can be initiated remotely. Th",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/899f210b2d78e163d13561bb7f49b4da",
+        "https://vuldb.com/?ctiid.353882",
+        "https://vuldb.com/?id.353882"
+      ],
+      "published": "2026-03-28T11:16:36.060"
+    },
+    {
+      "id": "CVE-2026-4993",
+      "description": "A vulnerability has been found in wandb OpenUI up to 0.0.0.0/1.0. This impacts an unknown function of the file backend/openui/config.py. The manipulation of the argument LITELLM_MASTER_KEY leads to hard-coded credentials. An attack has to be approached locally. The exploit has been disclosed to the ",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-259",
+        "CWE-798"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/3bf37486022d4c57caec3a35cd79ac92",
+        "https://vuldb.com/?ctiid.353880",
+        "https://vuldb.com/?id.353880"
+      ],
+      "published": "2026-03-28T10:16:31.853"
+    },
+    {
+      "id": "CVE-2026-23399",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnf_tables: nft_dynset: fix possible stateful expression memleak in error path\n\nIf cloning the second stateful expression in the element via GFP_ATOMIC\nfails, then the first stateful expression remains in place without being\nrelease",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/0548a13b5a145b16e4da0628b5936baf35f51b43",
+        "https://git.kernel.org/stable/c/31641c682db73353e4647e40735c7f2a75ff58ef",
+        "https://git.kernel.org/stable/c/c88a9fd26cee365bec932196f76175772a941cca"
+      ],
+      "published": "2026-03-28T08:15:56.720"
+    },
+    {
+      "id": "CVE-2025-9497",
+      "description": "Use of Hard-coded Credentials vulnerability in Microchip Time Provider 4100 allows Malicious Manual Software Update.This issue affects Time Provider 4100: before 2.5.0.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-798"
+      ],
+      "references": [
+        "https://www.microchip.com/en-us/solutions/technologies/embedded-security/how-to-report-potential-product-security-vulnerabilities/timeprovider-4100-hardcoded-upgrade-decryption-passwords"
+      ],
+      "published": "2026-03-28T11:16:35.337"
+    }
+  ]
+}
