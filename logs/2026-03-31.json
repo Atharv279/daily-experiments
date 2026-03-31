@@ -1,13 +1,14 @@
 {
-  "timestamp": "2026-03-31T15:40:45.031542+00:00",
-  "scan_id": "e10608bc17",
+  "timestamp": "2026-03-31T21:00:42.661367+00:00",
+  "scan_id": "3733c41a87",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
+      "CRITICAL": 1,
       "HIGH": 11,
       "MEDIUM": 6,
       "LOW": 1,
-      "UNKNOWN": 2
+      "UNKNOWN": 1
     },
     "top_cwes": [
       [
@@ -31,8 +32,8 @@
         6
       ]
     ],
-    "threat_index": 342.3,
-    "critical_count": 0
+    "threat_index": 381.5,
+    "critical_count": 1
   },
   "delta": {
     "status": "compared",
@@ -43,18 +44,33 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 342.3,
+        "today": 381.5,
         "yesterday": 337.5,
-        "change_pct": 1.4
+        "change_pct": 13.0
       },
       "critical_count": {
-        "today": 0,
+        "today": 1,
         "yesterday": 0,
         "change_pct": 0
       }
     }
   },
   "cves": [
+    {
+      "id": "CVE-2026-4851",
+      "description": "GRID::Machine versions through 0.127 for Perl allows arbitrary code execution via unsafe deserialization.\n\nGRID::Machine provides Remote Procedure Calls (RPC) over SSH for Perl. The client connects to remote hosts to execute code on them. A compromised or malicious remote host can execute arbitrary ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-95",
+        "CWE-502"
+      ],
+      "references": [
+        "https://www.openwall.com/lists/oss-security/2026/03/26/6",
+        "http://www.openwall.com/lists/oss-security/2026/03/26/6"
+      ],
+      "published": "2026-03-29T01:15:56.967"
+    },
     {
       "id": "CVE-2026-5021",
       "description": "A flaw has been found in Tenda F453 1.0.0.3. This affects the function fromPPTPUserSetting of the file /goform/PPTPUserSetting of the component httpd. This manipulation of the argument delno causes stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been publi",
@@ -344,21 +360,6 @@
         "https://github.com/michaelrsweet/mxml/issues/350#issuecomment-4051317229"
       ],
       "published": "2026-03-29T09:15:56.340"
-    },
-    {
-      "id": "CVE-2026-4851",
-      "description": "GRID::Machine versions through 0.127 for Perl allows arbitrary code execution via unsafe deserialization.\n\nGRID::Machine provides Remote Procedure Calls (RPC) over SSH for Perl. The client connects to remote hosts to execute code on them. A compromised or malicious remote host can execute arbitrary ",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-95",
-        "CWE-502"
-      ],
-      "references": [
-        "https://www.openwall.com/lists/oss-security/2026/03/26/6",
-        "http://www.openwall.com/lists/oss-security/2026/03/26/6"
-      ],
-      "published": "2026-03-29T01:15:56.967"
     },
     {
       "id": "CVE-2026-23400",
