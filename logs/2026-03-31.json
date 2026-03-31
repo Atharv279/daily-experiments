@@ -1,0 +1,377 @@
+{
+  "timestamp": "2026-03-31T04:45:05.743553+00:00",
+  "scan_id": "59c3be43e5",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 11,
+      "MEDIUM": 6,
+      "LOW": 1,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        7
+      ],
+      [
+        "CWE-89",
+        7
+      ],
+      [
+        "CWE-119",
+        6
+      ],
+      [
+        "CWE-121",
+        6
+      ],
+      [
+        "CWE-77",
+        6
+      ]
+    ],
+    "threat_index": 342.3,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 342.3,
+        "yesterday": 337.5,
+        "change_pct": 1.4
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-5021",
+      "description": "A flaw has been found in Tenda F453 1.0.0.3. This affects the function fromPPTPUserSetting of the file /goform/PPTPUserSetting of the component httpd. This manipulation of the argument delno causes stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been publi",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vul_db/blob/main/F453/vul_92/README.md",
+        "https://vuldb.com/submit/778415",
+        "https://vuldb.com/vuln/353906"
+      ],
+      "published": "2026-03-29T02:16:17.377"
+    },
+    {
+      "id": "CVE-2026-5024",
+      "description": "A vulnerability was found in D-Link DIR-513 1.10. This issue affects the function formSetEmail of the file /goform/formSetEmail. Performing a manipulation of the argument curTime results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been made publ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vul_db/blob/main/Dir513/vul_30/README.md",
+        "https://vuldb.com/submit/778414",
+        "https://vuldb.com/vuln/353908"
+      ],
+      "published": "2026-03-29T04:16:00.537"
+    },
+    {
+      "id": "CVE-2026-5036",
+      "description": "A vulnerability was found in Tenda 4G06 04.06.01.29. This vulnerability affects the function fromDhcpListClient of the file /goform/DhcpListClient of the component Endpoint. Performing a manipulation of the argument page results in stack-based buffer overflow. The attack can be initiated remotely. T",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Kiciot/cve/issues/1",
+        "https://vuldb.com/submit/778625",
+        "https://vuldb.com/vuln/353962"
+      ],
+      "published": "2026-03-29T08:15:56.063"
+    },
+    {
+      "id": "CVE-2026-5042",
+      "description": "A security flaw has been discovered in Belkin F9K1122 1.00.33. The affected element is the function formCrossBandSwitch of the file /goform/formCrossBandSwitch of the component Parameter Handler. The manipulation of the argument webpage results in stack-based buffer overflow. The attack may be launc",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vul_db/blob/main/Belkin/vul_153/README.md",
+        "https://vuldb.com/submit/779123",
+        "https://vuldb.com/vuln/353965"
+      ],
+      "published": "2026-03-29T11:16:34.867"
+    },
+    {
+      "id": "CVE-2026-5043",
+      "description": "A weakness has been identified in Belkin F9K1122 1.00.33. The impacted element is the function formSetPassword of the file /goform/formSetPassword of the component Parameter Handler. This manipulation of the argument webpage causes stack-based buffer overflow. Remote exploitation of the attack is po",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vul_db/blob/main/Belkin/vul_154/README.md",
+        "https://vuldb.com/submit/779124",
+        "https://vuldb.com/vuln/353966"
+      ],
+      "published": "2026-03-29T12:15:57.937"
+    },
+    {
+      "id": "CVE-2026-32914",
+      "description": "OpenClaw before 2026.3.12 contains an insufficient access control vulnerability in the /config and /debug command handlers that allows command-authorized non-owners to access owner-only surfaces. Attackers with command authorization can read or modify privileged configuration settings restricted to ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-r7vr-gr74-94p8",
+        "https://www.vulncheck.com/advisories/openclaw-insufficient-access-control-in-config-and-debug-endpoints"
+      ],
+      "published": "2026-03-29T13:16:59.767"
+    },
+    {
+      "id": "CVE-2026-32915",
+      "description": "OpenClaw before 2026.3.11 contains a sandbox boundary bypass vulnerability allowing leaf subagents to access the subagents control surface and resolve against parent requester scope instead of their own session tree. A low-privilege sandboxed leaf worker can steer or kill sibling runs and cause exec",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-4w7m-58cg-cmff",
+        "https://www.vulncheck.com/advisories/openclaw-sandbox-boundary-bypass-via-subagent-control-surface"
+      ],
+      "published": "2026-03-29T13:16:59.973"
+    },
+    {
+      "id": "CVE-2026-5019",
+      "description": "A security vulnerability has been detected in code-projects Simple Food Order System 1.0. Affected by this vulnerability is an unknown functionality of the file all-orders.php of the component Parameter Handler. The manipulation of the argument Status leads to sql injection. The attack may be initia",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/6Justdododo6/CVE/issues/17",
+        "https://vuldb.com/submit/779341"
+      ],
+      "published": "2026-03-29T00:16:13.673"
+    },
+    {
+      "id": "CVE-2026-5033",
+      "description": "A vulnerability was detected in code-projects Accounting System 1.0. Affected by this vulnerability is an unknown functionality of the file /view_costumer.php of the component Parameter Handler. The manipulation of the argument cos_id results in sql injection. The attack may be performed from remote",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/Xu-Zhihan/CVE/issues/6",
+        "https://vuldb.com/submit/778589"
+      ],
+      "published": "2026-03-29T06:16:11.703"
+    },
+    {
+      "id": "CVE-2026-5034",
+      "description": "A flaw has been found in code-projects Accounting System 1.0. Affected by this issue is some unknown functionality of the file /edit_costumer.php of the component Parameter Handler. This manipulation of the argument cos_id causes sql injection. It is possible to initiate the attack remotely. The exp",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/Xu-Zhihan/CVE/issues/7",
+        "https://vuldb.com/submit/778594"
+      ],
+      "published": "2026-03-29T06:16:12.870"
+    },
+    {
+      "id": "CVE-2026-5035",
+      "description": "A vulnerability has been found in code-projects Accounting System 1.0. This affects an unknown part of the file /view_work.php of the component Parameter Handler. Such manipulation of the argument en_id leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclo",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/Xu-Zhihan/CVE/issues/8",
+        "https://vuldb.com/submit/778603"
+      ],
+      "published": "2026-03-29T07:15:56.793"
+    },
+    {
+      "id": "CVE-2026-2602",
+      "description": "The Twentig plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'featuredImageSizeWidth' parameter in versions up to, and including, 1.9.7 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level acce",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3486634/twentig",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/f07881db-7494-4e6d-82ea-16018fa81806?source=cve"
+      ],
+      "published": "2026-03-29T02:16:16.360"
+    },
+    {
+      "id": "CVE-2026-5020",
+      "description": "A vulnerability was detected in Totolink A3600R 4.1.2cu.5182_B20201102. Affected by this issue is the function setNoticeCfg of the file /cgi-bin/cstecgi.cgi of the component Parameter Handler. The manipulation of the argument NoticeUrl results in command injection. The attack may be launched remotel",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77",
+        "CWE-77"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/TOTOLINK_A3600R_setNoticeCfg-32253a41781f80c197eaf8e7558c5ed1?source=copy_link",
+        "https://vuldb.com/submit/779536",
+        "https://vuldb.com/vuln/353905"
+      ],
+      "published": "2026-03-29T01:15:57.133"
+    },
+    {
+      "id": "CVE-2026-5030",
+      "description": "A vulnerability has been found in Totolink NR1800X 9.1.0u.6279_B20210910. This issue affects the function NTPSyncWithHost of the file /cgi-bin/cstecgi.cgi of the component Telnet Service. The manipulation of the argument host_time leads to command injection. The attack can be initiated remotely. The",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77",
+        "CWE-77"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/TOTOLINK-NR1800X-NTPSyncWithHost-32153a41781f8032afebc0802b704e9c?source=copy_link",
+        "https://vuldb.com/submit/778529",
+        "https://vuldb.com/vuln/353952"
+      ],
+      "published": "2026-03-29T05:15:55.603"
+    },
+    {
+      "id": "CVE-2026-5023",
+      "description": "A vulnerability has been found in DeDeveloper23 codebase-mcp up to 3ec749d237dd8eabbeef48657cf917275792fde6. This vulnerability affects the function getCodebase/getRemoteCodebase/saveCodebase of the file src/tools/codebase.ts of the component RepoMix Command Handler. Such manipulation leads to os co",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/DeDeveloper23/codebase-mcp/",
+        "https://github.com/DeDeveloper23/codebase-mcp/issues/7",
+        "https://vuldb.com/submit/778348"
+      ],
+      "published": "2026-03-29T02:16:17.640"
+    },
+    {
+      "id": "CVE-2026-5041",
+      "description": "A vulnerability was identified in code-projects Chamber of Commerce Membership Management System 1.0. Impacted is the function fwrite of the file admin/pageMail.php. The manipulation of the argument mailSubject/mailMessage leads to command injection. The attack may be initiated remotely. The exploit",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://gist.github.com/y7y7y77/dd6df2db50fd0146b72fc4e0766a4ffd",
+        "https://vuldb.com/submit/778873"
+      ],
+      "published": "2026-03-29T10:15:56.747"
+    },
+    {
+      "id": "CVE-2026-5031",
+      "description": "A vulnerability was found in BichitroGan ISP Billing Software 2025.3.20. Impacted is an unknown function of the file /?_route=settings/users-view/ of the component Endpoint. The manipulation of the argument ID results in improper control of resource identifiers. The attack can be launched remotely. ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-99"
+      ],
+      "references": [
+        "https://github.com/4m3rr0r/PoCVulDb/issues/15",
+        "https://vuldb.com/submit/778530",
+        "https://vuldb.com/vuln/353953"
+      ],
+      "published": "2026-03-29T05:15:55.957"
+    },
+    {
+      "id": "CVE-2026-5037",
+      "description": "A vulnerability was determined in mxml up to 4.0.4. This issue affects the function index_sort of the file mxml-index.c of the component mxmlIndexNew. Executing a manipulation of the argument tempr can lead to stack-based buffer overflow. The attack is restricted to local execution. The exploit has ",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/michaelrsweet/mxml/commit/6e27354466092a1ac65601e01ce6708710bb9fa5",
+        "https://github.com/michaelrsweet/mxml/issues/350",
+        "https://github.com/michaelrsweet/mxml/issues/350#issuecomment-4051317229"
+      ],
+      "published": "2026-03-29T09:15:56.340"
+    },
+    {
+      "id": "CVE-2026-4851",
+      "description": "GRID::Machine versions through 0.127 for Perl allows arbitrary code execution via unsafe deserialization.\n\nGRID::Machine provides Remote Procedure Calls (RPC) over SSH for Perl. The client connects to remote hosts to execute code on them. A compromised or malicious remote host can execute arbitrary ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-95",
+        "CWE-502"
+      ],
+      "references": [
+        "https://www.openwall.com/lists/oss-security/2026/03/26/6",
+        "http://www.openwall.com/lists/oss-security/2026/03/26/6"
+      ],
+      "published": "2026-03-29T01:15:56.967"
+    },
+    {
+      "id": "CVE-2026-23400",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nrust_binder: call set_notification_done() without proc lock\n\nConsider the following sequence of events on a death listener:\n1. The remote process dies and sends a BR_DEAD_BINDER message.\n2. The local process invokes the BC_CLEAR_DE",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/2e303f0febb65a434040774b793ba8356698802b",
+        "https://git.kernel.org/stable/c/3be72099067d2cd4a0e089696f19780f75b2b88a",
+        "https://git.kernel.org/stable/c/dd109e3442817bc03ad1f3ffd541092f8c428141"
+      ],
+      "published": "2026-03-29T13:16:58.920"
+    }
+  ]
+}
