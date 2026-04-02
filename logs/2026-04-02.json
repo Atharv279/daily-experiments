@@ -1,0 +1,359 @@
+{
+  "timestamp": "2026-04-02T04:39:47.055626+00:00",
+  "scan_id": "db76baab16",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 6,
+      "HIGH": 8,
+      "MEDIUM": 4,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        4
+      ],
+      [
+        "CWE-78",
+        3
+      ],
+      [
+        "CWE-22",
+        3
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-94",
+        2
+      ]
+    ],
+    "threat_index": 463.0,
+    "critical_count": 6
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 463.0,
+        "yesterday": 330.1,
+        "change_pct": 40.3
+      },
+      "critical_count": {
+        "today": 6,
+        "yesterday": 3,
+        "change_pct": 100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-27697",
+      "description": "baserCMS is a website development framework. Prior to version 5.2.3, baserCMS has a SQL injection vulnerability in blog posts. This issue has been patched in version 5.2.3.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://basercms.net/security/JVN_20837860",
+        "https://github.com/baserproject/basercms/releases/tag/5.2.3",
+        "https://github.com/baserproject/basercms/security/advisories/GHSA-vh89-rjph-2g7p"
+      ],
+      "published": "2026-03-31T01:16:35.693"
+    },
+    {
+      "id": "CVE-2026-30880",
+      "description": "baserCMS is a website development framework. Prior to version 5.2.3, baserCMS has an OS command injection vulnerability in the installer. This issue has been patched in version 5.2.3.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://basercms.net/security/JVN_20837860",
+        "https://github.com/baserproject/basercms/releases/tag/5.2.3",
+        "https://github.com/baserproject/basercms/security/advisories/GHSA-6hpg-8rx3-cwgv"
+      ],
+      "published": "2026-03-31T01:16:36.270"
+    },
+    {
+      "id": "CVE-2026-3300",
+      "description": "The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Execution via PHP Code Injection in all versions up to, and including, 1.9.12. This is due to the Calculation Addon's process_filter() function concatenating user-submitted form field values into a PHP code string without proper",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://everestforms.net/changelog/",
+        "https://plugins.trac.wordpress.org/browser/everest-forms/tags/3.4.3/includes/class-evf-form-task.php#L584",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/389c0b89-e408-4ad5-9723-a16b745771f0?source=cve"
+      ],
+      "published": "2026-03-31T02:15:59.267"
+    },
+    {
+      "id": "CVE-2026-32714",
+      "description": "SciTokens is a reference library for generating and using SciTokens. Prior to version 1.9.6, the KeyCache class in scitokens was vulnerable to SQL Injection because it used Python's str.format() to construct SQL queries with user-supplied data (such as issuer and key_id). This allowed an attacker to",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/scitokens/scitokens/commit/3dba108853f2f4a6c0f2325c03779bf083c41cf2",
+        "https://github.com/scitokens/scitokens/releases/tag/v1.9.6",
+        "https://github.com/scitokens/scitokens/security/advisories/GHSA-rh5m-2482-966c"
+      ],
+      "published": "2026-03-31T03:15:55.970"
+    },
+    {
+      "id": "CVE-2026-21861",
+      "description": "baserCMS is a website development framework. Prior to version 5.2.3, baserCMS contains an OS command injection vulnerability in the core update functionality. An authenticated administrator can execute arbitrary OS commands on the server due to improper handling of user-controlled input that is dire",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://basercms.net/security/JVN_20837860",
+        "https://github.com/baserproject/basercms/releases/tag/5.2.3",
+        "https://github.com/baserproject/basercms/security/advisories/GHSA-qxmc-6f24-g86g"
+      ],
+      "published": "2026-03-31T01:16:35.540"
+    },
+    {
+      "id": "CVE-2026-30877",
+      "description": "baserCMS is a website development framework. Prior to version 5.2.3, there is an OS command injection vulnerability in the update functionality. Due to this issue, an authenticated user with administrator privileges in baserCMS can execute arbitrary OS commands on the server with the privileges of t",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://basercms.net/security/JVN_20837860",
+        "https://github.com/baserproject/basercms/releases/tag/5.2.3",
+        "https://github.com/baserproject/basercms/security/advisories/GHSA-m9g7-rgfc-jcm7"
+      ],
+      "published": "2026-03-31T01:16:35.830"
+    },
+    {
+      "id": "CVE-2026-5156",
+      "description": "A vulnerability was determined in Tenda CH22 1.0.0.1. This impacts the function formQuickIndex of the file /goform/QuickIndex of the component Parameter Handler. This manipulation of the argument mit_linktype causes stack-based buffer overflow. The attack is possible to be carried out remotely. The ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/CH22/vul_46/README.md",
+        "https://vuldb.com/submit/780208",
+        "https://vuldb.com/vuln/354188"
+      ],
+      "published": "2026-03-31T00:16:15.303"
+    },
+    {
+      "id": "CVE-2025-32957",
+      "description": "baserCMS is a website development framework. Prior to version 5.2.3, the application's restore function allows users to upload a .zip file, which is then automatically extracted. A PHP file inside the archive is included using require_once without validating or restricting the filename. An attacker ",
+      "severity": "HIGH",
+      "score": 8.7,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://basercms.net/security/JVN_20837860",
+        "https://github.com/baserproject/basercms/releases/tag/5.2.3",
+        "https://github.com/baserproject/basercms/security/advisories/GHSA-hv78-cwp4-8r7r"
+      ],
+      "published": "2026-03-31T01:16:34.530"
+    },
+    {
+      "id": "CVE-2026-32716",
+      "description": "SciTokens is a reference library for generating and using SciTokens. Prior to version 1.9.6, the Enforcer incorrectly validates scope paths by using a simple prefix match (startswith). This allows a token with access to a specific path (e.g., /john) to also access sibling paths that start with the s",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/scitokens/scitokens/commit/7a237c0f642efb9e8c36ac564b745895cca83583",
+        "https://github.com/scitokens/scitokens/releases/tag/v1.9.6",
+        "https://github.com/scitokens/scitokens/security/advisories/GHSA-w8fp-g9rh-34jh"
+      ],
+      "published": "2026-03-31T03:15:57.143"
+    },
+    {
+      "id": "CVE-2026-32727",
+      "description": "SciTokens is a reference library for generating and using SciTokens. Prior to version 1.9.7, the Enforcer is vulnerable to a path traversal attack where an attacker can use dot-dot (..) in the scope claim of a token to escape the intended directory restriction. This occurs because the library normal",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/scitokens/scitokens/commit/2d1cc9e42bc944fe0bbc429b85d166e7156d53f9",
+        "https://github.com/scitokens/scitokens/pull/230",
+        "https://github.com/scitokens/scitokens/releases/tag/v1.9.7"
+      ],
+      "published": "2026-03-31T03:15:57.340"
+    },
+    {
+      "id": "CVE-2026-4020",
+      "description": "The Gravity SMTP plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.1.4. This is due to a REST API endpoint registered at /wp-json/gravitysmtp/v1/tests/mock-data with a permission_callback that unconditionally returns true, allowing any unaut",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://docs.gravitysmtp.com/gravity-smtp-changelog/",
+        "https://plugins.trac.wordpress.org/browser/gravitysmtp/tags/2.1.4/vendor/gravityforms/gravity-tools/src/Providers/class-config-collection-service-provider.php#L103",
+        "https://plugins.trac.wordpress.org/browser/gravitysmtp/tags/2.1.4/vendor/gravityforms/gravity-tools/src/Providers/class-config-collection-service-provider.php#L86"
+      ],
+      "published": "2026-03-31T02:15:59.487"
+    },
+    {
+      "id": "CVE-2026-5176",
+      "description": "A security flaw has been discovered in Totolink A3300R 17.0.0cu.557_b20221024. Affected is the function setSyslogCfg of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument provided results in command injection. The attack may be initiated remotely. The exploit has been released ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/LvHongW/Vuln-of-totolink_A3300R/tree/main/A3300R_rtLogServer_cmd_inject",
+        "https://vuldb.com/submit/779145",
+        "https://vuldb.com/vuln/354244"
+      ],
+      "published": "2026-03-31T02:15:59.803"
+    },
+    {
+      "id": "CVE-2026-30940",
+      "description": "baserCMS is a website development framework. Prior to version 5.2.3, a path traversal vulnerability exists in the theme file management API (/baser/api/admin/bc-theme-file/theme_files/add.json) that allows arbitrary file write. An authenticated administrator can include ../ sequences in the path par",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-22",
+        "CWE-73",
+        "CWE-22"
+      ],
+      "references": [
+        "https://basercms.net/security/JVN_20837860",
+        "https://github.com/baserproject/basercms/releases/tag/5.2.3",
+        "https://github.com/baserproject/basercms/security/advisories/GHSA-c5c6-37vq-pjcq"
+      ],
+      "published": "2026-03-31T01:16:36.430"
+    },
+    {
+      "id": "CVE-2026-32734",
+      "description": "baserCMS is a website development framework. Prior to version 5.2.3, baserCMS has DOM-based cross-site scripting in tag creation. This issue has been patched in version 5.2.3.",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://basercms.net/security/JVN_20837860",
+        "https://github.com/baserproject/basercms/releases/tag/5.2.3",
+        "https://github.com/baserproject/basercms/security/advisories/GHSA-677c-xv24-crgx"
+      ],
+      "published": "2026-03-31T01:16:36.590"
+    },
+    {
+      "id": "CVE-2026-33997",
+      "description": "Moby is an open source container framework. Prior to version 29.3.1, a security vulnerability has been detected that allows plugins privilege validation to be bypassed during docker plugin install. Due to an error in the daemon's privilege comparison logic, the daemon may incorrectly accept a privil",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-193"
+      ],
+      "references": [
+        "https://github.com/moby/moby/releases/tag/docker-v29.3.1",
+        "https://github.com/moby/moby/security/advisories/GHSA-pxq6-2prw-chj9"
+      ],
+      "published": "2026-03-31T03:15:57.523"
+    },
+    {
+      "id": "CVE-2026-30879",
+      "description": "baserCMS is a website development framework. Prior to version 5.2.3, baserCMS has a cross-site scripting vulnerability in blog posts. This issue has been patched in version 5.2.3.",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://basercms.net/security/JVN_20837860",
+        "https://github.com/baserproject/basercms/releases/tag/5.2.3",
+        "https://github.com/baserproject/basercms/security/advisories/GHSA-jmq3-x8q7-j9qm"
+      ],
+      "published": "2026-03-31T01:16:36.127"
+    },
+    {
+      "id": "CVE-2026-30878",
+      "description": "baserCMS is a website development framework. Prior to version 5.2.3, a public mail submission API allows unauthenticated users to submit mail form entries even when the corresponding form is not accepting submissions. This bypasses administrative controls intended to stop form intake and enables spa",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://basercms.net/security/JVN_20837860",
+        "https://github.com/baserproject/basercms/releases/tag/5.2.3",
+        "https://github.com/baserproject/basercms/security/advisories/GHSA-8cr7-r8qw-gp3c"
+      ],
+      "published": "2026-03-31T01:16:35.977"
+    },
+    {
+      "id": "CVE-2026-5157",
+      "description": "A vulnerability was identified in code-projects Online Food Ordering System 1.0. Affected is an unknown function of the file /form/order.php of the component Order Module. Such manipulation of the argument cust_id leads to cross site scripting. The attack may be performed from remote. The exploit is",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://gist.github.com/HxH404/f7f1502ffc9f2aacc936a6e8f290b6a5",
+        "https://vuldb.com/submit/776186"
+      ],
+      "published": "2026-03-31T00:16:15.590"
+    },
+    {
+      "id": "CVE-2026-4794",
+      "description": "Multiple cross-site scripting (XSS) vulnerabilities in PaperCut NG/MF before 25.0.10\u00a0allow authenticated administrator users to inject arbitrary web script or HTML code via different UI fields. This could be used to compromise other admininistrator's sessions or perform unauthorized actions via the ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.papercut.com/kb/Main/papercut-ng-mf-security-bulletin-march-2026/"
+      ],
+      "published": "2026-03-31T01:16:36.743"
+    },
+    {
+      "id": "CVE-2026-5115",
+      "description": "The PaperCut NG/MF (specifically, the embedded application for Konica Minolta devices) is vulnerable to session hijacking. The PaperCut NG/MF Embedded application is a software interface that runs directly on the touch screen of a multi-function device.\n\nIt was internally discovered that the communi",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-319"
+      ],
+      "references": [
+        "https://www.papercut.com/kb/Main/papercut-ng-mf-security-bulletin-march-2026/"
+      ],
+      "published": "2026-03-31T01:16:36.900"
+    }
+  ]
+}
