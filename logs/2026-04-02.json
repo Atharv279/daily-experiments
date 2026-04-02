@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-04-02T09:18:03.241278+00:00",
-  "scan_id": "1a5aaa444b",
+  "timestamp": "2026-04-02T15:31:19.980828+00:00",
+  "scan_id": "bf05e789bd",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -152,7 +152,8 @@
       "score": 8.8,
       "cwes": [
         "CWE-119",
-        "CWE-121"
+        "CWE-121",
+        "CWE-787"
       ],
       "references": [
         "https://github.com/Litengzheng/vuldb_new/blob/main/CH22/vul_46/README.md",
