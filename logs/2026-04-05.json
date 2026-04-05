@@ -1,0 +1,343 @@
+{
+  "timestamp": "2026-04-05T04:58:42.442945+00:00",
+  "scan_id": "45a0c5c825",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 5,
+      "HIGH": 4,
+      "MEDIUM": 8,
+      "LOW": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-669",
+        4
+      ],
+      [
+        "CWE-285",
+        2
+      ],
+      [
+        "CWE-918",
+        2
+      ],
+      [
+        "CWE-79",
+        2
+      ],
+      [
+        "CWE-306",
+        1
+      ]
+    ],
+    "threat_index": 383.8,
+    "critical_count": 5
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 383.8,
+        "yesterday": 306.8,
+        "change_pct": 25.1
+      },
+      "critical_count": {
+        "today": 5,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-32213",
+      "description": "Improper authorization in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32213"
+      ],
+      "published": "2026-04-03T00:16:04.877"
+    },
+    {
+      "id": "CVE-2026-33105",
+      "description": "Improper authorization in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33105"
+      ],
+      "published": "2026-04-03T00:16:05.040"
+    },
+    {
+      "id": "CVE-2026-33107",
+      "description": "Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33107"
+      ],
+      "published": "2026-04-03T00:16:05.207"
+    },
+    {
+      "id": "CVE-2026-26135",
+      "description": "Server-side request forgery (ssrf) in Azure Custom Locations Resource Provider (RP) allows an authorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26135"
+      ],
+      "published": "2026-04-03T00:16:04.353"
+    },
+    {
+      "id": "CVE-2026-32211",
+      "description": "Missing authentication for critical function in Azure MCP Server allows an unauthorized attacker to disclose information over a network.",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32211"
+      ],
+      "published": "2026-04-03T00:16:04.703"
+    },
+    {
+      "id": "CVE-2026-32173",
+      "description": "Improper authentication in Azure SRE Agent allows an unauthorized attacker to disclose information over a network.",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32173"
+      ],
+      "published": "2026-04-03T00:16:04.547"
+    },
+    {
+      "id": "CVE-2026-28815",
+      "description": "A remote attacker can supply a short X-Wing HPKE encapsulated key and trigger an out-of-bounds read in the C decapsulation path, potentially causing a crash or memory disclosure depending on runtime protections. This issue is fixed in swift-crypto version 4.3.1.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/apple/swift-crypto/security/advisories/GHSA-9m44-rr2w-ppp7"
+      ],
+      "published": "2026-04-03T03:16:18.093"
+    },
+    {
+      "id": "CVE-2026-35535",
+      "description": "In Sudo through 1.9.17p2 before 3e474c2, a failure of a setuid, setgid, or setgroups call, during a privilege drop before running the mailer, is not a fatal error and can lead to privilege escalation.",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-271"
+      ],
+      "references": [
+        "https://bugs.debian.org/1130593",
+        "https://bugs.launchpad.net/ubuntu/+source/sudo/+bug/2143042",
+        "https://github.com/sudo-project/sudo/commit/3e474c2f201484be83d994ae10a4e20e8c81bb69"
+      ],
+      "published": "2026-04-03T03:16:18.233"
+    },
+    {
+      "id": "CVE-2026-35536",
+      "description": "In Tornado before 6.5.5, cookie attribute injection could occur because the domain, path, and samesite arguments to .RequestHandler.set_cookie were not checked for crafted characters.",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-159"
+      ],
+      "references": [
+        "https://github.com/tornadoweb/tornado/releases/tag/v6.5.5",
+        "https://github.com/tornadoweb/tornado/security/advisories/GHSA-78cv-mqj4-43f7"
+      ],
+      "published": "2026-04-03T04:16:53.550"
+    },
+    {
+      "id": "CVE-2026-35507",
+      "description": "Shynet before 0.14.0 allows Host header injection in the password reset flow.",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-348"
+      ],
+      "references": [
+        "https://github.com/milesmcc/shynet/pull/345",
+        "https://github.com/milesmcc/shynet/releases/tag/v0.14.0"
+      ],
+      "published": "2026-04-03T02:16:15.170"
+    },
+    {
+      "id": "CVE-2026-35539",
+      "description": "An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. XSS exists because of insufficient HTML attachment sanitization in preview mode. A victim must preview a text/html attachment.",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/roundcube/roundcubemail/commit/10a6d1fa8acac85c727b0a6ae4a6642bfa27bea1",
+        "https://github.com/roundcube/roundcubemail/commit/1b30edf5369668c92fe91dae3d52e477c808aa4f",
+        "https://github.com/roundcube/roundcubemail/commit/d742954ccbcdee7020f8f2e7c49ce0fca5a0efab"
+      ],
+      "published": "2026-04-03T05:16:21.920"
+    },
+    {
+      "id": "CVE-2026-35508",
+      "description": "Shynet before 0.14.0 allows XSS in urldisplay and iconify template filters,",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/milesmcc/shynet/pull/344",
+        "https://github.com/milesmcc/shynet/releases/tag/v0.14.0"
+      ],
+      "published": "2026-04-03T02:16:15.353"
+    },
+    {
+      "id": "CVE-2026-35540",
+      "description": "An issue was discovered in Roundcube Webmail 1.6.0 before 1.6.14. Insufficient Cascading Style Sheets (CSS) sanitization in HTML e-mail messages may lead to SSRF or Information Disclosure, e.g., if stylesheet links point to local network hosts.",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-669"
+      ],
+      "references": [
+        "https://github.com/roundcube/roundcubemail/commit/27ec6cc9cb25e1ef8b4d4ef39ce76d619caa6870",
+        "https://github.com/roundcube/roundcubemail/commit/579b68eff90650a5c782e153debd66c765648942",
+        "https://github.com/roundcube/roundcubemail/releases/tag/1.6.14"
+      ],
+      "published": "2026-04-03T05:16:22.100"
+    },
+    {
+      "id": "CVE-2026-35542",
+      "description": "An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. The remote image blocking feature can be bypassed via a crafted background attribute of a BODY element in an e-mail message. This may lead to information disclosure or access-control bypass.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-669"
+      ],
+      "references": [
+        "https://github.com/roundcube/roundcubemail/commit/e052328e3dc75f13adc2e314eaa4096ac21084ad",
+        "https://github.com/roundcube/roundcubemail/commit/fd0e98178db5c73eaa93d005b561874923f9b0f0",
+        "https://github.com/roundcube/roundcubemail/commit/fde14d01adc9f37893cd82b635883e516ed453f8"
+      ],
+      "published": "2026-04-03T05:16:22.460"
+    },
+    {
+      "id": "CVE-2026-35543",
+      "description": "An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. The remote image blocking feature can be bypassed via SVG content (with animate attributes) in an e-mail message. This may lead to information disclosure or access-control bypass.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-669"
+      ],
+      "references": [
+        "https://github.com/roundcube/roundcubemail/commit/1a63e01542bff42aaa71c00c4c279a09ef31f20c",
+        "https://github.com/roundcube/roundcubemail/commit/39471343ee081ce1d31696c456a2c163462daae3",
+        "https://github.com/roundcube/roundcubemail/commit/82ab5eca7b332fce7a174b2b987f0957a66377cd"
+      ],
+      "published": "2026-04-03T05:16:22.637"
+    },
+    {
+      "id": "CVE-2026-35544",
+      "description": "An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. Insufficient Cascading Style Sheets (CSS) sanitization in HTML e-mail messages may lead to a fixed-position mitigation bypass via the use of !important.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-669"
+      ],
+      "references": [
+        "https://github.com/roundcube/roundcubemail/commit/099009b9c8e1d3c636fb9a5af72f7c2596018662",
+        "https://github.com/roundcube/roundcubemail/commit/226811a1c974271dbedca72672923abaff8191c0",
+        "https://github.com/roundcube/roundcubemail/commit/57dec0c127b98e0c8e3b9c26c80049b9c4bcaea7"
+      ],
+      "published": "2026-04-03T05:16:22.810"
+    },
+    {
+      "id": "CVE-2026-35541",
+      "description": "An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. Incorrect password comparison in the password plugin could lead to type confusion that allows a password change without knowing the old password.",
+      "severity": "MEDIUM",
+      "score": 4.2,
+      "cwes": [
+        "CWE-843"
+      ],
+      "references": [
+        "https://github.com/roundcube/roundcubemail/commit/2e6a99b2a38110907ea8d3be8e59ec3d5802c394",
+        "https://github.com/roundcube/roundcubemail/commit/6a275676a8043083c05c961914d830b79e2490d4",
+        "https://github.com/roundcube/roundcubemail/commit/6fa2bddc59b9c9fd31cad4a9e2954a208d793dce"
+      ],
+      "published": "2026-04-03T05:16:22.283"
+    },
+    {
+      "id": "CVE-2026-35537",
+      "description": "An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. Unsafe deserialization in the redis/memcache session handler may lead to arbitrary file write operations by unauthenticated attackers via crafted session data.",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/roundcube/roundcubemail/commit/618c5428edc69fb088e7ac6c89e506dd39df3",
+        "https://github.com/roundcube/roundcubemail/commit/6d586cfa4d8a31f7957f7a445aaedd52592a0e74",
+        "https://github.com/roundcube/roundcubemail/commit/a4ead994d2f0ea92e4a1603196a197e0d5df1620"
+      ],
+      "published": "2026-04-03T04:17:10.313"
+    },
+    {
+      "id": "CVE-2026-5452",
+      "description": "A flaw has been found in UCC CampusConnect App up to 14.3.5 on Android. This vulnerability affects unknown code of the file campusconnect/BuildConfig.java of the component campusconnect.ucc. This manipulation causes use of hard-coded cryptographic key\r . The attack can only be executed locally. The ",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-320",
+        "CWE-321"
+      ],
+      "references": [
+        "https://vuldb.com/submit/781757",
+        "https://vuldb.com/vuln/355040",
+        "https://vuldb.com/vuln/355040/cti"
+      ],
+      "published": "2026-04-03T04:17:10.950"
+    },
+    {
+      "id": "CVE-2026-35538",
+      "description": "An issue was discovered in Roundcube Webmail before 1.5.14 and 1.6.14. Unsanitized IMAP SEARCH command arguments could lead to IMAP injection or CSRF bypass during mail search.",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-88"
+      ],
+      "references": [
+        "https://github.com/roundcube/roundcubemail/commit/5fe8a69956a9683a4269f3ad2a68e18deebf8a15",
+        "https://github.com/roundcube/roundcubemail/commit/7daf5aa9c190ccc75bb31672d8fee9938877fd64",
+        "https://github.com/roundcube/roundcubemail/commit/b18a8fa8e81571914c0ff55d4e20edb459c6952c"
+      ],
+      "published": "2026-04-03T05:16:21.647"
+    }
+  ]
+}
