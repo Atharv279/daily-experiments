@@ -1,0 +1,327 @@
+{
+  "timestamp": "2026-04-06T05:08:00.336074+00:00",
+  "scan_id": "b745905438",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 6,
+      "MEDIUM": 11,
+      "LOW": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-416",
+        4
+      ],
+      [
+        "CWE-78",
+        2
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-79",
+        2
+      ],
+      [
+        "CWE-74",
+        2
+      ]
+    ],
+    "threat_index": 319.8,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 319.8,
+        "yesterday": 383.8,
+        "change_pct": -16.7
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 5,
+        "change_pct": -80.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-35616",
+      "description": "A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-099"
+      ],
+      "published": "2026-04-04T01:16:39.720"
+    },
+    {
+      "id": "CVE-2026-34955",
+      "description": "PraisonAI is a multi-agent teams system. Prior to version 4.5.97, SubprocessSandbox in all modes (BASIC, STRICT, NETWORK_ISOLATED) calls subprocess.run() with shell=True and relies solely on string-pattern matching to block dangerous commands. The blocklist does not include sh or bash as standalone ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-r4f2-3m54-pp7q"
+      ],
+      "published": "2026-04-04T00:16:19.370"
+    },
+    {
+      "id": "CVE-2026-34780",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. From versions 39.0.0-alpha.1 to before 39.8.0, 40.0.0-alpha.1 to before 40.7.0, and 41.0.0-alpha.1 to before 41.0.0-beta.8, apps that pass VideoFrame objects (from the WebCodecs API) across the co",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-668",
+        "CWE-1188"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-jfqg-hf23-qpw2"
+      ],
+      "published": "2026-04-04T01:16:39.540"
+    },
+    {
+      "id": "CVE-2026-34774",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 39.8.1, 40.7.0, and 41.0.0, apps that use offscreen rendering and allow child windows via window.open() may be vulnerable to a use-after-free. If the parent offscreen WebContents",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-532v-xpq5-8h95"
+      ],
+      "published": "2026-04-04T00:16:18.447"
+    },
+    {
+      "id": "CVE-2026-34769",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.0, 40.7.0, and 41.0.0-beta.8, an undocumented commandLineSwitches webPreference allowed arbitrary switches to be appended to the renderer process command line. Apps ",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-88",
+        "CWE-912"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-9wfr-w7mm-pc7f"
+      ],
+      "published": "2026-04-04T00:16:17.657"
+    },
+    {
+      "id": "CVE-2026-34771",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.0, 40.7.0, and 41.0.0-beta.8, apps that register an asynchronous session.setPermissionRequestHandler() may be vulnerable to a use-after-free when handling fullscreen",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-8337-3p73-46f4"
+      ],
+      "published": "2026-04-04T00:16:17.980"
+    },
+    {
+      "id": "CVE-2026-34770",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.1, 40.8.0, and 41.0.0-beta.8, apps that use the powerMonitor module may be vulnerable to a use-after-free. After the native PowerMonitor object is garbage-collected,",
+      "severity": "HIGH",
+      "score": 7.0,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-jjp3-mq3x-295m"
+      ],
+      "published": "2026-04-04T00:16:17.823"
+    },
+    {
+      "id": "CVE-2026-34775",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.4, 40.8.4, and 41.0.0, the nodeIntegrationInWorker webPreference was not correctly scoped in all configurations. In certain process-sharing scenarios, workers spawne",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-653"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-xwr5-m59h-vwqr"
+      ],
+      "published": "2026-04-04T00:16:18.597"
+    },
+    {
+      "id": "CVE-2026-34779",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.1, 40.8.0, and 41.0.0-beta.8, on macOS, app.moveToApplicationsFolder() used an AppleScript fallback path that did not properly handle certain characters in the appli",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-5rqw-r77c-jp79"
+      ],
+      "published": "2026-04-04T00:16:19.213"
+    },
+    {
+      "id": "CVE-2026-3571",
+      "description": "The Pie Register \u2013 User Registration, Profiles & Content Restriction plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the pie_main() function in all versions up to, and including, 3.8.4.8. This makes it possible for unauthenticated attacker",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3494602/pie-register",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/3137a85e-82e3-4111-ae60-1bcf1abd0c0b?source=cve"
+      ],
+      "published": "2026-04-04T02:15:59.310"
+    },
+    {
+      "id": "CVE-2026-2924",
+      "description": "The Gutenverse \u2013 Ultimate WordPress FSE Blocks Addons & Ecosystem plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'imageLoad' parameter in versions up to, and including, 3.4.6 due to insufficient input sanitization and output escaping. This makes it possible for authenticat",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3468383/gutenverse",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/950f7493-4ccb-4a8a-9cc2-23b9ba3a9cd0?source=cve"
+      ],
+      "published": "2026-04-04T04:17:13.790"
+    },
+    {
+      "id": "CVE-2026-2949",
+      "description": "The Xpro Addons \u2014 140+ Widgets for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Icon Box widget in versions up to, and including, 1.4.24 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contrib",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3470049/xpro-elementor-addons",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/a1192c12-a898-46d9-9eee-6f611e644676?source=cve"
+      ],
+      "published": "2026-04-04T04:17:14.723"
+    },
+    {
+      "id": "CVE-2026-34767",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.3, 40.8.3, and 41.0.3, apps that register custom protocol handlers via protocol.handle() / protocol.registerSchemesAsPrivileged() or modify response headers via webR",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-74",
+        "CWE-113"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-4p4r-m79c-wq3v"
+      ],
+      "published": "2026-04-04T00:16:17.337"
+    },
+    {
+      "id": "CVE-2026-34778",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.1, 40.8.1, and 41.0.0, a service worker running in a session could spoof reply messages on the internal IPC channel used by webContents.executeJavaScript() and relat",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-290",
+        "CWE-345"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-xj5x-m3f3-5x3h"
+      ],
+      "published": "2026-04-04T00:16:19.060"
+    },
+    {
+      "id": "CVE-2026-34772",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.0, 40.7.0, and 41.0.0-beta.8, apps that allow downloads and programmatically destroy sessions may be vulnerable to a use-after-free. If a session is torn down while ",
+      "severity": "MEDIUM",
+      "score": 5.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-9w97-2464-8783"
+      ],
+      "published": "2026-04-04T00:16:18.133"
+    },
+    {
+      "id": "CVE-2026-34777",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.1, 40.8.1, and 41.0.0, when an iframe requests fullscreen, pointerLock, keyboardLock, openExternal, or media permissions, the origin passed to session.setPermissionR",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-346"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-r5p7-gp4j-qhrx"
+      ],
+      "published": "2026-04-04T00:16:18.907"
+    },
+    {
+      "id": "CVE-2026-34776",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.1, 40.8.1, and 41.0.0, on macOS and Linux, apps that call app.requestSingleInstanceLock() were vulnerable to an out-of-bounds heap read when parsing a crafted second",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-3c8v-cfp5-9885"
+      ],
+      "published": "2026-04-04T00:16:18.753"
+    },
+    {
+      "id": "CVE-2026-34773",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.1, 40.8.1, and 41.0.0, on Windows, app.setAsDefaultProtocolClient(protocol) did not validate the protocol name before writing to the registry. Apps that pass untrust",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-20",
+        "CWE-74"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-mwmh-mq4g-g6gr"
+      ],
+      "published": "2026-04-04T00:16:18.287"
+    },
+    {
+      "id": "CVE-2026-34768",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.1, 40.8.0, and 41.0.0-beta.8, on Windows, app.setLoginItemSettings({openAtLogin: true}) wrote the executable path to the Run registry key without quoting. If the app",
+      "severity": "LOW",
+      "score": 3.9,
+      "cwes": [
+        "CWE-428"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-jfqx-fxh3-c62j"
+      ],
+      "published": "2026-04-04T00:16:17.500"
+    },
+    {
+      "id": "CVE-2026-34766",
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.0, 40.7.0, and 41.0.0-beta.8, the select-usb-device event callback did not validate the chosen device ID against the filtered list that was presented to the handler.",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-9899-m83m-qhpj"
+      ],
+      "published": "2026-04-04T00:16:17.140"
+    }
+  ]
+}
