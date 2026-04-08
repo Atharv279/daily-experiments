@@ -1,0 +1,375 @@
+{
+  "timestamp": "2026-04-08T04:58:15.945036+00:00",
+  "scan_id": "1f7d13b7b0",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 9,
+      "MEDIUM": 10,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-119",
+        8
+      ],
+      [
+        "CWE-121",
+        8
+      ],
+      [
+        "CWE-918",
+        3
+      ],
+      [
+        "CWE-74",
+        2
+      ],
+      [
+        "CWE-89",
+        2
+      ]
+    ],
+    "threat_index": 345.4,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 345.4,
+        "yesterday": 265.9,
+        "change_pct": 29.9
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-5605",
+      "description": "A weakness has been identified in Tenda CH22 1.0.0.1. This affects the function formWrlExtraSet of the file /goform/WrlExtraSet. Executing a manipulation of the argument GO can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been made available to the public",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/CH22/vul_54/README.md",
+        "https://vuldb.com/submit/785052",
+        "https://vuldb.com/vuln/355397"
+      ],
+      "published": "2026-04-06T00:16:19.213"
+    },
+    {
+      "id": "CVE-2026-5608",
+      "description": "A vulnerability was detected in Belkin F9K1122 1.00.33. Affected is the function formWlanSetup of the file /goform/formWlanSetup. The manipulation of the argument webpage results in stack-based buffer overflow. The attack may be performed from remote. The exploit is now public and may be used. The v",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vul_db/blob/main/Belkin/vul_80/README.md",
+        "https://vuldb.com/submit/785315",
+        "https://vuldb.com/vuln/355399"
+      ],
+      "published": "2026-04-06T01:16:40.367"
+    },
+    {
+      "id": "CVE-2026-5609",
+      "description": "A flaw has been found in Tenda i12 1.0.0.11(3862). Affected by this vulnerability is the function formwrlSSIDset of the file /goform/wifiSSIDset of the component Parameter Handler. This manipulation of the argument index/wl_radio causes stack-based buffer overflow. It is possible to initiate the att",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/i12/vul_107/README.md",
+        "https://vuldb.com/submit/785337",
+        "https://vuldb.com/vuln/355400"
+      ],
+      "published": "2026-04-06T02:16:00.670"
+    },
+    {
+      "id": "CVE-2026-5610",
+      "description": "A vulnerability has been found in Belkin F9K1015 1.00.10. Affected by this issue is the function formWISP5G of the file /goform/formWISP5G. Such manipulation of the argument webpage leads to stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/Belkin%20F9K1015/vul_3/README.md",
+        "https://vuldb.com/submit/785537",
+        "https://vuldb.com/vuln/355401"
+      ],
+      "published": "2026-04-06T02:16:00.927"
+    },
+    {
+      "id": "CVE-2026-5611",
+      "description": "A vulnerability was found in Belkin F9K1015 1.00.10. This affects the function formCrossBandSwitch of the file /goform/formCrossBandSwitch. Performing a manipulation of the argument webpage results in stack-based buffer overflow. The attack can be initiated remotely. The exploit has been made public",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/Belkin%20F9K1015/vul_5/README.md",
+        "https://vuldb.com/submit/785538",
+        "https://vuldb.com/vuln/355402"
+      ],
+      "published": "2026-04-06T03:16:07.570"
+    },
+    {
+      "id": "CVE-2026-5612",
+      "description": "A vulnerability was determined in Belkin F9K1015 1.00.10. This vulnerability affects the function formWlEncrypt of the file /goform/formWlEncrypt. Executing a manipulation of the argument webpage can lead to stack-based buffer overflow. The attack can be launched remotely. The exploit has been publi",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/Belkin%20F9K1015/vul_7/README.md",
+        "https://vuldb.com/submit/785551",
+        "https://vuldb.com/vuln/355403"
+      ],
+      "published": "2026-04-06T03:16:07.790"
+    },
+    {
+      "id": "CVE-2026-5613",
+      "description": "A vulnerability was identified in Belkin F9K1015 1.00.10. This issue affects the function formReboot of the file /goform/formReboot. The manipulation of the argument webpage leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit is publicly available and might be use",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/Belkin%20F9K1015/vul_10/README.md",
+        "https://vuldb.com/submit/785552",
+        "https://vuldb.com/vuln/355404"
+      ],
+      "published": "2026-04-06T03:16:07.990"
+    },
+    {
+      "id": "CVE-2026-5614",
+      "description": "A security flaw has been discovered in Belkin F9K1015 1.00.10. Impacted is the function formSetPassword of the file /goform/formSetPassword. The manipulation of the argument webpage results in stack-based buffer overflow. The attack may be launched remotely. The exploit has been released to the publ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/Belkin%20F9K1015/vul_11/README.md",
+        "https://vuldb.com/submit/785554",
+        "https://vuldb.com/vuln/355405"
+      ],
+      "published": "2026-04-06T04:16:09.967"
+    },
+    {
+      "id": "CVE-2026-5616",
+      "description": "A security vulnerability has been detected in JeecgBoot 3.9.0/3.9.1. The impacted element is an unknown function of the file jeecg-boot/jeecg-module-system/jeecg-system-biz/src/main/java/org/jeecg/modules/airag/JeecgBizToolsProvider.java of the component AI Chat Module. Such manipulation leads to mi",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/jeecgboot/JeecgBoot/",
+        "https://github.com/jeecgboot/JeecgBoot/commit/b7c9aeba7aefda9e008ea8fe4fc3daf08d0c5b39",
+        "https://github.com/jeecgboot/JeecgBoot/issues/9464"
+      ],
+      "published": "2026-04-06T04:16:13.407"
+    },
+    {
+      "id": "CVE-2026-5606",
+      "description": "A security flaw has been discovered in PHPGurukul Online Shopping Portal Project 2.1. The affected element is an unknown function of the file /order-details.php of the component Parameter Handler. The manipulation of the argument orderid results in sql injection. It is possible to launch the attack ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/f1rstb100d/CVE/issues/13",
+        "https://phpgurukul.com/",
+        "https://vuldb.com/submit/784009"
+      ],
+      "published": "2026-04-06T00:16:19.420"
+    },
+    {
+      "id": "CVE-2026-5607",
+      "description": "A security vulnerability has been detected in imprvhub mcp-browser-agent up to 0.8.0. This impacts the function CallToolRequestSchema of the file src/handlers.ts of the component URL Parameter Handler. The manipulation of the argument request.params.name/request.params.arguments leads to server-side",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/wing3e/public_exp/issues/25",
+        "https://vuldb.com/submit/785034",
+        "https://vuldb.com/vuln/355398"
+      ],
+      "published": "2026-04-06T01:16:39.817"
+    },
+    {
+      "id": "CVE-2026-5620",
+      "description": "A vulnerability has been found in itsourcecode Construction Management System 1.0. Affected is an unknown function of the file /borrowed_equip_report.php of the component Parameter Handler. The manipulation of the argument Home leads to sql injection. It is possible to initiate the attack remotely. ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Qwh0729/cve/issues/1",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/submit/785577"
+      ],
+      "published": "2026-04-06T05:16:02.240"
+    },
+    {
+      "id": "CVE-2026-5623",
+      "description": "A vulnerability was identified in hcengineering Huly Platform 0.7.382. This affects an unknown part of the file server/front/src/index.ts of the component Import Endpoint. Such manipulation leads to server-side request forgery. The attack can be launched remotely. The exploit is publicly available a",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://vuldb.com/submit/785632",
+        "https://vuldb.com/vuln/355413",
+        "https://vuldb.com/vuln/355413/cti"
+      ],
+      "published": "2026-04-06T06:16:19.910"
+    },
+    {
+      "id": "CVE-2026-5618",
+      "description": "A vulnerability was detected in kalcaddle kodbox up to 1.64. This affects an unknown function of the component shareMake/shareCheck. Performing a manipulation of the argument siteFrom/siteTo results in server-side request forgery. The attack is possible to be carried out remotely. The complexity of ",
+      "severity": "MEDIUM",
+      "score": 5.6,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://vuldb.com/submit/785572",
+        "https://vuldb.com/vuln/355408",
+        "https://vuldb.com/vuln/355408/cti"
+      ],
+      "published": "2026-04-06T04:16:14.050"
+    },
+    {
+      "id": "CVE-2026-5619",
+      "description": "A flaw has been found in Braffolk mcp-summarization-functions up to 0.1.5. This impacts an unknown function of the file src/server/mcp-server.ts of the component summarize_command. Executing a manipulation of the argument command can lead to os command injection. The attack requires local access. Th",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/wing3e/public_exp/issues/26",
+        "https://vuldb.com/submit/785574",
+        "https://vuldb.com/vuln/355409"
+      ],
+      "published": "2026-04-06T05:16:01.590"
+    },
+    {
+      "id": "CVE-2026-5621",
+      "description": "A vulnerability was found in ChrisChinchilla Vale-MCP up to 0.1.0. Affected by this vulnerability is an unknown functionality of the file src/index.ts of the component HTTP Interface. The manipulation of the argument config_path results in os command injection. Attacking locally is a requirement. Th",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/wing3e/public_exp/issues/27",
+        "https://vuldb.com/submit/785591",
+        "https://vuldb.com/vuln/355411"
+      ],
+      "published": "2026-04-06T05:16:02.450"
+    },
+    {
+      "id": "CVE-2026-5615",
+      "description": "A weakness has been identified in givanz Vvvebjs up to 2.0.5. The affected element is an unknown function of the file upload.php of the component File Upload Endpoint. This manipulation of the argument uploadAllowExtensions causes cross site scripting. Remote exploitation of the attack is possible. ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/givanz/VvvebJs/",
+        "https://github.com/givanz/VvvebJs/commit/8cac22cff99b8bc701c408aa8e887fa702755336",
+        "https://tcn60zf28jhk.feishu.cn/wiki/Cr4KwMPiMi65fFkI9Vyc3oX2n0f?from=from_copylink"
+      ],
+      "published": "2026-04-06T04:16:12.930"
+    },
+    {
+      "id": "CVE-2026-5624",
+      "description": "A security flaw has been discovered in ProjectSend r2002. This vulnerability affects unknown code of the file upload.php. Performing a manipulation results in cross-site request forgery. The attack may be initiated remotely. The exploit has been released to the public and may be used for attacks. Up",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352",
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/projectsend/projectsend/",
+        "https://github.com/projectsend/projectsend/commit/2c0d25824ab571b6c219ac1a188ad9350149661b",
+        "https://github.com/projectsend/projectsend/releases/tag/r2029"
+      ],
+      "published": "2026-04-06T06:16:21.623"
+    },
+    {
+      "id": "CVE-2026-5625",
+      "description": "A weakness has been identified in assafelovic gpt-researcher up to 3.4.3. This issue affects some unknown processing of the file gpt_researcher/skills/researcher.py of the component WebSocket Interface. Executing a manipulation of the argument task can lead to cross site scripting. The attack may be",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/assafelovic/gpt-researcher/",
+        "https://github.com/assafelovic/gpt-researcher/issues/1692",
+        "https://vuldb.com/submit/785832"
+      ],
+      "published": "2026-04-06T06:16:21.860"
+    },
+    {
+      "id": "CVE-2026-5622",
+      "description": "A vulnerability was determined in hcengineering Huly Platform 0.7.382. Affected by this issue is some unknown functionality of the file foundations/core/packages/token/src/token.ts of the component JWT Token Handler. This manipulation of the argument SERVER_SECRET with the input secret causes use of",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-320",
+        "CWE-321"
+      ],
+      "references": [
+        "https://vuldb.com/submit/785631",
+        "https://vuldb.com/vuln/355412",
+        "https://vuldb.com/vuln/355412/cti"
+      ],
+      "published": "2026-04-06T05:16:02.650"
+    }
+  ]
+}
