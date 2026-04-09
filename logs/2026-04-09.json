@@ -1,0 +1,336 @@
+{
+  "timestamp": "2026-04-09T04:43:42.659213+00:00",
+  "scan_id": "43d5b9001e",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 5,
+      "MEDIUM": 12,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-787",
+        5
+      ],
+      [
+        "CWE-340",
+        2
+      ],
+      [
+        "CWE-434",
+        1
+      ],
+      [
+        "CWE-284",
+        1
+      ],
+      [
+        "CWE-73",
+        1
+      ]
+    ],
+    "threat_index": 338.7,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 338.7,
+        "yesterday": 345.4,
+        "change_pct": -1.9
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-0740",
+      "description": "The Ninja Forms - File Uploads plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'NF_FU_AJAX_Controllers_Uploads::handle_upload' function in all versions up to, and including, 3.3.26. This makes it possible for unauthenticated attackers to upload",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://ninjaforms.com/extensions/file-uploads/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/0b606ded-ab50-486a-9337-97ee9f452f12?source=cve"
+      ],
+      "published": "2026-04-07T05:16:06.897"
+    },
+    {
+      "id": "CVE-2026-1114",
+      "description": "In parisneo/lollms version 2.1.0, the application's session management is vulnerable to improper access control due to the use of a weak secret key for signing JSON Web Tokens (JWT). This vulnerability allows an attacker to perform an offline brute-force attack to recover the secret key. Once the se",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/parisneo/lollms/commit/a3b2b82b84d537a9da63e63a370a6a8ad55fed34",
+        "https://huntr.com/bounties/608b2a3b-2225-438e-9e61-ffbfdec2ed89",
+        "https://huntr.com/bounties/608b2a3b-2225-438e-9e61-ffbfdec2ed89"
+      ],
+      "published": "2026-04-07T07:16:23.633"
+    },
+    {
+      "id": "CVE-2026-20433",
+      "description": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is needed for exploitation. P",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-787",
+        "CWE-787"
+      ],
+      "references": [
+        "https://corp.mediatek.com/product-security-bulletin/April-2026"
+      ],
+      "published": "2026-04-07T04:17:12.830"
+    },
+    {
+      "id": "CVE-2025-65115",
+      "description": "Remote Code Execution Vulnerability\u00a0in JP1/IT Desktop Management 2 - Manager on Windows, JP1/IT Desktop Management 2 - Operations Director on Windows, Job Management Partner 1/IT Desktop Management 2 - Manager on Windows, JP1/IT Desktop Management - Manager on Windows, Job Management Partner 1/IT De",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-73"
+      ],
+      "references": [
+        "https://www.hitachi.com/products/it/software/security/info/vuls/hitachi-sec-2026-118/index.html"
+      ],
+      "published": "2026-04-07T06:16:40.537"
+    },
+    {
+      "id": "CVE-2026-5465",
+      "description": "The Booking for Appointments and Events Calendar \u2013 Amelia plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 2.1.3. This is due to the `UpdateProviderCommandHandler` failing to validate changes to the `externalId` field when a Provider (Emplo",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/ameliabooking/tags/2.1.3/src/Application/Commands/User/Provider/UpdateProviderCommandHandler.php#L146",
+        "https://plugins.trac.wordpress.org/browser/ameliabooking/tags/2.1.3/src/Application/Commands/User/Provider/UpdateProviderCommandHandler.php#L219",
+        "https://plugins.trac.wordpress.org/browser/ameliabooking/tags/2.1.3/src/Application/Commands/User/Provider/UpdateProviderCommandHandler.php#L239"
+      ],
+      "published": "2026-04-07T07:16:24.050"
+    },
+    {
+      "id": "CVE-2026-20432",
+      "description": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is needed for exploitation. P",
+      "severity": "HIGH",
+      "score": 8.0,
+      "cwes": [
+        "CWE-787",
+        "CWE-787"
+      ],
+      "references": [
+        "https://corp.mediatek.com/product-security-bulletin/April-2026"
+      ],
+      "published": "2026-04-07T04:17:12.413"
+    },
+    {
+      "id": "CVE-2026-5692",
+      "description": "A vulnerability was found in Totolink A7100RU 7.4cu.2313_b20191024. This impacts the function setGameSpeedCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument enable results in os command injection. The attack may be performed from remote. The exploit has been made public and could",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/A7100RU/vul_190/README.md",
+        "https://vuldb.com/submit/792963",
+        "https://vuldb.com/vuln/355519"
+      ],
+      "published": "2026-04-07T00:16:20.347"
+    },
+    {
+      "id": "CVE-2026-20431",
+      "description": "In Modem, there is a possible system crash due to a logic error. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01106",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://corp.mediatek.com/product-security-bulletin/April-2026"
+      ],
+      "published": "2026-04-07T04:16:59.930"
+    },
+    {
+      "id": "CVE-2026-1839",
+      "description": "A vulnerability in the HuggingFace Transformers library, specifically in the `Trainer` class, allows for arbitrary code execution. The `_load_rng_state()` method in `src/transformers/trainer.py` at line 3059 calls `torch.load()` without the `weights_only=True` parameter. This issue affects all versi",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/huggingface/transformers/commit/03c8082ba4594c9b8d6fe190ca9bed0e5f8ca396",
+        "https://huntr.com/bounties/3c77bb97-e493-493d-9a88-c57f5c536485",
+        "https://huntr.com/bounties/3c77bb97-e493-493d-9a88-c57f5c536485"
+      ],
+      "published": "2026-04-07T06:16:41.490"
+    },
+    {
+      "id": "CVE-2026-1900",
+      "description": "The Link Whisper Free WordPress plugin before 0.9.1 has a publicly accessible REST endpoint that allows unauthenticated settings updates.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/dc10b627-7981-4c53-bc9d-e87418f3fcfc/"
+      ],
+      "published": "2026-04-07T07:16:23.803"
+    },
+    {
+      "id": "CVE-2026-4079",
+      "description": "The SQL Chart Builder WordPress plugin before 2.3.8 does not properly escape user input as it is concatened to SQL queries, making it possible for attackers to conduct SQL Injection attacks against the dynamic filter functionality.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/8ec92881-4ae5-458d-995b-f097f2bcc590/"
+      ],
+      "published": "2026-04-07T07:16:23.927"
+    },
+    {
+      "id": "CVE-2026-5719",
+      "description": "A flaw has been found in itsourcecode Construction Management System 1.0. This affects an unknown function of the file /borrowedtool.php. Executing a manipulation of the argument code can lead to sql injection. It is possible to launch the attack remotely. The exploit has been published and may be u",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/ltranquility/submit/issues/7",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/submit/792968"
+      ],
+      "published": "2026-04-07T03:16:08.300"
+    },
+    {
+      "id": "CVE-2025-13044",
+      "description": "IBM Concert 1.0.0 through 2.2.0 creates temporary files with predictable names, which allows local users to overwrite arbitrary files via a symlink attack.",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-340"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7268620"
+      ],
+      "published": "2026-04-07T02:16:15.343"
+    },
+    {
+      "id": "CVE-2025-65116",
+      "description": "Buffer Overflow Vulnerability in JP1/IT Desktop Management 2 - Manager on Windows, JP1/IT Desktop Management 2 - Operations Director on Windows, Job Management Partner 1/IT Desktop Management 2 - Manager on Windows, JP1/IT Desktop Management - Manager on Windows, Job Management Partner 1/IT Desktop ",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-763"
+      ],
+      "references": [
+        "https://www.hitachi.com/products/it/software/security/info/vuls/hitachi-sec-2026-118/index.html"
+      ],
+      "published": "2026-04-07T06:16:41.073"
+    },
+    {
+      "id": "CVE-2025-15611",
+      "description": "The Popup Box  WordPress plugin before 5.5.0 does not properly validate nonces in the add_or_edit_popupbox() function before saving popup data, allowing unauthenticated attackers to perform Cross-Site Request Forgery attacks. When an authenticated admin visits a malicious page, the attacker can crea",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/089ea763-2421-4089-a220-251421f7f226/"
+      ],
+      "published": "2026-04-07T07:16:23.443"
+    },
+    {
+      "id": "CVE-2026-3177",
+      "description": "The Charitable \u2013 Donation Plugin for WordPress \u2013 Fundraising with Recurring Donations & More plugin for WordPress is vulnerable to Insufficient Verification of Data Authenticity in versions up to, and including, 1.8.9.7. This is due to missing cryptographic verification of incoming Stripe webhook ev",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-345"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3485023/charitable",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/bc3b2645-7b57-4884-99c5-e37dbd4a9600?source=cve"
+      ],
+      "published": "2026-04-07T08:16:11.090"
+    },
+    {
+      "id": "CVE-2026-5705",
+      "description": "A vulnerability was identified in code-projects Online Hotel Booking 1.0. Affected by this vulnerability is an unknown functionality of the file /booknow.php of the component Booking Endpoint. Such manipulation of the argument roomname leads to cross site scripting. It is possible to launch the atta",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/ahmadmarz10-hub/CVEsMarz/blob/main/Reflected%20Cross-Site%20Scripting%20(XSS)%20in%20Online%20Hotel%20Booking%20System%20roomname%20Parameter.md",
+        "https://vuldb.com/submit/786325"
+      ],
+      "published": "2026-04-07T00:16:21.440"
+    },
+    {
+      "id": "CVE-2026-20446",
+      "description": "In sec boot, there is a possible out of bounds write due to an integer overflow. This could lead to local denial of service, if an attacker has physical access to the device, with User execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09963054; Issue ID: MSV",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-787",
+        "CWE-190"
+      ],
+      "references": [
+        "https://corp.mediatek.com/product-security-bulletin/April-2026"
+      ],
+      "published": "2026-04-07T04:17:13.797"
+    },
+    {
+      "id": "CVE-2026-33227",
+      "description": "Improper validation and restriction of a classpath path name vulnerability in \n\n Apache ActiveMQ Client, Apache ActiveMQ Broker, Apache ActiveMQ All, Apache ActiveMQ Web, Apache ActiveMQ.\n\n\n\nIn two instances (when creating a Stomp consumer and also browsing messages in the Web console) an authentica",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://activemq.apache.org/security-advisories.data/CVE-2026-33227-announcement.txt",
+        "http://www.openwall.com/lists/oss-security/2026/04/06/4"
+      ],
+      "published": "2026-04-07T09:16:20.750"
+    },
+    {
+      "id": "CVE-2026-28810",
+      "description": "Generation of Predictable Numbers or Identifiers vulnerability in Erlang/OTP kernel (inet_res, inet_db modules) allows DNS Cache Poisoning.\n\nThe built-in DNS resolver (inet_res) uses a sequential, process-global 16-bit transaction ID for UDP queries and does not implement source port randomization. ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-340"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-28810.html",
+        "https://github.com/erlang/otp/commit/36f23c9d2cc54afe83671dd7343596d7972839a5",
+        "https://github.com/erlang/otp/commit/b057a9d995017b1be50d6dc02edd52382f3231b8"
+      ],
+      "published": "2026-04-07T09:16:20.473"
+    }
+  ]
+}
