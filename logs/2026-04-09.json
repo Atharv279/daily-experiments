@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-04-09T15:58:17.442775+00:00",
-  "scan_id": "96a0e17fd3",
+  "timestamp": "2026-04-09T21:06:47.593162+00:00",
+  "scan_id": "5b4f5a3b18",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -15,6 +15,10 @@
         5
       ],
       [
+        "CWE-89",
+        2
+      ],
+      [
         "CWE-340",
         2
       ],
@@ -24,10 +28,6 @@
       ],
       [
         "CWE-284",
-        1
-      ],
-      [
-        "CWE-73",
         1
       ]
     ],
@@ -200,7 +200,9 @@
       "description": "The SQL Chart Builder WordPress plugin before 2.3.8 does not properly escape user input as it is concatened to SQL queries, making it possible for attackers to conduct SQL Injection attacks against the dynamic filter functionality.",
       "severity": "MEDIUM",
       "score": 6.5,
-      "cwes": [],
+      "cwes": [
+        "CWE-89"
+      ],
       "references": [
         "https://wpscan.com/vulnerability/8ec92881-4ae5-458d-995b-f097f2bcc590/"
       ],
@@ -253,7 +255,9 @@
       "description": "The Popup Box  WordPress plugin before 5.5.0 does not properly validate nonces in the add_or_edit_popupbox() function before saving popup data, allowing unauthenticated attackers to perform Cross-Site Request Forgery attacks. When an authenticated admin visits a malicious page, the attacker can crea",
       "severity": "MEDIUM",
       "score": 5.4,
-      "cwes": [],
+      "cwes": [
+        "CWE-918"
+      ],
       "references": [
         "https://wpscan.com/vulnerability/089ea763-2421-4089-a220-251421f7f226/"
       ],
