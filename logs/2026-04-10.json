@@ -1,0 +1,334 @@
+{
+  "timestamp": "2026-04-10T05:10:14.066735+00:00",
+  "scan_id": "e338d23a94",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 6,
+      "MEDIUM": 5,
+      "UNKNOWN": 8
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        2
+      ],
+      [
+        "CWE-250",
+        1
+      ],
+      [
+        "CWE-502",
+        1
+      ],
+      [
+        "CWE-829",
+        1
+      ],
+      [
+        "CWE-532",
+        1
+      ]
+    ],
+    "threat_index": 236.7,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 236.7,
+        "yesterday": 338.7,
+        "change_pct": -30.1
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 2,
+        "change_pct": -50.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-1346",
+      "description": "IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1 and IBM Verify Identity Access 11.0 through 11.0.2 and IBM Security Verify Access 10.0 through 10.0.9.1 could allow a locally authenticated user to escalate their privileges to roo",
+      "severity": "CRITICAL",
+      "score": 9.3,
+      "cwes": [
+        "CWE-250"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7268253"
+      ],
+      "published": "2026-04-08T01:16:40.750"
+    },
+    {
+      "id": "CVE-2026-3357",
+      "description": "IBM Langflow Desktop 1.6.0 through 1.8.2 Langflow could allow an authenticated user to execute arbitrary code on the system, caused by an insecure default setting which permits the deserialization of untrusted data in the FAISS component.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7268428"
+      ],
+      "published": "2026-04-08T01:16:41.057"
+    },
+    {
+      "id": "CVE-2026-1342",
+      "description": "IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1 and IBM Verify Identity Access 11.0 through 11.0.2 and IBM Security Verify Access 10.0 through 10.0.9.1 could allow a locally authenticated user to execute malicious scripts from o",
+      "severity": "HIGH",
+      "score": 8.5,
+      "cwes": [
+        "CWE-829"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7268253"
+      ],
+      "published": "2026-04-08T00:16:03.860"
+    },
+    {
+      "id": "CVE-2026-4788",
+      "description": "IBM Tivoli Netcool Impact 7.1.0.0 through 7.1.0.37 stores sensitive information in log files that could be read by a local user.",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-532"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7268267"
+      ],
+      "published": "2026-04-08T01:16:41.220"
+    },
+    {
+      "id": "CVE-2026-5747",
+      "description": "An out-of-bounds write issue in the virtio PCI transport in Amazon Firecracker 1.13.0 through 1.14.3 and 1.15.0 on x86_64 and aarch64 might allow a local guest user with root privileges to crash the Firecracker VMM process or potentially execute arbitrary code on the host via modification of virtio ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-369",
+        "CWE-787"
+      ],
+      "references": [
+        "https://aws.amazon.com/security/security-bulletins/2026-015-aws/",
+        "https://github.com/firecracker-microvm/firecracker/releases/tag/v1.14.4",
+        "https://github.com/firecracker-microvm/firecracker/releases/tag/v1.15.1"
+      ],
+      "published": "2026-04-08T00:16:05.657"
+    },
+    {
+      "id": "CVE-2026-32280",
+      "description": "During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial of service. This affects both direct users of crypto/x509 and users of crypto/tls.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://go.dev/cl/758320",
+        "https://go.dev/issue/78282",
+        "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU"
+      ],
+      "published": "2026-04-08T02:16:03.247"
+    },
+    {
+      "id": "CVE-2026-1343",
+      "description": "IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1 and IBM Verify Identity Access 11.0 through 11.0.2 and IBM Security Verify Access 10.0 through 10.0.9.1 allows an attacker to contact internal authentication endpoints which are pr",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7268253"
+      ],
+      "published": "2026-04-08T01:16:40.503"
+    },
+    {
+      "id": "CVE-2025-14732",
+      "description": "The Elementor Website Builder \u2013 More Than Just a Page Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via several widget parameters in all versions up to, and including, 3.35.5 due to insufficient input sanitization and output escaping. This makes it possible for authentica",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-87"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/elementor/trunk/modules/wp-rest/classes/elementor-post-meta.php#L67",
+        "https://plugins.trac.wordpress.org/changeset?old_path=/elementor/tags/3.35.5&new_path=/elementor/tags/3.35.6",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/20232d70-72b2-47b7-ac7e-ad07892864ef?source=cve"
+      ],
+      "published": "2026-04-08T02:16:02.667"
+    },
+    {
+      "id": "CVE-2026-4394",
+      "description": "The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Credit Card field's 'Card Type' sub-field (`input_<id>.4`) in all versions up to, and including, 2.9.30. This is due to the `get_value_entry_detail()` method in the `GF_Field_CreditCard` class outputting the ",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://docs.gravityforms.com/gravityforms-change-log/",
+        "https://plugins.trac.wordpress.org/browser/gravityforms/tags/2.9.25/includes/fields/class-gf-field-creditcard.php#L516",
+        "https://plugins.trac.wordpress.org/browser/gravityforms/tags/2.9.25/includes/fields/class-gf-field-creditcard.php#L577"
+      ],
+      "published": "2026-04-08T00:16:05.147"
+    },
+    {
+      "id": "CVE-2026-4401",
+      "description": "The Download Monitor plugin for WordPress is vulnerable to Cross-Site Request Forgery in the `actions_handler()` and `bulk_actions_handler()` methods in `class-dlm-downloads-path.php` in all versions up to, and including, 5.1.10. This is due to missing nonce verification on these functions. This mak",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/download-monitor/tags/5.1.8/src/Admin/DownloadPaths/class-dlm-downloads-path.php#L427",
+        "https://plugins.trac.wordpress.org/browser/download-monitor/tags/5.1.8/src/Admin/DownloadPaths/class-dlm-downloads-path.php#L495",
+        "https://plugins.trac.wordpress.org/browser/download-monitor/trunk/src/Admin/DownloadPaths/class-dlm-downloads-path.php#L427"
+      ],
+      "published": "2026-04-08T00:16:05.323"
+    },
+    {
+      "id": "CVE-2026-2263",
+      "description": "The Hustle \u2013 Email Marketing, Lead Generation, Optins, Popups plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'hustle_module_converted' AJAX action in all versions up to, and including, 7.8.10.2. This makes it possible for unauthentica",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wordpress-popup/tags/7.8.9.3/inc/front/hustle-module-front-ajax.php#L1047",
+        "https://plugins.trac.wordpress.org/browser/wordpress-popup/tags/7.8.9.3/inc/front/hustle-module-front-ajax.php#L32",
+        "https://plugins.trac.wordpress.org/browser/wordpress-popup/tags/7.8.9.3/inc/front/hustle-module-front.php#L311"
+      ],
+      "published": "2026-04-08T00:16:04.980"
+    },
+    {
+      "id": "CVE-2026-4406",
+      "description": "The Gravity Forms plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the `form_ids` parameter in the `gform_get_config` AJAX action in all versions up to, and including, 2.9.30. This is due to the `GFCommon::send_json()` method outputting JSON-encoded data wrapped in HTML comme",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://docs.gravityforms.com/gravityforms-change-log/",
+        "https://plugins.trac.wordpress.org/browser/gravityforms/trunk/common.php#L8267",
+        "https://plugins.trac.wordpress.org/browser/gravityforms/trunk/includes/config/class-gf-config-collection.php#L56"
+      ],
+      "published": "2026-04-08T00:16:05.490"
+    },
+    {
+      "id": "CVE-2026-27140",
+      "description": "SWIG file names containing 'cgo' and well-crafted payloads could lead to code smuggling and arbitrary code execution at build time due to trust layer bypass.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/763768",
+        "https://go.dev/issue/78335",
+        "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU"
+      ],
+      "published": "2026-04-08T02:16:02.887"
+    },
+    {
+      "id": "CVE-2026-27143",
+      "description": "Arithmetic over induction variables in loops were not correctly checked for underflow or overflow. As a result, the compiler would allow for invalid indexing to occur at runtime, potentially leading to memory corruption.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/763765",
+        "https://go.dev/issue/78333",
+        "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU"
+      ],
+      "published": "2026-04-08T02:16:03.017"
+    },
+    {
+      "id": "CVE-2026-27144",
+      "description": "The compiler is meant to unwrap pointers which are the operands of a memory move; a no-op interface conversion prevented the compiler from making the correct determination about non-overlapping moves, potentially leading to memory corruption at runtime.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/763764",
+        "https://go.dev/issue/78371",
+        "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU"
+      ],
+      "published": "2026-04-08T02:16:03.130"
+    },
+    {
+      "id": "CVE-2026-32281",
+      "description": "Validating certificate chains which use policies is unexpectedly inefficient when certificates in the chain contain a very large number of policy mappings, possibly causing denial of service. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptio",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/758061",
+        "https://go.dev/issue/78281",
+        "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU"
+      ],
+      "published": "2026-04-08T02:16:03.350"
+    },
+    {
+      "id": "CVE-2026-32282",
+      "description": "On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to av",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/763761",
+        "https://go.dev/issue/78293",
+        "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU"
+      ],
+      "published": "2026-04-08T02:16:03.467"
+    },
+    {
+      "id": "CVE-2026-32283",
+      "description": "If one side of the TLS connection sends multiple key update messages post-handshake in a single record, the connection can deadlock, causing uncontrolled consumption of resources. This can lead to a denial of service. This only affects TLS 1.3.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/763767",
+        "https://go.dev/issue/78334",
+        "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU"
+      ],
+      "published": "2026-04-08T02:16:03.580"
+    },
+    {
+      "id": "CVE-2026-32288",
+      "description": "tar.Reader can allocate an unbounded amount of memory when reading a maliciously-crafted archive containing a large number of sparse regions encoded in the \"old GNU sparse map\" format.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/763766",
+        "https://go.dev/issue/78301",
+        "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU"
+      ],
+      "published": "2026-04-08T02:16:03.707"
+    },
+    {
+      "id": "CVE-2026-32289",
+      "description": "Context was not properly tracked across template branches for JS template literals, leading to possibly incorrect escaping of content when branches were used. Additionally template actions within JS template literals did not properly track the brace depth, leading to incorrect escaping being applied",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/763762",
+        "https://go.dev/issue/78331",
+        "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU"
+      ],
+      "published": "2026-04-08T02:16:03.820"
+    }
+  ]
+}
