@@ -1,0 +1,371 @@
+{
+  "timestamp": "2026-04-11T04:30:59.729380+00:00",
+  "scan_id": "856ea81fa7",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 9,
+      "MEDIUM": 10,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        7
+      ],
+      [
+        "CWE-89",
+        6
+      ],
+      [
+        "CWE-79",
+        6
+      ],
+      [
+        "CWE-94",
+        3
+      ],
+      [
+        "CWE-119",
+        2
+      ]
+    ],
+    "threat_index": 319.8,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 319.8,
+        "yesterday": 236.7,
+        "change_pct": 35.1
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-5815",
+      "description": "A vulnerability was detected in D-Link DIR-645 1.01/1.02/1.03. Impacted is the function hedwigcgi_main of the file /cgi-bin/hedwig.cgi. The manipulation results in stack-based buffer overflow. The attack can be launched remotely. The exploit is now public and may be used. This vulnerability only aff",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Pers1st0/CVE/blob/main/stack-based%20buffer%20overflow%20vulnerability%20exists%20in%20the%20hedwig.cgi%20of%20D-Link%20DIR-645.md",
+        "https://github.com/Pers1st0/CVE/blob/main/stack-based%20buffer%20overflow%20vulnerability%20exists%20in%20the%20hedwig.cgi%20of%20D-Link%20DIR-645.md#poc",
+        "https://vuldb.com/submit/788298"
+      ],
+      "published": "2026-04-09T00:16:20.863"
+    },
+    {
+      "id": "CVE-2026-4326",
+      "description": "The Vertex Addons for Elementor plugin for WordPress is vulnerable to Missing Authorization in all versions up to and including 1.6.4. This is due to improper authorization enforcement in the activate_required_plugins() function. Specifically, the current_user_can('install_plugins') capability check",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/addons-for-elementor-builder/tags/1.6.4/app/Ajax.php#L229",
+        "https://plugins.trac.wordpress.org/browser/addons-for-elementor-builder/tags/1.6.4/app/Ajax.php#L232",
+        "https://plugins.trac.wordpress.org/browser/addons-for-elementor-builder/tags/1.6.4/app/Ajax.php#L264"
+      ],
+      "published": "2026-04-09T02:16:16.530"
+    },
+    {
+      "id": "CVE-2026-5830",
+      "description": "A vulnerability was identified in Tenda AC15 15.03.05.18. This affects the function websGetVar of the file /goform/SysToolChangePwd. Such manipulation of the argument oldPwd/newPwd/cfmPwd leads to stack-based buffer overflow. The attack can be executed remotely. The exploit is publicly available and",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://files.catbox.moe/xrk8jb.zip",
+        "https://vuldb.com/submit/789178",
+        "https://vuldb.com/vuln/356277"
+      ],
+      "published": "2026-04-09T02:16:17.920"
+    },
+    {
+      "id": "CVE-2026-5814",
+      "description": "A security vulnerability has been detected in PHPGurukul Online Course Registration 3.1. This issue affects some unknown processing of the file /admin/check_availability.php. The manipulation of the argument regno leads to sql injection. The attack can be initiated remotely. The exploit has been dis",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/f1rstb100d/CVE/issues/21",
+        "https://phpgurukul.com/",
+        "https://vuldb.com/submit/787698"
+      ],
+      "published": "2026-04-09T00:16:19.827"
+    },
+    {
+      "id": "CVE-2026-5824",
+      "description": "A security vulnerability has been detected in code-projects Simple Laundry System 1.0. This affects an unknown part of the file /userchecklogin.php. Such manipulation of the argument userid leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed publicly ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/lonelyuan/vunls/issues/1",
+        "https://vuldb.com/submit/788302"
+      ],
+      "published": "2026-04-09T00:16:21.280"
+    },
+    {
+      "id": "CVE-2026-5827",
+      "description": "A vulnerability has been found in code-projects Simple IT Discussion Forum 1.0. Impacted is an unknown function of the file /question-function.php. The manipulation of the argument content leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/lonelyuan/vunls/issues/8",
+        "https://vuldb.com/submit/788336"
+      ],
+      "published": "2026-04-09T01:16:50.380"
+    },
+    {
+      "id": "CVE-2026-5828",
+      "description": "A vulnerability was found in code-projects Simple IT Discussion Forum 1.0. The affected element is an unknown function of the file /functions/addcomment.php. The manipulation of the argument postid results in sql injection. The attack may be launched remotely. The exploit has been made public and co",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/lonelyuan/vunls/issues/7",
+        "https://vuldb.com/submit/788337"
+      ],
+      "published": "2026-04-09T02:16:17.533"
+    },
+    {
+      "id": "CVE-2026-5829",
+      "description": "A vulnerability was determined in code-projects Simple IT Discussion Forum 1.0. The impacted element is an unknown function of the file /pages/content.php. This manipulation of the argument post_id causes sql injection. Remote exploitation of the attack is possible. The exploit has been publicly dis",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/lonelyuan/vunls/issues/6",
+        "https://vuldb.com/submit/788338"
+      ],
+      "published": "2026-04-09T02:16:17.727"
+    },
+    {
+      "id": "CVE-2026-5832",
+      "description": "A weakness has been identified in atototo api-lab-mcp up to 0.2.1. This affects the function analyze_api_spec/generate_test_scenarios/test_http_endpoint of the file src/mcp/http-server.ts of the component HTTP Interface. This manipulation of the argument source/url causes server-side request forgery",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/BruceJqs/public_exp/issues/6",
+        "https://github.com/atototo/api-lab-mcp/",
+        "https://github.com/atototo/api-lab-mcp/issues/4"
+      ],
+      "published": "2026-04-09T02:16:18.327"
+    },
+    {
+      "id": "CVE-2026-4429",
+      "description": "The OSM \u2013 OpenStreetMap plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'marker_name' and 'file_color_list' shortcode attribute of the [osm_map_v3] shortcode in all versions up to and including 6.1.15. This is due to insufficient input sanitization and output escaping. This",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/osm/tags/6.1.15/osm-icon-class.php#L347",
+        "https://plugins.trac.wordpress.org/browser/osm/tags/6.1.15/osm-icon-class.php#L356",
+        "https://plugins.trac.wordpress.org/browser/osm/tags/6.1.15/osm_map_v3/osm-sc-osm_map_v3.php#L31"
+      ],
+      "published": "2026-04-09T04:17:14.640"
+    },
+    {
+      "id": "CVE-2026-5357",
+      "description": "The Download Manager plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'sid' parameter of the 'wpdm_members' shortcode in versions up to and including 3.3.52. This is due to insufficient input sanitization and output escaping on the user-supplied 'sid' shortcode attribute. Th",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/download-manager/tags/3.3.51/src/User/User.php#L175",
+        "https://plugins.trac.wordpress.org/browser/download-manager/tags/3.3.51/src/User/views/members.php#L10",
+        "https://plugins.trac.wordpress.org/browser/download-manager/trunk/src/User/User.php#L175"
+      ],
+      "published": "2026-04-09T04:17:14.810"
+    },
+    {
+      "id": "CVE-2026-5823",
+      "description": "A weakness has been identified in itsourcecode Construction Management System 1.0. Affected by this issue is some unknown functionality of the file /borrowed_tool_report.php. This manipulation of the argument Home causes sql injection. It is possible to initiate the attack remotely. The exploit has ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/ltranquility/cve_submit/issues/14",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/submit/788299"
+      ],
+      "published": "2026-04-09T00:16:21.087"
+    },
+    {
+      "id": "CVE-2026-5831",
+      "description": "A security flaw has been discovered in Agions taskflow-ai up to 2.1.8. This impacts an unknown function of the file src/mcp/server/handlers.ts of the component terminal_execute. Performing a manipulation results in os command injection. The attack is possible to be carried out remotely. Upgrading to",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Agions/taskflow-ai/",
+        "https://github.com/Agions/taskflow-ai/commit/c1550b445b9f24f38c4414e9a545f5f79f23a0fe",
+        "https://github.com/Agions/taskflow-ai/issues/2"
+      ],
+      "published": "2026-04-09T02:16:18.110"
+    },
+    {
+      "id": "CVE-2026-4124",
+      "description": "The Ziggeo plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 3.1.1. The wp_ajax_ziggeo_ajax handler  only verifies a nonce (check_ajax_referer) but performs no capability checks via current_user_can(). Furthermore, the nonce ('ziggeo_ajax_nonce') is ex",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/ziggeo/tags/3.1.1/admin/page_editor_events_ajax.php#L13",
+        "https://plugins.trac.wordpress.org/browser/ziggeo/tags/3.1.1/admin/page_sdk_ajax.php#L8",
+        "https://plugins.trac.wordpress.org/browser/ziggeo/tags/3.1.1/admin/page_translations_ajax.php#L13"
+      ],
+      "published": "2026-04-09T04:17:14.467"
+    },
+    {
+      "id": "CVE-2026-5833",
+      "description": "A security vulnerability has been detected in awwaiid mcp-server-taskwarrior up to 1.0.1. This impacts the function server.setRequestHandler of the file index.ts. Such manipulation of the argument Identifier leads to command injection. The attack must be carried out locally. The exploit has been dis",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/awwaiid/mcp-server-taskwarrior/",
+        "https://github.com/awwaiid/mcp-server-taskwarrior/commit/1ee3d282debfa0a99afeb41d22c4b2fd5a3148f2",
+        "https://github.com/awwaiid/mcp-server-taskwarrior/issues/8"
+      ],
+      "published": "2026-04-09T04:17:16.900"
+    },
+    {
+      "id": "CVE-2026-3574",
+      "description": "The Experto Dashboard for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's settings fields (including 'Navigation Font Size', 'Navigation Font Weight', 'Heading Font Size', 'Heading Font Weight', 'Text Font Size', and 'Text Font Weight') in all versions ",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/experto-custom-dashboard/tags/1.0.1/admin/class-ewc-admin.php#L312",
+        "https://plugins.trac.wordpress.org/browser/experto-custom-dashboard/tags/1.0.1/admin/class-ewc-admin.php#L361",
+        "https://plugins.trac.wordpress.org/browser/experto-custom-dashboard/trunk/admin/class-ewc-admin.php#L312"
+      ],
+      "published": "2026-04-09T04:17:10.990"
+    },
+    {
+      "id": "CVE-2026-5825",
+      "description": "A vulnerability was detected in code-projects Simple Laundry System 1.0. This vulnerability affects unknown code of the file /delmemberinfo.php. Performing a manipulation of the argument userid results in cross site scripting. The attack can be initiated remotely. The exploit is now public and may b",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/lonelyuan/vunls/issues/10",
+        "https://vuldb.com/submit/788334"
+      ],
+      "published": "2026-04-09T01:16:49.150"
+    },
+    {
+      "id": "CVE-2026-5826",
+      "description": "A flaw has been found in code-projects Simple IT Discussion Forum 1.0. This issue affects some unknown processing of the file /edit-category.php. Executing a manipulation of the argument Category can lead to cross site scripting. The attack can be launched remotely. The exploit has been published an",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/lonelyuan/vunls/issues/9",
+        "https://vuldb.com/submit/788335"
+      ],
+      "published": "2026-04-09T01:16:50.187"
+    },
+    {
+      "id": "CVE-2026-3568",
+      "description": "The MStore API plugin for WordPress is vulnerable to  Insecure Direct Object Reference in all versions up to, and including, 4.18.3. This is due to the update_user_profile() function in controllers/flutter-user.php processing the 'meta_data' JSON parameter without any allowlist, blocklist, or valida",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/mstore-api/tags/4.18.3/controllers/flutter-user.php#L1012",
+        "https://plugins.trac.wordpress.org/browser/mstore-api/tags/4.18.3/controllers/flutter-user.php#L1078",
+        "https://plugins.trac.wordpress.org/browser/mstore-api/tags/4.18.3/controllers/flutter-user.php#L1080"
+      ],
+      "published": "2026-04-09T04:16:59.177"
+    },
+    {
+      "id": "CVE-2026-5834",
+      "description": "A vulnerability was detected in code-projects Online Shoe Store 1.0. Affected is an unknown function of the file /admin/admin_running.php. Performing a manipulation of the argument product_name results in cross site scripting. It is possible to initiate the attack remotely. The exploit is now public",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/lonelyuan/vunls/issues/5",
+        "https://vuldb.com/submit/788339"
+      ],
+      "published": "2026-04-09T04:17:20.980"
+    }
+  ]
+}
