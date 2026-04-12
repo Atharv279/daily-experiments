@@ -1,0 +1,355 @@
+{
+  "timestamp": "2026-04-12T05:08:28.253622+00:00",
+  "scan_id": "6d3064ccc1",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 3,
+      "HIGH": 7,
+      "MEDIUM": 6,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-119",
+        4
+      ],
+      [
+        "CWE-121",
+        4
+      ],
+      [
+        "CWE-77",
+        3
+      ],
+      [
+        "CWE-78",
+        3
+      ],
+      [
+        "CWE-862",
+        2
+      ]
+    ],
+    "threat_index": 357.0,
+    "critical_count": 3
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 357.0,
+        "yesterday": 319.8,
+        "change_pct": 11.6
+      },
+      "critical_count": {
+        "today": 3,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-5993",
+      "description": "A vulnerability was identified in Totolink A7100RU 7.4cu.2313_b20191024. This vulnerability affects the function setWiFiGuestCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Such manipulation of the argument wifiOff leads to os command injection. The attack can be executed remotely",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/A7100RU/vul_165/README.md",
+        "https://vuldb.com/submit/792041",
+        "https://vuldb.com/vuln/356547"
+      ],
+      "published": "2026-04-10T01:16:41.743"
+    },
+    {
+      "id": "CVE-2026-5994",
+      "description": "A security flaw has been discovered in Totolink A7100RU 7.4cu.2313_b20191024. This issue affects the function setTelnetCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Performing a manipulation of the argument telnet_enabled results in os command injection. The attack is possible t",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/A7100RU/vul_166/README.md",
+        "https://vuldb.com/submit/792042",
+        "https://vuldb.com/vuln/356548"
+      ],
+      "published": "2026-04-10T01:16:42.280"
+    },
+    {
+      "id": "CVE-2026-5995",
+      "description": "A weakness has been identified in Totolink A7100RU 7.4cu.2313_b20191024. Impacted is the function setMiniuiHomeInfoShow of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Executing a manipulation of the argument lan_info can lead to os command injection. The attack may be performed from ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/A7100RU/vul_167/README.md",
+        "https://vuldb.com/submit/792043",
+        "https://vuldb.com/vuln/356549"
+      ],
+      "published": "2026-04-10T01:16:42.490"
+    },
+    {
+      "id": "CVE-2026-5989",
+      "description": "A flaw has been found in Tenda F451 1.0.0.7. Affected is the function fromRouteStatic of the file /goform/RouteStatic. Executing a manipulation of the argument page can lead to stack-based buffer overflow. The attack can be launched remotely. The exploit has been published and may be used.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Jimi-Lab/cve/issues/5",
+        "https://vuldb.com/submit/792858",
+        "https://vuldb.com/vuln/356543"
+      ],
+      "published": "2026-04-10T00:16:36.170"
+    },
+    {
+      "id": "CVE-2026-5990",
+      "description": "A vulnerability has been found in Tenda F451 1.0.0.7. Affected by this vulnerability is the function fromSafeEmailFilter of the file /goform/SafeEmailFilter. The manipulation of the argument page leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclos",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Jimi-Lab/cve/issues/8",
+        "https://vuldb.com/submit/792861",
+        "https://vuldb.com/vuln/356544"
+      ],
+      "published": "2026-04-10T00:16:36.363"
+    },
+    {
+      "id": "CVE-2026-5991",
+      "description": "A vulnerability was found in Tenda F451 1.0.0.7. Affected by this issue is the function formWrlExtraSet of the file /goform/WrlExtraSet. The manipulation of the argument GO results in stack-based buffer overflow. The attack may be launched remotely. The exploit has been made public and could be used",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Jimi-Lab/cve/issues/9",
+        "https://vuldb.com/submit/792862",
+        "https://vuldb.com/vuln/356545"
+      ],
+      "published": "2026-04-10T00:16:36.557"
+    },
+    {
+      "id": "CVE-2026-5992",
+      "description": "A vulnerability was determined in Tenda F451 1.0.0.7. This affects the function fromP2pListFilter of the file /goform/P2pListFilter. This manipulation of the argument page causes stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and m",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Jimi-Lab/cve/issues/10",
+        "https://vuldb.com/submit/792863",
+        "https://vuldb.com/vuln/356546"
+      ],
+      "published": "2026-04-10T00:16:36.750"
+    },
+    {
+      "id": "CVE-2026-4351",
+      "description": "The Perfmatters plugin for WordPress is vulnerable to arbitrary file overwrite via path traversal in all versions up to, and including, 2.5.9. This is due to the `PMCS::action_handler()` method processing the bulk action `activate`/`deactivate` handlers without any authorization check or nonce verif",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://perfmatters.io/docs/changelog/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/c172ab2b-ce1f-4a0d-b31f-b75ff2f03506?source=cve"
+      ],
+      "published": "2026-04-10T02:16:03.553"
+    },
+    {
+      "id": "CVE-2026-25203",
+      "description": "Samsung MagicINFO 9 Server Incorrect Default Permissions Local Privilege Escalation Vulnerability\n\n\nThis issue affects MagicINFO 9 Server: less than 21.1091.1.",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-276"
+      ],
+      "references": [
+        "https://security.samsungtv.com/securityUpdates"
+      ],
+      "published": "2026-04-10T02:16:02.767"
+    },
+    {
+      "id": "CVE-2026-3360",
+      "description": "The Tutor LMS \u2013 eLearning and online course solution plugin for WordPress is vulnerable to an Insecure Direct Object Reference in all versions up to, and including, 3.9.7. This is due to missing authentication and authorization checks in the `pay_incomplete_order()` function. The function accepts an",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/tutor/tags/3.9.7/classes/Tutor.php#L563",
+        "https://plugins.trac.wordpress.org/browser/tutor/tags/3.9.7/ecommerce/CheckoutController.php#L1059",
+        "https://plugins.trac.wordpress.org/browser/tutor/tags/3.9.7/ecommerce/CheckoutController.php#L108"
+      ],
+      "published": "2026-04-10T02:16:03.073"
+    },
+    {
+      "id": "CVE-2026-1263",
+      "description": "The Webling plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 3.9.0 due to insufficient input sanitization, insufficient output escaping, and missing capabilities checks in the 'webling_admin_save_form' and 'webling_admin_save_memberlist' functio",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/webling/tags/3.9.0/src/admin/actions/save_form.php#L2",
+        "https://plugins.trac.wordpress.org/browser/webling/tags/3.9.0/src/admin/actions/save_memberlist.php#L2",
+        "https://plugins.trac.wordpress.org/browser/webling/tags/3.9.0/src/admin/lists/Form_List.php#L122"
+      ],
+      "published": "2026-04-10T02:16:02.083"
+    },
+    {
+      "id": "CVE-2026-4305",
+      "description": "The Royal WordPress Backup & Restore Plugin plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'wpr_pending_template' parameter in all versions up to, and including, 1.0.16 due to insufficient input validation. This makes it possible for unauthenticated attackers to inject ",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/royal-backup-reset/tags/1.0.16/assets/backup-reminder.js#L751",
+        "https://plugins.trac.wordpress.org/browser/royal-backup-reset/tags/1.0.16/royal-backup-reset.php#L803",
+        "https://plugins.trac.wordpress.org/changeset?old_path=%2Froyal-backup-reset/tags/1.0.16&new_path=%2Froyal-backup-reset/tags/1.0.17"
+      ],
+      "published": "2026-04-10T02:16:03.397"
+    },
+    {
+      "id": "CVE-2026-2712",
+      "description": "The WP-Optimize plugin for WordPress is vulnerable to unauthorized access of functionality due to missing capability checks in the `receive_heartbeat()` function in `includes/class-wp-optimize-heartbeat.php` in all versions up to, and including, 4.5.0. This is due to the Heartbeat handler directly i",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-optimize/tags/4.4.1/includes/class-wp-optimize-heartbeat.php#L65",
+        "https://plugins.trac.wordpress.org/browser/wp-optimize/tags/4.4.1/includes/class-wp-optimize-heartbeat.php#L82",
+        "https://plugins.trac.wordpress.org/browser/wp-optimize/trunk/includes/class-wp-optimize-heartbeat.php#L65"
+      ],
+      "published": "2026-04-10T02:16:02.913"
+    },
+    {
+      "id": "CVE-2026-4664",
+      "description": "The Customer Reviews for WooCommerce plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 5.103.0. This is due to the `create_review_permissions_check()` function comparing the user-supplied `key` parameter against the order's `ivole_secret_key` meta valu",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/customer-reviews-woocommerce/tags/5.102.0/includes/emails/class-cr-email.php#L345",
+        "https://plugins.trac.wordpress.org/browser/customer-reviews-woocommerce/tags/5.102.0/includes/reviews/class-cr-endpoint.php#L646",
+        "https://plugins.trac.wordpress.org/browser/customer-reviews-woocommerce/tags/5.102.0/includes/reviews/class-cr-endpoint.php#L654"
+      ],
+      "published": "2026-04-10T02:16:03.710"
+    },
+    {
+      "id": "CVE-2026-1924",
+      "description": "The Aruba HiSpeed Cache plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 3.0.4. This is due to missing nonce verification on the `ahsc_ajax_reset_options()` function. This makes it possible for unauthenticated attackers to reset all plugin settin",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/aruba-hispeed-cache/tags/3.0.4/aruba-hispeed-cache.php#L631",
+        "https://plugins.trac.wordpress.org/browser/aruba-hispeed-cache/tags/3.0.4/aruba-hispeed-cache.php#L632",
+        "https://plugins.trac.wordpress.org/changeset?old_path=%2Faruba-hispeed-cache/tags/3.0.4&new_path=%2Faruba-hispeed-cache/tags/3.0.5"
+      ],
+      "published": "2026-04-10T02:16:02.607"
+    },
+    {
+      "id": "CVE-2026-4057",
+      "description": "The Download Manager plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the `makeMediaPublic()` and `makeMediaPrivate()` functions in all versions up to, and including, 3.3.51. This is due to the functions only checking for `edit_posts` capab",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/download-manager/tags/3.3.51/src/MediaLibrary/MediaAccessControl.php#L237",
+        "https://plugins.trac.wordpress.org/browser/download-manager/tags/3.3.51/src/MediaLibrary/MediaAccessControl.php#L257",
+        "https://plugins.trac.wordpress.org/browser/download-manager/trunk/src/MediaLibrary/MediaAccessControl.php#L237"
+      ],
+      "published": "2026-04-10T02:16:03.240"
+    },
+    {
+      "id": "CVE-2026-5392",
+      "description": "Heap out-of-bounds read in PKCS7 parsing. A crafted PKCS7 message can trigger an OOB read on the heap. The missing bounds check is in the indefinite-length end-of-content verification loop in PKCS7_VerifySignedData().",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/wolfssl/wolfssl/pull/10039"
+      ],
+      "published": "2026-04-10T00:16:35.603"
+    },
+    {
+      "id": "CVE-2026-5393",
+      "description": "Dual-Algorithm CertificateVerify out-of-bounds read. When processing a dual-algorithm CertificateVerify message, an out-of-bounds read can occur on crafted input. This can only occur when --enable-experimental and --enable-dual-alg-certs is used when building wolfSSL.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/wolfSSL/wolfssl/pull/10079"
+      ],
+      "published": "2026-04-10T00:16:35.750"
+    },
+    {
+      "id": "CVE-2026-5448",
+      "description": "X.509 date buffer overflow in wolfSSL_X509_notAfter / wolfSSL_X509_notBefore. A buffer overflow may occur when parsing date fields from a crafted X.509 certificate via the compatibility layer API. This is only triggered when calling these two APIs directly from an application, and does not affect TL",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/wolfSSL/wolfssl/pull/10071"
+      ],
+      "published": "2026-04-10T00:16:35.890"
+    },
+    {
+      "id": "CVE-2026-5460",
+      "description": "A heap use-after-free exists in wolfSSL's TLS 1.3 post-quantum cryptography (PQC) hybrid KeyShare processing. In the error handling path of TLSX_KeyShare_ProcessPqcHybridClient() in src/tls.c, the inner function TLSX_KeyShare_ProcessPqcClient_ex() frees a KyberKey object upon encountering an error. ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/wolfssl/wolfssl/pull/10092"
+      ],
+      "published": "2026-04-10T00:16:36.033"
+    }
+  ]
+}
