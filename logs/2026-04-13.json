@@ -1,0 +1,330 @@
+{
+  "timestamp": "2026-04-13T05:25:20.711267+00:00",
+  "scan_id": "7c7048da5c",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 3,
+      "HIGH": 14,
+      "MEDIUM": 2,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-78",
+        3
+      ],
+      [
+        "CWE-190",
+        3
+      ],
+      [
+        "CWE-122",
+        2
+      ],
+      [
+        "CWE-73",
+        2
+      ],
+      [
+        "CWE-427",
+        2
+      ]
+    ],
+    "threat_index": 465.0,
+    "critical_count": 3
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 465.0,
+        "yesterday": 357.0,
+        "change_pct": 30.3
+      },
+      "critical_count": {
+        "today": 3,
+        "yesterday": 3,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-4149",
+      "description": "Sonos Era 300 SMB Response Out-Of-Bounds Access Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Sonos Era 300. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the han",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-192/"
+      ],
+      "published": "2026-04-11T01:16:16.430"
+    },
+    {
+      "id": "CVE-2026-5058",
+      "description": "aws-mcp-server Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of aws-mcp-server. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of the a",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-246/"
+      ],
+      "published": "2026-04-11T01:16:18.157"
+    },
+    {
+      "id": "CVE-2026-5059",
+      "description": "aws-mcp-server AWS CLI Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of aws-mcp-server. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-245/"
+      ],
+      "published": "2026-04-11T01:16:18.293"
+    },
+    {
+      "id": "CVE-2026-4150",
+      "description": "GIMP PSD File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a mali",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://gitlab.gnome.org/GNOME/gimp/-/commit/00afdabdadeb5457fd897878b1e5aebc3780af10",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-217/"
+      ],
+      "published": "2026-04-11T01:16:16.560"
+    },
+    {
+      "id": "CVE-2026-4151",
+      "description": "GIMP ANI File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a mali",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://gitlab.gnome.org/GNOME/gimp/-/commit/09e5459de913172fc51da3bd6b6adc533acd368e",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-218/"
+      ],
+      "published": "2026-04-11T01:16:16.697"
+    },
+    {
+      "id": "CVE-2026-4152",
+      "description": "GIMP JP2 File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or o",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://gitlab.gnome.org/GNOME/gimp/-/commit/f64c9c23ba3c37dc7b875a9fb477c23953b4666e",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-219/"
+      ],
+      "published": "2026-04-11T01:16:16.830"
+    },
+    {
+      "id": "CVE-2026-4153",
+      "description": "GIMP PSP File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or o",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://gitlab.gnome.org/GNOME/gimp/-/commit/98cb1371fd4e22cca75017ea3252dc32fc218712",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-220/"
+      ],
+      "published": "2026-04-11T01:16:16.963"
+    },
+    {
+      "id": "CVE-2026-4154",
+      "description": "GIMP XPM File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a mali",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://gitlab.gnome.org/GNOME/gimp/-/commit/2e7ed91793792d9e980b2df4c829e9aa60459253",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-221/"
+      ],
+      "published": "2026-04-11T01:16:17.093"
+    },
+    {
+      "id": "CVE-2026-5054",
+      "description": "NoMachine External Control of File Path Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of NoMachine. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-73"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-248/"
+      ],
+      "published": "2026-04-11T01:16:17.890"
+    },
+    {
+      "id": "CVE-2026-5055",
+      "description": "NoMachine Uncontrolled Search Path Element Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of NoMachine.  An attacker must first obtain the ability to execute low-privileged code on the target system in order to exp",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-427"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-249/"
+      ],
+      "published": "2026-04-11T01:16:18.017"
+    },
+    {
+      "id": "CVE-2026-5493",
+      "description": "Labcenter Electronics Proteus PDSPRJ File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Labcenter Electronics Proteus. User interaction is required to exploit this vulnerability in th",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-255/"
+      ],
+      "published": "2026-04-11T01:16:18.427"
+    },
+    {
+      "id": "CVE-2026-4155",
+      "description": "ChargePoint Home Flex Inclusion of Sensitive Information in Source Code Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of ChargePoint Home Flex charging stations. Authentication is not required to exploit t",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-540"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-195/"
+      ],
+      "published": "2026-04-11T01:16:17.230"
+    },
+    {
+      "id": "CVE-2026-4156",
+      "description": "ChargePoint Home Flex OCPP getpreq Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of ChargePoint Home Flex EV chargers. Authentication is not required to exploit this vulnerabil",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-196/"
+      ],
+      "published": "2026-04-11T01:16:17.360"
+    },
+    {
+      "id": "CVE-2026-4157",
+      "description": "ChargePoint Home Flex revssh Service Command Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of ChargePoint Home Flex devices. Authentication is not required to exploit this vulnerability.\n\nThe sp",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-197/"
+      ],
+      "published": "2026-04-11T01:16:17.487"
+    },
+    {
+      "id": "CVE-2026-3690",
+      "description": "OpenClaw Canvas Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of OpenClaw. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the implementation of the the authentication ",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-291"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-vvjh-f6p9-5vcf",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-228/"
+      ],
+      "published": "2026-04-11T01:16:15.990"
+    },
+    {
+      "id": "CVE-2026-4158",
+      "description": "KeePassXC OpenSSL Configuration Uncontrolled Search Path Element Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of KeePassXC. An attacker must first obtain the ability to execute low-privileged code on the target s",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-427"
+      ],
+      "references": [
+        "https://github.com/keepassxreboot/keepassxc/security/advisories/GHSA-4gr2-cr97-q9fx",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-215/"
+      ],
+      "published": "2026-04-11T01:16:17.620"
+    },
+    {
+      "id": "CVE-2026-5053",
+      "description": "NoMachine External Control of File Path Arbitrary File Deletion Vulnerability. This vulnerability allows local attackers to delete arbitrary files on affected installations of NoMachine. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-73"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-247/"
+      ],
+      "published": "2026-04-11T01:16:17.757"
+    },
+    {
+      "id": "CVE-2026-3689",
+      "description": "OpenClaw Canvas Path Traversal Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of OpenClaw. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of the path",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-jq4x-98m3-ggq6",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-227/"
+      ],
+      "published": "2026-04-11T01:16:15.837"
+    },
+    {
+      "id": "CVE-2026-3691",
+      "description": "OpenClaw Client PKCE Verifier Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose stored credentials on affected installations of OpenClaw. User interaction is required to exploit this vulnerability in that the target must initiate an OAuth authorization flow",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-6g25-pc82-vfwp",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-229/"
+      ],
+      "published": "2026-04-11T01:16:16.123"
+    },
+    {
+      "id": "CVE-2026-40354",
+      "description": "Flatpak xdg-desktop-portal before 1.20.4 and 1.21.x before 1.21.1 allows any Flatpak app to trash any file in the host context via a symlink attack on g_file_trash.",
+      "severity": "LOW",
+      "score": 2.9,
+      "cwes": [
+        "CWE-61"
+      ],
+      "references": [
+        "https://github.com/flatpak/xdg-desktop-portal/releases/tag/1.20.4",
+        "https://github.com/flatpak/xdg-desktop-portal/releases/tag/1.21.1",
+        "https://github.com/flatpak/xdg-desktop-portal/security/advisories/GHSA-rqr9-jwwf-wxgj"
+      ],
+      "published": "2026-04-11T01:16:16.270"
+    }
+  ]
+}
