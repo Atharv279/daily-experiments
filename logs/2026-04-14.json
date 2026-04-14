@@ -1,0 +1,373 @@
+{
+  "timestamp": "2026-04-14T05:08:04.052915+00:00",
+  "scan_id": "68144fc10c",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 5,
+      "HIGH": 7,
+      "MEDIUM": 6,
+      "LOW": 1,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-77",
+        7
+      ],
+      [
+        "CWE-78",
+        6
+      ],
+      [
+        "CWE-119",
+        5
+      ],
+      [
+        "CWE-121",
+        5
+      ],
+      [
+        "CWE-79",
+        2
+      ]
+    ],
+    "threat_index": 449.6,
+    "critical_count": 5
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 449.6,
+        "yesterday": 465.0,
+        "change_pct": -3.3
+      },
+      "critical_count": {
+        "today": 5,
+        "yesterday": 3,
+        "change_pct": 66.7
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-6112",
+      "description": "A weakness has been identified in Totolink A7100RU 7.4cu.2313_b20191024. Affected is the function setRadvdCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of the argument maxRtrAdvInterval causes os command injection. The attack can be initiated remotely. The expl",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/A7100RU/vul_177/README.md",
+        "https://vuldb.com/submit/792245",
+        "https://vuldb.com/vuln/356972"
+      ],
+      "published": "2026-04-12T04:16:47.133"
+    },
+    {
+      "id": "CVE-2026-6113",
+      "description": "A security vulnerability has been detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this vulnerability is the function setTtyServiceCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Such manipulation of the argument ttyEnable leads to os command injection. The attack ca",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/A7100RU/vul_178/README.md",
+        "https://vuldb.com/submit/792246",
+        "https://vuldb.com/vuln/356973"
+      ],
+      "published": "2026-04-12T04:16:49.037"
+    },
+    {
+      "id": "CVE-2026-6114",
+      "description": "A vulnerability was detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this issue is the function setNetworkCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Performing a manipulation of the argument proto results in os command injection. The attack may be initiated remo",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/A7100RU/vul_179/README.md",
+        "https://vuldb.com/submit/792247",
+        "https://vuldb.com/vuln/356974"
+      ],
+      "published": "2026-04-12T04:16:49.267"
+    },
+    {
+      "id": "CVE-2026-6115",
+      "description": "A flaw has been found in Totolink A7100RU 7.4cu.2313_b20191024. This affects the function setAppCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Executing a manipulation of the argument enable can lead to os command injection. The attack may be launched remotely. The exploit has be",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/A7100RU/vul_180/README.md",
+        "https://vuldb.com/submit/792248",
+        "https://vuldb.com/vuln/356975"
+      ],
+      "published": "2026-04-12T05:16:00.807"
+    },
+    {
+      "id": "CVE-2026-6116",
+      "description": "A vulnerability has been found in Totolink A7100RU 7.4cu.2313_b20191024. This vulnerability affects the function setDiagnosisCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument ip leads to os command injection. Remote exploitation of the attack is poss",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/A7100RU/vul_181/README.md",
+        "https://vuldb.com/submit/792249",
+        "https://vuldb.com/vuln/356976"
+      ],
+      "published": "2026-04-12T05:16:01.060"
+    },
+    {
+      "id": "CVE-2026-6120",
+      "description": "A vulnerability was detected in Tenda F451 1.0.0.7. Affected is the function fromDhcpListClient of the file /goform/DhcpListClient of the component httpd. The manipulation of the argument page results in stack-based buffer overflow. The attack can be launched remotely. The exploit is now public and ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Jimi-Lab/cve/issues/11",
+        "https://vuldb.com/submit/792864",
+        "https://vuldb.com/vuln/356983"
+      ],
+      "published": "2026-04-12T06:16:22.187"
+    },
+    {
+      "id": "CVE-2026-6121",
+      "description": "A flaw has been found in Tenda F451 1.0.0.7. Affected by this vulnerability is the function WrlclientSet of the file /goform/WrlclientSet of the component httpd. This manipulation of the argument GO causes stack-based buffer overflow. The attack may be initiated remotely. The exploit has been publis",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Jimi-Lab/cve/issues/12",
+        "https://vuldb.com/submit/792865",
+        "https://vuldb.com/vuln/356984"
+      ],
+      "published": "2026-04-12T08:16:36.467"
+    },
+    {
+      "id": "CVE-2026-6122",
+      "description": "A vulnerability has been found in Tenda F451 1.0.0.7. Affected by this issue is the function frmL7ProtForm of the file /goform/L7Prot of the component httpd. Such manipulation of the argument page leads to stack-based buffer overflow. The attack may be launched remotely. The exploit has been disclos",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Jimi-Lab/cve/issues/14",
+        "https://vuldb.com/submit/792872",
+        "https://vuldb.com/vuln/356985"
+      ],
+      "published": "2026-04-12T08:16:37.700"
+    },
+    {
+      "id": "CVE-2026-6123",
+      "description": "A vulnerability was found in Tenda F451 1.0.0.7. This affects the function fromAddressNat of the file /goform/addressNat of the component httpd. Performing a manipulation of the argument entrys results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has bee",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Jimi-Lab/cve/issues/15",
+        "https://vuldb.com/submit/792873",
+        "https://vuldb.com/submit/792879"
+      ],
+      "published": "2026-04-12T09:16:17.060"
+    },
+    {
+      "id": "CVE-2026-6124",
+      "description": "A vulnerability was determined in Tenda F451 1.0.0.7. This vulnerability affects the function fromSafeMacFilter of the file /goform/SafeMacFilter of the component httpd. Executing a manipulation of the argument page/menufacturer can lead to stack-based buffer overflow. The attack can be executed rem",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Jimi-Lab/cve/issues/16",
+        "https://vuldb.com/submit/792874",
+        "https://vuldb.com/vuln/356987"
+      ],
+      "published": "2026-04-12T09:16:18.163"
+    },
+    {
+      "id": "CVE-2026-1116",
+      "description": "A Cross-site Scripting (XSS) vulnerability was identified in the `from_dict` method of the `AppLollmsMessage` class in parisneo/lollms prior to version 2.2.0. The vulnerability arises from the lack of sanitization or HTML encoding of the `content` field when deserializing user-provided data. This al",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/parisneo/lollms/commit/9767b882dbc893c388a286856beeaead69b8292a",
+        "https://huntr.com/bounties/d3d076a7-2a51-4e07-8d0e-91e28e76788e"
+      ],
+      "published": "2026-04-12T03:16:07.600"
+    },
+    {
+      "id": "CVE-2026-6110",
+      "description": "A vulnerability was identified in FoundationAgents MetaGPT up to 0.8.1. This affects the function generate_thoughts of the file metagpt/strategy/tot.py of the component Tree-of-Thought Solver. The manipulation leads to code injection. It is possible to initiate the attack remotely. The exploit is pu",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/FoundationAgents/MetaGPT/",
+        "https://github.com/FoundationAgents/MetaGPT/issues/1933",
+        "https://github.com/FoundationAgents/MetaGPT/pull/1946"
+      ],
+      "published": "2026-04-12T03:16:08.630"
+    },
+    {
+      "id": "CVE-2026-6108",
+      "description": "A vulnerability was found in 1Panel-dev MaxKB up to 2.6.1. The affected element is the function execute of the file apps/application/flow/step_node/mcp_node/impl/base_mcp_node.py of the component Model Context Protocol Node. Performing a manipulation results in os command injection. The attack is po",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/AnalogyC0de/public_exp/issues/30",
+        "https://vuldb.com/submit/782279",
+        "https://vuldb.com/vuln/356968"
+      ],
+      "published": "2026-04-12T01:16:16.807"
+    },
+    {
+      "id": "CVE-2026-6111",
+      "description": "A security flaw has been discovered in FoundationAgents MetaGPT up to 0.8.1. This impacts the function decode_image of the file metagpt/utils/common.py. The manipulation of the argument img_url_or_b64 results in server-side request forgery. It is possible to launch the attack remotely. The exploit h",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/FoundationAgents/MetaGPT/",
+        "https://github.com/FoundationAgents/MetaGPT/issues/1934",
+        "https://github.com/FoundationAgents/MetaGPT/pull/1941"
+      ],
+      "published": "2026-04-12T03:16:08.827"
+    },
+    {
+      "id": "CVE-2026-6117",
+      "description": "A vulnerability was found in AstrBotDevs AstrBot up to 4.22.1. This issue affects the function install_plugin_upload of the file astrbot/dashboard/routes/plugin.py of the component install-upload Endpoint. The manipulation of the argument File results in sandbox issue. The attack can be executed rem",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-264",
+        "CWE-265"
+      ],
+      "references": [
+        "https://github.com/AstrBotDevs/AstrBot/",
+        "https://github.com/AstrBotDevs/AstrBot/issues/7168",
+        "https://vuldb.com/submit/792653"
+      ],
+      "published": "2026-04-12T05:16:01.287"
+    },
+    {
+      "id": "CVE-2026-6118",
+      "description": "A vulnerability was determined in AstrBotDevs AstrBot up to 4.22.1. Impacted is the function add_mcp_server of the file astrbot/dashboard/routes/tools.py of the component MCP Endpoint. This manipulation of the argument command causes command injection. The attack is possible to be carried out remote",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/AstrBotDevs/AstrBot/",
+        "https://github.com/AstrBotDevs/AstrBot/issues/7169",
+        "https://vuldb.com/submit/792655"
+      ],
+      "published": "2026-04-12T05:16:01.560"
+    },
+    {
+      "id": "CVE-2026-6119",
+      "description": "A vulnerability was identified in AstrBotDevs AstrBot up to 4.22.1. The affected element is the function post_data.get of the component API Endpoint. Such manipulation leads to server-side request forgery. The attack may be performed from remote. The exploit is publicly available and might be used. ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/AstrBotDevs/AstrBot/",
+        "https://github.com/AstrBotDevs/AstrBot/issues/7171",
+        "https://vuldb.com/submit/792661"
+      ],
+      "published": "2026-04-12T06:16:21.927"
+    },
+    {
+      "id": "CVE-2026-6109",
+      "description": "A vulnerability was determined in FoundationAgents MetaGPT up to 0.8.1. The impacted element is the function evaluateCode of the file metagpt/environment/minecraft/mineflayer/index.js of the component Mineflayer HTTP API. Executing a manipulation can lead to cross-site request forgery. The attack ma",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352",
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/FoundationAgents/MetaGPT/",
+        "https://github.com/FoundationAgents/MetaGPT/issues/1932",
+        "https://vuldb.com/submit/791759"
+      ],
+      "published": "2026-04-12T02:16:00.790"
+    },
+    {
+      "id": "CVE-2026-6107",
+      "description": "A flaw has been found in 1Panel-dev MaxKB up to 2.6.1. This issue affects some unknown processing of the file apps/common/middleware/chat_headers_middleware.py of the component ChatHeadersMiddleware. This manipulation of the argument Name causes cross site scripting. Remote exploitation of the attac",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/1Panel-dev/MaxKB/",
+        "https://github.com/1Panel-dev/MaxKB/commit/026a2d623e2aa5efa67c4834651e79d5d7cab1da",
+        "https://github.com/1Panel-dev/MaxKB/pull/4919"
+      ],
+      "published": "2026-04-12T01:16:16.583"
+    },
+    {
+      "id": "CVE-2026-31413",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Fix unsound scalar forking in maybe_fork_scalars() for BPF_OR\n\nmaybe_fork_scalars() is called for both BPF_AND and BPF_OR when the\nsource operand is a constant.  When dst has signed range [-1, 0], it\nforks the verifier state: ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/342aa1ee995ef5bbf876096dc3a5e51218d76fa4",
+        "https://git.kernel.org/stable/c/58bd87d0e69204dbd739e4387a1edb0c4b1644e7",
+        "https://git.kernel.org/stable/c/c845894ebd6fb43226b3118d6b017942550910c5"
+      ],
+      "published": "2026-04-12T06:16:20.050"
+    }
+  ]
+}
