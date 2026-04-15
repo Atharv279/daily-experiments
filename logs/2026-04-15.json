@@ -1,0 +1,367 @@
+{
+  "timestamp": "2026-04-15T05:09:09.759197+00:00",
+  "scan_id": "19345f23b2",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 3,
+      "HIGH": 8,
+      "MEDIUM": 6,
+      "LOW": 2,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        5
+      ],
+      [
+        "CWE-89",
+        5
+      ],
+      [
+        "CWE-77",
+        4
+      ],
+      [
+        "CWE-78",
+        4
+      ],
+      [
+        "CWE-119",
+        3
+      ]
+    ],
+    "threat_index": 382.6,
+    "critical_count": 3
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 382.6,
+        "yesterday": 449.6,
+        "change_pct": -14.9
+      },
+      "critical_count": {
+        "today": 3,
+        "yesterday": 5,
+        "change_pct": -40.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-6138",
+      "description": "A flaw has been found in Totolink A7100RU 7.4cu.2313_b20191024. The impacted element is the function setAccessDeviceCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of the argument mac causes os command injection. The attack can be initiated remotely. The exploit ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/A7100RU/vul_191/README.md",
+        "https://vuldb.com/submit/792980",
+        "https://vuldb.com/vuln/357002"
+      ],
+      "published": "2026-04-13T00:16:21.493"
+    },
+    {
+      "id": "CVE-2026-6139",
+      "description": "A vulnerability has been found in Totolink A7100RU 7.4cu.2313_b20191024. This affects the function UploadOpenVpnCert of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Such manipulation of the argument FileName leads to os command injection. The attack can be launched remotely. The explo",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/A7100RU/vul_192/README.md",
+        "https://vuldb.com/submit/792982",
+        "https://vuldb.com/vuln/357003"
+      ],
+      "published": "2026-04-13T01:16:35.500"
+    },
+    {
+      "id": "CVE-2026-6140",
+      "description": "A vulnerability was found in Totolink A7100RU 7.4cu.2313_b20191024. This impacts the function UploadFirmwareFile of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Performing a manipulation of the argument FileName results in os command injection. The attack may be initiated remotely. Th",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new/blob/main/A7100RU/vul_193/README.md",
+        "https://vuldb.com/submit/792987",
+        "https://vuldb.com/vuln/357004"
+      ],
+      "published": "2026-04-13T01:16:35.697"
+    },
+    {
+      "id": "CVE-2026-6135",
+      "description": "A weakness has been identified in Tenda F451 1.0.0.7_cn_svn7958. This issue affects the function fromSetIpBind of the file /goform/SetIpBind. Executing a manipulation of the argument page can lead to stack-based buffer overflow. The attack may be performed from remote. The exploit has been made avai",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Jimi-Lab/cve/issues/19",
+        "https://vuldb.com/submit/792877",
+        "https://vuldb.com/vuln/356999"
+      ],
+      "published": "2026-04-13T00:16:20.880"
+    },
+    {
+      "id": "CVE-2026-6136",
+      "description": "A security vulnerability has been detected in Tenda F451 1.0.0.7_cn_svn7958. Impacted is the function frmL7ImForm of the file /goform/L7Im. The manipulation of the argument page leads to stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed publi",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Jimi-Lab/cve/issues/21",
+        "https://vuldb.com/submit/792880",
+        "https://vuldb.com/vuln/357000"
+      ],
+      "published": "2026-04-13T00:16:21.097"
+    },
+    {
+      "id": "CVE-2026-6137",
+      "description": "A vulnerability was detected in Tenda F451 1.0.0.7_cn_svn7958. The affected element is the function fromAdvSetWan of the file /goform/AdvSetWan. The manipulation of the argument wanmode/PPPOEPassword results in stack-based buffer overflow. It is possible to launch the attack remotely. The exploit is",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Jimi-Lab/cve/issues/22",
+        "https://vuldb.com/submit/792881",
+        "https://vuldb.com/vuln/357001"
+      ],
+      "published": "2026-04-13T00:16:21.300"
+    },
+    {
+      "id": "CVE-2026-6142",
+      "description": "A vulnerability was identified in tushar-2223 Hotel Management System up to bb1f3b3666124b888f1e4bcf51b6fba9fbb01d15. Affected by this vulnerability is an unknown functionality of the file /admin/roomdelete.php. The manipulation of the argument ID leads to sql injection. Remote exploitation of the a",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://gist.github.com/freeloader9527/a9ab20c922c6aa2b3eabf93e01a40f6b",
+        "https://github.com/tushar-2223/Hotel-Management-System/issues/15",
+        "https://vuldb.com/submit/795751"
+      ],
+      "published": "2026-04-13T01:16:36.100"
+    },
+    {
+      "id": "CVE-2026-6148",
+      "description": "A vulnerability was detected in code-projects Vehicle Showroom Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /util/MonthTotalReportUpdateFunction.php. Performing a manipulation of the argument BRANCH_ID results in sql injection. The attack is possible ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/mrpgi/cve/issues/2",
+        "https://vuldb.com/submit/796280"
+      ],
+      "published": "2026-04-13T02:16:05.483"
+    },
+    {
+      "id": "CVE-2026-6149",
+      "description": "A flaw has been found in code-projects Vehicle Showroom Management System 1.0. Affected by this issue is some unknown functionality of the file /util/BookVehicleFunction.php. Executing a manipulation of the argument BRANCH_ID can lead to sql injection. The attack may be performed from remote. The ex",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/mrpgi/cve/issues/4",
+        "https://vuldb.com/submit/796282"
+      ],
+      "published": "2026-04-13T02:16:05.697"
+    },
+    {
+      "id": "CVE-2026-6151",
+      "description": "A vulnerability was found in code-projects Vehicle Showroom Management System 1.0. This vulnerability affects unknown code of the file /util/PaymentStatusFunction.php. The manipulation of the argument CUSTOMER_ID results in sql injection. It is possible to launch the attack remotely. The exploit has",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/zheng-lv/CVE-/issues/2",
+        "https://vuldb.com/submit/796311"
+      ],
+      "published": "2026-04-13T03:16:02.893"
+    },
+    {
+      "id": "CVE-2026-6152",
+      "description": "A vulnerability was determined in code-projects Vehicle Showroom Management System 1.0. This issue affects some unknown processing of the file /util/StaffAddingFunction.php. This manipulation of the argument STAFF_ID causes sql injection. The attack can be initiated remotely. The exploit has been pu",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/zheng-lv/CVE-/issues/3",
+        "https://vuldb.com/submit/796312"
+      ],
+      "published": "2026-04-13T03:16:03.097"
+    },
+    {
+      "id": "CVE-2026-28553",
+      "description": "Vulnerability of improper permission control in the theme setting module.\nImpact: Successful exploitation of this vulnerability may affect service confidentiality.",
+      "severity": "MEDIUM",
+      "score": 6.9,
+      "cwes": [
+        "CWE-275"
+      ],
+      "references": [
+        "https://consumer.huawei.com/en/support/bulletin/2026/4/"
+      ],
+      "published": "2026-04-13T04:16:03.650"
+    },
+    {
+      "id": "CVE-2026-6141",
+      "description": "A vulnerability was determined in danielmiessler Personal_AI_Infrastructure up to 2.3.0. Affected is an unknown function of the file Skills/Parser/Tools/parse_url.ts. Executing a manipulation can lead to os command injection. The attack may be launched remotely. The exploit has been publicly disclos",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/danielmiessler/Personal_AI_Infrastructure/",
+        "https://github.com/danielmiessler/Personal_AI_Infrastructure/commit/14322e87e58bf585cf3c7b9295578a6eb7dc4945",
+        "https://github.com/danielmiessler/Personal_AI_Infrastructure/pull/659"
+      ],
+      "published": "2026-04-13T01:16:35.890"
+    },
+    {
+      "id": "CVE-2026-6143",
+      "description": "A security flaw has been discovered in farion1231 cc-switch up to 3.12.3. Affected by this issue is some unknown functionality of the file src-tauri/src/proxy/server.rs of the component ProxyServer. The manipulation results in permissive cross-domain policy with untrusted domains. The attack can be ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-346",
+        "CWE-942"
+      ],
+      "references": [
+        "https://github.com/farion1231/cc-switch/",
+        "https://github.com/farion1231/cc-switch/issues/1841",
+        "https://github.com/farion1231/cc-switch/issues/1841#issue-4191294952"
+      ],
+      "published": "2026-04-13T02:16:04.783"
+    },
+    {
+      "id": "CVE-2026-25204",
+      "description": "Deserialization of untrusted data vulnerability in Samsung Open Source Escargot Java Script allows denial of service condition via process abort.\n\nThis issue affects escarogt prior to\u00a0commit hash \n\n97e8115ab1110bc502b4b5e4a0c689a71520d335",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-502",
+        "CWE-843"
+      ],
+      "references": [
+        "https://github.com/Samsung/escargot/pull/1554"
+      ],
+      "published": "2026-04-13T01:16:35.313"
+    },
+    {
+      "id": "CVE-2026-34852",
+      "description": "Stack overflow vulnerability in the media platform.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-835"
+      ],
+      "references": [
+        "https://consumer.huawei.com/en/support/bulletin/2026/4/",
+        "https://consumer.huawei.com/en/support/bulletinlaptops/2026/4/",
+        "https://consumer.huawei.com/en/support/bulletinwearables/2026/4/"
+      ],
+      "published": "2026-04-13T04:16:11.727"
+    },
+    {
+      "id": "CVE-2026-6150",
+      "description": "A vulnerability has been found in code-projects Simple Laundry System 1.0. This affects an unknown part of the file /checkupdatestatus.php. The manipulation of the argument serviceId leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/zheng-lv/CVE-/issues/1",
+        "https://vuldb.com/submit/796309"
+      ],
+      "published": "2026-04-13T03:16:02.683"
+    },
+    {
+      "id": "CVE-2026-34851",
+      "description": "Race condition vulnerability in the event notification module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+      "severity": "LOW",
+      "score": 2.2,
+      "cwes": [
+        "CWE-362"
+      ],
+      "references": [
+        "https://consumer.huawei.com/en/support/bulletin/2026/4/",
+        "https://consumer.huawei.com/en/support/bulletinlaptops/2026/4/"
+      ],
+      "published": "2026-04-13T04:16:11.513"
+    },
+    {
+      "id": "CVE-2026-34850",
+      "description": "Race condition vulnerability in the notification service.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+      "severity": "LOW",
+      "score": 1.9,
+      "cwes": [
+        "CWE-362"
+      ],
+      "references": [
+        "https://consumer.huawei.com/en/support/bulletin/2026/4/",
+        "https://consumer.huawei.com/en/support/bulletinlaptops/2026/4/"
+      ],
+      "published": "2026-04-13T04:16:07.767"
+    },
+    {
+      "id": "CVE-2026-6179",
+      "description": "Stored Cross Site Scripting in NightWolf Penetration Testing Platform allows attack trigger and run malicious script in user's browser",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://bug.report.night-wolf.io/changelogs"
+      ],
+      "published": "2026-04-13T03:16:03.297"
+    }
+  ]
+}
