@@ -1,0 +1,345 @@
+{
+  "timestamp": "2026-04-16T05:14:33.972765+00:00",
+  "scan_id": "00ea60b3f3",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 2,
+      "MEDIUM": 15,
+      "LOW": 1,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-862",
+        8
+      ],
+      [
+        "CWE-79",
+        2
+      ],
+      [
+        "CWE-94",
+        2
+      ],
+      [
+        "CWE-20",
+        2
+      ],
+      [
+        "CWE-89",
+        1
+      ]
+    ],
+    "threat_index": 247.4,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 247.4,
+        "yesterday": 382.6,
+        "change_pct": -35.3
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 3,
+        "change_pct": -66.7
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-27681",
+      "description": "Due to insufficient authorization checks in SAP Business Planning and Consolidation and SAP Business Warehouse, an authenticated user can execute crafted SQL statements to read, modify, and delete database data. This leads to a high impact on the confidentiality, integrity, and availability of the s",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3719353",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T00:16:06.560"
+    },
+    {
+      "id": "CVE-2026-40164",
+      "description": "jq is a command-line JSON processor. Before commit 0c7d133c3c7e37c00b6d46b658a02244fdd3c784, jq used MurmurHash3 with a hardcoded, publicly visible seed (0x432A9843) for all JSON object hash table operations, which allowed an attacker to precompute key collisions offline. By supplying a crafted JSON",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-328",
+        "CWE-407"
+      ],
+      "references": [
+        "https://github.com/jqlang/jq/commit/0c7d133c3c7e37c00b6d46b658a02244fdd3c784",
+        "https://github.com/jqlang/jq/security/advisories/GHSA-wwj8-gxm6-jc29"
+      ],
+      "published": "2026-04-14T00:16:07.360"
+    },
+    {
+      "id": "CVE-2026-34256",
+      "description": "Due to a missing authorization check in SAP ERP and SAP S/4HANA (Private Cloud and On-Premise), an authenticated attacker could execute a particular ABAP report to overwrite any existing eight?character executable ABAP report without authorization. If the overwritten report is subsequently executed,",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3731908",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T01:16:03.530"
+    },
+    {
+      "id": "CVE-2026-27677",
+      "description": "Due to missing authorization checks in the SAP S/4HANA OData Service (Manage Reference Equipment), an attacker could update and delete child entities via OData services without proper authorization. This vulnerability has a high impact on integrity, while confidentiality and availability are not imp",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3715097",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T00:16:06.130"
+    },
+    {
+      "id": "CVE-2026-27678",
+      "description": "Due to missing authorization checks in the SAP S/4HANA backend OData Service (Manage Reference Structures), an attacker could update and delete child entities via exposed OData services without proper authorization. This vulnerability has a high impact on integrity, while confidentiality and availab",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3715177",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T00:16:06.270"
+    },
+    {
+      "id": "CVE-2026-27679",
+      "description": "Due to missing authorization checks in the SAP S/4HANA frontend OData Service (Manage Reference Structures), an attacker could update and delete child entities via exposed OData services without proper authorization. This vulnerability has a high impact on integrity, while confidentiality and availa",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3716767",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T00:16:06.413"
+    },
+    {
+      "id": "CVE-2026-34261",
+      "description": "Due to a missing authorization check in SAP Business Analytics and SAP Content Management, an authenticated user could make unauthorized calls to certain remote function modules, potentially accessing sensitive information beyond their intended permissions. This vulnerability affects confidentiality",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3705094",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T01:16:03.897"
+    },
+    {
+      "id": "CVE-2026-0512",
+      "description": "Due to a Cross-Site Scripting (XSS) vulnerability in the SAP Supplier Relationship Management (SICF Handler in SRM Catalog), an unauthenticated attacker could craft a malicious URL, that if accessed by a victim, results in execution of malicious content within the victim's browser. This could allow ",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3645228",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T00:16:03.700"
+    },
+    {
+      "id": "CVE-2026-27674",
+      "description": "Due to a Code Injection vulnerability in SAP NetWeaver Application Server Java (Web Dynpro Java), an unauthenticated attacker could supply crafted input that is interpreted by the application and causes it to reference attacker-controlled content. If a victim accesses the affected functionality, tha",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3719397",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T00:16:05.670"
+    },
+    {
+      "id": "CVE-2026-34257",
+      "description": "Due to an Open Redirect vulnerability in SAP NetWeaver Application Server ABAP, an unauthenticated attacker could craft malicious URL that, if accessed by a victim, they could be redirected to the page controlled by the attacker. This causes low impact on confidentiality and integrity of the applica",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-601"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3692004",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T01:16:03.730"
+    },
+    {
+      "id": "CVE-2026-34069",
+      "description": "nimiq/core-rs-albatross is a Rust implementation of the Nimiq Proof-of-Stake protocol based on the Albatross consensus algorithm. In versions 1.2.2 and below, an unauthenticated p2p peer can cause the RequestMacroChain message handler task to panic. Sending a RequestMacroChain message where the firs",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-617"
+      ],
+      "references": [
+        "https://github.com/nimiq/core-rs-albatross/commit/ae6c1e92342e72f80fd12accbe66ee80dd6802ac",
+        "https://github.com/nimiq/core-rs-albatross/pull/3660",
+        "https://github.com/nimiq/core-rs-albatross/releases/tag/v1.3.0"
+      ],
+      "published": "2026-04-14T00:16:07.023"
+    },
+    {
+      "id": "CVE-2026-34262",
+      "description": "Information Disclosure Vulnerability in SAP HANA Cockpit and HANA Database Explorer",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3730639",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T01:16:04.050"
+    },
+    {
+      "id": "CVE-2026-27673",
+      "description": "Due to a missing authorization check, SAP S/4HANA (Private Cloud and On-Premise) allows an authenticated user to delete files on the operating system and gain unauthorized control over file operations which could leads to no impact on Confidentiality, Low impact on Integrity and Availability of the ",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3703813",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T00:16:05.477"
+    },
+    {
+      "id": "CVE-2026-39417",
+      "description": "MaxKB is an open-source AI assistant for enterprise. Versions 2.7.1 and below contain an incomplete fix for CVE-2025-53928, where a Remote Code Execution vulnerability still exists in the MCP node of the workflow engine. MaxKB only restricts the referencing code path (loading MCP config from the dat",
+      "severity": "MEDIUM",
+      "score": 4.6,
+      "cwes": [
+        "CWE-20",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/1Panel-dev/MaxKB/commit/50e96002ee5dca34c68d3d9333b64ea358c92304",
+        "https://github.com/1Panel-dev/MaxKB/releases/tag/v2.8.0",
+        "https://github.com/1Panel-dev/MaxKB/security/advisories/GHSA-pw52-326g-r5xj"
+      ],
+      "published": "2026-04-14T00:16:07.193"
+    },
+    {
+      "id": "CVE-2026-27672",
+      "description": "The Material Master application does not enforce authorization checks for authenticated users when executing reports, resulting in the disclosure of sensitive information. This vulnerability has a low impact on confidentiality and does not affect integrity and availability of the system.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3703276",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T00:16:05.297"
+    },
+    {
+      "id": "CVE-2026-27676",
+      "description": "Due to missing authorization checks in the SAP S/4HANA OData Service (Manage Technical Object Structures), an attacker could update and delete child entities via exposed OData services without proper authorization. This vulnerability results in a low impact on integrity, while confidentiality and av",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3711682",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T00:16:05.987"
+    },
+    {
+      "id": "CVE-2026-24318",
+      "description": "Due to an Insecure session management vulnerability in SAP Business Objects Business Intelligence Platform, an unauthenticated attacker could obtain valid session tokens and reuse them to gain unauthorized access to a victim\ufffds session. If the application continues to accept previously issued tokens ",
+      "severity": "MEDIUM",
+      "score": 4.2,
+      "cwes": [
+        "CWE-539"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3702191",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T00:16:04.913"
+    },
+    {
+      "id": "CVE-2026-27683",
+      "description": "SAP BusinessObjects Business Intelligence application allows an authenticated attacker to inject malicious JavaScript payloads through crafted URLs. When a victim accesses the URL, the script executes in the user\ufffds browser, potentially exposing restricted information. This results in a low impact on",
+      "severity": "MEDIUM",
+      "score": 4.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3698216",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T00:16:06.717"
+    },
+    {
+      "id": "CVE-2026-27675",
+      "description": "SAP Landscape Transformation contains a vulnerability in an RFC-exposed function module that could allow a high privileged adversary to inject arbitrary ABAP code and operating system commands. Due to this, some information could be modified, but the attacker does not have control over kind or degre",
+      "severity": "LOW",
+      "score": 2.0,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3723097",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-04-14T00:16:05.823"
+    },
+    {
+      "id": "CVE-2026-33948",
+      "description": "jq is a command-line JSON processor. Commits before 6374ae0bcdfe33a18eb0ae6db28493b1f34a0a5b contain a vulnerability where CLI input parsing allows validation bypass via embedded NUL bytes. When reading JSON from files or stdin, jq uses strlen() to determine buffer length instead of the actual byte ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-20",
+        "CWE-170"
+      ],
+      "references": [
+        "https://github.com/jqlang/jq/commit/6374ae0bcdfe33a18eb0ae6db28493b1f34a0a5b",
+        "https://github.com/jqlang/jq/security/advisories/GHSA-32cx-cvvh-2wj9"
+      ],
+      "published": "2026-04-14T00:16:06.867"
+    }
+  ]
+}
