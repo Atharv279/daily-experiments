@@ -1,0 +1,350 @@
+{
+  "timestamp": "2026-04-17T05:13:18.691075+00:00",
+  "scan_id": "34df4020df",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 7,
+      "MEDIUM": 8,
+      "UNKNOWN": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-94",
+        3
+      ],
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-22",
+        2
+      ],
+      [
+        "CWE-917",
+        1
+      ],
+      [
+        "CWE-434",
+        1
+      ]
+    ],
+    "threat_index": 328.2,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 328.2,
+        "yesterday": 247.4,
+        "change_pct": 32.7
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 1,
+        "change_pct": 100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-39842",
+      "description": "OpenRemote is an open-source IoT platform. Versions 1.21.0 and below contain two interrelated expression injection vulnerabilities in the rules engine that allow arbitrary code execution on the server. The JavaScript rules engine executes user-supplied scripts via Nashorn's ScriptEngine.eval() witho",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-94",
+        "CWE-917"
+      ],
+      "references": [
+        "https://github.com/openremote/openremote/releases/tag/1.22.0",
+        "https://github.com/openremote/openremote/security/advisories/GHSA-7mqr-33rv-p3mp"
+      ],
+      "published": "2026-04-15T04:17:36.903"
+    },
+    {
+      "id": "CVE-2026-1555",
+      "description": "The WebStack theme for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the io_img_upload() function in all versions up to, and including, 1.2024. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server whic",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/owen0o0/WebStack/blob/master/inc/ajax.php#L5",
+        "https://github.com/owen0o0/WebStack/tree/master",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/b97805de-1b47-4c9f-baae-2e37c1b78570?source=cve"
+      ],
+      "published": "2026-04-15T04:17:33.600"
+    },
+    {
+      "id": "CVE-2026-39884",
+      "description": "mcp-server-kubernetes is a Model Context Protocol server for Kubernetes cluster management. Versions 3.4.0 and prior contain an argument injection vulnerability in the port_forward tool in src/tools/port_forward.ts, where a kubectl command is constructed via string concatenation with user-controlled",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-88"
+      ],
+      "references": [
+        "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.5.0",
+        "https://github.com/Flux159/mcp-server-kubernetes/security/advisories/GHSA-4xqg-gf5c-ghwq",
+        "https://github.com/Flux159/mcp-server-kubernetes/security/advisories/GHSA-4xqg-gf5c-ghwq"
+      ],
+      "published": "2026-04-15T04:17:37.097"
+    },
+    {
+      "id": "CVE-2026-40104",
+      "description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Versions 1.8-rc-1, 17.0.0-rc-1 and 17.5.0-rc-1 and prior include a resource exhaustion vulnerability in REST API endpoints such as /xwiki/rest/wikis/xwiki/spaces/AnnotationCode/pages/AnnotationCo",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/xwiki/xwiki-platform/commit/47b568c4753a6e682b14be1ca581bdd3b25d45a7",
+        "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-mrqg-xmgm-rc5g",
+        "https://jira.xwiki.org/browse/XWIKI-23550"
+      ],
+      "published": "2026-04-15T04:17:47.953"
+    },
+    {
+      "id": "CVE-2025-54550",
+      "description": "The example example_xcom\u00a0that was included in airflow documentation implemented unsafe pattern of reading value\nfrom xcom in the way that could be exploited to allow UI user who had access to modify XComs to perform arbitrary\nexecution of code on the worker. Since the UI users are already highly tru",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/apache/airflow/pull/63200",
+        "https://lists.apache.org/thread/3mf4cfx070ofsnf9qy0s2v5gqb5sc2g1",
+        "http://www.openwall.com/lists/oss-security/2026/04/15/1"
+      ],
+      "published": "2026-04-15T04:17:32.670"
+    },
+    {
+      "id": "CVE-2026-33806",
+      "description": "Impact:\n\nFastify applications using schema.body.content for per-content-type body validation can have validation bypassed entirely by prepending a space to the Content-Type header. The body is still parsed correctly but schema validation is skipped.\n\nThis is a regression introduced in fastify >= 5.3",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-1287"
+      ],
+      "references": [
+        "https://cna.openjsf.org/security-advisories.html",
+        "https://github.com/fastify/fastify/security/advisories/GHSA-mg2h-6x62-wpwc"
+      ],
+      "published": "2026-04-15T04:17:36.650"
+    },
+    {
+      "id": "CVE-2026-2834",
+      "description": "The Age Verification & Identity Verification by Token of Trust plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018description\u2019 parameter in all versions up to, and including, 3.32.3 due to insufficient input sanitization and output escaping. This makes it possible for unauthe",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/token-of-trust/tags/3.31.4/admin/error-log.php#L4",
+        "https://plugins.trac.wordpress.org/browser/token-of-trust/tags/3.31.4/admin/settings-page/view-logs.php#L13",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/2d8e037e-c446-44ae-a5ee-bbba938e5edf?source=cve"
+      ],
+      "published": "2026-04-15T04:17:36.113"
+    },
+    {
+      "id": "CVE-2026-39971",
+      "description": "Serendipity is a PHP-powered weblog engine. In versions 2.6-beta2 and below, the email sending functionality in include/functions.inc.php inserts $_SERVER['HTTP_HOST'] directly into the Message-ID SMTP header without validation, and the existing sanitization function serendipity_isResponseClean() is",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-113"
+      ],
+      "references": [
+        "https://github.com/s9y/Serendipity/releases/tag/2.6.0",
+        "https://github.com/s9y/Serendipity/security/advisories/GHSA-458g-q4fh-mj6r"
+      ],
+      "published": "2026-04-15T04:17:39.763"
+    },
+    {
+      "id": "CVE-2026-40090",
+      "description": "Zarf is an Airgap Native Packager Manager for Kubernetes. Versions 0.23.0 through 0.74.1 contain an arbitrary file write vulnerability in the zarf package inspect sbom and zarf package inspect documentation subcommands. These subcommands output file paths are constructed by joining a user-controlled",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/zarf-dev/zarf/pull/4793",
+        "https://github.com/zarf-dev/zarf/security/advisories/GHSA-pj97-4p9w-gx3q"
+      ],
+      "published": "2026-04-15T04:17:43.310"
+    },
+    {
+      "id": "CVE-2026-39963",
+      "description": "Serendipity is a PHP-powered weblog engine. In versions 2.6-beta2  and below, the serendipity_setCookie() function in include/functions_config.inc.php uses $_SERVER['HTTP_HOST'] without validation as the domain parameter of setcookie(). An attacker who can influence the Host header at login time, su",
+      "severity": "MEDIUM",
+      "score": 6.9,
+      "cwes": [
+        "CWE-565"
+      ],
+      "references": [
+        "https://github.com/s9y/Serendipity/releases/tag/2.6.0",
+        "https://github.com/s9y/Serendipity/security/advisories/GHSA-4m6c-649p-f6gf",
+        "https://github.com/s9y/Serendipity/security/advisories/GHSA-4m6c-649p-f6gf"
+      ],
+      "published": "2026-04-15T04:17:39.580"
+    },
+    {
+      "id": "CVE-2025-15470",
+      "description": "The Eleganzo theme for WordPress is vulnerable to arbitrary directory deletion due to insufficient path validation in the akd_required_plugin_callback function in all versions up to, and including, 1.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to de",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://testwp.local/wp-content/themes/eleganzo/welcome.php#L96",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/7c5d7818-e548-4d8f-b847-396d528b58cd?source=cve"
+      ],
+      "published": "2026-04-15T04:17:20.670"
+    },
+    {
+      "id": "CVE-2026-40091",
+      "description": "SpiceDB is an open source database system for creating and managing security-critical application permissions. In versions 1.49.0 through 1.51.0, when SpiceDB starts with log level info, the startup \"configuration\" log will include the full datastore DSN, including the plaintext password, inside Dat",
+      "severity": "MEDIUM",
+      "score": 6.0,
+      "cwes": [
+        "CWE-532"
+      ],
+      "references": [
+        "https://github.com/authzed/spicedb/releases/tag/v1.51.1",
+        "https://github.com/authzed/spicedb/security/advisories/GHSA-jf4f-rr2c-9m58"
+      ],
+      "published": "2026-04-15T04:17:46.360"
+    },
+    {
+      "id": "CVE-2026-39984",
+      "description": "Sigstore Timestamp Authority is a service for issuing RFC 3161 timestamps. Versions 2.0.5 and below contain an authorization bypass vulnerability in the VerifyTimestampResponse function. VerifyTimestampResponse correctly verifies the certificate chain signature, but the TSA-specific constraint check",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-295"
+      ],
+      "references": [
+        "https://github.com/sigstore/timestamp-authority/releases/tag/v2.0.6",
+        "https://github.com/sigstore/timestamp-authority/security/advisories/GHSA-xm5m-wgh2-rrg3"
+      ],
+      "published": "2026-04-15T04:17:40.203"
+    },
+    {
+      "id": "CVE-2026-1509",
+      "description": "The Avada (Fusion) Builder plugin for WordPress is vulnerable to Arbitrary WordPress Action Execution in all versions up to, and including, 3.15.1. This is due to the plugin's `output_action_hook()` function accepting user-controlled input to trigger any registered WordPress action hook without prop",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://avada.com/documentation/avada-changelog/",
+        "https://themeforest.net/item/avada-responsive-multipurpose-theme/2833226",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/fdc57b06-bae9-49a3-84dd-f593705330e9?source=cve"
+      ],
+      "published": "2026-04-15T04:17:33.173"
+    },
+    {
+      "id": "CVE-2026-1314",
+      "description": "The 3D FlipBook \u2013 PDF Embedder, PDF Flipbook Viewer, Flipbook Image Gallery plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the send_post_pages_json() function in all versions up to, and including, 1.16.17. This makes it possible for unauthentic",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3467608/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/d7e41753-2dbf-4afa-b61e-e617be2c4dc2?source=cve"
+      ],
+      "published": "2026-04-15T04:17:32.963"
+    },
+    {
+      "id": "CVE-2026-2396",
+      "description": "The List View Google Calendar plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the event description in all versions up to, and including, 7.4.3 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-lev",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/list-view-google-calendar/tags/7.4.3/library/tags/li.php#L6",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/c339bf65-c522-4954-8aed-275c51298aea?source=cve"
+      ],
+      "published": "2026-04-15T04:17:33.783"
+    },
+    {
+      "id": "CVE-2026-1541",
+      "description": "The Avada (Fusion) Builder plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.15.1. This is due to the plugin's `fusion_get_post_custom_field()` function failing to validate whether metadata keys are protected (underscore-prefixed). This make",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://themeforest.net/item/avada-responsive-multipurpose-theme/2833226",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/f1f69f93-80e3-434d-98a6-fc8757b4e6d1?source=cve"
+      ],
+      "published": "2026-04-15T04:17:33.433"
+    },
+    {
+      "id": "CVE-2026-40096",
+      "description": "immich is a high performance self-hosted photo and video management solution. Versions prior to 2.7.3 contain an open redirect vulnerability in the shared album functionality, where the album name is inserted unsanitized into a <meta> tag in api.service.ts. A registered attacker can create a shared ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79",
+        "CWE-601"
+      ],
+      "references": [
+        "https://github.com/immich-app/immich/releases/tag/v2.7.3",
+        "https://github.com/immich-app/immich/security/advisories/GHSA-24fq-72x8-v7hm"
+      ],
+      "published": "2026-04-15T04:17:47.680"
+    },
+    {
+      "id": "CVE-2026-40105",
+      "description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Versions 10.4-rc-1, through  16.10.15, 17.0.0-rc-1, through 17.4.7 and 17.5.0-rc-1 through 17.10.0 contain a reflected cross-site scripting vulnerability (XSS) in the comparison view between revi",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-80"
+      ],
+      "references": [
+        "https://github.com/xwiki/xwiki-platform/commit/3c8a2ec985641367015c2db937574fcd360c788c",
+        "https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-w4fj-87j5-f25c",
+        "https://jira.xwiki.org/browse/XWIKI-23472"
+      ],
+      "published": "2026-04-15T04:17:48.137"
+    },
+    {
+      "id": "CVE-2026-40499",
+      "description": "radare2 prior to version 6.1.4 contains a command injection vulnerability in the PDB parser's print_gvars() function that allows attackers to execute arbitrary commands by embedding a newline byte in the PE section header name field. Attackers can craft a malicious PDB file with specially crafted se",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://blog.calif.io/p/mad-bugs-discovering-a-0-day-in-zero",
+        "https://github.com/radareorg/radare2/commit/5590c87deeb7eb2a106fd7aab9ca88bfeebb7397",
+        "https://github.com/radareorg/radare2/issues/25752"
+      ],
+      "published": "2026-04-15T04:17:48.330"
+    }
+  ]
+}
