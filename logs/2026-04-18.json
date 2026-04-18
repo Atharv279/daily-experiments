@@ -1,0 +1,347 @@
+{
+  "timestamp": "2026-04-18T04:43:00.680050+00:00",
+  "scan_id": "7597f3ac82",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 4,
+      "HIGH": 6,
+      "MEDIUM": 4,
+      "LOW": 2,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-78",
+        2
+      ],
+      [
+        "CWE-79",
+        2
+      ],
+      [
+        "CWE-367",
+        2
+      ],
+      [
+        "CWE-269",
+        1
+      ],
+      [
+        "CWE-122",
+        1
+      ]
+    ],
+    "threat_index": 355.8,
+    "critical_count": 4
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 355.8,
+        "yesterday": 328.2,
+        "change_pct": 8.4
+      },
+      "critical_count": {
+        "today": 4,
+        "yesterday": 2,
+        "change_pct": 100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-4880",
+      "description": "The Barcode Scanner (+Mobile App) \u2013 Inventory manager, Order fulfillment system, POS (Point of Sale) plugin for WordPress is vulnerable to privilege escalation via insecure token-based authentication in all versions up to, and including, 1.11.0. This is due to the plugin trusting a user-supplied Bas",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/barcode-scanner-lite-pos-to-manage-products-inventory-and-orders/trunk/src/Core.php?rev=3391688#L498",
+        "https://plugins.trac.wordpress.org/changeset/3506824/barcode-scanner-lite-pos-to-manage-products-inventory-and-orders#file30",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/a213e844-a0d3-4123-9f72-caef7702804c?source=cve"
+      ],
+      "published": "2026-04-16T00:16:29.393"
+    },
+    {
+      "id": "CVE-2026-40504",
+      "description": "Creolabs Gravity before 0.9.6 contains a heap buffer overflow vulnerability in the gravity_vm_exec function that allows attackers to write out-of-bounds memory by crafting scripts with many string literals at global scope. Attackers can exploit insufficient bounds checking in gravity_fiber_reassign(",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/marcobambini/gravity/commit/18b9195598d9b944376754c6d1ad76e38a4adca1",
+        "https://github.com/marcobambini/gravity/issues/437",
+        "https://github.com/marcobambini/gravity/releases/tag/0.9.6"
+      ],
+      "published": "2026-04-16T02:16:11.693"
+    },
+    {
+      "id": "CVE-2026-6350",
+      "description": "MailGates/MailAudit developed by Openfind has a Stack-based Buffer Overflow vulnerability, allowing unauthenticated remote attackers to control the program's execution flow and execute arbitrary code.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://www.twcert.org.tw/en/cp-139-10843-9ff91-2.html",
+        "https://www.twcert.org.tw/tw/cp-132-10844-1405d-1.html"
+      ],
+      "published": "2026-04-16T03:16:30.847"
+    },
+    {
+      "id": "CVE-2026-40959",
+      "description": "Luanti 5 before 5.15.2, when LuaJIT is used, allows a Lua sandbox escape via a crafted mod.",
+      "severity": "CRITICAL",
+      "score": 9.3,
+      "cwes": [
+        "CWE-829"
+      ],
+      "references": [
+        "https://github.com/luanti-org/luanti/commit/53cef183e2a85a4daff84ac1a9a7946f940da8f8",
+        "https://github.com/luanti-org/luanti/commit/8a929dfb97aa08337f49ba1bb96a56d6557dc896",
+        "https://github.com/luanti-org/luanti/security/advisories/GHSA-g596-mf82-w8c3"
+      ],
+      "published": "2026-04-16T01:16:11.617"
+    },
+    {
+      "id": "CVE-2026-40502",
+      "description": "OpenHarness prior to commit dd1d235 contains a command injection vulnerability that allows remote gateway users with chat access to invoke sensitive administrative commands by exploiting insufficient distinction between local-only and remote-safe commands in the gateway handler. Attackers can execut",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/HKUDS/OpenHarness/commit/dd1d235450dd987b20bff01b7bfb02fe8620a0af",
+        "https://github.com/HKUDS/OpenHarness/pull/127",
+        "https://www.vulncheck.com/advisories/openharness-remote-administrative-command-injection-via-gateway-handler"
+      ],
+      "published": "2026-04-16T01:16:11.250"
+    },
+    {
+      "id": "CVE-2026-6348",
+      "description": "WinMatrix agent developed by Simopro Technology has a Missing Authentication vulnerability, allowing authenticated local attackers to execute arbitrary code with SYSTEM privileges on the local machine as well as on all hosts within the environment where the agent is installed.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://www.twcert.org.tw/en/cp-139-10840-ba9b9-2.html",
+        "https://www.twcert.org.tw/tw/cp-132-10839-2d9a7-1.html"
+      ],
+      "published": "2026-04-16T03:16:30.383"
+    },
+    {
+      "id": "CVE-2026-40193",
+      "description": "maddy is a composable, all-in-one mail server. Versions prior to 0.9.3 contain an LDAP injection vulnerability in the auth.ldap module where user-supplied usernames are interpolated into LDAP search filters and DN strings via strings.ReplaceAll() without any LDAP filter escaping, despite the go-ldap",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-90"
+      ],
+      "references": [
+        "https://github.com/foxcpp/maddy/commit/6a06337eb41fa87a35697366bcb71c3c962c44ba",
+        "https://github.com/foxcpp/maddy/releases/tag/v0.9.3",
+        "https://github.com/foxcpp/maddy/security/advisories/GHSA-5835-4gvc-32pc"
+      ],
+      "published": "2026-04-16T00:16:28.163"
+    },
+    {
+      "id": "CVE-2026-40960",
+      "description": "Luanti 5 before 5.15.2 sometimes allows unintended access to an insecure environment. If at least one mod is listed as secure.trusted_mods or secure.http_mods, then a crafted mod can intercept the request for the insecure environment or HTTP API, and also receive access to it.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-670"
+      ],
+      "references": [
+        "https://github.com/luanti-org/luanti/commit/0faf529bc4b89e70a275ed1162047815118f2413",
+        "https://github.com/luanti-org/luanti/commit/827fd4cf7f989482b2dad381fa4afd642ea73e8c",
+        "https://github.com/luanti-org/luanti/security/advisories/GHSA-22c4-238c-m5j4"
+      ],
+      "published": "2026-04-16T01:16:11.770"
+    },
+    {
+      "id": "CVE-2026-40245",
+      "description": "Free5GC is an open-source Linux Foundation project for 5th generation (5G) mobile core networks. Versions 4.2.1 and below contain an information disclosure vulnerability in the UDR (Unified Data Repository) service. The handler for GET /nudr-dr/v2/application-data/influenceData/subs-to-notify sends ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-200",
+        "CWE-202",
+        "CWE-209"
+      ],
+      "references": [
+        "https://github.com/free5gc/free5gc/security/advisories/GHSA-wrwh-rpq4-87hf",
+        "https://github.com/free5gc/free5gc/security/advisories/GHSA-wrwh-rpq4-87hf"
+      ],
+      "published": "2026-04-16T00:16:29.060"
+    },
+    {
+      "id": "CVE-2026-41015",
+      "description": "radare2 before 9236f44, when configured on UNIX without SSL, allows command injection via a PDB name to rabin2 -PP. NOTE: although users are supposed to use the latest version from git (not a release), the date range for the vulnerable code was less than a week, occurring after 6.1.2 but before 6.1.",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/radareorg/radare2/blob/9236f44a28812fe911814e1b3a7bcf1e4de5d3c2/SECURITY.md?plain=1#L3-L5",
+        "https://github.com/radareorg/radare2/commit/9236f44a28812fe911814e1b3a7bcf1e4de5d3c2",
+        "https://github.com/radareorg/radare2/issues/25650"
+      ],
+      "published": "2026-04-16T03:16:27.440"
+    },
+    {
+      "id": "CVE-2026-40503",
+      "description": "OpenHarness prior to commit dd1d235 contains a path traversal vulnerability that allows remote gateway users with chat access to read arbitrary files by supplying path traversal sequences to the /memory show slash command. Attackers can manipulate the path input parameter to escape the project memor",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/HKUDS/OpenHarness/commit/dd1d235450dd987b20bff01b7bfb02fe8620a0af",
+        "https://github.com/HKUDS/OpenHarness/pull/127",
+        "https://www.vulncheck.com/advisories/openharness-path-traversal-information-disclosure-via-memory-show"
+      ],
+      "published": "2026-04-16T01:16:11.440"
+    },
+    {
+      "id": "CVE-2026-3299",
+      "description": "The WP YouTube Lyte plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'lyte' shortcode in all versions up to, and including, 1.7.29 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attack",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3482595/wp-youtube-lyte",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/de09d051-d124-4397-bd1c-b193acd6c186?source=cve"
+      ],
+      "published": "2026-04-16T02:16:11.533"
+    },
+    {
+      "id": "CVE-2026-3885",
+      "description": "The WP Shortcodes Plugin \u2014 Shortcodes Ultimate plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'su_box' shortcode in all versions up to, and including, 7.4.9 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possi",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3489360/shortcodes-ultimate",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/f6929fdc-a5b1-4c71-9291-3fafa9381cf2?source=cve"
+      ],
+      "published": "2026-04-16T03:16:27.080"
+    },
+    {
+      "id": "CVE-2026-40962",
+      "description": "FFmpeg before 8.1 has an integer overflow and resultant out-of-bounds write via CENC (Common Encryption) subsample data to libavformat/mov.c.",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/22348"
+      ],
+      "published": "2026-04-16T02:16:12.227"
+    },
+    {
+      "id": "CVE-2026-40505",
+      "description": "MuPDF before 1.27 contains an ANSI injection vulnerability in mutool that allows attackers to inject arbitrary ANSI escape sequences through crafted PDF metadata fields. Attackers can embed malicious ANSI escape codes in PDF metadata that are passed unsanitized to terminal output when running mutool",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-150"
+      ],
+      "references": [
+        "https://cgit.ghostscript.com/cgi-bin/cgit.cgi/mupdf.git/commit/?id=0f17d789fe8c29b41e47663be82514aaca3a4dfb",
+        "https://github.com/ArtifexSoftware/mupdf/commit/0f17d789fe8c29b41e47663be82514aaca3a4dfb",
+        "https://github.com/ArtifexSoftware/mupdf/releases/tag/1.27.0"
+      ],
+      "published": "2026-04-16T02:16:11.887"
+    },
+    {
+      "id": "CVE-2026-40947",
+      "description": "Yubico libfido2 before 1.17.0, python-fido2 before 2.2.0, and yubikey-manager before 5.9.1 have an unintended DLL search path.",
+      "severity": "LOW",
+      "score": 2.9,
+      "cwes": [
+        "CWE-426"
+      ],
+      "references": [
+        "https://www.yubico.com/support/security-advisories/ysa-2026-01/"
+      ],
+      "published": "2026-04-16T00:16:29.223"
+    },
+    {
+      "id": "CVE-2026-5363",
+      "description": "Inadequate Encryption Strength vulnerability in TP-Link Archer C7 v5 and v5.8 (uhttpd modules) allows Password Recovery Exploitation.\u00a0The web interface encrypts the admin password client-side using RSA-1024 before sending it to the router during login.\u00a0\nAn adjacent attacker with the ability to inter",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-326"
+      ],
+      "references": [
+        "https://www.tp-link.com/us/support/faq/3562/"
+      ],
+      "published": "2026-04-16T00:16:29.547"
+    },
+    {
+      "id": "CVE-2026-1880",
+      "description": "An Incorrect Permission Assignment for Critical Resource vulnerability in the ASUS DriverHub update process allows privilege escalation due to improper protection of required execution resources during the validation phase, permitting a local user to make unprivileged modifications. This allows the ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory"
+      ],
+      "published": "2026-04-16T03:16:25.857"
+    },
+    {
+      "id": "CVE-2026-3428",
+      "description": "A Download of Code Without Integrity Check vulnerability in the update modules in ASUS Member Center(\u534e\u7855\u5927\u5385) allows a local user to achieve privilege escalation to Administrator via exploitation of a Time-of-check Time-of-use (TOC-TOU) during the update process, where an unexpected payload is substitu",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-367",
+        "CWE-494"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory/"
+      ],
+      "published": "2026-04-16T03:16:26.937"
+    },
+    {
+      "id": "CVE-2026-6349",
+      "description": "The\u00a0\niSherlock developed by HGiga\u00a0 has an OS Command Injection vulnerability, allowing unauthenticated local attackers to inject arbitrary OS commands and execute them on the server.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://www.twcert.org.tw/en/cp-139-10841-4f504-2.html",
+        "https://www.twcert.org.tw/tw/cp-132-10842-3f255-1.html"
+      ],
+      "published": "2026-04-16T03:16:30.660"
+    }
+  ]
+}
