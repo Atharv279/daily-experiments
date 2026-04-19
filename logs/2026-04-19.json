@@ -1,0 +1,350 @@
+{
+  "timestamp": "2026-04-19T05:13:36.033186+00:00",
+  "scan_id": "5e645e0b21",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 6,
+      "MEDIUM": 11,
+      "LOW": 1,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-862",
+        5
+      ],
+      [
+        "CWE-79",
+        4
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-434",
+        1
+      ],
+      [
+        "CWE-290",
+        1
+      ]
+    ],
+    "threat_index": 272.1,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 272.1,
+        "yesterday": 355.8,
+        "change_pct": -23.5
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 4,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-40262",
+      "description": "Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the asset delivery handler serves uploaded files inline and relies on magic-byte detection for content type, which does not identify text-based formats such as HTML, SVG, or XHTML. These files are served with an empty",
+      "severity": "HIGH",
+      "score": 8.7,
+      "cwes": [
+        "CWE-79",
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/enchant97/note-mark/commit/6bb62842ccb956870b9bf183629eba95e326e5e3",
+        "https://github.com/enchant97/note-mark/releases/tag/v0.19.2",
+        "https://github.com/enchant97/note-mark/security/advisories/GHSA-9pr4-rf97-79qh"
+      ],
+      "published": "2026-04-17T01:17:39.950"
+    },
+    {
+      "id": "CVE-2026-22734",
+      "description": "Cloud Foundry UUA is\u00a0vulnerable to a bypass that allows an attacker to obtain a token for any user and gain access to UAA-protected systems. This vulnerability exists when SAML 2.0 bearer assertions are enabled for a client, as the UAA accepts SAML 2.0 bearer assertions that are neither signed nor e",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-290"
+      ],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-22734-uaa-saml-2-0-signature-bypass/"
+      ],
+      "published": "2026-04-17T01:17:37.107"
+    },
+    {
+      "id": "CVE-2026-3605",
+      "description": "An authenticated user with access to a kvv2 path through a policy containing a glob may be able to delete secrets they were not authorized to read or write, resulting in denial-of-service. This vulnerability did not allow a malicious user to delete secrets across namespaces, nor read any secret data",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-288"
+      ],
+      "references": [
+        "https://discuss.hashicorp.com/t/hcsec-2026-05-vault-kvv2-metadata-and-secret-deletion-policy-bypass-denial-of-service/77342"
+      ],
+      "published": "2026-04-17T04:16:03.263"
+    },
+    {
+      "id": "CVE-2026-4525",
+      "description": "If a Vault auth mount is configured to pass through the \"Authorization\" header, and the \"Authorization\" header is used to authenticate to Vault, Vault forwarded the Vault token to the auth plugin backend. Fixed in 2.0.0, 1.21.5, 1.20.10, and 1.19.16.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-201"
+      ],
+      "references": [
+        "https://discuss.hashicorp.com/t/hcsec-2026-07-vault-may-expose-tokens-to-auth-plugins-due-to-incorrect-header-sanitization/77344"
+      ],
+      "published": "2026-04-17T04:16:09.997"
+    },
+    {
+      "id": "CVE-2026-5807",
+      "description": "Vault is vulnerable to a denial-of-service condition where an unauthenticated attacker can repeatedly initiate or cancel root token generation or rekey operations, occupying the single in-progress operation slot. This prevents legitimate operators from completing these workflows. This vulnerability,",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://discuss.hashicorp.com/t/hcsec-2026-08-vault-vulnerable-to-denial-of-service-via-unauthenticated-root-token-generation-rekey-operations/77345"
+      ],
+      "published": "2026-04-17T05:16:19.303"
+    },
+    {
+      "id": "CVE-2026-5231",
+      "description": "The WP Statistics plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'utm_source' parameter in all versions up to, and including, 14.16.4. This is due to insufficient input sanitization and output escaping. The plugin's referral parser copies the raw utm_source value into the ",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-statistics/tags/14.16.4/assets/dev/javascript/chart.js#L498",
+        "https://plugins.trac.wordpress.org/browser/wp-statistics/tags/14.16.4/src/Service/Analytics/Referrals/ReferralsParser.php#L62",
+        "https://plugins.trac.wordpress.org/browser/wp-statistics/trunk/assets/dev/javascript/chart.js#L498"
+      ],
+      "published": "2026-04-17T02:16:06.227"
+    },
+    {
+      "id": "CVE-2026-3488",
+      "description": "The WP Statistics plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 14.16.4. This is due to missing capability checks on multiple AJAX handlers including `wp_statistics_get_filters`, `wp_statistics_getPrivacyStatus`, `wp_statistics_updatePrivacyStatus`",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-statistics/tags/14.16.1/includes/admin/class-wp-statistics-admin-ajax.php#L310",
+        "https://plugins.trac.wordpress.org/browser/wp-statistics/tags/14.16.1/src/Service/Admin/FilterHandler/FilterManager.php#L62",
+        "https://plugins.trac.wordpress.org/browser/wp-statistics/tags/14.16.1/src/Service/Admin/PrivacyAudit/PrivacyAuditController.php#L21"
+      ],
+      "published": "2026-04-17T02:16:05.707"
+    },
+    {
+      "id": "CVE-2026-4817",
+      "description": "The MasterStudy LMS WordPress Plugin for Online Courses and Education plugin for WordPress is vulnerable to Time-based Blind SQL Injection via the 'order' and 'orderby' parameters in the /lms/stm-lms/order/items REST API endpoint in versions up to and including 3.7.25. This is due to insufficient in",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/masterstudy-lms-learning-management-system/tags/3.7.17/_core/lms/classes/models/StmStatistics.php#L202",
+        "https://plugins.trac.wordpress.org/browser/masterstudy-lms-learning-management-system/tags/3.7.17/_core/lms/classes/models/StmStatistics.php#L238",
+        "https://plugins.trac.wordpress.org/browser/masterstudy-lms-learning-management-system/tags/3.7.17/_core/lms/classes/vendor/Query.php#L676"
+      ],
+      "published": "2026-04-17T02:16:05.883"
+    },
+    {
+      "id": "CVE-2026-4666",
+      "description": "The wpForo Forum plugin for WordPress is vulnerable to unauthorized modification of data due to the use of `extract($args, EXTR_OVERWRITE)` on user-controlled input in the `edit()` method of `classes/Posts.php` in all versions up to, and including, 2.4.16. The `post_edit` action handler in `Actions.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wpforo/tags/2.4.16/classes/Actions.php#L773",
+        "https://plugins.trac.wordpress.org/browser/wpforo/tags/2.4.16/classes/Posts.php#L283",
+        "https://plugins.trac.wordpress.org/browser/wpforo/tags/2.4.16/classes/Posts.php#L285"
+      ],
+      "published": "2026-04-17T04:16:11.023"
+    },
+    {
+      "id": "CVE-2026-5162",
+      "description": "The Royal Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Instagram Feed widget's 'instagram_follow_text' setting in all versions up to, and including, 1.7.1056 due to insufficient input sanitization and output escaping. This makes it possible for authe",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/royal-elementor-addons/trunk/modules/instagram-feed/widgets/wpr-instagram-feed.php#L5334",
+        "https://plugins.trac.wordpress.org/browser/royal-elementor-addons/trunk/modules/instagram-feed/widgets/wpr-instagram-feed.php#L5528",
+        "https://plugins.trac.wordpress.org/browser/royal-elementor-addons/trunk/modules/instagram-feed/widgets/wpr-instagram-feed.php#L5623"
+      ],
+      "published": "2026-04-17T02:16:06.073"
+    },
+    {
+      "id": "CVE-2026-40265",
+      "description": "Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the asset download endpoint at /api/notes/{noteID}/assets/{assetID} is registered without authentication middleware, and the backend query does not verify ownership or book visibility. An unauthenticated user who know",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/enchant97/note-mark/commit/6593898855add151eb9965d96998b05e14c62026",
+        "https://github.com/enchant97/note-mark/releases/tag/v0.19.2",
+        "https://github.com/enchant97/note-mark/security/advisories/GHSA-p5w6-75f9-cc2p"
+      ],
+      "published": "2026-04-17T01:17:40.293"
+    },
+    {
+      "id": "CVE-2026-5052",
+      "description": "Vault\u2019s PKI engine\u2019s ACME validation did not reject local targets when issuing http-01 and tls-alpn-01 challenges. This may lead to these requests being sent to local network targets, potentially leading to information disclosure. Fixed in Vault Community Edition 2.0.0 and Vault Enterprise 2.0.0, 1.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://discuss.hashicorp.com/t/hcsec-2026-06-vault-vulnerable-to-server-side-request-forgery-in-acme-challenge-validation-via-attacker-controlled-dns/77343"
+      ],
+      "published": "2026-04-17T04:16:12.567"
+    },
+    {
+      "id": "CVE-2026-5234",
+      "description": "The LatePoint plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 5.3.2. The vulnerability exists because the OsStripeConnectController::create_payment_intent_for_transaction action is registered as a public action (no authentication required)",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.2.9/lib/controllers/stripe_connect_controller.php#L20",
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.2.9/lib/controllers/stripe_connect_controller.php#L31",
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.2.9/lib/controllers/stripe_connect_controller.php#L33"
+      ],
+      "published": "2026-04-17T05:16:18.830"
+    },
+    {
+      "id": "CVE-2026-5427",
+      "description": "The Kubio plugin for WordPress is vulnerable to Arbitrary File Upload in versions up to and including 2.7.2. This is due to insufficient capability checks in the kubio_rest_pre_insert_import_assets() function, which is hooked to the rest_pre_insert_{post_type} filter for posts, pages, templates, and",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/kubio/tags/2.7.1/lib/filters/post-insert.php#L17",
+        "https://plugins.trac.wordpress.org/browser/kubio/tags/2.7.1/lib/importer/importer-filters/kubio-blocks.php#L20",
+        "https://plugins.trac.wordpress.org/browser/kubio/tags/2.7.1/lib/src/Core/Importer.php#L546"
+      ],
+      "published": "2026-04-17T05:16:18.973"
+    },
+    {
+      "id": "CVE-2026-5502",
+      "description": "The Tutor LMS \u2013 eLearning and online course solution plugin for WordPress is vulnerable to unauthorized course content manipulation in versions up to and including 3.9.8. This is due to a missing authorization check in the tutor_update_course_content_order() function. The function only validates the",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/tutor/tags/3.9.7/classes/Course.php#L1700",
+        "https://plugins.trac.wordpress.org/browser/tutor/tags/3.9.7/classes/Course.php#L1789",
+        "https://plugins.trac.wordpress.org/browser/tutor/trunk/classes/Course.php#L1700"
+      ],
+      "published": "2026-04-17T05:16:19.117"
+    },
+    {
+      "id": "CVE-2026-3330",
+      "description": "The Form Maker by 10Web plugin for WordPress is vulnerable to SQL Injection via the 'ip_search', 'startdate', 'enddate', 'username_search', and 'useremail_search' parameters in all versions up to, and including, 1.15.40. This is due to the `WDW_FM_Library::validate_data()` method calling `stripslash",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.22/admin/controllers/Submissions_fm.php#L84",
+        "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.22/admin/models/Submissions_fm.php#L154",
+        "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.22/framework/WDW_FM_Library.php#L415"
+      ],
+      "published": "2026-04-17T05:16:18.080"
+    },
+    {
+      "id": "CVE-2026-4853",
+      "description": "The JetBackup \u2013 Backup, Restore & Migrate plugin for WordPress is vulnerable to Path Traversal leading to Arbitrary Directory Deletion in versions up to and including 3.1.19.8. This is due to insufficient input validation on the fileName parameter in the file upload handler. The plugin sanitizes the",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/backup/tags/3.1.17.5/src/JetBackup/Ajax/Calls/AddToQueue.php#L244",
+        "https://plugins.trac.wordpress.org/browser/backup/tags/3.1.17.5/src/JetBackup/Ajax/Calls/AddToQueue.php#L64",
+        "https://plugins.trac.wordpress.org/browser/backup/tags/3.1.17.5/src/JetBackup/Upload/Upload.php#L66"
+      ],
+      "published": "2026-04-17T05:16:18.680"
+    },
+    {
+      "id": "CVE-2026-40263",
+      "description": "Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the login endpoint performs bcrypt password verification only when the supplied username exists, returning immediately for nonexistent usernames. This timing discrepancy allows unauthenticated attackers to enumerate v",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-208"
+      ],
+      "references": [
+        "https://github.com/enchant97/note-mark/commit/cf4c6f6acf70b569d80396d323b067c00d45c034",
+        "https://github.com/enchant97/note-mark/security/advisories/GHSA-w6m9-39cv-2fwp",
+        "https://github.com/enchant97/note-mark/security/advisories/GHSA-w6m9-39cv-2fwp"
+      ],
+      "published": "2026-04-17T01:17:40.137"
+    },
+    {
+      "id": "CVE-2026-40260",
+      "description": "pypdf is a free and open-source pure-python PDF library. In versions prior to 6.10.0, manipulated XMP metadata entity declarations can exhaust RAM. An attacker who exploits this vulnerability can craft a PDF which leads to large memory usage. This requires parsing the XMP metadata. This issue has be",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-776"
+      ],
+      "references": [
+        "https://github.com/py-pdf/pypdf/commit/b15a374e5ca648d4878e57c3b2c0551e7f8cc7f8",
+        "https://github.com/py-pdf/pypdf/pull/3724",
+        "https://github.com/py-pdf/pypdf/releases/tag/6.10.0"
+      ],
+      "published": "2026-04-17T01:17:39.733"
+    },
+    {
+      "id": "CVE-2026-40922",
+      "description": "SiYuan is an open-source personal knowledge management system. In versions 3.6.1 through 3.6.3, a prior fix for XSS in bazaar README rendering (incomplete fix for CVE-2026-33066) enabled the Lute HTML sanitizer, but the sanitizer does not block iframe tags, and its URL-prefix blocklist does not effe",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/advisories/GHSA-4663-4mpg-879v",
+        "https://github.com/siyuan-note/siyuan/commit/b382f50e1880ed996364509de5a10a72d7409428",
+        "https://github.com/siyuan-note/siyuan/releases/tag/v3.6.4"
+      ],
+      "published": "2026-04-17T01:17:40.447"
+    }
+  ]
+}
