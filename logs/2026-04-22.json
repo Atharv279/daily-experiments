@@ -1,0 +1,370 @@
+{
+  "timestamp": "2026-04-22T05:09:52.588795+00:00",
+  "scan_id": "ed8349b8c6",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 4,
+      "MEDIUM": 12,
+      "LOW": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-94",
+        3
+      ],
+      [
+        "CWE-285",
+        3
+      ],
+      [
+        "CWE-639",
+        3
+      ],
+      [
+        "CWE-306",
+        2
+      ],
+      [
+        "CWE-22",
+        2
+      ]
+    ],
+    "threat_index": 275.0,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 275.0,
+        "yesterday": 325.9,
+        "change_pct": -15.6
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-32956",
+      "description": "SD-330AC and AMC Manager provided by silex technology, Inc. contain a heap-based buffer overflow vulnerability in processing the redirect URLs. Arbitrary code may be executed on the device.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://jvn.jp/en/vu/JVNVU94271449/",
+        "https://www.silex.jp/support/security-advisories/2026-001",
+        "https://www.silex.jp/support/security-advisories/en/2026-001"
+      ],
+      "published": "2026-04-20T04:16:34.810"
+    },
+    {
+      "id": "CVE-2026-32955",
+      "description": "SD-330AC and AMC Manager provided by silex technology, Inc. contain a stack-based buffer overflow vulnerability in processing the redirect URLs. Arbitrary code may be executed on the device.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://jvn.jp/en/vu/JVNVU94271449/",
+        "https://www.silex.jp/support/security-advisories/2026-001",
+        "https://www.silex.jp/support/security-advisories/en/2026-001"
+      ],
+      "published": "2026-04-20T04:16:29.113"
+    },
+    {
+      "id": "CVE-2026-6594",
+      "description": "A vulnerability was determined in brikcss merge up to 1.3.0. This affects an unknown part. Executing a manipulation of the argument __proto__/constructor.prototype/prototype can lead to improperly controlled modification of object prototype attributes. The attack may be performed from remote. The ve",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-94",
+        "CWE-1321"
+      ],
+      "references": [
+        "https://github.com/sudo-secure/security-research/blob/main/brikcss-merge/prototype-pollution/PoC.md",
+        "https://vuldb.com/submit/791805",
+        "https://vuldb.com/vuln/358229"
+      ],
+      "published": "2026-04-20T02:16:15.633"
+    },
+    {
+      "id": "CVE-2026-6595",
+      "description": "A vulnerability was identified in ProjectsAndPrograms School Management System up to 6b6fae5426044f89c08d0dd101c7fa71f9042a59. This vulnerability affects unknown code of the file buslocation.php of the component HTTP GET Parameter Handler. The manipulation of the argument bus_id leads to sql injecti",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://tcn60zf28jhk.feishu.cn/wiki/MdHFw78Gmi1zbske8Ozc6XTjnIh?from=from_copylink",
+        "https://vuldb.com/submit/791820",
+        "https://vuldb.com/vuln/358230"
+      ],
+      "published": "2026-04-20T03:16:16.777"
+    },
+    {
+      "id": "CVE-2026-6596",
+      "description": "A security flaw has been discovered in langflow-ai langflow up to 1.1.0. This issue affects the function create_upload_file of the file src/backend/base/Langflow/api/v1/endpoints.py of the component API Endpoint. The manipulation results in unrestricted upload. It is possible to launch the attack re",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://gist.github.com/chenhouser2025/c2aabfdee41009cfe45d28a9924742a0",
+        "https://vuldb.com/submit/791919",
+        "https://vuldb.com/vuln/358231"
+      ],
+      "published": "2026-04-20T03:16:16.967"
+    },
+    {
+      "id": "CVE-2026-6588",
+      "description": "A weakness has been identified in serge-chat serge up to 1.4TB. The impacted element is the function download_model/delete_model of the file api/src/serge/routers/model.py of the component Model API Endpoint. Executing a manipulation can lead to missing authentication. The attack can be launched rem",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/5fbc93a21f9928e91a72ab0d72fb1e88",
+        "https://vuldb.com/submit/791089",
+        "https://vuldb.com/vuln/358223"
+      ],
+      "published": "2026-04-20T01:16:30.867"
+    },
+    {
+      "id": "CVE-2026-32958",
+      "description": "SD-330AC and AMC Manager provided by silex technology, Inc. use a hard-coded cryptographic key. An administrative user may be directed to apply a fake firmware update.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-321"
+      ],
+      "references": [
+        "https://jvn.jp/en/vu/JVNVU94271449/",
+        "https://www.silex.jp/support/security-advisories/2026-001",
+        "https://www.silex.jp/support/security-advisories/en/2026-001"
+      ],
+      "published": "2026-04-20T04:16:42.580"
+    },
+    {
+      "id": "CVE-2026-32960",
+      "description": "SD-330AC and AMC Manager provided by silex technology, Inc. contain an issue with a sensitive information in resource not removed before reuse.  An attacker may login to the device without knowing the password by sending a crafted packet.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-226"
+      ],
+      "references": [
+        "https://jvn.jp/en/vu/JVNVU94271449/",
+        "https://www.silex.jp/support/security-advisories/2026-001",
+        "https://www.silex.jp/support/security-advisories/en/2026-001"
+      ],
+      "published": "2026-04-20T04:16:44.037"
+    },
+    {
+      "id": "CVE-2026-6586",
+      "description": "A vulnerability was identified in TransformerOptimus SuperAGI up to 0.0.14. Impacted is the function get_budget/update_budget of the file superagi/controllers/budget.py of the component Budget Endpoint. Such manipulation leads to authorization bypass. It is possible to launch the attack remotely. Th",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/4b6b95f98aeed927a99d2a76eaf53444",
+        "https://vuldb.com/submit/791077",
+        "https://vuldb.com/vuln/358221"
+      ],
+      "published": "2026-04-20T00:16:34.507"
+    },
+    {
+      "id": "CVE-2026-6587",
+      "description": "A security flaw has been discovered in vibrantlabsai RAGAS up to 0.4.3. The affected element is the function _try_process_local_file/_try_process_url of the file src/ragas/metrics/collections/multi_modal_faithfulness/util.py of the component Collections Module. Performing a manipulation of the argum",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://adithyanak.com/ragas-v0214-arbitrary-file-read-vulnerability",
+        "https://vuldb.com/submit/791088",
+        "https://vuldb.com/vuln/358222"
+      ],
+      "published": "2026-04-20T00:16:34.703"
+    },
+    {
+      "id": "CVE-2026-32959",
+      "description": "SD-330AC and AMC Manager provided by silex technology, Inc. contain an issue with a use of a broken or risky cryptographic algorithm. Information in the traffic may be retrieved via man-in-the-middle attack.",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-327"
+      ],
+      "references": [
+        "https://jvn.jp/en/vu/JVNVU94271449/",
+        "https://www.silex.jp/support/security-advisories/2026-001",
+        "https://www.silex.jp/support/security-advisories/en/2026-001"
+      ],
+      "published": "2026-04-20T04:16:43.790"
+    },
+    {
+      "id": "CVE-2026-6584",
+      "description": "A vulnerability was found in TransformerOptimus SuperAGI up to 0.0.14. This vulnerability affects the function update_user of the file superagi/controllers/user.py of the component User Update Endpoint. The manipulation of the argument user_id results in authorization bypass. The attack may be perfo",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/79b967ece52d424558f279156dd53324",
+        "https://vuldb.com/submit/791075",
+        "https://vuldb.com/vuln/358219"
+      ],
+      "published": "2026-04-20T00:16:34.093"
+    },
+    {
+      "id": "CVE-2026-6585",
+      "description": "A vulnerability was determined in TransformerOptimus SuperAGI up to 0.0.14. This issue affects the function update_organisation of the file superagi/controllers/organisation.py of the component Organisation Update Endpoint. This manipulation of the argument organisation_id causes authorization bypas",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/88ea045efa387ab0b93f6dd2f797e653",
+        "https://vuldb.com/submit/791076",
+        "https://vuldb.com/vuln/358220"
+      ],
+      "published": "2026-04-20T00:16:34.307"
+    },
+    {
+      "id": "CVE-2026-32957",
+      "description": "SD-330AC and AMC Manager provided by silex technology, Inc. contain a missing authentication for critical function issue on firmware maintenance. Arbitrary file may be uploaded on the device without authentication.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://jvn.jp/en/vu/JVNVU94271449/",
+        "https://www.silex.jp/support/security-advisories/2026-001",
+        "https://www.silex.jp/support/security-advisories/en/2026-001"
+      ],
+      "published": "2026-04-20T04:16:39.093"
+    },
+    {
+      "id": "CVE-2026-6589",
+      "description": "A security vulnerability has been detected in ComfyUI up to 0.13.0. This affects the function create_origin_only_middleware of the file server.py. The manipulation leads to cross-site request forgery. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used. The ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352",
+        "CWE-862"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/d314f8120e47601dfa3ac8b899f12d1f",
+        "https://vuldb.com/submit/791108",
+        "https://vuldb.com/vuln/358224"
+      ],
+      "published": "2026-04-20T01:16:31.477"
+    },
+    {
+      "id": "CVE-2026-6590",
+      "description": "A vulnerability was detected in ComfyUI up to 0.13.0. This impacts the function get_model_preview of the file app/model_manager.py of the component Model Preview Endpoint. The manipulation results in path traversal. The attack may be launched remotely. The exploit is now public and may be used. The ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/b46c4cfef1643df14ed73e278129af2c",
+        "https://vuldb.com/submit/791109",
+        "https://vuldb.com/vuln/358225"
+      ],
+      "published": "2026-04-20T01:16:31.673"
+    },
+    {
+      "id": "CVE-2026-6591",
+      "description": "A flaw has been found in ComfyUI up to 0.13.0. Affected is the function folder_paths.get_annotated_filepath of the file folder_paths.py of the component LoadImage Node. This manipulation of the argument Name causes path traversal. Remote exploitation of the attack is possible. The exploit has been p",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/1e6db39703626dc5c1a2505426754333",
+        "https://vuldb.com/submit/791112",
+        "https://vuldb.com/vuln/358226"
+      ],
+      "published": "2026-04-20T01:16:31.870"
+    },
+    {
+      "id": "CVE-2026-6592",
+      "description": "A vulnerability has been found in ComfyUI up to 0.13.0. Affected by this vulnerability is the function getuserdata of the file app/user_manager.py of the component userdata Endpoint. Such manipulation leads to cross site scripting. The attack can be executed remotely. The exploit has been disclosed ",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/50f0cdc5e3f7b737ce99c783e487ca0d",
+        "https://vuldb.com/submit/791113",
+        "https://vuldb.com/vuln/358227"
+      ],
+      "published": "2026-04-20T02:16:15.230"
+    },
+    {
+      "id": "CVE-2026-6593",
+      "description": "A vulnerability was found in ComfyUI up to 0.13.0. Affected by this issue is some unknown functionality of the file server.py of the component View Endpoint. Performing a manipulation results in cross site scripting. The attack is possible to be carried out remotely. The exploit has been made public",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/1d91fabb465284d7a974746f7e6cc5cc",
+        "https://vuldb.com/submit/791114",
+        "https://vuldb.com/vuln/358228"
+      ],
+      "published": "2026-04-20T02:16:15.437"
+    },
+    {
+      "id": "CVE-2026-6597",
+      "description": "A weakness has been identified in langflow-ai langflow up to 1.8.3. Impacted is the function remove_api_keys/has_api_terms of the file src/backend/base/langflow/api/utils/core.py of the component Flow Using API. This manipulation causes unprotected storage of credentials. The attack can be initiated",
+      "severity": "LOW",
+      "score": 2.7,
+      "cwes": [
+        "CWE-255",
+        "CWE-256"
+      ],
+      "references": [
+        "https://gist.github.com/chenhouser2025/b93261c6e651f14800a4f2e4365f357b",
+        "https://vuldb.com/submit/791920",
+        "https://vuldb.com/vuln/358232"
+      ],
+      "published": "2026-04-20T03:16:17.153"
+    }
+  ]
+}
