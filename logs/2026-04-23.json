@@ -1,0 +1,360 @@
+{
+  "timestamp": "2026-04-23T05:14:03.073103+00:00",
+  "scan_id": "0a6bd625a6",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 9,
+      "MEDIUM": 8,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-918",
+        3
+      ],
+      [
+        "CWE-648",
+        1
+      ],
+      [
+        "CWE-863",
+        1
+      ],
+      [
+        "CWE-15",
+        1
+      ],
+      [
+        "CWE-22",
+        1
+      ]
+    ],
+    "threat_index": 340.8,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 340.8,
+        "yesterday": 275.0,
+        "change_pct": 23.9
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 1,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-41329",
+      "description": "OpenClaw before 2026.3.31 contains a sandbox bypass vulnerability allowing attackers to escalate privileges via heartbeat context inheritance and senderIsOwner parameter manipulation. Attackers can exploit improper context validation to bypass sandbox restrictions and achieve unauthorized privilege ",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-648"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/a30214a624946fc5c85c9558a27c1580172374fd",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-g5cg-8x5w-7jpm",
+        "https://www.vulncheck.com/advisories/openclaw-sandbox-bypass-via-heartbeat-context-inheritance-and-senderisowner-escalation"
+      ],
+      "published": "2026-04-21T00:16:31.390"
+    },
+    {
+      "id": "CVE-2026-41303",
+      "description": "OpenClaw before 2026.3.28 contains an authorization bypass vulnerability in Discord text approval commands that allows non-approvers to resolve pending exec approvals. Attackers can send Discord text commands to bypass the channels.discord.execApprovals.approvers allowlist and approve pending host e",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-98hh-7ghg-x6rq",
+        "https://www.vulncheck.com/advisories/openclaw-authorization-bypass-in-discord-text-approval-commands"
+      ],
+      "published": "2026-04-21T00:16:31.223"
+    },
+    {
+      "id": "CVE-2026-41294",
+      "description": "OpenClaw before 2026.3.28 loads the current working directory .env file before trusted state-dir configuration, allowing environment variable injection. Attackers can place a malicious .env file in a repository or workspace to override runtime configuration and security-sensitive environment setting",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-15"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-8rh7-6779-cjqq",
+        "https://www.vulncheck.com/advisories/openclaw-environment-variable-injection-via-cwd-env-file"
+      ],
+      "published": "2026-04-21T00:16:29.637"
+    },
+    {
+      "id": "CVE-2026-35570",
+      "description": "OpenClaude is an open-source coding-agent command line interface for cloud and local model providers. Versions prior to 0.5.1 have a logic flaw in `bashToolHasPermission()` inside `src/tools/BashTool/bashPermissions.ts`. When the sandbox auto-allow feature is active and no explicit deny rule is conf",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-22",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/Gitlawb/openclaude/commit/7002cb302b78ea2a19da3f26226de24e2903fa1d",
+        "https://github.com/Gitlawb/openclaude/security/advisories/GHSA-m6rx-7pvw-2f73",
+        "https://github.com/Gitlawb/openclaude/security/advisories/GHSA-m6rx-7pvw-2f73"
+      ],
+      "published": "2026-04-21T00:16:28.877"
+    },
+    {
+      "id": "CVE-2026-41296",
+      "description": "OpenClaw before 2026.3.31 contains a time-of-check-time-of-use race condition in the remote filesystem bridge readFile function that allows sandbox escape. Attackers can exploit the separate path validation and file read operations to bypass sandbox restrictions and read arbitrary files.",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/121870a08583033ed6a0ed73d9ffea32991252bb",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-9p3r-hh9g-5cmg",
+        "https://www.vulncheck.com/advisories/openclaw-sandbox-escape-via-toctou-race-in-remote-fs-bridge-readfile"
+      ],
+      "published": "2026-04-21T00:16:29.993"
+    },
+    {
+      "id": "CVE-2026-41295",
+      "description": "OpenClaw before 2026.4.2 contains an improper trust boundary vulnerability allowing untrusted workspace channel shadows to execute during built-in channel setup and login. Attackers can clone a workspace with a malicious plugin claiming a bundled channel id to achieve unintended in-process code exec",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-829"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/53c29df2a9eb242a70d0ff29f3d1e67c8d6801f0",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-2qrv-rc5x-2g2h",
+        "https://www.vulncheck.com/advisories/openclaw-untrusted-workspace-channel-shadow-code-execution-during-built-in-channel-setup"
+      ],
+      "published": "2026-04-21T00:16:29.803"
+    },
+    {
+      "id": "CVE-2026-41297",
+      "description": "OpenClaw before 2026.3.31 contains a server-side request forgery vulnerability in the marketplace plugin download functionality that allows attackers to access internal resources by following unvalidated redirects. The marketplace.ts module fails to restrict redirect destinations during archive down",
+      "severity": "HIGH",
+      "score": 7.6,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/2ce44ca6a1302b166a128abbd78f72114f2f4f52",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-vjx8-8p7h-82gr",
+        "https://www.vulncheck.com/advisories/openclaw-server-side-request-forgery-via-marketplace-plugin-download-redirect"
+      ],
+      "published": "2026-04-21T00:16:30.163"
+    },
+    {
+      "id": "CVE-2026-41302",
+      "description": "OpenClaw before 2026.3.31 contains a server-side request forgery vulnerability in the marketplace plugin download functionality that allows remote attackers to make arbitrary network requests. Attackers can exploit unguarded fetch() calls to access internal resources or interact with external servic",
+      "severity": "HIGH",
+      "score": 7.6,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/8deb9522f3d2680820588b190adb4a2a52f3670b",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-9q7v-8mr7-g23p",
+        "https://www.vulncheck.com/advisories/openclaw-server-side-request-forgery-via-unguarded-fetch-in-marketplace-plugin-download"
+      ],
+      "published": "2026-04-21T00:16:31.050"
+    },
+    {
+      "id": "CVE-2026-39320",
+      "description": "Signal K Server is a server application that runs on a central hub in a boat. Versions prior to 2.25.0 are vulnerable to an unauthenticated Regular Expression Denial of Service (ReDoS) attack within the WebSocket subscription handling logic. By injecting unescaped regex metacharacters into the `cont",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-400",
+        "CWE-1333"
+      ],
+      "references": [
+        "https://github.com/SignalK/signalk-server/commit/215d81eb700d5419c3396a0fbf23f2e246dfac2d",
+        "https://github.com/SignalK/signalk-server/pull/2568",
+        "https://github.com/SignalK/signalk-server/releases/tag/v2.25.0"
+      ],
+      "published": "2026-04-21T01:16:05.063"
+    },
+    {
+      "id": "CVE-2026-41299",
+      "description": "OpenClaw before 2026.3.28 contains an authorization bypass vulnerability in the chat.send gateway method where ACP-only provenance fields are gated by self-declared client metadata from WebSocket handshake rather than verified authorization state. Authenticated operator clients can spoof ACP identit",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-807"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-6xg4-82hv-cp6f",
+        "https://www.vulncheck.com/advisories/openclaw-client-identity-spoofing-in-chat-send-gateway-provenance-guard"
+      ],
+      "published": "2026-04-21T00:16:30.517"
+    },
+    {
+      "id": "CVE-2026-41300",
+      "description": "OpenClaw before 2026.3.31 contains a trust-decline vulnerability that preserves attacker-discovered endpoints in remote onboarding flows. Attackers can route gateway credentials to malicious endpoints by having their discovered URL survive the trust decline process into manual prompts requiring oper",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-372"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/2a75416634837c21ed05b8c3ed906eb7a7807060",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-9f4w-67g7-mqwv",
+        "https://www.vulncheck.com/advisories/openclaw-attacker-discovered-endpoint-preservation-in-remote-onboarding"
+      ],
+      "published": "2026-04-21T00:16:30.690"
+    },
+    {
+      "id": "CVE-2026-35588",
+      "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.4, the Cassandra export module (`glances/exports/glances_cassandra/__init__.py`) interpolates `keyspace`, `table`, and `replication_factor` configuration values directly into CQL statements without validation. A us",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/nicolargo/glances/commit/d339181f03a14bb15506307e9d58f876e23d8160",
+        "https://github.com/nicolargo/glances/commit/e41b665576f9fd5374e3152078726cc59a01e48c",
+        "https://github.com/nicolargo/glances/security/advisories/GHSA-grp3-h8m8-45p7"
+      ],
+      "published": "2026-04-21T00:16:29.163"
+    },
+    {
+      "id": "CVE-2026-40045",
+      "description": "OpenClaw before 2026.4.2 accepts non-loopback cleartext ws:// gateway endpoints and transmits stored gateway credentials over unencrypted connections. Attackers can forge discovery results or craft setup codes to redirect clients to malicious endpoints, disclosing plaintext gateway credentials.",
+      "severity": "MEDIUM",
+      "score": 5.7,
+      "cwes": [
+        "CWE-319"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/a941a4fef9bc43b2973c92d0dcff5b8a426210c5",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-83f3-hh45-vfw9",
+        "https://www.vulncheck.com/advisories/openclaw-cleartext-credential-transmission-via-unencrypted-websocket-gateway-endpoints"
+      ],
+      "published": "2026-04-21T00:16:29.300"
+    },
+    {
+      "id": "CVE-2026-41298",
+      "description": "OpenClaw before 2026.4.2 fails to enforce write scopes on the POST /sessions/:sessionKey/kill endpoint in identity-bearing HTTP modes. Read-scoped callers can terminate running subagent sessions by sending requests to this endpoint, bypassing authorization controls.",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/54a0878517167c6e49900498cf77420dadb74beb",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-5hff-46vh-rxmw",
+        "https://www.vulncheck.com/advisories/openclaw-authorization-bypass-in-session-termination-endpoint"
+      ],
+      "published": "2026-04-21T00:16:30.350"
+    },
+    {
+      "id": "CVE-2026-41301",
+      "description": "OpenClaw versions 2026.3.22 before 2026.3.31 contain a signature verification bypass vulnerability in the Nostr DM ingress path that allows pairing challenges to be issued before event signature validation. An unauthenticated remote attacker can send forged direct messages to create pending pairing ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/4ee742174f36b5445703e3b1ef2fbd6ae6700fa4",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-h43v-27wg-5mf9",
+        "https://www.vulncheck.com/advisories/openclaw-forged-nostr-dm-pairing-state-creation-via-signature-verification-bypass"
+      ],
+      "published": "2026-04-21T00:16:30.873"
+    },
+    {
+      "id": "CVE-2026-41331",
+      "description": "OpenClaw before 2026.3.31 contains a resource consumption vulnerability in Telegram audio preflight transcription that allows unauthorized group senders to trigger transcription processing. Attackers can exploit insufficient allowlist enforcement to cause resource or billing consumption by initiatin",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-408"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/c4fa8635d03943ffe9e294d501089521dca635c5",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-m6fx-m8hc-572m",
+        "https://www.vulncheck.com/advisories/openclaw-resource-consumption-via-unauthorized-telegram-audio-preflight-transcription"
+      ],
+      "published": "2026-04-21T00:16:31.740"
+    },
+    {
+      "id": "CVE-2026-41330",
+      "description": "OpenClaw before 2026.3.31 contains an environment variable override vulnerability in host exec policy that fails to properly enforce proxy, TLS, Docker, and Git TLS controls. Attackers can bypass security controls by overriding environment variables to circumvent proxy settings, TLS verification, Do",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-453"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/commit/4d912e04519b4bd53b248437c53748cdebce9a41",
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-9gp8-hjxr-6f34",
+        "https://www.vulncheck.com/advisories/openclaw-environment-variable-override-via-host-exec-policy"
+      ],
+      "published": "2026-04-21T00:16:31.557"
+    },
+    {
+      "id": "CVE-2026-41285",
+      "description": "In OpenBSD through 7.8, the slaacd and rad daemons have an infinite loop when they receive a crafted ICMPv6 Neighbor Discovery (ND) option (over a local network) with length zero, because of an \"nd_opt_len * 8 - 2\" expression with no preceding check for whether nd_opt_len is zero.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-1284"
+      ],
+      "references": [
+        "https://github.com/openbsd/src/commit/086c5738bcd3c203bcc08d024fcf983cb409115f",
+        "https://www.openbsd.org/errata78.html",
+        "https://www.rfc-editor.org/rfc/rfc4861#section-4.6"
+      ],
+      "published": "2026-04-21T00:16:29.480"
+    },
+    {
+      "id": "CVE-2026-34839",
+      "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.4, the Glances web server exposes a REST API (`/api/4/*`) that is accessible without authentication and allows cross-origin requests from any origin due to a permissive CORS policy (`Access-Control-Allow-Origin: *`",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-200",
+        "CWE-306",
+        "CWE-942"
+      ],
+      "references": [
+        "https://github.com/nicolargo/glances/commit/fdfb977b1d91b5e410bc06c4e19f8bedb0005ce9",
+        "https://github.com/nicolargo/glances/security/advisories/GHSA-gfc2-9qmw-w7vh",
+        "https://github.com/nicolargo/glances/security/advisories/GHSA-gfc2-9qmw-w7vh"
+      ],
+      "published": "2026-04-21T00:16:27.910"
+    },
+    {
+      "id": "CVE-2026-35587",
+      "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.4, a Server-Side Request Forgery (SSRF) vulnerability exists in the Glances IP plugin due to improper validation of the public_api configuration parameter. The value of public_api is used directly in outbound HTTP ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/nicolargo/glances/commit/d6808be66728956477cc4b544bab1acd71ac65fb",
+        "https://github.com/nicolargo/glances/security/advisories/GHSA-g5pq-48mj-jvw8",
+        "https://github.com/nicolargo/glances/security/advisories/GHSA-g5pq-48mj-jvw8"
+      ],
+      "published": "2026-04-21T00:16:29.030"
+    }
+  ]
+}
