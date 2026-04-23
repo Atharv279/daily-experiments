@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-04-23T16:13:28.394221+00:00",
-  "scan_id": "56b1397b9d",
+  "timestamp": "2026-04-23T21:12:12.404938+00:00",
+  "scan_id": "84db4c8757",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
       "CRITICAL": 1,
-      "HIGH": 9,
+      "HIGH": 10,
       "MEDIUM": 8,
-      "UNKNOWN": 2
+      "UNKNOWN": 1
     },
     "top_cwes": [
       [
@@ -31,7 +31,7 @@
         1
       ]
     ],
-    "threat_index": 340.8,
+    "threat_index": 367.2,
     "critical_count": 1
   },
   "delta": {
@@ -43,9 +43,9 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 340.8,
+        "today": 367.2,
         "yesterday": 275.0,
-        "change_pct": 23.9
+        "change_pct": 33.5
       },
       "critical_count": {
         "today": 1,
@@ -69,6 +69,21 @@
         "https://www.vulncheck.com/advisories/openclaw-sandbox-bypass-via-heartbeat-context-inheritance-and-senderisowner-escalation"
       ],
       "published": "2026-04-21T00:16:31.390"
+    },
+    {
+      "id": "CVE-2026-35587",
+      "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.4, a Server-Side Request Forgery (SSRF) vulnerability exists in the Glances IP plugin due to improper validation of the public_api configuration parameter. The value of public_api is used directly in outbound HTTP ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/nicolargo/glances/commit/d6808be66728956477cc4b544bab1acd71ac65fb",
+        "https://github.com/nicolargo/glances/security/advisories/GHSA-g5pq-48mj-jvw8",
+        "https://github.com/nicolargo/glances/security/advisories/GHSA-g5pq-48mj-jvw8"
+      ],
+      "published": "2026-04-21T00:16:29.030"
     },
     {
       "id": "CVE-2026-41303",
@@ -340,21 +355,6 @@
         "https://github.com/nicolargo/glances/security/advisories/GHSA-gfc2-9qmw-w7vh"
       ],
       "published": "2026-04-21T00:16:27.910"
-    },
-    {
-      "id": "CVE-2026-35587",
-      "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.4, a Server-Side Request Forgery (SSRF) vulnerability exists in the Glances IP plugin due to improper validation of the public_api configuration parameter. The value of public_api is used directly in outbound HTTP ",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-918"
-      ],
-      "references": [
-        "https://github.com/nicolargo/glances/commit/d6808be66728956477cc4b544bab1acd71ac65fb",
-        "https://github.com/nicolargo/glances/security/advisories/GHSA-g5pq-48mj-jvw8",
-        "https://github.com/nicolargo/glances/security/advisories/GHSA-g5pq-48mj-jvw8"
-      ],
-      "published": "2026-04-21T00:16:29.030"
     }
   ]
 }
