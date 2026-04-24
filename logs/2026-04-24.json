@@ -1,0 +1,349 @@
+{
+  "timestamp": "2026-04-24T05:18:50.937030+00:00",
+  "scan_id": "5cae9ce589",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 3,
+      "MEDIUM": 5,
+      "UNKNOWN": 9,
+      "NONE": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-400",
+        2
+      ],
+      [
+        "CWE-918",
+        2
+      ],
+      [
+        "CWE-287",
+        2
+      ],
+      [
+        "CWE-78",
+        1
+      ],
+      [
+        "CWE-290",
+        1
+      ]
+    ],
+    "threat_index": 200.9,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 200.9,
+        "yesterday": 367.2,
+        "change_pct": -45.3
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 1,
+        "change_pct": 100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-41064",
+      "description": "WWBN AVideo is an open source video platform. In versions up to and including 29.0, an incomplete fix for AVideo's `test.php` adds `escapeshellarg` for wget but leaves the `file_get_contents` and `curl` code paths unsanitized, and the URL validation regex `/^http/` accepts strings like `httpevil[.]c",
+      "severity": "CRITICAL",
+      "score": 9.3,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/WWBN/AVideo/commit/1e6cf03e93b5a5318204b010ea28440b0d9a5ab3",
+        "https://github.com/WWBN/AVideo/commit/78bccae74634ead68aa6528d631c9ec4fd7aa536",
+        "https://github.com/WWBN/AVideo/security/advisories/GHSA-3fpm-8rjr-v5mc"
+      ],
+      "published": "2026-04-22T00:16:28.187"
+    },
+    {
+      "id": "CVE-2026-40575",
+      "description": "OAuth2 Proxy is a reverse proxy that provides authentication using OAuth2 providers. Versions 7.5.0 through 7.15.1 may trust a client-supplied `X-Forwarded-Uri` header when `--reverse-proxy` is enabled and `--skip-auth-regex` or `--skip-auth-route` is configured. An attacker can spoof this header so",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-290"
+      ],
+      "references": [
+        "https://github.com/oauth2-proxy/oauth2-proxy/security/advisories/GHSA-7x63-xv5r-3p2x"
+      ],
+      "published": "2026-04-22T00:16:27.817"
+    },
+    {
+      "id": "CVE-2026-41133",
+      "description": "pyLoad is a free and open-source download manager written in Python. Versions up to and including 0.5.0b3.dev97 cache `role` and `permission` in the session at login and continues to authorize requests using these cached values, even after an admin changes the user's role/permissions in the database",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-613"
+      ],
+      "references": [
+        "https://github.com/pyload/pyload/commit/e95804fb0d06cbb07d2ba380fc494d9ff89b68c1",
+        "https://github.com/pyload/pyload/security/advisories/GHSA-66hx-chf7-3332",
+        "https://github.com/pyload/pyload/security/advisories/GHSA-66hx-chf7-3332"
+      ],
+      "published": "2026-04-22T00:16:29.153"
+    },
+    {
+      "id": "CVE-2026-41059",
+      "description": "OAuth2 Proxy is a reverse proxy that provides authentication using OAuth2 providers. Versions 7.5.0 through 7.15.1 have a configuration-dependent authentication bypass. Deployments are affected when all of the following are true: Use of `skip_auth_routes` or the legacy `skip_auth_regex`; use of patt",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-288"
+      ],
+      "references": [
+        "https://github.com/oauth2-proxy/oauth2-proxy/security/advisories/GHSA-pxq7-h93f-9jrg"
+      ],
+      "published": "2026-04-22T00:16:27.957"
+    },
+    {
+      "id": "CVE-2026-41135",
+      "description": "free5GC UDR is the Policy Control Function (PCF) for free5GC, an an open-source project for 5th generation (5G) mobile core networks. A memory leak vulnerability in versions prior to 1.4.3 allows any unauthenticated attacker with network access to the PCF SBI interface to cause uncontrolled memory g",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://github.com/free5gc/free5gc/security/advisories/GHSA-98cp-84m9-q3qp",
+        "https://github.com/free5gc/pcf/commit/599803b1b2eb4611e26d5216481ee142bce71a16",
+        "https://github.com/free5gc/free5gc/security/advisories/GHSA-98cp-84m9-q3qp"
+      ],
+      "published": "2026-04-22T00:16:29.287"
+    },
+    {
+      "id": "CVE-2026-41127",
+      "description": "BigBlueButton is an open-source virtual classroom. Versions prior to 3.0.24 have a missing authorization that allows viewers to inject/overwrite captions Version 3.0.24 tightened the permissions on who is able to submit captions. No known workarounds are available.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/bigbluebutton/bigbluebutton/security/advisories/GHSA-q387-2q28-mg33"
+      ],
+      "published": "2026-04-22T00:16:28.463"
+    },
+    {
+      "id": "CVE-2026-40343",
+      "description": "free5GC UDR is the user data repository (UDR) for free5GC, an an open-source project for 5th generation (5G) mobile core networks. In versions up to and including 1.4.2, a fail-open request handling flaw in the UDR service causes the `/nudr-dr/v2/policy-data/subs-to-notify` POST handler to continue ",
+      "severity": "MEDIUM",
+      "score": 5.8,
+      "cwes": [
+        "CWE-754"
+      ],
+      "references": [
+        "https://github.com/free5gc/free5gc/security/advisories/GHSA-jwch-w7wh-gqjm"
+      ],
+      "published": "2026-04-22T00:16:27.670"
+    },
+    {
+      "id": "CVE-2026-41136",
+      "description": "free5GC AMF provides Access & Mobility Management Function (AMF) for free5GC, an an open-source project for 5th generation (5G) mobile core networks. Prior to version 1.4.3, the `HTTPUEContextTransfer` handler in `internal/sbi/api_communication.go` does not include a `default` case in the `Content-T",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-440"
+      ],
+      "references": [
+        "https://github.com/free5gc/amf/releases/tag/v1.4.3",
+        "https://github.com/free5gc/free5gc/security/advisories/GHSA-r99v-75p9-xqm5",
+        "https://github.com/free5gc/free5gc/security/advisories/GHSA-r99v-75p9-xqm5"
+      ],
+      "published": "2026-04-22T00:16:29.423"
+    },
+    {
+      "id": "CVE-2026-41131",
+      "description": "OpenFGA is an authorization/permission engine built for developers. Prior to version 1.14.1, in specific scenarios, models using conditions with caching enabled can result in two different check requests producing the same cache key. This could result in OpenFGA reusing an earlier cached result for ",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-706",
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/openfga/openfga/releases/tag/v1.14.1",
+        "https://github.com/openfga/openfga/security/advisories/GHSA-57j5-qwp2-vqp6"
+      ],
+      "published": "2026-04-22T00:16:29.013"
+    },
+    {
+      "id": "CVE-2026-41126",
+      "description": "BigBlueButton is an open-source virtual classroom. Versions prior to 3.0.24 have an Open Redirect through bigbluebutton/api/join via get-parameter \"logoutURL.\" Version 3.0.24 has adjusted the handling of requests with incorrect checksum so that the default logoutURL is used. No known workarounds are",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-601"
+      ],
+      "references": [
+        "https://github.com/bigbluebutton/bigbluebutton/security/advisories/GHSA-cvwj-4pcp-f3g8"
+      ],
+      "published": "2026-04-22T00:16:28.327"
+    },
+    {
+      "id": "CVE-2026-41128",
+      "description": "Craft CMS is a content management system (CMS). In versions 5.6.0 through 5.9.14, the `actionSavePermissions()` endpoint allows a user with only `viewUsers` permission to remove arbitrary users from all user groups. While `_saveUserGroups()` enforces per-group authorization for additions, it perform",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/craftcms/cms/commit/b135384808ad43fcf8836a9dd9b877fb0087bc27",
+        "https://github.com/craftcms/cms/security/advisories/GHSA-jq2f-59pj-p3m3"
+      ],
+      "published": "2026-04-22T00:16:28.593"
+    },
+    {
+      "id": "CVE-2026-41129",
+      "description": "Craft CMS is a content management system (CMS). Versions on the 4.x branch through 4.17.8 and the 5.x branch through 5.9.14 are vulnerable to Server-Side Request Forgery. The exploitation requires a few permissions to be enabled in the used GraphQL schema: \"Edit assets in the <VolumeName> volume\" an",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/craftcms/cms/commit/d20aecfaa0eae076c4154be3b17e1f9fa05ce46f",
+        "https://github.com/craftcms/cms/security/advisories/GHSA-3m9m-24vh-39wx"
+      ],
+      "published": "2026-04-22T00:16:28.733"
+    },
+    {
+      "id": "CVE-2026-41130",
+      "description": "Craft CMS is a content management system (CMS). In versions on the 4.x branch through 4.17.8 and the 5.x branch through 5.9.14, the `resource-js` endpoint in Craft CMS allows unauthenticated requests to proxy remote JavaScript resources. \nWhen `trustedHosts` is not explicitly restricted (default con",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/craftcms/cms/commit/ebe7e85f1c89700d64332f72492be2e9a594e783",
+        "https://github.com/craftcms/cms/security/advisories/GHSA-95wr-3f2v-v2wh",
+        "https://github.com/craftcms/cms/security/advisories/GHSA-95wr-3f2v-v2wh"
+      ],
+      "published": "2026-04-22T00:16:28.880"
+    },
+    {
+      "id": "CVE-2026-41144",
+      "description": "F\u00b4 (F Prime) is a framework that enables development and deployment of spaceflight and other embedded software applications. Prior to version 4.2.0, the bounds check byteOffset + dataSize > fileSize uses U32 addition that wraps around on overflow. An attacker-crafted DataPacket with byteOffset=0xFFF",
+      "severity": "NONE",
+      "score": 0.0,
+      "cwes": [
+        "CWE-190",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/nasa/fprime/commit/cacdd555456bd83ab395b521d56c0330470ea798",
+        "https://github.com/nasa/fprime/security/advisories/GHSA-qmvv-rxh4-ccqh"
+      ],
+      "published": "2026-04-22T00:16:29.550"
+    },
+    {
+      "id": "CVE-2026-41304",
+      "description": "WWBN AVideo is an open source video platform. In versions 29.0 and below, the `cloneServer.json.php` endpoint in the CloneSite plugin constructs shell commands using user-controlled input (`url` parameter) without proper sanitization. The input is directly concatenated into a `wget` command executed",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/WWBN/AVideo/commit/473c609fc2defdea8b937b00e86ce88eba1f15bb",
+        "https://github.com/WWBN/AVideo/security/advisories/GHSA-xr6f-h4x7-r6qp",
+        "https://github.com/WWBN/AVideo/security/advisories/GHSA-xr6f-h4x7-r6qp"
+      ],
+      "published": "2026-04-22T00:16:29.697"
+    },
+    {
+      "id": "CVE-2026-40344",
+      "description": "MinIO is a high-performance object storage system. Starting in RELEASE.2023-05-18T00-05-36Z and prior to RELEASE.2026-04-11T03-20-12Z, an authentication bypass vulnerability in MinIO's Snowball auto-extract handler (`PutObjectExtractHandler`) allows any user who knows a valid access key to write arb",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/minio/minio/commit/76913a9fd5c6e5c2dbd4e8c7faf56ed9e9e24091",
+        "https://github.com/minio/minio/pull/16484",
+        "https://github.com/minio/minio/security/advisories/GHSA-9c4q-hq6p-c237"
+      ],
+      "published": "2026-04-22T01:16:05.430"
+    },
+    {
+      "id": "CVE-2026-41145",
+      "description": "MinIO is a high-performance object storage system. Starting in RELEASE.2023-05-18T00-05-36Z and prior to RELEASE.2026-04-11T03-20-12Z, an authentication bypass vulnerability in MinIO's `STREAMING-UNSIGNED-PAYLOAD-TRAILER` code path\nallows any user who knows a valid access key to write arbitrary obje",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/minio/minio/commit/76913a9fd5c6e5c2dbd4e8c7faf56ed9e9e24091",
+        "https://github.com/minio/minio/pull/16484",
+        "https://github.com/minio/minio/security/advisories/GHSA-hv4r-mvr4-25vw"
+      ],
+      "published": "2026-04-22T01:16:05.603"
+    },
+    {
+      "id": "CVE-2026-41146",
+      "description": "facil.io is a C micro-framework for web applications. Prior to commit 5128747363055201d3ecf0e29bf0a961703c9fa0, `fio_json_parse` can enter an infinite loop when it encounters a nested JSON value starting with `i` or `I`. The process spins in user space and pegs one CPU core at ~100% instead of retur",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-400",
+        "CWE-835"
+      ],
+      "references": [
+        "https://github.com/boazsegev/facil.io/commit/5128747363055201d3ecf0e29bf0a961703c9fa0",
+        "https://github.com/boazsegev/facil.io/security/advisories/GHSA-2x79-gwq3-vxxm",
+        "https://github.com/boazsegev/facil.io/security/advisories/GHSA-2x79-gwq3-vxxm"
+      ],
+      "published": "2026-04-22T02:16:02.237"
+    },
+    {
+      "id": "CVE-2026-41457",
+      "description": "OwnTone Server versions 28.4 through 29.0 contain a SQL injection vulnerability in DAAP query and filter handling that allows attackers to inject arbitrary SQL expressions by supplying malicious values through the query= and filter= parameters for integer-mapped DAAP fields. Attackers can exploit in",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/owntone/owntone-server/commit/d4784ebf2099ed1a4203333aee957e5c7553c217",
+        "https://www.vulncheck.com/advisories/owntone-server-sql-injection-via-query-and-filter-parameters"
+      ],
+      "published": "2026-04-22T03:16:00.613"
+    },
+    {
+      "id": "CVE-2026-41458",
+      "description": "OwnTone Server versions 28.4 through 29.0 contain a race condition vulnerability in the DAAP login handler that allows unauthenticated attackers to crash the server by exploiting unsynchronized access to the global DAAP session list. Attackers can flood the DAAP /login endpoint with concurrent reque",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-362"
+      ],
+      "references": [
+        "https://github.com/owntone/owntone-server/commit/dca94641a5ed66500822dd51281774794cdb6c22",
+        "https://github.com/owntone/owntone-server/pull/1980",
+        "https://www.vulncheck.com/advisories/owntone-server-race-condition-dos-via-daap-login"
+      ],
+      "published": "2026-04-22T03:16:01.067"
+    }
+  ]
+}
