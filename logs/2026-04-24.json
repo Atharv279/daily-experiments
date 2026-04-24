@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-04-24T09:56:43.543841+00:00",
-  "scan_id": "66db7957f5",
+  "timestamp": "2026-04-24T15:41:23.472241+00:00",
+  "scan_id": "970482ddf3",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
-      "CRITICAL": 2,
+      "CRITICAL": 3,
       "HIGH": 3,
       "MEDIUM": 5,
-      "UNKNOWN": 9,
+      "UNKNOWN": 8,
       "NONE": 1
     },
     "top_cwes": [
@@ -24,16 +24,16 @@
         2
       ],
       [
-        "CWE-78",
+        "CWE-77",
         1
       ],
       [
-        "CWE-290",
+        "CWE-78",
         1
       ]
     ],
-    "threat_index": 200.9,
-    "critical_count": 2
+    "threat_index": 240.1,
+    "critical_count": 3
   },
   "delta": {
     "status": "compared",
@@ -44,18 +44,33 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 200.9,
+        "today": 240.1,
         "yesterday": 367.2,
-        "change_pct": -45.3
+        "change_pct": -34.6
       },
       "critical_count": {
-        "today": 2,
+        "today": 3,
         "yesterday": 1,
-        "change_pct": 100.0
+        "change_pct": 200.0
       }
     }
   },
   "cves": [
+    {
+      "id": "CVE-2026-41304",
+      "description": "WWBN AVideo is an open source video platform. In versions 29.0 and below, the `cloneServer.json.php` endpoint in the CloneSite plugin constructs shell commands using user-controlled input (`url` parameter) without proper sanitization. The input is directly concatenated into a `wget` command executed",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/WWBN/AVideo/commit/473c609fc2defdea8b937b00e86ce88eba1f15bb",
+        "https://github.com/WWBN/AVideo/security/advisories/GHSA-xr6f-h4x7-r6qp",
+        "https://github.com/WWBN/AVideo/security/advisories/GHSA-xr6f-h4x7-r6qp"
+      ],
+      "published": "2026-04-22T00:16:29.697"
+    },
     {
       "id": "CVE-2026-41064",
       "description": "WWBN AVideo is an open source video platform. In versions up to and including 29.0, an incomplete fix for AVideo's `test.php` adds `escapeshellarg` for wget but leaves the `file_get_contents` and `curl` code paths unsanitized, and the URL validation regex `/^http/` accepts strings like `httpevil[.]c",
@@ -253,21 +268,6 @@
         "https://github.com/nasa/fprime/security/advisories/GHSA-qmvv-rxh4-ccqh"
       ],
       "published": "2026-04-22T00:16:29.550"
-    },
-    {
-      "id": "CVE-2026-41304",
-      "description": "WWBN AVideo is an open source video platform. In versions 29.0 and below, the `cloneServer.json.php` endpoint in the CloneSite plugin constructs shell commands using user-controlled input (`url` parameter) without proper sanitization. The input is directly concatenated into a `wget` command executed",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-77"
-      ],
-      "references": [
-        "https://github.com/WWBN/AVideo/commit/473c609fc2defdea8b937b00e86ce88eba1f15bb",
-        "https://github.com/WWBN/AVideo/security/advisories/GHSA-xr6f-h4x7-r6qp",
-        "https://github.com/WWBN/AVideo/security/advisories/GHSA-xr6f-h4x7-r6qp"
-      ],
-      "published": "2026-04-22T00:16:29.697"
     },
     {
       "id": "CVE-2026-40344",
