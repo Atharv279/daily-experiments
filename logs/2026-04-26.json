@@ -1,0 +1,353 @@
+{
+  "timestamp": "2026-04-26T05:22:51.754024+00:00",
+  "scan_id": "c0865b4e8a",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 5,
+      "HIGH": 5,
+      "MEDIUM": 9,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-306",
+        4
+      ],
+      [
+        "CWE-22",
+        2
+      ],
+      [
+        "CWE-798",
+        1
+      ],
+      [
+        "CWE-288",
+        1
+      ],
+      [
+        "CWE-352",
+        1
+      ]
+    ],
+    "threat_index": 403.4,
+    "critical_count": 5
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 403.4,
+        "yesterday": 274.1,
+        "change_pct": 47.2
+      },
+      "critical_count": {
+        "today": 5,
+        "yesterday": 1,
+        "change_pct": 400.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-25775",
+      "description": "A vulnerability in\u00a0SenseLive\u00a0X3050\u2019s remote management service allows firmware retrieval and update operations to be performed without authentication or authorization. The service accepts firmware-related requests from any reachable host and does not verify user privileges, integrity of uploaded ima",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-111-12.json",
+        "https://senselive.io/contact",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-12"
+      ],
+      "published": "2026-04-24T00:16:26.757"
+    },
+    {
+      "id": "CVE-2026-35503",
+      "description": "A vulnerability in\u00a0SenseLive X3050\u2019s web management interface allows authentication logic to be performed entirely on the client side, relying on hardcoded values within browser-executed scripts rather than server-side verification. An attacker with access to the login page could retrieve these expo",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-798"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-111-12.json",
+        "https://senselive.io/contact",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-12"
+      ],
+      "published": "2026-04-24T00:16:28.143"
+    },
+    {
+      "id": "CVE-2026-40620",
+      "description": "A vulnerability in\u00a0SenseLive\u00a0X3050\u2019s embedded management service allows full administrative control to be established without any form of authentication or authorization on the SenseLive config application. The service accepts management connections from any reachable host, enabling unrestricted mod",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-111-12.json",
+        "https://senselive.io/contact",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-12"
+      ],
+      "published": "2026-04-24T00:16:28.690"
+    },
+    {
+      "id": "CVE-2026-40630",
+      "description": "A vulnerability in\u00a0\nSenseLive \n\nX3050\u2019s web management interface allows unauthorized access to certain configuration endpoints due to improper access control enforcement. An attacker with network access to the device may be able to bypass the intended authentication mechanism and directly interact w",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-288"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-111-12.json",
+        "https://senselive.io/contact",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-12"
+      ],
+      "published": "2026-04-24T00:16:29.040"
+    },
+    {
+      "id": "CVE-2026-27843",
+      "description": "A vulnerability exists in\u00a0SenseLive X3050's web management interface that allows critical configuration parameters to be modified without sufficient authentication or server-side validation. By applying unsupported or disruptive values to recovery mechanisms and network settings, an attacker can ind",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-111-12.json",
+        "https://senselive.io/contact",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-12"
+      ],
+      "published": "2026-04-24T00:16:27.123"
+    },
+    {
+      "id": "CVE-2026-27841",
+      "description": "A vulnerability in\u00a0SenseLive\u00a0X3050's web management interface allows state-changing operations to be triggered without proper Cross-Site Request Forgery (CSRF) protections. Because the application does not enforce server-side validation of request origin or implement CSRF tokens, a malicious externa",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-111-12.json",
+        "https://senselive.io/contact",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-12"
+      ],
+      "published": "2026-04-24T00:16:26.933"
+    },
+    {
+      "id": "CVE-2026-39462",
+      "description": "A vulnerability exists in\u00a0SenseLive X3050\u2019s web management interface in which password updates are not reliably applied due to improper handling of credential changes on the backend. After the device undergoes a factory restore using the SenseLive Config 2.0 tool, the interface may indicate that the",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-111-12.json",
+        "https://senselive.io/contact",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-12"
+      ],
+      "published": "2026-04-24T00:16:28.333"
+    },
+    {
+      "id": "CVE-2026-40623",
+      "description": "A vulnerability in\u00a0SenseLive\u00a0X3050's web management interface allows critical system and network configuration parameters to be modified without sufficient validation and safety controls. Due to inadequate enforcement of constraints on sensitive functions, parameters such as IP addressing, watchdog ",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-111-12.json",
+        "https://senselive.io/contact",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-12"
+      ],
+      "published": "2026-04-24T00:16:28.860"
+    },
+    {
+      "id": "CVE-2026-31952",
+      "description": "Xibo is an open source digital signage platform with a web content management system and Windows display player software. Versions 1.7 through 4.4.0 have an SQL injection vulnerability in the API routes inside the CMS responsible for Filtering DataSets. This allows an authenticated user to to obtain",
+      "severity": "HIGH",
+      "score": 7.6,
+      "cwes": [
+        "CWE-89",
+        "CWE-184"
+      ],
+      "references": [
+        "https://github.com/dasgarner/xibo-cms/commit/b8d25fe6cb0232b645c3850afdc2499b0e46c1e6",
+        "https://github.com/xibosignage/xibo-cms/commit/87e0a26b0c06e349561a6becdc00f3bb01259736",
+        "https://github.com/xibosignage/xibo-cms/commit/ed213cb4f42d4f50cf8012e01e95bb70127fc6a4"
+      ],
+      "published": "2026-04-24T00:16:27.780"
+    },
+    {
+      "id": "CVE-2026-35064",
+      "description": "A vulnerability in\u00a0SenseLive\u00a0X3050\u2019s management ecosystem allows unauthenticated discovery of deployed units through the vendor\u2019s management protocol, enabling identification of device presence, identifiers, and management interfaces without requiring credentials. Because discovery functions are exp",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-111-12.json",
+        "https://senselive.io/contact",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-12"
+      ],
+      "published": "2026-04-24T00:16:27.967"
+    },
+    {
+      "id": "CVE-2026-31953",
+      "description": "Xibo is an open source digital signage platform with a web content management system and Windows display player software. A stored Cross-Site Scripting (XSS) vulnerability in versions prior to 4.4.1 allows an authenticated user with notification creation permissions to inject arbitrary JavaScript in",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/xibosignage/xibo-cms/releases/tag/4.4.1",
+        "https://github.com/xibosignage/xibo-cms/security/advisories/GHSA-85w9-c833-q4w2"
+      ],
+      "published": "2026-04-24T01:16:11.000"
+    },
+    {
+      "id": "CVE-2026-29050",
+      "description": "melange allows users to build apk packages using declarative pipelines. Starting in version 0.32.0 and prior to version 0.43.4, an attacker who can influence a melange configuration file \u2014 for example through pull-request-driven CI or build-as-a-service scenarios \u2014 could set `pipeline[].uses` to a v",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/chainguard-dev/melange/security/advisories/GHSA-98f2-w9h9-7fp9"
+      ],
+      "published": "2026-04-24T00:16:27.303"
+    },
+    {
+      "id": "CVE-2026-25720",
+      "description": "A vulnerability exists in\u00a0SenseLive\n\nX3050\u2019s web management interface due to improper session lifetime enforcement, allowing authenticated sessions to remain active for extended periods without requiring re-authentication. An attacker with access to a previously authenticated session could continue ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-613"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-111-12.json",
+        "https://senselive.io/contact",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-12"
+      ],
+      "published": "2026-04-24T00:16:26.577"
+    },
+    {
+      "id": "CVE-2026-40431",
+      "description": "A vulnerability exists in\u00a0SenseLive\u00a0X3050\u2019s web management interface due to its reliance on unencrypted HTTP for all administrative communication. Because management traffic, including authentication attempts and configuration data, is transmitted in cleartext, an attacker with access to the same ne",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-319"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-111-12.json",
+        "https://senselive.io/contact",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-12"
+      ],
+      "published": "2026-04-24T00:16:28.527"
+    },
+    {
+      "id": "CVE-2026-1789",
+      "description": "A vulnerability in the browser-based remote management interface may allow an administrator to access sensitive information on the device via crafted requests, affecting certain production printers and office/small office multifunction printers.",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-807"
+      ],
+      "references": [
+        "https://canon.jp/support/support-info/260423vulnerability-response",
+        "https://psirt.canon/advisory-information/cp2026-003/",
+        "https://www.canon-europe.com/support/product-security/"
+      ],
+      "published": "2026-04-24T00:16:26.400"
+    },
+    {
+      "id": "CVE-2026-31955",
+      "description": "Xibo is an open source digital signage platform with a web content management system and Windows display player software. An authenticated Server-Side Request Forgery (SSRF) vulnerability in versions prior to 4.4.1 allows users with DataSet permissions to make arbitrary HTTP requests from the CMS se",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/xibosignage/xibo-cms/releases/tag/4.4.1",
+        "https://github.com/xibosignage/xibo-cms/security/advisories/GHSA-5q58-9vhx-xg2p"
+      ],
+      "published": "2026-04-24T01:16:11.623"
+    },
+    {
+      "id": "CVE-2026-29051",
+      "description": "melange allows users to build apk packages using declarative pipelines. Starting in version 0.32.0 and prior to version 0.43.4, `melange lint --persist-lint-results` (opt-in flag, also usable via `melange build --persist-lint-results`) constructs output file paths by joining `--out-dir` with the `ar",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/chainguard-dev/melange/commit/84f3b450ce6e472c4abb8dc4c26d0ce8ac1259ac",
+        "https://github.com/chainguard-dev/melange/security/advisories/GHSA-q2pw-xx38-p64j"
+      ],
+      "published": "2026-04-24T00:16:27.477"
+    },
+    {
+      "id": "CVE-2026-29197",
+      "description": "In versions <8.4.0, <8.3.2, <8.2.2, <8.1.3, <8.0.4, <7.13.6, <7.12.7, <7.11.7, and <7.10.10, the endpoints /api/apps/logs and /api/apps/:id/logs have a typo in the required permission check, allowing authenticated users without the proper permissions to read apps-engine logs.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/RocketChat/Rocket.Chat/pull/40125",
+        "https://hackerone.com/reports/3589551"
+      ],
+      "published": "2026-04-24T00:16:27.647"
+    },
+    {
+      "id": "CVE-2026-31956",
+      "description": "Xibo is an open source digital signage platform with a web content management system and Windows display player software. Prior to version 4.4.1, any authenticated user can manually construct a URL to preview campaigns/regions, and export saved reports belonging to other users. Exploitation of the v",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/xibosignage/xibo-cms/releases/tag/4.4.1",
+        "https://github.com/xibosignage/xibo-cms/security/advisories/GHSA-q6rv-8hhj-3fr8"
+      ],
+      "published": "2026-04-24T01:16:11.773"
+    },
+    {
+      "id": "CVE-2026-32870",
+      "description": "Kirby is an open-source content management system. Kirby's `Xml::value()` method has special handling for `<![CDATA[ ]]>` blocks. If the input value is already valid `CDATA`, it is not escaped a second time but allowed to pass through. However, prior to versions 4.9.0 and 5.4.0, it was possible to t",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-91"
+      ],
+      "references": [
+        "https://github.com/getkirby/kirby/releases/tag/4.9.0",
+        "https://github.com/getkirby/kirby/releases/tag/5.4.0",
+        "https://github.com/getkirby/kirby/security/advisories/GHSA-9wfj-c55w-j9qr"
+      ],
+      "published": "2026-04-24T01:16:11.953"
+    }
+  ]
+}
