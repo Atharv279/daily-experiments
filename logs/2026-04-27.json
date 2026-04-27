@@ -1,0 +1,337 @@
+{
+  "timestamp": "2026-04-27T05:37:15.474694+00:00",
+  "scan_id": "b8521f9a91",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 2,
+      "MEDIUM": 4,
+      "UNKNOWN": 13
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        3
+      ],
+      [
+        "CWE-918",
+        2
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-94",
+        1
+      ],
+      [
+        "CWE-266",
+        1
+      ]
+    ],
+    "threat_index": 130.2,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 130.2,
+        "yesterday": 403.4,
+        "change_pct": -67.7
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 5,
+        "change_pct": -80.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-6951",
+      "description": "Versions of the package simple-git before 3.36.0 are vulnerable to Remote Code Execution (RCE) due to an incomplete fix for [CVE-2022-25912](https://security.snyk.io/vuln/SNYK-JS-SIMPLEGIT-3112221) that blocks the -c option but not the equivalent --config form. If untrusted input can reach the optio",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://gist.github.com/KKC73/02d1d97f3410756095b501fda0ac8ca6",
+        "https://github.com/steveukx/git-js/commit/89a2294febed5dfe737c4c735d936bb6018746a8",
+        "https://security.snyk.io/vuln/SNYK-JS-SIMPLEGIT-15456078"
+      ],
+      "published": "2026-04-25T06:16:16.453"
+    },
+    {
+      "id": "CVE-2026-6977",
+      "description": "A security vulnerability has been detected in vanna-ai vanna up to 2.0.2. The affected element is an unknown function of the component Legacy Flask API. The manipulation leads to improper authorization. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may b",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/yidaozhongqing/York/issues/2",
+        "https://vuldb.com/submit/795331",
+        "https://vuldb.com/vuln/359520"
+      ],
+      "published": "2026-04-25T11:16:19.103"
+    },
+    {
+      "id": "CVE-2026-6980",
+      "description": "A vulnerability has been found in Divyanshu-hash GitPilot-MCP up to 9ed9f153ba4158a2ad230ee4871b25130da29ffd. This impacts the function repo_path of the file main.py. Such manipulation of the argument command leads to command injection. The attack can be launched remotely. The exploit has been discl",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/wing3e/public_exp/issues/38",
+        "https://vuldb.com/submit/795502",
+        "https://vuldb.com/vuln/359523"
+      ],
+      "published": "2026-04-25T14:16:00.120"
+    },
+    {
+      "id": "CVE-2026-6979",
+      "description": "A flaw has been found in devlikeapro WAHA up to 2026.3.4. This affects an unknown function of the file src/api/media.controller.ts of the component API Request Handler. This manipulation causes server-side request forgery. The attack can be initiated remotely. The exploit has been published and may ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/wing3e/public_exp/issues/36",
+        "https://vuldb.com/submit/795416",
+        "https://vuldb.com/vuln/359522"
+      ],
+      "published": "2026-04-25T12:15:59.423"
+    },
+    {
+      "id": "CVE-2026-6981",
+      "description": "A vulnerability was found in IhateCreatingUserNames2 AiraHub2 up to 3e4b77fd7d48ed811ffe5b8d222068c17c76495e. Affected is the function connect_stream_endpoint/sync_agents of the file AiraHub.py of the component Endpoint. Performing a manipulation results in server-side request forgery. The attack ma",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/wing3e/public_exp/issues/39",
+        "https://vuldb.com/submit/795506",
+        "https://vuldb.com/vuln/359524"
+      ],
+      "published": "2026-04-25T15:16:17.643"
+    },
+    {
+      "id": "CVE-2026-6982",
+      "description": "A vulnerability was determined in star7th ShowDoc up to 2.10.10/3.6.2/3.8.0. Affected by this vulnerability is an unknown functionality of the file server/Application/Api/Controller/PageController.class.PHP of the component API Page Sort Endpoint. Executing a manipulation of the argument pages can l",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://gist.github.com/saDL0w/555e19668264f98d96259ad47ea33811",
+        "https://github.com/star7th/showdoc/releases/tag/v3.8.1",
+        "https://vuldb.com/submit/795528"
+      ],
+      "published": "2026-04-25T15:16:17.823"
+    },
+    {
+      "id": "CVE-2026-6978",
+      "description": "A vulnerability was detected in JiZhiCMS up to 2.5.6. The impacted element is the function htmlspecialchars_decode of the file /index.php/admins/Sys/addcache.html. The manipulation of the argument sqls results in sql injection. It is possible to launch the attack remotely. The exploit is now public ",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/qingyun985/Cyber-Security/issues/4",
+        "https://vuldb.com/submit/795348",
+        "https://vuldb.com/vuln/359521"
+      ],
+      "published": "2026-04-25T12:15:59.237"
+    },
+    {
+      "id": "CVE-2026-31673",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naf_unix: read UNIX_DIAG_VFS data under unix_state_lock\n\nExact UNIX diag lookups hold a reference to the socket, but not to\nu->path. Meanwhile, unix_release_sock() clears u->path under\nunix_state_lock() and drops the path reference ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/0c739f3785f84af695952c2bac8be2f45082c9b8",
+        "https://git.kernel.org/stable/c/39897df386376912d561d4946499379effa1e7ef",
+        "https://git.kernel.org/stable/c/900a4e0910e98b8caef117d5df00471fa438dcf9"
+      ],
+      "published": "2026-04-25T09:16:00.423"
+    },
+    {
+      "id": "CVE-2026-31674",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: ip6t_rt: reject oversized addrnr in rt_mt6_check()\n\nReject rt match rules whose addrnr exceeds IP6T_RT_HOPS.\n\nrt_mt6() expects addrnr to stay within the bounds of rtinfo->addrs[].\nValidate addrnr during rule installation",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/13e3e30ed3b5b67cc1db2bd58a5d09b0f07debfa",
+        "https://git.kernel.org/stable/c/29ea965a1353bc8303877422f79c8211e9ba9c55",
+        "https://git.kernel.org/stable/c/9d3f027327c2fa265f7f85ead41294792c3296ed"
+      ],
+      "published": "2026-04-25T09:16:00.963"
+    },
+    {
+      "id": "CVE-2026-31675",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: sch_netem: fix out-of-bounds access in packet corruption\n\nIn netem_enqueue(), the packet corruption logic uses\nget_random_u32_below(skb_headlen(skb)) to select an index for\nmodifying skb->data. When an AF_PACKET TX_RING ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/13a66ca1e235d4bcd53d12d4c68490cad7f8e46f",
+        "https://git.kernel.org/stable/c/3a2999704ac36cfb4041fed3652d26a3373e8d12",
+        "https://git.kernel.org/stable/c/4fd258e281fa8bc15e9ce2c7691941537e9258ad"
+      ],
+      "published": "2026-04-25T09:16:01.100"
+    },
+    {
+      "id": "CVE-2026-31676",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nrxrpc: only handle RESPONSE during service challenge\n\nOnly process RESPONSE packets while the service connection is still in\nRXRPC_CONN_SERVICE_CHALLENGING. Check that state under state_lock before\nrunning response verification and",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/03fd2ef73cb4ffd0af100a95b634af54f474414e",
+        "https://git.kernel.org/stable/c/c43ffdcfdbb5567b1f143556df8a04b4eeea041c",
+        "https://git.kernel.org/stable/c/d0035e634dae83237ab7f5681eb52b2f65d0ceb8"
+      ],
+      "published": "2026-04-25T09:16:01.210"
+    },
+    {
+      "id": "CVE-2026-31677",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: af_alg - limit RX SG extraction by receive buffer budget\n\nMake af_alg_get_rsgl() limit each RX scatterlist extraction to the\nremaining receive buffer budget.\n\naf_alg_get_rsgl() currently uses af_alg_readable() only as a gat",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/07c6f6ffe29009426f0bd4d3cfbb6308b8ea8453",
+        "https://git.kernel.org/stable/c/4a264b2614c73c96666e196bbabe0cead52bdba7",
+        "https://git.kernel.org/stable/c/8eceab19eba9dcbfd2a0daec72e1bf48aa100170"
+      ],
+      "published": "2026-04-25T09:16:01.330"
+    },
+    {
+      "id": "CVE-2026-31678",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nopenvswitch: defer tunnel netdev_put to RCU release\n\novs_netdev_tunnel_destroy() may run after NETDEV_UNREGISTER already\ndetached the device. Dropping the netdev reference in destroy can race\nwith concurrent readers that still obse",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/42f0d3d81209654c08ffdde5a34b9b92d2645896",
+        "https://git.kernel.org/stable/c/6931d21f87bc6d657f145798fad0bf077b82486c",
+        "https://git.kernel.org/stable/c/98b726ab5e2a4811e27c28e4d041f75bba147eab"
+      ],
+      "published": "2026-04-25T09:16:01.437"
+    },
+    {
+      "id": "CVE-2026-31679",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nopenvswitch: validate MPLS set/set_masked payload length\n\nvalidate_set() accepted OVS_KEY_ATTR_MPLS as variable-sized payload for\nSET/SET_MASKED actions. In action handling, OVS expects fixed-size\nMPLS key data (struct ovs_key_mpls",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/2ca33b88a79ca42f017ae0f7011280325655438e",
+        "https://git.kernel.org/stable/c/4cae986225f8b8679ad86b924918e7d75a96aa61",
+        "https://git.kernel.org/stable/c/546b68ac893595877ffbd7751e5c55fd1c43ede6"
+      ],
+      "published": "2026-04-25T09:16:01.550"
+    },
+    {
+      "id": "CVE-2026-31680",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: ipv6: flowlabel: defer exclusive option free until RCU teardown\n\n`ip6fl_seq_show()` walks the global flowlabel hash under the seq-file\nRCU read-side lock and prints `fl->opt->opt_nflen` when an option block\nis present.\n\nExclus",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/3c54b66c83fb8fcbde8e6a7bf90b65856e39f827",
+        "https://git.kernel.org/stable/c/414726b69921fe6355ae453f5b35e68dd078342a",
+        "https://git.kernel.org/stable/c/4b6798024f7b2d535f3db1002c760143cdbd1bd3"
+      ],
+      "published": "2026-04-25T09:16:01.673"
+    },
+    {
+      "id": "CVE-2026-31681",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: xt_multiport: validate range encoding in checkentry\n\nports_match_v1() treats any non-zero pflags entry as the start of a\nport range and unconditionally consumes the next ports[] element as\nthe range end.\n\nThe checkentry ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/1e4baa853f1cc4227e04f52d6860524707cfb294",
+        "https://git.kernel.org/stable/c/8368ce8eb01f0b91111d814703696e780d0ef12f",
+        "https://git.kernel.org/stable/c/aec14808271f2bf2b656de6ff12dfe73c5fd3b67"
+      ],
+      "published": "2026-04-25T09:16:01.800"
+    },
+    {
+      "id": "CVE-2026-31682",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbridge: br_nd_send: linearize skb before parsing ND options\n\nbr_nd_send() parses neighbour discovery options from ns->opt[] and\nassumes that these options are in the linear part of request.\n\nIts callers only guarantee that the ICMP",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/2ba4caba423ed94d63006eb1d2227b0332ab7fcd",
+        "https://git.kernel.org/stable/c/3a30f6469b058574f49efde61cd6f5d79e576053",
+        "https://git.kernel.org/stable/c/4f397b950c916e9a1f8a4fce04ea0110206cad47"
+      ],
+      "published": "2026-04-25T09:16:01.913"
+    },
+    {
+      "id": "CVE-2026-31683",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbatman-adv: avoid OGM aggregation when skb tailroom is insufficient\n\nWhen OGM aggregation state is toggled at runtime, an existing forwarded\npacket may have been allocated with only packet_len bytes, while a later\npacket can still ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/0b10a8b355c3f71012ce89289ec2c2f5e3bfd6c1",
+        "https://git.kernel.org/stable/c/0d4aef630be9d5f9c1227d07669c26c4383b5ad0",
+        "https://git.kernel.org/stable/c/0e35db29fc5a97a8553f7c2d3a2ba730e46b1ee8"
+      ],
+      "published": "2026-04-25T09:16:02.037"
+    },
+    {
+      "id": "CVE-2026-31684",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: sched: act_csum: validate nested VLAN headers\n\ntcf_csum_act() walks nested VLAN headers directly from skb->data when an\nskb still carries in-payload VLAN tags. The current code reads\nvlan->h_vlan_encapsulated_proto and then pu",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/3d165d975305cf76ff0b10a3c798fb31e5f5f9a5",
+        "https://git.kernel.org/stable/c/a69738efea0996d05a3c7d2178551b891744df1b",
+        "https://git.kernel.org/stable/c/c842743d073bdd683606cb414eb0ca84465dd834"
+      ],
+      "published": "2026-04-25T09:16:02.163"
+    },
+    {
+      "id": "CVE-2026-31685",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: ip6t_eui64: reject invalid MAC header for all packets\n\n`eui64_mt6()` derives a modified EUI-64 from the Ethernet source address\nand compares it with the low 64 bits of the IPv6 source address.\n\nThe existing guard only re",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/309ae3e9a51a69699ca94eac5fac5688fa562d55",
+        "https://git.kernel.org/stable/c/807d6ee15804df6f01a35c910f09612e858739a6",
+        "https://git.kernel.org/stable/c/9eda5478746ef7dc0e4e537b5a5e4b0ca1027091"
+      ],
+      "published": "2026-04-25T09:16:02.273"
+    }
+  ]
+}
