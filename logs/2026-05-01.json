@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-05-01T15:29:55.897647+00:00",
-  "scan_id": "0bac29dc09",
+  "timestamp": "2026-05-01T21:11:42.399442+00:00",
+  "scan_id": "a5a09e16ee",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
       "HIGH": 4,
-      "MEDIUM": 7,
+      "MEDIUM": 8,
       "LOW": 1,
-      "UNKNOWN": 8
+      "UNKNOWN": 7
     },
     "top_cwes": [
       [
@@ -31,7 +31,7 @@
         1
       ]
     ],
-    "threat_index": 170.6,
+    "threat_index": 181.6,
     "critical_count": 0
   },
   "delta": {
@@ -43,9 +43,9 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 170.6,
+        "today": 181.6,
         "yesterday": 321.2,
-        "change_pct": -46.9
+        "change_pct": -43.5
       },
       "critical_count": {
         "today": 0,
@@ -167,6 +167,17 @@
       "published": "2026-04-29T12:16:18.753"
     },
     {
+      "id": "CVE-2026-21023",
+      "description": "Insufficient verification of data authenticity in PackageManagerService prior to SMR Mar-2026 Release 1 allows local attackers to modify the installation restriction of specific application.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [],
+      "references": [
+        "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=03"
+      ],
+      "published": "2026-04-29T05:16:04.070"
+    },
+    {
       "id": "CVE-2026-4019",
       "description": "The Complianz \u2013 GDPR/CCPA Cookie Consent plugin for WordPress is vulnerable to unauthorized data access in all versions up to, and including, 7.4.5 This is due to the REST API endpoint at /wp-json/complianz/v1/consent-area/{post_id}/{block_id} using __return_true as the permission_callback, allowing",
       "severity": "MEDIUM",
@@ -221,17 +232,6 @@
         "https://spring.io/security/cve-2026-22741"
       ],
       "published": "2026-04-29T12:16:18.487"
-    },
-    {
-      "id": "CVE-2026-21023",
-      "description": "Insufficient verification of data authenticity in PackageManagerService prior to SMR Mar-2026 Release 1 allows local attackers to modify the installation restriction of specific application.",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=03"
-      ],
-      "published": "2026-04-29T05:16:04.070"
     },
     {
       "id": "CVE-2026-3325",
