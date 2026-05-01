@@ -1,0 +1,326 @@
+{
+  "timestamp": "2026-05-01T05:51:19.586401+00:00",
+  "scan_id": "2319bb5c20",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 4,
+      "MEDIUM": 7,
+      "LOW": 1,
+      "UNKNOWN": 8
+    },
+    "top_cwes": [
+      [
+        "CWE-862",
+        3
+      ],
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-639",
+        3
+      ],
+      [
+        "CWE-400",
+        2
+      ],
+      [
+        "CWE-444",
+        1
+      ]
+    ],
+    "threat_index": 170.6,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 170.6,
+        "yesterday": 321.2,
+        "change_pct": -46.9
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-40560",
+      "description": "Starman versions before 0.4018 for Perl allows HTTP Request Smuggling via Improper Header Precedence.\n\nStarman incorrectly prioritizes \"Content-Length\" over \"Transfer-Encoding: chunked\" when both headers are present in an HTTP request. Per RFC 7230 3.3.3, Transfer-Encoding must take precedence.\n\nAn ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-444"
+      ],
+      "references": [
+        "https://datatracker.ietf.org/doc/html/rfc7230#section-3.3.3",
+        "https://github.com/miyagawa/Starman/commit/ced205f0805027e9d9c0731f8c40b104220604ed.patch",
+        "https://metacpan.org/release/MIYAGAWA/Starman-0.4018/changes"
+      ],
+      "published": "2026-04-29T00:16:03.927"
+    },
+    {
+      "id": "CVE-2026-42377",
+      "description": "Missing Authorization vulnerability in Brainstorm Force SureForms Pro allows Exploiting Incorrectly Configured Access Control Security Levels.\n\nThis issue affects SureForms Pro: from n/a through 2.8.0.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://patchstack.com/database/wordpress/plugin/sureforms-pro/vulnerability/wordpress-sureforms-pro-plugin-2-8-0-broken-access-control-vulnerability?_s_id=cve"
+      ],
+      "published": "2026-04-29T08:16:18.337"
+    },
+    {
+      "id": "CVE-2026-42615",
+      "description": "GCHQ CyberChef before 11.0.0 allows XSS via Show Base64 offsets, as demonstrated by the /#recipe=Show_Base64_offsets('%3Cscript substring.",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/gchq/CyberChef/commit/9641ae07f92e9af50f10e978385465b2f4a36c4d",
+        "https://github.com/gchq/CyberChef/compare/v10.24.0...v11.0.0",
+        "https://github.com/gchq/CyberChef/issues/2344"
+      ],
+      "published": "2026-04-29T04:16:41.750"
+    },
+    {
+      "id": "CVE-2026-35155",
+      "description": "Dell iDRAC10, versions 1.20.70.50 and 1.30.05.10, contains an Insufficiently Protected Credentials vulnerability. A race condition vulnerability exists that could allow an authenticated low\u2011privileged attacker to gain elevated access.",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://www.dell.com/support/kbdoc/en-us/000452298/dsa-2026-187-security-update-for-dell-idrac10-vulnerability"
+      ],
+      "published": "2026-04-29T05:16:04.523"
+    },
+    {
+      "id": "CVE-2026-42412",
+      "description": "Missing Authorization vulnerability in weDevs WP User Frontend allows Exploiting Incorrectly Configured Access Control Security Levels.\n\nThis issue affects WP User Frontend: from n/a through 4.3.1.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://patchstack.com/database/wordpress/plugin/wp-user-frontend/vulnerability/wordpress-wp-user-frontend-plugin-4-3-1-broken-access-control-vulnerability?_s_id=cve"
+      ],
+      "published": "2026-04-29T09:16:24.273"
+    },
+    {
+      "id": "CVE-2026-22740",
+      "description": "A WebFlux server application that processes multipart requests creates temp files for parts larger than 10 K. Under some circumstances, temp files may remain not deleted after the request is fully processed. This allows an attacker to consume available disk space.\n\nOlder, unsupported versions are al",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H&version=3.1",
+        "https://spring.io/security/cve-2026-22740"
+      ],
+      "published": "2026-04-29T12:16:18.333"
+    },
+    {
+      "id": "CVE-2025-10503",
+      "description": "The authentication endpoint accepts user-supplied input without enforcing expected validation constraints, leading to a lack of proper output encoding. This allows for the injection of malicious JavaScript payloads, enabling reflected cross-site scripting.\n\nAn attacker can leverage this vulnerabilit",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://security.docs.wso2.com/en/latest/security-announcements/security-advisories/2026/WSO2-2025-4577/"
+      ],
+      "published": "2026-04-29T09:16:23.663"
+    },
+    {
+      "id": "CVE-2026-2902",
+      "description": "The WP Meteor Website Speed Optimization Addon plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'frontend_rewrite' function's 'WPMETEOR[N]WPMETEOR' placeholder content in all versions up to, and including, 3.4.16 due to insufficient input sanitization and output escaping. Th",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-meteor/trunk/blocker/FirstInteraction/UltimateReorder.php#L186",
+        "https://plugins.trac.wordpress.org/browser/wp-meteor/trunk/blocker/FirstInteraction/UltimateReorder.php#L68",
+        "https://plugins.trac.wordpress.org/browser/wp-meteor/trunk/frontend/Rewrite.php#L43"
+      ],
+      "published": "2026-04-29T12:16:18.753"
+    },
+    {
+      "id": "CVE-2026-4019",
+      "description": "The Complianz \u2013 GDPR/CCPA Cookie Consent plugin for WordPress is vulnerable to unauthorized data access in all versions up to, and including, 7.4.5 This is due to the REST API endpoint at /wp-json/complianz/v1/consent-area/{post_id}/{block_id} using __return_true as the permission_callback, allowing",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/complianz/complianz-gdpr/blob/64c09657bd028f62d7b50a54d83ca19b87df2cef/rest-api/rest-api.php#L61",
+        "https://plugins.trac.wordpress.org/browser/complianz-gdpr/tags/7.4.4.2/rest-api/rest-api.php#L54",
+        "https://plugins.trac.wordpress.org/browser/complianz-gdpr/tags/7.4.4.2/rest-api/rest-api.php#L61"
+      ],
+      "published": "2026-04-29T09:16:25.173"
+    },
+    {
+      "id": "CVE-2026-22745",
+      "description": "Spring MVC and WebFlux applications are vulnerable to Denial of Service attacks when resolving static resources.\n\n\nMore precisely, an application can be vulnerable when all the following are true:\n\n  *  the application is using Spring MVC or Spring WebFlux\n  *  the application is serving static reso",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L&version=3.1",
+        "https://spring.io/security/cve-2026-22745"
+      ],
+      "published": "2026-04-29T12:16:18.620"
+    },
+    {
+      "id": "CVE-2026-23773",
+      "description": "Dell Disk Library for Mainframe, version(s) DLm 8700/2700 contain(s) a Server-Side Request Forgery (SSRF) vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Server-side request forgery.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://www.dell.com/support/kbdoc/en-us/000458131/dsa-2026-091-security-update-for-dell-disk-library-for-mainframe-vulnerabilities?lang=en"
+      ],
+      "published": "2026-04-29T04:16:40.867"
+    },
+    {
+      "id": "CVE-2026-22741",
+      "description": "Spring MVC and WebFlux applications are vulnerable to cache poisoning when resolving static resources.\n\n\nMore precisely, an application can be vulnerable when all the following are true:\n\n  *  the application is using Spring MVC or Spring WebFlux\n  *  the application is configuring the\u00a0 resource cha",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-524"
+      ],
+      "references": [
+        "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L&version=3.1",
+        "https://spring.io/security/cve-2026-22741"
+      ],
+      "published": "2026-04-29T12:16:18.487"
+    },
+    {
+      "id": "CVE-2026-21023",
+      "description": "Insufficient verification of data authenticity in PackageManagerService prior to SMR Mar-2026 Release 1 allows local attackers to modify the installation restriction of specific application.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=03"
+      ],
+      "published": "2026-04-29T05:16:04.070"
+    },
+    {
+      "id": "CVE-2026-3325",
+      "description": "SQL injection (SQLi) in MegaCMS v12.0.0, specifically in the \u201cid_territorio\u201d parameter of the \u201c/web_comunications/cms/get_provincias\u201d endpoint. The vulnerability arises from inadequate validation and sanitisation of user input. Specifically, via a POST request, the \u201cid_territorio\u201d parameter, used im",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://www.incibe.es/en/incibe-cert/notices/aviso/sql-injection-megacms-crm-sistemas-de-fidelizacion"
+      ],
+      "published": "2026-04-29T09:16:24.130"
+    },
+    {
+      "id": "CVE-2026-42513",
+      "description": "This vulnerability exists in e-Sushrut due to improper authentication logic that relies on client-side response parameters to determine authentication status. A remote attacker could exploit this vulnerability by intercepting and modifying the server response.  \n\nSuccessful exploitation of this vuln",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0207"
+      ],
+      "published": "2026-04-29T09:16:24.417"
+    },
+    {
+      "id": "CVE-2026-42514",
+      "description": "This vulnerability exists in e-Sushrut due to exposure of OTPs in plaintext within API responses. A remote attacker could exploit this vulnerability by intercepting API responses containing valid OTPs.\n\nSuccessful exploitation of this vulnerability could allow an attacker to impersonate the target u",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-319"
+      ],
+      "references": [
+        "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0207"
+      ],
+      "published": "2026-04-29T09:16:24.553"
+    },
+    {
+      "id": "CVE-2026-42515",
+      "description": "This vulnerability exists in e-Sushrut due to improper access control in resource access validation. An authenticated attacker could exploit this vulnerability by manipulating parameter in the API request URL to gain unauthorized access to sensitive information of patients on the targeted system.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0207"
+      ],
+      "published": "2026-04-29T09:16:24.680"
+    },
+    {
+      "id": "CVE-2026-42516",
+      "description": "This vulnerability exists in e-Sushrut due to improper authorization checks during resource access. An authenticated attacker could exploit this vulnerability by manipulating encoded parameters in the request URL to gain unauthorized access to patient accounts on the targeted system.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0207"
+      ],
+      "published": "2026-04-29T09:16:24.803"
+    },
+    {
+      "id": "CVE-2026-42517",
+      "description": "This vulnerability exists in e-Sushrut due to the use of reversible Base64 encoding for protecting sensitive data. An authenticated attacker could exploit this vulnerability by decoding and manipulating Base64-encoded parameters in the request URL to gain unauthorized access to sensitive information",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0207"
+      ],
+      "published": "2026-04-29T09:16:24.923"
+    },
+    {
+      "id": "CVE-2026-42518",
+      "description": "This vulnerability exists in e-Sushrut due to disclosure of sensitive information and hardcoded AES encryption keys in client-side JavaScript. An unauthenticated remote attacker could exploit this vulnerability by accessing the client-side code to extract sensitive information and cryptographic keys",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-321"
+      ],
+      "references": [
+        "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0207"
+      ],
+      "published": "2026-04-29T09:16:25.047"
+    }
+  ]
+}
