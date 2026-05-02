@@ -1,0 +1,353 @@
+{
+  "timestamp": "2026-05-02T05:21:17.452040+00:00",
+  "scan_id": "b26dd9e538",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 6,
+      "MEDIUM": 13,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-674",
+        3
+      ],
+      [
+        "CWE-121",
+        2
+      ],
+      [
+        "CWE-122",
+        2
+      ],
+      [
+        "CWE-77",
+        2
+      ],
+      [
+        "CWE-74",
+        2
+      ]
+    ],
+    "threat_index": 285.4,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 285.4,
+        "yesterday": 181.6,
+        "change_pct": 57.2
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-7470",
+      "description": "A flaw has been found in Tenda 4G300 US_4G300V1.0Mt_V1.01.42_CN_TDC01. Affected is the function sub_427C3C of the file /goform/SafeMacFilter. This manipulation of the argument page causes stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been published and m",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Axelioc/CVE/blob/main/Tenda/US_4G300/sub_427C3C/sub_427C3C.md",
+        "https://vuldb.com/submit/804269",
+        "https://vuldb.com/vuln/360206"
+      ],
+      "published": "2026-04-30T03:16:01.740"
+    },
+    {
+      "id": "CVE-2026-5402",
+      "description": "TLS protocol dissector heap overflow in Wireshark 4.6.0 to 4.6.4 allows denial of service and possible code execution",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://gitlab.com/wireshark/wireshark/-/issues/21090",
+        "https://www.wireshark.org/security/wnpa-sec-2026-14.html"
+      ],
+      "published": "2026-04-30T07:16:37.847"
+    },
+    {
+      "id": "CVE-2026-42511",
+      "description": "The BOOTP file field is written to the lease file without escaping embedded double-quotes, allowing injection of arbitrary dhclient.conf directives.  When the lease file is subsequently re-parsed by dhclient, e.g., after a system restart, an attacker-controlled field from the lease is passed to dhcl",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-149"
+      ],
+      "references": [
+        "https://security.freebsd.org/advisories/FreeBSD-SA-26:12.dhclient.asc"
+      ],
+      "published": "2026-04-30T07:16:37.290"
+    },
+    {
+      "id": "CVE-2026-7446",
+      "description": "A vulnerability was detected in VetCoders mcp-server-semgrep 1.0.0. This affects the function analyze_results/filter_results/export_results/compare_results/scan_directory/create_rule of the file src/index.ts of the component MCP Interface. The manipulation of the argument ID results in os command in",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/VetCoders/mcp-server-semgrep/",
+        "https://github.com/VetCoders/mcp-server-semgrep/commit/141335da044e53c3f5b315e0386e01238405b771",
+        "https://github.com/VetCoders/mcp-server-semgrep/issues/12"
+      ],
+      "published": "2026-04-30T00:16:23.943"
+    },
+    {
+      "id": "CVE-2026-7468",
+      "description": "A security vulnerability has been detected in 1024-lab smart-admin up to 3.30.0. This affects an unknown function of the file /smart-admin-api/druid/index.html of the component Demo Site. The manipulation leads to improper access controls. The attack may be initiated remotely. The exploit has been d",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/1024-lab/smart-admin/",
+        "https://github.com/1024-lab/smart-admin/issues/117",
+        "https://vuldb.com/submit/804228"
+      ],
+      "published": "2026-04-30T01:16:03.170"
+    },
+    {
+      "id": "CVE-2025-13030",
+      "description": "All versions of the package django-mdeditor are vulnerable to Missing Authentication for Critical Function in the image upload endpoint. An attacker can upload malicious files and achieve arbitrary code execution since this endpoint lacks authentication protection and proper sanitisation of file nam",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/pylixm/django-mdeditor/blob/e8dd73fb8571ddff2e7a20a4bfa88c376cc33b62/mdeditor/views.py%23L25",
+        "https://github.com/pylixm/django-mdeditor/commit/3e80f9edcabc5d2fc136b05a501964b8a5e97cfe",
+        "https://github.com/pylixm/django-mdeditor/issues/151"
+      ],
+      "published": "2026-04-30T06:16:14.860"
+    },
+    {
+      "id": "CVE-2026-7445",
+      "description": "A security vulnerability has been detected in ZachHandley ZMCPTools up to 0.2.2. Affected by this issue is some unknown functionality of the file src/managers/ResourceManager.ts of the component MCP Log Resource Handler. The manipulation of the argument dirname leads to path traversal. Remote exploi",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/BruceJqs/public_exp/issues/23",
+        "https://github.com/ZachHandley/ZMCPTools/",
+        "https://github.com/ZachHandley/ZMCPTools/issues/8"
+      ],
+      "published": "2026-04-30T00:16:23.340"
+    },
+    {
+      "id": "CVE-2026-7447",
+      "description": "A flaw has been found in SourceCodester Pet Grooming Management Software 1.0. This vulnerability affects unknown code of the file /admin/update_customer.php. This manipulation of the argument type/length/business parameter validity causes sql injection. The attack is possible to be carried out remot",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/zhi-cyber/cve/issues/1",
+        "https://vuldb.com/submit/804209",
+        "https://vuldb.com/vuln/360188"
+      ],
+      "published": "2026-04-30T01:16:02.990"
+    },
+    {
+      "id": "CVE-2026-7469",
+      "description": "A vulnerability was detected in Tenda 4G300 US_4G300V1.0Mt_V1.01.42_CN_TDC01. This impacts the function sub_425A28 of the file /goform/DelFil. The manipulation of the argument delflag results in command injection. The attack may be launched remotely. The exploit is now public and may be used.",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/Axelioc/CVE/blob/main/Tenda/US_4G300/sub_425A28/sub_425A28.md",
+        "https://vuldb.com/submit/804268",
+        "https://vuldb.com/vuln/360205"
+      ],
+      "published": "2026-04-30T02:16:06.967"
+    },
+    {
+      "id": "CVE-2026-6868",
+      "description": "HTTP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://gitlab.com/wireshark/wireshark/-/work_items/21185",
+        "https://www.wireshark.org/security/wnpa-sec-2026-46.html"
+      ],
+      "published": "2026-04-30T06:16:16.783"
+    },
+    {
+      "id": "CVE-2026-7375",
+      "description": "UDS protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-835"
+      ],
+      "references": [
+        "https://gitlab.com/wireshark/wireshark/-/work_items/21225",
+        "https://www.wireshark.org/security/wnpa-sec-2026-50.html"
+      ],
+      "published": "2026-04-30T06:16:16.927"
+    },
+    {
+      "id": "CVE-2026-7376",
+      "description": "Crash in sharkd 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://gitlab.com/wireshark/wireshark/-/work_items/21206",
+        "https://www.wireshark.org/security/wnpa-sec-2026-48.html"
+      ],
+      "published": "2026-04-30T06:16:17.053"
+    },
+    {
+      "id": "CVE-2026-7378",
+      "description": "Crash in sharkd 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://gitlab.com/wireshark/wireshark/-/work_items/21207",
+        "https://www.wireshark.org/security/wnpa-sec-2026-49.html"
+      ],
+      "published": "2026-04-30T06:16:17.183"
+    },
+    {
+      "id": "CVE-2026-7379",
+      "description": "Memory leak in sharkd 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-401"
+      ],
+      "references": [
+        "https://gitlab.com/wireshark/wireshark/-/work_items/21214",
+        "https://www.wireshark.org/security/wnpa-sec-2026-47.html"
+      ],
+      "published": "2026-04-30T06:16:17.333"
+    },
+    {
+      "id": "CVE-2026-5299",
+      "description": "ICMPv6 PvD protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://gitlab.com/wireshark/wireshark/-/issues/21077",
+        "https://www.wireshark.org/security/wnpa-sec-2026-12.html"
+      ],
+      "published": "2026-04-30T07:16:37.593"
+    },
+    {
+      "id": "CVE-2026-5401",
+      "description": "AFP Spotlight protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://gitlab.com/wireshark/wireshark/-/issues/21088",
+        "https://www.wireshark.org/security/wnpa-sec-2026-13.html",
+        "https://gitlab.com/wireshark/wireshark/-/issues/21088"
+      ],
+      "published": "2026-04-30T07:16:37.720"
+    },
+    {
+      "id": "CVE-2026-5406",
+      "description": "FC-SWILS protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://gitlab.com/wireshark/wireshark/-/issues/21070",
+        "https://www.wireshark.org/security/wnpa-sec-2026-10.html",
+        "https://gitlab.com/wireshark/wireshark/-/work_items/21070"
+      ],
+      "published": "2026-04-30T07:16:37.990"
+    },
+    {
+      "id": "CVE-2026-41226",
+      "description": "Open redirect vulnerability exists in Multiple laser printers and MFPs which implement Ricoh Web Image Monitor. When accessing a specially crafted URL, the user may be redirected to an arbitrary website. As a result, the user may become a victim of a phishing attack.",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-601"
+      ],
+      "references": [
+        "https://jp.ricoh.com/security/products/vulnerabilities/vul?id=ricoh-2026-000004",
+        "https://jvn.jp/en/jp/JVN65118274/",
+        "https://www.ricoh.com/products/security/vulnerabilities/vul?id=ricoh-2026-000004"
+      ],
+      "published": "2026-04-30T07:16:37.143"
+    },
+    {
+      "id": "CVE-2026-42798",
+      "description": "Little CMS (lcms2) 2.16 through 2.18 before 2.19 has an integer overflow in ParseCube in cmscgats.c.",
+      "severity": "MEDIUM",
+      "score": 4.0,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/mm2/Little-CMS/commit/6a686019825a89b715d16671f18d049523354176",
+        "https://github.com/mm2/Little-CMS/compare/lcms2.18...lcms2.19",
+        "https://www.openwall.com/lists/oss-security/2026/04/30/8"
+      ],
+      "published": "2026-04-30T07:16:37.423"
+    },
+    {
+      "id": "CVE-2024-39847",
+      "description": "Unauthenticated attackers can exploit a weakness in the XML parser functionality of the SOAP endpoints in 4D server. This allows them to obtain read access to files on the application server and adjacent network shares, and perform HTTP GET requests to arbitrary services.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-611"
+      ],
+      "references": [
+        "https://4d.com",
+        "https://www.schutzwerk.com/en/blog/schutzwerk-sa-2024-002/"
+      ],
+      "published": "2026-04-30T07:16:36.143"
+    }
+  ]
+}
