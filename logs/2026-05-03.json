@@ -1,0 +1,363 @@
+{
+  "timestamp": "2026-05-03T05:41:03.105743+00:00",
+  "scan_id": "300b0bc1fb",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 10,
+      "MEDIUM": 7,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        5
+      ],
+      [
+        "CWE-89",
+        4
+      ],
+      [
+        "CWE-119",
+        3
+      ],
+      [
+        "CWE-120",
+        3
+      ],
+      [
+        "CWE-404",
+        3
+      ]
+    ],
+    "threat_index": 381.8,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 381.8,
+        "yesterday": 285.4,
+        "change_pct": 33.8
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-7538",
+      "description": "A vulnerability was identified in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function Vulnerability of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument proto leads to os command injection. The attack may be initiated remotely. The exploit",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Litengzheng/vuldb_new2/blob/main/A8000RU/vul_329/README.md",
+        "https://vuldb.com/submit/804321",
+        "https://vuldb.com/vuln/360354"
+      ],
+      "published": "2026-05-01T02:16:04.533"
+    },
+    {
+      "id": "CVE-2026-7546",
+      "description": "A security vulnerability has been detected in Totolink NR1800X 9.1.0u.6279_B20210910. The impacted element is the function find_host_ip of the component lighttpd. Such manipulation of the argument Host leads to stack-based buffer overflow. The attack can be executed remotely. The exploit has been di",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/newym/cve/blob/main/totolinknr1800x.md",
+        "https://vuldb.com/submit/804404",
+        "https://vuldb.com/vuln/360357"
+      ],
+      "published": "2026-05-01T03:16:01.270"
+    },
+    {
+      "id": "CVE-2026-7512",
+      "description": "A flaw has been found in UTT HiPER 1200GW up to 2.5.3-1703. The affected element is the function strcpy of the file /goform/formUser. Executing a manipulation can lead to buffer overflow. The attack can be launched remotely. The exploit has been published and may be used.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/kirlic123/IOTvulner/tree/main/4035/3",
+        "https://vuldb.com/submit/803995",
+        "https://vuldb.com/vuln/360323"
+      ],
+      "published": "2026-05-01T00:16:25.257"
+    },
+    {
+      "id": "CVE-2026-7513",
+      "description": "A vulnerability has been found in UTT HiPER 1200GW up to 2.5.3-170306. The impacted element is the function strcpy of the file /goform/formRemoteControl. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/kirlic123/IOTvulner/blob/main/4035/4/4.md",
+        "https://vuldb.com/submit/803996",
+        "https://vuldb.com/vuln/360324"
+      ],
+      "published": "2026-05-01T00:16:25.443"
+    },
+    {
+      "id": "CVE-2026-7548",
+      "description": "A vulnerability was detected in Totolink NR1800X 9.1.0u.6279_B20210910. This affects the function sub_41A68C of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument setUssd results in command injection. The attack is possible to be carried out remotely. The exploit is now public ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/newym/cve/blob/main/totolink%20nr1800x%20command%20injection.md",
+        "https://vuldb.com/submit/804417",
+        "https://vuldb.com/vuln/360358"
+      ],
+      "published": "2026-05-01T03:16:01.467"
+    },
+    {
+      "id": "CVE-2026-5403",
+      "description": "SBC codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-122",
+        "CWE-787"
+      ],
+      "references": [
+        "https://gitlab.com/wireshark/wireshark/-/issues/21103",
+        "https://www.wireshark.org/security/wnpa-sec-2026-16.html"
+      ],
+      "published": "2026-05-01T00:16:24.670"
+    },
+    {
+      "id": "CVE-2026-5405",
+      "description": "RDP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-122",
+        "CWE-787"
+      ],
+      "references": [
+        "https://gitlab.com/wireshark/wireshark/-/issues/21105",
+        "https://www.wireshark.org/security/wnpa-sec-2026-17.html",
+        "https://gitlab.com/wireshark/wireshark/-/work_items/21105"
+      ],
+      "published": "2026-05-01T00:16:24.963"
+    },
+    {
+      "id": "CVE-2026-7519",
+      "description": "A vulnerability has been found in Fujian Apex LiveBOS up to 2.0. Impacted is an unknown function of the file /feed/UploadImage.do of the component Endpoint. Such manipulation of the argument filename leads to path traversal. The attack can be launched remotely. The exploit has been disclosed to the ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://my.feishu.cn/docx/TCyMdptvaoTQCvxkHLbceJZCnge?from=from_copylink",
+        "https://vuldb.com/submit/804096",
+        "https://vuldb.com/vuln/360333"
+      ],
+      "published": "2026-05-01T01:16:17.910"
+    },
+    {
+      "id": "CVE-2026-7545",
+      "description": "A weakness has been identified in SourceCodester Advanced School Management System 1.0. The affected element is an unknown function of the file commonController.php of the component checkEmail Endpoint. This manipulation causes sql injection. Remote exploitation of the attack is possible. The exploi",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/eqwerwq/CVE/issues/2",
+        "https://vuldb.com/submit/804340",
+        "https://vuldb.com/vuln/360356"
+      ],
+      "published": "2026-05-01T02:16:04.723"
+    },
+    {
+      "id": "CVE-2026-7549",
+      "description": "A flaw has been found in SourceCodester Pharmacy Sales and Inventory System 1.0. This impacts an unknown function of the file /ajax.php?action=delete_customer. Executing a manipulation of the argument ID can lead to sql injection. The attack may be performed from remote. The exploit has been publish",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/khairulazly760530-cell/cves/issues/3",
+        "https://vuldb.com/submit/805538",
+        "https://vuldb.com/vuln/360359"
+      ],
+      "published": "2026-05-01T05:16:03.657"
+    },
+    {
+      "id": "CVE-2026-7550",
+      "description": "A vulnerability has been found in SourceCodester Pharmacy Sales and Inventory System 1.0. Affected is an unknown function of the file /ajax.php?action=save_customer. The manipulation of the argument ID leads to sql injection. It is possible to initiate the attack remotely. The exploit has been discl",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/khairulazly760530-cell/cves/issues/2",
+        "https://vuldb.com/submit/805539",
+        "https://vuldb.com/vuln/360360"
+      ],
+      "published": "2026-05-01T05:16:03.847"
+    },
+    {
+      "id": "CVE-2026-5656",
+      "description": "Profile import path traversal in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution",
+      "severity": "HIGH",
+      "score": 7.0,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://gitlab.com/wireshark/wireshark/-/issues/21115",
+        "https://www.wireshark.org/security/wnpa-sec-2026-21.html"
+      ],
+      "published": "2026-05-01T00:16:25.097"
+    },
+    {
+      "id": "CVE-2024-13362",
+      "description": "Multiple plugins and/or themes for WordPress are vulnerable to Reflected Cross-Site Scripting via the url parameter in various versions due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execu",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/add-search-to-menu/trunk/includes/freemius/assets/js/pricing/freemius-pricing.js",
+        "https://plugins.trac.wordpress.org/browser/featured-images-for-rss-feeds/trunk/includes/freemius/assets/js/pricing/freemius-pricing.js",
+        "https://plugins.trac.wordpress.org/browser/foobox-image-lightbox/tags/2.7.33/freemius/assets/js/pricing/freemius-pricing.js"
+      ],
+      "published": "2026-05-01T06:16:30.050"
+    },
+    {
+      "id": "CVE-2026-7536",
+      "description": "A vulnerability was determined in Open5GS up to 2.7.7. This vulnerability affects the function bsf_sess_add_by_ip_address of the file /nbsf-management/v1/pcfBindings of the component BSF. Executing a manipulation of the argument ipv4Addr can lead to denial of service. The attack can be launched remo",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4400",
+        "https://vuldb.com/submit/804292"
+      ],
+      "published": "2026-05-01T02:16:04.347"
+    },
+    {
+      "id": "CVE-2026-22726",
+      "description": "Route Services can be leveraged to send app traffic to network destinations outside of an app's configured egress rules. As a result, a malicious developer with access to Cloudfoundry could configure a route-service that would allow it to send requests to HTTP services on internal networks reachable",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-923"
+      ],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-22726-route-services-firewall-bypass/"
+      ],
+      "published": "2026-05-01T00:16:23.650"
+    },
+    {
+      "id": "CVE-2026-5404",
+      "description": "K12 RF5 file parser crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-120"
+      ],
+      "references": [
+        "https://gitlab.com/wireshark/wireshark/-/issues/21094",
+        "https://www.wireshark.org/security/wnpa-sec-2026-15.html"
+      ],
+      "published": "2026-05-01T00:16:24.820"
+    },
+    {
+      "id": "CVE-2026-7553",
+      "description": "A vulnerability was found in code-projects Gym Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /admin/edit_exercises.php. The manipulation of the argument edit_exercise results in sql injection. It is possible to launch the attack remotely. The exploit h",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://fox-byte.yuque.com/org-wiki-fox-byte-ig3xms/rdgsp5/yg012bnp1xorwq0p",
+        "https://vuldb.com/submit/805603"
+      ],
+      "published": "2026-05-01T05:16:04.020"
+    },
+    {
+      "id": "CVE-2026-7518",
+      "description": "A flaw has been found in Open5GS up to 2.7.7. This issue affects the function amf_namf_callback_handle_sdm_data_change_notify of the file /namf-callback/v1/{id}/sdmsubscription-notify of the component AMF SBI Endpoint. This manipulation of the argument changeItem.newValue causes denial of service. T",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4395",
+        "https://vuldb.com/submit/804023"
+      ],
+      "published": "2026-05-01T01:16:17.307"
+    },
+    {
+      "id": "CVE-2026-7535",
+      "description": "A vulnerability was found in Open5GS up to 2.7.7. This affects the function amf_namf_comm_handle_registration_status_update_request in the library /lib/app/ogs-init.c of the file /namf-comm/v1/ue-contexts/{ueContextId}/transfer-update. Performing a manipulation of the argument ueContextId results in",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4399",
+        "https://vuldb.com/submit/804291"
+      ],
+      "published": "2026-05-01T01:16:18.087"
+    },
+    {
+      "id": "CVE-2026-42994",
+      "description": "Bitwarden CLI 2026.4.0 from 2026-04-22T21:57Z to 2026-04-22T23:30Z, when obtained from npm, had embedded malicious code. This is related to a Checkmarx supply chain incident.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://community.bitwarden.com/t/bitwarden-statement-on-checkmarx-supply-chain-incident/96127"
+      ],
+      "published": "2026-05-01T05:16:01.510"
+    }
+  ]
+}
