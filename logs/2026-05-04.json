@@ -1,0 +1,352 @@
+{
+  "timestamp": "2026-05-04T05:46:46.005743+00:00",
+  "scan_id": "97cd0dcebb",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 7,
+      "MEDIUM": 11
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        7
+      ],
+      [
+        "CWE-918",
+        2
+      ],
+      [
+        "CWE-434",
+        1
+      ],
+      [
+        "CWE-288",
+        1
+      ],
+      [
+        "CWE-862",
+        1
+      ]
+    ],
+    "threat_index": 372.5,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 372.5,
+        "yesterday": 381.8,
+        "change_pct": -2.4
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 2,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-4882",
+      "description": "The User Registration Advanced Fields plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'URAF_AJAX::method_upload' function in all versions up to, and including, 1.6.20. This makes it possible for unauthenticated attackers to upload arbitrary fil",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://wpuserregistration.com/features/advanced-fields/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/f2c6a377-216f-4d61-8fae-ec5bc2793cdf?source=cve"
+      ],
+      "published": "2026-05-02T05:16:00.933"
+    },
+    {
+      "id": "CVE-2026-7458",
+      "description": "The User Verification by PickPlugins plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 2.0.46. This is due to the use of a loose PHP comparison operator to validate OTP codes in the \"user_verification_form_wrap_process_otpLogin\" function. This makes it",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-288"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/user-verification/trunk/includes/functions-rest.php%23L234?rev=3461175",
+        "https://plugins.trac.wordpress.org/browser/user-verification/trunk/templates/email-otp-login-form/hook.php%23L164?rev=3461175",
+        "https://plugins.trac.wordpress.org/browser/user-verification/trunk/templates/email-otp-login-form/index.php%23L71?rev=3461175"
+      ],
+      "published": "2026-05-02T05:16:01.420"
+    },
+    {
+      "id": "CVE-2026-6963",
+      "description": "The WP Mail Gateway plugin for WordPress is vulnerable to unauthorized access due to a missing capability check on the wmg_save_provider_config AJAX action in all versions up to, and including, 1.8. This makes it possible for authenticated attackers, with Subscriber-level access and above, to update",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-mail-gateway/tags/1.8/src/Bootstrap.php#L47",
+        "https://plugins.trac.wordpress.org/browser/wp-mail-gateway/tags/1.8/src/Functions.php#L111",
+        "https://plugins.trac.wordpress.org/browser/wp-mail-gateway/trunk/src/Bootstrap.php#L47"
+      ],
+      "published": "2026-05-02T05:16:01.250"
+    },
+    {
+      "id": "CVE-2026-7641",
+      "description": "The Import and export users and customers plugin for WordPress is vulnerable to Privilege Escalation in all versions up to and including 2.0.8 via the `save_extra_user_profile_fields()` function. This is due to an incomplete blocklist that correctly restricts capability meta keys for the primary sit",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/import-users-from-csv-with-meta/tags/2.0.6/classes/columns.php#L198",
+        "https://plugins.trac.wordpress.org/browser/import-users-from-csv-with-meta/tags/2.0.6/classes/columns.php#L221",
+        "https://plugins.trac.wordpress.org/browser/import-users-from-csv-with-meta/tags/2.0.6/classes/helper.php#L150"
+      ],
+      "published": "2026-05-02T05:16:01.953"
+    },
+    {
+      "id": "CVE-2026-43824",
+      "description": "In Argo CD 3.2.0 before 3.2.11 and 3.3.0 before 3.3.9, ServerSideDiff allows reading cleartext Kubernetes Secret data.",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-212"
+      ],
+      "references": [
+        "https://github.com/argoproj/argo-cd/security/advisories/GHSA-3v3m-wc6v-x4x3"
+      ],
+      "published": "2026-05-02T02:16:00.747"
+    },
+    {
+      "id": "CVE-2026-5109",
+      "description": "The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 2.10.0. This is due to insufficient validation and output escaping of Product Option field values. The vulnerability exists because the state validation function accepts submitted valu",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://docs.gravityforms.com/gravityforms-change-log/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/651fa700-2462-4c9c-bd13-85f3a53a64df?source=cve"
+      ],
+      "published": "2026-05-02T06:16:03.210"
+    },
+    {
+      "id": "CVE-2026-5110",
+      "description": "The Gravity Forms plugin for WordPress is vulnerable to Unauthenticated Stored Cross-Site Scripting in versions up to and including 2.10.0. This is due to insufficient input validation and output escaping in the SingleProduct field when used inside a Repeater field. When SingleProduct fields are nes",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://docs.gravityforms.com/gravityforms-change-log/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/f9135799-00db-447d-b795-faafeafbce67?source=cve"
+      ],
+      "published": "2026-05-02T06:16:03.580"
+    },
+    {
+      "id": "CVE-2026-5111",
+      "description": "The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 2.10.0. This is due to insufficient input validation and output escaping on Hidden Product field values when used inside Repeater fields, where repeater subfields bypass state validati",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://docs.gravityforms.com/gravityforms-change-log/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/a50e7042-bf7b-49d8-8e62-d01ecdd769fd?source=cve"
+      ],
+      "published": "2026-05-02T06:16:03.730"
+    },
+    {
+      "id": "CVE-2026-5112",
+      "description": "The Gravity Forms plugin for WordPress is vulnerable to Unauthenticated Stored Cross-Site Scripting in versions up to and including 2.10.0. This is due to insufficient input validation and output escaping of Calculation Product field product names when rendered inside Repeater fields. The validate()",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://docs.gravityforms.com/gravityforms-change-log/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/63973f61-81f0-4fc8-810c-a15734ff824e?source=cve"
+      ],
+      "published": "2026-05-02T06:16:03.877"
+    },
+    {
+      "id": "CVE-2025-14726",
+      "description": "The Widgets for Social Photo Feed plugin for WordPress is vulnerable to unauthorized access of data and modification of data due to a missing capability check on the '/trustindex_feed_hook_instagram/troubleshooting' and '/trustindex_feed_hook_instagram/submit-data' REST API endpoints in all versions",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3513612/social-photo-feed-widget",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/ab15fa8b-4072-435a-8a1c-ca6fd964a260?source=cve"
+      ],
+      "published": "2026-05-02T05:16:00.093"
+    },
+    {
+      "id": "CVE-2026-6378",
+      "description": "The Maxi Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `/wp-json/maxi-blocks/v1.0/style-card` REST API endpoint in all versions up to, and including, 2.1.9 due to insufficient input sanitization and output escaping of the `sc_styles` parameter. This makes it possib",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/maxi-blocks/maxi-blocks/pull/6250/changes/8db3267df9858f684e420566227ed2ea7954d9a9",
+        "https://plugins.trac.wordpress.org/browser/maxi-blocks/tags/2.1.10/core/class-maxi-api.php#L1010",
+        "https://plugins.trac.wordpress.org/browser/maxi-blocks/tags/2.1.10/core/class-maxi-api.php#L1021"
+      ],
+      "published": "2026-05-02T04:16:11.990"
+    },
+    {
+      "id": "CVE-2026-7209",
+      "description": "The Simple Link Directory plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's `qcopd-directory` shortcode in all versions up to, and including, 8.9.2. This is due to insufficient input sanitization and output escaping on user supplied attributes such as `title_font_siz",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/simple-link-directory/tags/8.9.2/qc-op-directory-shortcodes.php#L88",
+        "https://plugins.trac.wordpress.org/browser/simple-link-directory/tags/8.9.2/templates/style-1/template.php#L118",
+        "https://plugins.trac.wordpress.org/browser/simple-link-directory/tags/8.9.4/qc-op-directory-shortcodes.php#L116"
+      ],
+      "published": "2026-05-02T04:16:23.453"
+    },
+    {
+      "id": "CVE-2026-4658",
+      "description": "The Essential Blocks \u2013 Page Builder Gutenberg Blocks, Patterns & Templates plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the className, classHook, and blockId attributes in the Add to Cart block (essential-blocks/add-to-cart) in all versions up to, and including, 6.0.4. This ",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/essential-blocks/tags/6.0.4/includes/Blocks/AddToCart.php#L118",
+        "https://plugins.trac.wordpress.org/browser/essential-blocks/tags/6.0.4/includes/Blocks/AddToCart.php#L120",
+        "https://plugins.trac.wordpress.org/browser/essential-blocks/tags/6.0.4/includes/Blocks/AddToCart.php#L65"
+      ],
+      "published": "2026-05-02T05:16:00.767"
+    },
+    {
+      "id": "CVE-2026-7600",
+      "description": "A flaw has been found in ArtMin96 yii2-mcp-server 1.0.2. This impacts the function yii_command_help/yii_execute_command of the file src/index.ts of the component MCP Interface. Executing a manipulation can lead to os command injection. The attack can be executed remotely. The exploit has been publis",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/ArtMin96/yii2-mcp-server/",
+        "https://github.com/ArtMin96/yii2-mcp-server/issues/3",
+        "https://github.com/BruceJqs/public_exp/issues/29"
+      ],
+      "published": "2026-05-02T01:16:00.903"
+    },
+    {
+      "id": "CVE-2026-7602",
+      "description": "A vulnerability was found in JeecgBoot up to 3.9.1. Affected by this vulnerability is an unknown functionality of the file /sys/fillRule/edit of the component FillRuleUtil Component. The manipulation of the argument ruleClass results in improper authorization. The attack may be performed from remote",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/jeecgboot/JeecgBoot/",
+        "https://github.com/jeecgboot/JeecgBoot/issues/9552",
+        "https://github.com/jeecgboot/JeecgBoot/issues/9552#issuecomment-4251391314"
+      ],
+      "published": "2026-05-02T04:16:23.650"
+    },
+    {
+      "id": "CVE-2026-7603",
+      "description": "A vulnerability was determined in JeecgBoot up to 3.9.1. Affected by this issue is the function checkPathTraversalBatch of the file FileDownloadUtils.jav of the component LoadFile Endpoint. This manipulation of the argument files causes server-side request forgery. It is possible to initiate the att",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/jeecgboot/JeecgBoot/",
+        "https://github.com/jeecgboot/JeecgBoot/issues/9553",
+        "https://github.com/jeecgboot/JeecgBoot/issues/9553#issuecomment-4251745014"
+      ],
+      "published": "2026-05-02T05:16:01.570"
+    },
+    {
+      "id": "CVE-2026-7604",
+      "description": "A vulnerability was identified in JeecgBoot up to 3.9.1. This affects the function OpenApiController.add/OpenApiController.call of the file OpenApiController.java of the component OpenApi Service. Such manipulation of the argument originUrl database leads to server-side request forgery. It is possib",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/jeecgboot/JeecgBoot/",
+        "https://github.com/jeecgboot/JeecgBoot/issues/9554",
+        "https://github.com/jeecgboot/JeecgBoot/issues/9554#issuecomment-4251574151"
+      ],
+      "published": "2026-05-02T05:16:01.767"
+    },
+    {
+      "id": "CVE-2026-6446",
+      "description": "The My Social Feeds \u2013 Social Feeds Embedder plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to and including 1.0.4 via the 'ttp_get_accounts' AJAX action. This is due to the complete absence of authorization checks (no capability verification) and nonce verifi",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/my-social-feeds/tags/1.0.2/includes/TiktokAPI.php#L190",
+        "https://plugins.trac.wordpress.org/browser/my-social-feeds/tags/1.0.2/includes/TiktokAPI.php#L24",
+        "https://plugins.trac.wordpress.org/browser/my-social-feeds/trunk/includes/TiktokAPI.php#L190"
+      ],
+      "published": "2026-05-02T05:16:01.093"
+    },
+    {
+      "id": "CVE-2026-7638",
+      "description": "The App Builder \u2013 Create Native Android & iOS Apps On The Flight plugin for WordPress is vulnerable to Insecure Direct Object Reference  in all versions up to and including 5.6.0. This is due to missing authorization validation in the `upload_avatar()` function, which accepts an attacker-controlled ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/app-builder/tags/5.5.10/includes/Di/Service/Auth/UploadAvatar.php#L161",
+        "https://plugins.trac.wordpress.org/browser/app-builder/tags/5.5.10/includes/Di/Service/Auth/UploadAvatar.php#L80",
+        "https://plugins.trac.wordpress.org/browser/app-builder/tags/5.5.10/includes/Traits/Permission.php#L33"
+      ],
+      "published": "2026-05-02T04:16:23.927"
+    },
+    {
+      "id": "CVE-2026-7601",
+      "description": "A vulnerability has been found in Open5GS up to 2.7.6. Affected is an unknown function of the file src/amf/gmm-handler.c of the component AMF. The manipulation of the argument reg_type leads to denial of service. The attack is possible to be carried out remotely. Upgrading to version 2.7.7 is able t",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/commit/ebc66942b6f8f1fab2d640e71cf4e9f1a423b426",
+        "https://github.com/open5gs/open5gs/issues/4321"
+      ],
+      "published": "2026-05-02T03:15:59.997"
+    }
+  ]
+}
