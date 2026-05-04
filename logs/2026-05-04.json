@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-04T10:27:19.308521+00:00",
-  "scan_id": "89b3434fd2",
+  "timestamp": "2026-05-04T16:15:37.006099+00:00",
+  "scan_id": "a318590aad",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -122,6 +122,7 @@
         "CWE-212"
       ],
       "references": [
+        "https://github.com/argoproj/argo-cd/security/advisories/GHSA-3v3m-wc6v-x4x3",
         "https://github.com/argoproj/argo-cd/security/advisories/GHSA-3v3m-wc6v-x4x3"
       ],
       "published": "2026-05-02T02:16:00.747"
