@@ -1,0 +1,353 @@
+{
+  "timestamp": "2026-05-06T05:40:55.427977+00:00",
+  "scan_id": "48cf3425c3",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 6,
+      "HIGH": 6,
+      "MEDIUM": 8
+    },
+    "top_cwes": [
+      [
+        "CWE-787",
+        3
+      ],
+      [
+        "CWE-266",
+        2
+      ],
+      [
+        "CWE-79",
+        2
+      ],
+      [
+        "CWE-287",
+        2
+      ],
+      [
+        "CWE-74",
+        2
+      ]
+    ],
+    "threat_index": 467.6,
+    "critical_count": 6
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 467.6,
+        "yesterday": 293.1,
+        "change_pct": 59.5
+      },
+      "critical_count": {
+        "today": 6,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-42369",
+      "description": "GV-VMS V20 is a Video Monitoring Software used to gather the feeds of many surveillance cameras and manage other security devices. It is a native application accessed locally, but it is also possible to enable remote access via the \"WebCam Server\" feature.  Once enabled, it is possible to access to ",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://https://talosintelligence.com/vulnerability_reports/",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-05-04T01:16:04.153"
+    },
+    {
+      "id": "CVE-2026-42364",
+      "description": "An os command injection vulnerability exists in the DdnsSetting.cgi functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted DDNS configuration can lead to arbitrary command execution. An attacker can modify a configuration value to trigger this vulnerability.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-05-04T01:16:03.470"
+    },
+    {
+      "id": "CVE-2026-42368",
+      "description": "A privilege escalation vulnerability exists in the Web Interface functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted HTTP request can lead to execute priviledged operation. An attacker can visit a webpage to trigger this vulnerability.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-266"
+      ],
+      "references": [
+        "https://https://talosintelligence.com/vulnerability_reports/",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-05-04T01:16:04.020"
+    },
+    {
+      "id": "CVE-2026-7161",
+      "description": "An insufficient encryption vulnerability exists in the Device Authentication functionality of GeoVision GV-IP Device Utility 9.0.5. Listening to broadcast packets can lead to credentials leak. An attacker can listen to broadcast messages to trigger this vulnerability.\n\n\nWhen interacting with various",
+      "severity": "CRITICAL",
+      "score": 9.3,
+      "cwes": [
+        "CWE-656"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-05-04T01:16:04.447"
+    },
+    {
+      "id": "CVE-2026-42370",
+      "description": "A stack overflow vulnerability exists in the WebCam Server Login functionality of GeoVision GV-VMS V20 20.0.2. A specially crafted HTTP request can lead to an arbitrary code execution. An attacker can make an unauthenticated HTTP request to trigger this vulnerability.",
+      "severity": "CRITICAL",
+      "score": 9.0,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-05-04T01:16:04.310"
+    },
+    {
+      "id": "CVE-2026-7372",
+      "description": "A stack overflow vulnerability exists in the WebCam Server Login functionality of GeoVision GV-VMS V20 20.0.2. A specially crafted HTTP request can lead to an arbitrary code execution. An attacker can make an unauthenticated HTTP request to trigger this vulnerability.\n\n#### Stack-overflow via uncons",
+      "severity": "CRITICAL",
+      "score": 9.0,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-05-04T01:16:04.730"
+    },
+    {
+      "id": "CVE-2026-7717",
+      "description": "A vulnerability was determined in Totolink WA300 5.2cu.7112_B20190227. This issue affects the function UploadCustomModule of the file /cgi-bin/cstecgi.cgi of the component POST Request Handler. Executing a manipulation of the argument File can lead to buffer overflow. The attack can be launched remo",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/TOTOLINK-WA300-UploadCustomModule-34553a41781f80a8a287e48a7fb04de9",
+        "https://vuldb.com/submit/807193",
+        "https://vuldb.com/vuln/360893"
+      ],
+      "published": "2026-05-04T01:16:05.380"
+    },
+    {
+      "id": "CVE-2026-42365",
+      "description": "A guessable session cookie vulnerability exists in the Web Interface functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted series of HTTP requests can lead to an authentication bypas. An attacker can bruteforce session cookies to trigger this vulnerability.",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-341"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-05-04T01:16:03.620"
+    },
+    {
+      "id": "CVE-2026-42366",
+      "description": "Multiple reflected cross-site scripting (xss) vulnerabilities exist in the Web Interface / ssi.cgi functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted malicious url can lead to an arbitrary javascript code execution. An attacker can provide a crafted URL to trigger this vulnerabilit",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-05-04T01:16:03.753"
+    },
+    {
+      "id": "CVE-2026-7371",
+      "description": "Multiple reflected cross-site scripting (xss) vulnerabilities exist in the Web Interface / ssi.cgi functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted malicious url can lead to an arbitrary javascript code execution. An attacker can provide a crafted URL to trigger this vulnerabilit",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-05-04T01:16:04.590"
+    },
+    {
+      "id": "CVE-2026-7710",
+      "description": "A security flaw has been discovered in YunaiV yudao-cloud up to 3.8.0. This affects the function doFilterInternal of the file JwtAuthenticationTokenFilter.java of the component Ruoyi-Vue-Pro. Performing a manipulation of the argument mock-token results in improper authentication. Remote exploitation",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/9str0IL/CVE/issues/5",
+        "https://vuldb.com/submit/806493",
+        "https://vuldb.com/vuln/360886"
+      ],
+      "published": "2026-05-04T00:16:39.633"
+    },
+    {
+      "id": "CVE-2026-7711",
+      "description": "A weakness has been identified in MindsDB up to 26.01. This impacts the function exec of the file mindsdb/integrations/handlers/byom_handler/proc_wrapper.py of the component Engine Handler. Executing a manipulation can lead to unrestricted upload. The attack can be executed remotely. The exploit has",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/nn0nkey/JD-Security-SHENYI-Team/blob/main/MindsDB_BYOM_RCE.md",
+        "https://vuldb.com/submit/806822",
+        "https://vuldb.com/vuln/360887"
+      ],
+      "published": "2026-05-04T00:16:39.817"
+    },
+    {
+      "id": "CVE-2026-42367",
+      "description": "A privilege escalation vulnerability exists in the Web Interface / ssi.cgi functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted HTTP request can lead to credentials leak. An attacker can visit a webpage to trigger this vulnerability.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-05-04T01:16:03.890"
+    },
+    {
+      "id": "CVE-2026-7714",
+      "description": "A flaw has been found in crocodilestick Calibre-Web-Automated up to 4.0.6. Affected by this issue is some unknown functionality of the file cps/cwa_functions.py of the component Admin Endpoint. This manipulation causes missing authentication. It is possible to initiate the attack remotely. The explo",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://gist.github.com/menelausx/1b45c952d352a2ebdc01cd8d5aa88e87",
+        "https://github.com/crocodilestick/Calibre-Web-Automated/",
+        "https://github.com/crocodilestick/Calibre-Web-Automated/issues/1304"
+      ],
+      "published": "2026-05-04T01:16:04.863"
+    },
+    {
+      "id": "CVE-2026-7712",
+      "description": "A security vulnerability has been detected in MindsDB up to 26.01. Affected is the function pickle.loads of the component Pickle Handler. The manipulation leads to deserialization. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. The vendor ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-20",
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/nn0nkey/JD-Security-SHENYI-Team/blob/main/MindsDB_Pickle_RCE.md",
+        "https://vuldb.com/submit/806827",
+        "https://vuldb.com/vuln/360888"
+      ],
+      "published": "2026-05-04T00:16:39.990"
+    },
+    {
+      "id": "CVE-2026-7713",
+      "description": "A vulnerability was detected in crocodilestick Calibre-Web-Automated up to 4.0.6. Affected by this vulnerability is the function generate_auth_token of the file cps/kobo_auth.py of the component Kobo auth-token Route. The manipulation results in improper authorization. The attack may be performed fr",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://gist.github.com/menelausx/ef98aa78ed2869ccaa316ff45ed1a440",
+        "https://github.com/crocodilestick/Calibre-Web-Automated/",
+        "https://github.com/crocodilestick/Calibre-Web-Automated/issues/1303"
+      ],
+      "published": "2026-05-04T00:16:40.167"
+    },
+    {
+      "id": "CVE-2026-7715",
+      "description": "A vulnerability has been found in ravenwits mcp-server-arangodb up to 0.4.7. This affects the function arango_backup of the file src/tools.ts of the component MCP Interface. Such manipulation of the argument outputDir leads to path traversal. It is possible to launch the attack remotely. The exploit",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/BruceJqs/public_exp/issues/34",
+        "https://github.com/ravenwits/mcp-server-arangodb/",
+        "https://github.com/ravenwits/mcp-server-arangodb/issues/7"
+      ],
+      "published": "2026-05-04T01:16:05.037"
+    },
+    {
+      "id": "CVE-2026-7716",
+      "description": "A vulnerability was found in code-projects Gym Management System In PHP and Windows NT 1.0. This vulnerability affects unknown code of the file /index.php. Performing a manipulation of the argument day results in sql injection. The attack can be initiated remotely. The exploit has been made public a",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/QAp89/CVE/blob/main/SQL1.md",
+        "https://vuldb.com/submit/807105"
+      ],
+      "published": "2026-05-04T01:16:05.207"
+    },
+    {
+      "id": "CVE-2026-7718",
+      "description": "A vulnerability was identified in Totolink WA300 5.2cu.7112_B20190227. Impacted is the function setWebWlanIdx of the file /cgi-bin/cstecgi.cgi of the component POST Request Handler. The manipulation of the argument webWlanIdx leads to command injection. The attack may be initiated remotely. The expl",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/TOTOLINK-WA300-setWebWlanIdx-34553a41781f800ab40ae0c3d68c78a6?pvs=73",
+        "https://vuldb.com/submit/807196",
+        "https://vuldb.com/vuln/360894"
+      ],
+      "published": "2026-05-04T02:15:58.477"
+    },
+    {
+      "id": "CVE-2026-6948",
+      "description": "Velociraptor versions prior to 0.76.4 contain a resource exhaustion vulnerability in the server's agent control channel.\n\n\n\nThis allows a compromised or rogue Velociraptor client to crash the server via out-of-memory (OOM) by sending crafted messages through the normal client communication channel.",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://docs.velociraptor.app/announcements/advisories/cve-2026-6948/"
+      ],
+      "published": "2026-05-04T00:16:39.467"
+    }
+  ]
+}
