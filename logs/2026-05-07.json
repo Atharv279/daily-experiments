@@ -1,0 +1,359 @@
+{
+  "timestamp": "2026-05-07T05:43:25.514747+00:00",
+  "scan_id": "db31b910c7",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 5,
+      "MEDIUM": 13
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        6
+      ],
+      [
+        "CWE-22",
+        3
+      ],
+      [
+        "CWE-352",
+        3
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-287",
+        1
+      ]
+    ],
+    "threat_index": 338.9,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 338.9,
+        "yesterday": 467.6,
+        "change_pct": -27.5
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 6,
+        "change_pct": -66.7
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-5722",
+      "description": "The MoreConvert Pro plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.9.14. This is due to the guest waitlist verification flow not invalidating or regenerating verification tokens when the customer email address is changed. This makes it possible fo",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://moreconvert.com/changelog/",
+        "https://wordpress.org/plugins/smart-wishlist-for-more-convert/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/fe887475-f7e8-4fda-a793-bc6f37b70f3e?source=cve"
+      ],
+      "published": "2026-05-05T02:16:05.020"
+    },
+    {
+      "id": "CVE-2025-13618",
+      "description": "The Mentoring plugin for WordPress is vulnerable to privilege escalation in all versions up to, and including, 1.2.8. This is due to the plugin not properly restricting the roles that users can register with in the mentoring_process_registration() function. This makes it possible for unauthenticated",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://mentoring-wp.dreamsmarketplace.com/documentation/changelog.html",
+        "https://themeforest.net/item/mentoring-education-wordpress-theme/36457081",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/7192fb4c-0434-4e11-a2a7-c205b8d6b68e?source=cve"
+      ],
+      "published": "2026-05-05T03:15:58.913"
+    },
+    {
+      "id": "CVE-2026-44028",
+      "description": "An issue was discovered in Nix before 2.34.7 and Lix before 2.95.2. Unbounded recursion in the NAR (Nix Archive) parser could lead to a stack-to-heap overflow when the parser is run on a coroutine stack. The stack is allocated without a guard page, which means that a stack overflow could overwrite m",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://discourse.nixos.org/t/security-advisory-local-privilege-escalation-in-lix-and-nix/77407",
+        "https://github.com/NixOS/nix/security/advisories/GHSA-vh5x-56v6-4368",
+        "https://www.openwall.com/lists/oss-security/2026/05/04/32"
+      ],
+      "published": "2026-05-05T01:16:06.983"
+    },
+    {
+      "id": "CVE-2026-5100",
+      "description": "The AWP Classifieds plugin for WordPress is vulnerable to SQL Injection via the 'regions' parameter array keys in versions up to, and including, 4.4.5 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/another-wordpress-classifieds-plugin/tags/4.4.4/frontend/page-search-ads.php#L168",
+        "https://plugins.trac.wordpress.org/browser/another-wordpress-classifieds-plugin/tags/4.4.4/frontend/page-search-ads.php#L174",
+        "https://plugins.trac.wordpress.org/browser/another-wordpress-classifieds-plugin/tags/4.4.4/frontend/page-search-ads.php#L63"
+      ],
+      "published": "2026-05-05T03:15:59.730"
+    },
+    {
+      "id": "CVE-2026-7784",
+      "description": "A vulnerability has been found in RTGS2017 NagaAgent up to 5.1.0. This issue affects some unknown processing of the file apiserver/routes/extensions.py of the component Skills Endpoint. Such manipulation of the argument Name leads to path traversal. It is possible to launch the attack remotely. The ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/RTGS2017/NagaAgent/",
+        "https://github.com/RTGS2017/NagaAgent/issues/311",
+        "https://vuldb.com/submit/807744"
+      ],
+      "published": "2026-05-05T00:16:17.647"
+    },
+    {
+      "id": "CVE-2026-7785",
+      "description": "A security flaw has been discovered in A-G-U-P-T-A wireshark-mcp edaf604416fbc94a201b4043092d4a1b09a12275/400c3da70074f22f3cce7ccb65304cafc7089c89. This affects the function quick_capture of the file pyshark_mcp.py. The manipulation results in os command injection. The attack may be launched remotel",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/A-G-U-P-T-A/wireshark-mcp/",
+        "https://github.com/A-G-U-P-T-A/wireshark-mcp/issues/1",
+        "https://vuldb.com/submit/807745"
+      ],
+      "published": "2026-05-05T00:16:17.827"
+    },
+    {
+      "id": "CVE-2026-7788",
+      "description": "A security flaw has been discovered in Axle-Bucamp MCP-Docusaurus up to 404bc028e15ec304c9a045528560f4b5f27a17e0. The affected element is the function update_document/continue_document/delete_document/get_content of the file app/routes/document.py. Performing a manipulation of the argument DOCS_DIR/",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/Axle-Bucamp/MCP-Docusaurus/",
+        "https://github.com/Axle-Bucamp/MCP-Docusaurus/issues/2",
+        "https://vuldb.com/submit/807746"
+      ],
+      "published": "2026-05-05T00:16:18.003"
+    },
+    {
+      "id": "CVE-2026-4409",
+      "description": "The Subscribe To Comments Reloaded plugin for WordPress is vulnerable to unauthorized modification of data due to a leaked secret key and usage of a weak hash generation algorithm in all versions up to, and including, 240119. This makes it possible for unauthenticated attackers to extract the global",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/subscribe-to-comments-reloaded/tags/240119/templates/user.php#L37",
+        "https://plugins.trac.wordpress.org/browser/subscribe-to-comments-reloaded/tags/240119/utils/stcr_utils.php#L164",
+        "https://plugins.trac.wordpress.org/browser/subscribe-to-comments-reloaded/tags/240119/wp_subscribe_reloaded.php#L1613"
+      ],
+      "published": "2026-05-05T03:15:59.420"
+    },
+    {
+      "id": "CVE-2026-2868",
+      "description": "The Gutenverse \u2013 Ultimate WordPress FSE Blocks Addons & Ecosystem plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'separatorIconSVG' parameter in versions up to, and including, 3.5.3 due to insufficient input sanitization and output escaping. This makes it possible for auth",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3507804/gutenverse",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/cc540e5c-180f-4743-b1fb-608aa0e3ae79?source=cve"
+      ],
+      "published": "2026-05-05T03:15:59.263"
+    },
+    {
+      "id": "CVE-2026-4730",
+      "description": "The Charts Ninja: Create Beautiful Graphs & Charts and Easily Add Them to Your Website plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'chartid' shortcode attribute in all versions up to, and including, 2.1.0 due to insufficient input sanitization and output escaping. This ",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/charts-ninja-graphs-and-charts/tags/2.1.0/chartsninja.php#L24",
+        "https://plugins.trac.wordpress.org/browser/charts-ninja-graphs-and-charts/trunk/chartsninja.php#L24",
+        "https://wordpress.org/plugins/charts-ninja-graphs-and-charts"
+      ],
+      "published": "2026-05-05T03:15:59.570"
+    },
+    {
+      "id": "CVE-2026-5505",
+      "description": "The WP-Clippy plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's `clippy` shortcode in all versions up to, and including, 1.0.0. This is due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated at",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-clippy/tags/1.0.0/wp-clippy.php#L23",
+        "https://plugins.trac.wordpress.org/browser/wp-clippy/tags/1.0.0/wp-clippy.php#L26",
+        "https://plugins.trac.wordpress.org/browser/wp-clippy/trunk/wp-clippy.php#L23"
+      ],
+      "published": "2026-05-05T03:16:00.100"
+    },
+    {
+      "id": "CVE-2026-6255",
+      "description": "The Simple Owl Shortcodes plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'num' attribute of the 'owls_wrapper' shortcode in all versions up to, and including, 2.1.1 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possib",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/simple-owl-shortcodes/tags/2.1.1/inc/owls_wrapper.php#L11",
+        "https://plugins.trac.wordpress.org/browser/simple-owl-shortcodes/trunk/inc/owls_wrapper.php#L11",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/e33a2f27-20c2-4963-9558-1eead0515690?source=cve"
+      ],
+      "published": "2026-05-05T03:16:00.257"
+    },
+    {
+      "id": "CVE-2026-7783",
+      "description": "A flaw has been found in CodeCanyon Perfex CRM up to 3.4.1. This vulnerability affects the function AbstractKanban::applySortQuery of the file application/services/AbstractKanban.php of the component Admin Kanban Endpoint. This manipulation of the argument this causes sql injection. It is possible t",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://bytium.com/insights/blind-sql-injection-in-perfex-crm-3-4-1",
+        "https://vuldb.com/submit/807743",
+        "https://vuldb.com/vuln/360980"
+      ],
+      "published": "2026-05-05T00:16:17.460"
+    },
+    {
+      "id": "CVE-2026-6696",
+      "description": "The Zingaya Click-to-Call plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'email', 'first_name', 'last_name', and 'phone' parameters on the plugin's sign-up admin page in all versions up to, and including, 1.0. This is due to insufficient input sanitization and output es",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/zingaya-click-to-call/tags/1.0/zingaya-admin.php#L104",
+        "https://plugins.trac.wordpress.org/browser/zingaya-click-to-call/tags/1.0/zingaya-admin.php#L62",
+        "https://plugins.trac.wordpress.org/browser/zingaya-click-to-call/tags/1.0/zingaya-admin.php#L71"
+      ],
+      "published": "2026-05-05T03:16:00.423"
+    },
+    {
+      "id": "CVE-2026-6702",
+      "description": "The Publish 2 Ping.fm plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.1. This is due to missing or incorrect nonce validation on the '/wp-admin/options-general.php?page=admin.php' page. This makes it possible for unauthenticated attackers to u",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/publish-2-pingfm/tags/1.1/php/admin.php#L136",
+        "https://plugins.trac.wordpress.org/browser/publish-2-pingfm/tags/1.1/php/admin.php#L76",
+        "https://plugins.trac.wordpress.org/browser/publish-2-pingfm/tags/1.1/php/prefs.php#L219"
+      ],
+      "published": "2026-05-05T03:16:00.943"
+    },
+    {
+      "id": "CVE-2026-5247",
+      "description": "The Schedule Post Changes With PublishPress Future plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'wrapper' attribute of the [futureaction] shortcode in all versions up to, and including, 4.10.0. This is due to insufficient input sanitization on the wrapper attribute. The ",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/publishpress/publishpress-future/releases",
+        "https://plugins.trac.wordpress.org/browser/post-expirator/tags/4.9.4/src/Modules/Expirator/Controllers/ShortcodeController.php#L173",
+        "https://plugins.trac.wordpress.org/browser/post-expirator/trunk/src/Modules/Expirator/Controllers/ShortcodeController.php#L173"
+      ],
+      "published": "2026-05-05T03:15:59.930"
+    },
+    {
+      "id": "CVE-2026-44029",
+      "description": "An issue was discovered in Nix before 2.34.7. Writing to arbitrary files can occur via \"nix-prefetch-url --unpack\" or \"nix store prefetch-file --unpack\" directory traversal. The fixed versions are 2.34.7, 2.33.6, 2.32.8, 2.31.5, 2.30.5, 2.29.4, and 2.28.7 (introduced in 2.24.7);",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-36"
+      ],
+      "references": [
+        "https://discourse.nixos.org/t/security-advisory-local-privilege-escalation-in-lix-and-nix/77407",
+        "https://github.com/NixOS/nix/security/advisories/GHSA-gr92-w2r5-qw5p",
+        "https://www.openwall.com/lists/oss-security/2026/05/04/33"
+      ],
+      "published": "2026-05-05T01:16:07.170"
+    },
+    {
+      "id": "CVE-2026-1921",
+      "description": "The Loco Translate plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 2.8.2 via the `fsReference` AJAX route. This is due to the `findSourceFile()` method normalizing user-supplied `ref` paths containing `../` directory traversal sequences without validating t",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/loco-translate/tags/2.8.1/src/ajax/FsReferenceController.php#L12",
+        "https://plugins.trac.wordpress.org/browser/loco-translate/tags/2.8.1/src/ajax/FsReferenceController.php#L92",
+        "https://plugins.trac.wordpress.org/browser/loco-translate/trunk/src/ajax/FsReferenceController.php#L12"
+      ],
+      "published": "2026-05-05T03:15:59.100"
+    },
+    {
+      "id": "CVE-2026-6700",
+      "description": "The DX Sources plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2.0.1. This is due to missing or incorrect nonce validation on the settings_page_build function. This makes it possible for unauthenticated attackers to trick a logged-in administrat",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/dx-sources/tags/2.0.1/inc/settings.class.php#L46",
+        "https://plugins.trac.wordpress.org/browser/dx-sources/tags/2.0.1/inc/settings.class.php#L79",
+        "https://plugins.trac.wordpress.org/browser/dx-sources/trunk/inc/settings.class.php#L46"
+      ],
+      "published": "2026-05-05T03:16:00.627"
+    },
+    {
+      "id": "CVE-2026-6701",
+      "description": "The addfreespace plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 0.1.3. This is due to missing or incorrect nonce validation on a function. This makes it possible for unauthenticated attackers to update settings and inject malicious web scripts ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/addfreespace/tags/0.1.3/addfreespace.php#L312",
+        "https://plugins.trac.wordpress.org/browser/addfreespace/tags/0.1.3/addfreespace.php#L45",
+        "https://plugins.trac.wordpress.org/browser/addfreespace/tags/0.1.3/addfreespace_functions.php#L30"
+      ],
+      "published": "2026-05-05T03:16:00.790"
+    }
+  ]
+}
