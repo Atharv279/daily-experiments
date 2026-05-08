@@ -1,0 +1,318 @@
+{
+  "timestamp": "2026-05-08T05:13:28.190042+00:00",
+  "scan_id": "184531e906",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 7,
+      "MEDIUM": 9,
+      "LOW": 1,
+      "UNKNOWN": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        4
+      ],
+      [
+        "CWE-862",
+        3
+      ],
+      [
+        "CWE-22",
+        2
+      ],
+      [
+        "CWE-639",
+        1
+      ],
+      [
+        "CWE-601",
+        1
+      ]
+    ],
+    "threat_index": 255.2,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 255.2,
+        "yesterday": 338.9,
+        "change_pct": -24.7
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 2,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2025-71251",
+      "description": "In IMS, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [],
+      "references": [
+        "https://www.unisoc.com/en/support/product-security-bulletin/2051836844671422466"
+      ],
+      "published": "2026-05-06T02:16:03.400"
+    },
+    {
+      "id": "CVE-2025-71252",
+      "description": "In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [],
+      "references": [
+        "https://www.unisoc.com/en/support/product-security-bulletin/2051836844671422466"
+      ],
+      "published": "2026-05-06T02:16:04.733"
+    },
+    {
+      "id": "CVE-2025-71253",
+      "description": "In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [],
+      "references": [
+        "https://www.unisoc.com/en/support/product-security-bulletin/2051836844671422466"
+      ],
+      "published": "2026-05-06T02:16:04.857"
+    },
+    {
+      "id": "CVE-2025-71254",
+      "description": "In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [],
+      "references": [
+        "https://www.unisoc.com/en/support/product-security-bulletin/2051836844671422466"
+      ],
+      "published": "2026-05-06T02:16:04.983"
+    },
+    {
+      "id": "CVE-2025-71255",
+      "description": "In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [],
+      "references": [
+        "https://www.unisoc.com/en/support/product-security-bulletin/2051836844671422466"
+      ],
+      "published": "2026-05-06T02:16:05.093"
+    },
+    {
+      "id": "CVE-2025-71256",
+      "description": "In nr modem, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [],
+      "references": [
+        "https://www.unisoc.com/en/support/product-security-bulletin/2051836844671422466"
+      ],
+      "published": "2026-05-06T02:16:05.213"
+    },
+    {
+      "id": "CVE-2026-7332",
+      "description": "The LatePoint \u2013 Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'booking_form_page_url' parameter in all versions up to, and including, 5.5.0 due to insufficient input sanitization and output escaping. This makes it possib",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.4.1/lib/controllers/activities_controller.php#L214",
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.4.1/lib/controllers/stripe_connect_controller.php#L260",
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.4.1/lib/helpers/activities_helper.php#L83"
+      ],
+      "published": "2026-05-06T08:16:04.090"
+    },
+    {
+      "id": "CVE-2026-5753",
+      "description": "The All-in-One WP Migration Unlimited Extension plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 2.83. This is due to the 'Ai1wmve_Schedules_Controller::save' handler for 'admin_post_ai1wm_schedule_event_save' not verifying user capabilities before saving",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://help.servmask.com/knowledgebase/unlimited-extension-changelog/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/a8a31080-c124-49be-b9d1-7bc5abe7cbda?source=cve"
+      ],
+      "published": "2026-05-06T04:16:09.097"
+    },
+    {
+      "id": "CVE-2026-6672",
+      "description": "The Affiliate Program Suite \u2014 SliceWP Affiliates plugin for WordPress is vulnerable to Stored Cross-Site Scripting via shortcode attributes in all versions up to, and including, 1.2.7. This is due to insufficient input sanitization and output escaping on user-supplied attributes in the 'slicewp_affi",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3517135/slicewp",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/5b9e92ea-49fc-420d-9d0e-29bcf78843bd?source=cve"
+      ],
+      "published": "2026-05-06T08:16:03.957"
+    },
+    {
+      "id": "CVE-2026-35254",
+      "description": "Vulnerability in the Oracle OCI CLI product of Oracle Open Source Projects. The supported versions that is affected is 3.77. Easily exploitable vulnerability allows unauthenticated attacker with network access to compromise Oracle OCI CLI. Successful attacks of this vulnerability can result in Oracl",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://www.oracle.com/security-alerts/all-oracle-cves-outside-other-oracle-public-documents.html"
+      ],
+      "published": "2026-05-06T08:16:03.697"
+    },
+    {
+      "id": "CVE-2026-3208",
+      "description": "The Mercado Pago payments for WooCommerce plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the 'mp_pix_image' WooCommerce API endpoint in all versions up to, and including, 8.7.11. This makes it possible for unauthenticated attackers to retrieve ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/woocommerce-mercadopago/tags/8.7.10/src/Gateways/PixGateway.php#L358",
+        "https://plugins.trac.wordpress.org/browser/woocommerce-mercadopago/tags/8.7.10/src/Gateways/PixGateway.php#L92",
+        "https://plugins.trac.wordpress.org/changeset?old_path=%2Fwoocommerce-mercadopago/tags/8.7.11&new_path=%2Fwoocommerce-mercadopago/tags/8.7.12"
+      ],
+      "published": "2026-05-06T04:16:06.223"
+    },
+    {
+      "id": "CVE-2026-7573",
+      "description": "An authorization bypass (CWE-639) in the GetUserRoles gRPC API endpoint in Velocidex Velociraptor below version 0.76.5 allows any authenticated low-privilege user to retrieve the complete ACL policy (roles and permissions) for any user across all organizations by supplying targeted Name and Org para",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://docs.velociraptor.app/announcements/advisories/cve-2026-7573/"
+      ],
+      "published": "2026-05-06T03:15:59.440"
+    },
+    {
+      "id": "CVE-2026-6344",
+      "description": "The Fluent Forms plugin for WordPress is vulnerable to Arbitrary File Read in versions up to and including 6.2.1. This is due to insufficient path validation in the getAttachments() method of EmailNotificationActions, which resolves attacker-supplied file-upload URLs into filesystem paths without ve",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/fluentform/trunk/app/Hooks/Ajax.php#L17",
+        "https://plugins.trac.wordpress.org/browser/fluentform/trunk/app/Modules/SubmissionHandler/SubmissionHandler.php#L17",
+        "https://plugins.trac.wordpress.org/browser/fluentform/trunk/app/Services/FormBuilder/Notifications/EmailNotificationActions.php#L121"
+      ],
+      "published": "2026-05-06T08:16:03.813"
+    },
+    {
+      "id": "CVE-2026-35253",
+      "description": "Vulnerability in the Oracle Macoron Tool product of Oracle Open Source Projects. The supported versions that is affected is v0.22.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Macaron Tool. Successful attacks of this vulnerabili",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-601"
+      ],
+      "references": [
+        "https://www.oracle.com/security-alerts/all-oracle-cves-outside-other-oracle-public-documents.html"
+      ],
+      "published": "2026-05-06T08:16:03.570"
+    },
+    {
+      "id": "CVE-2026-7572",
+      "description": "An off-by-one error (CWE-193) in the ConsumeUnit16Array and ConsumeUnit64Array functions in Velocidex Velociraptor before version 0.76.5 on Windows and Linux allows a local attacker to cause a Denial of Service (DoS) via a process crash by providing a specially crafted .evtx file to the parse_evtx V",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-193"
+      ],
+      "references": [
+        "https://docs.velociraptor.app/announcements/advisories/cve-2026-7572/"
+      ],
+      "published": "2026-05-06T03:15:58.470"
+    },
+    {
+      "id": "CVE-2026-2306",
+      "description": "The Ninja Tables \u2013 Easy Data Table Builder plugin for WordPress is vulnerable to unauthorized database table creation due to missing authorization checks on the `createFluentCartTable` function in all versions up to, and including, 5.2.6. This makes it possible for authenticated attackers, with Subs",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/ninja-tables/tags/5.2.6/app/Modules/FluentCart/FluentCartModule.php#L23",
+        "https://plugins.trac.wordpress.org/browser/ninja-tables/tags/5.2.6/app/Modules/FluentCart/Handlers/FluentCartHandler.php#L44",
+        "https://plugins.trac.wordpress.org/browser/ninja-tables/trunk/app/Modules/FluentCart/FluentCartModule.php#L23"
+      ],
+      "published": "2026-05-06T06:16:03.660"
+    },
+    {
+      "id": "CVE-2026-44405",
+      "description": "In Paramiko through 4.0.0 before a448945, rsakey.py allows the SHA-1 algorithm.",
+      "severity": "LOW",
+      "score": 3.4,
+      "cwes": [
+        "CWE-327"
+      ],
+      "references": [
+        "https://github.com/paramiko/paramiko/commit/a4489456b6f65281e172380cc4826cee5e851dbb",
+        "https://ostif.org/wp-content/uploads/2026/05/25-11-2415-REP_paramiko-security-audit_v1.1.pdf"
+      ],
+      "published": "2026-05-06T00:16:04.883"
+    },
+    {
+      "id": "CVE-2026-23926",
+      "description": "An authenticated (non-super) administrator can create a maintenance period with a JavaScript payload that is executed by any user that opens tooltip for that maintenance period in the Host navigator widget. This can allow the attacker to perform unauthorized actions depending on which user opens the",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://support.zabbix.com/browse/ZBX-27758"
+      ],
+      "published": "2026-05-06T08:16:01.837"
+    },
+    {
+      "id": "CVE-2026-23927",
+      "description": "A user able to connect to Agent 2 can inject an Oracle TNS connection string via the 'service' parameter. This can lead to Agent 2 connecting to an attacker-controlled server and leaking Oracle database credentials if they are saved in a named session.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://support.zabbix.com/browse/ZBX-27759"
+      ],
+      "published": "2026-05-06T08:16:02.940"
+    },
+    {
+      "id": "CVE-2026-23928",
+      "description": "The Item history widget (in Zabbix 7.0+) or the Plain text widget (in Zabbix 6.0) can execute injected JavaScript when HTML display is enabled. This can allow an attacker to perform unauthorized actions depending on which user opens a dashboard containing these widgets. The malicious JavaScript woul",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://support.zabbix.com/browse/ZBX-27760"
+      ],
+      "published": "2026-05-06T08:16:03.100"
+    }
+  ]
+}
