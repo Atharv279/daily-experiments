@@ -1,0 +1,347 @@
+{
+  "timestamp": "2026-05-09T05:31:22.198850+00:00",
+  "scan_id": "4adbb4cbb0",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 4,
+      "MEDIUM": 8,
+      "LOW": 3,
+      "UNKNOWN": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-22",
+        5
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-79",
+        1
+      ],
+      [
+        "CWE-190",
+        1
+      ],
+      [
+        "CWE-639",
+        1
+      ]
+    ],
+    "threat_index": 262.3,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 262.3,
+        "yesterday": 255.2,
+        "change_pct": 2.8
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-40982",
+      "description": "Spring Cloud Config allows applications to serve arbitrary text and binary files through the spring-cloud-config-server module. A malicious user, or attacker, can send a request using a specially crafted URL that can lead to a directory traversal attack.\nSpring Cloud Config 3.1.x: affected from 3.1.",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-40982"
+      ],
+      "published": "2026-05-07T04:16:24.790"
+    },
+    {
+      "id": "CVE-2026-41201",
+      "description": "CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. In version 0.31.4.0, an attacker can achieve Full Account Takeover & Privilege Escalation via Stored DOM XSS in backup module filename field manipulated via a",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/ci4-cms-erp/ci4ms/releases/tag/0.31.5.0",
+        "https://github.com/ci4-cms-erp/ci4ms/security/advisories/GHSA-qxpq-82f3-xj47"
+      ],
+      "published": "2026-05-07T04:16:26.240"
+    },
+    {
+      "id": "CVE-2026-41142",
+      "description": "OpenEXR provides the specification and reference implementation of the EXR file format, an image storage format for the motion picture industry. From versions 3.0.0 to before 3.2.9, 3.3.0 to before 3.3.11, and 3.4.0 to before 3.4.11, there is an integer overflow in ImageChannel::resize that leads to",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/AcademySoftwareFoundation/openexr/commit/0592ee539f33c122c90f09238579b902d838afb4",
+        "https://github.com/AcademySoftwareFoundation/openexr/pull/2367",
+        "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-m25w-72cj-q6mg"
+      ],
+      "published": "2026-05-07T04:16:26.020"
+    },
+    {
+      "id": "CVE-2026-40981",
+      "description": "When using Google Secrets Manager as a backend for the Spring Cloud Config server a client can craft a request to the config server potentially exposing secrets from unintended GCP projects.\nSpring Cloud Config 3.1.x: affected from 3.1.0 through 3.1.13 (inclusive); upgrade to 3.1.14 or greater (Ente",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-40981"
+      ],
+      "published": "2026-05-07T04:16:24.607"
+    },
+    {
+      "id": "CVE-2026-41640",
+      "description": "NocoBase is an AI-powered no-code/low-code platform for building business applications and enterprise solutions. Prior to version 2.0.39, the queryParentSQL() function in the core database package constructs a recursive CTE query by joining nodeIds with string concatenation instead of using paramete",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/nocobase/nocobase/commit/202e2b8efe44ba90adbf1087f6f70881ff947604",
+        "https://github.com/nocobase/nocobase/pull/9133",
+        "https://github.com/nocobase/nocobase/releases/tag/v2.0.39"
+      ],
+      "published": "2026-05-07T04:16:28.277"
+    },
+    {
+      "id": "CVE-2026-41002",
+      "description": "The base directory (`spring.cloud.config.server.git.basedir`) used by the Spring Cloud Config Server to clone Git repositories to is susceptible to time-of-check-time-of-use (TOCTOU) attacks.\nSpring Cloud Config 3.1.x: affected from 3.1.0 through 3.1.13 (inclusive); upgrade to 3.1.14 or greater (Ent",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-41002"
+      ],
+      "published": "2026-05-07T04:16:25.707"
+    },
+    {
+      "id": "CVE-2026-4807",
+      "description": "The Appointment Booking Calendar plugin for WordPress is vulnerable to Missing Authorization in versions up to and including 1.6.10.6. This is due to a flawed authorization logic in the nonce_permissions_check() method combined with the public exposure of a site-wide reusable nonce. The plugin expos",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.9.29/booking-app-new/iframe-inner.php#L444",
+        "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.9.29/includes/class-appointment-model.php#L698",
+        "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.9.29/includes/class-bootstrap.php#L151"
+      ],
+      "published": "2026-05-07T03:16:08.673"
+    },
+    {
+      "id": "CVE-2026-41655",
+      "description": "Admidio is an open-source user management solution. Prior to version 5.0.9, the ecard_preview.php endpoint does not validate that the ecard_template POST parameter is a safe filename before passing it to ECard::getEcardTemplate(). An authenticated user can supply a path traversal payload (e.g., ../c",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/Admidio/admidio/releases/tag/v5.0.9",
+        "https://github.com/Admidio/admidio/security/advisories/GHSA-m3vp-3jjm-gpmx",
+        "https://github.com/Admidio/admidio/security/advisories/GHSA-m3vp-3jjm-gpmx"
+      ],
+      "published": "2026-05-07T04:16:28.470"
+    },
+    {
+      "id": "CVE-2026-40004",
+      "description": "There exists an openssl.cnf privilege escalation vulnerability in ZTE Cloud PC client uSmartview. An attacker can execute arbitrary code locally and escalate privileges.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-427"
+      ],
+      "references": [
+        "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/3126272076755775573"
+      ],
+      "published": "2026-05-07T04:16:23.073"
+    },
+    {
+      "id": "CVE-2026-6222",
+      "description": "The Forminator Forms plugin for WordPress is vulnerable to Missing Authorization in versions up to and including 1.51.1. This is due to the `processRequest()` method in `Forminator_Admin_Module_Edit_Page` (admin/abstracts/class-admin-module-edit-page.php) dispatching sensitive module-management acti",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/forminator/tags/1.51.1/admin/abstracts/class-admin-module-edit-page.php#L1008",
+        "https://plugins.trac.wordpress.org/browser/forminator/tags/1.51.1/admin/abstracts/class-admin-module-edit-page.php#L951",
+        "https://plugins.trac.wordpress.org/browser/forminator/tags/1.51.1/admin/classes/class-admin-data.php#L141"
+      ],
+      "published": "2026-05-07T02:16:37.920"
+    },
+    {
+      "id": "CVE-2026-40003",
+      "description": "ZTE ZX297520V3 BootROM contains a vulnerability that allows arbitrary memory writes via USB. Attackers can exploit the lack of target address validation in the USB download mode to write data to any location in BootROM runtime memory, thereby overwriting the stack, hijacking the execution flow, bypa",
+      "severity": "MEDIUM",
+      "score": 5.1,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/2144487415169560645"
+      ],
+      "published": "2026-05-07T02:16:03.453"
+    },
+    {
+      "id": "CVE-2026-41657",
+      "description": "Admidio is an open-source user management solution. Prior to version 5.0.9, the contacts_data.php endpoint uses a weaker permission check (isAdministratorUsers(), requiring only rol_edit_user=true) than the frontend UI (contacts.php) which correctly requires the stronger isAdministrator() (requiring",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/Admidio/admidio/releases/tag/v5.0.9",
+        "https://github.com/Admidio/admidio/security/advisories/GHSA-g8p8-94f2-28gr",
+        "https://github.com/Admidio/admidio/security/advisories/GHSA-g8p8-94f2-28gr"
+      ],
+      "published": "2026-05-07T04:16:28.920"
+    },
+    {
+      "id": "CVE-2026-41656",
+      "description": "Admidio is an open-source user management solution. Prior to version 5.0.9, the add mode in modules/documents-files.php accepts a name parameter validated only as 'string' type (HTML encoding), allowing path traversal characters (../) to pass through unfiltered. Combined with the absence of CSRF pro",
+      "severity": "MEDIUM",
+      "score": 4.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/Admidio/admidio/releases/tag/v5.0.9",
+        "https://github.com/Admidio/admidio/security/advisories/GHSA-m9h6-8pqm-xrhf",
+        "https://github.com/Admidio/admidio/security/advisories/GHSA-m9h6-8pqm-xrhf"
+      ],
+      "published": "2026-05-07T04:16:28.633"
+    },
+    {
+      "id": "CVE-2026-41004",
+      "description": "When enabling trace logging in Spring Cloud Config Server sensitive information was placed in plain text in the logs.\nSpring Cloud Config 3.1.x: affected from 3.1.0 through 3.1.13 (inclusive); upgrade to 3.1.14 or greater (Enterprise Support Only). Spring Cloud Config 4.1.x: affected from 4.1.0 thro",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-532"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-41004"
+      ],
+      "published": "2026-05-07T04:16:25.863"
+    },
+    {
+      "id": "CVE-2026-44597",
+      "description": "Tor before 0.4.9.7 has an out-of-bounds read when an END, a TRUNCATE, or a TRUNCATED cell lacks a reason in its payload, aka TROVE-2026-011.",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-684"
+      ],
+      "references": [
+        "https://forum.torproject.org/c/news/tor-release-announcement/28",
+        "https://gitlab.torproject.org/tpo/core/tor/-/commit/8f98054b1982d00a14639864d03e9afd90b87481",
+        "https://gitlab.torproject.org/tpo/core/tor/-/work_items/41254"
+      ],
+      "published": "2026-05-07T01:16:01.163"
+    },
+    {
+      "id": "CVE-2026-44599",
+      "description": "Tor before 0.4.9.7 can attempt or accept BEGIN_DIR via conflux legs, aka TROVE-2026-008.",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-669"
+      ],
+      "references": [
+        "https://forum.torproject.org/c/news/tor-release-announcement/28",
+        "https://gitlab.torproject.org/tpo/core/tor/-/commit/50f90ba849088247734786922855c22661c6fa03",
+        "https://gitlab.torproject.org/tpo/core/tor/-/work_items/41243"
+      ],
+      "published": "2026-05-07T03:16:07.327"
+    },
+    {
+      "id": "CVE-2026-44600",
+      "description": "Tor before 0.4.9.7 mishandles accounting of the conflux out-of-order queue during the clearing of a queue, aka TROVE-2026-010.",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-696"
+      ],
+      "references": [
+        "https://forum.torproject.org/c/news/tor-release-announcement/28",
+        "https://gitlab.torproject.org/tpo/core/tor/-/commit/a198185ed863677d60eec120126730628dac35bb",
+        "https://gitlab.torproject.org/tpo/core/tor/-/work_items/41251"
+      ],
+      "published": "2026-05-07T03:16:08.523"
+    },
+    {
+      "id": "CVE-2026-41202",
+      "description": "CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to version 0.31.5.0, ci4ms Backup::restore extracts user uploaded ZIP archives without validating entry names, allowing an authenticated backend user wi",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/ci4-cms-erp/ci4ms/releases/tag/0.31.5.0",
+        "https://github.com/ci4-cms-erp/ci4ms/security/advisories/GHSA-xp9f-pvvc-57p4",
+        "https://github.com/ci4-cms-erp/ci4ms/security/advisories/GHSA-xp9f-pvvc-57p4"
+      ],
+      "published": "2026-05-07T04:16:27.453"
+    },
+    {
+      "id": "CVE-2026-41203",
+      "description": "CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to version 0.31.5.0, ci4ms Theme::upload extracts user uploaded ZIP archives without validating entry names, allowing an authenticated backend user with",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/ci4-cms-erp/ci4ms/releases/tag/0.31.5.0",
+        "https://github.com/ci4-cms-erp/ci4ms/security/advisories/GHSA-xv3r-vr59-95rg",
+        "https://github.com/ci4-cms-erp/ci4ms/security/advisories/GHSA-xv3r-vr59-95rg"
+      ],
+      "published": "2026-05-07T04:16:27.670"
+    },
+    {
+      "id": "CVE-2026-41587",
+      "description": "CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. From version 0.26.0.0 to before version 0.31.7.0, a theme upload feature allows any authenticated backend user with theme-upload permission to achieve remote ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/ci4-cms-erp/ci4ms/commit/b969465e71eacd9eb57014ad1fce1fc34fa7bca0",
+        "https://github.com/ci4-cms-erp/ci4ms/security/advisories/GHSA-fw49-9xq4-gmx6",
+        "https://github.com/ci4-cms-erp/ci4ms/security/advisories/GHSA-fw49-9xq4-gmx6"
+      ],
+      "published": "2026-05-07T04:16:27.860"
+    }
+  ]
+}
