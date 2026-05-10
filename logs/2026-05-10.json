@@ -1,0 +1,366 @@
+{
+  "timestamp": "2026-05-10T05:47:04.723404+00:00",
+  "scan_id": "e9b02c324d",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 3,
+      "MEDIUM": 10,
+      "LOW": 3,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-404",
+        5
+      ],
+      [
+        "CWE-94",
+        3
+      ],
+      [
+        "CWE-284",
+        3
+      ],
+      [
+        "CWE-74",
+        3
+      ],
+      [
+        "CWE-89",
+        3
+      ]
+    ],
+    "threat_index": 260.9,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 260.9,
+        "yesterday": 262.3,
+        "change_pct": -0.5
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 2,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-41500",
+      "description": "electerm is an open-sourced terminal/ssh/sftp/telnet/serialport/RDP/VNC/Spice/ftp client. Prior to version 3.3.8, a command injection vulnerability exists in github.com/elcterm/electerm/npm/install.js:150. The runMac() function appends attacker-controlled remote releaseInfo.name directly into an exe",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/electerm/electerm/commit/59708b38c8a52f5db59d7d4eff98e31d573128ee",
+        "https://github.com/electerm/electerm/releases/tag/v3.3.8",
+        "https://github.com/electerm/electerm/security/advisories/GHSA-wxw2-rwmh-vr8f"
+      ],
+      "published": "2026-05-08T04:16:17.720"
+    },
+    {
+      "id": "CVE-2026-41501",
+      "description": "electerm is an open-sourced terminal/ssh/sftp/telnet/serialport/RDP/VNC/Spice/ftp client. Prior to version 3.3.8, a command injection vulnerability exists in github.com/elcterm/electerm/npm/install.js:130. The runLinux() function appends attacker-controlled remote version strings directly into an ex",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/electerm/electerm/commit/59708b38c8a52f5db59d7d4eff98e31d573128ee",
+        "https://github.com/electerm/electerm/releases/tag/v3.3.8",
+        "https://github.com/electerm/electerm/security/advisories/GHSA-8x35-hph8-37hq"
+      ],
+      "published": "2026-05-08T04:16:17.940"
+    },
+    {
+      "id": "CVE-2026-41900",
+      "description": "OpenLearnX is an open-source, decentralized learning and assessment platform. Prior to version 2.0.3, a remote code execution (RCE) vulnerability was identified in the OpenLearnX code execution environment, allowing sandbox escape and arbitrary command execution. This issue has been patched in versi",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-78",
+        "CWE-94",
+        "CWE-250",
+        "CWE-284",
+        "CWE-693"
+      ],
+      "references": [
+        "https://github.com/th30d4y/OpenLearnX/commit/14765d7d1856d564747c55c5412e2f38feab079e",
+        "https://github.com/th30d4y/OpenLearnX/releases/tag/v2.0.3-security-fix",
+        "https://github.com/th30d4y/OpenLearnX/security/advisories/GHSA-8h25-q488-4hxw"
+      ],
+      "published": "2026-05-08T04:16:18.710"
+    },
+    {
+      "id": "CVE-2026-8126",
+      "description": "A flaw has been found in SourceCodester Comment System 1.0. This issue affects some unknown processing of the file post_comment.php. This manipulation of the argument Name causes sql injection. Remote exploitation of the attack is possible. The exploit has been published and may be used.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/redshadowword-cell/CVE/issues/7",
+        "https://vuldb.com/submit/808686",
+        "https://vuldb.com/vuln/361916"
+      ],
+      "published": "2026-05-08T03:16:25.143"
+    },
+    {
+      "id": "CVE-2026-8128",
+      "description": "A vulnerability was found in SourceCodester SUP Online Shopping 1.0. The affected element is an unknown function of the file /admin/viewmsg.php. Performing a manipulation of the argument msgid results in sql injection. The attack is possible to be carried out remotely. The exploit has been made publ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/redshadowword-cell/CVE/issues/9",
+        "https://vuldb.com/submit/808772",
+        "https://vuldb.com/vuln/361918"
+      ],
+      "published": "2026-05-08T03:16:25.553"
+    },
+    {
+      "id": "CVE-2026-8116",
+      "description": "A weakness has been identified in huangjunsen0406 xiaozhi-mcphub up to 1.0.3. This vulnerability affects unknown code of the file src/controllers/dxtController.ts. This manipulation of the argument manifest.name causes path traversal. The attack may be initiated remotely. The exploit has been made a",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/huangjunsen0406/xiaozhi-mcphub/",
+        "https://github.com/huangjunsen0406/xiaozhi-mcphub/issues/29",
+        "https://vuldb.com/submit/808260"
+      ],
+      "published": "2026-05-08T00:16:09.833"
+    },
+    {
+      "id": "CVE-2026-8125",
+      "description": "A vulnerability was detected in code-projects Simple Chat System 1.0. This vulnerability affects unknown code of the file sendMessage.php. The manipulation of the argument type/length/business parameter validity results in sql injection. The attack may be launched remotely. The exploit is now public",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/MICHEY-Ben/cve/issues/1",
+        "https://vuldb.com/submit/808679"
+      ],
+      "published": "2026-05-08T02:16:08.200"
+    },
+    {
+      "id": "CVE-2026-8127",
+      "description": "A vulnerability has been found in eladmin up to 2.7. Impacted is the function checkLevel of the file /rest/UserController.java of the component Users API Endpoint. Such manipulation leads to improper access controls. The attack can be executed remotely. The exploit has been disclosed to the public a",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/elunez/eladmin/issues/897",
+        "https://vuldb.com/submit/808771",
+        "https://vuldb.com/vuln/361917"
+      ],
+      "published": "2026-05-08T03:16:25.350"
+    },
+    {
+      "id": "CVE-2026-41646",
+      "description": "Nuclei is a vulnerability scanner built on a simple YAML-based DSL. From version 3.0.0 to before version 3.8.0, a vulnerability in Nuclei's JavaScript protocol runtime allows JavaScript templates to read local .js and .json files through the require() function, bypassing the default local file acces",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/projectdiscovery/nuclei/commit/6f2ade6a9b427c284c15a43445f9c7f055e60e5d",
+        "https://github.com/projectdiscovery/nuclei/pull/7332",
+        "https://github.com/projectdiscovery/nuclei/security/advisories/GHSA-29rg-wmcw-hpf4"
+      ],
+      "published": "2026-05-08T04:16:18.383"
+    },
+    {
+      "id": "CVE-2026-41645",
+      "description": "Nuclei is a vulnerability scanner built on a simple YAML-based DSL. From version 3.0.0 to before version 3.8.0, a vulnerability in Nuclei's expression evaluation engine makes it possible for a malicious target server to inject and execute supported DSL expressions. This happens when HTTP response da",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/projectdiscovery/nuclei/commit/6c803c74d193f85f8a6d9803ce493fd302cad0eb",
+        "https://github.com/projectdiscovery/nuclei/commit/d2217320162d5782ca7cb95bef9dda17063818f3",
+        "https://github.com/projectdiscovery/nuclei/pull/7221"
+      ],
+      "published": "2026-05-08T04:16:18.177"
+    },
+    {
+      "id": "CVE-2026-8117",
+      "description": "A security vulnerability has been detected in SourceCodester Pizzafy Ecommerce System 1.0. This issue affects some unknown processing of the file /admin/index.php. Such manipulation of the argument page leads to cross site scripting. The attack may be launched remotely. The exploit has been disclose",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/redshadowword-cell/CVE/issues/5",
+        "https://vuldb.com/submit/808327",
+        "https://vuldb.com/vuln/361905"
+      ],
+      "published": "2026-05-08T00:16:10.320"
+    },
+    {
+      "id": "CVE-2026-8120",
+      "description": "A flaw has been found in Open5GS up to 2.7.7. The affected element is the function nssf_nnrf_nsselection_handle_get_from_amf_or_vnssf of the file /src/nssf/nnssf-handler.c of the component NSSF. Executing a manipulation can lead to denial of service. The attack can be executed remotely. The exploit ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4432",
+        "https://vuldb.com/submit/808421"
+      ],
+      "published": "2026-05-08T01:16:09.643"
+    },
+    {
+      "id": "CVE-2026-8121",
+      "description": "A vulnerability has been found in Open5GS up to 2.7.7. The impacted element is the function ogs_sbi_parse_plmn_list in the library /lib/sbi/conv.c of the component NSSF. The manipulation leads to denial of service. The attack is possible to be carried out remotely. The exploit has been disclosed to ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4433",
+        "https://vuldb.com/submit/808422"
+      ],
+      "published": "2026-05-08T01:16:09.860"
+    },
+    {
+      "id": "CVE-2026-8122",
+      "description": "A vulnerability was found in Open5GS up to 2.7.7. This affects the function ogs_sbi_discovery_option_add_service_names in the library /lib/sbi/message.c of the component NSSF. The manipulation results in denial of service. The attack may be performed from remote. The exploit has been made public and",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4435",
+        "https://vuldb.com/submit/808425"
+      ],
+      "published": "2026-05-08T01:16:10.053"
+    },
+    {
+      "id": "CVE-2026-8123",
+      "description": "A vulnerability was determined in Open5GS up to 2.7.7. This impacts the function ogs_sbi_discovery_option_add_snssais in the library /lib/sbi/message.c of the component NSSF. This manipulation causes denial of service. It is possible to initiate the attack remotely. The exploit has been publicly dis",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4436",
+        "https://vuldb.com/submit/808426"
+      ],
+      "published": "2026-05-08T02:16:07.803"
+    },
+    {
+      "id": "CVE-2026-8119",
+      "description": "A vulnerability was detected in Open5GS up to 2.7.7. Impacted is the function ogs_sbi_stream_find_by_id in the library /lib/sbi/nghttp2-server.c of the component NSSF. Performing a manipulation results in denial of service. Attacking locally is a requirement. The exploit is now public and may be use",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4431",
+        "https://vuldb.com/submit/808420"
+      ],
+      "published": "2026-05-08T01:16:08.367"
+    },
+    {
+      "id": "CVE-2026-8124",
+      "description": "A security vulnerability has been detected in GPAC up to 26.02.0. This affects the function sidx_box_read of the file src/isomedia/box_code_base.c. The manipulation leads to allocation of resources. The attack must be carried out locally. The exploit has been disclosed publicly and may be used. The ",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/gpac/gpac/",
+        "https://github.com/gpac/gpac/commit/442e2299530138d8f874fd885c565ba98a6318ba",
+        "https://github.com/gpac/gpac/issues/3519"
+      ],
+      "published": "2026-05-08T02:16:08.000"
+    },
+    {
+      "id": "CVE-2026-41498",
+      "description": "Kimai is an open-source time tracking application. Prior to version 2.54.0, the Team API endpoints use #[IsGranted('edit_team')] instead of #[IsGranted('edit', 'team')], causing Symfony TeamVoter to abstain from voting. This removes entity-level ownership checks on team operations, allowing any user",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/kimai/kimai/releases/tag/2.54.0",
+        "https://github.com/kimai/kimai/security/advisories/GHSA-jv9x-w4gm-hwcm",
+        "https://github.com/kimai/kimai/security/advisories/GHSA-jv9x-w4gm-hwcm"
+      ],
+      "published": "2026-05-08T04:16:14.617"
+    },
+    {
+      "id": "CVE-2026-3508",
+      "description": "An Out-of-bounds Read vulnerability in the IOCTL handler in ASUS System Control Interface allows a local user to cause system crash (BSOD) via a read size that exceeds the buffer size.Refer to the '\nSecurity Update for MyASUS\u00a0' section on the ASUS Security Advisory for more information.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory"
+      ],
+      "published": "2026-05-08T03:16:24.820"
+    },
+    {
+      "id": "CVE-2026-6737",
+      "description": "An Exposed IOCTL with Insufficient Access Control vulnerability in AsusPTPFilter allows a local user to bypass driver security mechanisms and obtain restricted touchpad information or render the touchpad unusable\u00a0via crafted IOCTL requests.Refer to the '\nSecurity Update for ASUS Precision Touchpad\u00a0'",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-782"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory"
+      ],
+      "published": "2026-05-08T03:16:24.990"
+    }
+  ]
+}
