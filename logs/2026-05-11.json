@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-11T11:38:59.475356+00:00",
-  "scan_id": "a7d3b2a15b",
+  "timestamp": "2026-05-11T17:06:41.882193+00:00",
+  "scan_id": "8da51a0e58",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -320,6 +320,7 @@
       ],
       "references": [
         "https://github.com/argoproj/argo-workflows/releases/tag/v4.0.5",
+        "https://github.com/argoproj/argo-workflows/security/advisories/GHSA-7vf8-2cr6-54mf",
         "https://github.com/argoproj/argo-workflows/security/advisories/GHSA-7vf8-2cr6-54mf"
       ],
       "published": "2026-05-09T04:16:25.367"
