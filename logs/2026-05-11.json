@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-11T17:06:41.882193+00:00",
-  "scan_id": "8da51a0e58",
+  "timestamp": "2026-05-11T21:47:18.177127+00:00",
+  "scan_id": "845f146bd2",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -64,6 +64,7 @@
         "CWE-918"
       ],
       "references": [
+        "https://github.com/linkwarden/linkwarden/security/advisories/GHSA-5qpc-x7rv-hvmp",
         "https://github.com/linkwarden/linkwarden/security/advisories/GHSA-5qpc-x7rv-hvmp"
       ],
       "published": "2026-05-09T00:16:29.373"
