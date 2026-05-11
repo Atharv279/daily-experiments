@@ -1,0 +1,343 @@
+{
+  "timestamp": "2026-05-11T06:10:27.053673+00:00",
+  "scan_id": "02e3a9ba41",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 5,
+      "MEDIUM": 3,
+      "UNKNOWN": 11
+    },
+    "top_cwes": [
+      [
+        "CWE-862",
+        6
+      ],
+      [
+        "CWE-863",
+        2
+      ],
+      [
+        "CWE-476",
+        2
+      ],
+      [
+        "CWE-918",
+        1
+      ],
+      [
+        "CWE-917",
+        1
+      ]
+    ],
+    "threat_index": 186.8,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 186.8,
+        "yesterday": 260.9,
+        "change_pct": -28.4
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 2,
+        "change_pct": -50.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-44313",
+      "description": "Linkwarden is a self-hosted, open-source collaborative bookmark manager to collect, organize and archive webpages. Prior to version 2.13.0, a Server-Side Request Forgery (SSRF) vulnerability in the fetchTitleAndHeaders function allows authenticated users to make arbitrary HTTP requests to internal s",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/linkwarden/linkwarden/security/advisories/GHSA-5qpc-x7rv-hvmp"
+      ],
+      "published": "2026-05-09T00:16:29.373"
+    },
+    {
+      "id": "CVE-2026-41705",
+      "description": "Spring AI's MilvusVectorStore#doDelete(List) implementation is vulnerable to filter-expression injection via unsanitized document IDs.\nSpring AI 1.0.x: affected from 1.0.0 through latest 1.0.x; upgrade to 1.0.7 or greater. Spring AI 1.1.x: affected from 1.1.0 through latest 1.1.x; upgrade to 1.1.6 o",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-917"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-41705"
+      ],
+      "published": "2026-05-09T01:16:08.690"
+    },
+    {
+      "id": "CVE-2026-6665",
+      "description": "The SCRAM code in PgBouncer before 1.25.2 did not check the return value of strlcat() correctly when building the contents of the SCRAM client-final-message. A malicious backend that sends a SCRAM server-final-message with a long nonce can trigger a stack overflow.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://www.pgbouncer.org/changelog.html#pgbouncer-125x"
+      ],
+      "published": "2026-05-09T01:16:09.013"
+    },
+    {
+      "id": "CVE-2026-42296",
+      "description": "Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes. Prior to versions 3.7.14 and 4.0.5, a user with create Workflow permission can bypass templateReferencing: Strict to get host network access, switch service accounts, override pod securit",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/argoproj/argo-workflows/commit/534f4ff1cbd86908e8ff76d97d553ad5a49a950d",
+        "https://github.com/argoproj/argo-workflows/releases/tag/v3.7.14",
+        "https://github.com/argoproj/argo-workflows/releases/tag/v4.0.5"
+      ],
+      "published": "2026-05-09T04:16:25.563"
+    },
+    {
+      "id": "CVE-2026-6664",
+      "description": "An integer overflow in network packet parsing code in PgBouncer before 1.25.2 bypasses a boundary check and can lead to a crash. An unauthenticated remote attacker can crash PgBouncer with a malformed SCRAM authentication packet.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://www.pgbouncer.org/changelog.html#pgbouncer-125x"
+      ],
+      "published": "2026-05-09T01:16:08.863"
+    },
+    {
+      "id": "CVE-2026-41311",
+      "description": "LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScript. Prior to version 10.25.7, a circular block reference in {% layout %} / {% block %} causes an infinite recursive loop, consuming all available memory (~4GB) and crashing the Node.js process with FATAL ERROR: JavaScrip",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://github.com/harttle/liquidjs/commit/e2311dfd6e82f73509308aa8a3a1fafc92e226f0",
+        "https://github.com/harttle/liquidjs/releases/tag/v10.25.7",
+        "https://github.com/harttle/liquidjs/security/advisories/GHSA-4rc3-7j7w-m548"
+      ],
+      "published": "2026-05-09T04:16:21.913"
+    },
+    {
+      "id": "CVE-2026-6666",
+      "description": "A possible null pointer reference in PgBouncer before 1.25.2 could lead to a crash, if a server sends an error response without SQLSTATE field.",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://www.pgbouncer.org/changelog.html#pgbouncer-125x"
+      ],
+      "published": "2026-05-09T01:16:09.153"
+    },
+    {
+      "id": "CVE-2026-7652",
+      "description": "The LatePoint plugin for WordPress is vulnerable to Account Takeover via Weak Password Recovery Mechanism in the unauthenticated guest booking flow in versions up to, and including, 5.5.0 This is due to the save_connected_wordpress_user() function propagating a LatePoint customer's email address to ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-640"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.4.2/latepoint.php#L1165",
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.4.2/lib/helpers/customer_helper.php#L238",
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.4.2/lib/helpers/steps_helper.php#L1940"
+      ],
+      "published": "2026-05-09T03:16:15.117"
+    },
+    {
+      "id": "CVE-2026-6667",
+      "description": "PgBouncer before 1.25.2 did not perform an appropriate authorization check for the KILL_CLIENT admin command. All users with access to the administration console (which itself requires authorization) could run this command. It would have been correct to allow only users listed in the admin_users par",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://www.pgbouncer.org/changelog.html#pgbouncer-125x"
+      ],
+      "published": "2026-05-09T01:16:09.287"
+    },
+    {
+      "id": "CVE-2026-42455",
+      "description": "Linkwarden is a self-hosted, open-source collaborative bookmark manager to collect, organize and archive webpages. In versions 2.14.0 and prior, the archive upload endpoint (POST /api/v1/archives/[linkId]?format=4) accepts HTML files (text/html) without sanitizing JavaScript content. When the archiv",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/linkwarden/linkwarden/security/advisories/GHSA-fjvg-mch3-j3vg"
+      ],
+      "published": "2026-05-09T00:16:29.180"
+    },
+    {
+      "id": "CVE-2026-8207",
+      "description": "Gibbon versions before\u00a0v30.0.01 are affected by an authenticated SQL Injection vulnerability by abusing the  Tracking/graphing https://github.com/GibbonEdu/core/blob/c431e25fdc874adece5d2dc7e408e9aa2d1abadb/modules/Tracking/graphing.php#L145  feature. Successful exploitation requires Teacher or high",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/GibbonEdu/core/releases/tag/v30.0.01",
+        "https://projectblack.io/blog/gibbon-v30-authenticated-sql-injection-and-rce/#sql-injectiongetting-warmed-up"
+      ],
+      "published": "2026-05-09T03:16:16.227"
+    },
+    {
+      "id": "CVE-2026-41163",
+      "description": "bubblewrap is a low-level unprivileged sandboxing tool. From version 0.11.0 to before version 0.11.2, if bubblewrap is installed in setuid mode then the user can use ptrace to attach to bubblewrap and control the unprivileged part of the sandbox setup phase. This allows the attacker to arbitrarily u",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://github.com/containers/bubblewrap/releases/tag/v0.11.2",
+        "https://github.com/containers/bubblewrap/security/advisories/GHSA-xq78-7hw4-5jvp"
+      ],
+      "published": "2026-05-09T04:16:21.167"
+    },
+    {
+      "id": "CVE-2026-42051",
+      "description": "Kirby is an open-source content management system. Prior to versions 4.9.0 and 5.4.0, the system API endpoint leaks license data and installed version to authenticated users. This issue has been patched in versions 4.9.0 and 5.4.0.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/getkirby/kirby/releases/tag/4.9.0",
+        "https://github.com/getkirby/kirby/releases/tag/5.4.0",
+        "https://github.com/getkirby/kirby/security/advisories/GHSA-x68m-c7jf-2572"
+      ],
+      "published": "2026-05-09T04:16:22.110"
+    },
+    {
+      "id": "CVE-2026-42069",
+      "description": "Kirby is an open-source content management system. Prior to versions 4.9.0 and 5.4.0, read access to site, user and role information is not gated by permissions. This issue has been patched in versions 4.9.0 and 5.4.0.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/getkirby/kirby/releases/tag/4.9.0",
+        "https://github.com/getkirby/kirby/releases/tag/5.4.0",
+        "https://github.com/getkirby/kirby/security/advisories/GHSA-2h7v-4372-f6x2"
+      ],
+      "published": "2026-05-09T04:16:22.297"
+    },
+    {
+      "id": "CVE-2026-42137",
+      "description": "Kirby is an open-source content management system. Prior to versions 4.9.0 and 5.4.0, `pages.access/list` and `files.access/list` permissions are not consistently checked in the Panel and REST API. This issue has been patched in versions 4.9.0 and 5.4.0.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862",
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/getkirby/kirby/releases/tag/4.9.0",
+        "https://github.com/getkirby/kirby/releases/tag/5.4.0",
+        "https://github.com/getkirby/kirby/security/advisories/GHSA-85x2-r8xv-ww8c"
+      ],
+      "published": "2026-05-09T04:16:22.653"
+    },
+    {
+      "id": "CVE-2026-42174",
+      "description": "Kirby is an open-source content management system. Prior to versions 4.9.0 and 5.4.0, user avatar creation, replacement and deletion are not gated by user update permissions. This issue has been patched in versions 4.9.0 and 5.4.0.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/getkirby/kirby/releases/tag/4.9.0",
+        "https://github.com/getkirby/kirby/releases/tag/5.4.0",
+        "https://github.com/getkirby/kirby/security/advisories/GHSA-39cp-6679-8xv2"
+      ],
+      "published": "2026-05-09T04:16:23.600"
+    },
+    {
+      "id": "CVE-2026-42183",
+      "description": "Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes. From version 4.0.0 to before version 4.0.5, a nil pointer dereference in server/auth/gatekeeper.go rbacAuthorization() causes a panic (denial of service) for SSO users whose claims match ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/argoproj/argo-workflows/commit/c4cc17d0c034fa9a9cc01ef1af6c8016c93071d4",
+        "https://github.com/argoproj/argo-workflows/releases/tag/v4.0.5",
+        "https://github.com/argoproj/argo-workflows/security/advisories/GHSA-p4gq-3vxj-f4jq"
+      ],
+      "published": "2026-05-09T04:16:23.810"
+    },
+    {
+      "id": "CVE-2026-42294",
+      "description": "Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes. Prior to versions 3.7.14 and 4.0.5, the Webhook Interceptor loads the entire request body into memory before authenticating the request or verifying its signature. This occurs on the /api",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/argoproj/argo-workflows/commit/7abb4de6c3599e2d5d960ba4d5de4cf1df109965",
+        "https://github.com/argoproj/argo-workflows/releases/tag/v3.7.14",
+        "https://github.com/argoproj/argo-workflows/releases/tag/v4.0.5"
+      ],
+      "published": "2026-05-09T04:16:24.903"
+    },
+    {
+      "id": "CVE-2026-42295",
+      "description": "Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes. From version 4.0.0 to before version 4.0.5, the workflow executor logs all artifact repository credentials (S3 access keys, secret keys, GCS service account keys, Azure account keys, Git ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://github.com/argoproj/argo-workflows/releases/tag/v4.0.5",
+        "https://github.com/argoproj/argo-workflows/security/advisories/GHSA-7vf8-2cr6-54mf"
+      ],
+      "published": "2026-05-09T04:16:25.367"
+    },
+    {
+      "id": "CVE-2026-42297",
+      "description": "Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes. From version 4.0.0 to before version 4.0.5, the Sync Service's ConfigMap-backed provider (server/sync/sync_cm.go) performs zero authorization checks on all CRUD operations (create, read, ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/argoproj/argo-workflows/commit/09fff05e0830c14a5e36cc40597ad84881db1ab6",
+        "https://github.com/argoproj/argo-workflows/releases/tag/v4.0.5",
+        "https://github.com/argoproj/argo-workflows/security/advisories/GHSA-xchc-cqwg-g76q"
+      ],
+      "published": "2026-05-09T04:16:25.727"
+    }
+  ]
+}
