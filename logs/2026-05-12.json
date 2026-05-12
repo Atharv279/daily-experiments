@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-05-12T16:35:12.279067+00:00",
-  "scan_id": "915b60d321",
+  "timestamp": "2026-05-12T21:46:33.949629+00:00",
+  "scan_id": "6a6d467ca7",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
-      "HIGH": 1,
-      "MEDIUM": 7,
-      "LOW": 4,
-      "UNKNOWN": 8
+      "CRITICAL": 3,
+      "HIGH": 4,
+      "MEDIUM": 9,
+      "LOW": 4
     },
     "top_cwes": [
       [
@@ -23,16 +23,16 @@
         4
       ],
       [
-        "CWE-287",
+        "CWE-416",
         2
       ],
       [
-        "CWE-416",
+        "CWE-125",
         2
       ]
     ],
-    "threat_index": 107.7,
-    "critical_count": 0
+    "threat_index": 318.0,
+    "critical_count": 3
   },
   "delta": {
     "status": "compared",
@@ -43,18 +43,97 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 107.7,
+        "today": 318.0,
         "yesterday": 186.8,
-        "change_pct": -42.3
+        "change_pct": 70.2
       },
       "critical_count": {
-        "today": 0,
+        "today": 3,
         "yesterday": 1,
-        "change_pct": -100.0
+        "change_pct": 200.0
       }
     }
   },
   "cves": [
+    {
+      "id": "CVE-2025-14179",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, the PDO Firebird driver improperly handles NUL bytes when preparing SQL queries. During token-by-token query construction, a string token containing a NUL byte is copied via strncat(), which stops ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-w476-322c-wpvm"
+      ],
+      "published": "2026-05-10T05:16:09.853"
+    },
+    {
+      "id": "CVE-2026-6722",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, the SOAP extension's object deduplication mechanism stores pointers to PHP objects in a global map\u00a0without incrementing their reference counts. When an apache:Map node contains duplicate keys, proc",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-85c2-q967-79q5"
+      ],
+      "published": "2026-05-10T05:16:11.070"
+    },
+    {
+      "id": "CVE-2026-7261",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, when SoapServer is configured with SOAP_PERSISTENCE_SESSION, the handler object is persisted across requests via session storage. However, in the case SOAP requests results in an error, the persist",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-m33r-qmcv-p97q"
+      ],
+      "published": "2026-05-10T05:16:11.640"
+    },
+    {
+      "id": "CVE-2026-7258",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, some functions, including urldecode(), pass signed char to ctype functions (like\u00a0isxdigit()). On the systems with default signed char and optimized table-lookup ctype functions - such as NetBSD - t",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-m8rr-4c36-8gq4"
+      ],
+      "published": "2026-05-10T05:16:11.360"
+    },
+    {
+      "id": "CVE-2026-7262",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, when a SOAP server has a typemap configured, the decoding process contains a mistake which checks the wrong variable in case of missing value element.\u00a0 This leads to\u00a0dereferences a NULL pointer, ca",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-hmxp-6pc4-f3vv"
+      ],
+      "published": "2026-05-10T05:16:11.780"
+    },
+    {
+      "id": "CVE-2026-7568",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, the metaphone() function in ext/standard/metaphone.c uses a signed int variable to track the current position within the input string. If a string longer than 2,147,483,647 bytes is passed, a signe",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-125",
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-96wq-48vp-hh57"
+      ],
+      "published": "2026-05-10T05:16:11.920"
+    },
     {
       "id": "CVE-2026-8216",
       "description": "A vulnerability was identified in Industrial Application Software IAS Canias ERP 8.03. This issue affects the function iasServerRemoteInterface.doAction of the component Java RMI Session Management. Such manipulation leads to improper authentication. The attack can be launched remotely. The vendor w",
@@ -71,6 +150,19 @@
       "published": "2026-05-10T01:16:08.263"
     },
     {
+      "id": "CVE-2026-7259",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, a mismatch between encoding lists in Oniguruma and mbfl leads to\u00a0\u00a0a NULL pointer dereference, resulting in a segmentation fault and denial of service. The vulnerability is exploitable when user-con",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-wm6j-2649-pv75"
+      ],
+      "published": "2026-05-10T05:16:11.507"
+    },
+    {
       "id": "CVE-2026-8217",
       "description": "A security flaw has been discovered in Industrial Application Software IAS Canias ERP 8.03. Impacted is the function Runtime.getRuntime.exec of the component RMI Interface. Performing a manipulation of the argument troiaCode results in os command injection. The attack may be initiated remotely. The ",
       "severity": "MEDIUM",
@@ -85,6 +177,19 @@
         "https://vuldb.com/submit/808262"
       ],
       "published": "2026-05-10T02:16:08.833"
+    },
+    {
+      "id": "CVE-2026-6735",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, 8.5.* before 8.5.6, due to improper sanitation of user data, it\u00a0allows an attacker to compose an URL, which will cause the target to execute arbitrary JavaScript code (XSS) on the target's machine when the target is viewi",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-7qg2-v9fj-4mwv"
+      ],
+      "published": "2026-05-10T05:16:11.213"
     },
     {
       "id": "CVE-2026-8214",
@@ -239,111 +344,6 @@
         "https://vuldb.com/vuln/362438"
       ],
       "published": "2026-05-10T03:16:08.523"
-    },
-    {
-      "id": "CVE-2025-14179",
-      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, the PDO Firebird driver improperly handles NUL bytes when preparing SQL queries. During token-by-token query construction, a string token containing a NUL byte is copied via strncat(), which stops ",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-89"
-      ],
-      "references": [
-        "https://github.com/php/php-src/security/advisories/GHSA-w476-322c-wpvm"
-      ],
-      "published": "2026-05-10T05:16:09.853"
-    },
-    {
-      "id": "CVE-2026-6722",
-      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, the SOAP extension's object deduplication mechanism stores pointers to PHP objects in a global map\u00a0without incrementing their reference counts. When an apache:Map node contains duplicate keys, proc",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-416"
-      ],
-      "references": [
-        "https://github.com/php/php-src/security/advisories/GHSA-85c2-q967-79q5"
-      ],
-      "published": "2026-05-10T05:16:11.070"
-    },
-    {
-      "id": "CVE-2026-6735",
-      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, 8.5.* before 8.5.6, due to improper sanitation of user data, it\u00a0allows an attacker to compose an URL, which will cause the target to execute arbitrary JavaScript code (XSS) on the target's machine when the target is viewi",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-79"
-      ],
-      "references": [
-        "https://github.com/php/php-src/security/advisories/GHSA-7qg2-v9fj-4mwv"
-      ],
-      "published": "2026-05-10T05:16:11.213"
-    },
-    {
-      "id": "CVE-2026-7258",
-      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, some functions, including urldecode(), pass signed char to ctype functions (like\u00a0isxdigit()). On the systems with default signed char and optimized table-lookup ctype functions - such as NetBSD - t",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-125"
-      ],
-      "references": [
-        "https://github.com/php/php-src/security/advisories/GHSA-m8rr-4c36-8gq4"
-      ],
-      "published": "2026-05-10T05:16:11.360"
-    },
-    {
-      "id": "CVE-2026-7259",
-      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, a mismatch between encoding lists in Oniguruma and mbfl leads to\u00a0\u00a0a NULL pointer dereference, resulting in a segmentation fault and denial of service. The vulnerability is exploitable when user-con",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-476"
-      ],
-      "references": [
-        "https://github.com/php/php-src/security/advisories/GHSA-wm6j-2649-pv75"
-      ],
-      "published": "2026-05-10T05:16:11.507"
-    },
-    {
-      "id": "CVE-2026-7261",
-      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, when SoapServer is configured with SOAP_PERSISTENCE_SESSION, the handler object is persisted across requests via session storage. However, in the case SOAP requests results in an error, the persist",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-416"
-      ],
-      "references": [
-        "https://github.com/php/php-src/security/advisories/GHSA-m33r-qmcv-p97q"
-      ],
-      "published": "2026-05-10T05:16:11.640"
-    },
-    {
-      "id": "CVE-2026-7262",
-      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, when a SOAP server has a typemap configured, the decoding process contains a mistake which checks the wrong variable in case of missing value element.\u00a0 This leads to\u00a0dereferences a NULL pointer, ca",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-476"
-      ],
-      "references": [
-        "https://github.com/php/php-src/security/advisories/GHSA-hmxp-6pc4-f3vv"
-      ],
-      "published": "2026-05-10T05:16:11.780"
-    },
-    {
-      "id": "CVE-2026-7568",
-      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, the metaphone() function in ext/standard/metaphone.c uses a signed int variable to track the current position within the input string. If a string longer than 2,147,483,647 bytes is passed, a signe",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-125",
-        "CWE-190"
-      ],
-      "references": [
-        "https://github.com/php/php-src/security/advisories/GHSA-96wq-48vp-hh57"
-      ],
-      "published": "2026-05-10T05:16:11.920"
     }
   ]
 }
