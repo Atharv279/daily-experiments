@@ -1,0 +1,349 @@
+{
+  "timestamp": "2026-05-12T05:49:35.347025+00:00",
+  "scan_id": "f74cee6828",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 1,
+      "MEDIUM": 7,
+      "LOW": 4,
+      "UNKNOWN": 8
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        5
+      ],
+      [
+        "CWE-404",
+        4
+      ],
+      [
+        "CWE-94",
+        4
+      ],
+      [
+        "CWE-287",
+        2
+      ],
+      [
+        "CWE-416",
+        2
+      ]
+    ],
+    "threat_index": 107.7,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 107.7,
+        "yesterday": 186.8,
+        "change_pct": -42.3
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-8216",
+      "description": "A vulnerability was identified in Industrial Application Software IAS Canias ERP 8.03. This issue affects the function iasServerRemoteInterface.doAction of the component Java RMI Session Management. Such manipulation leads to improper authentication. The attack can be launched remotely. The vendor w",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://hawktrace.com/blog/caniaserp",
+        "https://vuldb.com/submit/808244",
+        "https://vuldb.com/vuln/362433"
+      ],
+      "published": "2026-05-10T01:16:08.263"
+    },
+    {
+      "id": "CVE-2026-8217",
+      "description": "A security flaw has been discovered in Industrial Application Software IAS Canias ERP 8.03. Impacted is the function Runtime.getRuntime.exec of the component RMI Interface. Performing a manipulation of the argument troiaCode results in os command injection. The attack may be initiated remotely. The ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://gist.github.com/0xb1lal/6ccc2356e7e0a26f7b8a6bd6f0d84bbb",
+        "https://hawktrace.com/blog/caniaserp",
+        "https://vuldb.com/submit/808262"
+      ],
+      "published": "2026-05-10T02:16:08.833"
+    },
+    {
+      "id": "CVE-2026-8214",
+      "description": "A vulnerability was found in Industrial Application Software IAS Canias ERP 8.03. This affects the function doAction of the component RMI Interface. The manipulation of the argument sessionId results in improper authentication. It is possible to launch the attack remotely. The exploit has been made ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://gist.github.com/0xb1lal/3ef872a445310c5866d07d6a5b1803fa",
+        "https://hawktrace.com/blog/caniaserp/",
+        "https://vuldb.com/submit/808238"
+      ],
+      "published": "2026-05-10T01:16:07.907"
+    },
+    {
+      "id": "CVE-2026-8215",
+      "description": "A vulnerability was determined in Industrial Application Software IAS Canias ERP 8.03. This vulnerability affects the function iasRequestFileEvent of the component RMI Interface. This manipulation of the argument m_strSourceFileName causes path traversal. The attack can be initiated remotely. The ex",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://gist.github.com/0xb1lal/3885c69998516685e3ea833403b9db2b",
+        "https://hawktrace.com/blog/caniaserp/",
+        "https://vuldb.com/submit/808242"
+      ],
+      "published": "2026-05-10T01:16:08.090"
+    },
+    {
+      "id": "CVE-2026-8222",
+      "description": "A vulnerability has been found in Open5GS up to 2.7.7. Affected is the function pcf_nbsf_management_handle_register of the file src/pcf/nbsf-handler.c of the component sm-policies Endpoint. Such manipulation leads to denial of service. The attack may be performed from remote. The exploit has been di",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4437",
+        "https://vuldb.com/submit/808427"
+      ],
+      "published": "2026-05-10T03:16:08.690"
+    },
+    {
+      "id": "CVE-2026-8223",
+      "description": "A vulnerability was found in Open5GS up to 2.7.7. Affected by this vulnerability is the function pcf_sess_sbi_discover_and_send of the component sm-policies Endpoint. Performing a manipulation results in denial of service. It is possible to initiate the attack remotely. The exploit has been made pub",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4438",
+        "https://vuldb.com/submit/808442"
+      ],
+      "published": "2026-05-10T03:16:08.863"
+    },
+    {
+      "id": "CVE-2026-8224",
+      "description": "A vulnerability was determined in Open5GS up to 2.7.7. Affected by this issue is the function pcf_sess_set_ipv6prefix of the file /src/pcf/context.c of the component PCF. Executing a manipulation of the argument SmPolicyContextData.ipv6AddressPrefix can lead to denial of service. It is possible to l",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4439",
+        "https://vuldb.com/submit/808443"
+      ],
+      "published": "2026-05-10T03:16:09.033"
+    },
+    {
+      "id": "CVE-2026-8225",
+      "description": "A vulnerability was identified in Open5GS up to 2.7.7. This affects the function pcf_npcf_smpolicycontrol_handle_delete of the file src/pcf/sm-sm.c of the component delete Endpoint. The manipulation leads to denial of service. The attack can be initiated remotely. The exploit is publicly available a",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4440",
+        "https://vuldb.com/submit/808444"
+      ],
+      "published": "2026-05-10T05:16:12.060"
+    },
+    {
+      "id": "CVE-2026-8218",
+      "description": "A weakness has been identified in Devs Palace ERP Online up to 4.0.0. The affected element is an unknown function of the file /inventory/purchase_return_save. Executing a manipulation can lead to cross site scripting. The attack may be launched remotely. The exploit has been made available to the pu",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://olografix.org/acme/_poc/ERP_Online-POC1.gif",
+        "https://vuldb.com/submit/808252",
+        "https://vuldb.com/submit/808259"
+      ],
+      "published": "2026-05-10T02:16:10.110"
+    },
+    {
+      "id": "CVE-2026-8219",
+      "description": "A security vulnerability has been detected in Devs Palace ERP Online up to 4.0.0. The impacted element is an unknown function of the file /inventory/supplier-save. The manipulation leads to cross site scripting. Remote exploitation of the attack is possible. The exploit has been disclosed publicly a",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://olografix.org/acme/_poc/ERP_Online-POC1.gif",
+        "https://vuldb.com/submit/808257",
+        "https://vuldb.com/vuln/362436"
+      ],
+      "published": "2026-05-10T02:16:10.307"
+    },
+    {
+      "id": "CVE-2026-8220",
+      "description": "A vulnerability was detected in Devs Palace ERP Online up to 4.0.0. This affects an unknown function of the file /inventory/customer-save. The manipulation results in cross site scripting. The attack can be executed remotely. The exploit is now public and may be used. The vendor was contacted early ",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://olografix.org/acme/_poc/ERP_Online-POC1.gif",
+        "https://vuldb.com/submit/808261",
+        "https://vuldb.com/vuln/362437"
+      ],
+      "published": "2026-05-10T03:16:07.703"
+    },
+    {
+      "id": "CVE-2026-8221",
+      "description": "A flaw has been found in Devs Palace ERP Online up to 4.0.0. This impacts an unknown function of the file /inventory/item-save. This manipulation causes cross site scripting. The attack is possible to be carried out remotely. The exploit has been published and may be used. The vendor was contacted e",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://olografix.org/acme/_poc/ERP_Online-POC1.gif",
+        "https://vuldb.com/submit/808263",
+        "https://vuldb.com/vuln/362438"
+      ],
+      "published": "2026-05-10T03:16:08.523"
+    },
+    {
+      "id": "CVE-2025-14179",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, the PDO Firebird driver improperly handles NUL bytes when preparing SQL queries. During token-by-token query construction, a string token containing a NUL byte is copied via strncat(), which stops ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-w476-322c-wpvm"
+      ],
+      "published": "2026-05-10T05:16:09.853"
+    },
+    {
+      "id": "CVE-2026-6722",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, the SOAP extension's object deduplication mechanism stores pointers to PHP objects in a global map\u00a0without incrementing their reference counts. When an apache:Map node contains duplicate keys, proc",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-85c2-q967-79q5"
+      ],
+      "published": "2026-05-10T05:16:11.070"
+    },
+    {
+      "id": "CVE-2026-6735",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, 8.5.* before 8.5.6, due to improper sanitation of user data, it\u00a0allows an attacker to compose an URL, which will cause the target to execute arbitrary JavaScript code (XSS) on the target's machine when the target is viewi",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-7qg2-v9fj-4mwv"
+      ],
+      "published": "2026-05-10T05:16:11.213"
+    },
+    {
+      "id": "CVE-2026-7258",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, some functions, including urldecode(), pass signed char to ctype functions (like\u00a0isxdigit()). On the systems with default signed char and optimized table-lookup ctype functions - such as NetBSD - t",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-m8rr-4c36-8gq4"
+      ],
+      "published": "2026-05-10T05:16:11.360"
+    },
+    {
+      "id": "CVE-2026-7259",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, a mismatch between encoding lists in Oniguruma and mbfl leads to\u00a0\u00a0a NULL pointer dereference, resulting in a segmentation fault and denial of service. The vulnerability is exploitable when user-con",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-wm6j-2649-pv75"
+      ],
+      "published": "2026-05-10T05:16:11.507"
+    },
+    {
+      "id": "CVE-2026-7261",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, when SoapServer is configured with SOAP_PERSISTENCE_SESSION, the handler object is persisted across requests via session storage. However, in the case SOAP requests results in an error, the persist",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-m33r-qmcv-p97q"
+      ],
+      "published": "2026-05-10T05:16:11.640"
+    },
+    {
+      "id": "CVE-2026-7262",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, when a SOAP server has a typemap configured, the decoding process contains a mistake which checks the wrong variable in case of missing value element.\u00a0 This leads to\u00a0dereferences a NULL pointer, ca",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-hmxp-6pc4-f3vv"
+      ],
+      "published": "2026-05-10T05:16:11.780"
+    },
+    {
+      "id": "CVE-2026-7568",
+      "description": "In PHP versions 8.2.* before 8.2.31, 8.3.* before 8.3.31, 8.4.* before 8.4.21, and 8.5.* before 8.5.6, the metaphone() function in ext/standard/metaphone.c uses a signed int variable to track the current position within the input string. If a string longer than 2,147,483,647 bytes is passed, a signe",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-125",
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/php/php-src/security/advisories/GHSA-96wq-48vp-hh57"
+      ],
+      "published": "2026-05-10T05:16:11.920"
+    }
+  ]
+}
