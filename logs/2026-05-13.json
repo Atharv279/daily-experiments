@@ -1,0 +1,377 @@
+{
+  "timestamp": "2026-05-13T05:59:38.612585+00:00",
+  "scan_id": "276ec94e2b",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 1,
+      "MEDIUM": 13,
+      "LOW": 6
+    },
+    "top_cwes": [
+      [
+        "CWE-78",
+        9
+      ],
+      [
+        "CWE-404",
+        6
+      ],
+      [
+        "CWE-77",
+        5
+      ],
+      [
+        "CWE-79",
+        5
+      ],
+      [
+        "CWE-94",
+        5
+      ]
+    ],
+    "threat_index": 165.9,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 165.9,
+        "yesterday": 318.0,
+        "change_pct": -47.8
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 3,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-8260",
+      "description": "A vulnerability was found in D-Link DCS-935L up to 1.10.01. The impacted element is the function SetDeviceSettings of the file /web/cgi-bin/hnap/hnap_service of the component HNAP Service. The manipulation of the argument AdminPassword results in buffer overflow. The attack can be executed remotely.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/0xcc12138/DCS-935L-HNAP-Service-CVE",
+        "https://vuldb.com/submit/809888",
+        "https://vuldb.com/vuln/362557"
+      ],
+      "published": "2026-05-11T02:16:27.583"
+    },
+    {
+      "id": "CVE-2026-8264",
+      "description": "A weakness has been identified in Tenda AC6 15.03.06.23. Affected by this vulnerability is the function formWifiApScan of the file /goform/WifiApScan of the component httpd. Executing a manipulation of the argument wl2g.public.country/wl5g.public.country can lead to os command injection. It is possi",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/dxz0069/WAVLINK-WN530H4-Command-Injection-in-set_add_routing/blob/main/Tenda%20AC6V2%20formWifiApScan%20Command%20Injection%20via%20country%20parameter.md",
+        "https://vuldb.com/submit/810075",
+        "https://vuldb.com/vuln/362561"
+      ],
+      "published": "2026-05-11T04:16:17.023"
+    },
+    {
+      "id": "CVE-2026-8261",
+      "description": "A vulnerability was determined in Squirrel up to 3.2. This affects the function SQFunctionProto::Load of the file squirrel/sqobject.cpp. This manipulation causes heap-based buffer overflow. The attack is restricted to local execution. The exploit has been publicly disclosed and may be utilized. The ",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-119",
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/albertodemichelis/squirrel/issues/326",
+        "https://github.com/biniamf/pocs/tree/main/squirrel-sqobject-functionproto-load-intovf-lineinfos",
+        "https://vuldb.com/submit/809904"
+      ],
+      "published": "2026-05-11T02:16:27.750"
+    },
+    {
+      "id": "CVE-2026-8258",
+      "description": "A flaw has been found in Squirrel up to 3.2. Impacted is the function validate_format in the library sqstdlib/sqstdstring.cpp. Executing a manipulation can lead to stack-based buffer overflow. The attack can only be executed locally. The exploit has been published and may be used. The project was in",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/albertodemichelis/squirrel/issues/325",
+        "https://github.com/biniamf/pocs/tree/main/squirrel-validate_format-memcpy-oob",
+        "https://vuldb.com/submit/809873"
+      ],
+      "published": "2026-05-11T02:16:27.250"
+    },
+    {
+      "id": "CVE-2026-8259",
+      "description": "A vulnerability has been found in Tenda AC6 2.0/15.03.06.23. The affected element is an unknown function of the file /goform/telnet of the component httpd. The manipulation of the argument lan.ip leads to os command injection. Remote exploitation of the attack is possible. The exploit has been discl",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-77",
+        "CWE-78",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/dxz0069/WAVLINK-WN530H4-Command-Injection-in-set_add_routing/blob/main/Tenda%20AC6V2%20TendaTelnet%20Command%20Injection.md",
+        "https://vuldb.com/submit/809877",
+        "https://vuldb.com/vuln/362556"
+      ],
+      "published": "2026-05-11T02:16:27.417"
+    },
+    {
+      "id": "CVE-2026-8263",
+      "description": "A security flaw has been discovered in Tenda AC6 15.03.06.49_multi_TDE01. Affected is the function fromSetWirelessRepeat of the file /goform/WifiExtraSet of the component httpd. Performing a manipulation of the argument mac/ssid results in os command injection. It is possible to initiate the attack ",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-77",
+        "CWE-78",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/yaoyue123/iot/blob/main/Tenda/AC10U/fromSetWirelessRepeat.md",
+        "https://vuldb.com/submit/810074",
+        "https://vuldb.com/vuln/362560"
+      ],
+      "published": "2026-05-11T02:16:28.120"
+    },
+    {
+      "id": "CVE-2026-8265",
+      "description": "A security vulnerability has been detected in Tenda AC6 15.03.06.23. Affected by this issue is the function get_log_file of the file /goform/getLogFile of the component httpd. The manipulation of the argument wans.flag leads to os command injection. The attack can be initiated remotely. The exploit ",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-77",
+        "CWE-78",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/dxz0069/WAVLINK-WN530H4-Command-Injection-in-set_add_routing/blob/main/Tenda%20AC6V2%20get_log_file%20Command%20Injection%20via%20wans.flag.md",
+        "https://vuldb.com/submit/810076",
+        "https://vuldb.com/vuln/362562"
+      ],
+      "published": "2026-05-11T04:16:19.860"
+    },
+    {
+      "id": "CVE-2026-8271",
+      "description": "A vulnerability was identified in D-Link DNS-320 2.06B01. The impacted element is the function cgi_speed/cgi_dhcpd_lease/cgi_ddns/cgi_set_ip/cgi_upnp_del/cgi_dhcpd/cgi_upnp_add/cgi_upnp_edit of the file /cgi-bin/network_mgr.cgi. The manipulation leads to os command injection. The attack is possible ",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-77",
+        "CWE-78",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/dxz0069/WAVLINK-WN530H4-Command-Injection-in-set_add_routing/blob/main/D-Link%20DNS-320%20network_mgr.cgi%20Multiple%20OS%20Command%20Injection%20Vulnerabilities.md",
+        "https://vuldb.com/submit/810078",
+        "https://vuldb.com/vuln/362568"
+      ],
+      "published": "2026-05-11T05:16:16.093"
+    },
+    {
+      "id": "CVE-2026-8252",
+      "description": "A vulnerability was determined in Open5GS up to 2.7.7. Affected is the function smf_nsmf_handle_create_data_in_hsmf of the component SMF. Executing a manipulation can lead to null pointer dereference. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilize",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4446",
+        "https://vuldb.com/submit/808482"
+      ],
+      "published": "2026-05-11T00:16:33.317"
+    },
+    {
+      "id": "CVE-2026-8266",
+      "description": "A vulnerability was detected in Open5GS up to 2.7.7. This affects the function gsm_build_pdu_session_establishment_accept of the file /src/smf/gsm-build.c of the component SMF. The manipulation results in denial of service. The attack can be launched remotely. The exploit is now public and may be us",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4447",
+        "https://vuldb.com/submit/808483"
+      ],
+      "published": "2026-05-11T04:16:20.060"
+    },
+    {
+      "id": "CVE-2026-8267",
+      "description": "A flaw has been found in Open5GS up to 2.7.7. This vulnerability affects the function smf_nsmf_handle_created_data_in_vsmf of the component SMF. This manipulation causes denial of service. The attack may be initiated remotely. The exploit has been published and may be used. The project was informed ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4448",
+        "https://vuldb.com/submit/808484"
+      ],
+      "published": "2026-05-11T04:16:20.233"
+    },
+    {
+      "id": "CVE-2026-8268",
+      "description": "A vulnerability has been found in Open5GS up to 2.7.7. This issue affects the function OpenAPI_list_create of the component SMF. Such manipulation leads to denial of service. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The project was informed o",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4449",
+        "https://vuldb.com/submit/808485"
+      ],
+      "published": "2026-05-11T04:16:20.403"
+    },
+    {
+      "id": "CVE-2026-8269",
+      "description": "A vulnerability was found in Open5GS up to 2.7.7. Impacted is the function smf_nsmf_handle_create_sm_context of the component SMF. Performing a manipulation results in denial of service. Remote exploitation of the attack is possible. The exploit has been made public and could be used. The project wa",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4450",
+        "https://vuldb.com/submit/808486"
+      ],
+      "published": "2026-05-11T05:16:15.350"
+    },
+    {
+      "id": "CVE-2026-8270",
+      "description": "A vulnerability was determined in Open5GS up to 2.7.7. The affected element is the function ogs_nas_parse_qos_rules of the component SMF. Executing a manipulation can lead to denial of service. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. The proj",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4451",
+        "https://vuldb.com/submit/808488"
+      ],
+      "published": "2026-05-11T05:16:15.937"
+    },
+    {
+      "id": "CVE-2026-8257",
+      "description": "A vulnerability was detected in WebAssembly Binaryen up to 117. This issue affects the function IRBuilder::makeBrOn of the file src/wasm/wasm-ir-builder.cpp of the component BrOn Parser. Performing a manipulation results in reachable assertion. The attack needs to be approached locally. The exploit ",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-617"
+      ],
+      "references": [
+        "https://github.com/HackC0der/CVE-Repos/blob/main/wasm-binaryen/Assertion_Failure_isRef_wasm_Type_getHeapType_commit_3ef8d19",
+        "https://github.com/WebAssembly/binaryen/",
+        "https://github.com/WebAssembly/binaryen/commit/1251efbc1ea471c1311d2726b2bbe061ff2a291c"
+      ],
+      "published": "2026-05-11T02:16:27.090"
+    },
+    {
+      "id": "CVE-2026-8253",
+      "description": "A vulnerability was identified in Devs Palace ERP Online up to 4.0.0. Affected by this vulnerability is an unknown functionality of the file /inventory/purchase_save. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit is publicly available and",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://olografix.org/acme/_poc/ERP_Online-POC1.gif",
+        "https://vuldb.com/submit/808277",
+        "https://vuldb.com/vuln/362550"
+      ],
+      "published": "2026-05-11T00:16:33.590"
+    },
+    {
+      "id": "CVE-2026-8254",
+      "description": "A security flaw has been discovered in Devs Palace ERP Online up to 4.0.0. Affected by this issue is some unknown functionality of the file /inventory/sales_save. The manipulation results in cross site scripting. It is possible to launch the attack remotely. The exploit has been released to the publ",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://olografix.org/acme/_poc/ERP_Online-POC1.gif",
+        "https://vuldb.com/submit/808279",
+        "https://vuldb.com/vuln/362551"
+      ],
+      "published": "2026-05-11T00:16:33.770"
+    },
+    {
+      "id": "CVE-2026-8255",
+      "description": "A weakness has been identified in Devs Palace ERP Online up to 4.0.0. This affects an unknown part of the file /inventory/add_new_customer. This manipulation causes cross site scripting. The attack can be initiated remotely. The exploit has been made available to the public and could be used for att",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://olografix.org/acme/_poc/ERP_Online-POC1.gif",
+        "https://vuldb.com/submit/808526",
+        "https://vuldb.com/vuln/362552"
+      ],
+      "published": "2026-05-11T00:16:33.960"
+    },
+    {
+      "id": "CVE-2026-8256",
+      "description": "A security vulnerability has been detected in Devs Palace ERP Online up to 4.0.0. This vulnerability affects unknown code of the file /accounts/mr-save. Such manipulation leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed publicly and may be used. The ",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://olografix.org/acme/_poc/ERP_Online-POC1.gif",
+        "https://vuldb.com/submit/808527",
+        "https://vuldb.com/vuln/362553"
+      ],
+      "published": "2026-05-11T02:16:26.867"
+    },
+    {
+      "id": "CVE-2026-8262",
+      "description": "A vulnerability was identified in Devs Palace ERP Online up to 4.0.0. This impacts an unknown function of the file /accounts/chart-save. Such manipulation leads to cross site scripting. The attack may be performed from remote. The exploit is publicly available and might be used. The vendor was conta",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://olografix.org/acme/_poc/ERP_Online-POC1.gif",
+        "https://vuldb.com/submit/809930",
+        "https://vuldb.com/vuln/362559"
+      ],
+      "published": "2026-05-11T02:16:27.930"
+    }
+  ]
+}
