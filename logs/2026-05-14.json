@@ -1,0 +1,338 @@
+{
+  "timestamp": "2026-05-14T05:59:18.918644+00:00",
+  "scan_id": "d7844d6c6f",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 3,
+      "HIGH": 1,
+      "MEDIUM": 11,
+      "LOW": 2,
+      "UNKNOWN": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-77",
+        3
+      ],
+      [
+        "CWE-862",
+        3
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-506",
+        1
+      ],
+      [
+        "CWE-459",
+        1
+      ]
+    ],
+    "threat_index": 259.4,
+    "critical_count": 3
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 259.4,
+        "yesterday": 165.9,
+        "change_pct": 56.4
+      },
+      "critical_count": {
+        "today": 3,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-45321",
+      "description": "On 2026-05-11, between approximately 19:20 and 19:26 UTC, 84 malicious versions across 42 @tanstack/* packages were published to the npm registry. The publishes were authenticated via the legitimate GitHub Actions OIDC trusted-publisher binding for TanStack/router, but the publish workflow itself wa",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-506"
+      ],
+      "references": [
+        "https://github.com/TanStack/router/issues/7383",
+        "https://github.com/TanStack/router/security/advisories/GHSA-g7cv-rxg3-hmpx",
+        "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem"
+      ],
+      "published": "2026-05-12T01:16:46.820"
+    },
+    {
+      "id": "CVE-2026-34260",
+      "description": "SAP S/4HANA (SAP Enterprise Search for ABAP) contains a SQL injection vulnerability that allows an authenticated attacker to inject malicious SQL statements through user-controlled input. The application directly concatenates this malicious user input into SQL queries, which are then passed to the u",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3724838",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-05-12T03:16:11.517"
+    },
+    {
+      "id": "CVE-2026-34263",
+      "description": "Due to improper Spring Security configuration, SAP Commerce cloud allows an unauthenticated user to perform malicious configuration upload and code injection, resulting in arbitrary server-side code execution, leading to high impact on Confidentiality, Integrity, and Availability of the application.",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-459"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3733064",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-05-12T03:16:11.650"
+    },
+    {
+      "id": "CVE-2026-34259",
+      "description": "Due to an OS Command Execution vulnerability in SAP Forecasting & Replenishment, an authenticated attacker with administrative authorizations could abuse a non-remote-enabled function to execute arbitrary operating system commands. Successful exploitation could allow the attacker to read or modify a",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-77"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3732471",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-05-12T03:16:11.383"
+    },
+    {
+      "id": "CVE-2026-40135",
+      "description": "An OS Command Injection vulnerability exists in the SAP NetWeaver Application Server for ABAP and ABAP Platform that allows an authenticated attacker with administrative access to execute specially crafted shell commands on the server, bypassing the logging mechanism. This allows the execution of un",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-77"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3730019",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-05-12T03:16:12.430"
+    },
+    {
+      "id": "CVE-2026-8346",
+      "description": "A vulnerability was detected in D-Link DIR-816 1.10CNB05_R1B011D88210. This affects the function portForward. Performing a manipulation of the argument ip_address results in command injection. The attack can be initiated remotely. The exploit is now public and may be used.",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/lipenghai/iot_bug/blob/main/D-Link/DIR816/3.md",
+        "https://vuldb.com/submit/811380",
+        "https://vuldb.com/vuln/362662"
+      ],
+      "published": "2026-05-12T00:17:03.433"
+    },
+    {
+      "id": "CVE-2026-40133",
+      "description": "Due to missing authorization check in SAP S/4HANA Condition Maintenance, an authenticated attacker could gain unauthorized access to view and modify condition table records, resulting in low impact on the confidentiality and integrity of the data. Additionally, this vulnerability may prevent the leg",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3718083",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-05-12T03:16:12.177"
+    },
+    {
+      "id": "CVE-2026-0502",
+      "description": "Due to insufficient CSRF protection in SAP BusinessObjects Business Intelligence Platform ,an authenticated user could be tricked by an attacker to send unintended requests to the web server. This has low impact on integrity and availability of the application. There is no impact on confidentiality ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3667593",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-05-12T03:16:10.480"
+    },
+    {
+      "id": "CVE-2026-40132",
+      "description": "Due to missing authorization check in SAP Strategic Enterprise Management (Scorecard Wizard in Business Server Pages), an authenticated attacker could access information that they are otherwise unauthorized to view. This vulnerability also enables the attacker to change the default settings and modi",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3721959",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-05-12T03:16:12.043"
+    },
+    {
+      "id": "CVE-2026-27682",
+      "description": "Due to a reflected cross-site scripting (XSS) vulnerability in SAP NetWeaver Application Server ABAP (Applications based on Business Server Pages), an unauthenticated attacker could craft a URL that exploits an unprotected URL parameter to embed a malicious script. If a victim clicks the link, the i",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3728690",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-05-12T03:16:11.103"
+    },
+    {
+      "id": "CVE-2026-34258",
+      "description": "SAPUI5 (Search UI) allows an unauthenticated attacker to manipulate specific URL parameters on the Search UI to include malicious content. Successful exploitation may mislead victim users into clicking and accessing attacker-controlled pages rendered by the application. This vulnerability has a low ",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-451"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3726583",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-05-12T03:16:11.247"
+    },
+    {
+      "id": "CVE-2026-8349",
+      "description": "A flaw has been found in omec-project amf up to 2.1.1. This vulnerability affects unknown code of the component NGAP Message Handler. Executing a manipulation can lead to memory corruption. The attack can be launched remotely. The exploit has been published and may be used. This patch is called 8a4c",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://github.com/omec-project/amf/",
+        "https://github.com/omec-project/amf/issues/672",
+        "https://github.com/omec-project/amf/pull/666"
+      ],
+      "published": "2026-05-12T00:17:03.600"
+    },
+    {
+      "id": "CVE-2026-40129",
+      "description": "Due to a Code Injection vulnerability in SAP Application Server ABAP for SAP NetWeaver and ABAP Platform, an authenticated attacker could send specially crafted inputs to the application. If processed by the application, this input could be delivered to users subscribed to the channel and result in ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3735359",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-05-12T03:16:11.783"
+    },
+    {
+      "id": "CVE-2026-40134",
+      "description": "Due to insufficient authorization checks in the SAP Incentive and Commission Management application, authenticated users could invoke a remote-enabled function module to perform table update operations. This vulnerability has a low impact on integrity with no impact on confidentiality and availabili",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3718508",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-05-12T03:16:12.307"
+    },
+    {
+      "id": "CVE-2026-40136",
+      "description": "SAP Financial Consolidation allows an authenticated attacker to disconnect other users by terminating their sessions temporarily preventing access. However, the application itself cannot be compromised resulting in a low impact on availability. There is no impact on confidentiality and integrity of ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3713521",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-05-12T03:16:12.560"
+    },
+    {
+      "id": "CVE-2026-40131",
+      "description": "SQL injection vulnerability exists in @sap/hdi-deploy package, where SQL queries are dynamically constructed using user input without proper parameterization or prepared statements. Successful exploitation could allow the high privileged users to alter the SELECT statements impacting confidentiality",
+      "severity": "LOW",
+      "score": 3.4,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3726962",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-05-12T03:16:11.910"
+    },
+    {
+      "id": "CVE-2026-45362",
+      "description": "Sangoma Switchvox before 8.4 places cleartext SIP authentication credentials in a backup file.",
+      "severity": "LOW",
+      "score": 3.2,
+      "cwes": [
+        "CWE-312"
+      ],
+      "references": [
+        "https://github.com/sangoma/security-switchvox/security/advisories/GHSA-mfm3-g35x-c9w8",
+        "https://github.com/wb6vpm/switchvox-svb-plaintext-sip-credentials/"
+      ],
+      "published": "2026-05-12T01:16:47.017"
+    },
+    {
+      "id": "CVE-2026-45391",
+      "description": "Reserved. Details will be published at disclosure.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://docs.cribl.io/edge/release-notes/release-v4171#security-fixes",
+        "https://trust.cribl.io/notifications"
+      ],
+      "published": "2026-05-12T02:16:13.107"
+    },
+    {
+      "id": "CVE-2026-45392",
+      "description": "Reserved. Details will be published at disclosure.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://docs.cribl.io/stream/release-notes/release-v4171#security-fixes",
+        "https://trust.cribl.io/notifications"
+      ],
+      "published": "2026-05-12T02:16:13.220"
+    },
+    {
+      "id": "CVE-2026-45393",
+      "description": "Reserved. Details will be published at disclosure.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://docs.cribl.io/edge/release-notes/release-v4171#security-fixes",
+        "https://trust.cribl.io/notifications"
+      ],
+      "published": "2026-05-12T02:16:13.310"
+    }
+  ]
+}
