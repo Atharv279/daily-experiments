@@ -1,0 +1,331 @@
+{
+  "timestamp": "2026-05-15T06:06:36.659043+00:00",
+  "scan_id": "b78661086d",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 3,
+      "MEDIUM": 10,
+      "LOW": 1,
+      "UNKNOWN": 6
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-416",
+        2
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-1233",
+        2
+      ],
+      [
+        "CWE-787",
+        1
+      ]
+    ],
+    "threat_index": 182.6,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 182.6,
+        "yesterday": 259.4,
+        "change_pct": -29.6
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 3,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-8053",
+      "description": "An issue in MongoDB Server's time-series collection implementation allows an authenticated user with database write privileges to trigger an out-of-bounds memory write in the mongod process. The issue results from an inconsistency in the internal field-name-to-index mapping within the time-series bu",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://jira.mongodb.org/browse/SERVER-126021"
+      ],
+      "published": "2026-05-13T04:17:41.287"
+    },
+    {
+      "id": "CVE-2026-8336",
+      "description": "After invoking $_internalJsEmit, which is not intended to be directly accessible, or mapreduce command\u2019s map function in a certain way, an authenticated user can subsequently crash mongod when the server-side JavaScript engine (through $where, $function, mapreduce reduce stage, etc.) is used also in",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://jira.mongodb.org/browse/SERVER-121610"
+      ],
+      "published": "2026-05-13T04:17:42.197"
+    },
+    {
+      "id": "CVE-2026-6888",
+      "description": "Successful exploitation of the SQL injection vulnerability could allow a remote authenticated attacker to\nexecute arbitrary commands via a specific interface,\npotentially enabling the attacker to access, modify, or delete sensitive\ninformation within the database.",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-050/"
+      ],
+      "published": "2026-05-13T04:17:41.093"
+    },
+    {
+      "id": "CVE-2026-8199",
+      "description": "An authenticated user can cause excess memory usage via bitwise match expression AST processing of $bitsAllSet, $bitsAnySet, $bitsAllClear, and $bitsAnyClear. This contributes to memory pressure and may lead to availability loss by OOM.\n\nThis issue impacts MongoDB Server v7.0 versions prior to 7.0.3",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-1325"
+      ],
+      "references": [
+        "https://jira.mongodb.org/browse/SERVER-122449"
+      ],
+      "published": "2026-05-13T04:17:41.530"
+    },
+    {
+      "id": "CVE-2026-8201",
+      "description": "A use-after-free vulnerability exists in MongoDB's Field-Level Encryption (FLE) query analysis component, affecting client-side uses of mongocryptd and crypt_shared. Triggering this vulnerability requires control over the structure of a client's FLE-related query.\n\nThis issue impacts MongoDB Server\u2019",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://jira.mongodb.org/browse/SERVER-122032"
+      ],
+      "published": "2026-05-13T04:17:41.870"
+    },
+    {
+      "id": "CVE-2026-6828",
+      "description": "The Fluent Forms \u2013 Customizable Contact Forms, Survey, Quiz, & Conversational Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'permission_message' parameter in all versions up to, and including, 6.2.1 due to insufficient input sanitization and output escaping. ",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/fluentform/tags/6.1.20/app/Modules/Component/Component.php#L467",
+        "https://plugins.trac.wordpress.org/browser/fluentform/tags/6.1.20/app/Modules/Component/Component.php#L513",
+        "https://plugins.trac.wordpress.org/browser/fluentform/trunk/app/Modules/Component/Component.php#L467"
+      ],
+      "published": "2026-05-13T05:16:24.077"
+    },
+    {
+      "id": "CVE-2026-6962",
+      "description": "The Cost of Goods: Product Cost & Profit Calculator for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'alg_wc_cog_product_cost' and 'alg_wc_cog_product_profit' shortcodes in all versions up to, and including, 4.1.0 due to insufficient input sanitizati",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/cost-of-goods-for-woocommerce/tags/4.1.0/includes/class-alg-wc-cog-products.php#L119",
+        "https://plugins.trac.wordpress.org/browser/cost-of-goods-for-woocommerce/tags/4.1.0/includes/class-alg-wc-cog-products.php#L133",
+        "https://plugins.trac.wordpress.org/browser/cost-of-goods-for-woocommerce/tags/4.1.0/includes/class-alg-wc-cog-products.php#L158"
+      ],
+      "published": "2026-05-13T05:16:24.213"
+    },
+    {
+      "id": "CVE-2026-7051",
+      "description": "The Blog2Social: Social Media Auto Post & Scheduler plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 8.9.0. This is due to a missing ownership verification in the B2S_Post_Tools::deleteUserPublishPost() and B2S_Post_Tools::deleteUserSchedPost() functi",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/blog2social/tags/8.8.2/includes/Ajax/Post.php#L1947",
+        "https://plugins.trac.wordpress.org/browser/blog2social/tags/8.8.2/includes/Ajax/Post.php#L2264",
+        "https://plugins.trac.wordpress.org/browser/blog2social/tags/8.8.2/includes/B2S/Post/Tools.php#L24"
+      ],
+      "published": "2026-05-13T05:16:24.340"
+    },
+    {
+      "id": "CVE-2025-14755",
+      "description": "The Cost Calculator Builder plugin for WordPress is vulnerable to Unauthenticated Price Manipulation and Insecure Direct Object Reference (IDOR) in all versions up to, and including, 4.0.1 only when used in combination with Cost Calculator Builder PRO. This is due to the ccb_woocommerce_payment AJAX",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/cost-calculator-builder/tags/3.6.7/includes/classes/CCBAjaxAction.php#L99",
+        "https://plugins.trac.wordpress.org/browser/cost-calculator-builder/tags/3.6.7/includes/classes/CCBOrderController.php#L484",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/fe684f43-8442-4b29-84a8-da8c6863e62b?source=cve"
+      ],
+      "published": "2026-05-13T05:16:12.470"
+    },
+    {
+      "id": "CVE-2025-9987",
+      "description": "The Broadstreet plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.53.1 via the get_sponsored_meta() AJAX action. This makes it possible for authenticated attackers, with subscriber-level access and above, to extract data from password protec",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3524817",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/b3cc3835-25f5-43b3-82be-397b8b3bd369?source=cve"
+      ],
+      "published": "2026-05-13T05:16:13.483"
+    },
+    {
+      "id": "CVE-2025-9989",
+      "description": "The Broadstreet plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 1.53.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and a",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3524817",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/f9b6e9a7-1ac5-45d0-83c3-a3f79935904a?source=cve"
+      ],
+      "published": "2026-05-13T05:16:13.740"
+    },
+    {
+      "id": "CVE-2026-8202",
+      "description": "Using a densely populated chars mask and a large input string in the MongoDB aggregation operators $trim, $ltrim, and $rtrim, an authenticated user with aggregation permissions can pin CPU utilization at 100% for an extended period of time.\n\nThis issue impacts MongoDB Server v7.0 versions prior to 7",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://jira.mongodb.org/browse/SERVER-120668"
+      ],
+      "published": "2026-05-13T04:17:42.037"
+    },
+    {
+      "id": "CVE-2025-9988",
+      "description": "The Broadstreet plugin for WordPress is vulnerable to unauthorized access due to a missing capability check on the create_advertiser AJAX action in all versions up to, and including, 1.53.1. This makes it possible for authenticated attackers, with Subscriber-level access and above, to create adverti",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3524817",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/480ab377-b979-4e1c-9c7a-cf63d69ad697?source=cve"
+      ],
+      "published": "2026-05-13T05:16:13.607"
+    },
+    {
+      "id": "CVE-2026-8200",
+      "description": "When schema validation is enabled on a collection and an update or insert would violate the collection's schema, the local server log message generated may not have all user data redacted.\u00a0\n\n\nThis issue impacts MongoDB Server v7.0 versions prior to 7.0.34, v8.0 versions prior to 8.0.23, v8.2 version",
+      "severity": "LOW",
+      "score": 2.7,
+      "cwes": [
+        "CWE-532"
+      ],
+      "references": [
+        "https://jira.mongodb.org/browse/SERVER-121895"
+      ],
+      "published": "2026-05-13T04:17:41.700"
+    },
+    {
+      "id": "CVE-2024-36315",
+      "description": "Improper enforcement of the LFENCE serialization property may allow an attacker to bypass speculation barriers and potentially disclose sensitive information, potentially resulting in loss of confidentiality.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-693"
+      ],
+      "references": [
+        "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-3030.html",
+        "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-4017.html"
+      ],
+      "published": "2026-05-13T04:16:43.977"
+    },
+    {
+      "id": "CVE-2025-61971",
+      "description": "Missing lock bit protection for NBIO registers could allow a local admin-privileged attacker to modify MMIO routing configurations, potentially resulting in loss of SEV-SNP guest integrity.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-1233"
+      ],
+      "references": [
+        "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-3030.html"
+      ],
+      "published": "2026-05-13T04:17:31.187"
+    },
+    {
+      "id": "CVE-2025-61972",
+      "description": "Missing lock bit protection for NBIO registers could allow a local admin-privileged attacker to gain arbitrary System Management Network (SMN) access, potentially resulting in arbitrary code execution in AMD Secure Processor (ASP) and loss of the SEV-SNP guest's confidentiality and integrity.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-1233"
+      ],
+      "references": [
+        "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-3030.html"
+      ],
+      "published": "2026-05-13T04:17:34.867"
+    },
+    {
+      "id": "CVE-2025-62623",
+      "description": "A heap-based buffer overflow in the ionic cloud driver for VMware ESXi could allow an attacker to achieve privilege escalation, potentially resulting in arbitrary code execution.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-2001.html"
+      ],
+      "published": "2026-05-13T04:17:35.217"
+    },
+    {
+      "id": "CVE-2025-62624",
+      "description": "A heap-based buffer overflow in the ionic cloud driver for VMware ESXi could allow an attacker to achieve privilege escalation, potentially resulting in arbitrary code execution.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-2001.html"
+      ],
+      "published": "2026-05-13T04:17:35.607"
+    },
+    {
+      "id": "CVE-2025-62627",
+      "description": "An untrusted pointer dereference in the ionic cloud driver for VMWare ESXi could allow an attacker with an unprivileged VM to read kernel memory or co-located guest VM memory, potentially resulting in loss of confidentiality or availability.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-822"
+      ],
+      "references": [
+        "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-2001.html"
+      ],
+      "published": "2026-05-13T04:17:35.780"
+    }
+  ]
+}
