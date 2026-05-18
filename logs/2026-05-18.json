@@ -1,0 +1,359 @@
+{
+  "timestamp": "2026-05-18T06:35:13.698880+00:00",
+  "scan_id": "6e9908e5d6",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 6,
+      "MEDIUM": 11,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        7
+      ],
+      [
+        "CWE-428",
+        4
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-307",
+        1
+      ],
+      [
+        "CWE-415",
+        1
+      ]
+    ],
+    "threat_index": 354.2,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 354.2,
+        "yesterday": 10.6,
+        "change_pct": 3241.5
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2020-37228",
+      "description": "iDS6 DSSPro Digital Signage System 6.2 contains a CAPTCHA security bypass vulnerability that allows attackers to bypass authentication by requesting the autoLoginVerifyCode object. Attackers can retrieve valid CAPTCHA codes via the login endpoint and use them to perform brute-force attacks against u",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-307"
+      ],
+      "references": [
+        "http://www.yerootech.com",
+        "https://www.exploit-db.com/exploits/48991",
+        "https://www.vulncheck.com/advisories/ids6-dsspro-digital-signage-system-captcha-security-bypass"
+      ],
+      "published": "2026-05-16T16:16:18.667"
+    },
+    {
+      "id": "CVE-2020-37239",
+      "description": "libbabl 0.1.62 contains a broken double free detection vulnerability that allows attackers to bypass memory safety checks by exploiting signature overwriting in freed chunks. Attackers can call babl_free() twice on the same pointer without triggering detection, as libc's malloc metadata overwrites b",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-415"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/49259",
+        "https://www.gegl.org",
+        "https://www.gegl.org/babl/"
+      ],
+      "published": "2026-05-16T16:16:20.097"
+    },
+    {
+      "id": "CVE-2020-37227",
+      "description": "HS Brand Logo Slider 2.1 contains an unrestricted file upload vulnerability that allows authenticated users to bypass client-side file extension validation by uploading arbitrary files. Attackers can intercept upload requests to the logoupload parameter in the admin interface and rename files to exe",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://ms.wordpress.org/plugins/hs-brand-logo-slider/",
+        "https://www.exploit-db.com/exploits/48913",
+        "https://www.heliossolutions.co/"
+      ],
+      "published": "2026-05-16T16:16:17.713"
+    },
+    {
+      "id": "CVE-2026-8657",
+      "description": "Versions of the package jsondiffpatch before 0.7.6 are vulnerable to Prototype Pollution via the jsondiffpatch.patch() and jsondiffpatch/formatters/jsonpatch.patch() APIs. An attacker can perform prototype pollution by supplying crafted delta or JSON Patch documents, as attacker-controlled property ",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-1321"
+      ],
+      "references": [
+        "https://gist.github.com/yuki-matsuhashi/e570fb1579ae1f3190059b622b0473fb",
+        "https://github.com/benjamine/jsondiffpatch/blob/96112c35a98f9201dd75d67fcee68a952c79e2fe/packages/jsondiffpatch/src/filters/nested.ts%23L107-L115",
+        "https://github.com/benjamine/jsondiffpatch/blob/96112c35a98f9201dd75d67fcee68a952c79e2fe/packages/jsondiffpatch/src/filters/nested.ts%23L82-L87"
+      ],
+      "published": "2026-05-16T06:16:18.727"
+    },
+    {
+      "id": "CVE-2020-37229",
+      "description": "OKI sPSV Port Manager 1.0.41 contains an unquoted service path vulnerability in the sPSVOpLclSrv service that allows local attackers to escalate privileges by inserting executable files into the unquoted path. Attackers can place a malicious executable in a directory within the service path that wil",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-428"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/49005",
+        "https://www.oki.com/",
+        "https://www.oki.com/mx/printing/download/sPSV_010041_2_270910.exe"
+      ],
+      "published": "2026-05-16T16:16:18.803"
+    },
+    {
+      "id": "CVE-2020-37230",
+      "description": "Syncplify.me Server! 5.0.37 contains an unquoted service path vulnerability in the SMWebRestServicev5 service that allows local attackers to escalate privileges by exploiting the unquoted binary path. Attackers can insert a malicious executable into the service path and execute it with LocalSystem p",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-428"
+      ],
+      "references": [
+        "https://download.syncplify.me/SMServer_Setup.exe",
+        "https://www.exploit-db.com/exploits/49009",
+        "https://www.syncplify.me/"
+      ],
+      "published": "2026-05-16T16:16:18.920"
+    },
+    {
+      "id": "CVE-2020-37231",
+      "description": "Privacy Drive 3.17.0 contains an unquoted service path vulnerability in the pdsvc.exe service binary that allows local attackers to escalate privileges by exploiting the service startup process. Attackers can place malicious executables in the unquoted path directories to execute arbitrary code with",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-428"
+      ],
+      "references": [
+        "https://www.cybertronsoft.com/",
+        "https://www.cybertronsoft.com/download/privacy-drive-setup.exe",
+        "https://www.exploit-db.com/exploits/49023"
+      ],
+      "published": "2026-05-16T16:16:19.050"
+    },
+    {
+      "id": "CVE-2020-37232",
+      "description": "Advanced System Care Service 13.0.0.157 contains an unquoted service path vulnerability in the AdvancedSystemCareService13 service binary path that allows local attackers to escalate privileges. Attackers can place malicious executables in the system root path that will be executed with LocalSystem ",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-428"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/49049",
+        "https://www.iobit.com",
+        "https://www.iobit.com/es/advancedsystemcarepro.php"
+      ],
+      "published": "2026-05-16T16:16:19.180"
+    },
+    {
+      "id": "CVE-2020-37233",
+      "description": "WordPress Plugin Buddypress 6.2.0 contains a persistent cross-site scripting vulnerability that allows authenticated attackers with moderator privileges to inject malicious script code through the figure parameter in wp:html blocks. Attackers can inject iframe elements with event handlers like onloa",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wordpress.org/plugins/buddypress/",
+        "https://www.exploit-db.com/exploits/49061",
+        "https://www.vulncheck.com/advisories/wordpress-plugin-buddypress-persistent-cross-site-scripting"
+      ],
+      "published": "2026-05-16T16:16:19.310"
+    },
+    {
+      "id": "CVE-2020-37235",
+      "description": "WordPress Theme Wibar 1.1.8 contains a stored cross-site scripting vulnerability in the Brand component that allows authenticated users to inject malicious scripts by manipulating the Logo URL parameter. Attackers with editor, administrator, contributor, or author privileges can inject base64-encode",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "http://demo.themeftc.com/wibar",
+        "https://themeforest.net/item/wibar-responsive-woocommerce-wordpress-theme/20994798",
+        "https://www.exploit-db.com/exploits/49107"
+      ],
+      "published": "2026-05-16T16:16:19.570"
+    },
+    {
+      "id": "CVE-2020-37236",
+      "description": "NewsLister contains an authenticated persistent cross-site scripting vulnerability that allows authenticated administrators to inject malicious scripts through the title parameter in the news addition interface. Attackers can inject JavaScript payloads via the title field in the admin panel that exe",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/49160",
+        "https://www.netartmedia.net/newslister.html",
+        "https://www.vulncheck.com/advisories/newslister-authenticated-persistent-cross-site-scripting-via-admin-panel"
+      ],
+      "published": "2026-05-16T16:16:19.700"
+    },
+    {
+      "id": "CVE-2020-37237",
+      "description": "Composr CMS 10.0.34 contains a persistent cross-site scripting vulnerability that allows authenticated administrators to inject malicious scripts through the banner management interface. Attackers with admin credentials can inject XSS payloads in the Description field of the Add banner functionality",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://compo.sr/",
+        "https://compo.sr/download.htm",
+        "https://www.exploit-db.com/exploits/49190"
+      ],
+      "published": "2026-05-16T16:16:19.827"
+    },
+    {
+      "id": "CVE-2020-37238",
+      "description": "CMS Made Simple 2.2.15 contains a stored cross-site scripting vulnerability that allows authenticated users with Content Manager access to inject malicious scripts through SVG file uploads. Attackers can upload SVG files containing embedded JavaScript to the file manager, which executes when other a",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.cmsmadesimple.org/",
+        "https://www.cmsmadesimple.org/downloads",
+        "https://www.exploit-db.com/exploits/49199"
+      ],
+      "published": "2026-05-16T16:16:19.967"
+    },
+    {
+      "id": "CVE-2020-37240",
+      "description": "Queue Management System 4.0.0 contains a stored cross-site scripting vulnerability that allows authenticated administrators to inject malicious scripts through user creation fields. Attackers can insert JavaScript payloads in the First Name, Last Name, and Email fields during user creation, which ex",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "http://codekernel.net/",
+        "https://codecanyon.net/item/queue-management-system/22029961",
+        "https://www.exploit-db.com/exploits/49296"
+      ],
+      "published": "2026-05-16T16:16:20.223"
+    },
+    {
+      "id": "CVE-2020-37234",
+      "description": "Internet Download Manager 6.38.12 contains a buffer overflow vulnerability in the Scheduler component that allows local attackers to crash the application by supplying oversized input. Attackers can paste malicious data exceeding 5000 bytes into the 'Open the following file when done' field to trigg",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-120"
+      ],
+      "references": [
+        "http://www.internetdownloadmanager.com/",
+        "http://www.internetdownloadmanager.com/download.html",
+        "https://www.exploit-db.com/exploits/49083"
+      ],
+      "published": "2026-05-16T16:16:19.440"
+    },
+    {
+      "id": "CVE-2026-8656",
+      "description": "Versions of the package jsondiffpatch before 0.7.6 are vulnerable to Cross-site Scripting (XSS) via the annotated formatter due to improper sanitization of JSON values and property names. If an application compares untrusted JSON/object data and renders annotated formatter output in the DOM, attacke",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://gist.github.com/yuki-matsuhashi/72ed072d919f3c52adba298faa6a7da5",
+        "https://github.com/benjamine/jsondiffpatch/commit/232338b34c4653148ca2f44e897a765b72c8c98f",
+        "https://security.snyk.io/vuln/SNYK-JS-JSONDIFFPATCH-16635946"
+      ],
+      "published": "2026-05-16T06:16:18.347"
+    },
+    {
+      "id": "CVE-2026-8681",
+      "description": "The Essential Chat Support plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.0.1. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to reset all plugin",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/essential-chat-support/trunk/includes/admin/settings/register-settings.php#L47",
+        "https://plugins.trac.wordpress.org/browser/essential-chat-support/trunk/includes/ecs-functions.php#L33",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/6b98ea22-4c82-45c6-8e29-75cc9a9185be?source=cve"
+      ],
+      "published": "2026-05-16T03:16:21.007"
+    },
+    {
+      "id": "CVE-2020-37241",
+      "description": "bloofoxCMS 0.5.2.1 contains a cross-site request forgery vulnerability that allows attackers to perform administrative actions by tricking logged-in users into visiting malicious pages. Attackers can craft hidden forms targeting the admin user creation endpoint to add new administrative accounts wit",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://github.com/alexlang24/bloofoxCMS/releases/tag/0.5.2.1",
+        "https://www.bloofox.com/",
+        "https://www.exploit-db.com/exploits/49507"
+      ],
+      "published": "2026-05-16T16:16:20.350"
+    },
+    {
+      "id": "CVE-2025-4202",
+      "description": "The Multicollab: Content Team Collaboration and Editorial Workflow plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'cf_add_comment' function in all versions up to, and including, 5.2. This makes it possible for authenticated attackers,",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/commenting-feature/tags/4.8.1/admin/classes/class-commenting-block-admin.php#L1239",
+        "https://plugins.trac.wordpress.org/changeset/3519252/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/08ec2376-dfe3-4aeb-8173-01e88309f540?source=cve"
+      ],
+      "published": "2026-05-16T13:16:16.073"
+    },
+    {
+      "id": "CVE-2026-46719",
+      "description": "Net::Statsd::Lite versions before 0.9.0 for Perl allowed metric injections.\n\nThe metric names were not checked for newlines, colons or pipes. Metrics generated from untrusted sources could inject additional statsd metrics.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-93"
+      ],
+      "references": [
+        "https://github.com/robrwo/Net-Statsd-Lite/commit/e1a8ab866d75c2827982134e9cf7e51a7f771153.patch",
+        "https://metacpan.org/release/RRWO/Net-Statsd-Lite-v0.9.0/changes",
+        "http://www.openwall.com/lists/oss-security/2026/05/16/9"
+      ],
+      "published": "2026-05-16T14:16:37.507"
+    }
+  ]
+}
