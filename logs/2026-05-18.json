@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-18T11:55:10.120969+00:00",
-  "scan_id": "3bc8ba9634",
+  "timestamp": "2026-05-18T17:13:08.088709+00:00",
+  "scan_id": "3c41e899c2",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -12,11 +12,15 @@
     "top_cwes": [
       [
         "CWE-79",
-        7
+        8
       ],
       [
         "CWE-428",
         4
+      ],
+      [
+        "CWE-1321",
+        2
       ],
       [
         "CWE-862",
@@ -24,10 +28,6 @@
       ],
       [
         "CWE-307",
-        1
-      ],
-      [
-        "CWE-415",
         1
       ]
     ],
@@ -106,6 +106,7 @@
       "severity": "HIGH",
       "score": 8.2,
       "cwes": [
+        "CWE-1321",
         "CWE-1321"
       ],
       "references": [
@@ -286,6 +287,7 @@
       "severity": "MEDIUM",
       "score": 6.1,
       "cwes": [
+        "CWE-79",
         "CWE-79"
       ],
       "references": [
