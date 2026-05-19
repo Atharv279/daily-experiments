@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-19T17:21:19.969692+00:00",
-  "scan_id": "d77958d902",
+  "timestamp": "2026-05-19T21:51:45.049238+00:00",
+  "scan_id": "01073f1527",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -14,11 +14,11 @@
         6
       ],
       [
-        "CWE-74",
-        2
+        "CWE-89",
+        3
       ],
       [
-        "CWE-89",
+        "CWE-74",
         2
       ],
       [
@@ -232,6 +232,7 @@
       "score": 4.7,
       "cwes": [
         "CWE-74",
+        "CWE-89",
         "CWE-89"
       ],
       "references": [
