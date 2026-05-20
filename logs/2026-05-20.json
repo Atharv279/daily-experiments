@@ -1,0 +1,363 @@
+{
+  "timestamp": "2026-05-20T06:30:09.097439+00:00",
+  "scan_id": "4b7d7d78da",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 7,
+      "MEDIUM": 12,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        6
+      ],
+      [
+        "CWE-119",
+        4
+      ],
+      [
+        "CWE-89",
+        4
+      ],
+      [
+        "CWE-404",
+        3
+      ],
+      [
+        "CWE-476",
+        3
+      ]
+    ],
+    "threat_index": 293.4,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 293.4,
+        "yesterday": 237.7,
+        "change_pct": 23.4
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-8775",
+      "description": "A flaw has been found in Edimax BR-6428NS 1.10. This affects the function formL2TPSetup of the file /goform/formL2TPSetup of the component POST Request Handler. This manipulation of the argument L2TPUserName causes buffer overflow. It is possible to initiate the attack remotely. The exploit has been",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/EDIMAX-BR-6428NS-formL2TPSetup-34b53a41781f8046b38bffcc190c5277?source=copy_link",
+        "https://vuldb.com/submit/811530",
+        "https://vuldb.com/vuln/364400"
+      ],
+      "published": "2026-05-18T02:16:36.627"
+    },
+    {
+      "id": "CVE-2026-8776",
+      "description": "A vulnerability has been found in Edimax BR-6428NS 1.10. This vulnerability affects the function formPPTPSetup of the file /goform/formPPTPSetup of the component POST Request Handler. Such manipulation of the argument pptpUserName leads to buffer overflow. It is possible to launch the attack remotel",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/EDIMAX-BR-6428NS-formPPTPSetup-34b53a41781f8074a88af068842b599e?source=copy_link",
+        "https://vuldb.com/submit/811531",
+        "https://vuldb.com/vuln/364401"
+      ],
+      "published": "2026-05-18T02:16:36.803"
+    },
+    {
+      "id": "CVE-2026-3220",
+      "description": "The Autoptimize WordPress plugin before 3.1.15, Clearfy Cache  WordPress plugin before 2.4.2, Speed Optimizer  WordPress plugin before 7.7.9 are vulnerable to unauthenticated Stored Cross-Site Scripting (XSS) due to a predictable replacement hash used during the HTML minification process and abusing",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/3ceabf11-23cd-4c38-ba14-014348b0ff2d/"
+      ],
+      "published": "2026-05-18T07:16:12.270"
+    },
+    {
+      "id": "CVE-2026-6379",
+      "description": "The WP Photo Album Plus WordPress plugin before 9.1.11.001 does not properly sanitize and escape a parameter before using it in a SQL query, allowing unauthenticated users to perform SQL injection attacks.",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/60b88fd2-4048-4773-b319-63caaf5bd8eb/"
+      ],
+      "published": "2026-05-18T07:16:12.590"
+    },
+    {
+      "id": "CVE-2026-6381",
+      "description": "The WP Maps  WordPress plugin before 4.9.3 does not properly sanitize a parameter before using it in a file path, allowing authenticated users to perform Local File Inclusion attacks.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/18b36672-58d7-44fa-b653-b728e9ef257a/"
+      ],
+      "published": "2026-05-18T07:16:12.710"
+    },
+    {
+      "id": "CVE-2026-8771",
+      "description": "A security flaw has been discovered in linlinjava litemall up to 1.8.0. This impacts the function list of the file litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/web/WxGoodsController.java of the component Front-end WeChat API. Performing a manipulation results in sql injection. Remote exp",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://gist.github.com/A1AAAAAAAAAA1/ab8df4181f9311cb9e7dad905e9aa512",
+        "https://vuldb.com/submit/811467",
+        "https://vuldb.com/vuln/364396"
+      ],
+      "published": "2026-05-18T00:16:37.537"
+    },
+    {
+      "id": "CVE-2026-8785",
+      "description": "A flaw has been found in projectworlds hospital-management-system-in-php 1.0. Affected by this vulnerability is the function getAllPatientDetail of the file update_info.php of the component GET Parameter Handler. Executing a manipulation of the argument appointment_no can lead to sql injection. The ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/lutherping/CVE",
+        "https://github.com/projectworldsofficial/Hospital-management-system-in-php/issues/8",
+        "https://vuldb.com/submit/812010"
+      ],
+      "published": "2026-05-18T04:16:34.530"
+    },
+    {
+      "id": "CVE-2026-8774",
+      "description": "A vulnerability was detected in Edimax BR-6228NC 1.22. Affected by this issue is the function mp of the file /goform/mp of the component POST Request Handler. The manipulation of the argument command results in command injection. The attack may be performed from remote. The exploit is now public and",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/EDIMAX-BR6228NC-mp-34b53a41781f80db8aaed24e43ea24b9?source=copy_link",
+        "https://vuldb.com/submit/811529",
+        "https://vuldb.com/vuln/364399"
+      ],
+      "published": "2026-05-18T02:16:36.433"
+    },
+    {
+      "id": "CVE-2026-8777",
+      "description": "A vulnerability was found in Edimax BR-6428NS 1.10. This issue affects the function formStaDrvSetup of the file /goform/formStaDrvSetup of the component POST Request Handler. Performing a manipulation of the argument stadrv_ssid results in command injection. The attack can be initiated remotely. The",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/EDIMAX-BR-6428NS-formStaDrvSetup-34b53a41781f80ca940cc467cd15dfc2?source=copy_link",
+        "https://vuldb.com/submit/811532",
+        "https://vuldb.com/vuln/364402"
+      ],
+      "published": "2026-05-18T02:16:36.990"
+    },
+    {
+      "id": "CVE-2026-8786",
+      "description": "A vulnerability has been found in Tencent WeKnora up to 0.3.6. Affected by this issue is the function getKnowledgeBaseForInitialization of the file internal/handler/initialization.go of the component Config API Endpoint. The manipulation of the argument kbId leads to authorization bypass. It is poss",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/1cdc50418f29af7ae671466425e52c7b",
+        "https://vuldb.com/submit/812172",
+        "https://vuldb.com/vuln/364410"
+      ],
+      "published": "2026-05-18T04:16:34.743"
+    },
+    {
+      "id": "CVE-2026-1631",
+      "description": "The Feeds for YouTube (YouTube video, channel, and gallery plugin) WordPress plugin before 2.6.4 is vulnerable to unauthorized modification of the Feeds for YouTube (YouTube video, channel, and gallery plugin) WordPress plugin before 2.6.4's license key due to a missing capability check on the 'acti",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/b19596c2-69bc-4e15-8632-eb80f4577e3c/"
+      ],
+      "published": "2026-05-18T07:16:12.020"
+    },
+    {
+      "id": "CVE-2026-8772",
+      "description": "A weakness has been identified in linlinjava litemall up to 1.8.0. Affected is an unknown function of the component Admin Endpoint. Executing a manipulation can lead to sql injection. The attack can be executed remotely. The exploit has been made available to the public and could be used for attacks",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://gist.github.com/A1AAAAAAAAAA1/bc875f5be52b44b2e557c5312e355d47",
+        "https://vuldb.com/submit/811468",
+        "https://vuldb.com/vuln/364397"
+      ],
+      "published": "2026-05-18T00:16:37.720"
+    },
+    {
+      "id": "CVE-2026-8773",
+      "description": "A security vulnerability has been detected in linlinjava litemall up to 1.8.0. Affected by this vulnerability is the function backup/load of the file litemall-db/src/main/java/org/linlinjava/litemall/db/util/DbUtil.java of the component Database Setting Handler. The manipulation of the argument db/p",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-88"
+      ],
+      "references": [
+        "https://gist.github.com/A1AAAAAAAAAA1/d5ae30a17744459e7cc5902fff32a35b",
+        "https://vuldb.com/submit/811469",
+        "https://vuldb.com/vuln/364398"
+      ],
+      "published": "2026-05-18T00:16:37.893"
+    },
+    {
+      "id": "CVE-2026-8779",
+      "description": "A vulnerability was determined in omec-project amf up to 2.1.3-dev. Impacted is the function NGSetupRequest of the file ngap/handler.go. Executing a manipulation of the argument InformationElement can lead to memory corruption. The attack can be launched remotely. The exploit has been publicly discl",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://github.com/omec-project/amf/",
+        "https://github.com/omec-project/amf/issues/671",
+        "https://github.com/omec-project/amf/pull/666"
+      ],
+      "published": "2026-05-18T02:16:37.180"
+    },
+    {
+      "id": "CVE-2026-8780",
+      "description": "A vulnerability was identified in omec-project amf up to 2.1.3-dev. The affected element is an unknown function of the file ngap/dispatcher.go of the component NGAP Message Handler. The manipulation leads to memory corruption. The attack may be initiated remotely. The exploit is publicly available a",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://github.com/omec-project/amf/",
+        "https://github.com/omec-project/amf/issues/670",
+        "https://github.com/omec-project/amf/pull/666"
+      ],
+      "published": "2026-05-18T02:16:37.383"
+    },
+    {
+      "id": "CVE-2026-8781",
+      "description": "A security flaw has been discovered in omec-project amf up to 2.1.3-dev. The impacted element is the function RANConfiguration of the file ngap/handler.go. The manipulation results in null pointer dereference. The attack may be launched remotely. The exploit has been released to the public and may b",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/omec-project/amf/",
+        "https://github.com/omec-project/amf/issues/673",
+        "https://github.com/omec-project/amf/pull/666"
+      ],
+      "published": "2026-05-18T02:16:37.570"
+    },
+    {
+      "id": "CVE-2026-8782",
+      "description": "A weakness has been identified in omec-project amf up to 2.1.3-dev. This affects an unknown function of the file ngap/handler.go of the component NGAP Message Handler. This manipulation causes null pointer dereference. Remote exploitation of the attack is possible. The exploit has been made availabl",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/omec-project/amf/",
+        "https://github.com/omec-project/amf/issues/674",
+        "https://github.com/omec-project/amf/pull/666"
+      ],
+      "published": "2026-05-18T02:16:37.753"
+    },
+    {
+      "id": "CVE-2026-8783",
+      "description": "A security vulnerability has been detected in omec-project amf up to 2.1.3-dev. This impacts the function UERadioCapabilityCheckResponse of the file ngap/dispatcher.go. Such manipulation leads to null pointer dereference. The attack can be executed remotely. The exploit has been disclosed publicly a",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/omec-project/amf/",
+        "https://github.com/omec-project/amf/issues/675",
+        "https://github.com/omec-project/amf/pull/666"
+      ],
+      "published": "2026-05-18T04:16:33.723"
+    },
+    {
+      "id": "CVE-2026-8784",
+      "description": "A vulnerability was detected in npitre cramfs-tools up to 2.2. Affected is the function change_file_status of the file cramfsck.c. Performing a manipulation results in symlink following. The attack requires a local approach. The exploit is now public and may be used. The patch is named b4a3a695c9873",
+      "severity": "MEDIUM",
+      "score": 4.2,
+      "cwes": [
+        "CWE-59",
+        "CWE-61"
+      ],
+      "references": [
+        "https://github.com/npitre/cramfs-tools/",
+        "https://github.com/npitre/cramfs-tools/commit/b4a3a695c9873f824907bd15659f2a6ac7667b4f",
+        "https://github.com/npitre/cramfs-tools/issues/13"
+      ],
+      "published": "2026-05-18T04:16:34.247"
+    },
+    {
+      "id": "CVE-2026-8770",
+      "description": "A vulnerability was identified in continuedev continue up to 1.2.22. This affects the function lsTool of the file core/tools/implementations/lsTool.ts of the component JSON-RPC Server. Such manipulation of the argument dirPath leads to path traversal. An attack has to be approached locally. The expl",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/da04e032993a4b2324df915f9ecf9831",
+        "https://vuldb.com/submit/811428",
+        "https://vuldb.com/vuln/364395"
+      ],
+      "published": "2026-05-18T00:16:37.343"
+    }
+  ]
+}
