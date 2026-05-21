@@ -1,0 +1,338 @@
+{
+  "timestamp": "2026-05-21T06:31:11.215923+00:00",
+  "scan_id": "ea9e91e3e5",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 7,
+      "MEDIUM": 6,
+      "LOW": 4,
+      "UNKNOWN": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-364",
+        3
+      ],
+      [
+        "CWE-787",
+        2
+      ],
+      [
+        "CWE-345",
+        2
+      ],
+      [
+        "CWE-476",
+        2
+      ],
+      [
+        "CWE-862",
+        2
+      ]
+    ],
+    "threat_index": 244.8,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 244.8,
+        "yesterday": 293.4,
+        "change_pct": -16.6
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-27648",
+      "description": "in OpenHarmony v6.0 and prior versions allow a remote attacker arbitrary code execution in pre-installed apps.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://gitcode.com/openharmony/security/tree/master/zh/security-disclosure/2026/2026-04.md"
+      ],
+      "published": "2026-05-19T04:16:28.563"
+    },
+    {
+      "id": "CVE-2026-25781",
+      "description": "in OpenHarmony v6.0 and prior versions allow a local attacker cause DOS and it cannot be recovered.",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://gitcode.com/openharmony/security/tree/master/zh/security-disclosure/2026/2026-05.md"
+      ],
+      "published": "2026-05-19T04:16:28.280"
+    },
+    {
+      "id": "CVE-2026-24792",
+      "description": "in OpenHarmony v6.0 and prior versions allow a remote attacker arbitrary code execution in pre-installed apps.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-364"
+      ],
+      "references": [
+        "https://gitcode.com/openharmony/security/tree/master/zh/security-disclosure/2026/2026-04.md"
+      ],
+      "published": "2026-05-19T04:16:27.907"
+    },
+    {
+      "id": "CVE-2026-33233",
+      "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.34 through 0.6.51, the backend deserializes Redis cache bytes using pickle.loads without integrity/authenticity checks. The write path serializes values with pic",
+      "severity": "HIGH",
+      "score": 7.6,
+      "cwes": [
+        "CWE-94",
+        "CWE-345",
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.52",
+        "https://github.com/Significant-Gravitas/AutoGPT/security/advisories/GHSA-rfg2-37xq-w4m9",
+        "https://github.com/Significant-Gravitas/AutoGPT/security/advisories/GHSA-rfg2-37xq-w4m9"
+      ],
+      "published": "2026-05-19T02:16:15.840"
+    },
+    {
+      "id": "CVE-2026-33232",
+      "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. Versions 0.4.2 through 0.6.51 are vulnerable to an unauthenticated Denial of Service (DoS) through the server due to uncontrolled disk space consumption. The download_agent_file",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-400",
+        "CWE-459",
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.52",
+        "https://github.com/Significant-Gravitas/AutoGPT/security/advisories/GHSA-374w-2pxq-c9jp",
+        "https://github.com/Significant-Gravitas/AutoGPT/security/advisories/GHSA-374w-2pxq-c9jp"
+      ],
+      "published": "2026-05-19T02:16:15.677"
+    },
+    {
+      "id": "CVE-2026-32323",
+      "description": "Mullvad VPN is a VPN client app for desktop and mobile. When using macOS with versions 2026.1 and below, Mullvad VPN may allow local privilege escalation during installation or upgrade. The installer package executes binaries from /Applications/Mullvad VPN.app without verifying if the bundle is atta",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-269",
+        "CWE-345",
+        "CWE-427"
+      ],
+      "references": [
+        "https://github.com/mullvad/mullvadvpn-app/commit/032fdcb927c0b6d3e5e1aba4140d33adf22a6bfb",
+        "https://github.com/mullvad/mullvadvpn-app/security/advisories/GHSA-c2g6-w5fq-vw3m"
+      ],
+      "published": "2026-05-19T02:16:14.367"
+    },
+    {
+      "id": "CVE-2026-22069",
+      "description": "A local privilege escalation vulnerability exists in O+ Connect because it fails to validate the identity of the caller on the pipe interface.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-266"
+      ],
+      "references": [
+        "https://security.oppo.com/en/noticeDetail?notice_only_key=NOTICE-2056566978633801728"
+      ],
+      "published": "2026-05-19T04:16:25.963"
+    },
+    {
+      "id": "CVE-2026-28733",
+      "description": "in OpenHarmony v6.0 and prior versions allow a local attacker arbitrary code execution.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://gitcode.com/openharmony/security/tree/master/zh/security-disclosure/2026/2026-05.md"
+      ],
+      "published": "2026-05-19T04:16:30.247"
+    },
+    {
+      "id": "CVE-2026-25850",
+      "description": "in OpenHarmony v6.0 and prior versions allow a local attacker cause information leak",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-281"
+      ],
+      "references": [
+        "https://gitcode.com/openharmony/security/tree/master/zh/security-disclosure/2026/2026-05.md"
+      ],
+      "published": "2026-05-19T04:16:28.423"
+    },
+    {
+      "id": "CVE-2026-27766",
+      "description": "in OpenHarmony v6.0 and prior versions allow a local attacker cause information leak.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-364"
+      ],
+      "references": [
+        "https://gitcode.com/openharmony/security/tree/master/zh/security-disclosure/2026/2026-05.md"
+      ],
+      "published": "2026-05-19T04:16:28.693"
+    },
+    {
+      "id": "CVE-2026-47307",
+      "description": "NULL pointer dereference vulnerability in Samsung Open Source Walrus allows an attacker to cause a denial of service via a crafted WebAssembly module containing deeply nested instructions.\n\nThis issue affects Walrus: f339b8ee4ea701772e8ae640b3d1b12ac02b1ae9.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/Samsung/walrus/pull/409"
+      ],
+      "published": "2026-05-19T04:16:31.317"
+    },
+    {
+      "id": "CVE-2026-32244",
+      "description": "Discourse is an open-source discussion platform. In versions prior to 2026.1.4, 2026.3.1, 2026.4.1 and 2026.5.0-latest.1, outdated cached AI summaries can leak removed content to anonymous and unprivileged users who cannot regenerate summaries. This issue has been fixed in versions 2026.1.4, 2026.3.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200",
+        "CWE-524",
+        "CWE-672"
+      ],
+      "references": [
+        "https://github.com/discourse/discourse/security/advisories/GHSA-hjmg-2mww-vfvx"
+      ],
+      "published": "2026-05-19T00:16:37.100"
+    },
+    {
+      "id": "CVE-2026-33234",
+      "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.1.0 through 0.6.51,  SendEmailBlock in autogpt_platform/backend/backend/blocks/email_block.py accepts a user-supplied smtp_server (string) and smtp_port (integer) ",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.52",
+        "https://github.com/Significant-Gravitas/AutoGPT/security/advisories/GHSA-4jwj-6mg5-wrwf",
+        "https://github.com/Significant-Gravitas/AutoGPT/security/advisories/GHSA-4jwj-6mg5-wrwf"
+      ],
+      "published": "2026-05-19T02:16:16.010"
+    },
+    {
+      "id": "CVE-2026-25110",
+      "description": "in OpenHarmony v6.0 and prior versions allow a local attacker cause DOS.",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://gitcode.com/openharmony/security/tree/master/zh/security-disclosure/2026/2026-04.md"
+      ],
+      "published": "2026-05-19T04:16:28.137"
+    },
+    {
+      "id": "CVE-2026-27781",
+      "description": "in OpenHarmony v6.0 and prior versions allow a local attacker cause DOS.",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://gitcode.com/openharmony/security/tree/master/zh/security-disclosure/2026/2026-04.md"
+      ],
+      "published": "2026-05-19T04:16:28.833"
+    },
+    {
+      "id": "CVE-2026-28751",
+      "description": "in OpenHarmony v6.0 and prior versions allow a local attacker cause DOS.",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://gitcode.com/openharmony/security/tree/master/zh/security-disclosure/2026/2026-04.md"
+      ],
+      "published": "2026-05-19T04:16:31.053"
+    },
+    {
+      "id": "CVE-2026-33565",
+      "description": "in OpenHarmony v6.0 and prior versions allow a local attacker cause DOS.",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-364"
+      ],
+      "references": [
+        "https://gitcode.com/openharmony/security/tree/master/zh/security-disclosure/2026/2026-05.md"
+      ],
+      "published": "2026-05-19T04:16:31.183"
+    },
+    {
+      "id": "CVE-2026-32312",
+      "description": "GLPI is a free asset and IT management software package. In versions 11.0.0 through 11.0.6, an authenticated user with forms READ permission can export the structure of unauthorized forms. This issue has been fixed in version 11.0.7.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/glpi-project/glpi/releases/tag/11.0.7",
+        "https://github.com/glpi-project/glpi/security/advisories/GHSA-cg63-qchq-q626"
+      ],
+      "published": "2026-05-19T00:16:37.283"
+    },
+    {
+      "id": "CVE-2026-33052",
+      "description": "Mantis Bug Tracker (MantisBT) is an open source issue tracker. Versions 2.28.0 and 2.28.1 allow a low-privileged authenticated user assigned the \"add_profile_threshold\" permission to create a global profile despite not having manage_global_profile_threshold, by tampering with the user_id parameter i",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/mantisbt/mantisbt/commit/3f952e68fa864e0e60abc3e84adecf3cfa84c75e",
+        "https://github.com/mantisbt/mantisbt/security/advisories/GHSA-68w5-w573-q2r8",
+        "https://mantisbt.org/bugs/view.php?id=36974"
+      ],
+      "published": "2026-05-19T02:16:15.503"
+    },
+    {
+      "id": "CVE-2026-33514",
+      "description": "Discourse is an open-source discussion platform. In versions prior to 2026.1.4, 2026.3.1, 2026.4.1 and 2026.5.0-latest.1, an authenticated user on a Discourse instance with the form templates feature enabled can read the name and structured content of form templates that are intended exclusively for",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/discourse/discourse/commit/ae5c9570fb918442c4d96abc83c1e7e169909b02",
+        "https://github.com/discourse/discourse/security/advisories/GHSA-w6g7-p2p9-2m5h"
+      ],
+      "published": "2026-05-19T02:16:16.210"
+    }
+  ]
+}
