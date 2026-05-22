@@ -1,0 +1,362 @@
+{
+  "timestamp": "2026-05-22T06:29:19.078938+00:00",
+  "scan_id": "1c4a96819f",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 2,
+      "MEDIUM": 16,
+      "LOW": 1,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-352",
+        4
+      ],
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-125",
+        2
+      ],
+      [
+        "CWE-190",
+        1
+      ],
+      [
+        "CWE-89",
+        1
+      ]
+    ],
+    "threat_index": 231.7,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 231.7,
+        "yesterday": 244.8,
+        "change_pct": -5.4
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-43618",
+      "description": "Rsync version\u00a03.4.2 and prior contain an integer overflow vulnerability in the compressed-token decoder where a 32-bit signed counter is not checked for overflow, allowing a malicious sender to trigger an overflow that causes the receiver process to read and return data from outside the intended buf",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-125",
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/RsyncProject/rsync/releases/tag/v3.4.3",
+        "https://github.com/RsyncProject/rsync/security/advisories/GHSA-g37v-g3gj-pmwq",
+        "https://www.vulncheck.com/advisories/rsync-integer-overflow-information-disclosure"
+      ],
+      "published": "2026-05-20T02:16:36.410"
+    },
+    {
+      "id": "CVE-2026-3985",
+      "description": "The Creative Mail \u2013 Easier WordPress & WooCommerce Email Marketing plugin for WordPress is vulnerable to SQL Injection via the 'checkout_uuid' parameter in all versions up to, and including, 1.6.9. This is due to insufficient escaping on the user supplied parameter and lack of sufficient preparation",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/creative-mail-by-constant-contact/tags/1.6.9/src/Managers/CheckoutManager.php#L100",
+        "https://plugins.trac.wordpress.org/browser/creative-mail-by-constant-contact/tags/1.6.9/src/Managers/DatabaseManager.php#L298",
+        "https://plugins.trac.wordpress.org/browser/creative-mail-by-constant-contact/trunk/src/Managers/DatabaseManager.php#L298"
+      ],
+      "published": "2026-05-20T02:16:35.570"
+    },
+    {
+      "id": "CVE-2026-35593",
+      "description": "Trilium Notes is an open-source, cross-platform hierarchical note taking application for building large personal knowledge bases. Versions 0.102.1 and prior are vulnerable to Local File Inclusion, allowing an authenticated attacker to read sensitive arbitrary files from the server's filesystem. The ",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-22",
+        "CWE-73"
+      ],
+      "references": [
+        "https://github.com/TriliumNext/Trilium/releases/tag/v0.102.2",
+        "https://github.com/TriliumNext/Trilium/security/advisories/GHSA-hf4x-22rg-pjjp",
+        "https://github.com/TriliumNext/Trilium/security/advisories/GHSA-hf4x-22rg-pjjp"
+      ],
+      "published": "2026-05-20T00:16:37.433"
+    },
+    {
+      "id": "CVE-2026-45585",
+      "description": "Microsoft is aware of a security feature bypass vulnerability in Windows publicly referred to as &quot;YellowKey&quot;. The proof of concept for this vulnerability has been made public violating coordinated vulnerability best practices.\nWe are issuing this CVE to provide mitigation guidance that can",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-77"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45585",
+        "https://github.com/Nightmare-Eclipse/YellowKey"
+      ],
+      "published": "2026-05-20T00:16:44.380"
+    },
+    {
+      "id": "CVE-2026-43620",
+      "description": "Rsync version\u00a03.4.2 and prior contain a receiver-side out-of-bounds array read vulnerability in recv_files() in receiver.c that allows a malicious rsync server to crash the rsync client process. Attackers can exploit the vulnerability by setting CF_INC_RECURSE in compatibility flags and sending a sp",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/RsyncProject/rsync/releases/tag/v3.4.3",
+        "https://github.com/RsyncProject/rsync/security/advisories/GHSA-28pw-r563-rxvm",
+        "https://www.vulncheck.com/advisories/rsync-out-of-bounds-array-read-via-recv-files"
+      ],
+      "published": "2026-05-20T02:16:36.727"
+    },
+    {
+      "id": "CVE-2026-6072",
+      "description": "The Oliver POS \u2013 A WooCommerce Point of Sale (POS) plugin for WordPress is vulnerable to Authorization Bypass Through User-Controlled Key in all versions up to and including 2.4.2.6. The plugin protects its entire /wp-json/pos-bridge/* REST API namespace through the oliver_pos_rest_authentication() ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/oliver-pos/tags/2.4.2.6/includes/class-pos-bridge-user.php#L170",
+        "https://plugins.trac.wordpress.org/browser/oliver-pos/tags/2.4.2.6/includes/class-pos-bridge-user.php#L195",
+        "https://plugins.trac.wordpress.org/browser/oliver-pos/tags/2.4.2.6/includes/class-pos-bridge-user.php#L231"
+      ],
+      "published": "2026-05-20T02:16:37.207"
+    },
+    {
+      "id": "CVE-2026-5293",
+      "description": "The \u8a3a\u65ad\u30b8\u30a7\u30cd\u30ec\u30fc\u30bf\u4f5c\u6210\u30d7\u30e9\u30b0\u30a4\u30f3 (Diagnosis Generator) plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'js' parameter in versions up to and including 1.4.16. This is due to missing authorization checks and insufficient input sanitization in the themeFunc() function. The function is hook",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/os-diagnosis-generator/tags/1.4.16/class/themeClass.php#L26",
+        "https://plugins.trac.wordpress.org/browser/os-diagnosis-generator/tags/1.4.16/class/themeClass.php#L39",
+        "https://plugins.trac.wordpress.org/browser/os-diagnosis-generator/tags/1.4.16/diagnosisAdminClass.php#L409"
+      ],
+      "published": "2026-05-20T02:16:37.053"
+    },
+    {
+      "id": "CVE-2026-6397",
+      "description": "The Sticky plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `cvmh-sticky` shortcode `readmoretext` attribute in versions up to and including 2.5.6. This is due to insufficient input sanitization and output escaping in the `cvmh_sticky_front_render()` function \u2014 the `readmore",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/sticky/tags/2.5.6/includes/functions.php#L118",
+        "https://plugins.trac.wordpress.org/browser/sticky/tags/2.5.6/includes/shortcode.php#L7",
+        "https://plugins.trac.wordpress.org/browser/sticky/trunk/includes/functions.php#L118"
+      ],
+      "published": "2026-05-20T02:16:37.770"
+    },
+    {
+      "id": "CVE-2026-43619",
+      "description": "Rsync version\u00a03.4.2 and prior contain symlink race condition vulnerabilities in path-based system calls including chmod, lchown, utimes, rename, unlink, mkdir, symlink, mknod, link, rmdir, and lstat that allow local attackers to redirect operations to files outside the exported rsync module. Attacke",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-59",
+        "CWE-367"
+      ],
+      "references": [
+        "https://github.com/RsyncProject/rsync/releases/tag/v3.4.3",
+        "https://github.com/RsyncProject/rsync/security/advisories/GHSA-4h9m-w5ff-j735",
+        "https://www.vulncheck.com/advisories/rsync-symlink-race-condition-via-path-based-syscalls"
+      ],
+      "published": "2026-05-20T02:16:36.577"
+    },
+    {
+      "id": "CVE-2026-6391",
+      "description": "The Sentence To SEO (keywords, description and tags) plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.0. This is due to missing or incorrect nonce validation on the create_admin_page() function. This makes it possible for unauthenticated attack",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/sentence-to-seo/tags/1.0/index.php#L50",
+        "https://plugins.trac.wordpress.org/browser/sentence-to-seo/tags/1.0/index.php#L75",
+        "https://plugins.trac.wordpress.org/browser/sentence-to-seo/tags/1.0/index.php#L81"
+      ],
+      "published": "2026-05-20T02:16:37.347"
+    },
+    {
+      "id": "CVE-2026-6395",
+      "description": "The Word 2 Cash plugin for WordPress is vulnerable to Cross-Site Request Forgery leading to Stored Cross-Site Scripting in versions up to and including 0.9.2. This is due to the complete absence of nonce verification on the settings save handler in the w2c_admin() function, combined with missing inp",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/word-2-cash/tags/0.9.2/word2cash.php#L18",
+        "https://plugins.trac.wordpress.org/browser/word-2-cash/tags/0.9.2/word2cash.php#L20",
+        "https://plugins.trac.wordpress.org/browser/word-2-cash/tags/0.9.2/word2cash.php#L31"
+      ],
+      "published": "2026-05-20T02:16:37.627"
+    },
+    {
+      "id": "CVE-2026-39309",
+      "description": "Trilium Notes is a cross-platform, hierarchical note taking application focused on building large personal knowledge bases. In versions 0.102.1 and prior, the Electron configuration is vulnerable to TCC Bypass via Prompt Spoofing, allowing local attackers to trigger misleading macOS permission promp",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-290",
+        "CWE-451"
+      ],
+      "references": [
+        "https://github.com/TriliumNext/Trilium/releases/tag/v0.102.2",
+        "https://github.com/TriliumNext/Trilium/security/advisories/GHSA-66pm-8hvq-2wwx",
+        "https://github.com/TriliumNext/Trilium/security/advisories/GHSA-66pm-8hvq-2wwx"
+      ],
+      "published": "2026-05-20T00:16:37.613"
+    },
+    {
+      "id": "CVE-2026-6394",
+      "description": "The Nexa Blocks \u2013 Gutenberg Blocks, Page Builder for Gutenberg Editor & FSE plugin for WordPress is vulnerable to Server-Side Request Forgery (SSRF) in versions up to and including 1.1.1. This is due to the import_demo() function accepting a user-supplied URL in the demo_json_file POST parameter and",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/nexa-blocks/tags/1.1.1/inc/classes/enqueue-assets.php#L84",
+        "https://plugins.trac.wordpress.org/browser/nexa-blocks/tags/1.1.1/inc/template/template.php#L236",
+        "https://plugins.trac.wordpress.org/browser/nexa-blocks/tags/1.1.1/inc/template/template.php#L242"
+      ],
+      "published": "2026-05-20T02:16:37.490"
+    },
+    {
+      "id": "CVE-2026-43617",
+      "description": "Rsync version\u00a03.4.2 and prior contain an authorization bypass vulnerability in the rsync daemon's hostname-based access control list enforcement when configured with chroot. Attackers can bypass hostname-based deny rules by controlling the PTR record for their source IP address, allowing connections",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-289"
+      ],
+      "references": [
+        "https://github.com/RsyncProject/rsync/releases/tag/v3.4.3",
+        "https://github.com/RsyncProject/rsync/security/advisories/GHSA-rjfm-3w2m-jf4f",
+        "https://www.vulncheck.com/advisories/rsync-authorization-bypass-via-hostname-resolution"
+      ],
+      "published": "2026-05-20T02:16:36.233"
+    },
+    {
+      "id": "CVE-2026-6399",
+      "description": "The General Options plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 1.1.0. This is due to the use of sanitize_text_field() for output escaping in the Contact Number (ad_contact_number) field \u2014 a function that strips HTML tags but does not encode doub",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/general-options/tags/1.1.0/direct-action.php",
+        "https://plugins.trac.wordpress.org/browser/general-options/tags/1.1.0/direct-main.php",
+        "https://plugins.trac.wordpress.org/browser/general-options/trunk/direct-action.php"
+      ],
+      "published": "2026-05-20T02:16:37.920"
+    },
+    {
+      "id": "CVE-2026-34754",
+      "description": "Mantis Bug Tracker (MantisBT) is an open source issue tracker. Versions 2.28.1 and prior allow an authenticated user to upload attachments to private Issues they are not authorized to access. This issue has been fixed in version 2.28.2.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/mantisbt/mantisbt/commit/b262b4d2835b81394d75356dead66e52a6275206",
+        "https://github.com/mantisbt/mantisbt/security/advisories/GHSA-h4x5-gvx6-3rwc",
+        "https://mantisbt.org/bugs/view.php?id=36976"
+      ],
+      "published": "2026-05-20T00:16:34.857"
+    },
+    {
+      "id": "CVE-2026-6400",
+      "description": "The Child Height Predictor by Ostheimer plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to and including 1.3. This is due to missing nonce verification in the options() function, which handles plugin settings updates. The form template does not include a wp_nonce_",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/child-height-predictor/tags/1.3/childheight.php#L135",
+        "https://plugins.trac.wordpress.org/browser/child-height-predictor/tags/1.3/childheight.php#L149",
+        "https://plugins.trac.wordpress.org/browser/child-height-predictor/trunk/childheight.php#L135"
+      ],
+      "published": "2026-05-20T02:16:38.067"
+    },
+    {
+      "id": "CVE-2026-6401",
+      "description": "The Bottom Bar plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to and including 0.1.7. This is due to missing nonce verification on the plugin's settings update forms handled in bottom-bar-admin.php. None of the three settings forms (main settings, sharing service",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/bottom-bar/tags/0.1.7/bottom-bar-admin.php#L16",
+        "https://plugins.trac.wordpress.org/browser/bottom-bar/tags/0.1.7/bottom-bar-admin.php#L59",
+        "https://plugins.trac.wordpress.org/browser/bottom-bar/trunk/bottom-bar-admin.php#L16"
+      ],
+      "published": "2026-05-20T02:16:38.213"
+    },
+    {
+      "id": "CVE-2026-45232",
+      "description": "Rsync versions before 3.4.3 contain an off-by-one out-of-bounds stack write vulnerability in the establish_proxy_connection() function in socket.c that allows network attackers to corrupt stack memory by sending a malformed HTTP proxy response. Attackers can exploit this by positioning themselves be",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-193"
+      ],
+      "references": [
+        "https://github.com/RsyncProject/rsync/releases/tag/v3.4.3",
+        "https://github.com/RsyncProject/rsync/security/advisories/GHSA-8f85-j2cv-59m8",
+        "https://www.vulncheck.com/advisories/rsync-off-by-one-stack-write-via-http-proxy"
+      ],
+      "published": "2026-05-20T02:16:36.887"
+    },
+    {
+      "id": "CVE-2026-34970",
+      "description": "Mantis Bug Tracker (MantisBT) is an open source issue tracker. Versions 2.28.1 and prior allow a bugnote author to access the note's Revisions page after losing access to the parent private issue. This issue has been fixed in version 2.28.2.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://github.com/mantisbt/mantisbt/commit/71df1f67e05b2050cd4bd87839e6cc13747cf03f",
+        "https://github.com/mantisbt/mantisbt/security/advisories/GHSA-crmx-4p49-46m2",
+        "https://mantisbt.org/bugs/view.php?id=36978"
+      ],
+      "published": "2026-05-20T00:16:35.560"
+    }
+  ]
+}
