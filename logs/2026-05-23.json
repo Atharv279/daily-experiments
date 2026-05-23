@@ -1,0 +1,335 @@
+{
+  "timestamp": "2026-05-23T05:49:24.869528+00:00",
+  "scan_id": "cc1adba829",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 9,
+      "MEDIUM": 7,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-122",
+        2
+      ],
+      [
+        "CWE-121",
+        2
+      ],
+      [
+        "CWE-287",
+        2
+      ],
+      [
+        "CWE-79",
+        2
+      ],
+      [
+        "CWE-639",
+        2
+      ]
+    ],
+    "threat_index": 376.3,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 376.3,
+        "yesterday": 231.7,
+        "change_pct": 62.4
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-44050",
+      "description": "A heap-based buffer overflow in the CNID daemon comm_rcv() function in Netatalk 2.0.0 through 4.4.2 allows a remote authenticated attacker to execute arbitrary code with escalated privileges or cause a denial of service.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://netatalk.io/security/CVE-2026-44050"
+      ],
+      "published": "2026-05-21T08:16:20.580"
+    },
+    {
+      "id": "CVE-2026-6279",
+      "description": "The Avada Builder (fusion-builder) plugin for WordPress is vulnerable to Unauthenticated Remote Code Execution via PHP Function Injection in versions up to and including 3.15.2. This is due to the `wp_conditional_tags` case in `Fusion_Builder_Conditional_Render_Helper::get_value()` passing attacker-",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-74"
+      ],
+      "references": [
+        "https://avada.com/documentation/avada-changelog/",
+        "https://plugins.trac.wordpress.org/browser/fusion-builder/tags/3.15.0/inc/class-fusion-builder.php#L7551",
+        "https://plugins.trac.wordpress.org/browser/fusion-builder/tags/3.15.0/inc/helpers/class-fusion-builder-conditional-render-helper.php#L1083"
+      ],
+      "published": "2026-05-21T05:16:23.770"
+    },
+    {
+      "id": "CVE-2026-44047",
+      "description": "An SQL injection vulnerability in the MySQL CNID backend in Netatalk 3.1.0 through 4.4.2 allows a remote authenticated attacker to obtain unauthorized access to data, modify data, or cause a denial of service.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://netatalk.io/security/CVE-2026-44047"
+      ],
+      "published": "2026-05-21T08:16:20.173"
+    },
+    {
+      "id": "CVE-2026-44048",
+      "description": "A stack-based buffer overflow via UCS-2 type confusion in convert_charset() in Netatalk 2.0.4 through 4.4.2 allows a remote authenticated attacker to execute arbitrary code or cause a denial of service.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://netatalk.io/security/CVE-2026-44048"
+      ],
+      "published": "2026-05-21T08:16:20.360"
+    },
+    {
+      "id": "CVE-2026-40165",
+      "description": "authentik is an open-source identity provider. Versions 2025.12.4 and prior, and versions 2026.2.0-rc1 through 2026.2.2 were vulnerable to Authentication Bypass through SAML NameID XML Comment Injection. Due to how authentik extracted the NameID value from a SAML assertion, it was possible for an at",
+      "severity": "HIGH",
+      "score": 8.7,
+      "cwes": [
+        "CWE-91",
+        "CWE-287",
+        "CWE-436"
+      ],
+      "references": [
+        "https://github.com/goauthentik/authentik/commit/47dec5c6b7fb4a62bfad2ae8bddf002bde7ba774",
+        "https://github.com/goauthentik/authentik/releases/tag/version%2F2025.12.5",
+        "https://github.com/goauthentik/authentik/security/advisories/GHSA-9wj8-xv4r-qwrp"
+      ],
+      "published": "2026-05-21T00:16:28.290"
+    },
+    {
+      "id": "CVE-2026-44051",
+      "description": "An improper link resolution vulnerability in Netatalk 3.0.2 through 4.4.2 allows a remote authenticated attacker to read arbitrary files or overwrite arbitrary files via attacker-controlled symlink creation.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-59"
+      ],
+      "references": [
+        "https://netatalk.io/security/CVE-2026-44051"
+      ],
+      "published": "2026-05-21T08:16:20.690"
+    },
+    {
+      "id": "CVE-2026-44049",
+      "description": "An out-of-bounds write due to improper null termination in convert_charset() in Netatalk 2.0.4 through 4.4.2 allows a remote authenticated attacker to execute arbitrary code or cause a denial of service via crafted character data.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://netatalk.io/security/CVE-2026-44049"
+      ],
+      "published": "2026-05-21T08:16:20.473"
+    },
+    {
+      "id": "CVE-2026-44052",
+      "description": "Netatalk 2.1.0 through 4.4.2 inserts LDAP simple-bind passwords into log output in cleartext, which allows an attacker with access to the log files to obtain LDAP credentials.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-532"
+      ],
+      "references": [
+        "https://netatalk.io/security/CVE-2026-44052"
+      ],
+      "published": "2026-05-21T08:16:20.800"
+    },
+    {
+      "id": "CVE-2026-44055",
+      "description": "A logic error involving bitwise OR operations in Netatalk 3.1.4 through 4.4.2 allows a remote authenticated attacker to inject OS commands and execute arbitrary code.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://netatalk.io/security/CVE-2026-44055"
+      ],
+      "published": "2026-05-21T08:16:21.137"
+    },
+    {
+      "id": "CVE-2026-44053",
+      "description": "Netatalk 1.5.0 through 4.2.2 uses a broken cryptographic algorithm in the DHCAST128 UAM, which allows a remote attacker to obtain authentication credentials or impersonate a user via cryptanalytic attack.",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-327"
+      ],
+      "references": [
+        "https://netatalk.io/security/CVE-2026-44053"
+      ],
+      "published": "2026-05-21T08:16:20.910"
+    },
+    {
+      "id": "CVE-2026-44058",
+      "description": "An authentication bypass vulnerability in Netatalk 2.2.2 through 4.4.2 allows a remote privileged user to authenticate as an arbitrary user via the admin auth user mechanism.",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://netatalk.io/security/CVE-2026-44058"
+      ],
+      "published": "2026-05-21T08:16:21.353"
+    },
+    {
+      "id": "CVE-2026-9149",
+      "description": "A flaw was found in libsolv. This heap buffer overflow vulnerability occurs when a victim processes a specially crafted `.solv` file containing negative size values in the `repo_add_solv` function. This leads to an undersized memory allocation and a subsequent out-of-bounds write. An attacker could ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-9149",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2460380",
+        "https://github.com/openSUSE/libsolv/pull/617"
+      ],
+      "published": "2026-05-21T00:16:35.630"
+    },
+    {
+      "id": "CVE-2026-2734",
+      "description": "In mlflow/mlflow versions up to 3.9.0, the `SearchModelVersions` REST API endpoint and the `mlflowSearchModelVersions` GraphQL query lack proper per-model authorization checks when basic authentication is enabled. This allows any authenticated user to enumerate all model versions across all register",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/mlflow/mlflow/commit/6989066af33fdcb03588fd71a1a67f8fc5ef12c9",
+        "https://huntr.com/bounties/d632f783-b2c7-4a3b-af5e-1d693e841c08",
+        "https://huntr.com/bounties/d632f783-b2c7-4a3b-af5e-1d693e841c08"
+      ],
+      "published": "2026-05-21T05:16:22.723"
+    },
+    {
+      "id": "CVE-2026-44054",
+      "description": "Netatalk 2.0.0 through 4.4.2 generates AFP session tokens derived from predictable process IDs, which allows a remote authenticated attacker to cause a denial of service by exploiting the reconnect mechanism.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-330"
+      ],
+      "references": [
+        "https://netatalk.io/security/CVE-2026-44054"
+      ],
+      "published": "2026-05-21T08:16:21.017"
+    },
+    {
+      "id": "CVE-2026-1543",
+      "description": "The Avada (Fusion) Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via multiple shortcodes in all versions up to, and including, 3.15.2 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Subscriber-level acce",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://avada.com/documentation/avada-changelog/",
+        "https://themeforest.net/item/avada-responsive-multipurpose-theme/2833226",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/72a6b040-ed02-4561-82f2-4adb820bdf7d?source=cve"
+      ],
+      "published": "2026-05-21T05:16:22.257"
+    },
+    {
+      "id": "CVE-2026-44056",
+      "description": "A stack-based buffer overflow in desktop.c in Netatalk 1.3 through 4.2.2 allows a remote authenticated attacker to cause a denial of service, obtain limited information, or modify limited data.",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://netatalk.io/security/CVE-2026-44056"
+      ],
+      "published": "2026-05-21T08:16:21.247"
+    },
+    {
+      "id": "CVE-2026-4811",
+      "description": "The WPB Floating Menu & Categories for WordPress \u2013 Sticky Side Menu with Icons plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Icon CSS Class' category field in all versions up to, and including, 1.0.8 due to insufficient input sanitization and output escaping. This makes ",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wpb-floating-menu-or-categories/tags/1.0.8/admin/category-icon.php#L41",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/961702ff-60fb-41ff-99b0-a37ade051083?source=cve"
+      ],
+      "published": "2026-05-21T04:16:31.133"
+    },
+    {
+      "id": "CVE-2026-1881",
+      "description": "The Broadstreet plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.52.2 via the get_sponsored_meta AJAX action due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with Subscriber-level acc",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset?old_path=%2Fbroadstreet/tags/1.52.2&new_path=%2Fbroadstreet/tags/1.53.2",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/328ccf8f-797b-4b1a-b0f1-afd8e44f41e6?source=cve"
+      ],
+      "published": "2026-05-21T02:16:32.437"
+    },
+    {
+      "id": "CVE-2026-48172",
+      "description": "LiteSpeed User-End cPanel Plugin before 2.4.5 allows privilege escalation (possibly to root), as exploited in the wild in May 2026. Detection is best done via a command line of grep -rE \"cpanel_jsonapi_func=redisAble\" /var/cpanel/logs /usr/local/cpanel/logs/ 2>/dev/null in Bash. If you get no output",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-266"
+      ],
+      "references": [
+        "https://www.litespeedtech.com/products/litespeed-web-server/control-panel-support/cpanel",
+        "https://www.litespeedtech.com/products/litespeed-web-server/control-panel-support/release-log"
+      ],
+      "published": "2026-05-21T02:16:33.760"
+    },
+    {
+      "id": "CVE-2026-9152",
+      "description": "A missing authentication vulnerability exists in the Altium 365 SearchService. A legacy SOAP endpoint exposes search index operations without requiring authentication, session tokens, or any form of identity verification. An unauthenticated network attacker who can reference a target workspace's ide",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-306",
+        "CWE-639"
+      ],
+      "references": [
+        "https://www.altium.com/platform/security-compliance/security-advisories"
+      ],
+      "published": "2026-05-21T02:16:33.943"
+    }
+  ]
+}
