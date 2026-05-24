@@ -1,0 +1,313 @@
+{
+  "timestamp": "2026-05-24T06:13:01.050535+00:00",
+  "scan_id": "390d5a7f98",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 4,
+      "HIGH": 2,
+      "UNKNOWN": 14
+    },
+    "top_cwes": [
+      [
+        "CWE-22",
+        2
+      ],
+      [
+        "CWE-20",
+        2
+      ],
+      [
+        "CWE-284",
+        1
+      ],
+      [
+        "CWE-89",
+        1
+      ]
+    ],
+    "threat_index": 202.0,
+    "critical_count": 4
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 202.0,
+        "yesterday": 376.3,
+        "change_pct": -46.3
+      },
+      "critical_count": {
+        "today": 4,
+        "yesterday": 2,
+        "change_pct": 100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-34908",
+      "description": "A malicious actor with access to the network could exploit an Improper Access Control vulnerability found in UniFi OS devices to make unauthorized changes to the system.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://community.ui.com/releases/Security-Advisory-Bulletin-064-064/84811c09-4cf4-42ab-bd61-cc994445963b"
+      ],
+      "published": "2026-05-22T02:16:34.240"
+    },
+    {
+      "id": "CVE-2026-34909",
+      "description": "A malicious actor with access to the network could exploit a Path Traversal vulnerability found in UniFi OS devices to access files on the underlying system that could be manipulated to access an underlying account.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://community.ui.com/releases/Security-Advisory-Bulletin-064-064/84811c09-4cf4-42ab-bd61-cc994445963b"
+      ],
+      "published": "2026-05-22T02:16:34.390"
+    },
+    {
+      "id": "CVE-2026-34910",
+      "description": "A malicious actor with access to the network could exploit an Improper Input Validation vulnerability found in UniFi OS devices to execute a Command Injection.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://community.ui.com/releases/Security-Advisory-Bulletin-064-064/84811c09-4cf4-42ab-bd61-cc994445963b"
+      ],
+      "published": "2026-05-22T02:16:34.527"
+    },
+    {
+      "id": "CVE-2026-33000",
+      "description": "A malicious actor with access to the network and high privileges could exploit an Improper Input Validation vulnerability found in UniFi OS devices to execute a Command Injection.",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://community.ui.com/releases/Security-Advisory-Bulletin-064-064/84811c09-4cf4-42ab-bd61-cc994445963b"
+      ],
+      "published": "2026-05-22T02:16:33.933"
+    },
+    {
+      "id": "CVE-2026-34911",
+      "description": "A malicious actor with access to the network and low privileges could exploit a Path Traversal vulnerability found in UniFi OS devices to access files on the underlying system that could be manipulated to obtain sensitive information.",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://community.ui.com/releases/Security-Advisory-Bulletin-064-064/84811c09-4cf4-42ab-bd61-cc994445963b"
+      ],
+      "published": "2026-05-22T02:16:34.667"
+    },
+    {
+      "id": "CVE-2026-4834",
+      "description": "The WP ERP Pro plugin for WordPress is vulnerable to SQL Injection via the 'search_key' parameter in all versions up to, and including, 1.5.1. This is due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://wperp.com/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/d3849db8-5c9e-410e-be53-c9ab76162630?source=cve"
+      ],
+      "published": "2026-05-22T04:16:26.647"
+    },
+    {
+      "id": "CVE-2026-9264",
+      "description": "A cross-site scripting (XSS) vulnerability in SketchUp 2026's Dynamic Components feature allows remote code execution and local file exfiltration through maliciously crafted SKP files. The vulnerability stems from improper input sanitization in the component options window, enabling attackers to exe",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://trust.trimble.com/?tcuUid=52252bc0-c196-4b1f-9f13-4e4c9ba247d9"
+      ],
+      "published": "2026-05-22T02:16:35.073"
+    },
+    {
+      "id": "CVE-2026-39827",
+      "description": "An authenticated SSH client that repeatedly opened channels which were rejected by the server caused unbounded memory growth, eventually crashing the server process and affecting all connected users. Rejected channels are now properly removed from the connection's internal state and released for gar",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/781320",
+        "https://go.dev/issue/35127",
+        "https://groups.google.com/g/golang-announce/c/a082jnz-LvI"
+      ],
+      "published": "2026-05-22T04:16:21.497"
+    },
+    {
+      "id": "CVE-2026-39828",
+      "description": "When an SSH server authentication callback returned PartialSuccessError with non-nil Permissions, those permissions were silently discarded, potentially dropping certificate restrictions such as force-command after a second factor succeeded. Returning non-nil Permissions with PartialSuccessError now",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/781621",
+        "https://go.dev/issue/79562",
+        "https://groups.google.com/g/golang-announce/c/a082jnz-LvI"
+      ],
+      "published": "2026-05-22T04:16:22.190"
+    },
+    {
+      "id": "CVE-2026-39829",
+      "description": "The RSA and DSA public key parsers did not enforce size limits on key parameters. A crafted public key with an excessively large modulus or DSA parameter could cause several minutes of CPU consumption during signature verification. This could be triggered by unauthenticated clients during public key",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/781641",
+        "https://go.dev/cl/781661",
+        "https://go.dev/issue/79565"
+      ],
+      "published": "2026-05-22T04:16:22.310"
+    },
+    {
+      "id": "CVE-2026-39830",
+      "description": "A malicious SSH peer could send unsolicited global request responses to fill an internal buffer, blocking the connection's read loop. The blocked goroutine could not be released by calling Close(), resulting in a resource leak per connection. Unsolicited global responses are now discarded.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/781640",
+        "https://go.dev/cl/781664",
+        "https://go.dev/issue/79564"
+      ],
+      "published": "2026-05-22T04:16:22.440"
+    },
+    {
+      "id": "CVE-2026-39831",
+      "description": "The Verify() method for FIDO/U2F security key types (sk-ecdsa-sha2-nistp256@openssh.com, sk-ssh-ed25519@openssh.com) did not check the User Presence flag. Signatures generated without physical touch were accepted, allowing unattended use of a hardware security key. To restore the previous behavior, ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/781662",
+        "https://go.dev/issue/79566",
+        "https://groups.google.com/g/golang-announce/c/a082jnz-LvI"
+      ],
+      "published": "2026-05-22T04:16:22.553"
+    },
+    {
+      "id": "CVE-2026-39832",
+      "description": "When adding a key to a remote agent constraint extensions such as restrict-destination-v00@openssh.com were not serialized in the request. Destination restrictions were silently stripped when forwarding keys, allowing unrestricted use of the key on the remote host. The client now serializes all cons",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/778642",
+        "https://go.dev/issue/79435",
+        "https://groups.google.com/g/golang-announce/c/a082jnz-LvI"
+      ],
+      "published": "2026-05-22T04:16:22.663"
+    },
+    {
+      "id": "CVE-2026-39833",
+      "description": "The in-memory keyring returned by NewKeyring() silently accepted keys with the ConfirmBeforeUse constraint but never enforced it. The key would sign without any confirmation prompt, with no indication to the caller that the constraint was not in effect. NewKeyring() now returns an error when unsuppo",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/778640",
+        "https://go.dev/cl/778641",
+        "https://go.dev/issue/79436"
+      ],
+      "published": "2026-05-22T04:16:22.773"
+    },
+    {
+      "id": "CVE-2026-39834",
+      "description": "When writing data larger than 4GB in a single Write call on an SSH channel, an integer overflow in the internal payload size calculation caused the write loop to spin indefinitely, sending empty packets without making progress. The size comparison now uses int64 to prevent truncation.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/781663",
+        "https://go.dev/issue/79567",
+        "https://groups.google.com/g/golang-announce/c/a082jnz-LvI"
+      ],
+      "published": "2026-05-22T04:16:24.237"
+    },
+    {
+      "id": "CVE-2026-39835",
+      "description": "SSH servers which use CertChecker as a public key callback without setting IsUserAuthority or IsHostAuthority could be caused to panic by a client presenting a certificate. CertChecker now returns an error instead of panicking when these callbacks are nil.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/781660",
+        "https://go.dev/issue/79563",
+        "https://groups.google.com/g/golang-announce/c/a082jnz-LvI"
+      ],
+      "published": "2026-05-22T04:16:24.530"
+    },
+    {
+      "id": "CVE-2026-42508",
+      "description": "Previously, a revoked 'SignatureKey' belonging to a CA was not correctly checked for revocation. Now, both the 'key' and 'key.SignatureKey' are checked for @revoked.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/781220",
+        "https://go.dev/issue/79568",
+        "https://groups.google.com/g/golang-announce/c/a082jnz-LvI"
+      ],
+      "published": "2026-05-22T04:16:25.440"
+    },
+    {
+      "id": "CVE-2026-46595",
+      "description": "Previously, CVE-2024-45337 fixed an authorization bypass for misused ssh server configurations; if any other type of callback is passed other than public key, then the source-address validation would be skipped.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/781642",
+        "https://go.dev/issue/79570",
+        "https://groups.google.com/g/golang-announce/c/a082jnz-LvI"
+      ],
+      "published": "2026-05-22T04:16:25.550"
+    },
+    {
+      "id": "CVE-2026-46597",
+      "description": "An incorrectly placed cast from bytes to int allowed for server-side panic in the AES-GCM packet decoder for well-crafted inputs.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/781620",
+        "https://go.dev/issue/79561",
+        "https://groups.google.com/g/golang-announce/c/a082jnz-LvI"
+      ],
+      "published": "2026-05-22T04:16:26.003"
+    },
+    {
+      "id": "CVE-2026-46598",
+      "description": "For certain crafted inputs, a 'ed25519.PrivateKey' was created by casting malformed wire bytes, leading to a panic when used.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/781360",
+        "https://go.dev/issue/79596",
+        "https://groups.google.com/g/golang-announce/c/a082jnz-LvI"
+      ],
+      "published": "2026-05-22T04:16:26.537"
+    }
+  ]
+}
