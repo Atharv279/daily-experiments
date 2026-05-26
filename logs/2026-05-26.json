@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-05-26T06:29:00.052761+00:00",
+  "scan_id": "6989a3093a",
+  "trends": {
+    "total_cves": 0,
+    "severity_distribution": {},
+    "top_cwes": [],
+    "threat_index": 0,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      },
+      "threat_index": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": []
+}
