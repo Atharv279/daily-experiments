@@ -1,23 +1,48 @@
 {
-  "timestamp": "2026-05-26T06:29:00.052761+00:00",
-  "scan_id": "6989a3093a",
+  "timestamp": "2026-05-26T17:38:45.367808+00:00",
+  "scan_id": "0aef0d6ef2",
   "trends": {
-    "total_cves": 0,
-    "severity_distribution": {},
-    "top_cwes": [],
-    "threat_index": 0,
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 11,
+      "MEDIUM": 8,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        6
+      ],
+      [
+        "CWE-119",
+        5
+      ],
+      [
+        "CWE-120",
+        3
+      ],
+      [
+        "CWE-77",
+        3
+      ],
+      [
+        "CWE-121",
+        2
+      ]
+    ],
+    "threat_index": 364.7,
     "critical_count": 0
   },
   "delta": {
     "status": "compared",
     "deltas": {
       "total_cves": {
-        "today": 0,
+        "today": 20,
         "yesterday": 0,
         "change_pct": 0
       },
       "threat_index": {
-        "today": 0,
+        "today": 364.7,
         "yesterday": 0,
         "change_pct": 0
       },
@@ -28,5 +53,321 @@
       }
     }
   },
-  "cves": []
+  "cves": [
+    {
+      "id": "CVE-2026-9344",
+      "description": "A security vulnerability has been detected in Edimax EW-7438RPn up to 1.31. The impacted element is an unknown function of the file /goform/formWpsStart of the component webs. Such manipulation of the argument pinCode/wlan-url leads to stack-based buffer overflow. The attack can be executed remotely",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/wudipjq/my_vuln/blob/main/Edimax/vuln_2/2.md",
+        "https://vuldb.com/submit/813885",
+        "https://vuldb.com/vuln/365307"
+      ],
+      "published": "2026-05-24T01:16:26.717"
+    },
+    {
+      "id": "CVE-2026-9345",
+      "description": "A vulnerability was detected in Edimax EW-7438RPn up to 1.31. This affects the function formWizSurvey of the file /goform/formWizSurvey of the component webs. Performing a manipulation of the argument ssid/manualssid/ip/mask/gateway results in buffer overflow. The attack is possible to be carried ou",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/wudipjq/my_vuln/blob/main/Edimax/vuln_3/3.md",
+        "https://vuldb.com/submit/811542",
+        "https://vuldb.com/submit/813886"
+      ],
+      "published": "2026-05-24T02:16:44.807"
+    },
+    {
+      "id": "CVE-2026-9346",
+      "description": "A flaw has been found in Edimax EW-7438RPn up to 1.31. This impacts the function formWirelessTbl of the file /goform/formWirelessTbl of the component webs. Executing a manipulation of the argument submit-url can lead to buffer overflow. The attack may be performed from remote. The exploit has been p",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/wudipjq/my_vuln/blob/main/Edimax/vuln_4/4.md",
+        "https://vuldb.com/submit/811541",
+        "https://vuldb.com/submit/813888"
+      ],
+      "published": "2026-05-24T02:16:45.150"
+    },
+    {
+      "id": "CVE-2026-9348",
+      "description": "A vulnerability was found in Edimax EW-7438RPn up to 1.31. Affected by this vulnerability is an unknown functionality of the file /goform/mp of the component webs. The manipulation of the argument webs results in stack-based buffer overflow. It is possible to launch the attack remotely. The exploit ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/wudipjq/my_vuln/blob/main/Edimax/vuln_6/6.md",
+        "https://vuldb.com/submit/813890",
+        "https://vuldb.com/vuln/365311"
+      ],
+      "published": "2026-05-24T04:16:53.960"
+    },
+    {
+      "id": "CVE-2026-9360",
+      "description": "A security flaw has been discovered in Edimax EW-7438RPn 1.28a. Affected by this issue is the function formwlencrypt24g of the file /goform/formwlencrypt24g of the component POST Request Handler. The manipulation of the argument key1 results in buffer overflow. The attack can be launched remotely. T",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/EDIMAX-EW-7438RPn-Mini-formwlencrypt24g-34b53a41781f808c99bcd687b351750b?source=copy_link",
+        "https://vuldb.com/submit/811544",
+        "https://vuldb.com/vuln/365323"
+      ],
+      "published": "2026-05-24T08:16:13.713"
+    },
+    {
+      "id": "CVE-2026-3515",
+      "description": "A vulnerability in the `GitHubRepository` block of the `prefect-github` integration in Prefect version 3.6.18 allows an attacker to inject arbitrary git command-line options via the `reference` field. The `reference` field is concatenated directly into a `git clone` command string without proper san",
+      "severity": "HIGH",
+      "score": 8.5,
+      "cwes": [
+        "CWE-88"
+      ],
+      "references": [
+        "https://huntr.com/bounties/f3b048b8-7f4e-45ef-a5a7-cb841c39acde"
+      ],
+      "published": "2026-05-24T05:16:39.167"
+    },
+    {
+      "id": "CVE-2026-48829",
+      "description": "In GNU SASL before 2.2.3, DIGEST-MD5 has a NULL pointer dereference affecting both clients and servers, via a known token with no accompanying = character. This occurs in lib/digest-md5/getsubopt.c.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://codeberg.org/gsasl/gsasl/commit/da9b5ae2962b014879e4a406c3b38f25aa70e97a",
+        "https://lists.debian.org/debian-security-announce/2026/msg00182.html",
+        "https://lists.gnu.org/archive/html/help-gsasl/2026-05/msg00000.html"
+      ],
+      "published": "2026-05-24T04:16:39.150"
+    },
+    {
+      "id": "CVE-2026-9350",
+      "description": "A vulnerability was identified in NousResearch hermes-agent up to 2026.4.16. This affects the function check_all_command_guards of the file tools/approval.py of the component Batch Runner. Such manipulation leads to missing authorization. The attack can be launched remotely. The exploit is publicly ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-862",
+        "CWE-863"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/22cada4c9060f5123dde6185135ae3ab",
+        "https://vuldb.com/submit/812213",
+        "https://vuldb.com/vuln/365313"
+      ],
+      "published": "2026-05-24T04:17:04.113"
+    },
+    {
+      "id": "CVE-2026-9353",
+      "description": "A security vulnerability has been detected in NousResearch hermes-agent up to 2026.4.23. Impacted is an unknown function of the file agent/skills_guard.py of the component Skills Guard Multi-Word Prompt Handler. The manipulation of the argument THREAT_PATTERNS leads to injection. Remote exploitation",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-707"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/82a3539d6358842e69dfaef0a9fcf14a",
+        "https://vuldb.com/submit/812216",
+        "https://vuldb.com/vuln/365316"
+      ],
+      "published": "2026-05-24T05:16:40.357"
+    },
+    {
+      "id": "CVE-2026-9355",
+      "description": "A flaw has been found in SourceCodester Hospitals Patient Records Management System 1.0. The impacted element is an unknown function of the file /classes/Master.php?f=save_patient_history. This manipulation of the argument ID causes sql injection. The attack is possible to be carried out remotely. T",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/yan-124/yan/issues/3",
+        "https://vuldb.com/submit/813020",
+        "https://vuldb.com/vuln/365318"
+      ],
+      "published": "2026-05-24T05:16:40.707"
+    },
+    {
+      "id": "CVE-2026-9356",
+      "description": "A vulnerability has been found in SourceCodester Hospitals Patient Records Management System 1.0. This affects an unknown function of the file /admin/patients/manage_history.php. Such manipulation of the argument ID leads to sql injection. The attack may be performed from remote. The exploit has bee",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/yan-124/yan/issues/1",
+        "https://vuldb.com/submit/813022",
+        "https://vuldb.com/vuln/365319"
+      ],
+      "published": "2026-05-24T06:16:36.150"
+    },
+    {
+      "id": "CVE-2026-9351",
+      "description": "A security flaw has been discovered in NousResearch hermes-agent up to 2026.4.16. This vulnerability affects the function _is_blocked_device of the file tools/file_tools.py of the component read_file Tool. Performing a manipulation results in path traversal. The attack may be initiated remotely. The",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/1d1aeff404cb88e06ec2fb3377f49fef",
+        "https://vuldb.com/submit/812214",
+        "https://vuldb.com/vuln/365314"
+      ],
+      "published": "2026-05-24T04:17:04.430"
+    },
+    {
+      "id": "CVE-2026-9354",
+      "description": "A vulnerability was detected in NousResearch hermes-agent up to 2026.4.16. The affected element is an unknown function of the component Slack Agent/Mattermost Agent. The manipulation of the argument format_message results in escaping of output. The attack can be executed remotely. The exploit is now",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-74",
+        "CWE-116"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/e90fb38ac03284176bae49898a3a46a4",
+        "https://vuldb.com/submit/812226",
+        "https://vuldb.com/vuln/365317"
+      ],
+      "published": "2026-05-24T05:16:40.537"
+    },
+    {
+      "id": "CVE-2026-9347",
+      "description": "A vulnerability has been found in Edimax EW-7438RPn up to 1.31. Affected is the function formWizSurvey of the file /goform/formWizSurvey of the component webs. The manipulation of the argument ip/mask/gateway leads to os command injection. It is possible to initiate the attack remotely. The exploit ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/wudipjq/my_vuln/blob/main/Edimax/vuln_5/5.md",
+        "https://vuldb.com/submit/811543",
+        "https://vuldb.com/submit/813889"
+      ],
+      "published": "2026-05-24T02:16:45.307"
+    },
+    {
+      "id": "CVE-2026-9359",
+      "description": "A vulnerability was identified in Edimax EW-7438RPn 1.28a. Affected by this vulnerability is the function formHwSet of the file /goform/formHwSet of the component POST Request Handler. The manipulation of the argument Anntena/Mcs/regDomain/nic0Addr/nic1Addr/wlanAddr/wanAddr/wlanSSID/wlanChan/comd/in",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/EDIMAX-EW-7438RPn-Mini-formHwSet-34b53a41781f80b98d10f0da699f2236?source=copy_link",
+        "https://vuldb.com/submit/811540",
+        "https://vuldb.com/vuln/365322"
+      ],
+      "published": "2026-05-24T06:16:37.740"
+    },
+    {
+      "id": "CVE-2026-9361",
+      "description": "A weakness has been identified in Edimax EW-7438RPn 1.12. This affects the function formAccept of the file /goform/formAccep of the component POST Request Handler. This manipulation of the argument submit-url causes command injection. The attack may be initiated remotely. The exploit has been made a",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/EDIMAX-BR-6675nD-formAccept-34b53a41781f807fb8f3d96c5e5ef215?source=copy_link",
+        "https://vuldb.com/submit/811552",
+        "https://vuldb.com/vuln/365324"
+      ],
+      "published": "2026-05-24T08:16:13.887"
+    },
+    {
+      "id": "CVE-2026-9349",
+      "description": "A vulnerability was determined in calcom cal.diy up to 4.9.4. Affected by this issue is the function getServerSideProps of the file apps/web/modules/bookings/views/bookings-single-view.getServerSideProps.tsx of the component Generic React API. This manipulation of the argument cancelledBy/reschedule",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200",
+        "CWE-284"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/b59c44d1550c4b0f373ca4eb1c150994",
+        "https://vuldb.com/submit/812177",
+        "https://vuldb.com/vuln/365312"
+      ],
+      "published": "2026-05-24T04:16:59.957"
+    },
+    {
+      "id": "CVE-2026-9352",
+      "description": "A weakness has been identified in NousResearch hermes-agent up to 2026.4.23. This issue affects the function _make_run_env of the file tools/environments/local.py of the component Messaging Gateway Handler. Executing a manipulation can lead to information disclosure. The attack may be launched remot",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200",
+        "CWE-284"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/760b3940f708990e535214529c0c7a27",
+        "https://vuldb.com/submit/812215",
+        "https://vuldb.com/vuln/365315"
+      ],
+      "published": "2026-05-24T05:16:40.180"
+    },
+    {
+      "id": "CVE-2026-9358",
+      "description": "A vulnerability was determined in postcss up to 7.1.1. Affected is the function toString of the file src/selectors/container.js of the component AST Serialization. Executing a manipulation can lead to uncontrolled recursion. It is possible to launch the attack remotely. The exploit has been publicly",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-674"
+      ],
+      "references": [
+        "https://gist.github.com/bx33661/581e3a38134601c04e19b4dfc9b459b9",
+        "https://vuldb.com/submit/813080",
+        "https://vuldb.com/vuln/365321"
+      ],
+      "published": "2026-05-24T06:16:37.573"
+    },
+    {
+      "id": "CVE-2026-9357",
+      "description": "A vulnerability was found in vBulletin 6.x. This impacts an unknown function of the component Login. Performing a manipulation results in cross site scripting. It is possible to initiate the attack remotely. The exploit has been made public and could be used. VulDB is withholding an extended redistr",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://vuldb.com/submit/813052",
+        "https://vuldb.com/vuln/365320",
+        "https://vuldb.com/vuln/365320/cti"
+      ],
+      "published": "2026-05-24T06:16:37.400"
+    }
+  ]
 }
