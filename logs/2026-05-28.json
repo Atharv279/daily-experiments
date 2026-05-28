@@ -1,0 +1,370 @@
+{
+  "timestamp": "2026-05-28T06:34:48.315018+00:00",
+  "scan_id": "37fb1a5d53",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 8,
+      "MEDIUM": 7,
+      "LOW": 2,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        5
+      ],
+      [
+        "CWE-89",
+        5
+      ],
+      [
+        "CWE-79",
+        4
+      ],
+      [
+        "CWE-94",
+        4
+      ],
+      [
+        "CWE-59",
+        2
+      ]
+    ],
+    "threat_index": 331.2,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 331.2,
+        "yesterday": 288.8,
+        "change_pct": 14.7
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 4,
+        "change_pct": -50.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-8376",
+      "description": "Perl versions through 5.43.10 have a heap buffer overflow when compiling regular expressions with a repeated fixed string on 32-bit builds.\n\nPerl_study_chunk in regcomp_study.c checked the size of the joined substring buffer in characters rather than bytes. For a quantified fixed substring with a la",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-680"
+      ],
+      "references": [
+        "https://github.com/Perl/perl5/commit/5e7f119eb2bb1181be908701f22bf7068e722f1c.patch",
+        "http://www.openwall.com/lists/oss-security/2026/05/26/1"
+      ],
+      "published": "2026-05-26T00:16:57.150"
+    },
+    {
+      "id": "CVE-2026-42496",
+      "description": "Archive::Tar versions before 3.08 for Perl extract symlinks with attacker controlled targets outside the extraction directory.\n\n_make_special_file() passes the tar header's linkname to symlink() without validating it against absolute paths or .. segments. The secure-extract mode check that guards re",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-59"
+      ],
+      "references": [
+        "https://github.com/jib/archive-tar-new/commit/17c873492a05eddc0de18c1485e0b2cccd5a9158.patch",
+        "https://metacpan.org/release/BINGOS/Archive-Tar-3.08/changes",
+        "https://www.cve.org/CVERecord?id=CVE-2026-42497"
+      ],
+      "published": "2026-05-26T02:16:40.130"
+    },
+    {
+      "id": "CVE-2026-42497",
+      "description": "Archive::Tar versions before 3.08 for Perl extract hardlinks to attacker controlled paths outside the extraction directory.\n\n_make_special_file() passes the tar header's linkname to link() without validating it against absolute paths or .. segments, creating a hardlink that shares the victim file's ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-59",
+        "CWE-732"
+      ],
+      "references": [
+        "https://github.com/jib/archive-tar-new/commit/17c873492a05eddc0de18c1485e0b2cccd5a9158.patch",
+        "https://metacpan.org/release/BINGOS/Archive-Tar-3.08/changes",
+        "https://www.cve.org/CVERecord?id=CVE-2026-42496"
+      ],
+      "published": "2026-05-26T02:16:40.250"
+    },
+    {
+      "id": "CVE-2026-9538",
+      "description": "Archive::Tar versions before 3.10 for Perl allow memory exhaustion via attacker controlled entry size field in tar header.\n\n_read_tar() reads each entry's payload with $handle->read($$data, $block), where $block is derived from the entry's 12-byte size field in the tar header with no upper bound on ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-789"
+      ],
+      "references": [
+        "https://github.com/jib/archive-tar-new/commit/f9af01426038e29d9578825a0cd3626946ab08c7.patch",
+        "https://metacpan.org/release/BINGOS/Archive-Tar-3.10/changes",
+        "http://www.openwall.com/lists/oss-security/2026/05/26/4"
+      ],
+      "published": "2026-05-26T02:16:41.150"
+    },
+    {
+      "id": "CVE-2026-9517",
+      "description": "A vulnerability was determined in hemant6488 CodeIgniter-StudentManagementSystem. The affected element is an unknown function of the file /index.php/students/addStudentView of the component Student Management Handler. Executing a manipulation can lead to improper access controls. The attack can be e",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/hemant6488/CodeIgniter-StudentManagementSystem/",
+        "https://github.com/hemant6488/CodeIgniter-StudentManagementSystem/issues/5",
+        "https://vuldb.com/submit/814277"
+      ],
+      "published": "2026-05-26T00:16:57.470"
+    },
+    {
+      "id": "CVE-2026-9521",
+      "description": "A security vulnerability has been detected in fraillt bitsery up to 5.2.4. Affected is the function loadFromSharedState in the library include/bitsery/ext/std_smart_ptr.h. Such manipulation leads to improper validation of specified type of input. It is possible to launch the attack remotely. The exp",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-20",
+        "CWE-1287"
+      ],
+      "references": [
+        "https://gist.github.com/TrebledJ/750abc64a826f19dd2d6774724629b71",
+        "https://github.com/fraillt/bitsery/",
+        "https://github.com/fraillt/bitsery/blob/master/CHANGELOG.md#525-2025-10-09"
+      ],
+      "published": "2026-05-26T02:16:40.983"
+    },
+    {
+      "id": "CVE-2026-9523",
+      "description": "A vulnerability was detected in Acrel Electrical EEMS Enterprise Power Operation and Maintenance Cloud Platform 3000WEBV2. Affected by this vulnerability is an unknown functionality of the file /SubstationWEBV2/app/..;/calc/getCalcmeterDetailDayListTree. Performing a manipulation of the argument sor",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://ucn9h68n9289.feishu.cn/wiki/NpZHw0lypi6ztJkWLNxcGKR5nlb?from=from_copylink",
+        "https://vuldb.com/submit/814539",
+        "https://vuldb.com/vuln/365542"
+      ],
+      "published": "2026-05-26T04:16:27.370"
+    },
+    {
+      "id": "CVE-2026-9525",
+      "description": "A vulnerability has been found in itsourcecode Electronic Judging System 1.0. This affects an unknown part of the file /admin/edit_judge.php. The manipulation of the argument judge_id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may b",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/i-QvQ-i/first-OvO/issues/3",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/submit/814713"
+      ],
+      "published": "2026-05-26T04:16:27.797"
+    },
+    {
+      "id": "CVE-2026-9526",
+      "description": "A vulnerability was found in itsourcecode Electronic Judging System 1.0. This vulnerability affects unknown code of the file /admin/edit_team.php. The manipulation of the argument num_id results in sql injection. The attack may be launched remotely. The exploit has been made public and could be used",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/i-QvQ-i/first-OvO/issues/2",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/submit/814714"
+      ],
+      "published": "2026-05-26T05:16:18.473"
+    },
+    {
+      "id": "CVE-2026-9528",
+      "description": "A vulnerability was identified in itsourcecode Electronic Judging System 1.0. Impacted is an unknown function of the file /admin/delete_judge.php. Such manipulation of the argument judge_id leads to sql injection. The attack can be executed remotely. The exploit is publicly available and might be us",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/zulu225588/zulu-loudong/issues/4",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/submit/814738"
+      ],
+      "published": "2026-05-26T05:16:18.863"
+    },
+    {
+      "id": "CVE-2026-4795",
+      "description": "A missing authorization vulnerability in Zyxel GS1200-5v3 firmware versions through 1.00(ACPS.2)C0,\u00a0GS1200-8v3 firmware versions through 1.00(ACPT.2)C0,\u00a0 GS1200-5HPv3 firmware versions through 1.00(ACPU.2)C0, GS1200-8HPv3 firmware versions through 1.00(ACPV.2)C0, and GS1200-10v3 firmware versions th",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-missing-authorization-vulnerability-in-gs1200v3-series-switches-05-26-2026"
+      ],
+      "published": "2026-05-26T02:16:40.360"
+    },
+    {
+      "id": "CVE-2026-9515",
+      "description": "A vulnerability was detected in Totolink CA750-PoE 6.2c.510. The affected element is the function setUnloadUserData of the file /cgi-bin/cstecgi.cgi of the component Setting Handler. The manipulation of the argument plugin_version results in os command injection. The attack may be launched remotely.",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/wudipjq/my_vuln/blob/main/totolink4/vuln_53/53.md",
+        "https://vuldb.com/submit/813927",
+        "https://vuldb.com/vuln/365515"
+      ],
+      "published": "2026-05-26T00:16:57.273"
+    },
+    {
+      "id": "CVE-2026-9524",
+      "description": "A flaw has been found in xianrendzw EasyReport up to 2.0.17.0522_Beta. Affected by this issue is the function execute of the component REST Endpoint. Executing a manipulation of the argument reportParams can lead to sql injection. The attack can be launched remotely. The vendor was contacted early a",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Ku4D3/bug_story/blob/main/report_10.md",
+        "https://vuldb.com/submit/814567",
+        "https://vuldb.com/vuln/365543"
+      ],
+      "published": "2026-05-26T04:16:27.617"
+    },
+    {
+      "id": "CVE-2026-9518",
+      "description": "A vulnerability was identified in hemant6488 CodeIgniter-StudentManagementSystem. The impacted element is the function addStudent of the file view_students.php of the component Students Controller. The manipulation of the argument Name leads to cross site scripting. The attack is possible to be carr",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/hemant6488/CodeIgniter-StudentManagementSystem/",
+        "https://github.com/hemant6488/CodeIgniter-StudentManagementSystem/issues/6",
+        "https://vuldb.com/submit/814279"
+      ],
+      "published": "2026-05-26T02:16:40.500"
+    },
+    {
+      "id": "CVE-2026-9519",
+      "description": "A security flaw has been discovered in stonith404 pingvin-share up to 1.13.0. This affects the function getServerSideProps of the file frontend/src/pages/auth/signIn.tsx of the component Sign-in Auto-Redirect. The manipulation of the argument redirect results in cross site scripting. The attack may ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://gist.github.com/TrebledJ/0efceef4f3a2e0515cc2fe96b4c22679",
+        "https://vuldb.com/submit/814364",
+        "https://vuldb.com/vuln/365539"
+      ],
+      "published": "2026-05-26T02:16:40.660"
+    },
+    {
+      "id": "CVE-2026-9520",
+      "description": "A weakness has been identified in blitz-js blitz up to 3.0.2 on GitHub. This impacts an unknown function of the file packages/generator/templates/app/src/app/auth/components/LoginForm.tsx of the component Sign-in. This manipulation of the argument Next causes cross site scripting. It is possible to ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://gist.github.com/TrebledJ/164c7ca6c8208b63e6937bc11984720b",
+        "https://vuldb.com/submit/814378",
+        "https://vuldb.com/vuln/365540"
+      ],
+      "published": "2026-05-26T02:16:40.823"
+    },
+    {
+      "id": "CVE-2026-9527",
+      "description": "A vulnerability was determined in itsourcecode Electronic Judging System 1.0. This issue affects some unknown processing of the file /admin/judges.php. This manipulation of the argument fname causes cross site scripting. Remote exploitation of the attack is possible. The exploit has been publicly di",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/i-QvQ-i/first-OvO/issues/1",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/submit/814715"
+      ],
+      "published": "2026-05-26T05:16:18.687"
+    },
+    {
+      "id": "CVE-2026-9529",
+      "description": "A security flaw has been discovered in GNU LibreDWG up to 0.14. The affected element is the function match_BLOCK_HEADER of the file dwggrep.c of the component Dwggrep Utility. Performing a manipulation results in null pointer dereference. The attack requires a local approach. The exploit has been re",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/HackC0der/CVE-Repos/blob/main/libredwg/libredwg_6d6a339_heap_oob_write_read_2004_compressed_section.dwg",
+        "https://github.com/LibreDWG/libredwg/issues/1247",
+        "https://vuldb.com/submit/814273"
+      ],
+      "published": "2026-05-26T05:16:19.030"
+    },
+    {
+      "id": "CVE-2026-9530",
+      "description": "A weakness has been identified in GNU LibreDWG up to 0.14. The impacted element is the function read_2004_compressed_section of the file src/decode.c of the component Dwgbmp Utility. Executing a manipulation can lead to out-of-bounds read. The attack requires local access. The exploit has been made ",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/HackC0der/CVE-Repos/blob/main/libredwg/libredwg_6d6a339_heap_oob_write_read_2004_compressed_section.dwg",
+        "https://github.com/LibreDWG/libredwg/commit/8f03865f37f5d4ffd616fef802acc980be54d300",
+        "https://github.com/LibreDWG/libredwg/issues/1248"
+      ],
+      "published": "2026-05-26T05:16:19.197"
+    },
+    {
+      "id": "CVE-2025-71310",
+      "description": "The GDPR cookies module for Backdrop CMS (before \n\n1.x-1.3.5) doesn't sufficiently protect visitors from Cross Site Scripting (XSS) if a malicious value has been provided for the optional 'Info content' field for the YouTube service. This is mitigated by the fact that an attacker must have a role wi",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-80"
+      ],
+      "references": [
+        "https://backdropcms.org/security/sa-contrib-2025-013"
+      ],
+      "published": "2026-05-26T02:16:39.060"
+    }
+  ]
+}
