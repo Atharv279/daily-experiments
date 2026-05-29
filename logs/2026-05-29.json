@@ -1,0 +1,356 @@
+{
+  "timestamp": "2026-05-29T06:35:11.693905+00:00",
+  "scan_id": "577182a675",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 9,
+      "MEDIUM": 6,
+      "LOW": 1,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-119",
+        5
+      ],
+      [
+        "CWE-121",
+        4
+      ],
+      [
+        "CWE-74",
+        2
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-79",
+        2
+      ]
+    ],
+    "threat_index": 294.5,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 294.5,
+        "yesterday": 331.2,
+        "change_pct": -11.1
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 2,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-9207",
+      "description": "Tanium addressed an unauthorized code execution vulnerability in Connect.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://security.tanium.com/TAN-2026-014"
+      ],
+      "published": "2026-05-27T02:16:35.130"
+    },
+    {
+      "id": "CVE-2026-9627",
+      "description": "A security flaw has been discovered in UTT HiPER 1200GW up to 2.5.3-170306. This impacts the function strcpy of the file /goform/setSysAdm of the component Web Management Interface. The manipulation of the argument sysAdmUser/sysAdmPass results in buffer overflow. The attack can be launched remotely",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/zhouguobing-maker/cve/blob/main/9.md",
+        "https://vuldb.com/submit/818374",
+        "https://vuldb.com/vuln/365683"
+      ],
+      "published": "2026-05-27T02:16:35.583"
+    },
+    {
+      "id": "CVE-2026-9628",
+      "description": "A weakness has been identified in UTT HiPER 1200GW up to 2.5.3-170306. Affected is an unknown function of the file /goform/formPptpClientConfig of the component Web Management Interface. This manipulation of the argument PPTP server address/username/password/tunnel name causes stack-based buffer ove",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/luozhibo-sec/cve/blob/main/10.md",
+        "https://vuldb.com/submit/818380",
+        "https://vuldb.com/vuln/365684"
+      ],
+      "published": "2026-05-27T02:16:35.747"
+    },
+    {
+      "id": "CVE-2026-9631",
+      "description": "A vulnerability was detected in UTT HiPER 1250GW up to 3.2.7-210907-180535. Affected by this vulnerability is the function strcpy of the file /goform/formConfigFastDirectionW of the component Web Management Interface. Performing a manipulation of the argument Profile results in stack-based buffer ov",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/zhouguobing-maker/cve/blob/main/11.md",
+        "https://vuldb.com/submit/818375",
+        "https://vuldb.com/vuln/365740"
+      ],
+      "published": "2026-05-27T02:16:35.907"
+    },
+    {
+      "id": "CVE-2026-9632",
+      "description": "A flaw has been found in UTT HiPER 1250GW up to 3.2.7-210907-180535. Affected by this issue is the function strcpy of the file /goform/formGroupConfig of the component Web Management Interface. Executing a manipulation of the argument Profile can lead to stack-based buffer overflow. It is possible t",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/luozhibo-sec/cve/blob/main/12.md",
+        "https://vuldb.com/submit/818383",
+        "https://vuldb.com/vuln/365741"
+      ],
+      "published": "2026-05-27T02:16:36.067"
+    },
+    {
+      "id": "CVE-2026-2253",
+      "description": "Hitachi Vantara Pentaho Data Integration & Analytics versions before 10.2.0.7 and 11.0.0.0, including\u00a09.3.x and 8.3.x, does not prevent certain XML parsers from resolving external entities.",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-611"
+      ],
+      "references": [
+        "https://support.pentaho.com/hc/en-us/articles/45677548193933--Resolved-Hitachi-Vantara-Pentaho-Data-Integration-Analytics-Improper-Restriction-of-XML-External-Entity-Reference-Versions-before-10-2-0-7-and-11-0-0-0-Impacted-CVE-2026-2253"
+      ],
+      "published": "2026-05-27T04:16:26.417"
+    },
+    {
+      "id": "CVE-2026-49014",
+      "description": "In GDAL 3.1.0 through 3.13.0, scanForGeometryContainers in the netCDF driver allows code execution via a stack-based buffer overflow. It reads a geometry attribute into a fixed-size stack buffer without validating the attribute length. The attacker embeds the exploit as an oversized geometry attribu",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/OSGeo/gdal/issues/14594",
+        "https://github.com/OSGeo/gdal/issues/14594"
+      ],
+      "published": "2026-05-27T02:16:34.180"
+    },
+    {
+      "id": "CVE-2026-9605",
+      "description": "A flaw has been found in GNU libredwg up to 0.13.4.8160. This issue affects the function bit_read_RC of the file bits.c of the component Dwgbmp Utility. This manipulation causes heap-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been published and may be u",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/HackC0der/CVE-Repos/blob/main/libredwg/libredwg_6d6a339_heap_oob_write_read_2004_compressed_section.dwg",
+        "https://github.com/LibreDWG/libredwg/commit/8f03865f37f5d4ffd616fef802acc980be54d300",
+        "https://github.com/LibreDWG/libredwg/issues/1248"
+      ],
+      "published": "2026-05-27T00:16:39.157"
+    },
+    {
+      "id": "CVE-2026-9606",
+      "description": "A vulnerability has been found in itsourcecode Courier Management System 1.0. Impacted is an unknown function of the file /manage_user.php. Such manipulation of the argument ID leads to sql injection. The attack may be performed from remote. The exploit has been disclosed to the public and may be us",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://itsourcecode.com/",
+        "https://lhzzz08.github.io/posts/cveapplication3/",
+        "https://vuldb.com/submit/818198"
+      ],
+      "published": "2026-05-27T00:16:39.333"
+    },
+    {
+      "id": "CVE-2026-9156",
+      "description": "Tanium addressed a denial of service vulnerability in Tanium Server.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-772"
+      ],
+      "references": [
+        "https://security.tanium.com/TAN-2026-013"
+      ],
+      "published": "2026-05-27T02:16:35.003"
+    },
+    {
+      "id": "CVE-2026-6565",
+      "description": "The Style Kits \u2013 Advanced Theme Styles for Elementor, Elementor Kits & Elementor Patterns plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the '/wp-json/agwp/v1/tokens/save' endpoint kit title parameter in versions up to, and including, 2.5.0 due to insufficient input sanitizati",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3530172/analogwp-templates",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/d6332d57-5832-4093-a609-f9c454452815?source=cve"
+      ],
+      "published": "2026-05-27T02:16:34.640"
+    },
+    {
+      "id": "CVE-2026-9607",
+      "description": "A vulnerability was found in itsourcecode Courier Management System 1.0. The affected element is an unknown function of the file /parcel_list.php. Performing a manipulation of the argument s results in sql injection. It is possible to initiate the attack remotely. The exploit has been made public an",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/ltranquility/cve_submit/issues/19",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/submit/818333"
+      ],
+      "published": "2026-05-27T00:16:39.567"
+    },
+    {
+      "id": "CVE-2026-2254",
+      "description": "Hitachi Vantara Pentaho Data Integration & Analytics versions before 10.2.0.6 and 11.0.0.0, including\u00a09.3.x and 8.3.x, does not apply ACLs on certain API endpoints related to platform mail notfications.",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-732"
+      ],
+      "references": [
+        "https://support.pentaho.com/hc/en-us/articles/45676384909069--Resolved-Hitachi-Vantara-Pentaho-Data-Integration-Analytics-Incorrect-Permission-Assignment-for-Critical-Resource-Versions-before-10-2-0-6-and-11-0-0-0-Impacted-CVE-2026-2254?brand_id=1928686"
+      ],
+      "published": "2026-05-27T04:16:26.693"
+    },
+    {
+      "id": "CVE-2026-7493",
+      "description": "The Appointment Booking Calendar \u2014 Simply Schedule Appointments Booking Plugin plugin for WordPress is vulnerable to denial of service in all versions up to, and including, 1.6.11.5. This is due to a publicly accessible REST API endpoint (/wp-json/ssa/v1/async) that calls PHP's sleep() function on a",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.11.2/includes/class-async-action-model.php#L173",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/ae66228e-d086-44fd-8acb-5a99482cedfb?source=cve"
+      ],
+      "published": "2026-05-27T02:16:34.770"
+    },
+    {
+      "id": "CVE-2026-9609",
+      "description": "A vulnerability was identified in QianFox FoxCMS up to 1.2.6. This affects the function Edit of the file Admin.php. The manipulation leads to weak password recovery. The attack can be initiated remotely. The exploit is publicly available and might be used. The project was informed of the problem ear",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-640"
+      ],
+      "references": [
+        "https://github.com/QianFox/FoxCMS/",
+        "https://github.com/QianFox/FoxCMS/issues/3",
+        "https://vuldb.com/submit/818343"
+      ],
+      "published": "2026-05-27T02:16:35.413"
+    },
+    {
+      "id": "CVE-2026-9608",
+      "description": "A vulnerability was determined in QianFox FoxCMS up to 1.2.6. The impacted element is an unknown function of the file /Tag/edit of the component Administrator Backend. Executing a manipulation can lead to cross site scripting. It is possible to launch the attack remotely. The exploit has been public",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/QianFox/FoxCMS/",
+        "https://github.com/QianFox/FoxCMS/issues/2",
+        "https://vuldb.com/submit/818342"
+      ],
+      "published": "2026-05-27T02:16:35.247"
+    },
+    {
+      "id": "CVE-2026-8606",
+      "description": "A Server-Side Request Forgery (SSRF) vulnerability was identified in GitHub Enterprise Server that allowed an attacker to cause the server to issue HTTP requests to internal services via the security advisories package lookup feature. By directing requests to an internal management service and measu",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://docs.github.com/en/enterprise-server@3.16/admin/release-notes#3.16.19",
+        "https://docs.github.com/en/enterprise-server@3.17/admin/release-notes#3.17.16",
+        "https://docs.github.com/en/enterprise-server@3.18/admin/release-notes#3.18.10"
+      ],
+      "published": "2026-05-27T00:16:37.900"
+    },
+    {
+      "id": "CVE-2026-9312",
+      "description": "A server-side request forgery (SSRF) vulnerability was identified in GitHub Enterprise Server that allowed an unauthenticated attacker to send crafted requests to internal services by exploiting insufficient input validation in an upload endpoint. By injecting path traversal content into request par",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://docs.github.com/en/enterprise-server@3.16/admin/release-notes#3.16.20",
+        "https://docs.github.com/en/enterprise-server@3.17/admin/release-notes#3.17.17",
+        "https://docs.github.com/en/enterprise-server@3.18/admin/release-notes#3.18.11"
+      ],
+      "published": "2026-05-27T00:16:39.020"
+    },
+    {
+      "id": "CVE-2026-49017",
+      "description": "In OpenStack Swift before 2.36.2 and 2.37.2, s3api middleware enters an infinite loop when processing a truncated aws-chunked PUT request body. The StreamingInput class repeatedly appends an empty buffer and re-reads, causing the proxy-server worker handling the request to become permanently unrespo",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-835"
+      ],
+      "references": [
+        "https://bugs.launchpad.net/bugs/2152205",
+        "https://review.opendev.org/c/openstack/swift/+/987957",
+        "https://review.opendev.org/c/openstack/swift/+/988093"
+      ],
+      "published": "2026-05-27T02:16:34.327"
+    },
+    {
+      "id": "CVE-2025-15649",
+      "description": "IO::Uncompress::Unzip versions before 2.215 for Perl propagate uncaught exception when parsing zip header with malformed DOS date.\n\n_dosToUnixTime() decodes the local-file-header last-modification date field and calls Time::Local::timelocal() without an eval guard. A header whose date field decodes ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-248"
+      ],
+      "references": [
+        "https://github.com/pmqs/IO-Compress/commit/fd28c1d2374eee9811f6d0c5bddc0957abdf1da8.patch",
+        "https://github.com/pmqs/IO-Compress/issues/65",
+        "https://metacpan.org/release/PMQS/IO-Compress-2.215/changes"
+      ],
+      "published": "2026-05-27T04:16:23.873"
+    }
+  ]
+}
