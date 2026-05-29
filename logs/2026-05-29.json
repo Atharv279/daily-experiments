@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-05-29T11:42:28.771542+00:00",
-  "scan_id": "8834ea8b0f",
+  "timestamp": "2026-05-29T17:46:29.362478+00:00",
+  "scan_id": "c5f7baee0a",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
       "HIGH": 9,
-      "MEDIUM": 6,
+      "MEDIUM": 7,
       "LOW": 1,
-      "UNKNOWN": 4
+      "UNKNOWN": 3
     },
     "top_cwes": [
       [
@@ -31,7 +31,7 @@
         2
       ]
     ],
-    "threat_index": 294.5,
+    "threat_index": 305.5,
     "critical_count": 0
   },
   "delta": {
@@ -43,9 +43,9 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 294.5,
+        "today": 305.5,
         "yesterday": 331.2,
-        "change_pct": -11.1
+        "change_pct": -7.8
       },
       "critical_count": {
         "today": 0,
@@ -248,6 +248,21 @@
       "published": "2026-05-27T04:16:26.693"
     },
     {
+      "id": "CVE-2025-15649",
+      "description": "IO::Uncompress::Unzip versions before 2.215 for Perl propagate uncaught exception when parsing zip header with malformed DOS date.\n\n_dosToUnixTime() decodes the local-file-header last-modification date field and calls Time::Local::timelocal() without an eval guard. A header whose date field decodes ",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-248"
+      ],
+      "references": [
+        "https://github.com/pmqs/IO-Compress/commit/fd28c1d2374eee9811f6d0c5bddc0957abdf1da8.patch",
+        "https://github.com/pmqs/IO-Compress/issues/65",
+        "https://metacpan.org/release/PMQS/IO-Compress-2.215/changes"
+      ],
+      "published": "2026-05-27T04:16:23.873"
+    },
+    {
       "id": "CVE-2026-7493",
       "description": "The Appointment Booking Calendar \u2014 Simply Schedule Appointments Booking Plugin plugin for WordPress is vulnerable to denial of service in all versions up to, and including, 1.6.11.5. This is due to a publicly accessible REST API endpoint (/wp-json/ssa/v1/async) that calls PHP's sleep() function on a",
       "severity": "MEDIUM",
@@ -336,21 +351,6 @@
         "https://review.opendev.org/c/openstack/swift/+/988093"
       ],
       "published": "2026-05-27T02:16:34.327"
-    },
-    {
-      "id": "CVE-2025-15649",
-      "description": "IO::Uncompress::Unzip versions before 2.215 for Perl propagate uncaught exception when parsing zip header with malformed DOS date.\n\n_dosToUnixTime() decodes the local-file-header last-modification date field and calls Time::Local::timelocal() without an eval guard. A header whose date field decodes ",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-248"
-      ],
-      "references": [
-        "https://github.com/pmqs/IO-Compress/commit/fd28c1d2374eee9811f6d0c5bddc0957abdf1da8.patch",
-        "https://github.com/pmqs/IO-Compress/issues/65",
-        "https://metacpan.org/release/PMQS/IO-Compress-2.215/changes"
-      ],
-      "published": "2026-05-27T04:16:23.873"
     }
   ]
 }
