@@ -1,0 +1,342 @@
+{
+  "timestamp": "2026-05-30T05:58:25.146995+00:00",
+  "scan_id": "5481450759",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 5,
+      "MEDIUM": 10,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-639",
+        3
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-284",
+        2
+      ],
+      [
+        "CWE-94",
+        1
+      ],
+      [
+        "CWE-787",
+        1
+      ]
+    ],
+    "threat_index": 263.6,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 263.6,
+        "yesterday": 305.5,
+        "change_pct": -13.7
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-32999",
+      "description": "Insufficient character filtering in backup agent signing module on Comet Backup server allows authenticated tenant administrator to execute an arbitrary code on behalf of a privileged user on the affected server and connected devices.",
+      "severity": "CRITICAL",
+      "score": 9.0,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://support.cometbackup.com/hc/en-us/articles/40655100268439--CVE-2026-32999-RCE-on-Comet-Server-via-branding-configuration"
+      ],
+      "published": "2026-05-28T05:16:36.107"
+    },
+    {
+      "id": "CVE-2026-8915",
+      "description": "Out-of-bounds write vulnerability in Samsung Open Source Escargot allows Overflow Buffers.\n\nThis issue affects Escargot: 36f5fb58366a67b713c02f6fd985e924fcc09e31.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/Samsung/escargot/pull/1579"
+      ],
+      "published": "2026-05-28T00:16:43.950"
+    },
+    {
+      "id": "CVE-2026-7802",
+      "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 3.29.2. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for authenticated attackers, with subscrib",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/tags/3.28.36/main/frontend/forms/actions/user.php#L565",
+        "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/tags/3.28.36/main/frontend/forms/actions/user.php#L636",
+        "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/tags/3.28.36/main/frontend/forms/classes/submit.php#L110"
+      ],
+      "published": "2026-05-28T05:16:38.493"
+    },
+    {
+      "id": "CVE-2026-32995",
+      "description": "The Rocket.Chat DDP method autoTranslate.translateMessage in versions <8.5.0, <8.4.2, <8.3.4, <8.2.4, <8.1.5, <8.0.5, <7.13.8, and <7.10.12 accepts a client-supplied IMessage object and passes it directly to translateMessage() without checking Meteor.userId() or verifying room membership. Any authen",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/RocketChat/Rocket.Chat/pull/40528",
+        "https://hackerone.com/reports/3734326"
+      ],
+      "published": "2026-05-28T05:16:35.477"
+    },
+    {
+      "id": "CVE-2026-9795",
+      "description": "A flaw was found in Keycloak's Fine-Grained Admin Permissions (FGAPv2) feature. An administrator with limited client management permissions can exploit this vulnerability to assign any realm role, including highly privileged roles, to a client's scope mapping. This bypasses intended security control",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-266"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-9795",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2482462"
+      ],
+      "published": "2026-05-28T05:16:41.003"
+    },
+    {
+      "id": "CVE-2026-2374",
+      "description": "The Login No Captcha reCAPTCHA plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `$_SERVER['PHP_SELF']` superglobal in all versions up to, and including, 1.8.0. This is due to the `authenticate()` function storing the unsanitized output of `basename($_SERVER['PHP_SELF'])` in ",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/login-recaptcha/tags/1.7.3/login-nocaptcha.php#L281",
+        "https://plugins.trac.wordpress.org/browser/login-recaptcha/tags/1.7.3/login-nocaptcha.php#L377",
+        "https://plugins.trac.wordpress.org/browser/login-recaptcha/trunk/login-nocaptcha.php#L281"
+      ],
+      "published": "2026-05-28T05:16:34.290"
+    },
+    {
+      "id": "CVE-2026-5737",
+      "description": "The Independent Analytics plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 2.14.9. This is due to a public tracking route at /wp-json/iawp/search that accepts attacker-controlled referrer_url values when the signature matches, combined with a sc",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/independent-analytics/tags/2.14.4/IAWP/Favicon/FaviconDownloader.php#L57",
+        "https://plugins.trac.wordpress.org/browser/independent-analytics/tags/2.14.4/IAWP/FetchFaviconsJob.php#L27",
+        "https://plugins.trac.wordpress.org/browser/independent-analytics/tags/2.14.4/IAWP/REST_API.php#L409"
+      ],
+      "published": "2026-05-28T05:16:38.100"
+    },
+    {
+      "id": "CVE-2026-9792",
+      "description": "A flaw was found in Keycloak's Client Policies, specifically within the `org.keycloak.protocol.oidc` component. When certain condition providers (client-type, client-roles, client-attributes, client-scopes) are used to enforce security restrictions, the `reject-ropc-grant` executor is silently bypas",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-280"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-9792",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2482459"
+      ],
+      "published": "2026-05-28T05:16:40.537"
+    },
+    {
+      "id": "CVE-2026-9796",
+      "description": "A flaw was found in Keycloak. An authenticated administrator with the `manage-clients` role can exploit a Time-of-check to time-of-use (TOCTOU) vulnerability in the name-based admin role checks. This allows the attacker to escalate their privileges to `realm-admin` for all users within the realm, gr",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-9796",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2482464"
+      ],
+      "published": "2026-05-28T05:16:41.153"
+    },
+    {
+      "id": "CVE-2026-3173",
+      "description": "The Meta Field Block plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.5.1. This is due to the plugin allowing users to specify arbitrary object IDs and object types via block attributes without validating whether the authenticated user ha",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/display-a-meta-field-as-block/trunk/meta-field-block.php#L206",
+        "https://plugins.trac.wordpress.org/browser/display-a-meta-field-as-block/trunk/meta-field-block.php#L328",
+        "https://plugins.trac.wordpress.org/changeset/3472303/"
+      ],
+      "published": "2026-05-28T06:16:26.917"
+    },
+    {
+      "id": "CVE-2026-9793",
+      "description": "A flaw was found in Keycloak. When a JSON Web Encryption (JWE) encrypted request object is submitted, Keycloak may incorrectly process unsigned claims if the decrypted content is raw JSON, bypassing the configured signature policy. This allows a remote attacker to submit unauthorized claims, leading",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-9793",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2482460"
+      ],
+      "published": "2026-05-28T05:16:40.697"
+    },
+    {
+      "id": "CVE-2026-9794",
+      "description": "A flaw was found in Keycloak. A remote, unauthenticated attacker can exploit this vulnerability by sending specially crafted SOAP requests to the SAML ECP (Security Assertion Markup Language Enhanced Client or Proxy) endpoint with varying client IDs. By observing distinct faultstrings in the respons",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-209"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-9794",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2482461"
+      ],
+      "published": "2026-05-28T05:16:40.847"
+    },
+    {
+      "id": "CVE-2026-4888",
+      "description": "The Everest Forms \u2013 Contact Form, Payment Form, Quiz, Survey & Custom Form Builder plugin for WordPress is vulnerable to unauthorized email sending due to a missing capability check on the send_test_email() function in all versions up to, and including, 3.4.7. This makes it possible for authenticate",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/everest-forms/tags/3.4.4/includes/class-evf-ajax.php#L1174",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/8bced7df-3e1a-4d7b-9ad0-64be5e18900f?source=cve"
+      ],
+      "published": "2026-05-28T00:16:43.797"
+    },
+    {
+      "id": "CVE-2026-9228",
+      "description": "The Timetable and Event Schedule by MotoPress plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 2.4.16 via the action_get_event_data due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/mp-timetable/tags/2.4.16/classes/class-core.php#L311",
+        "https://plugins.trac.wordpress.org/browser/mp-timetable/tags/2.4.16/classes/class-hooks.php#L152",
+        "https://plugins.trac.wordpress.org/browser/mp-timetable/tags/2.4.16/classes/controllers/class-controller-events.php#L62"
+      ],
+      "published": "2026-05-28T05:16:39.447"
+    },
+    {
+      "id": "CVE-2026-9241",
+      "description": "The FOX \u2013 Currency Switcher Professional for WooCommerce plugin for WordPress is vulnerable to Authorization Bypass Through User-Controlled Key in all versions up to and including 1.4.6. This is due to the `get_value()` function in `classes/fixed/fixed_user_role.php` trusting the attacker-controlled",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/woocommerce-currency-switcher/trunk/classes/fixed/fixed_user_role.php#L228",
+        "https://plugins.trac.wordpress.org/browser/woocommerce-currency-switcher/trunk/classes/fixed/fixed_user_role.php#L229",
+        "https://plugins.trac.wordpress.org/browser/woocommerce-currency-switcher/trunk/classes/woocs.php#L2271"
+      ],
+      "published": "2026-05-28T05:16:39.600"
+    },
+    {
+      "id": "CVE-2026-9791",
+      "description": "A flaw was found in Keycloak. An authenticated user with existing organization membership can exploit this flaw by accessing user-facing APIs, such as the account API or by requesting an OpenID Connect (OIDC) token with the 'organization' scope. This allows organization metadata to be disclosed in t",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-9791",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2482458"
+      ],
+      "published": "2026-05-28T05:16:39.977"
+    },
+    {
+      "id": "CVE-2026-9789",
+      "description": "A Local Privilege Escalation (LPE) vulnerability affects Acer NitroSense software versions prior to 3.01.3052. The vulnerability stems from the the PSAdminAgent service, which creates a Named Pipe with a weak Access Control List (ACL). This allows any authenticated local user to connect and send com",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-22",
+        "CWE-269",
+        "CWE-284",
+        "CWE-732"
+      ],
+      "references": [
+        "https://community.acer.com/en/kb/articles/19670"
+      ],
+      "published": "2026-05-28T03:16:44.200"
+    },
+    {
+      "id": "CVE-2026-32996",
+      "description": "This vulnerability in Veeam Agent for Microsoft Windows allows for Local Privilege Escalation.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-532"
+      ],
+      "references": [
+        "https://www.veeam.com/kb4852"
+      ],
+      "published": "2026-05-28T05:16:35.637"
+    },
+    {
+      "id": "CVE-2026-32997",
+      "description": "A vulnerability allowing an authenticated user with the Backup Administrator role to write arbitrary files on Linux-based Veeam Backup & Replication server.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-36"
+      ],
+      "references": [
+        "https://www.veeam.com/kb4852"
+      ],
+      "published": "2026-05-28T05:16:35.793"
+    },
+    {
+      "id": "CVE-2026-32998",
+      "description": "This vulnerability in Veeam Service Provider Console allows for remote code execution.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-233"
+      ],
+      "references": [
+        "https://www.veeam.com/kb4853"
+      ],
+      "published": "2026-05-28T05:16:35.970"
+    }
+  ]
+}
