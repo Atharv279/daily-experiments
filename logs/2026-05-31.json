@@ -1,0 +1,349 @@
+{
+  "timestamp": "2026-05-31T06:36:46.721894+00:00",
+  "scan_id": "c125433072",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 3,
+      "MEDIUM": 13,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        6
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-200",
+        2
+      ],
+      [
+        "CWE-59",
+        2
+      ],
+      [
+        "CWE-732",
+        2
+      ]
+    ],
+    "threat_index": 287.9,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 287.9,
+        "yesterday": 263.6,
+        "change_pct": 9.2
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 1,
+        "change_pct": 100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-8732",
+      "description": "The WP Maps Pro plugin for WordPress is vulnerable to Privilege Escalation via Administrator Account Creation in all versions up to, and including, 6.1.0. This is due to the wpgmp_temp_access_ajax AJAX action being registered with wp_ajax_nopriv_ and protected only by a nonce check using the fc-call",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://codecanyon.net/item/advanced-google-maps-plugin-for-wordpress/5211638",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/65988550-d39d-40be-8d25-647e7237062d?source=cve"
+      ],
+      "published": "2026-05-29T07:16:14.487"
+    },
+    {
+      "id": "CVE-2026-3655",
+      "description": "The OTP Login With Phone Number, OTP Verification plugin for WordPress is vulnerable to authentication bypass in versions 1.8.50 through 1.8.60. This is due to the Firebase verification flow in the `lwp_ajax_register` AJAX handler not binding the Firebase session to the phone number supplied in the ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/login-with-phone-number/tags/1.8.60/inc/ajax-handlers.php#L1167",
+        "https://plugins.trac.wordpress.org/browser/login-with-phone-number/tags/1.8.60/inc/ajax-handlers.php#L649",
+        "https://plugins.trac.wordpress.org/browser/login-with-phone-number/tags/1.8.60/inc/ajax-handlers.php#L659"
+      ],
+      "published": "2026-05-29T08:16:18.920"
+    },
+    {
+      "id": "CVE-2025-11993",
+      "description": "The WooCommerce Infinite Scroll and Ajax Pagination plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.8 via the 'settings' parameter in the 'import_settings' function. This is due to deserialization of untrusted data supplied via the import configurat",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://codecanyon.net/item/woocommerce-infinite-scroll-and-ajax-pagination/10192075",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/a8eb3ec8-0784-4702-86bf-a621b288e7a0?source=cve"
+      ],
+      "published": "2026-05-29T07:16:13.730"
+    },
+    {
+      "id": "CVE-2025-11262",
+      "description": "The Link Whisper Free plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the user_id parameter in all versions up to, and including, 0.9.0 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scrip",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/link-whisper/trunk/core/Wpil/Settings.php#L883",
+        "https://wordpress.org/plugins/link-whisper/#developers",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/ad159b18-0ad1-4cab-932e-6850cf7a867f?source=cve"
+      ],
+      "published": "2026-05-29T08:16:17.497"
+    },
+    {
+      "id": "CVE-2026-4776",
+      "description": "An SQL injection vulnerability exists in Mautic's API contact filtering mechanism. Due to insufficient recursive sanitization of nested query parameters, an authenticated API user can bypass input filtering and inject arbitrary SQL commands.",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/mautic/mautic/security/advisories/GHSA-fcmw-wx57-9p75"
+      ],
+      "published": "2026-05-29T08:16:19.260"
+    },
+    {
+      "id": "CVE-2026-9493",
+      "description": "Service Center developed by BankPro E-Service Technology has an Insecure Direct Object Reference vulnerability, allowing authenticated remote attackers to modify the parameter of a specific query function to access other users' EC order details.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://www.twcert.org.tw/en/cp-139-10940-d90bd-2.html",
+        "https://www.twcert.org.tw/tw/cp-132-10938-97ddd-1.html"
+      ],
+      "published": "2026-05-29T07:16:14.620"
+    },
+    {
+      "id": "CVE-2025-14042",
+      "description": "The Automotive Car Dealership Business WordPress Theme for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Project Details' custom field in Portfolio Items in all versions up to, and including, 13.4.1. This is due to insufficient input sanitization and output escaping on user-supplie",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://themeforest.net/item/automotive-car-dealership-business-wordpress-theme/9210971",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/ced350cf-1116-4003-ac74-f6dec34360a5?source=cve"
+      ],
+      "published": "2026-05-29T07:16:14.023"
+    },
+    {
+      "id": "CVE-2026-6275",
+      "description": "The StatCounter \u2013 Free Real Time Visitor Stats plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to, and including, 2.1.1 This is due to insufficient output escaping on the post author's nickname in the statcounter_addToTags() function. The function is hooked to wp_hea",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/official-statcounter-plugin-for-wordpress/tags/2.1.1/StatCounter-Wordpress-Plugin.php#L266",
+        "https://plugins.trac.wordpress.org/browser/official-statcounter-plugin-for-wordpress/tags/2.1.1/StatCounter-Wordpress-Plugin.php#L274",
+        "https://plugins.trac.wordpress.org/browser/official-statcounter-plugin-for-wordpress/trunk/StatCounter-Wordpress-Plugin.php#L266"
+      ],
+      "published": "2026-05-29T07:16:14.197"
+    },
+    {
+      "id": "CVE-2026-9714",
+      "description": "The Simple Divi Shortcode plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'id' parameter of the [showmodule] shortcode in versions up to, and including, 1.2 This is due to insufficient input sanitization and output escaping in the showmodule_shortcode() function, which conc",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/simple-divi-shortcode/trunk/simple_divi_shortcode.php#L62",
+        "https://plugins.trac.wordpress.org/browser/simple-divi-shortcode/trunk/simple_divi_shortcode.php#L63",
+        "https://plugins.trac.wordpress.org/changeset?old_path=%2Fsimple-divi-shortcode/tags/1.2&new_path=%2Fsimple-divi-shortcode/tags/1.2.1"
+      ],
+      "published": "2026-05-29T07:16:14.780"
+    },
+    {
+      "id": "CVE-2026-9243",
+      "description": "The Plus Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'carousel_direction' parameter of the Carousel Anything widget in versions up to, and including, 6.4.15 This is due to insufficient output escaping in the render() function, where the carousel_dir",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/the-plus-addons-for-elementor-page-builder/tags/6.4.15/modules/widgets/tp_carousel_anything.php#L1143",
+        "https://plugins.trac.wordpress.org/browser/the-plus-addons-for-elementor-page-builder/tags/6.4.15/modules/widgets/tp_carousel_anything.php#L1187",
+        "https://plugins.trac.wordpress.org/changeset?old_path=%2Fthe-plus-addons-for-elementor-page-builder/tags/6.4.15&new_path=%2Fthe-plus-addons-for-elementor-page-builder/tags/6.4.16"
+      ],
+      "published": "2026-05-29T08:16:19.627"
+    },
+    {
+      "id": "CVE-2026-2128",
+      "description": "The Breeze plugin for WordPress is vulnerable to Exposure of Sensitive Information to an Unauthorized Actor in all versions up to, and including, 2.5.2 This is due to improper verification of the `wordpress_logged_in_` cookie in the `inc/cache/execute-cache.php` file when the \"Cache Logged-in Users\"",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/breeze/tags/2.2.24/inc/cache/execute-cache.php#L132",
+        "https://plugins.trac.wordpress.org/browser/breeze/tags/2.2.24/inc/cache/execute-cache.php#L140",
+        "https://plugins.trac.wordpress.org/browser/breeze/trunk/inc/cache/execute-cache.php#L140"
+      ],
+      "published": "2026-05-29T05:16:19.267"
+    },
+    {
+      "id": "CVE-2026-6891",
+      "description": "Improper handling of symbolic links in the installer of My Image Garden for macOS Version 3.6.8 or earlier may allow a local attacker with login privileges to exploit a specially crafted symbolic link during installation to modify permissions of files for which they would not normally have authoriza",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-59"
+      ],
+      "references": [
+        "https://canon.jp/support/support-info/260528-2vulnerability-response",
+        "https://psirt.canon/advisory-information/cp2026-004/",
+        "https://www.canon-europe.com/support/product-security/"
+      ],
+      "published": "2026-05-29T00:16:15.987"
+    },
+    {
+      "id": "CVE-2026-6892",
+      "description": "Improper handling of symbolic links in the installer of CUPS Printer Driver for macOS(*) may allow a local attacker with login privileges to exploit a specially crafted symbolic link during installation to modify permissions of directories for which they would not normally have authorization.\u00a0\n\n*:Ca",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-59"
+      ],
+      "references": [
+        "https://canon.jp/support/support-info/260528-1vulnerability-response",
+        "https://psirt.canon/advisory-information/cp2026-004/",
+        "https://www.canon-europe.com/support/product-security/"
+      ],
+      "published": "2026-05-29T00:16:16.847"
+    },
+    {
+      "id": "CVE-2026-10039",
+      "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to generic SQL Injection via the 'order' parameter in all versions up to, and including, 3.28.28 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/tags/3.29.3/main/admin/admin-pages/payments/list.php#L45",
+        "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/tags/3.29.3/main/admin/admin-pages/payments/list.php#L46",
+        "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/trunk/main/admin/admin-pages/payments/list.php#L45"
+      ],
+      "published": "2026-05-29T09:16:16.833"
+    },
+    {
+      "id": "CVE-2026-6324",
+      "description": "A flaw was found in libsoup. A remote attacker could exploit an unsigned to signed conversion error in the `soup_body_input_stream_read_chunked()` function by sending a malicious HTTP request. This vulnerability occurs when libsoup operates behind a non-libsoup proxy server or as a proxy in front of",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-444"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-6324",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2458479",
+        "https://gitlab.gnome.org/GNOME/libsoup/-/issues/508"
+      ],
+      "published": "2026-05-29T07:16:14.327"
+    },
+    {
+      "id": "CVE-2026-7430",
+      "description": "The Post Snippets plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 4.0.19. This is due to insufficient output escaping of imported snippet content when rendering JavaScript variables in the post editor. Specifically, the `jqueryUiDialog()` metho",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/post-snippets/tags/4.0.19/src/PostSnippets/DBTable.php#L114",
+        "https://plugins.trac.wordpress.org/browser/post-snippets/tags/4.0.19/src/PostSnippets/WPEditor.php#L218",
+        "https://plugins.trac.wordpress.org/browser/post-snippets/tags/4.1.1/src/PostSnippets/WPEditor.php#L20"
+      ],
+      "published": "2026-05-29T04:17:10.563"
+    },
+    {
+      "id": "CVE-2026-8995",
+      "description": "The Poll Maker \u2013 Versus Polls, Anonymous Polls, Image Polls plugin for WordPress is vulnerable to Sensitive Information Exposure in versions up to and including 6.3.7. This is due to insufficient access controls on the 'ays_poll_get_user_information' AJAX action, which serializes and returns the com",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/poll-maker/tags/6.2.7/includes/class-poll-maker-ays.php#L318",
+        "https://plugins.trac.wordpress.org/browser/poll-maker/tags/6.2.7/public/class-poll-maker-ays-public.php#L2960",
+        "https://plugins.trac.wordpress.org/browser/poll-maker/tags/6.2.7/public/class-poll-maker-ays-public.php#L2967"
+      ],
+      "published": "2026-05-29T04:17:11.040"
+    },
+    {
+      "id": "CVE-2026-49322",
+      "description": "Weak authentication in the Wireless Control Module (WCM) of the Indian Motorcycle Scout Bobber + Tech 2025 model year allows an adjacent-network attacker with read access to the in-vehicle network to recover the user-set unlock PIN by passively observing a single PIN authentication exchange. The Inf",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-294",
+        "CWE-327",
+        "CWE-1390"
+      ],
+      "references": [
+        "https://www.asrg.io/security-advisories/cve-2026-49322-indian-scout-infotainment-wcm-weak-authentication"
+      ],
+      "published": "2026-05-29T08:16:19.060"
+    },
+    {
+      "id": "CVE-2026-7480",
+      "description": "An Incorrect Permission Assignment for Critical Resource vulnerability in ASUS System Control Interface allows a local user to elevate privileges to SYSTEM and execute arbitrary code via a crafted RPC call that bypass the validation mechanism.\nRefer to the 'Security Update for ASUS System Control In",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-732"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory/"
+      ],
+      "published": "2026-05-29T02:16:17.223"
+    },
+    {
+      "id": "CVE-2026-8070",
+      "description": "Incorrect permission assignment for a critical resource in Armoury Crate allows a local user to bypass the driver\u2019s validation mechanism, resulting in unauthorized read and write access to physical memory.Refer to the '\u00a0\nSecurity Update for Armoury Crate App\u00a0\u00a0\u00a0' section on the ASUS Security Advisory",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-732"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory"
+      ],
+      "published": "2026-05-29T02:16:17.380"
+    }
+  ]
+}
