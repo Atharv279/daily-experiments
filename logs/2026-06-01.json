@@ -1,0 +1,361 @@
+{
+  "timestamp": "2026-06-01T07:25:11.628219+00:00",
+  "scan_id": "52c2a676fd",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 11,
+      "MEDIUM": 7,
+      "LOW": 1,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-89",
+        6
+      ],
+      [
+        "CWE-404",
+        4
+      ],
+      [
+        "CWE-119",
+        3
+      ],
+      [
+        "CWE-121",
+        2
+      ],
+      [
+        "CWE-74",
+        2
+      ]
+    ],
+    "threat_index": 332.5,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 332.5,
+        "yesterday": 287.9,
+        "change_pct": 15.5
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 2,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-7465",
+      "description": "The Spectra Gutenberg Blocks \u2013 Website Builder for the Block Editor plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.19.25. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute code on the server. E",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/ultimate-addons-for-gutenberg/tags/2.19.25/classes/class-uagb-init-blocks.php#L330",
+        "https://plugins.trac.wordpress.org/browser/ultimate-addons-for-gutenberg/tags/2.19.25/classes/class-uagb-init-blocks.php#L335",
+        "https://plugins.trac.wordpress.org/browser/ultimate-addons-for-gutenberg/trunk/classes/class-uagb-init-blocks.php#L330"
+      ],
+      "published": "2026-05-30T10:16:23.860"
+    },
+    {
+      "id": "CVE-2026-10119",
+      "description": "A security vulnerability has been detected in TRENDnet TEW-432BRP 3.10B20. Impacted is the function formSetMACFilter of the file /goform/formSetMACFilter. The manipulation of the argument filter_name leads to stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/wudipjq/my_vuln/blob/main/TRENDnet/vuln_6/6.md",
+        "https://vuldb.com/submit/814761",
+        "https://vuldb.com/vuln/367296"
+      ],
+      "published": "2026-05-30T14:16:24.513"
+    },
+    {
+      "id": "CVE-2026-10120",
+      "description": "A vulnerability was detected in TRENDnet TEW-432BRP 3.10B20. The affected element is the function formSetFirewallRule of the file /goform/formSetFirewallRule. The manipulation of the argument firewall_name results in stack-based buffer overflow. The attack can be executed remotely. The exploit is no",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/wudipjq/my_vuln/blob/main/TRENDnet/vuln_7/7.md",
+        "https://vuldb.com/submit/814762",
+        "https://vuldb.com/vuln/367297"
+      ],
+      "published": "2026-05-30T15:16:15.173"
+    },
+    {
+      "id": "CVE-2018-25405",
+      "description": "eNdonesia Portal 8.7 contains multiple SQL injection vulnerabilities that allow unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through parameters in mod.php. Attackers can inject SQL through the artid, cid, did, contid, and aboutid parameters to extract sensit",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "http://www.endonesia.org/",
+        "https://sourceforge.net/projects/endonesia/files/latest/download",
+        "https://www.exploit-db.com/exploits/45654"
+      ],
+      "published": "2026-05-30T16:16:55.650"
+    },
+    {
+      "id": "CVE-2018-25406",
+      "description": "eNdonesia Portal 8.7 contains multiple SQL injection vulnerabilities that allow unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through parameters in mod.php. Attackers can inject SQL through the artid, cid, did, contid, and aboutid parameters across publisher,",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "http://www.endonesia.org/",
+        "https://sourceforge.net/projects/endonesia/files/latest/download",
+        "https://www.exploit-db.com/exploits/45654"
+      ],
+      "published": "2026-05-30T16:17:00.303"
+    },
+    {
+      "id": "CVE-2018-25407",
+      "description": "eNdonesia Portal 8.7 contains multiple SQL injection vulnerabilities that allow unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through parameters in mod.php. Attackers can inject SQL through the artid, cid, did, contid, and aboutid parameters across publisher,",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "http://www.endonesia.org/",
+        "https://sourceforge.net/projects/endonesia/files/latest/download",
+        "https://www.exploit-db.com/exploits/45654"
+      ],
+      "published": "2026-05-30T16:17:01.303"
+    },
+    {
+      "id": "CVE-2026-7459",
+      "description": "The Simple History \u2013 Track, Log, and Audit WordPress Changes plugin for WordPress is vulnerable to authenticated (Subscriber+) account takeover in all versions up to, and including, 5.26.0 via the event reaction endpoints (react_to_event() / unreact_to_event()). The endpoints register get_items_perm",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-640"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/simple-history/tags/5.26.0/inc/class-event.php#L613",
+        "https://plugins.trac.wordpress.org/browser/simple-history/tags/5.26.0/inc/class-wp-rest-events-controller.php#L1215",
+        "https://plugins.trac.wordpress.org/browser/simple-history/tags/5.26.0/inc/class-wp-rest-events-controller.php#L1420"
+      ],
+      "published": "2026-05-30T10:16:22.610"
+    },
+    {
+      "id": "CVE-2026-9757",
+      "description": "The GEO my WP plugin for WordPress is vulnerable to SQL Injection via the 'swlatlng' and 'nelatlng' parameters in all versions up to, and including, 4.5.5 The parameters are read from $_SERVER['QUERY_STRING'] via parse_str() (bypassing WordPress's wp_magic_quotes protection, which only covers $_POST",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/geo-my-wp/tags/4.5.5/includes/class-gmw-form-core.php#L794",
+        "https://plugins.trac.wordpress.org/browser/geo-my-wp/tags/4.5.5/includes/class-gmw-form.php#L117",
+        "https://plugins.trac.wordpress.org/browser/geo-my-wp/tags/4.5.5/includes/gmw-functions.php#L520"
+      ],
+      "published": "2026-05-30T10:16:23.980"
+    },
+    {
+      "id": "CVE-2018-25408",
+      "description": "The Open ISES Project 3.30A contains a path traversal vulnerability in the ajax/download.php endpoint that allows unauthenticated attackers to download arbitrary files by manipulating the filename parameter. Attackers can supply directory traversal sequences ../ in the filename parameter to access f",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "http://openises.sourceforge.net/",
+        "https://sourceforge.net/projects/openises/files/latest/download",
+        "https://www.exploit-db.com/exploits/45655"
+      ],
+      "published": "2026-05-30T16:17:01.437"
+    },
+    {
+      "id": "CVE-2026-10110",
+      "description": "A vulnerability was detected in code-projects Student Details Management System 1.0. This affects an unknown function of the file /index.php. Performing a manipulation of the argument roll results in sql injection. The attack is possible to be carried out remotely. The exploit is now public and may ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/Xmyronn/Student-Details-Management-System-1.0---SQL-Injection-Unauthenticated-.git",
+        "https://vuldb.com/submit/818504"
+      ],
+      "published": "2026-05-30T07:16:27.813"
+    },
+    {
+      "id": "CVE-2026-10111",
+      "description": "A flaw has been found in sambitraj STUDENT-MANAGEMENT-SYSTEM 1.0. This impacts an unknown function of the component Login Page. Executing a manipulation of the argument email can lead to sql injection. The attack may be performed from remote. The exploit has been published and may be used. The proje",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/sambitraj/STUDENT-MANAGEMENT-SYSTEM/",
+        "https://github.com/sambitraj/STUDENT-MANAGEMENT-SYSTEM/issues/2",
+        "https://vuldb.com/submit/818539"
+      ],
+      "published": "2026-05-30T08:16:16.013"
+    },
+    {
+      "id": "CVE-2026-5071",
+      "description": "The SocketCAN implementation validates the length of a user-provided buffer containing a socketcan_frame object using only a NET_ASSERT statement in zcan_sendto_ctx() before dereferencing it in socketcan_to_can_frame(). In production builds where assertions are disabled, a userspace application that",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-c3w6-x7m3-3c58"
+      ],
+      "published": "2026-05-30T08:16:16.370"
+    },
+    {
+      "id": "CVE-2026-48840",
+      "description": "Exim 4.88 before 4.99.4, in some proxy configurations, mishandles certain short payloads, leading to disclosure of uninitialized stack memory values to a client.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-839"
+      ],
+      "references": [
+        "https://exim.org/static/doc/security/EXIM-Security-2026-05-19.1",
+        "https://www.openwall.com/lists/oss-security/2026/05/29/3",
+        "http://www.openwall.com/lists/oss-security/2026/05/29/3"
+      ],
+      "published": "2026-05-30T02:16:19.790"
+    },
+    {
+      "id": "CVE-2026-10113",
+      "description": "A vulnerability was found in Open5GS up to 2.7.7. Affected by this vulnerability is an unknown functionality in the library lib/sbi/nnrf-handler.c of the component Shared NF-profile Parser. The manipulation results in denial of service. It is possible to launch the attack remotely. The exploit has b",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4467",
+        "https://github.com/open5gs/open5gs/pull/4527"
+      ],
+      "published": "2026-05-30T09:16:17.460"
+    },
+    {
+      "id": "CVE-2026-10114",
+      "description": "A vulnerability was determined in Open5GS up to 2.7.7. Affected by this issue is the function handle_scp_info in the library lib/sbi/nnrf-handler.c of the component Shared NF-profile Parser. This manipulation causes out-of-bounds write. The attack can be initiated remotely. The exploit has been publ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4468",
+        "https://vuldb.com/submit/818582"
+      ],
+      "published": "2026-05-30T11:17:05.510"
+    },
+    {
+      "id": "CVE-2026-10115",
+      "description": "A vulnerability was identified in Open5GS up to 2.7.7. This affects an unknown part in the library lib/sbi/nnrf-handler.c of the component Shared NF-profile Parser. Such manipulation leads to denial of service. The attack can be launched remotely. The exploit is publicly available and might be used.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4469",
+        "https://github.com/open5gs/open5gs/issues/4469#issuecomment-4389805398"
+      ],
+      "published": "2026-05-30T11:17:05.807"
+    },
+    {
+      "id": "CVE-2026-10116",
+      "description": "A security flaw has been discovered in Open5GS up to 2.7.7. This vulnerability affects the function ogs_sbi_xact_add in the library /lib/core/ogs-timer.c of the component ue-authentications Endpoint. Performing a manipulation results in denial of service. The attack may be initiated remotely. The ex",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4473",
+        "https://github.com/open5gs/open5gs/pull/4578"
+      ],
+      "published": "2026-05-30T12:16:23.080"
+    },
+    {
+      "id": "CVE-2026-10117",
+      "description": "A weakness has been identified in Open5GS up to 2.7.7. This issue affects the function ogs_pool_id_calloc in the library /lib/sbi/nghttp2-server.c. Executing a manipulation can lead to denial of service. The attack may be launched remotely. The exploit has been made available to the public and could",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4474",
+        "https://vuldb.com/submit/818586"
+      ],
+      "published": "2026-05-30T13:16:20.870"
+    },
+    {
+      "id": "CVE-2026-10112",
+      "description": "A vulnerability has been found in sambitraj STUDENT-MANAGEMENT-SYSTEM 1.0. Affected is an unknown function of the component Dashboard Page. The manipulation of the argument Name leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the publi",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/sambitraj/STUDENT-MANAGEMENT-SYSTEM/",
+        "https://github.com/sambitraj/STUDENT-MANAGEMENT-SYSTEM/issues/3",
+        "https://vuldb.com/submit/818540"
+      ],
+      "published": "2026-05-30T08:16:16.180"
+    },
+    {
+      "id": "CVE-2026-46242",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\neventpoll: fix ep_remove struct eventpoll / struct file UAF\n\nep_remove() (via ep_remove_file()) cleared file->f_ep under\nfile->f_lock but then kept using @file inside the critical section\n(is_file_epoll(), hlist_del_rcu() through t",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/a6dc643c69311677c574a0f17a3f4d66a5f3744b",
+        "https://git.kernel.org/stable/c/ced39b6a8062bac5c18a1c3df85634107eb8664a",
+        "https://git.kernel.org/stable/c/ef4ca02e95363e78977ca04340d44fe3b4b2b81f"
+      ],
+      "published": "2026-05-30T13:16:21.980"
+    }
+  ]
+}
