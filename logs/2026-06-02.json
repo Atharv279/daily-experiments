@@ -1,0 +1,373 @@
+{
+  "timestamp": "2026-06-02T07:00:32.921765+00:00",
+  "scan_id": "10230d45c3",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 10,
+      "MEDIUM": 9,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-119",
+        8
+      ],
+      [
+        "CWE-121",
+        6
+      ],
+      [
+        "CWE-74",
+        4
+      ],
+      [
+        "CWE-89",
+        3
+      ],
+      [
+        "CWE-120",
+        2
+      ]
+    ],
+    "threat_index": 355.7,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 355.7,
+        "yesterday": 332.5,
+        "change_pct": 7.0
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-10158",
+      "description": "A security flaw has been discovered in TRENDnet TEW-432BRP 3.10B20. Affected is the function formPortFw of the file /goform/formPortFw. The manipulation of the argument server_name results in stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been released to ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/wudipjq/my_vuln/blob/main/TRENDnet/vuln_11/11.md",
+        "https://vuldb.com/submit/814768",
+        "https://vuldb.com/vuln/367411"
+      ],
+      "published": "2026-05-31T02:16:34.107"
+    },
+    {
+      "id": "CVE-2026-10159",
+      "description": "A weakness has been identified in TRENDnet TEW-432BRP 3.10B20. Affected by this vulnerability is the function formSysLog of the file /goform/formSysLog. This manipulation of the argument current_page causes stack-based buffer overflow. The attack can be initiated remotely. The exploit has been made ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/wudipjq/my_vuln/blob/main/TRENDnet/vuln_12/12.md",
+        "https://vuldb.com/submit/814769",
+        "https://vuldb.com/vuln/367412"
+      ],
+      "published": "2026-05-31T02:16:34.290"
+    },
+    {
+      "id": "CVE-2026-10160",
+      "description": "A security vulnerability has been detected in TRENDnet TEW-432BRP 3.10B20. Affected by this issue is the function formSetEnableWizard of the file /goform/formSetEnableWizard. Such manipulation of the argument start_wizard leads to stack-based buffer overflow. The attack can be launched remotely. The",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/wudipjq/my_vuln/blob/main/TRENDnet/vuln_13/13.md",
+        "https://vuldb.com/submit/814770",
+        "https://vuldb.com/vuln/367413"
+      ],
+      "published": "2026-05-31T03:16:14.430"
+    },
+    {
+      "id": "CVE-2026-10161",
+      "description": "A vulnerability was detected in TRENDnet TEW-432BRP 3.10B20. This affects the function formResetStatistic of the file /goform/formResetStatistic. Performing a manipulation of the argument status_statistic results in stack-based buffer overflow. The attack may be initiated remotely. The exploit is no",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/wudipjq/my_vuln/blob/main/TRENDnet/vuln_14/14.md",
+        "https://vuldb.com/submit/814771",
+        "https://vuldb.com/vuln/367414"
+      ],
+      "published": "2026-05-31T03:16:15.503"
+    },
+    {
+      "id": "CVE-2026-10162",
+      "description": "A flaw has been found in TRENDnet TEW-432BRP 3.10B20. This vulnerability affects the function formSetPassword of the file /goform/formSetPassword. Executing a manipulation of the argument webpage can lead to stack-based buffer overflow. The attack may be launched remotely. The exploit has been publi",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/wudipjq/my_vuln/blob/main/TRENDnet/vuln_15/15.md",
+        "https://vuldb.com/submit/814772",
+        "https://vuldb.com/vuln/367415"
+      ],
+      "published": "2026-05-31T03:16:15.660"
+    },
+    {
+      "id": "CVE-2026-10163",
+      "description": "A vulnerability has been found in Edimax BR-6478AC 1.23. This issue affects the function formUSBAccount of the file /goform/formUSBAccount of the component POST Request Handler. The manipulation of the argument UserName/Password leads to buffer overflow. Remote exploitation of the attack is possible",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/EDIMAX-BR6478ACV2-formUSBAccount-34b53a41781f803eb9b0dae1fea4dc3e?source=copy_link",
+        "https://vuldb.com/submit/818599",
+        "https://vuldb.com/vuln/367416"
+      ],
+      "published": "2026-05-31T04:16:15.553"
+    },
+    {
+      "id": "CVE-2026-10164",
+      "description": "A vulnerability was found in Edimax BR-6478AC 1.23. Impacted is the function formUSBFolder of the file /goform/formUSBFolder of the component POST Request Handler. The manipulation of the argument ShareName/SelectName results in buffer overflow. The attack can be executed remotely. The exploit has b",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/EDIMAX-BR6478ACV2-formUSBFolder-34b53a41781f80559b15f262ba914d57?source=copy_link",
+        "https://vuldb.com/submit/818600",
+        "https://vuldb.com/vuln/367417"
+      ],
+      "published": "2026-05-31T04:16:19.333"
+    },
+    {
+      "id": "CVE-2026-10165",
+      "description": "A vulnerability was identified in Edimax BR-6478AC 1.23. The impacted element is the function formWanTcpipSetup of the file /goform/formWanTcpipSetup of the component POST Request Handler. Such manipulation of the argument pppUserName leads to stack-based buffer overflow. The attack may be performed",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/EDIMAX-BR6478ACV2-formWanTcpipSetup-34b53a41781f8013a811da2b3c8b7aa3?source=copy_link",
+        "https://vuldb.com/submit/818601",
+        "https://vuldb.com/vuln/367419"
+      ],
+      "published": "2026-05-31T04:16:19.510"
+    },
+    {
+      "id": "CVE-2026-10157",
+      "description": "A vulnerability was identified in Open5GS up to 2.7.6. This impacts an unknown function of the file src/amf/ngap-handler.c of the component NGAP PathSwitchRequest Message Handler. The manipulation leads to improper authentication. It is possible to initiate the attack remotely. The exploit is public",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/commit/a188e36b1741ffc2252133f59b1bda4f14d3cb5c",
+        "https://github.com/open5gs/open5gs/issues/4393"
+      ],
+      "published": "2026-05-31T02:16:32.613"
+    },
+    {
+      "id": "CVE-2026-10167",
+      "description": "A weakness has been identified in OUSL-GROUP-BrinaryBrains School Student Management System up to 1e70e5ad1125b86dca4ee086eb6bb121f17708b6. This impacts the function sign_auth_cookie of the file application/controllers/Login.php of the component MY_Controller. Executing a manipulation of the argumen",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/OUSL-GROUP-BrinaryBrains/School-Student-Management-System/issues/24",
+        "https://vuldb.com/submit/819157",
+        "https://vuldb.com/vuln/367421"
+      ],
+      "published": "2026-05-31T05:16:23.807"
+    },
+    {
+      "id": "CVE-2026-10166",
+      "description": "A vulnerability was determined in Edimax BR-6478AC 1.23. The affected element is the function formWlbasic of the file /goform/formWlbasic of the component POST Request Handler. This manipulation of the argument rootAPmac causes command injection. The attack is possible to be carried out remotely. Th",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/EDIMAX-BR6478ACV2-formWlbasic-34b53a41781f80edb1e5e0104741dfb2?source=copy_link",
+        "https://vuldb.com/submit/818623",
+        "https://vuldb.com/vuln/367418"
+      ],
+      "published": "2026-05-31T04:16:19.683"
+    },
+    {
+      "id": "CVE-2026-10168",
+      "description": "A security vulnerability has been detected in OUSL-GROUP-BrinaryBrains School Student Management System up to 1e70e5ad1125b86dca4ee086eb6bb121f17708b6. Affected is the function marks of the file application/controllers/Parents.php. The manipulation of the argument param1 leads to improper control of",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-99"
+      ],
+      "references": [
+        "https://github.com/OUSL-GROUP-BrinaryBrains/School-Student-Management-System/issues/25",
+        "https://vuldb.com/submit/819161",
+        "https://vuldb.com/vuln/367422"
+      ],
+      "published": "2026-05-31T05:16:24.033"
+    },
+    {
+      "id": "CVE-2026-10170",
+      "description": "A flaw has been found in code-projects Visitor Management System 1.0. Affected by this issue is some unknown functionality of the file /vms/php/phone_0.php. This manipulation of the argument phone causes sql injection. The attack may be initiated remotely. The exploit has been published and may be u",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/Xmyronn/Visitor-Management-System-1.0---SQLi-to-Remote-Code-Execution-Attack-Chain-.git",
+        "https://vuldb.com/submit/819186"
+      ],
+      "published": "2026-05-31T07:16:17.300"
+    },
+    {
+      "id": "CVE-2026-10172",
+      "description": "A security flaw has been discovered in Bdtask Multi-Store Inventory Management System 1.0. The affected element is the function Upload of the file application/modules/dashboard/controllers/Module.php of the component Component Module. The manipulation of the argument module results in unrestricted u",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/kevin57545/CVE/blob/main/bdtask-multi-store-rce.md",
+        "https://vuldb.com/cve/CVE-2026-10172",
+        "https://vuldb.com/submit/819418"
+      ],
+      "published": "2026-05-31T08:16:16.557"
+    },
+    {
+      "id": "CVE-2026-8382",
+      "description": "The Advanced Custom Fields (ACF\u00ae) plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 6.8.1. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to overwrite",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/advanced-custom-fields/tags/6.8.0/includes/forms/form-front.php#L243",
+        "https://plugins.trac.wordpress.org/changeset/3549586/advanced-custom-fields/trunk/includes/forms/form-front.php",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/ddb2290d-d4bd-4f70-9fe9-927f49721811?source=cve"
+      ],
+      "published": "2026-05-31T04:16:19.880"
+    },
+    {
+      "id": "CVE-2026-10155",
+      "description": "A vulnerability was found in Bdtask Multi-Store Inventory Management System 1.0. The impacted element is the function accounts_report_search of the file application/modules/accounts/controllers/Accounts.php of the component Accounts Report Handler. Performing a manipulation of the argument dtpToDate",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/kevin57545/CVE/blob/main/README.md",
+        "https://vuldb.com/submit/818863",
+        "https://vuldb.com/vuln/367408"
+      ],
+      "published": "2026-05-31T00:16:33.740"
+    },
+    {
+      "id": "CVE-2026-10171",
+      "description": "A vulnerability has been found in code-projects Online Music Site 1.0. This affects an unknown part of the file /Administrator/PHP/AdminUpdateAlbum.php. Such manipulation of the argument ID leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and ",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/gtxy114514/CVE/issues/6",
+        "https://vuldb.com/submit/819292"
+      ],
+      "published": "2026-05-31T07:16:18.747"
+    },
+    {
+      "id": "CVE-2026-10154",
+      "description": "A vulnerability has been found in Dolibarr ERP CRM 23.0.0/23.0.1/23.0.2. The affected element is an unknown function of the file htdocs/user/messaging.php. Such manipulation of the argument ID leads to authorization bypass. The attack can be executed remotely. Upgrading to version 23.0.3 is sufficie",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/Dolibarr/dolibarr/releases/tag/23.0.3",
+        "https://github.com/dolibarr/dolibarr/commit/119b3606c7a701747a57a1f18b1a9e7666f678e2",
+        "https://vuldb.com/submit/818838"
+      ],
+      "published": "2026-05-31T00:16:33.527"
+    },
+    {
+      "id": "CVE-2026-10156",
+      "description": "A vulnerability was determined in Open5GS up to 2.7.7. This affects the function handle_amf_info in the library /lib/sbi/nnrf-handler.c of the component nf-instances Endpoint. Executing a manipulation of the argument nf_info_pool can lead to resource consumption. The attack may be performed from rem",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4480",
+        "https://vuldb.com/submit/818598"
+      ],
+      "published": "2026-05-31T00:16:33.910"
+    },
+    {
+      "id": "CVE-2026-10169",
+      "description": "A vulnerability was detected in OUSL-GROUP-BrinaryBrains School Student Management System up to 1e70e5ad1125b86dca4ee086eb6bb121f17708b6. Affected by this vulnerability is the function ajax_forgot_password of the file application/controllers/Login.php of the component Forgot Password Endpoint. The m",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-640"
+      ],
+      "references": [
+        "https://github.com/OUSL-GROUP-BrinaryBrains/School-Student-Management-System/issues/26",
+        "https://vuldb.com/submit/819395",
+        "https://vuldb.com/vuln/367423"
+      ],
+      "published": "2026-05-31T05:16:24.190"
+    }
+  ]
+}
