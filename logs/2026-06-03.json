@@ -1,0 +1,377 @@
+{
+  "timestamp": "2026-06-03T07:18:26.166860+00:00",
+  "scan_id": "7ba4696208",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 6,
+      "MEDIUM": 12,
+      "LOW": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        8
+      ],
+      [
+        "CWE-89",
+        5
+      ],
+      [
+        "CWE-285",
+        4
+      ],
+      [
+        "CWE-707",
+        3
+      ],
+      [
+        "CWE-266",
+        3
+      ]
+    ],
+    "threat_index": 286.5,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 286.5,
+        "yesterday": 355.7,
+        "change_pct": -19.5
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-10206",
+      "description": "A vulnerability was detected in D-Link DI-8400 up to 16.07.26A1. This affects an unknown function of the file /dbsrv.asp. Performing a manipulation of the argument str results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit is now public and may be used. Th",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/666324/dlink-di8400-vuln/tree/main/dlink-di8400-vuln",
+        "https://vuldb.com/cve/CVE-2026-10206",
+        "https://vuldb.com/submit/821716"
+      ],
+      "published": "2026-06-01T01:16:47.620"
+    },
+    {
+      "id": "CVE-2026-10208",
+      "description": "A flaw has been found in code-projects Online Hospital Management System 1.php. This impacts the function login_user of the file login_1.php. Executing a manipulation of the argument Username can lead to sql injection. The attack can be executed remotely. The exploit has been published and may be us",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/Mi0uno/Online-Hospital-Management-System-has-SQL-Injection",
+        "https://vuldb.com/cve/CVE-2026-10208"
+      ],
+      "published": "2026-06-01T02:16:16.477"
+    },
+    {
+      "id": "CVE-2026-10214",
+      "description": "A weakness has been identified in zhayujie chatgpt-on-wechat up to 2.0.8. This issue affects the function _get_safety_warning of the file agent/tools/bash/bash.py of the component Bash Tool. Executing a manipulation can lead to os command injection. The attack can be launched remotely. The exploit h",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/zhayujie/CowAgent/commit/16d9b449c9aa53ccee44144a762a2737d7ba4fc4",
+        "https://github.com/zhayujie/CowAgent/issues/2803",
+        "https://github.com/zhayujie/CowAgent/releases/tag/2.0.9"
+      ],
+      "published": "2026-06-01T03:16:25.123"
+    },
+    {
+      "id": "CVE-2026-10219",
+      "description": "A vulnerability was found in nextlevelbuilder GoClaw up to 3.11.3. This impacts the function FsBridge.WriteFile of the file internal/sandbox/fsbridge.go of the component write_file Tool. Performing a manipulation results in os command injection. The attack is possible to be carried out remotely. The",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/nextlevelbuilder/goclaw/",
+        "https://github.com/nextlevelbuilder/goclaw/issues/1121",
+        "https://github.com/nextlevelbuilder/goclaw/pull/1155"
+      ],
+      "published": "2026-06-01T04:16:21.060"
+    },
+    {
+      "id": "CVE-2026-10220",
+      "description": "A vulnerability was determined in NousResearch hermes-agent up to 2026.4.30. Affected is the function _serve_plugin_skill/skill_view of the file tools/skills_tool.py. Executing a manipulation can lead to injection. The attack may be performed from remote. The exploit has been publicly disclosed and ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-707"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/9dd399c6f75b31fa741a613dfd41de08",
+        "https://vuldb.com/cve/CVE-2026-10220",
+        "https://vuldb.com/submit/822018"
+      ],
+      "published": "2026-06-01T04:16:21.260"
+    },
+    {
+      "id": "CVE-2026-10221",
+      "description": "A vulnerability was identified in NousResearch hermes-agent up to 0.12.0. Affected by this vulnerability is the function _compress_context of the file run_agent.py. The manipulation leads to injection. It is possible to initiate the attack remotely. The exploit is publicly available and might be use",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-707"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/d343fcfe2c009cd45f56dc475fd5ac03",
+        "https://vuldb.com/cve/CVE-2026-10221",
+        "https://vuldb.com/submit/822019"
+      ],
+      "published": "2026-06-01T04:16:21.550"
+    },
+    {
+      "id": "CVE-2026-10202",
+      "description": "A vulnerability was identified in OFCMS 1.1.3. This issue affects the function Query of the file \\ofcms-admin\\src\\main\\java\\com\\ofsoft\\cms\\admin\\controller\\system\\SystemDictController.java of the component JSON Query Interface. The manipulation leads to sql injection. The attack can be initiated rem",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://gitee.com/oufu/ofcms/issues/IJLIBT",
+        "https://vuldb.com/cve/CVE-2026-10202",
+        "https://vuldb.com/submit/821181"
+      ],
+      "published": "2026-06-01T00:16:42.097"
+    },
+    {
+      "id": "CVE-2026-10203",
+      "description": "A security flaw has been discovered in OFCMS 1.1.3. Impacted is the function Query of the file \\ofcms-admin\\src\\main\\java\\com\\ofsoft\\cms\\admin\\controller\\system\\SystemParamController.java of the component JSON Query Interface. The manipulation results in sql injection. The attack can be launched rem",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://gitee.com/oufu/ofcms/issues/IJLIYP",
+        "https://vuldb.com/cve/CVE-2026-10203",
+        "https://vuldb.com/submit/821197"
+      ],
+      "published": "2026-06-01T00:16:42.257"
+    },
+    {
+      "id": "CVE-2026-10204",
+      "description": "A weakness has been identified in OFCMS 1.1.3. The affected element is the function Query of the file \\ofcms-admin\\src\\main\\java\\com\\ofsoft\\cms\\admin\\controller\\system\\SysUserController.java of the component JSON Query Interface. This manipulation causes sql injection. The attack may be initiated re",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://gitee.com/oufu/ofcms/issues/IJLL09",
+        "https://vuldb.com/cve/CVE-2026-10204",
+        "https://vuldb.com/submit/821697"
+      ],
+      "published": "2026-06-01T00:16:42.427"
+    },
+    {
+      "id": "CVE-2026-10205",
+      "description": "A security vulnerability has been detected in Metasoft \u7f8e\u7279\u8f6f\u4ef6 MetaCRM 6.4.0. The impacted element is an unknown function of the file develop/systparam/softlogo/upload.jsp. Such manipulation leads to unrestricted upload. The attack may be launched remotely. The exploit has been disclosed publicly and m",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://ucn9h68n9289.feishu.cn/docx/If1EdqoFqoUJ0FxHj06cZnUOngc?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-10205",
+        "https://vuldb.com/submit/821715"
+      ],
+      "published": "2026-06-01T01:16:47.450"
+    },
+    {
+      "id": "CVE-2026-10209",
+      "description": "A vulnerability has been found in code-projects Online Hospital Management System 1.0. Affected is an unknown function of the file appointmentdetail.php of the component Appointment Handler. The manipulation of the argument editid leads to sql injection. The attack is possible to be carried out remo",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/Wanghuidi/CVE/issues/1",
+        "https://vuldb.com/cve/CVE-2026-10209"
+      ],
+      "published": "2026-06-01T02:16:17.370"
+    },
+    {
+      "id": "CVE-2026-10210",
+      "description": "A vulnerability was found in AstrBotDevs AstrBot 4.23.6. Affected by this vulnerability is the function _sanitize_prompt_description of the file astrbot/core/skills/skill_manager.py. The manipulation results in injection. The attack may be performed from remote. The exploit has been made public and ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-707"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/f9d45a9c68b15a382677a820ee881bbb",
+        "https://vuldb.com/cve/CVE-2026-10210",
+        "https://vuldb.com/submit/821920"
+      ],
+      "published": "2026-06-01T02:16:17.543"
+    },
+    {
+      "id": "CVE-2026-10211",
+      "description": "A vulnerability was determined in AstrBotDevs AstrBot 4.23.6. Affected by this issue is the function _normalize_rw_path of the file astrbot/core/tools/computer_tools/fs.py. This manipulation causes incorrect authorization. It is possible to initiate the attack remotely. The exploit has been publicly",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-863"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/b5e4671ff68e4f9001d977180ef4f081",
+        "https://vuldb.com/cve/CVE-2026-10211",
+        "https://vuldb.com/submit/821921"
+      ],
+      "published": "2026-06-01T02:16:17.713"
+    },
+    {
+      "id": "CVE-2026-10212",
+      "description": "A vulnerability was identified in AstrBotDevs AstrBot 4.24.2. This affects the function astr_main_agent of the file astrbot/core/astr_main_agent.py. Such manipulation of the argument session_id leads to authorization bypass. It is possible to launch the attack remotely. The exploit is publicly avail",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/91a7f955143099e1747424707dfad0f9",
+        "https://vuldb.com/cve/CVE-2026-10212",
+        "https://vuldb.com/submit/821923"
+      ],
+      "published": "2026-06-01T03:16:23.837"
+    },
+    {
+      "id": "CVE-2026-10217",
+      "description": "A flaw has been found in nextlevelbuilder GoClaw up to 3.11.3. The impacted element is the function handleSave of the file internal/http/tts_config.go of the component RoleAdmin Gateway. This manipulation causes improper privilege management. Remote exploitation of the attack is possible. The exploi",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-269"
+      ],
+      "references": [
+        "https://github.com/nextlevelbuilder/goclaw/",
+        "https://github.com/nextlevelbuilder/goclaw/issues/1118",
+        "https://vuldb.com/cve/CVE-2026-10217"
+      ],
+      "published": "2026-06-01T04:16:20.680"
+    },
+    {
+      "id": "CVE-2026-10213",
+      "description": "A security flaw has been discovered in AstrBotDevs AstrBot 4.23.6. This vulnerability affects unknown code of the file /api/skills/delete of the component API Endpoint. Performing a manipulation of the argument Name results in path traversal. The attack can be initiated remotely. The exploit has bee",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/8155cf1b9519f0a3524eea73dfeead2f",
+        "https://vuldb.com/cve/CVE-2026-10213",
+        "https://vuldb.com/submit/821924"
+      ],
+      "published": "2026-06-01T03:16:24.967"
+    },
+    {
+      "id": "CVE-2026-10218",
+      "description": "A vulnerability has been found in nextlevelbuilder GoClaw up to 3.11.3. This affects the function auth of the file internal/http/evolution_handlers.go. Such manipulation leads to improper authorization. The attack can be executed remotely. The exploit has been disclosed to the public and may be used",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/nextlevelbuilder/goclaw/",
+        "https://github.com/nextlevelbuilder/goclaw/issues/1120",
+        "https://vuldb.com/cve/CVE-2026-10218"
+      ],
+      "published": "2026-06-01T04:16:20.880"
+    },
+    {
+      "id": "CVE-2026-10215",
+      "description": "A security vulnerability has been detected in Dolibarr ERP CRM up to 23.0.1. Impacted is the function checkUserAccessToObject of the file htdocs/holiday/class/api_holidays.class.php of the component Leave Request REST API. The manipulation leads to improper authorization. The attack may be initiated",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/Dolibarr/dolibarr/commit/ee93b6f2f9dd0f6aeefe9d718ab3ab0a44326b73",
+        "https://github.com/Dolibarr/dolibarr/issues/37752",
+        "https://github.com/Dolibarr/dolibarr/issues/37752#issuecomment-4304055921"
+      ],
+      "published": "2026-06-01T03:16:25.300"
+    },
+    {
+      "id": "CVE-2026-10216",
+      "description": "A vulnerability was detected in unitedbyai droidclaw up to 0.5.3. The affected element is an unknown function of the file server/src/routes/pairing.ts of the component claim Endpoint. The manipulation results in improper restriction of excessive authentication attempts. The attack may be launched re",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-307",
+        "CWE-799"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/2639ccaefd55ef4309953b76bc4c737e/raw",
+        "https://github.com/unitedbyai/droidclaw/",
+        "https://github.com/unitedbyai/droidclaw/issues/14"
+      ],
+      "published": "2026-06-01T04:16:20.340"
+    },
+    {
+      "id": "CVE-2026-10201",
+      "description": "A vulnerability was determined in Assimp up to 6.0.4. This vulnerability affects the function FBXExporter::WriteObjects of the file FBXExporter.cpp of the component UV Channel Handler. Executing a manipulation can lead to divide by zero. The attack needs to be launched locally. The exploit has been ",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-369",
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/assimp/assimp/",
+        "https://github.com/assimp/assimp/issues/6613",
+        "https://github.com/user-attachments/files/27153727/poc.zip"
+      ],
+      "published": "2026-06-01T00:16:41.927"
+    }
+  ]
+}
