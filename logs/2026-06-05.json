@@ -1,0 +1,356 @@
+{
+  "timestamp": "2026-06-05T06:46:18.655528+00:00",
+  "scan_id": "f068e87b77",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 9,
+      "MEDIUM": 8,
+      "LOW": 1,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-400",
+        3
+      ],
+      [
+        "CWE-1333",
+        2
+      ],
+      [
+        "CWE-552",
+        1
+      ],
+      [
+        "CWE-639",
+        1
+      ]
+    ],
+    "threat_index": 331.2,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 331.2,
+        "yesterday": 184.5,
+        "change_pct": 79.5
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2025-14771",
+      "description": "Files or directories accessible to external parties vulnerability in ABB T-MAC Plus.\n\nThis issue affects T-MAC Plus: 4.0-24.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-552"
+      ],
+      "references": [
+        "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7840&LanguageCode=en&DocumentPartId=&Action=Launch"
+      ],
+      "published": "2026-06-03T11:16:17.190"
+    },
+    {
+      "id": "CVE-2025-14772",
+      "description": "Authorization bypass through User-Controlled key vulnerability in ABB T-MAC Plus.\n\nThis issue affects T-MAC Plus: 4.0-24.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7840&LanguageCode=en&DocumentPartId=&Action=Launch"
+      ],
+      "published": "2026-06-03T11:16:18.810"
+    },
+    {
+      "id": "CVE-2025-14773",
+      "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in ABB T-MAC Plus.\n\nThis issue affects T-MAC Plus: 4.0-24.",
+      "severity": "HIGH",
+      "score": 8.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7840&LanguageCode=en&DocumentPartId=&Action=Launch"
+      ],
+      "published": "2026-06-03T11:16:18.940"
+    },
+    {
+      "id": "CVE-2026-4035",
+      "description": "A vulnerability in mlflow/mlflow versions prior to 3.11.0 allows for the resolution of environment variables in AI Gateway secrets, which can be exploited to exfiltrate sensitive server-side environment credentials to an attacker-controlled endpoint. This issue arises because the `api_key` field in ",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-201"
+      ],
+      "references": [
+        "https://github.com/mlflow/mlflow/commit/4a3f2f720cb4f058c9e0c5b883e0acc9ab64a7f3",
+        "https://huntr.com/bounties/f8e591a0-0f19-4910-b82e-16c9956f2233",
+        "https://huntr.com/bounties/f8e591a0-0f19-4910-b82e-16c9956f2233"
+      ],
+      "published": "2026-06-03T09:16:13.083"
+    },
+    {
+      "id": "CVE-2026-9516",
+      "description": "Cpanel::JSON::XS versions before 4.41 for Perl allow denial of service via UTF-8 BOM prefixed input when a decode filter callback throws.\n\nTo skip a leading 3-byte UTF-8 BOM, decode_json() advances the input scalar's string pointer past the mark with SvPV_set() and restores it only on the normal ret",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-755",
+        "CWE-763"
+      ],
+      "references": [
+        "https://github.com/rurban/Cpanel-JSON-XS/commit/dfe1b41a36caba51dc12a2917fe50285d1ffaa7b.patch",
+        "https://metacpan.org/release/RURBAN/Cpanel-JSON-XS-4.41/changes",
+        "http://www.openwall.com/lists/oss-security/2026/06/03/5"
+      ],
+      "published": "2026-06-03T01:16:23.430"
+    },
+    {
+      "id": "CVE-2026-50031",
+      "description": "ipmi-oem in FreeIPMI before 1.6.18 has exploitable buffer overflows on response messages. The Intelligent Platform Management Interface (IPMI) specification defines a set of interfaces for platform management. It is implemented by a large number of hardware manufacturers to support system management",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://lists.gnu.org/archive/html/info-gnu/2026-06/msg00000.html",
+        "https://savannah.gnu.org/bugs/index.php?68363",
+        "https://savannah.gnu.org/bugs/index.php?68364"
+      ],
+      "published": "2026-06-03T04:17:07.330"
+    },
+    {
+      "id": "CVE-2026-10694",
+      "description": "A vulnerability was detected in SourceCodester Online Food Ordering System 2.0. Affected by this issue is the function include of the file /index.php. The manipulation of the argument page results in file inclusion. The attack can be launched remotely. The exploit is now public and may be used.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-73"
+      ],
+      "references": [
+        "https://github.com/Mikkoseven/cve/issues/4",
+        "https://vuldb.com/cve/CVE-2026-10694",
+        "https://vuldb.com/submit/830903"
+      ],
+      "published": "2026-06-03T01:16:23.083"
+    },
+    {
+      "id": "CVE-2026-9334",
+      "description": "Cpanel::JSON::XS versions before 4.41 for Perl allow type confusion via duplicate object keys when dupkeys_as_arrayref is enabled.\n\ndecode_hv() collapses duplicate object keys into an array reference under dupkeys_as_arrayref. The branch reached for a duplicate key tests `SvTYPE (old_value) != SVt_R",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-843"
+      ],
+      "references": [
+        "https://github.com/rurban/Cpanel-JSON-XS/commit/11a7c550a0d8fac2f84414f24d5df9b2bfe346e2.patch",
+        "https://metacpan.org/release/RURBAN/Cpanel-JSON-XS-4.41/changes",
+        "http://www.openwall.com/lists/oss-security/2026/06/03/4"
+      ],
+      "published": "2026-06-03T01:16:23.287"
+    },
+    {
+      "id": "CVE-2026-10704",
+      "description": "A vulnerability was detected in SourceCodester Pizzafy E-Commerce System 1.0. Affected by this vulnerability is the function Login of the file /admin/admin_class_novo.php of the component Administrative Control Panel. The manipulation of the argument Username results in sql injection. The attack can",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/nuiifornet/A033/blob/main/pizzafy-vulnerability.md",
+        "https://vuldb.com/cve/CVE-2026-10704",
+        "https://vuldb.com/submit/831321"
+      ],
+      "published": "2026-06-03T02:16:17.200"
+    },
+    {
+      "id": "CVE-2025-15654",
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Fox-themes Prague allows Reflected XSS.\n\nThis issue affects Prague: from n/a through 2.2.8.",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://patchstack.com/database/wordpress/plugin/prague-plugins/vulnerability/wordpress-prague-plugin-2-2-8-cross-site-scripting-xss-vulnerability?_s_id=cve"
+      ],
+      "published": "2026-06-03T09:16:12.863"
+    },
+    {
+      "id": "CVE-2026-10690",
+      "description": "A vulnerability was identified in wonderwhy-er DesktopCommanderMCP 0.2.37. This affects the function readFileFromUrl of the file src/tools/filesystem.ts of the component read_file. Such manipulation of the argument url leads to server-side request forgery. The attack may be performed from remote. Th",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/sorlen008/DesktopCommanderMCP/commit/53699bebba9950047bca16ac4dc8f0568f596aaa",
+        "https://github.com/wonderwhy-er/DesktopCommanderMCP/",
+        "https://github.com/wonderwhy-er/DesktopCommanderMCP/issues/410"
+      ],
+      "published": "2026-06-03T00:16:30.733"
+    },
+    {
+      "id": "CVE-2026-10693",
+      "description": "A security vulnerability has been detected in SourceCodester Online Boat Reservation System 1.0. Affected by this vulnerability is an unknown functionality of the component Administrative Endpoint. The manipulation leads to improper authorization. The attack can be initiated remotely. The exploit ha",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://medium.com/@hemantrajbhati5555/broken-access-control-in-sourcecodester-online-boat-reservation-system-1-0-4ed0380d2222",
+        "https://vuldb.com/cve/CVE-2026-10693",
+        "https://vuldb.com/submit/830894"
+      ],
+      "published": "2026-06-03T01:16:21.783"
+    },
+    {
+      "id": "CVE-2026-10703",
+      "description": "A security vulnerability has been detected in EIPStackGroup OpENer up to 2.3.0. Affected is the function CreateMessageRouterRequestStructure of the file cipmessagerouter.c of the component SendRRData Handler. The manipulation leads to use after free. Remote exploitation of the attack is possible. Th",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/EIPStackGroup/OpENer/",
+        "https://github.com/EIPStackGroup/OpENer/issues/566",
+        "https://github.com/user-attachments/files/27100961/poc.zip"
+      ],
+      "published": "2026-06-03T02:16:15.660"
+    },
+    {
+      "id": "CVE-2026-5078",
+      "description": "Impact: The morgan logging middleware's :remote-user token extracts the Basic auth username from the Authorization request header and writes it to the log stream without neutralizing control characters. An unauthenticated attacker can send a crafted Authorization Basic header containing CR or LF byt",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-117"
+      ],
+      "references": [
+        "https://cna.openjsf.org/security-advisories.html",
+        "https://github.com/expressjs/morgan/security/advisories/GHSA-4vj7-5mj6-jm8m"
+      ],
+      "published": "2026-06-03T08:16:19.743"
+    },
+    {
+      "id": "CVE-2026-7421",
+      "description": "The Passeum Ticketing plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 1.0. This is due to the `get_shop_url()` method returning the `shop_name` setting value without sanitization when it begins with \"http\", combined with insufficient validation",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/passeum-ticketing/tags/1.0/inc/settings.php#L141",
+        "https://plugins.trac.wordpress.org/browser/passeum-ticketing/tags/1.0/passeum-ticketing.php#L202",
+        "https://plugins.trac.wordpress.org/browser/passeum-ticketing/tags/1.0/passeum-ticketing.php#L40"
+      ],
+      "published": "2026-06-03T00:16:44.947"
+    },
+    {
+      "id": "CVE-2026-10691",
+      "description": "A security flaw has been discovered in wonderwhy-er DesktopCommanderMCP up to 0.2.38. This impacts an unknown function of the file src/search-manager.ts of the component start_search. Performing a manipulation of the argument SearchResult[] results in inefficient regular expression complexity. It is",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-1333"
+      ],
+      "references": [
+        "https://github.com/wonderwhy-er/DesktopCommanderMCP/",
+        "https://github.com/wonderwhy-er/DesktopCommanderMCP/commit/4ce845f8749b6a159b57b38dcc3357f7222a8078",
+        "https://github.com/wonderwhy-er/DesktopCommanderMCP/issues/375"
+      ],
+      "published": "2026-06-03T00:16:30.940"
+    },
+    {
+      "id": "CVE-2026-10692",
+      "description": "A weakness has been identified in johnhuang316 code-index-mcp up to 2.14.0. Affected is the function is_safe_regex_pattern of the component search_code_advanced. Executing a manipulation of the argument regex can lead to inefficient regular expression complexity. It is possible to launch the attack ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-1333"
+      ],
+      "references": [
+        "https://github.com/johnhuang316/code-index-mcp/",
+        "https://github.com/johnhuang316/code-index-mcp/commit/25bc02fac74051ddae15ce79e952f00211b1ea6b",
+        "https://github.com/johnhuang316/code-index-mcp/issues/84"
+      ],
+      "published": "2026-06-03T00:16:31.143"
+    },
+    {
+      "id": "CVE-2026-9732",
+      "description": "The EmergencyWP \u2013 Dead Man's switch & legacy deliverance plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.4.2. This is due to missing or incorrect nonce validation on the form_settings_ui (settings save handler, procedural include scope) functi",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/emergencywp/tags/1.4.2/pages/emergencywp/setting_tabs/settings_main.php#L17",
+        "https://plugins.trac.wordpress.org/browser/emergencywp/tags/1.4.2/pages/emergencywp/setting_tabs/settings_main.php#L217",
+        "https://plugins.trac.wordpress.org/browser/emergencywp/tags/1.4.2/pages/emergencywp/setting_tabs/settings_main.php#L79"
+      ],
+      "published": "2026-06-03T00:16:45.113"
+    },
+    {
+      "id": "CVE-2026-10705",
+      "description": "A flaw has been found in dask up to 3.0. Affected by this issue is the function nunique_approx of the file dask/dataframe/hyperloglog.py of the component HLL Handler. This manipulation causes resource consumption. The attack is possible to be carried out remotely. A high degree of complexity is need",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-400",
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/dask/dask/",
+        "https://github.com/dask/dask/issues/12403",
+        "https://github.com/dask/dask/pull/12401"
+      ],
+      "published": "2026-06-03T02:16:17.397"
+    },
+    {
+      "id": "CVE-2026-50052",
+      "description": "In Vinyl Cache before 9.0.1 and Varnish Cache before 9.0.3, a deficiency in HTTP/2 request parsing can be exploited to launch a backend request desync\nattack (request smuggling), which in turn can be used for cache poisoning,\nauthentication bypass, or possibly even information disclosure and manipul",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-444"
+      ],
+      "references": [
+        "https://vinyl-cache.org/security/VSV00019.html"
+      ],
+      "published": "2026-06-03T06:16:35.390"
+    }
+  ]
+}
