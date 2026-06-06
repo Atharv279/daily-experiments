@@ -1,0 +1,334 @@
+{
+  "timestamp": "2026-06-06T06:05:16.305683+00:00",
+  "scan_id": "3985473e7c",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 4,
+      "HIGH": 8,
+      "MEDIUM": 7,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-78",
+        4
+      ],
+      [
+        "CWE-863",
+        1
+      ],
+      [
+        "CWE-287",
+        1
+      ],
+      [
+        "CWE-489",
+        1
+      ],
+      [
+        "CWE-326",
+        1
+      ]
+    ],
+    "threat_index": 433.9,
+    "critical_count": 4
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 433.9,
+        "yesterday": 331.2,
+        "change_pct": 31.0
+      },
+      "critical_count": {
+        "today": 4,
+        "yesterday": 1,
+        "change_pct": 300.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-41283",
+      "description": "OpenStack Mistral through 22.0.0 allows Arbitrary Remote Code Execution when the API is exposed. There are endpoints that allow code execution, which can lead to exfiltration of service credentials.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/openstack/mistral/tags",
+        "https://security.openstack.org/ossa/OSSA-2026-020.html",
+        "https://www.openwall.com/lists/oss-security/2026/06/03/14"
+      ],
+      "published": "2026-06-04T04:17:12.700"
+    },
+    {
+      "id": "CVE-2026-49185",
+      "description": "The FieldX MDM adb messaging topic passes unverified payloads directly into\u00a0Runtime.exec(), allowing command/instruction injection.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://community.acer.com/en/kb/articles/19707"
+      ],
+      "published": "2026-06-04T04:17:15.387"
+    },
+    {
+      "id": "CVE-2026-49186",
+      "description": "The local MQTT broker does not enforce topic-level Access Control Lists (ACLs). This allows any client to subscribe using wildcard characters (#\u00a0or\u00a0+) to enumerate hidden network devices or publish rogue control commands.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://community.acer.com/en/kb/articles/19707"
+      ],
+      "published": "2026-06-04T04:17:15.550"
+    },
+    {
+      "id": "CVE-2026-49188",
+      "description": "The\u00a0ai_cmd\u00a0utility executes with full root permissions. It pipes socket inputs directly to\u00a0popen(), paving the way for unauthenticated users to execute arbitrary root commands.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-489"
+      ],
+      "references": [
+        "https://community.acer.com/en/kb/articles/19707"
+      ],
+      "published": "2026-06-04T06:16:24.583"
+    },
+    {
+      "id": "CVE-2026-41860",
+      "description": "CWE-326 in BOSH allows a local attacker to steal Basic-auth credentials or redirect UAA token requests via MITM. HttpRequestHelper#create_async_endpoint and #send_http_get_request_synchronous hard-code OpenSSL::SSL::VERIFY_NONE, enabling an attacker to intercept traffic between bosh-monitor and the ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-326"
+      ],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-41860-missing-tls-verify-on-bosh-monitor/"
+      ],
+      "published": "2026-06-04T03:16:20.107"
+    },
+    {
+      "id": "CVE-2026-41011",
+      "description": "PackagePersister.validate_tgz builds \"tar -tf #{tgz} 2>&1\" where tgz = File.join(release_dir, 'packages', \"#{name}.tgz\") and name = package_meta['name'] comes directly from release.MF inside the uploaded tarball. The string is passed to Bosh::Common::Exec.sh, which executes via %x{} \u2014 i.e., /bin/sh ",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-41011-package-name-command-injection/"
+      ],
+      "published": "2026-06-04T03:16:19.633"
+    },
+    {
+      "id": "CVE-2026-41010",
+      "description": "ReleaseJob#unpack builds job_dir = File.join(@release_dir, 'jobs', name) and job_tgz = File.join(@release_dir, 'jobs', \"#{name}.tgz\") where name returns @job_meta['name'], a value taken verbatim from the jobs: array of the attacker-supplied release.MF inside the uploaded tarball. These paths are the",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-41010-release-job-name-command-injection-on-bosh-director/"
+      ],
+      "published": "2026-06-04T04:17:10.037"
+    },
+    {
+      "id": "CVE-2026-41859",
+      "description": "A network man-in-the-middle between nats-sync and the BOSH director can steal the director credentials (Basic auth header or UAA client secret) and can tamper with the VM list that is written into the NATS authorization file. Stolen credentials grant administrative director access. UsersSync#bosh_ap",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-295"
+      ],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-41859-missing-tls-in-nats-sync/"
+      ],
+      "published": "2026-06-04T03:16:19.947"
+    },
+    {
+      "id": "CVE-2026-10737",
+      "description": "The SP Project & Document Manager plugin for WordPress is vulnerable to unauthorized access due to a missing capability check on the view_file function in all versions up to, and including, 4.71. This makes it possible for unauthenticated attackers to read file metadata and obtain download links for",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/sp-client-document-manager/trunk/ajax.php#L155",
+        "https://plugins.trac.wordpress.org/browser/sp-client-document-manager/trunk/ajax.php#L39",
+        "https://plugins.trac.wordpress.org/browser/sp-client-document-manager/trunk/classes/ajax.php#L250"
+      ],
+      "published": "2026-06-04T02:16:17.503"
+    },
+    {
+      "id": "CVE-2026-41858",
+      "description": "Weak Randomness / Insecure Cryptographic Primitive (CWE-338) in Get-RandomPassword in BOSH-Ecosystem / windows-utilities-release allows a network attacker to estimate VM boot time and reconstruct a small candidate list to recover the Administrator password. The randomize_password job exists solely t",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-338"
+      ],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-41858-brute-forceable-windows-admin-creds/"
+      ],
+      "published": "2026-06-04T03:16:19.790"
+    },
+    {
+      "id": "CVE-2026-8829",
+      "description": "HTML::Entities versions before 3.84 for Perl read freed heap memory in _decode_entities.\n\nThe XS routine backing HTML::Entities::_decode_entities cached a pointer (repl) into the entity-value SV returned by hv_fetch on the entity2char hash. When the input SV was identical to a value SV in that hash,",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/libwww-perl/HTML-Parser/commit/6922552b0778c90a9587a3894e248be4d3a25e1c.patch",
+        "https://github.com/libwww-perl/HTML-Parser/pull/56",
+        "http://www.openwall.com/lists/oss-security/2026/06/04/2"
+      ],
+      "published": "2026-06-04T03:16:20.260"
+    },
+    {
+      "id": "CVE-2026-49187",
+      "description": "The hard-coded APK resource files never expire, and the shared scepter leads to information leaks and potential misuse.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://community.acer.com/en/kb/articles/19707"
+      ],
+      "published": "2026-06-04T06:16:24.290"
+    },
+    {
+      "id": "CVE-2026-7764",
+      "description": "An out-of-bounds read vulnerability in the morse.ko HaLow Wi-Fi kernel driver in Morse Micro HaLowLink 2 software versions prior to 2.11.12 allows an unauthenticated attacker within radio range to disclose a small amount of kernel heap memory or cause a Denial of Service (kernel oops/panic) via a cr",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [],
+      "references": [
+        "https://www.morsemicro.com/security-advisories/MM-SA-2026-003"
+      ],
+      "published": "2026-06-04T02:16:17.700"
+    },
+    {
+      "id": "CVE-2026-10805",
+      "description": "A flaw was found in NetworkManager. This local privilege escalation vulnerability exists in NetworkManager's dhclient backend when processing malformed Manufacturer Usage Description (MUD) URLs. A local user can exploit this flaw to escalate privileges by triggering a script via a crafted MUD URL, p",
+      "severity": "MEDIUM",
+      "score": 6.7,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-10805",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2484613"
+      ],
+      "published": "2026-06-04T06:16:21.780"
+    },
+    {
+      "id": "CVE-2026-8722",
+      "description": "Net::Async::Statsd::Client versions through 0.005 for Perl allow metric injections.\n\nThe metric names are not checked for newlines, colons or pipes. Metrics generated from untrusted sources could inject additional statsd metrics.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-93"
+      ],
+      "references": [
+        "https://www.cve.org/CVERecord?id=CVE-2026-46719",
+        "https://www.cve.org/CVERecord?id=CVE-2026-46720"
+      ],
+      "published": "2026-06-04T00:17:00.333"
+    },
+    {
+      "id": "CVE-2026-8653",
+      "description": "The MasterStudy LMS Pro Plus plugin for WordPress is vulnerable to generic SQL Injection via the 'columns' parameter in all versions up to, and including, 4.8.20 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it po",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://stylemixthemes.com/wordpress-lms-plugin/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/f24749a8-e01d-436a-9ec8-3745a6b5eecf?source=cve"
+      ],
+      "published": "2026-06-04T02:16:17.840"
+    },
+    {
+      "id": "CVE-2026-48681",
+      "description": "OpenStack Ironic through before 35.0.2 allows file overwrite via directory traversal during deployment with a crafted ISO image.",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-23"
+      ],
+      "references": [
+        "https://bugs.launchpad.net/ironic/+bug/2148333",
+        "https://www.openwall.com/lists/oss-security/2026/06/03/12",
+        "http://www.openwall.com/lists/oss-security/2026/06/03/12"
+      ],
+      "published": "2026-06-04T04:17:15.220"
+    },
+    {
+      "id": "CVE-2026-10597",
+      "description": "OMICARD EDM developed by ITPison has a Insecure Direct Object Reference vulnerability, allowing unauthenticated remote attackers to modify a specific parameter to obtain user's email address.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://www.twcert.org.tw/en/cp-139-10948-78864-2.html",
+        "https://www.twcert.org.tw/tw/cp-132-10947-027a7-1.html"
+      ],
+      "published": "2026-06-04T03:16:19.443"
+    },
+    {
+      "id": "CVE-2026-44917",
+      "description": "OpenStack Ironic before 35.0.2 allows a malicious authenticated project admin or manager to read local files on the Ironic conductor via a pxe_template.",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-669"
+      ],
+      "references": [
+        "https://bugs.launchpad.net/ironic/+bug/2148319",
+        "https://www.openwall.com/lists/oss-security/2026/06/03/13",
+        "http://www.openwall.com/lists/oss-security/2026/06/03/13"
+      ],
+      "published": "2026-06-04T04:17:14.853"
+    },
+    {
+      "id": "CVE-2026-10783",
+      "description": "A security flaw has been discovered in gradio-app gradio 6.14.0. This affects the function save_audio_to_cache of the component Audio Cache Key Handler. Performing a manipulation results in use of weak hash. The attack must be initiated from a local position. The attack is considered to have high co",
+      "severity": "LOW",
+      "score": 2.5,
+      "cwes": [
+        "CWE-327",
+        "CWE-328"
+      ],
+      "references": [
+        "https://github.com/gradio-app/gradio/",
+        "https://github.com/gradio-app/gradio/issues/13395",
+        "https://github.com/gradio-app/gradio/pull/13394"
+      ],
+      "published": "2026-06-04T00:16:59.010"
+    }
+  ]
+}
