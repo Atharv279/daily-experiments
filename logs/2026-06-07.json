@@ -1,0 +1,352 @@
+{
+  "timestamp": "2026-06-07T06:44:56.929573+00:00",
+  "scan_id": "cc07867e56",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 6,
+      "MEDIUM": 9,
+      "LOW": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-20",
+        12
+      ],
+      [
+        "CWE-416",
+        3
+      ],
+      [
+        "CWE-693",
+        2
+      ],
+      [
+        "CWE-74",
+        2
+      ],
+      [
+        "CWE-362",
+        2
+      ]
+    ],
+    "threat_index": 283.3,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 283.3,
+        "yesterday": 433.9,
+        "change_pct": -34.7
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 4,
+        "change_pct": -75.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-11250",
+      "description": "Inappropriate implementation in DevTools in Google Chrome prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/498281224"
+      ],
+      "published": "2026-06-05T00:17:01.483"
+    },
+    {
+      "id": "CVE-2026-11248",
+      "description": "Inappropriate implementation in Google Lens in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-693"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/497946941"
+      ],
+      "published": "2026-06-05T00:17:01.247"
+    },
+    {
+      "id": "CVE-2026-11241",
+      "description": "Insufficient validation of untrusted input in Cast in Google Chrome prior to 149.0.7827.53 allowed an attacker on the local network segment to perform privilege escalation via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "HIGH",
+      "score": 8.0,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/497203741"
+      ],
+      "published": "2026-06-05T00:17:00.340"
+    },
+    {
+      "id": "CVE-2026-11239",
+      "description": "Inappropriate implementation in Extensions in Google Chrome prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to perform privilege escalation via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/497025738"
+      ],
+      "published": "2026-06-05T00:17:00.067"
+    },
+    {
+      "id": "CVE-2026-11242",
+      "description": "Insufficient validation of untrusted input in Plugins in Google Chrome prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to leak cross-origin data via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-20",
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/497385823"
+      ],
+      "published": "2026-06-05T00:17:00.470"
+    },
+    {
+      "id": "CVE-2026-10877",
+      "description": "A security vulnerability has been detected in SourceCodester Ship Ferry Ticket Reservation System up to 1.0. This impacts an unknown function of the file /admin/login.php of the component Admin Login. Such manipulation of the argument Username leads to sql injection. The attack can be executed remot",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://medium.com/@hemantrajbhati5555/sql-injection-in-authentication-mechanism-leads-to-authentication-bypass-65177ce7a41c",
+        "https://vuldb.com/cve/CVE-2026-10877",
+        "https://vuldb.com/submit/831871"
+      ],
+      "published": "2026-06-05T00:16:59.530"
+    },
+    {
+      "id": "CVE-2026-10586",
+      "description": "The Gutenberg Essential Blocks \u2013 Page Builder for Gutenberg Blocks & Patterns plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 6.1.3 via the `save_ai_generated_image()` function. This makes it possible for authenticated attackers, with Author-le",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/essential-blocks/tags/6.1.3/includes/Integrations/AI/AI.php#L171",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/08906577-162c-4875-b16c-18d4912c2611?source=cve"
+      ],
+      "published": "2026-06-05T00:16:57.747"
+    },
+    {
+      "id": "CVE-2026-10876",
+      "description": "A weakness has been identified in SourceCodester Ship Ferry Ticket Reservation System 1.0. This affects an unknown function of the file /admin/. This manipulation of the argument page causes improper authorization. Remote exploitation of the attack is possible. The exploit has been made available to",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://medium.com/@hemantrajbhati5555/missing-authorization-in-sourcecodester-ship-ferry-ticket-reservation-system-leads-to-unauthorized-7783134d6596",
+        "https://vuldb.com/cve/CVE-2026-10876",
+        "https://vuldb.com/submit/831870"
+      ],
+      "published": "2026-06-05T00:16:59.313"
+    },
+    {
+      "id": "CVE-2026-10878",
+      "description": "A vulnerability was detected in D-Link DWR-M920 1.1.50/1.1.70. Affected is the function sub_41C8E8 of the file /boafrm/formSmsManage. Performing a manipulation of the argument action_value results in command injection. The attack is possible to be carried out remotely. The exploit is now public and ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/7u7777/Dlink/blob/DWR-M920/formSmsManage.md",
+        "https://vuldb.com/cve/CVE-2026-10878",
+        "https://vuldb.com/submit/832154"
+      ],
+      "published": "2026-06-05T00:16:59.730"
+    },
+    {
+      "id": "CVE-2026-11238",
+      "description": "Inappropriate implementation in DevTools in Google Chrome prior to 149.0.7827.53 allowed an attacker who convinced a user to install a malicious extension to obtain potentially sensitive information from process memory via a crafted Chrome Extension. (Chromium security severity: Low)",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/496705691"
+      ],
+      "published": "2026-06-05T00:16:59.920"
+    },
+    {
+      "id": "CVE-2026-11243",
+      "description": "Inappropriate implementation in Downloads in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-346"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/497394061"
+      ],
+      "published": "2026-06-05T00:17:00.607"
+    },
+    {
+      "id": "CVE-2026-11246",
+      "description": "Insufficient validation of untrusted input in IndexedDB in Google Chrome prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to bypass same origin policy via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-20",
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/497660733"
+      ],
+      "published": "2026-06-05T00:17:00.983"
+    },
+    {
+      "id": "CVE-2026-11249",
+      "description": "Use after free in Network in Google Chrome prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-416",
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/497989379"
+      ],
+      "published": "2026-06-05T00:17:01.360"
+    },
+    {
+      "id": "CVE-2026-11245",
+      "description": "Inappropriate implementation in Payments in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-451"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/497610654"
+      ],
+      "published": "2026-06-05T00:17:00.857"
+    },
+    {
+      "id": "CVE-2026-11252",
+      "description": "Insufficient policy enforcement in Content Settings in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to bypass discretionary access control via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/498373018"
+      ],
+      "published": "2026-06-05T00:17:01.733"
+    },
+    {
+      "id": "CVE-2026-11253",
+      "description": "Inappropriate implementation in Permissions in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-362",
+        "CWE-362"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/498397912"
+      ],
+      "published": "2026-06-05T00:17:01.847"
+    },
+    {
+      "id": "CVE-2026-11240",
+      "description": "Insufficient validation of untrusted input in Loader in Google Chrome prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-20",
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/497030032"
+      ],
+      "published": "2026-06-05T00:17:00.207"
+    },
+    {
+      "id": "CVE-2026-11244",
+      "description": "Insufficient validation of untrusted input in WebAuthentication in Google Chrome prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to bypass same origin policy via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-20",
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/497609145"
+      ],
+      "published": "2026-06-05T00:17:00.727"
+    },
+    {
+      "id": "CVE-2026-11247",
+      "description": "Insufficient policy enforcement in CustomTabs in Google Chrome on Android prior to 149.0.7827.53 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-693"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/497865734"
+      ],
+      "published": "2026-06-05T00:17:01.130"
+    },
+    {
+      "id": "CVE-2026-11251",
+      "description": "Insufficient policy enforcement in Password Manager in Google Chrome prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to bypass discretionary access control via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-20",
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/498301853"
+      ],
+      "published": "2026-06-05T00:17:01.610"
+    }
+  ]
+}
