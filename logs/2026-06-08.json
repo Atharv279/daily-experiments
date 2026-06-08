@@ -1,0 +1,359 @@
+{
+  "timestamp": "2026-06-08T07:10:21.448732+00:00",
+  "scan_id": "6d2c1bac4c",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 3,
+      "MEDIUM": 11,
+      "LOW": 1,
+      "UNKNOWN": 5
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        5
+      ],
+      [
+        "CWE-22",
+        2
+      ],
+      [
+        "CWE-352",
+        2
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-121",
+        2
+      ]
+    ],
+    "threat_index": 180.1,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 180.1,
+        "yesterday": 283.3,
+        "change_pct": -36.4
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-9290",
+      "description": "The WP User Manager \u2013 User Profile Builder & Membership plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.9.17 via the (profile template scope) function. This makes it possible for unauthenticated attackers to include and execute arbitrary .php files ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/WPUserManager/wp-user-manager/pull/445",
+        "https://plugins.trac.wordpress.org/browser/wp-user-manager/tags/2.9.15/includes/functions.php#L955",
+        "https://plugins.trac.wordpress.org/browser/wp-user-manager/tags/2.9.15/includes/permalinks.php#L133"
+      ],
+      "published": "2026-06-06T00:16:42.303"
+    },
+    {
+      "id": "CVE-2026-8438",
+      "description": "The All-In-One Security (AIOS) \u2013 Security and Firewall plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 5.4.7. This is due to insufficient input sanitization in the get_rest_route() function and missing output escaping in the column_default() method o",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/all-in-one-wp-security-and-firewall/tags/5.4.6/admin/wp-security-list-debug.php#L43",
+        "https://plugins.trac.wordpress.org/browser/all-in-one-wp-security-and-firewall/tags/5.4.6/classes/wp-security-debug-logger.php#L81",
+        "https://plugins.trac.wordpress.org/browser/all-in-one-wp-security-and-firewall/tags/5.4.6/classes/wp-security-general-init-tasks.php#L887"
+      ],
+      "published": "2026-06-06T02:16:21.453"
+    },
+    {
+      "id": "CVE-2026-8901",
+      "description": "The Integration for Freshsales \u2013 Contact Form 7, WPForms, Elementor, Gravity Forms and More plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Form Submission Data in all versions up to, and including, 1.0.15 due to insufficient input sanitization and output escaping. This makes i",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/crm-integration-freshworks-any-form/tags/1.0.14/assets/js/error-log.js#L84",
+        "https://plugins.trac.wordpress.org/browser/crm-integration-freshworks-any-form/tags/1.0.14/src/db/fw-error-log.php#L75",
+        "https://plugins.trac.wordpress.org/browser/crm-integration-freshworks-any-form/tags/1.0.14/src/forms/submit-action.php#L555"
+      ],
+      "published": "2026-06-06T02:16:22.547"
+    },
+    {
+      "id": "CVE-2026-8893",
+      "description": "The Express Payment For Stripe plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'type' attribute of the [stripe-express] shortcode in versions up to, and including, 1.28.0. This is due to insufficient input sanitization and output escaping on the shortcode attribute value, w",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-stripe-express/tags/1.28.0/includes/wp-stripe-shortcodes.php#L31",
+        "https://plugins.trac.wordpress.org/browser/wp-stripe-express/tags/1.28.0/includes/wp-stripe-shortcodes.php#L46",
+        "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=3553233%40wp-stripe-express&new=3553233%40wp-stripe-express&sfp_email=&sfph_mail="
+      ],
+      "published": "2026-06-06T00:16:41.887"
+    },
+    {
+      "id": "CVE-2026-8900",
+      "description": "The Simple SEO Slideshow plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Shortcode Attributes in all versions up to, and including, 1.2.8 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level acces",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/simple-seo-slideshow/trunk/simpleslideshow.php#L235",
+        "https://plugins.trac.wordpress.org/browser/simple-seo-slideshow/trunk/simpleslideshow.php#L334",
+        "https://plugins.trac.wordpress.org/browser/simple-seo-slideshow/trunk/simpleslideshow.php#L356"
+      ],
+      "published": "2026-06-06T00:16:42.013"
+    },
+    {
+      "id": "CVE-2026-9281",
+      "description": "The Master Addons For Elementor \u2013 Widgets, Extensions, Theme Builder, Popup Builder & Template Kits plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'jtlma_custom_js' Page Setting (Custom JS Extension) in all versions up to, and including, 3.1.0 due to insufficient input sanitiz",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/master-addons/tags/3.0.2/inc/modules/utilities/custom-js/custom-js.php#L206",
+        "https://plugins.trac.wordpress.org/browser/master-addons/tags/3.0.2/inc/modules/utilities/custom-js/custom-js.php#L214",
+        "https://plugins.trac.wordpress.org/browser/master-addons/tags/3.0.2/inc/modules/utilities/custom-js/custom-js.php#L80"
+      ],
+      "published": "2026-06-06T02:16:22.820"
+    },
+    {
+      "id": "CVE-2026-8608",
+      "description": "The Event Monster \u2013 Event Management, Events Calendar, Tickets plugin for WordPress is vulnerable to Insufficient Verification of Data Authenticity in versions up to, and including, 2.1.0. This is due to the capture_payment() AJAX handler (registered via wp_ajax_nopriv_em_capture_payment) trusting c",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-345"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/event-monster/tags/2.0.1/includes/class-event-monster-ajax.php#L844",
+        "https://plugins.trac.wordpress.org/browser/event-monster/tags/2.0.1/includes/class-event-monster-ajax.php#L890",
+        "https://plugins.trac.wordpress.org/browser/event-monster/tags/2.0.1/includes/class-event-monster-ajax.php#L92"
+      ],
+      "published": "2026-06-06T00:16:41.757"
+    },
+    {
+      "id": "CVE-2026-6448",
+      "description": "The Quiz and Survey Master (QSM) \u2013 Easy Quiz and Survey Maker plugin for WordPress is vulnerable to time-based blind SQL Injection via the 'order' parameter in all versions up to, and including, 11.1.2 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on ",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/quiz-master-next/tags/10.3.5/php/classes/class-qsm-quiz-api.php#L126",
+        "https://plugins.trac.wordpress.org/browser/quiz-master-next/tags/10.3.5/php/classes/class-qsm-quiz-api.php#L131",
+        "https://plugins.trac.wordpress.org/browser/quiz-master-next/tags/10.3.5/php/classes/class-qsm-quiz-api.php#L164"
+      ],
+      "published": "2026-06-06T00:16:41.477"
+    },
+    {
+      "id": "CVE-2026-2500",
+      "description": "The Quick Playground plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 1.3.4. This is due to the `qckply_data()` function passing the user-supplied `filename` POST parameter directly to `file_get_contents()` without any validation, sanitization, or path restr",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/quick-playground/tags/1.2/client-qckply_data.php#L10",
+        "https://plugins.trac.wordpress.org/browser/quick-playground/trunk/client-qckply_data.php#L10",
+        "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=3558027%40quick-playground&new=3558027%40quick-playground&sfp_email=&sfph_mail="
+      ],
+      "published": "2026-06-06T04:17:29.533"
+    },
+    {
+      "id": "CVE-2026-10038",
+      "description": "The Charitable \u2013 Donation Plugin for WordPress \u2013 Fundraising with Recurring Donations & More plugin for WordPress is vulnerable to Insecure Direct Object Reference / Authorization Bypass leading to Arbitrary Attachment Deletion in versions up to, and including, 1.8.11.1 via the profile avatar update",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/charitable/tags/1.8.10.5/includes/abstracts/abstract-class-charitable-form.php#L429",
+        "https://plugins.trac.wordpress.org/browser/charitable/tags/1.8.10.5/includes/forms/class-charitable-profile-form.php#L724",
+        "https://plugins.trac.wordpress.org/browser/charitable/tags/1.8.10.5/includes/forms/class-charitable-profile-form.php#L728"
+      ],
+      "published": "2026-06-06T00:16:40.670"
+    },
+    {
+      "id": "CVE-2026-7047",
+      "description": "The Frontend User Notes plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2.1.1. This is due to missing or incorrect nonce validation on the funp_ajax_modify_notes function. This makes it possible for unauthenticated attackers to trick a logged-in",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/frontend-user-notes/tags/2.1.1/includes/ajax.php#L108",
+        "https://plugins.trac.wordpress.org/browser/frontend-user-notes/tags/2.1.1/includes/ajax.php#L157",
+        "https://plugins.trac.wordpress.org/browser/frontend-user-notes/trunk/includes/ajax.php#L108"
+      ],
+      "published": "2026-06-06T00:16:41.623"
+    },
+    {
+      "id": "CVE-2026-8976",
+      "description": "The RSS Aggregator by Feedzy \u2013 Feed to Post, Autoblogging, News & YouTube Video Feeds Aggregator plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 5.1.7. This is due to the plugin not properly verifying that a user is authorized to perform an action. Th",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/feedzy-rss-feeds/tags/5.1.2/includes/admin/feedzy-rss-feeds-import.php#L1256",
+        "https://plugins.trac.wordpress.org/browser/feedzy-rss-feeds/tags/5.1.2/includes/admin/feedzy-rss-feeds-import.php#L1365",
+        "https://plugins.trac.wordpress.org/browser/feedzy-rss-feeds/tags/5.1.2/includes/admin/feedzy-rss-feeds-import.php#L1400"
+      ],
+      "published": "2026-06-06T00:16:42.143"
+    },
+    {
+      "id": "CVE-2026-9719",
+      "description": "The LatePoint \u2013 Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 5.6.0. This is due to missing or incorrect nonce validation on the change_status function. This makes it possible for unauthentic",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.3.0/lib/controllers/invoices_controller.php#L234",
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.3.0/lib/controllers/invoices_controller.php#L246",
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.3.0/lib/helpers/params_helper.php#L12"
+      ],
+      "published": "2026-06-06T00:16:42.460"
+    },
+    {
+      "id": "CVE-2026-9008",
+      "description": "The Page-list plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 6.2. This is due to the pagelist_unqprfx_ext_shortcode() function (the [pagelist_ext] / [pagelistext] shortcode) accepting attacker-controlled post_status, post_type, and show_meta_key att",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/page-list/tags/5.9/page-list.php#L188",
+        "https://plugins.trac.wordpress.org/browser/page-list/tags/5.9/page-list.php#L301",
+        "https://plugins.trac.wordpress.org/browser/page-list/tags/5.9/page-list.php#L303"
+      ],
+      "published": "2026-06-06T02:16:22.683"
+    },
+    {
+      "id": "CVE-2025-12656",
+      "description": "The Migration, Backup, Staging \u2013 WPvivid Backup & Migration plugin for WordPress is vulnerable to arbitrary directory deletion due to insufficient file path validation in the delete_cancel_staging_site() function in all versions up to, and including, 0.9.128. This makes it possible for authenticated",
+      "severity": "LOW",
+      "score": 3.8,
+      "cwes": [
+        "CWE-73"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wpvivid-backuprestore/tags/0.9.120/includes/staging/class-wpvivid-staging.php#L1268",
+        "https://plugins.trac.wordpress.org/browser/wpvivid-backuprestore/tags/0.9.120/includes/staging/class-wpvivid-staging.php#L1282",
+        "https://plugins.trac.wordpress.org/browser/wpvivid-backuprestore/tags/0.9.120/includes/staging/class-wpvivid-staging.php#L1296"
+      ],
+      "published": "2026-06-06T00:16:40.077"
+    },
+    {
+      "id": "CVE-2026-34123",
+      "description": "On Tapo\nC520WS v2, restricted accounts (for example, hub users) are intended to execute\nonly a limited set of low\u2011sensitivity operations. Due to a logic flaw in the\ndevice\u2019s API authorization mechanism, an attacker can craft requests that\nleverage legitimate \u201cmethod mapping\u201d behavior to bypass white",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://www.tp-link.com/en/support/download/tapo-c520ws/#Firmware-Release-Notes",
+        "https://www.tp-link.com/us/support/download/tapo-c520ws/#Firmware-Release-Notes",
+        "https://www.tp-link.com/us/support/faq/5120/"
+      ],
+      "published": "2026-06-06T00:16:40.833"
+    },
+    {
+      "id": "CVE-2026-6239",
+      "description": "A stack\u2011based\nbuffer overflow vulnerability exists in Tapo C520WS v2 in the ONVIF CreateUsers service, where\nthe device fails to properly validate the number of XML user nodes during\nrequest processing. An authenticated attacker can send a specially crafted\nONVIF request containing an excessive numb",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://www.tp-link.com/en/support/download/tapo-c520ws/#Firmware-Release-Notes",
+        "https://www.tp-link.com/us/support/download/tapo-c520ws/#Firmware-Release-Notes",
+        "https://www.tp-link.com/us/support/faq/5120/"
+      ],
+      "published": "2026-06-06T00:16:40.977"
+    },
+    {
+      "id": "CVE-2026-6240",
+      "description": "A stack-based buffer overflow vulnerability exists in Tapo C520WS v2 in the ONVIF DeleteUsers service, due to insufficient boundary checks when handling multiple user deletion parameters. An authenticated attacker can send a  crafted malicious request containing an excessive number of identifiers to",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://www.tp-link.com/en/support/download/tapo-c520ws/#Firmware-Release-Notes",
+        "https://www.tp-link.com/us/support/download/tapo-c520ws/#Firmware-Release-Notes",
+        "https://www.tp-link.com/us/support/faq/5120/"
+      ],
+      "published": "2026-06-06T00:16:41.103"
+    },
+    {
+      "id": "CVE-2026-6241",
+      "description": "An authenticated format string vulnerability is present in the ONVIF AddScopes in Tapo C520WS v2, where user-controlled input is improperly passed to formatting functions without adequate sanitization. An attacker can inject format specifiers into ONVIF scope parameters to manipulate memory handling",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-134"
+      ],
+      "references": [
+        "https://www.tp-link.com/en/support/download/tapo-c520ws/#Firmware-Release-Notes",
+        "https://www.tp-link.com/us/support/download/tapo-c520ws/#Firmware-Release-Notes",
+        "https://www.tp-link.com/us/support/faq/5120/"
+      ],
+      "published": "2026-06-06T00:16:41.230"
+    },
+    {
+      "id": "CVE-2026-6242",
+      "description": "An authenticated format string vulnerability exists in the ONVIF Subscribe service in Tapo C520WS v2 due to improper handling of externally supplied parameters within formatting functions. An attacker may inject crafted format strings into event subscription requests or notification generation path ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-134"
+      ],
+      "references": [
+        "https://www.tp-link.com/en/support/download/tapo-c520ws/#Firmware-Release-Notes",
+        "https://www.tp-link.com/us/support/download/tapo-c520ws/#Firmware-Release-Notes",
+        "https://www.tp-link.com/us/support/faq/5120/"
+      ],
+      "published": "2026-06-06T00:16:41.347"
+    }
+  ]
+}
