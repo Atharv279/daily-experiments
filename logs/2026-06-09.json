@@ -1,0 +1,375 @@
+{
+  "timestamp": "2026-06-09T06:29:51.138420+00:00",
+  "scan_id": "eebf8ff474",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 9,
+      "MEDIUM": 8,
+      "LOW": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        10
+      ],
+      [
+        "CWE-77",
+        7
+      ],
+      [
+        "CWE-284",
+        4
+      ],
+      [
+        "CWE-200",
+        3
+      ],
+      [
+        "CWE-89",
+        2
+      ]
+    ],
+    "threat_index": 298.4,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 298.4,
+        "yesterday": 180.1,
+        "change_pct": 65.7
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-49494",
+      "description": "Comodo Internet Security's firewall driver Inspect.sys contains an integer underflow in its IPv6 packet parser. The parser decrements an unsigned 64-bit payload-length value (taken from the IPv6 fixed header's payload length field) by the size of each IPv6 extension header without validating it, so ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-191"
+      ],
+      "references": [
+        "https://github.com/MalwareTech/ComoDoS",
+        "https://malwaretech.com/2026/06/exploiting-a-remote-kernel-vulnerability-in-comodo-internet-security.html",
+        "https://www.vulncheck.com/advisories/comodo-internet-security-inspect-sys-ipv6-integer-underflow-remote-denial-of-service"
+      ],
+      "published": "2026-06-07T13:16:20.927"
+    },
+    {
+      "id": "CVE-2026-11450",
+      "description": "A vulnerability was detected in GL.iNet GL-MT3000 4.4.5. This affects the function dlopen in the library /usr/lib/oui-httpd/rpc/ of the component Path Normalization Handler. Performing a manipulation of the argument dev_name results in command injection. It is possible to initiate the attack remotel",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/StrTzz123/iot_vul/tree/main/GL-iNet/MT3000/4.4.5/nas_eject_disk_do1_glc_rce",
+        "https://vuldb.com/cve/CVE-2026-11450",
+        "https://vuldb.com/submit/825536"
+      ],
+      "published": "2026-06-07T03:16:27.247"
+    },
+    {
+      "id": "CVE-2026-11451",
+      "description": "A flaw has been found in GL.iNet GL-MT3000 4.4.5. This impacts the function snprintf of the file /cgi-bin/glc of the component FTP Protocol Handler. Executing a manipulation of the argument media_dir can lead to command injection. It is possible to launch the attack remotely. Upgrading to version 4.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/StrTzz123/iot_vul/blob/main/GL-iNet/MT3000/4.4.5/nas_proto_media_dir_glc_rce/Readme.md",
+        "https://vuldb.com/cve/CVE-2026-11451",
+        "https://vuldb.com/submit/825563"
+      ],
+      "published": "2026-06-07T04:16:29.570"
+    },
+    {
+      "id": "CVE-2026-11452",
+      "description": "A vulnerability has been found in GL.iNet GL-MT3000 up to 4.4.5. Affected is the function FUN_0042e200 of the file /cgi-bin/glc of the component SET_USER_PWD Handler. The manipulation of the argument Password leads to command injection. The attack can be initiated remotely. Upgrading to version 4.8.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/StrTzz123/iot_vul/blob/main/GL-iNet/MT3000/4.4.5/nas_set_user_pwd_glc_rce/Readme.md",
+        "https://vuldb.com/cve/CVE-2026-11452",
+        "https://vuldb.com/submit/826378"
+      ],
+      "published": "2026-06-07T04:16:29.960"
+    },
+    {
+      "id": "CVE-2026-11456",
+      "description": "A vulnerability was identified in Chanjet CRM 1.0. This affects an unknown part of the file /tools/jxf_dump_systable.php of the component HTTP GET Request Handler. Such manipulation of the argument gblOrgID leads to sql injection. The attack may be launched remotely. The exploit is publicly availabl",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://gist.github.com/jikdarren/67ba9fdd2a8b619fc9a370102c317971",
+        "https://vuldb.com/cve/CVE-2026-11456",
+        "https://vuldb.com/submit/828375"
+      ],
+      "published": "2026-06-07T09:16:21.673"
+    },
+    {
+      "id": "CVE-2026-11457",
+      "description": "A security flaw has been discovered in erzhongxmu JeeWMS up to 141740afb2ba14d441c82a833d0a418d07ca2d69. This vulnerability affects unknown code of the file /base-boot/jmreport/testConnection of the component JimuReport test-connection Endpoint. Performing a manipulation of the argument dbType/dbDri",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-707"
+      ],
+      "references": [
+        "https://github.com/0d000721999/evc1/issues/1",
+        "https://vuldb.com/cve/CVE-2026-11457",
+        "https://vuldb.com/submit/828509"
+      ],
+      "published": "2026-06-07T09:16:21.843"
+    },
+    {
+      "id": "CVE-2026-11460",
+      "description": "A flaw has been found in Boost Serialization up to 1.91. The impacted element is an unknown function. This manipulation causes improper validation of specified type of input. It is possible to initiate the attack remotely. The exploit has been published and may be used. The maintainer was notified o",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-20",
+        "CWE-1287"
+      ],
+      "references": [
+        "https://gist.github.com/TrebledJ/b7c872f869b5ed7cbd936f71f16c7d75",
+        "https://github.com/boostorg/serialization/issues/331",
+        "https://vuldb.com/cve/CVE-2026-11460"
+      ],
+      "published": "2026-06-07T20:16:39.993"
+    },
+    {
+      "id": "CVE-2026-11462",
+      "description": "A vulnerability was found in Chengdu Everbrite Network Technology BeikeShop up to 1.6.0.22. This impacts the function callback of the file plugins/Stripe/Controllers/StripeController.php of the component Stripe Plugin. Performing a manipulation of the argument Request results in improper authorizati",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/beikeshop/beikeshop/commit/6719e0fc690ea0a998452092862e0f0a17c65968",
+        "https://github.com/nuiifornet/BeikeShop-Vulnerability/blob/main/README.md",
+        "https://vuldb.com/cve/CVE-2026-11462"
+      ],
+      "published": "2026-06-07T23:16:41.040"
+    },
+    {
+      "id": "CVE-2026-11463",
+      "description": "A vulnerability was determined in USCiLab Cereal up to 1.3.2. Affected is an unknown function of the component Shared Pointer Handler. Executing a manipulation can lead to type confusion. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized. The vendor was",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-843"
+      ],
+      "references": [
+        "https://gist.github.com/TrebledJ/0223c1fa3c3fd64e2c7047b8a4385ec0",
+        "https://github.com/USCiLab/cereal/",
+        "https://github.com/USCiLab/cereal/issues/870"
+      ],
+      "published": "2026-06-07T23:16:41.697"
+    },
+    {
+      "id": "CVE-2026-11447",
+      "description": "A security flaw has been discovered in GL.iNet GL-MT3000 up to 4.4.5. Impacted is the function iwinfo_backend of the file iwinfo.so of the component MTK Backend. The manipulation of the argument device results in command injection. The attack can be executed remotely. The exploit has been released t",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/StrTzz123/iot_vul/tree/main/GL-iNet/MT3000/4.4.5/iwinfo_scan_ubus_rce",
+        "https://vuldb.com/cve/CVE-2026-11447",
+        "https://vuldb.com/submit/824951"
+      ],
+      "published": "2026-06-07T02:16:23.313"
+    },
+    {
+      "id": "CVE-2026-11449",
+      "description": "A security vulnerability has been detected in GL.iNet GL-MT3000 4.4.5. The impacted element is the function rpc_sys of the file /cgi-bin/luci/rpc of the component LuCI JSON-RPC Interface. Such manipulation leads to command injection. The attack may be performed from remote. Upgrading to version 4.8.",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://fw.gl-inet.com/firmware/mt3000/release/mt3000-4.8.1-0819-1755615825.tar",
+        "https://github.com/StrTzz123/iot_vul/tree/main/GL-iNet/MT3000/4.4.5/luci_rpc_sys_exec_rce",
+        "https://vuldb.com/cve/CVE-2026-11449"
+      ],
+      "published": "2026-06-07T03:16:27.077"
+    },
+    {
+      "id": "CVE-2026-11453",
+      "description": "A vulnerability was found in Tiobon Employee Self-Service System up to 7.2. Affected by this vulnerability is an unknown functionality of the file /Blog/BlogSearch.aspx of the component Login Endpoint. The manipulation of the argument Keyword results in sql injection. The attack can be launched remo",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://drive.google.com/file/d/1kRvYG4Mi2kDtPv1HpY_86KiMcWGqGMnl/view?usp=drive_link",
+        "https://vuldb.com/cve/CVE-2026-11453",
+        "https://vuldb.com/submit/826640"
+      ],
+      "published": "2026-06-07T04:16:30.147"
+    },
+    {
+      "id": "CVE-2026-11461",
+      "description": "A vulnerability has been found in NousResearch hermes-agent up to 0.12.0. This affects the function resolve_session_by_title of the file hermes_state.py of the component resume Endpoint. Such manipulation of the argument Title leads to authorization bypass. It is possible to launch the attack remote",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/7951b3dc39193fb675914cc5d8b672fa",
+        "https://gist.github.com/YLChen-007/c2d162e9c8d39584223683cdcba98607",
+        "https://vuldb.com/cve/CVE-2026-11461"
+      ],
+      "published": "2026-06-07T22:16:22.547"
+    },
+    {
+      "id": "CVE-2026-11466",
+      "description": "A weakness has been identified in zilliztech deep-searcher up to 0.0.2. This affects the function CollectionRouter.invoke of the file deepsearcher/agent/collection_router.py. This manipulation of the argument kwargs causes improper access controls. Remote exploitation of the attack is possible. The ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/zilliztech/deep-searcher/",
+        "https://github.com/zilliztech/deep-searcher/issues/267",
+        "https://github.com/zilliztech/deep-searcher/pull/268"
+      ],
+      "published": "2026-06-07T23:16:42.213"
+    },
+    {
+      "id": "CVE-2026-11458",
+      "description": "A weakness has been identified in erzhongxmu JeeWMS up to 141740afb2ba14d441c82a833d0a418d07ca2d69. This issue affects some unknown processing of the file /base-boot/actuator of the component Boot Actuator Endpoint. Executing a manipulation can lead to information disclosure. The attack can be execu",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/0d000721999/evc1/issues/2",
+        "https://vuldb.com/cve/CVE-2026-11458",
+        "https://vuldb.com/submit/828538"
+      ],
+      "published": "2026-06-07T09:16:22.050"
+    },
+    {
+      "id": "CVE-2026-11455",
+      "description": "A vulnerability was determined in FoundationAgents MetaGPT up to 0.8.2. Affected by this issue is the function check_cmd_exists of the file metagpt/utils/common.py. This manipulation of the argument mermaid.path causes command injection. The attack may be initiated remotely. A high degree of complex",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/FoundationAgents/MetaGPT/",
+        "https://github.com/FoundationAgents/MetaGPT/issues/2037",
+        "https://vuldb.com/cve/CVE-2026-11455"
+      ],
+      "published": "2026-06-07T09:16:20.403"
+    },
+    {
+      "id": "CVE-2026-11448",
+      "description": "A weakness has been identified in GL.iNet GL-MT3000 up to 4.4.5. The affected element is the function realpath of the file /rpc of the component Minidlna Service. This manipulation of the argument kube. set causes command injection. The attack is possible to be carried out remotely. Upgrading to ver",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/StrTzz123/iot_vul/tree/main/GL-iNet/MT3000/4.4.5/minidlna_db_dir_uci_rce",
+        "https://vuldb.com/cve/CVE-2026-11448",
+        "https://vuldb.com/submit/825212"
+      ],
+      "published": "2026-06-07T03:16:26.233"
+    },
+    {
+      "id": "CVE-2026-11459",
+      "description": "A security vulnerability has been detected in SecureAge CatchPulse up to 10.9.3. Impacted is an unknown function in the library saappctl.sys of the component IOCTL Handler. The manipulation leads to information disclosure. Local access is required to approach this attack. The exploit has been disclo",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-200",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/Kalagious/SecureAgeExploit",
+        "https://jordanhiggins.blog/catchpulse-antivirus-exploits/",
+        "https://vuldb.com/cve/CVE-2026-11459"
+      ],
+      "published": "2026-06-07T10:16:21.863"
+    },
+    {
+      "id": "CVE-2026-11464",
+      "description": "A vulnerability was identified in JeecgBoot up to 3.9.2. Affected by this vulnerability is the function queryPageList of the file src\\main\\java\\org\\jeecg\\modules\\system\\controller\\SysUserController.java of the component User List Endpoint. The manipulation of the argument salt leads to information d",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-200",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/jeecgboot/JeecgBoot/",
+        "https://github.com/jeecgboot/JeecgBoot/issues/9648",
+        "https://github.com/jeecgboot/JeecgBoot/issues/9648#issuecomment-4542297690"
+      ],
+      "published": "2026-06-07T23:16:41.890"
+    },
+    {
+      "id": "CVE-2026-11465",
+      "description": "A security flaw has been discovered in songquanpeng one-api up to 0.6.11-preview.7. Affected by this issue is the function Redeem of the file model/redemption.go of the component Redemption Code Top-Up Endpoint. The manipulation results in business logic errors. The attack may be launched remotely. ",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-840"
+      ],
+      "references": [
+        "https://github.com/songquanpeng/one-api/",
+        "https://github.com/songquanpeng/one-api/issues/2397",
+        "https://github.com/songquanpeng/one-api/pull/2399"
+      ],
+      "published": "2026-06-07T23:16:42.060"
+    }
+  ]
+}
