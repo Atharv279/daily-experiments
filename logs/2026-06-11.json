@@ -1,0 +1,336 @@
+{
+  "timestamp": "2026-06-11T07:11:17.675658+00:00",
+  "scan_id": "06ae516990",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 17,
+      "MEDIUM": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-416",
+        18
+      ],
+      [
+        "CWE-125",
+        1
+      ],
+      [
+        "CWE-787",
+        1
+      ],
+      [
+        "CWE-472",
+        1
+      ]
+    ],
+    "threat_index": 510.1,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 510.1,
+        "yesterday": 359.8,
+        "change_pct": 41.8
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 3,
+        "change_pct": -33.3
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-11634",
+      "description": "Use after free in Gamepad in Google Chrome on Windows prior to 149.0.7827.103 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/516975148"
+      ],
+      "published": "2026-06-09T00:16:45.983"
+    },
+    {
+      "id": "CVE-2026-11638",
+      "description": "Use after free in Printing in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/517047197"
+      ],
+      "published": "2026-06-09T00:16:46.483"
+    },
+    {
+      "id": "CVE-2026-11629",
+      "description": "Use after free in Ozone in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/516674532"
+      ],
+      "published": "2026-06-09T00:16:45.393"
+    },
+    {
+      "id": "CVE-2026-11630",
+      "description": "Use after free in File Input in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/516677924"
+      ],
+      "published": "2026-06-09T00:16:45.500"
+    },
+    {
+      "id": "CVE-2026-11633",
+      "description": "Use after free in Bluetooth in Google Chrome on Mac prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code via a malicious peripheral. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/516963272"
+      ],
+      "published": "2026-06-09T00:16:45.873"
+    },
+    {
+      "id": "CVE-2026-11637",
+      "description": "Use after free in Views in Google Chrome on Mac prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/517040438"
+      ],
+      "published": "2026-06-09T00:16:46.370"
+    },
+    {
+      "id": "CVE-2026-11645",
+      "description": "Out of bounds read and write in V8 in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-125",
+        "CWE-787"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/506689381",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-11645"
+      ],
+      "published": "2026-06-09T00:16:47.370"
+    },
+    {
+      "id": "CVE-2026-11646",
+      "description": "Use after free in ViewTransitions in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/517168239"
+      ],
+      "published": "2026-06-09T00:16:47.473"
+    },
+    {
+      "id": "CVE-2026-11631",
+      "description": "Use after free in Aura in Google Chrome on Windows prior to 149.0.7827.103 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/516691130"
+      ],
+      "published": "2026-06-09T00:16:45.623"
+    },
+    {
+      "id": "CVE-2026-11635",
+      "description": "Use after free in Bluetooth in Google Chrome on Mac prior to 149.0.7827.103 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/516987814"
+      ],
+      "published": "2026-06-09T00:16:46.097"
+    },
+    {
+      "id": "CVE-2026-11640",
+      "description": "Integer overflow in libyuv in Google Chrome prior to 149.0.7827.103 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-472"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/517339758"
+      ],
+      "published": "2026-06-09T00:16:46.717"
+    },
+    {
+      "id": "CVE-2026-11642",
+      "description": "Use after free in Web Apps in Google Chrome prior to 149.0.7827.103 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/517678820"
+      ],
+      "published": "2026-06-09T00:16:46.947"
+    },
+    {
+      "id": "CVE-2026-11647",
+      "description": "Use after free in Printing in Google Chrome on Android prior to 149.0.7827.103 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/502156940"
+      ],
+      "published": "2026-06-09T00:16:47.583"
+    },
+    {
+      "id": "CVE-2026-11643",
+      "description": "Use after free in Proxy in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code via malicious network traffic. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/518006379"
+      ],
+      "published": "2026-06-09T00:16:47.057"
+    },
+    {
+      "id": "CVE-2026-11632",
+      "description": "Use after free in TabStrip in Google Chrome prior to 149.0.7827.103 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/516707881"
+      ],
+      "published": "2026-06-09T00:16:45.740"
+    },
+    {
+      "id": "CVE-2026-11636",
+      "description": "Use after free in Autofill in Google Chrome on Windows prior to 149.0.7827.103 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/517023053"
+      ],
+      "published": "2026-06-09T00:16:46.247"
+    },
+    {
+      "id": "CVE-2026-11639",
+      "description": "Use after free in Compositing in Google Chrome on Mac prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/517227707"
+      ],
+      "published": "2026-06-09T00:16:46.603"
+    },
+    {
+      "id": "CVE-2026-11641",
+      "description": "Use after free in Bluetooth in Google Chrome on Windows prior to 149.0.7827.103 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/517418936"
+      ],
+      "published": "2026-06-09T00:16:46.837"
+    },
+    {
+      "id": "CVE-2026-11644",
+      "description": "Use after free in Views in Google Chrome on Linux prior to 149.0.7827.103 allowed an attacker who convinced a user to install a malicious extension to execute arbitrary code via a crafted Chrome Extension. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/518043597"
+      ],
+      "published": "2026-06-09T00:16:47.250"
+    },
+    {
+      "id": "CVE-2026-11628",
+      "description": "Use after free in Ozone in Google Chrome prior to 149.0.7827.103 allowed a local attacker to potentially exploit heap corruption via physical access to the device. (Chromium security severity: Critical)",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+        "https://issues.chromium.org/issues/516501794"
+      ],
+      "published": "2026-06-09T00:16:45.270"
+    }
+  ]
+}
