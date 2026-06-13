@@ -1,0 +1,323 @@
+{
+  "timestamp": "2026-06-13T06:34:54.504176+00:00",
+  "scan_id": "56f77a0334",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 9,
+      "MEDIUM": 9,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-306",
+        1
+      ],
+      [
+        "CWE-918",
+        1
+      ],
+      [
+        "CWE-1188",
+        1
+      ],
+      [
+        "CWE-611",
+        1
+      ]
+    ],
+    "threat_index": 349.9,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 349.9,
+        "yesterday": 299.5,
+        "change_pct": 16.8
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-35273",
+      "description": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Updates Environment Management). Supported versions that are affected are 8.61 and 8.62. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleS",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://www.oracle.com/security-alerts/alert-cve-2026-35273.html",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-35273"
+      ],
+      "published": "2026-06-11T04:16:53.680"
+    },
+    {
+      "id": "CVE-2026-40999",
+      "description": "When WS-Addressing is used with non-anonymous ReplyTo or FaultTo addresses, Spring WS may initiate outbound connections through configured WebServiceMessageSender instances to destinations taken directly from request headers without verifying that those destinations are safe to connect to.\n\nAffected",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-40999"
+      ],
+      "published": "2026-06-11T07:16:27.907"
+    },
+    {
+      "id": "CVE-2026-40994",
+      "description": "Wss4jSecurityInterceptor initialized its BSP (WS-I Basic Security Profile) compliance flag so that inbound validation disabled WSS4J BSP enforcement on RequestData. Services that validate WS-Security on the network could therefore accept messages that violate BSP rules, weakening protocol-level chec",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-1188"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-40994"
+      ],
+      "published": "2026-06-11T07:16:27.297"
+    },
+    {
+      "id": "CVE-2026-40998",
+      "description": "Jaxp13XPathTemplate evaluated XPath expressions for StreamSource and SAXSource inputs using a code path that parsed attacker-controlled XML with the JDK's default DocumentBuilderFactory behavior instead of Spring's hardened parser configuration. Applications that evaluate XPath against untrusted XML",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-611"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-40998"
+      ],
+      "published": "2026-06-11T07:16:27.787"
+    },
+    {
+      "id": "CVE-2026-10795",
+      "description": "The UpdraftPlus: WP Backup & Migration Plugin plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.26.4 via the UpdraftPlus_Remote_Communications_V2::wp_loaded function. This is due to insufficient validation of the remote communications message format,",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://plugins.svn.wordpress.org/updraftplus/tags/1.26.4/vendor/team-updraft/common-libs/src/updraft-rpc/class-udrpc.php",
+        "https://plugins.svn.wordpress.org/updraftplus/tags/1.26.4/vendor/team-updraft/common-libs/src/updraft-rpc/class-udrpc2.php",
+        "https://plugins.trac.wordpress.org/changeset/3561938/updraftplus/trunk/vendor/team-updraft/common-libs/src/updraft-rpc/class-udrpc2.php"
+      ],
+      "published": "2026-06-11T07:16:26.713"
+    },
+    {
+      "id": "CVE-2026-41699",
+      "description": "Spring for GraphQL applications are vulnerable to Unsafe Deserialization when processing paginated GraphQL queries. An attacker can craft a malicious GraphQL request that can lead to Remote Code Execution when the application exposes a paginated (Connection) field and the classpath contains specific",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-41699"
+      ],
+      "published": "2026-06-11T07:16:28.280"
+    },
+    {
+      "id": "CVE-2026-41700",
+      "description": "Spring for GraphQL applications that have enabled the WebSocket transport are vulnerable to Cross-Site WebSocket Hijacking. An attacker can trick an authenticated user into visiting a malicious page, allowing the attacker to execute arbitrary GraphQL operations with the victim's credentials.\n\nAffect",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-346"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-41700"
+      ],
+      "published": "2026-06-11T07:16:28.400"
+    },
+    {
+      "id": "CVE-2026-41856",
+      "description": "The Spring GraphQL annotation detection mechanism for @Controller data fetchers may not correctly resolve annotations on methods within type hierarchies. This can be an issue if such annotations are used for authorization decisions. When all conditions are met, security annotations can be ignored at",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-41856"
+      ],
+      "published": "2026-06-11T07:16:28.513"
+    },
+    {
+      "id": "CVE-2026-40987",
+      "description": "A malicious or compromised FTP/SFTP/SMB server can write arbitrary files anywhere on the client filesystem (outside the configured local-directory) with attacker-controlled content.\n\nAffected versions:\nSpring Integration 7.0.0 through 7.0.4; 6.5.0 through 6.5.8; 6.4.0 through 6.4.11; 6.3.0 through 6",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-40987"
+      ],
+      "published": "2026-06-11T07:16:27.053"
+    },
+    {
+      "id": "CVE-2023-33999",
+      "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in WPVibes WP Mail Log allows DOM-Based XSS.\n\nThis issue affects WP Mail Log: from n/a through 1.0.2.",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://patchstack.com/database/wordpress/plugin/wp-mail-log/vulnerability/wordpress-wp-mail-log-plugin-1-0-2-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve"
+      ],
+      "published": "2026-06-11T09:16:25.097"
+    },
+    {
+      "id": "CVE-2026-40985",
+      "description": "Applications that configure the WebFlowELExpressionParser are vulnerable to the use of malicious Unified EL expressions.\n\nAffected versions:\nSpring Web Flow 4.0.0; 3.0.0 through 3.0.1; 2.5.0 through 2.5.1.",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-917"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-40985"
+      ],
+      "published": "2026-06-11T05:16:33.757"
+    },
+    {
+      "id": "CVE-2026-40995",
+      "description": "X509AuthenticationProvider could issue a fully authenticated X509AuthenticationToken when a presented certificate mapped to UserDetails, without applying Spring Security's standard account lifecycle checks (disabled, locked, expired, or credentials-expired accounts).\n\nAffected versions:\nSpring Web S",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-40995"
+      ],
+      "published": "2026-06-11T07:16:27.430"
+    },
+    {
+      "id": "CVE-2026-40997",
+      "description": "Several Spring WS integration paths with Spring Security could surface detailed account state (for example locked or disabled user semantics) to remote SOAP clients through exception messages or callback outcomes, instead of failing with generic authentication errors. That behavior assists remote at",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-209"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-40997"
+      ],
+      "published": "2026-06-11T07:16:27.663"
+    },
+    {
+      "id": "CVE-2026-41001",
+      "description": "Spring Boot's ArtemisEmbeddedConfigurationFactory uses a fixed, static path for the embedded Artemis message broker's data directory when no explicit path is configured. A local attacker on the same host can pre-create this predictable directory or place a symlink before the application starts.\n\nAff",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-377"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-41001"
+      ],
+      "published": "2026-06-11T07:16:28.163"
+    },
+    {
+      "id": "CVE-2023-40200",
+      "description": "Authorization bypass through User-Controlled key vulnerability in Essential Plugin WP Logo Showcase Responsive Slider and Carousel allows Exploiting Incorrectly Configured Access Control Security Levels.\n\nThis issue affects WP Logo Showcase Responsive Slider and Carousel: from n/a through 3.6.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://patchstack.com/database/wordpress/plugin/wp-logo-showcase-responsive-slider-slider/vulnerability/wordpress-wp-logo-showcase-responsive-slider-and-carousel-plugin-3-6-broken-access-control-vulnerability?_s_id=cve"
+      ],
+      "published": "2026-06-11T09:16:25.250"
+    },
+    {
+      "id": "CVE-2026-40992",
+      "description": "Spring Boot's Mail auto-configuration does not enable hostname verification. Applications that set the relevant JavaMail property, such as spring.mail.properties.mail.smtp.ssl.checkserveridentity=true, are not affected.\n\nAffected versions:\nSpring Boot 4.0.0 through 4.0.6; 3.5.0 through 3.5.14; 3.4.0",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-295"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-40992"
+      ],
+      "published": "2026-06-11T07:16:27.177"
+    },
+    {
+      "id": "CVE-2026-40986",
+      "description": "Spring Web Flow's JavaScript RemotingHandler renders the body of an error response as HTML even when the response is not \"text/html\", which can result in a scripting attack in the user's browser if the error response from the server contains error details with input reflected from an attacker.\n\nAffe",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-40986"
+      ],
+      "published": "2026-06-11T07:16:26.920"
+    },
+    {
+      "id": "CVE-2026-40996",
+      "description": "Wss4jSecurityInterceptor defaulted allowRSA15KeyTransportAlgorithm to true, overriding Apache WSS4J's safer default for validation RequestData. Inbound WS-Security decryption could therefore accept RSA PKCS#1 v1.5 (rsa-1_5) encrypted key material unless operators explicitly reconfigured the flag.\n\nA",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-327"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-40996"
+      ],
+      "published": "2026-06-11T07:16:27.550"
+    },
+    {
+      "id": "CVE-2026-2827",
+      "description": "The Open User Map PRO plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'oum_location_notification' parameter in versions up to, and including, 1.4.31 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject ar",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.open-user-map.com/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/9963e0f8-600c-4b1f-935d-4ac1f967698f?source=cve"
+      ],
+      "published": "2026-06-11T02:16:42.967"
+    },
+    {
+      "id": "CVE-2026-41000",
+      "description": "Wss4jSecurityInterceptor did not consistently wire Apache WSS4J ReplayCache instances into RequestData for validation-time checks. As a result, protections against replay of UsernameToken nonces and creation timestamps, Timestamp elements, and certain SAML one-time-use semantics could be ineffective",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-294"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-41000"
+      ],
+      "published": "2026-06-11T07:16:28.037"
+    }
+  ]
+}
