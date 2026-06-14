@@ -1,0 +1,327 @@
+{
+  "timestamp": "2026-06-14T07:00:43.992720+00:00",
+  "scan_id": "85d3089d70",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 5,
+      "HIGH": 7,
+      "MEDIUM": 4,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-20",
+        3
+      ],
+      [
+        "CWE-284",
+        2
+      ],
+      [
+        "CWE-400",
+        2
+      ],
+      [
+        "CWE-88",
+        1
+      ],
+      [
+        "CWE-287",
+        1
+      ]
+    ],
+    "threat_index": 414.8,
+    "critical_count": 5
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 414.8,
+        "yesterday": 349.9,
+        "change_pct": 18.5
+      },
+      "critical_count": {
+        "today": 5,
+        "yesterday": 1,
+        "change_pct": 400.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-47365",
+      "description": "Argument injection vulnerability in WordPress Toolkit before 6.11.0 as used in cPanel & WHM, allows remote authenticated users to bypass cross-tenant authorization and execute arbitrary wp-toolkit CLI commands as another account.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-88"
+      ],
+      "references": [
+        "https://support.cpanel.net/hc/en-us/articles/41004584983703-WP-Toolkit-CVE-2026-47365"
+      ],
+      "published": "2026-06-12T04:17:05.107"
+    },
+    {
+      "id": "CVE-2026-47367",
+      "description": "A malicious actor with access to the network and low privileges could exploit an Improper Input Validation vulnerability found in UID Enterprise Agent to execute a Command Injection on the host device.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://community.ui.com/releases/Security-Advisory-Bulletin-065-065/aa46a22b-fc43-4eae-9382-6fc8feda967a"
+      ],
+      "published": "2026-06-12T04:17:06.200"
+    },
+    {
+      "id": "CVE-2026-47369",
+      "description": "A malicious actor with access to the network and low privileges could exploit an Improper Input Validation vulnerability found in certain devices running UniFi OS to escalate privileges within such UniFi OS devices or instances.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://community.ui.com/releases/Security-Advisory-Bulletin-065-065/aa46a22b-fc43-4eae-9382-6fc8feda967a"
+      ],
+      "published": "2026-06-12T04:17:06.513"
+    },
+    {
+      "id": "CVE-2026-47370",
+      "description": "A malicious actor with access to the network and low privileges could exploit an Improper Input Validation vulnerability found in certain devices running UniFi OS to execute a Command Injection within such UniFi OS devices or instances.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://community.ui.com/releases/Security-Advisory-Bulletin-065-065/aa46a22b-fc43-4eae-9382-6fc8feda967a"
+      ],
+      "published": "2026-06-12T04:17:06.657"
+    },
+    {
+      "id": "CVE-2026-48611",
+      "description": "Improper authentication checks in the OAuth implementation allow account hijacking even when OAuth is not configured or enabled leading to unauthorized access in default installations.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://www.phpbb.com/community/viewtopic.php?t=2672170"
+      ],
+      "published": "2026-06-12T04:17:08.180"
+    },
+    {
+      "id": "CVE-2026-11933",
+      "description": "A use-after-free vulnerability exists in MongoDB Server's server-side JavaScript engine when converting BSON documents to JavaScript arrays. An authenticated user with read privileges who is able to run server-side JavaScript (for example, via $where or $function) can cause the server to access memo",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://jira.mongodb.org/browse/SERVER-128125"
+      ],
+      "published": "2026-06-12T02:16:38.527"
+    },
+    {
+      "id": "CVE-2026-12059",
+      "description": "The SSH service of CelloOS developed by Cellopoint has an Improper Access Control vulnerability, allowing authenticated remote attackers to bypass the enforced command restrictions and execute operating system commands outside the originally authorized scope.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-1284"
+      ],
+      "references": [
+        "https://www.twcert.org.tw/en/cp-139-10965-3ce75-2.html",
+        "https://www.twcert.org.tw/tw/cp-132-10966-3258e-1.html"
+      ],
+      "published": "2026-06-12T07:16:19.780"
+    },
+    {
+      "id": "CVE-2026-47368",
+      "description": "A malicious actor with access to the network could exploit a Path Traversal vulnerability found in certain devices running UniFi OS to obtain data from such UniFi OS devices or instances.",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://community.ui.com/releases/Security-Advisory-Bulletin-065-065/aa46a22b-fc43-4eae-9382-6fc8feda967a"
+      ],
+      "published": "2026-06-12T04:17:06.343"
+    },
+    {
+      "id": "CVE-2026-48610",
+      "description": "Under certain network configurations, a malicious actor with access to network could exploit an Improper Access Control vulnerability found in certain devices running UniFi OS to make unauthorized changes to such UniFi OS devices.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://community.ui.com/releases/Security-Advisory-Bulletin-065-065/aa46a22b-fc43-4eae-9382-6fc8feda967a"
+      ],
+      "published": "2026-06-12T04:17:06.803"
+    },
+    {
+      "id": "CVE-2026-48612",
+      "description": "Improper state verification in the OAuth implementation could allow an attacker to manipulate the authentication flow and cause a victim\u2019s account to be linked to an attacker-controlled account. This can result in unauthorized account linking and potential account takeover.",
+      "severity": "HIGH",
+      "score": 8.0,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://www.phpbb.com/community/viewtopic.php?t=2672170"
+      ],
+      "published": "2026-06-12T04:17:10.123"
+    },
+    {
+      "id": "CVE-2026-44892",
+      "description": "Netty is a network application framework for development of protocol servers and clients. Prior to version 4.2.15.Final, the default configuration of the `Http3ConnectionHandler` in the Netty HTTP/3 codec lacks an enforced maximum header size limit. When a peer does not explicitly specify `HTTP3_SET",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-400",
+        "CWE-1188"
+      ],
+      "references": [
+        "https://github.com/netty/netty/releases/tag/netty-4.2.15.Final",
+        "https://github.com/netty/netty/security/advisories/GHSA-c2rx-5r8w-8xr2"
+      ],
+      "published": "2026-06-12T05:16:32.007"
+    },
+    {
+      "id": "CVE-2026-47366",
+      "description": "Improper verification of access permissions when modifying permissions through the Administration Control Panel (ACP) allowed an authenticated administrator to grant permissions beyond the level authorized for their account, resulting in privilege escalation within the administrative interface.",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://www.phpbb.com/community/viewtopic.php?t=2672170"
+      ],
+      "published": "2026-06-12T04:17:05.390"
+    },
+    {
+      "id": "CVE-2026-12060",
+      "description": "Heptabase developed by Hepta Platforms has a Exposed Dangerous Method or Function vulnerability, allowing unauthenticated remote attackers to leverage social engineering techniques to trick a victim into opening or loading a malicious webpage within the Heptabase application, thereby gaining unautho",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-749"
+      ],
+      "references": [
+        "https://www.twcert.org.tw/en/cp-139-10967-4947d-2.html",
+        "https://www.twcert.org.tw/tw/cp-132-10968-6be4c-1.html"
+      ],
+      "published": "2026-06-12T07:16:21.090"
+    },
+    {
+      "id": "CVE-2026-9125",
+      "description": "The Presto Player plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'link_url' parameter of the [presto_player_overlay] shortcode in versions up to, and including, 4.2.0 This is due to insufficient input sanitization and output escaping in the getOverlays() function, which co",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/presto-player/tags/4.1.1/dist/components/collection/components/core/features/presto-dynamic-overlays/component/presto-dynamic-overlays.js#L1",
+        "https://plugins.trac.wordpress.org/browser/presto-player/tags/4.1.1/inc/Services/Shortcodes.php#L464",
+        "https://plugins.trac.wordpress.org/browser/presto-player/tags/4.1.1/inc/Services/Shortcodes.php#L513"
+      ],
+      "published": "2026-06-12T02:16:42.373"
+    },
+    {
+      "id": "CVE-2026-48613",
+      "description": "SQL injection vulnerability in phpBB profile field migration due to improper handling of user-supplied profile field data during migration, allowing execution of arbitrary SQL queries. Only applies to phpBB forums that had been updated from versions prior to phpBB 3.3.8 and have not been updated to ",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://www.phpbb.com/community/viewtopic.php?t=2672170"
+      ],
+      "published": "2026-06-12T04:17:11.327"
+    },
+    {
+      "id": "CVE-2026-49482",
+      "description": "ClipBucket v5 is an open source video sharing platform. Prior to version 5.5.3 - #141, ClipBucket v5 contains an improper neutralization of SQL wildcard characters in the subtitle editing endpoint. An authenticated user can send a % character as the number parameter to overwrite all subtitle titles ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-155",
+        "CWE-943"
+      ],
+      "references": [
+        "https://github.com/MacWarrior/clipbucket-v5/security/advisories/GHSA-wv43-277p-737c",
+        "https://github.com/MacWarrior/clipbucket-v5/security/advisories/GHSA-wv43-277p-737c"
+      ],
+      "published": "2026-06-12T00:16:19.363"
+    },
+    {
+      "id": "CVE-2026-10676",
+      "description": "Rejected reason: This CVE Record has been rejected by the Zephyr Project CNA. Subsequent analysis determined that the addressed defect is not reachable in any released version of Zephyr: on every supported release branch the affected value is corrected before it is used, and the change that exposes ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-06-12T00:16:18.860"
+    },
+    {
+      "id": "CVE-2026-45170",
+      "description": "Idira Privilege Cloud Connector versions prior 1.1.100504 under specific conditions and configuration scenarios, TLS certificate validation may not be fully enforced. CyberArk Security Bulletin: CA26-17",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-295"
+      ],
+      "references": [
+        "https://docs.cyberark.com/"
+      ],
+      "published": "2026-06-12T02:16:42.233"
+    },
+    {
+      "id": "CVE-2026-20746",
+      "description": "Virtual attribute handling in Ping Identity PingDirectory in affected versions allows only authorized users to exhaust java memory heap when\u00a0recent login history is enabled and copying virtual attributes that reference ds-privilege-name values.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-401"
+      ],
+      "references": [
+        "https://docs.pingidentity.com/pingdirectory/11.0/release_notes/pd_release_notes.html#pingdirectory-suite-of-products-11-0-0-1-march-2026",
+        "https://support.pingidentity.com/s/article/SECADV052-Denial-of-Service-via-copying-virtual-attributes",
+        "https://www.pingidentity.com/en/resources/downloads/pingdirectory-downloads.html"
+      ],
+      "published": "2026-06-12T04:17:04.510"
+    },
+    {
+      "id": "CVE-2026-45169",
+      "description": "Idira Privileged Access Manager (PAM) Self-Hosted Vault versions prior to 15.0.3, 14.6.5, 14.2.7, and 14.0.8 exhibit a validation vulnerability. Under specific circumstances and configuration scenarios, processing unexpected input could potentially lead to an unexpected service termination, resultin",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://docs.cyberark.com/pam-self-hosted/latest/en/content/release%20notes/rn-whatsnew14-0-8.htm",
+        "https://docs.cyberark.com/pam-self-hosted/latest/en/content/release%20notes/rn-whatsnew14-2-7.htm",
+        "https://docs.cyberark.com/pam-self-hosted/latest/en/content/release%20notes/rn-whatsnew14-6-vault.htm#14.6.5"
+      ],
+      "published": "2026-06-12T05:16:32.703"
+    }
+  ]
+}
