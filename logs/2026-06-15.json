@@ -1,0 +1,336 @@
+{
+  "timestamp": "2026-06-15T07:41:56.161877+00:00",
+  "scan_id": "d803332482",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 7,
+      "MEDIUM": 9,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        6
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-22",
+        2
+      ],
+      [
+        "CWE-367",
+        1
+      ],
+      [
+        "CWE-362",
+        1
+      ]
+    ],
+    "threat_index": 252.5,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 252.5,
+        "yesterday": 414.8,
+        "change_pct": -39.1
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 5,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-54228",
+      "description": "A time-of-check time-of-use (TOCTOU) race condition was found in the abrt-dbus D-Bus service's SetElement method. Between dump directory creation and post-create event execution, any local user can call SetElement to write arbitrary text files into the root-owned dump directory, bypassing package va",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-54228",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2488531"
+      ],
+      "published": "2026-06-13T03:16:21.440"
+    },
+    {
+      "id": "CVE-2026-6428",
+      "description": "SQL Injection in reports/catalogue_out.pl in Koha Community Koha through 22.11.37, 23.x, 24.x before 24.11.16, 25.05.x before 25.05.11, 25.11.x before 25.11.05, 26.05.x before 26.05.01, and 26.11.x before 26.11.00 allows an authenticated staff user with the Reports module flag to read arbitrary data",
+      "severity": "HIGH",
+      "score": 7.6,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://bugs.koha-community.org/bugzilla3/attachment.cgi?id=199539",
+        "https://bugs.koha-community.org/bugzilla3/show_bug.cgi?id=42361",
+        "https://koha-community.org/security-releases/"
+      ],
+      "published": "2026-06-13T17:16:17.190"
+    },
+    {
+      "id": "CVE-2026-9848",
+      "description": "The WP Ticket plugin for WordPress is vulnerable to SQL Injection via the WordPress search query parameter (`s`) in versions up to, and including, 6.0.4 The plugin hooks WordPress's `posts_request` filter with `wp_ticket_com_posts_request()`, which calls `emd_author_search_results()` when the curren",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-ticket/tags/6.0.4/includes/common-functions.php#L164",
+        "https://plugins.trac.wordpress.org/browser/wp-ticket/tags/6.0.4/includes/common-functions.php#L174",
+        "https://plugins.trac.wordpress.org/browser/wp-ticket/tags/6.0.4/includes/filter-functions.php#L22"
+      ],
+      "published": "2026-06-13T03:16:22.017"
+    },
+    {
+      "id": "CVE-2026-9109",
+      "description": "The GPTranslate \u2013 Multilingual AI Translation for WordPress: Automatically Translate Websites plugin for WordPress is vulnerable to Stored Cross-Site Scripting via REST API Translation Storage in all versions up to, and including, 2.31 due to insufficient input sanitization and output escaping. This",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/gptranslate/tags/2.27.5/assets/js/admin.js#L1",
+        "https://plugins.trac.wordpress.org/browser/gptranslate/tags/2.27.5/gptranslate.php#L1134",
+        "https://plugins.trac.wordpress.org/browser/gptranslate/tags/2.27.5/gptranslate.php#L3578"
+      ],
+      "published": "2026-06-13T07:16:14.853"
+    },
+    {
+      "id": "CVE-2026-5513",
+      "description": "The Online Scheduling and Appointment Booking System \u2013 Bookly plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'bookly-customer-full-name' cookie in versions up to, and including, 27.2 due to insufficient input sanitization and output escaping. This makes it possible for una",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3504922/bookly-responsive-appointment-booking-tool",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/b8ab6dfa-3764-470f-aa49-1964f42d93de?source=cve"
+      ],
+      "published": "2026-06-13T12:16:15.947"
+    },
+    {
+      "id": "CVE-2026-54229",
+      "description": "A race condition was found in the abrt-dbus D-Bus service's ChownProblemDir method. ChownProblemDir opens the dump directory with DD_OPEN_READONLY and calls dd_chown to change ownership of all files to the caller's uid, succeeding even while post-create event handlers hold a write lock. This allows ",
+      "severity": "HIGH",
+      "score": 7.0,
+      "cwes": [
+        "CWE-362"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-54229",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2488532"
+      ],
+      "published": "2026-06-13T03:16:21.587"
+    },
+    {
+      "id": "CVE-2026-54230",
+      "description": "A symlink following vulnerability was found in the ABRT post-create event handler scripts in libreport. Event scripts write output files using shell redirections without the O_NOFOLLOW flag. If the target file is replaced with a symlink, the shell process running as root follows the symlink and writ",
+      "severity": "HIGH",
+      "score": 7.0,
+      "cwes": [
+        "CWE-59"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-54230",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2488568"
+      ],
+      "published": "2026-06-13T03:16:21.733"
+    },
+    {
+      "id": "CVE-2026-11442",
+      "description": "Allegra exportReport Directory Traversal Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Allegra. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the exportRepor",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://alltena.com/en/resources/release-notes/release-notes-for-release-9-0-0/",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-357/"
+      ],
+      "published": "2026-06-13T00:16:23.683"
+    },
+    {
+      "id": "CVE-2026-9134",
+      "description": "The FooGallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'custom_attribute_key' shortcode parameter in versions up to, and including, 3.1.31 This is due to an incomplete JavaScript event handler blacklist in the foogallery_sanitize_javascript() function, which blocks ",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/foogallery/trunk/includes/class-gallery-advanced-settings.php#L148",
+        "https://plugins.trac.wordpress.org/browser/foogallery/trunk/includes/functions.php#L1516",
+        "https://plugins.trac.wordpress.org/browser/foogallery/trunk/includes/functions.php#L480"
+      ],
+      "published": "2026-06-13T07:16:15.107"
+    },
+    {
+      "id": "CVE-2026-3297",
+      "description": "The Page Builder: Pagelayer \u2013 Drag and Drop website builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Anchor block in versions up to, and including, 2.0.9 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, w",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3506022/pagelayer",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/9dc23817-f5fe-420a-8204-8440935f0bd7?source=cve"
+      ],
+      "published": "2026-06-13T08:16:12.200"
+    },
+    {
+      "id": "CVE-2026-9629",
+      "description": "The Canvas plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'tag' parameter in all versions up to, and including, 2.5.2 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/canvas/tags/2.5.2/components/basic-elements/block-section-heading/render.php#L13",
+        "https://plugins.trac.wordpress.org/browser/canvas/tags/2.5.2/components/basic-elements/block-section-heading/render.php#L32",
+        "https://plugins.trac.wordpress.org/browser/canvas/tags/2.5.2/gutenberg/custom-blocks/index.php#L798"
+      ],
+      "published": "2026-06-13T08:16:12.330"
+    },
+    {
+      "id": "CVE-2026-54231",
+      "description": "A content injection vulnerability was found in the ABRT post-create event handler scripts in libreport. The event script queries the systemd journal for log entries matching the crashed process and writes the results to files in the dump directory without sanitizing embedded control characters. A lo",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-74"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-54231",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2488571"
+      ],
+      "published": "2026-06-13T03:16:21.877"
+    },
+    {
+      "id": "CVE-2026-12089",
+      "description": "The LWS Optimize \u2013 All-in-One Speed Booster & Cache Tools plugin for WordPress is vulnerable to Arbitrary File Read in versions up to, and including, 3.3.19. This is due to the combine_current_css() function  trusting <link rel=\"stylesheet\" href=\"...\"> values harvested from page HTML and converting ",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/lws-optimize/tags/3.3.19/Classes/Front/LwsOptimizeCSSManager.php#L289",
+        "https://plugins.trac.wordpress.org/browser/lws-optimize/tags/3.3.19/Classes/Front/LwsOptimizeCSSManager.php#L61",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/5cb80db2-753c-40fa-aee4-7d8c1749d037?source=cve"
+      ],
+      "published": "2026-06-13T03:16:19.573"
+    },
+    {
+      "id": "CVE-2026-11443",
+      "description": "Allegra downloadAttachment Cross-Site Scripting Authentication Bypass Vulnerability. This vulnerability allows remote attackers to execute arbitrary script on affected installations of Allegra. User interaction is required to exploit this vulnerability in that the target must visit a malicious page ",
+      "severity": "MEDIUM",
+      "score": 4.6,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://alltena.com/en/resources/release-notes/release-notes-for-release-9-0-0/",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-358/"
+      ],
+      "published": "2026-06-13T00:16:24.290"
+    },
+    {
+      "id": "CVE-2026-2470",
+      "description": "The Page Builder: Pagelayer \u2013 Drag and Drop website builder plugin for WordPress is vulnerable to Incorrect Authorization in all versions up to, and including, 2.0.9. This is due to the pagelayer_save_content AJAX handler allowing users with basic post-edit capability to persist pagelayer_contact_te",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3506022/pagelayer",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/ef926bc7-b50f-40ac-9ace-7e01b26f34e1?source=cve"
+      ],
+      "published": "2026-06-13T08:16:12.030"
+    },
+    {
+      "id": "CVE-2026-1291",
+      "description": "The Meow Gallery plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the REST API endpoint /wp-json/meow-gallery/v1/save_shortcode in all versions up to, and including, 5.4.4 This makes it possible for authenticated attackers, with Author-leve",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/meow-gallery/trunk/classes/rest.php",
+        "https://plugins.trac.wordpress.org/changeset/3469543/meow-gallery",
+        "https://plugins.trac.wordpress.org/changeset/3469543/meow-gallery/trunk/classes/rest.php"
+      ],
+      "published": "2026-06-13T10:16:18.643"
+    },
+    {
+      "id": "CVE-2026-11769",
+      "description": "We have released version 5.24.0 of the Grafana Operator. This patch includes a CRITICAL severity security fix for a path traversal/privilege escalation vulnerability in the Grafana Operator.\n\n\n\n### Summary\n\n\n\nThe Grafana Operator supports loading dashboards & library panels using the jsonnet data te",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://grafana.com/security/security-advisories/cve-2026-11769"
+      ],
+      "published": "2026-06-13T06:16:14.380"
+    },
+    {
+      "id": "CVE-2026-9061",
+      "description": "The Store Locator WordPress plugin before 1.6.9 does not sanitize and escape store logo metadata before storing it and outputting it on the Store Locator WordPress plugin before 1.6.9 admin page, allowing high-privileged users such as administrators to perform Stored Cross-Site Scripting attacks eve",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/a9f8656a-548a-4353-b157-d07f23c3bc26/"
+      ],
+      "published": "2026-06-13T07:16:14.370"
+    },
+    {
+      "id": "CVE-2026-9062",
+      "description": "The Store Locator WordPress plugin before 1.6.9 does not validate a parameter before using it in a file path, allowing high-privileged users such as administrators to read arbitrary `.php` files from the server, including configuration files that contain database credentials and authentication keys.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/14014b6b-ce49-4778-822c-026ecafa1772/"
+      ],
+      "published": "2026-06-13T07:16:14.757"
+    },
+    {
+      "id": "CVE-2026-11624",
+      "description": "The Model Context Protocol has a security warning advising servers to validate the \"Origin\" header on all incoming connections to prevent DNS rebinding attacks. Prior to the v0.25.0 release, users had no way to validate the origin's host. In v0.25.0, a new \"--allowed-hosts\" flag was introduced along",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-346"
+      ],
+      "references": [
+        "https://github.com/googleapis/mcp-toolbox/issues/3113",
+        "https://github.com/googleapis/mcp-toolbox/pull/2254"
+      ],
+      "published": "2026-06-13T10:16:17.700"
+    }
+  ]
+}
