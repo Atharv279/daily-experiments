@@ -1,0 +1,368 @@
+{
+  "timestamp": "2026-06-16T07:46:30.736421+00:00",
+  "scan_id": "7df83604a2",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 12,
+      "MEDIUM": 6,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        4
+      ],
+      [
+        "CWE-77",
+        3
+      ],
+      [
+        "CWE-73",
+        2
+      ],
+      [
+        "CWE-78",
+        2
+      ],
+      [
+        "CWE-119",
+        2
+      ]
+    ],
+    "threat_index": 402.8,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 402.8,
+        "yesterday": 259.4,
+        "change_pct": 55.3
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-11526",
+      "description": "GD versions before 2.86 for Perl allow OS command injection and file overwrite via a 2-arg open() of filename arguments in _make_filehandle.\n\nGD::Image::_make_filehandle opens a filename argument with Perl's 2-arg open(), so a filename that begins or ends with a pipe (\"| cmd\", \"cmd |\") or begins wit",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-73",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/lstein/Perl-GD/commit/67b163713c6c78dfeb693da0978ae934e5cd8210.patch",
+        "https://metacpan.org/release/RURBAN/GD-2.86/changes",
+        "http://www.openwall.com/lists/oss-security/2026/06/14/4"
+      ],
+      "published": "2026-06-14T12:16:22.403"
+    },
+    {
+      "id": "CVE-2026-12186",
+      "description": "A weakness has been identified in GL.iNet GL-MT3000 up to 4.4.5. Affected is the function replace_country in the library /usr/lib/oui-httpd/rpc/tor of the component Tor Proxy Service Configuration Handler. This manipulation causes command injection. The attack can be initiated remotely. The exploit ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://fw.gl-inet.com/firmware/mt3000/release/mt3000-4.8.1-0819-1755615825.tar",
+        "https://github.com/StrTzz123/iot_vul/blob/main/GL-iNet/MT3000/4.4.5/tor_set_config/Readme.md",
+        "https://vuldb.com/cve/CVE-2026-12186"
+      ],
+      "published": "2026-06-14T21:16:18.483"
+    },
+    {
+      "id": "CVE-2026-12187",
+      "description": "A security vulnerability has been detected in GL.iNet GL-MT3000 up to 4.4.5. Affected by this vulnerability is an unknown functionality of the file /usr/bin/one_click_upgrade of the component Online Firmware Upgrade Handler. Such manipulation leads to command injection. The attack can be launched re",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://fw.gl-inet.com/firmware/mt3000/release/mt3000-4.8.1-0819-1755615825.tar",
+        "https://github.com/StrTzz123/iot_vul/tree/main/GL-iNet/MT3000/4.4.5/upgrade_online_url",
+        "https://vuldb.com/cve/CVE-2026-12187"
+      ],
+      "published": "2026-06-14T23:16:34.853"
+    },
+    {
+      "id": "CVE-2026-12192",
+      "description": "A vulnerability was determined in GALAYOU Y4 1.0.0. Impacted is an unknown function of the component Web Server. This manipulation causes buffer overflow. The attack is only possible within the local network. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-12192",
+        "https://vuldb.com/submit/825801",
+        "https://vuldb.com/vuln/370838"
+      ],
+      "published": "2026-06-15T00:16:43.067"
+    },
+    {
+      "id": "CVE-2026-11527",
+      "description": "Config::IniFiles versions before 3.001000 for Perl allow OS command injection and file overwrite via a 2-arg open() of the -file argument in _make_filehandle.\n\nConfig::IniFiles::_make_filehandle opens a filename argument with Perl's 2-arg open(), so a filename that begins or ends with a pipe (\"| cmd",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-73",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/shlomif/perl-Config-IniFiles/commit/3e48f9627fbba4dae5de35be1f735cdeb7e47fb8.patch",
+        "https://metacpan.org/release/SHLOMIF/Config-IniFiles-3.001000/changes",
+        "http://www.openwall.com/lists/oss-security/2026/06/14/5"
+      ],
+      "published": "2026-06-14T12:16:23.357"
+    },
+    {
+      "id": "CVE-2026-54410",
+      "description": "nanoMODBUS through v1.23.0 contains an off-by-one buffer overflow in the recv_msg_header() function of the Modbus/TCP server that allows remote unauthenticated attackers to write one attacker-controlled byte past the end of the 260-byte receive buffer by sending a crafted MBAP frame whose Length fie",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-193",
+        "CWE-787"
+      ],
+      "references": [
+        "https://cwe.mitre.org/data/definitions/193.html",
+        "https://cwe.mitre.org/data/definitions/787.html",
+        "https://github.com/debevv/nanoMODBUS"
+      ],
+      "published": "2026-06-14T18:17:20.330"
+    },
+    {
+      "id": "CVE-2026-54420",
+      "description": "LiteSpeed cPanel plugin before 2.4.8 (as distributed in LiteSpeed WHM PlugIn before 5.3.2.0) mishandles symlinks provided by a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS, as exploited in the wild in May 2026.",
+      "severity": "HIGH",
+      "score": 8.5,
+      "cwes": [
+        "CWE-61"
+      ],
+      "references": [
+        "https://blog.litespeedtech.com/2026/06/01/security-update-for-litespeed-cpanel-plugin-2/",
+        "https://www.litespeedtech.com/products/litespeed-web-server/control-panel-support/cpanel",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-54420"
+      ],
+      "published": "2026-06-14T04:16:28.630"
+    },
+    {
+      "id": "CVE-2026-54412",
+      "description": "LiamBindle MQTT-C through version 1.1.6 contains a heap-based out-of-bounds read and integer underflow in the mqtt_unpack_publish_response() function in src/mqtt.c that allows a remote unauthenticated attacker controlling an MQTT broker - or able to inject MQTT traffic into an unencrypted session - ",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-125",
+        "CWE-191"
+      ],
+      "references": [
+        "https://cwe.mitre.org/data/definitions/125.html",
+        "https://cwe.mitre.org/data/definitions/191.html",
+        "https://github.com/LiamBindle/MQTT-C"
+      ],
+      "published": "2026-06-14T18:17:20.750"
+    },
+    {
+      "id": "CVE-2026-54413",
+      "description": "driftregion iso14229 through 0.9.0 contains an integer underflow and downstream out-of-bounds read in the Handle_0x27_SecurityAccess() function in iso14229.c that allows a remote unauthenticated attacker to crash a UDS server and potentially read memory past the receive buffer by sending a single-by",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-125",
+        "CWE-191"
+      ],
+      "references": [
+        "https://cwe.mitre.org/data/definitions/125.html",
+        "https://cwe.mitre.org/data/definitions/191.html",
+        "https://github.com/driftregion/iso14229"
+      ],
+      "published": "2026-06-14T18:17:20.943"
+    },
+    {
+      "id": "CVE-2026-12191",
+      "description": "A vulnerability was found in Comma AI Openpilot 0.11. This issue affects the function pickle.load/pickle.loads of the file selfdrive/modeld/modeld.py of the component Pickle Module. The manipulation results in deserialization. The attack is only possible with local access. The vendor was contacted e",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-20",
+        "CWE-502"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-12191",
+        "https://vuldb.com/submit/825699",
+        "https://vuldb.com/vuln/370837"
+      ],
+      "published": "2026-06-14T23:16:35.993"
+    },
+    {
+      "id": "CVE-2026-12193",
+      "description": "A vulnerability was identified in VS Revo RevoUninstaller 2.5.x/2.6.x. The affected element is the function IOCtl_Handler in the library RevoDetector.sys of the component IOCTL Handler. Such manipulation leads to heap-based buffer overflow. The attack must be carried out locally. The exploit is publ",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/Kalagious/RevoDetectorExploit/tree/master",
+        "https://jordanhiggins.blog/revouninstaller-pool-overflow-exploit/",
+        "https://vandalsuidaho-my.sharepoint.com/:w:/g/personal/higg2059_vandals_uidaho_edu/IQAMHgdfpRAkSqDsoFVswIYNAXjPVFz-admcJyl5ITzYhu0?e=4Ywwza"
+      ],
+      "published": "2026-06-15T00:16:43.350"
+    },
+    {
+      "id": "CVE-2026-12198",
+      "description": "A weakness has been identified in Microweber up to 2.0.20. This affects the function userfiles_path of the file /api_nosession/thumbnail_img of the component API Endpoint. Executing a manipulation of the argument cache_path_relative can lead to path traversal. It is possible to launch the attack rem",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/microweber/microweber/",
+        "https://github.com/microweber/microweber/issues/1172",
+        "https://github.com/whuHouYF/microweber-vuldb-disclosure-2026/blob/991630c494a99c70a96e456992a04de2ecb5a1e1/reports/microweber-path-traversal.md"
+      ],
+      "published": "2026-06-15T00:16:43.803"
+    },
+    {
+      "id": "CVE-2026-12197",
+      "description": "A security flaw has been discovered in Ruijie EG105G-P 2.340. The impacted element is the function nslookup of the file /cgi-bin/luci/api/diagnose of the component JSON-RPC Diagnose Endpoint. Performing a manipulation of the argument params.target results in command injection. It is possible to init",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/ictrun/java/issues/6",
+        "https://vuldb.com/cve/CVE-2026-12197",
+        "https://vuldb.com/submit/829253"
+      ],
+      "published": "2026-06-15T00:16:43.603"
+    },
+    {
+      "id": "CVE-2026-54421",
+      "description": "In OpenStack Ironic through 35.0.1, when applying a PATCH to update fields in volume properties the user is authorized for, Ironic can return unredacted sensitive information (such as iSCSI credentials). The PATCH outcome is a security issue; the POST outcome is not a security issue.",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-212"
+      ],
+      "references": [
+        "https://bugs.launchpad.net/ironic/+bug/2155049"
+      ],
+      "published": "2026-06-14T04:16:30.927"
+    },
+    {
+      "id": "CVE-2026-12188",
+      "description": "A vulnerability was detected in Grit42 Grit up to 0.11.0. Affected by this issue is some unknown functionality of the file modules/core/backend/app/controllers/concerns/grit/core/grit_entity_controller.rb of the component GritEntityController. Performing a manipulation results in sql injection. The ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/natanmorette-thoropass/thoropass-vuln-research-program/blob/main/2026/SQL%20Injection%20in%20grit42%20CSV%20Export%20Endpoint/README.md",
+        "https://vuldb.com/cve/CVE-2026-12188",
+        "https://vuldb.com/submit/816680"
+      ],
+      "published": "2026-06-14T23:16:35.440"
+    },
+    {
+      "id": "CVE-2026-54411",
+      "description": "Linux-PAM through 1.7.2 contains an observable timing discrepancy (CWE-208) in the pam_userdb module's plaintext-password comparison path in modules/pam_userdb/pam_userdb.c that allows a local or network-adjacent attacker able to repeatedly drive authentication through a calling service to recover t",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-208"
+      ],
+      "references": [
+        "https://cwe.mitre.org/data/definitions/208.html",
+        "https://github.com/linux-pam/linux-pam",
+        "https://github.com/linux-pam/linux-pam/blob/master/libpam/include/pam_inline.h"
+      ],
+      "published": "2026-06-14T18:17:20.587"
+    },
+    {
+      "id": "CVE-2026-12189",
+      "description": "A flaw has been found in Moovit Bus & Public Transit App 1.18 on Android. This affects an unknown part of the component com.tranzmate. Executing a manipulation can lead to improper authorization in handler for custom url scheme. The attack can only be executed locally. The exploit has been published",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-939"
+      ],
+      "references": [
+        "https://drive.google.com/file/d/1lKtJX8mhbGTiMarv2H3psd9iombJ-dIn/view?usp=sharing",
+        "https://github.com/honestcorrupt/MOOVIT-CVE-.git",
+        "https://vuldb.com/cve/CVE-2026-12189"
+      ],
+      "published": "2026-06-14T23:16:35.623"
+    },
+    {
+      "id": "CVE-2026-12190",
+      "description": "A vulnerability has been found in Genspark AI Workspace App 2.8.4 on Android. This vulnerability affects unknown code of the component ai.mainfunc.genspark. The manipulation leads to improper authorization in handler for custom url scheme. The attack can only be performed from a local environment. T",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-939"
+      ],
+      "references": [
+        "https://github.com/actuator/ai.mainfunc.genspark",
+        "https://vuldb.com/cve/CVE-2026-12190",
+        "https://vuldb.com/submit/825558"
+      ],
+      "published": "2026-06-14T23:16:35.807"
+    },
+    {
+      "id": "CVE-2026-12176",
+      "description": "A vulnerability has been found in SourceCodester CET Automated Grading System with AI Predictive Analytics 1.0. The impacted element is an unknown function of the file /index.php. The manipulation of the argument action leads to cross site scripting. The attack is possible to be carried out remotely",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-12176",
+        "https://vuldb.com/submit/837732",
+        "https://vuldb.com/vuln/370818"
+      ],
+      "published": "2026-06-14T00:16:19.790"
+    },
+    {
+      "id": "CVE-2025-15546",
+      "description": "The Iptanus File Upload WordPress plugin before 5.1.7 does not implement proper file handling when the duplicatepolicy setting is configured to \"maintain both.\" Due to a Time-of-Check to Time-of-Use (TOCTOU) race condition between the file existence check and the actual file write operation, an auth",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/06e33418-1644-49a1-b012-122046604109/"
+      ],
+      "published": "2026-06-14T08:16:17.040"
+    }
+  ]
+}
