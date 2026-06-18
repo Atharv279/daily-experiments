@@ -1,0 +1,343 @@
+{
+  "timestamp": "2026-06-18T11:59:20.878701+00:00",
+  "scan_id": "6f19700c1f",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 3,
+      "MEDIUM": 17
+    },
+    "top_cwes": [
+      [
+        "CWE-295",
+        2
+      ],
+      [
+        "CWE-125",
+        2
+      ],
+      [
+        "CWE-805",
+        2
+      ],
+      [
+        "CWE-78",
+        1
+      ],
+      [
+        "CWE-121",
+        1
+      ]
+    ],
+    "threat_index": 284.0,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 284.0,
+        "yesterday": 293.0,
+        "change_pct": -3.1
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-12161",
+      "description": "Improper input validation in the SSH Elevate Shell feature in \nDevolutions Remote Desktop Manager 2026.2.7 allows an authenticated user\n with permission to create or modify a shared SSH entry to execute \narbitrary commands on a remote SSH host using stored elevation \ncredentials via a crafted altern",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://devolutions.net/security/advisories/DEVO-2026-0018/"
+      ],
+      "published": "2026-06-16T01:16:22.950"
+    },
+    {
+      "id": "CVE-2026-7273",
+      "description": "A stack-based buffer overflow vulnerability in the CGI program of Zyxel GS1900-48HPv2 firmware versions through\u00a02.90(ABTQ.1)C0 could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-stack-based-buffer-overflow-vulnerability-in-gs1900-series-switches-06-16-2026"
+      ],
+      "published": "2026-06-16T03:16:13.557"
+    },
+    {
+      "id": "CVE-2026-6933",
+      "description": "The Premmerce Dev Tools plugin for WordPress is vulnerable to Remote Code Execution via missing authorization in versions up to and including 2.0. This is due to the 'generatePluginHandler' function lacking any authorization check before processing user-supplied POST data, combined with the 'createF",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/premmerce-dev-tools/tags/2.0/src/Admin/Admin.php#L107",
+        "https://plugins.trac.wordpress.org/browser/premmerce-dev-tools/tags/2.0/src/PluginGenerator/PluginData.php#L97",
+        "https://plugins.trac.wordpress.org/browser/premmerce-dev-tools/tags/2.0/src/PluginGenerator/PluginGenerator.php#L125"
+      ],
+      "published": "2026-06-16T06:16:58.540"
+    },
+    {
+      "id": "CVE-2026-9261",
+      "description": "Use of weak SSH cryptographic algorithms in Canon EOS Network Setting Tool Version 1.5.0 or earlier",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-327"
+      ],
+      "references": [
+        "https://canon.jp/support/support-info/260615vulnerability-response",
+        "https://psirt.canon/advisory-information/cp2026-005/",
+        "https://www.canon-europe.com/support/product-security/"
+      ],
+      "published": "2026-06-16T00:16:35.887"
+    },
+    {
+      "id": "CVE-2026-50255",
+      "description": "Incorrect default permissions issue exists in Optical Disc Archive Software for Windows 5.5.3 and earlier. If this vulnerability is exploited, arbitrary code may be executed with SYSTEM privileges.",
+      "severity": "MEDIUM",
+      "score": 6.7,
+      "cwes": [
+        "CWE-276"
+      ],
+      "references": [
+        "https://jvn.jp/en/jp/JVN79926428/",
+        "https://www.sony.com/electronics/support/software/00403421"
+      ],
+      "published": "2026-06-16T06:16:58.180"
+    },
+    {
+      "id": "CVE-2026-42014",
+      "description": "A flaw was found in GnuTLS. The `gnutls_pkcs11_token_set_pin` function, used for changing the Security Officer PIN, can lead to a use-after-free vulnerability. This occurs when an attacker attempts to change the PIN with a NULL old PIN for a token that lacks a protected authentication path.",
+      "severity": "MEDIUM",
+      "score": 6.6,
+      "cwes": [
+        "CWE-825"
+      ],
+      "references": [
+        "https://access.redhat.com/errata/RHSA-2026:20611",
+        "https://access.redhat.com/errata/RHSA-2026:20612",
+        "https://access.redhat.com/errata/RHSA-2026:20613"
+      ],
+      "published": "2026-06-16T02:16:19.140"
+    },
+    {
+      "id": "CVE-2026-9258",
+      "description": "Improper validation of SSH host keys in Canon EOS Network Setting Tool Version 1.5.0 or earlier",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-295"
+      ],
+      "references": [
+        "https://canon.jp/support/support-info/260615vulnerability-response",
+        "https://psirt.canon/advisory-information/cp2026-005/",
+        "https://www.canon-europe.com/support/product-security/"
+      ],
+      "published": "2026-06-16T00:16:35.460"
+    },
+    {
+      "id": "CVE-2026-9259",
+      "description": "Improper validation of server certificates in Canon EOS Network Setting Tool Version 1.5.0 or earlier",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-295"
+      ],
+      "references": [
+        "https://canon.jp/support/support-info/260615vulnerability-response",
+        "https://psirt.canon/advisory-information/cp2026-005/",
+        "https://www.canon-europe.com/support/product-security/"
+      ],
+      "published": "2026-06-16T00:16:35.623"
+    },
+    {
+      "id": "CVE-2026-9262",
+      "description": "Use of a non-secure protocol as the default FTP configuration in Canon EOS Network Setting Tool Version 1.5.0 or earlier",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-1188"
+      ],
+      "references": [
+        "https://canon.jp/support/support-info/260615vulnerability-response",
+        "https://psirt.canon/advisory-information/cp2026-005/",
+        "https://www.canon-europe.com/support/product-security/"
+      ],
+      "published": "2026-06-16T00:16:36.020"
+    },
+    {
+      "id": "CVE-2026-5149",
+      "description": "The RTMKit plugin for WordPress is vulnerable to Incorrect Authorization in all versions up to, and including, 2.0.7 This is due to the get_submission_content AJAX endpoint lacking a capability check to verify that a user has permission to access the requested form submission data. This makes it pos",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/rometheme-for-elementor/trunk/Inc/Modules/Submission/SubmissionModule.php#L22",
+        "https://plugins.trac.wordpress.org/browser/rometheme-for-elementor/trunk/Inc/Modules/Submission/SubmissionModule.php#L29",
+        "https://plugins.trac.wordpress.org/changeset/3568335/rometheme-for-elementor/trunk/Inc/Modules/Submission/SubmissionModule.php"
+      ],
+      "published": "2026-06-16T06:16:58.337"
+    },
+    {
+      "id": "CVE-2025-10262",
+      "description": "Nokia SR Linux is vulnerable to local privilege escalation vulnerability due to unsanitized format validation. Successful exploitation of this vulnerability may allow an authenticated user to execute arbitrary commands with superuser privileges.",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-134"
+      ],
+      "references": [
+        "https://www.nokia.com/we-are-nokia/security/product-security-advisory/cve-2025-10262/"
+      ],
+      "published": "2026-06-16T06:16:57.063"
+    },
+    {
+      "id": "CVE-2026-10635",
+      "description": "On Xtensa targets with CONFIG_USERSPACE and CONFIG_XTENSA_MMU, the page-table code (arch/xtensa/core/ptables.c) maintains a global list, xtensa_domain_list, of active memory domains using a list node embedded inside the caller-owned struct k_mem_domain. When a domain is destroyed via k_mem_domain_de",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/zephyrproject-rtos/zephyr/commit/33d43d09337119fc6084b4ab545f9267839973f6",
+        "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-39v7-cx8j-gq82"
+      ],
+      "published": "2026-06-16T06:16:57.770"
+    },
+    {
+      "id": "CVE-2026-9260",
+      "description": "Use of hard-coded cryptographic keys in Canon EOS Network Setting Tool Version 1.5.0 or earlier",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-321"
+      ],
+      "references": [
+        "https://canon.jp/support/support-info/260615vulnerability-response",
+        "https://psirt.canon/advisory-information/cp2026-005/",
+        "https://www.canon-europe.com/support/product-security/"
+      ],
+      "published": "2026-06-16T00:16:35.757"
+    },
+    {
+      "id": "CVE-2026-1764",
+      "description": "A flaw was found in GNOME localsearch (previously known as tracker-miners) MP3 Extractor. When processing specially crafted MP3 files containing ID3v2.4 tags, a missing bounds check in the `extract_performers_tags` function can lead to a heap buffer overflow. This vulnerability allows a remote attac",
+      "severity": "MEDIUM",
+      "score": 5.6,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-1764",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2435980"
+      ],
+      "published": "2026-06-16T02:16:17.103"
+    },
+    {
+      "id": "CVE-2026-1765",
+      "description": "A flaw was found in the `tracker-extract-mp3` component of GNOME localsearch (previously known as tracker-miners). This vulnerability, a heap buffer overflow, occurs when processing specially crafted MP3 files. A remote attacker could exploit this by providing a malicious MP3 file, leading to a Deni",
+      "severity": "MEDIUM",
+      "score": 5.6,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-1765",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2435981"
+      ],
+      "published": "2026-06-16T02:16:18.170"
+    },
+    {
+      "id": "CVE-2026-1766",
+      "description": "A flaw was found in GNOME localsearch (previously known as tracker-miners) MP3 Extractor, specifically within the tracker-extract-mp3 component. This heap buffer overflow vulnerability occurs when processing specially crafted MP3 files containing malformed ID3v2.3 COMM (Comment) tags. An attacker co",
+      "severity": "MEDIUM",
+      "score": 5.6,
+      "cwes": [
+        "CWE-805"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-1766",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2435982"
+      ],
+      "published": "2026-06-16T02:16:18.313"
+    },
+    {
+      "id": "CVE-2026-1767",
+      "description": "A flaw was found in the GNOME localsearch (previously known as tracker-miners) MP3 Extractor `tracker-extract-mp3` component. A remote attacker could exploit this heap buffer overflow vulnerability by providing a specially crafted MP3 file containing malformed ID3 tags. This incorrect length calcula",
+      "severity": "MEDIUM",
+      "score": 5.6,
+      "cwes": [
+        "CWE-805"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-1767",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2435983"
+      ],
+      "published": "2026-06-16T02:16:18.447"
+    },
+    {
+      "id": "CVE-2026-12162",
+      "description": "Improper host validation in the social login autofill feature in \nDevolutions Remote Desktop Manager 2026.2.8 allows an attacker to \ndisclose stored social login credentials via a crafted web entry \npointing to a provider lookalike domain.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-297"
+      ],
+      "references": [
+        "https://devolutions.net/security/advisories/DEVO-2026-0018/"
+      ],
+      "published": "2026-06-16T01:16:23.937"
+    },
+    {
+      "id": "CVE-2026-6964",
+      "description": "The Video Conferencing with Zoom plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 4.6.7. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to obtain the",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/video-conferencing-with-zoom-api/tags/4.6.6/includes/admin/class-zvc-admin-ajax.php#L183",
+        "https://plugins.trac.wordpress.org/browser/video-conferencing-with-zoom-api/tags/4.6.6/includes/template-functions.php#L558",
+        "https://plugins.trac.wordpress.org/browser/video-conferencing-with-zoom-api/tags/4.6.7/includes/admin/class-zvc-admin-ajax.php#L183"
+      ],
+      "published": "2026-06-16T04:17:26.917"
+    },
+    {
+      "id": "CVE-2026-10780",
+      "description": "The Static Block plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 2.2. This is due to the static_block_content() shortcode handler retrieving a post via get_post() using an attacker-supplied 'id' attribute and outputting its post_content wi",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/static-block/trunk/static-block.php#L244",
+        "https://plugins.trac.wordpress.org/browser/static-block/trunk/static-block.php#L268",
+        "https://plugins.trac.wordpress.org/browser/static-block/trunk/static-block.php#L270"
+      ],
+      "published": "2026-06-16T06:16:58.013"
+    }
+  ]
+}
