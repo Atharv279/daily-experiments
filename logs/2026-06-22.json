@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-22T18:29:33.457410+00:00",
-  "scan_id": "6c54a38ccc",
+  "timestamp": "2026-06-22T22:19:34.728776+00:00",
+  "scan_id": "37a6066323",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -123,7 +123,8 @@
       ],
       "references": [
         "https://github.com/Cap-go/capgo/security/advisories/GHSA-2ff8-7h96-hwfp",
-        "https://www.vulncheck.com/advisories/capgo-scope-escalation-via-api-key-creation-in-functions-v1-apikey"
+        "https://www.vulncheck.com/advisories/capgo-scope-escalation-via-api-key-creation-in-functions-v1-apikey",
+        "https://github.com/Cap-go/capgo/security/advisories/GHSA-2ff8-7h96-hwfp"
       ],
       "published": "2026-06-20T01:16:16.970"
     },
@@ -166,7 +167,8 @@
       ],
       "references": [
         "https://github.com/Cap-go/capgo/security/advisories/GHSA-mh5p-rrhp-442q",
-        "https://www.vulncheck.com/advisories/capgo-unauthenticated-organization-enumeration-and-billing-status-disclosure-via-supabase-rpc"
+        "https://www.vulncheck.com/advisories/capgo-unauthenticated-organization-enumeration-and-billing-status-disclosure-via-supabase-rpc",
+        "https://github.com/Cap-go/capgo/security/advisories/GHSA-mh5p-rrhp-442q"
       ],
       "published": "2026-06-20T01:16:16.710"
     },
