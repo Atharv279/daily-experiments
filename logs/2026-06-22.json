@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-06-22T07:44:34.836386+00:00",
-  "scan_id": "1eac62147f",
+  "timestamp": "2026-06-22T18:29:33.457410+00:00",
+  "scan_id": "6c54a38ccc",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
-      "CRITICAL": 4,
+      "CRITICAL": 5,
       "HIGH": 7,
       "MEDIUM": 3,
       "LOW": 1,
-      "UNKNOWN": 5
+      "UNKNOWN": 4
     },
     "top_cwes": [
       [
@@ -32,8 +32,8 @@
         2
       ]
     ],
-    "threat_index": 362.0,
-    "critical_count": 4
+    "threat_index": 398.4,
+    "critical_count": 5
   },
   "delta": {
     "status": "no_previous_data"
@@ -97,6 +97,21 @@
         "https://www.vulncheck.com/advisories/flowise-remote-code-execution-via-overrideconfig-parameter"
       ],
       "published": "2026-06-20T16:17:03.973"
+    },
+    {
+      "id": "CVE-2026-9265",
+      "description": "Crypt::OpenSSL::PKCS12 versions before 1.96 for Perl permits a heap OOB read in print_attribute UTF8STRING path.\n\nprint_attribute() copies a UTF8STRING ASN.1 attribute value into a heap buffer sized exactly to its declared length via strncpy, leaving no NUL terminator. Downstream callers run strlen(",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/dsully/perl-crypt-openssl-pkcs12/commit/a7bd2f319fa8aab8177b3d767ea06dd85ceb3173.patch",
+        "https://github.com/dsully/perl-crypt-openssl-pkcs12/issues/55",
+        "https://metacpan.org/release/JONASBN/Crypt-OpenSSL-PKCS12-1.96/source/Changes.md"
+      ],
+      "published": "2026-06-20T02:16:26.020"
     },
     {
       "id": "CVE-2026-56216",
@@ -225,7 +240,8 @@
       ],
       "references": [
         "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-4fr9-3x69-36wv",
-        "https://www.vulncheck.com/advisories/flowise-cross-site-scripting-in-chat-messages-and-agent-workflows"
+        "https://www.vulncheck.com/advisories/flowise-cross-site-scripting-in-chat-messages-and-agent-workflows",
+        "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-4fr9-3x69-36wv"
       ],
       "published": "2026-06-20T16:17:04.137"
     },
@@ -256,21 +272,6 @@
         "https://www.vulncheck.com/advisories/capgo-improper-2fa-enforcement-logic-via-team-security-settings"
       ],
       "published": "2026-06-20T01:16:16.453"
-    },
-    {
-      "id": "CVE-2026-9265",
-      "description": "Crypt::OpenSSL::PKCS12 versions before 1.96 for Perl permits a heap OOB read in print_attribute UTF8STRING path.\n\nprint_attribute() copies a UTF8STRING ASN.1 attribute value into a heap buffer sized exactly to its declared length via strncpy, leaving no NUL terminator. Downstream callers run strlen(",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-125"
-      ],
-      "references": [
-        "https://github.com/dsully/perl-crypt-openssl-pkcs12/commit/a7bd2f319fa8aab8177b3d767ea06dd85ceb3173.patch",
-        "https://github.com/dsully/perl-crypt-openssl-pkcs12/issues/55",
-        "https://metacpan.org/release/JONASBN/Crypt-OpenSSL-PKCS12-1.96/source/Changes.md"
-      ],
-      "published": "2026-06-20T02:16:26.020"
     },
     {
       "id": "CVE-2026-48908",
