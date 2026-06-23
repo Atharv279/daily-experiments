@@ -1,0 +1,371 @@
+{
+  "timestamp": "2026-06-23T11:32:37.537310+00:00",
+  "scan_id": "0efd6c4177",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 10,
+      "MEDIUM": 9,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-266",
+        9
+      ],
+      [
+        "CWE-284",
+        7
+      ],
+      [
+        "CWE-74",
+        3
+      ],
+      [
+        "CWE-89",
+        3
+      ],
+      [
+        "CWE-287",
+        2
+      ]
+    ],
+    "threat_index": 335.3,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 335.3,
+        "yesterday": 398.4,
+        "change_pct": -15.8
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 5,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-12778",
+      "description": "A vulnerability has been found in AOMEI Partition Assistant up to 10.10.1. This vulnerability affects unknown code in the library ampa10.sys of the component Kernel Driver. Such manipulation leads to improper access controls. The attack must be carried out locally. The exploit has been disclosed to ",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-12778",
+        "https://vuldb.com/submit/835607",
+        "https://vuldb.com/vuln/372519"
+      ],
+      "published": "2026-06-21T06:16:22.637"
+    },
+    {
+      "id": "CVE-2026-12779",
+      "description": "A vulnerability was found in AOMEI Dynamic Disk Manager up to 10.10.1. This issue affects some unknown processing in the library ddmdrv.sys of the component Kernel Driver. Performing a manipulation results in improper access controls. The attack must be initiated from a local position. The exploit h",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-12779",
+        "https://vuldb.com/submit/835608",
+        "https://vuldb.com/vuln/372520"
+      ],
+      "published": "2026-06-21T06:16:22.807"
+    },
+    {
+      "id": "CVE-2026-12780",
+      "description": "A vulnerability was determined in AOMEI Backupper up to 8.3.0. Impacted is an unknown function in the library amwrtdrv.sys of the component Kernel Driver. Executing a manipulation can lead to improper access controls. The attack needs to be launched locally. The exploit has been publicly disclosed a",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-12780",
+        "https://vuldb.com/submit/835609",
+        "https://vuldb.com/vuln/372521"
+      ],
+      "published": "2026-06-21T06:16:22.957"
+    },
+    {
+      "id": "CVE-2026-12781",
+      "description": "A vulnerability was identified in EaseUS Partition Master up to 14.5. The affected element is an unknown function in the library epmntdrv.sys of the component Kernel Driver. The manipulation leads to improper access controls. The attack needs to be performed locally. The exploit is publicly availabl",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-12781",
+        "https://vuldb.com/submit/835611",
+        "https://vuldb.com/vuln/372522"
+      ],
+      "published": "2026-06-21T08:16:21.907"
+    },
+    {
+      "id": "CVE-2026-12782",
+      "description": "A security flaw has been discovered in EaseUS Partition Master up to 14.5. The impacted element is an unknown function in the library EUEDKEPM.sys of the component Kernel Driver. The manipulation results in improper access controls. The attack requires a local approach. The exploit has been released",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-12782",
+        "https://vuldb.com/submit/835612",
+        "https://vuldb.com/vuln/372523"
+      ],
+      "published": "2026-06-21T08:16:23.280"
+    },
+    {
+      "id": "CVE-2026-12784",
+      "description": "A weakness has been identified in IM-Magic Partition Resizer up to 7.9.0. This affects an unknown function in the library MDA_NTDRV.sys of the component Kernel Driver. This manipulation causes improper access controls. The attack requires local access. The exploit has been made available to the publ",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-12784",
+        "https://vuldb.com/submit/835613",
+        "https://vuldb.com/vuln/372524"
+      ],
+      "published": "2026-06-21T08:16:23.443"
+    },
+    {
+      "id": "CVE-2026-12786",
+      "description": "A vulnerability has been found in Ezbsystems UltraISO Premium Edition up to 9.76. Affected by this issue is some unknown functionality in the library bootpt64.sys of the component Kernel Driver. The manipulation leads to improper access controls. Local access is required to approach this attack. The",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-12786",
+        "https://vuldb.com/submit/835614",
+        "https://vuldb.com/vuln/372528"
+      ],
+      "published": "2026-06-21T09:16:25.130"
+    },
+    {
+      "id": "CVE-2026-12773",
+      "description": "A weakness has been identified in BerriAI litellm up to 1.59.8. Affected is the function UserAPIKeyAuth of the file litellm/proxy/_experimental/mcp_server/auth/user_api_key_auth_mcp.py of the component MCP Proxy. Executing a manipulation can lead to improper authentication. The attack may be launche",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/3cfaad10a69d7a15e4d4d458cb53309e",
+        "https://vuldb.com/cve/CVE-2026-12773",
+        "https://vuldb.com/submit/811282"
+      ],
+      "published": "2026-06-21T04:16:28.230"
+    },
+    {
+      "id": "CVE-2026-12775",
+      "description": "A vulnerability was detected in Montodel House-Rental-Management up to 90010017b81265eb1ef3810268909f7719a33863. Affected by this issue is some unknown functionality of the file /login.php. The manipulation of the argument Username results in sql injection. The attack can be executed remotely. The e",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/yihaofuweng/cve/issues/67",
+        "https://vuldb.com/cve/CVE-2026-12775",
+        "https://vuldb.com/submit/835036"
+      ],
+      "published": "2026-06-21T06:16:21.930"
+    },
+    {
+      "id": "CVE-2026-12795",
+      "description": "A vulnerability was determined in BerriAI litellm up to 1.82.2. This affects the function json.dumps of the file litellm/proxy/management_endpoints/ui_sso.py of the component SSO Debug Flow. Executing a manipulation can lead to missing authentication. The attack can be executed remotely. The exploit",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/9b13c75a3a73187a4082cc6df0b100d3",
+        "https://vuldb.com/cve/CVE-2026-12795",
+        "https://vuldb.com/submit/811286"
+      ],
+      "published": "2026-06-21T09:16:25.887"
+    },
+    {
+      "id": "CVE-2026-12772",
+      "description": "A security flaw has been discovered in BerriAI litellm up to 1.82.2. This impacts the function authenticate_user of the file litellm/proxy/auth/login_utils.py of the component PROXY_ADMIN database API Key Generator. Performing a manipulation results in session expiration. The attack may be initiated",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-613"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/39ed709ce322431658a05b951e91f278",
+        "https://vuldb.com/cve/CVE-2026-12772",
+        "https://vuldb.com/submit/811281"
+      ],
+      "published": "2026-06-21T03:16:22.960"
+    },
+    {
+      "id": "CVE-2026-12774",
+      "description": "A security vulnerability has been detected in BerriAI litellm up to 1.82.2. Affected by this vulnerability is the function _execute_with_mcp_client of the file litellm/proxy/_experimental/mcp_server/rest_endpoints.py of the component MCP Server Connection Testing. The manipulation leads to server-si",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/256c8ff0750e298f89b6b287c90c2981",
+        "https://vuldb.com/cve/CVE-2026-12774",
+        "https://vuldb.com/submit/811285"
+      ],
+      "published": "2026-06-21T04:16:31.717"
+    },
+    {
+      "id": "CVE-2026-12776",
+      "description": "A flaw has been found in Montodel House-Rental-Management up to 90010017b81265eb1ef3810268909f7719a33863. This affects an unknown part of the file /index.php?page=houses. This manipulation of the argument ID causes sql injection. The attack is possible to be carried out remotely. The exploit has bee",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/yihaofuweng/cve/issues/68",
+        "https://vuldb.com/cve/CVE-2026-12776",
+        "https://vuldb.com/submit/835037"
+      ],
+      "published": "2026-06-21T06:16:22.417"
+    },
+    {
+      "id": "CVE-2026-12787",
+      "description": "A vulnerability was found in zhilink \u667a\u4e92\u8054(\u6df1\u5733)\u79d1\u6280\u6709\u9650\u516c\u53f8 ADP Application Developer Platform \u5e94\u7528\u5f00\u53d1\u8005\u5e73\u53f0 1.0.0. This affects an unknown part of the component testConnection Endpoint. The manipulation of the argument jdbcUrl results in deserialization. The attack may be performed from remote. The exploit has be",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-20",
+        "CWE-502"
+      ],
+      "references": [
+        "https://ucn9h68n9289.feishu.cn/docx/I8uZdkZL3oSqBnxkwTAcfDvknUh?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-12787",
+        "https://vuldb.com/submit/835654"
+      ],
+      "published": "2026-06-21T09:16:25.320"
+    },
+    {
+      "id": "CVE-2026-12788",
+      "description": "A vulnerability was determined in zhilink \u667a\u4e92\u8054(\u6df1\u5733)\u79d1\u6280\u6709\u9650\u516c\u53f8 ADP Application Developer Platform \u5e94\u7528\u5f00\u53d1\u8005\u5e73\u53f0 1.0.0. This vulnerability affects unknown code of the file /adpweb/a/base/barcodeDetail/import of the component XML Parser. This manipulation causes xml external entity reference. It is possible to ini",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-610",
+        "CWE-611"
+      ],
+      "references": [
+        "https://ucn9h68n9289.feishu.cn/docx/LeLOdhV6mo3clzxstxXcpFzbnjg?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-12788",
+        "https://vuldb.com/submit/835655"
+      ],
+      "published": "2026-06-21T09:16:25.500"
+    },
+    {
+      "id": "CVE-2026-12796",
+      "description": "A vulnerability was identified in BerriAI litellm up to 1.82.2. This impacts the function get_redirect_response_from_openid of the file litellm/proxy/management_endpoints/ui_sso.py of the component SSO Authentication Flow. The manipulation leads to session expiration. The attack is possible to be ca",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-613"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/5fa8af12e1b183674d7ca96d852fb697",
+        "https://vuldb.com/cve/CVE-2026-12796",
+        "https://vuldb.com/submit/811287"
+      ],
+      "published": "2026-06-21T10:16:15.220"
+    },
+    {
+      "id": "CVE-2026-12770",
+      "description": "A vulnerability was determined in BerriAI litellm up to 1.63.1. The impacted element is an unknown function of the file litellm/proxy/management_endpoints/key_management_endpoints.py of the component Admin Key Handler. This manipulation causes improper authorization. The attack can be initiated remo",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/993c68152b2c770d53590f1684c755d4",
+        "https://github.com/BerriAI/litellm/",
+        "https://github.com/BerriAI/litellm/pull/23781"
+      ],
+      "published": "2026-06-21T01:16:22.847"
+    },
+    {
+      "id": "CVE-2026-12771",
+      "description": "A vulnerability was identified in BerriAI litellm up to 1.82.2. This affects an unknown function of the file litellm/proxy/auth/user_api_key_auth.py of the component M2M JWT Handler. Such manipulation leads to improper authorization. The attack can be launched remotely. A high complexity level is as",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/70e4e106527f74ddf17953ff0f6c248d",
+        "https://vuldb.com/cve/CVE-2026-12771",
+        "https://vuldb.com/submit/811280"
+      ],
+      "published": "2026-06-21T02:16:41.073"
+    },
+    {
+      "id": "CVE-2026-12789",
+      "description": "A vulnerability was identified in ILIAS Learning Management System 11.0. This issue affects the function ilTrQuery::executeQueries of the file components/ILIAS/Tracking/classes/class.ilTrQuery.php of the component Learning Progress Tracking. Such manipulation of the argument troup_table_nav leads to",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-12789",
+        "https://vuldb.com/submit/836104",
+        "https://vuldb.com/vuln/372531"
+      ],
+      "published": "2026-06-21T09:16:25.680"
+    },
+    {
+      "id": "CVE-2026-52911",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: scope conn->binding slowpath to bound sessions only\n\nWhen the binding SESSION_SETUP sets conn->binding = true, the flag stays\nset after the call so that the global session lookup in\nksmbd_session_lookup_all() can find the se",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/1e2bec062c5c9ec282636715166056d0998d746d",
+        "https://git.kernel.org/stable/c/1ff46c9915c1cbf454db58a8cb87f7cac818e6a6",
+        "https://git.kernel.org/stable/c/2cc8a4db633b10715450b291c1343859a4b2c509"
+      ],
+      "published": "2026-06-21T08:16:23.607"
+    }
+  ]
+}
