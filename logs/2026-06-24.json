@@ -1,0 +1,334 @@
+{
+  "timestamp": "2026-06-24T06:26:50.345614+00:00",
+  "scan_id": "c44e1eeb9f",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 6,
+      "MEDIUM": 8,
+      "LOW": 1,
+      "UNKNOWN": 5
+    },
+    "top_cwes": [
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-79",
+        2
+      ],
+      [
+        "CWE-269",
+        1
+      ],
+      [
+        "CWE-89",
+        1
+      ],
+      [
+        "CWE-116",
+        1
+      ]
+    ],
+    "threat_index": 232.4,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 232.4,
+        "yesterday": 335.3,
+        "change_pct": -30.7
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-8157",
+      "description": "The Vitepos  WordPress plugin before 3.4.2 does not properly restrict the roles that can be assigned when creating new users via one of its REST API endpoints, allowing authenticated users with a custom Vitepos  WordPress plugin before 3.4.2 role to escalate privileges to administrator.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/6680cc6a-9758-4040-bb39-7b9545041dc3/"
+      ],
+      "published": "2026-06-22T06:16:29.000"
+    },
+    {
+      "id": "CVE-2025-66336",
+      "description": "Apache Doris MCP Server contains a SQL injection vulnerability in a metadata query path. A user-controlled database name is directly interpolated into a SQL query, and the query is executed without passing the caller's authorization context. This may allow an authenticated attacker, or an anonymous ",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://lists.apache.org/thread/4l4v3m7ofwrgp4s4s98pjb5l03fcrzo2",
+        "http://www.openwall.com/lists/oss-security/2026/06/22/1"
+      ],
+      "published": "2026-06-22T08:16:36.390"
+    },
+    {
+      "id": "CVE-2026-44913",
+      "description": "Improper escaping of database table names in the CaptureChangeMySQL Processor included with Apache NiFi 1.2.0 through 2.9.0 allows for injecting SQL commands using crafted naming. Manual quoted boundaries added in Apache NiFi 1.8.0 narrowed the scope of potential injection options, but did not cover",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-116"
+      ],
+      "references": [
+        "https://lists.apache.org/thread/c8vkt5rz4dqql6sjxgrr3zdkbt1sfmsl",
+        "http://www.openwall.com/lists/oss-security/2026/06/20/5"
+      ],
+      "published": "2026-06-22T08:17:05.613"
+    },
+    {
+      "id": "CVE-2026-44914",
+      "description": "Apache NiFi 1.12.0 through 2.9.0 are missing authorization when replacing Process Groups that include extension components with specific Required Permissions based on the Restricted annotation. The Restricted annotation indicates additional privileges required, but framework authorization did not ch",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://lists.apache.org/thread/ydr34t03xd1n0t9oogpzogjrd5y93838",
+        "http://www.openwall.com/lists/oss-security/2026/06/20/6"
+      ],
+      "published": "2026-06-22T08:17:05.757"
+    },
+    {
+      "id": "CVE-2026-4259",
+      "description": "The ultimate-woocommerce-auction-pro WordPress plugin through 2.4.5 does not sanitise and escape a parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/a98d234b-11e8-4a07-8593-982d656a4fd3/"
+      ],
+      "published": "2026-06-22T06:16:21.153"
+    },
+    {
+      "id": "CVE-2026-6858",
+      "description": "The Transbank Webpay WordPress plugin before 1.14.0 does not sanitize and escape logs to be displayed, allowing unauthenticated users to perform Stored XSS attacks against logged in administrator",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/81035d75-81a5-486a-a9fb-b0d1e0befe3c/"
+      ],
+      "published": "2026-06-22T06:16:21.263"
+    },
+    {
+      "id": "CVE-2026-12815",
+      "description": "A vulnerability has been found in coollabsio coolify 4.0.0. Impacted is an unknown function of the component Image Name Handler. Such manipulation leads to os command injection. The attack may be performed from remote. The vendor was contacted early about this disclosure but did not respond in any w",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/dxz0069/softwareoverflow/blob/main/coolify_docker_image_reference_shell_injection_vulndb.md",
+        "https://vuldb.com/cve/CVE-2026-12815",
+        "https://vuldb.com/submit/837577"
+      ],
+      "published": "2026-06-22T00:16:41.783"
+    },
+    {
+      "id": "CVE-2026-12821",
+      "description": "A vulnerability was determined in FlowiseAI Flowise up to 3.1.2. The impacted element is an unknown function of the file packages/components/nodes/documentloaders/S3/S3.ts of the component S3 Document Loader. Executing a manipulation can lead to path traversal. It is possible to launch the attack re",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/dxz0069/softwareoverflow/blob/main/flowise_s3_loader_object_key_path_traversal_vulndb.md",
+        "https://vuldb.com/cve/CVE-2026-12821",
+        "https://vuldb.com/submit/837578"
+      ],
+      "published": "2026-06-22T00:16:41.950"
+    },
+    {
+      "id": "CVE-2026-44911",
+      "description": "Authorization handling for component configuration verification requests in Apache NiFi 1.15.0 through 2.9.0 allows clients with read access to submit proposed configuration properties. The proposed properties override current configuration, enabling users with read access to invoke predefined verif",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://lists.apache.org/thread/wrj3t4k2bwd2cztyp078f5kj3722qfzy",
+        "http://www.openwall.com/lists/oss-security/2026/06/20/4"
+      ],
+      "published": "2026-06-22T08:17:05.447"
+    },
+    {
+      "id": "CVE-2026-4110",
+      "description": "The ultimate-woocommerce-auction-pro WordPress plugin through 2.4.5 does not sanitise and escape a parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/bd44396a-7723-4876-a9c6-266442879bcb/"
+      ],
+      "published": "2026-06-22T06:16:16.790"
+    },
+    {
+      "id": "CVE-2025-62198",
+      "description": "An authenticated user can perform XSS.\n\nThis issue affects Apache Atlas versions 2.4.0 and earlier.\n\nUsers are recommended to upgrade to version 2.5.0, which fixes the issue.",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-80"
+      ],
+      "references": [
+        "https://lists.apache.org/thread/nv893lhz3ok08f25j3v4z1to5nrpdp7k",
+        "http://www.openwall.com/lists/oss-security/2026/06/20/1"
+      ],
+      "published": "2026-06-22T08:16:35.257"
+    },
+    {
+      "id": "CVE-2026-12822",
+      "description": "A vulnerability was identified in langflow-ai langflow up to 1.9.3. This affects an unknown function of the component Bundle URL Loader. The manipulation leads to code injection. The attack needs to be performed locally. The vendor was contacted early about this disclosure but did not respond in any",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/dxz0069/softwareoverflow/blob/main/langflow_bundle_url_custom_component_startup_rce_vulndb.md",
+        "https://vuldb.com/cve/CVE-2026-12822",
+        "https://vuldb.com/submit/837582"
+      ],
+      "published": "2026-06-22T00:16:42.103"
+    },
+    {
+      "id": "CVE-2026-10530",
+      "description": "The Pie Register  WordPress plugin before 3.8.4.10 does not use sufficiently random values when generating its account verification tokens, allowing unauthenticated attackers to predict a valid token and activate an account without access to the associated email inbox.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/bd3fe1d2-9f21-4b51-9112-2971a25a7e62/"
+      ],
+      "published": "2026-06-22T06:16:15.623"
+    },
+    {
+      "id": "CVE-2026-7859",
+      "description": "The Motors  WordPress plugin before 1.4.110 does not have proper authorisation and CSRF checks on one of its AJAX actions, allowing unauthenticated attackers to modify arbitrary post metadata, such as the gallery, featured image and, on WooCommerce sites, product prices.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/3c11e490-92d8-46e1-a0ae-7c4c703ac411/"
+      ],
+      "published": "2026-06-22T06:16:25.437"
+    },
+    {
+      "id": "CVE-2026-12823",
+      "description": "A security flaw has been discovered in Browserbase up to 20260526. This impacts an unknown function of the component Autobrowse Trace Artifact Handler. The manipulation results in incorrect default permissions. The attack requires a local approach. The exploit has been released to the public and may",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-276"
+      ],
+      "references": [
+        "https://github.com/NARKHEDE-VAIBHAV/poc/blob/main/CVE-2026-12823%20-%20Browserbase%20Skills%20Autobrowse%20Trace%20Artifact%20Insecure%20File%20Permissions/Advisory.md",
+        "https://github.com/NARKHEDE-VAIBHAV/poc/blob/main/CVE-2026-12823%20-%20Browserbase%20Skills%20Autobrowse%20Trace%20Artifact%20Insecure%20File%20Permissions/poc.sh",
+        "https://vuldb.com/cve/CVE-2026-12823"
+      ],
+      "published": "2026-06-22T00:16:42.260"
+    },
+    {
+      "id": "CVE-2026-11745",
+      "description": "A vulnerability has been identified in centraldogma-server-mirror-git versions prior to 0.84.0, where the Git mirror SSH client does not verify remote host keys for git+ssh:// connections, allowing an on-path attacker to perform man-in-the-middle attacks and compromise mirrored repositories.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-322"
+      ],
+      "references": [
+        "https://github.com/line/centraldogma/security/advisories/GHSA-vjfw-cpmh-xwv3",
+        "https://github.com/line/centraldogma/security/advisories/GHSA-vjfw-cpmh-xwv3"
+      ],
+      "published": "2026-06-22T03:16:42.670"
+    },
+    {
+      "id": "CVE-2026-11746",
+      "description": "A vulnerability has been identified in centraldogma-server versions prior to 0.84.0, where enabling ZooKeeper replication without setting replication.secret causes the server to silently fall back to a hard-coded, publicly known secret. This default credential authenticates the embedded ZooKeeper en",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-798"
+      ],
+      "references": [
+        "https://github.com/line/centraldogma/security/advisories/GHSA-2j95-gqxf-v3vg",
+        "https://github.com/line/centraldogma/security/advisories/GHSA-2j95-gqxf-v3vg"
+      ],
+      "published": "2026-06-22T03:16:42.833"
+    },
+    {
+      "id": "CVE-2026-11748",
+      "description": "A vulnerability has been identified in centraldogma-server-auth-shiro versions prior to 0.84.0, where the SearchFirstActiveDirectoryRealm substitutes the login username into an LDAP search filter without neutralizing LDAP filter metacharacters, allowing an unauthenticated attacker to manipulate the ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-90"
+      ],
+      "references": [
+        "https://github.com/line/centraldogma/security/advisories/GHSA-98q5-5qh2-7w75",
+        "https://github.com/line/centraldogma/security/advisories/GHSA-98q5-5qh2-7w75"
+      ],
+      "published": "2026-06-22T03:16:42.950"
+    },
+    {
+      "id": "CVE-2026-8918",
+      "description": "A permissive list of allowed inputs in ASUS Armoury Crate allows a local administrator to perform arbitrary memory read/write operations or cause a system crash (BSOD) by bypassing the validation mechanism.Refer to the '\nSecurity Update for Armoury Crate App\u00a0' section on the ASUS Security Advisory f",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-183"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory"
+      ],
+      "published": "2026-06-22T03:16:43.070"
+    },
+    {
+      "id": "CVE-2026-6645",
+      "description": "An insecure process execution vulnerability exists in the pc-printer-updater.exe component of the PaperCut Print Deploy Client for Windows. The application, which typically operates with high-level system privileges, attempts to perform an internal validation check by invoking a secondary system uti",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-427"
+      ],
+      "references": [
+        "https://www.papercut.com/kb/Main/papercut-ng-mf-security-bulletin-june-2026/"
+      ],
+      "published": "2026-06-22T04:17:13.310"
+    }
+  ]
+}
