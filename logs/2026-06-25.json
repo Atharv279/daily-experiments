@@ -1,0 +1,327 @@
+{
+  "timestamp": "2026-06-25T06:29:30.879436+00:00",
+  "scan_id": "20eec00eb2",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 3,
+      "HIGH": 9,
+      "MEDIUM": 6,
+      "LOW": 1,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-125",
+        3
+      ],
+      [
+        "CWE-94",
+        2
+      ],
+      [
+        "CWE-340",
+        2
+      ],
+      [
+        "CWE-338",
+        1
+      ],
+      [
+        "CWE-287",
+        1
+      ]
+    ],
+    "threat_index": 382.4,
+    "critical_count": 3
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 382.4,
+        "yesterday": 232.4,
+        "change_pct": 64.5
+      },
+      "critical_count": {
+        "today": 3,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-12866",
+      "description": "All versions of the package expr-eval are vulnerable to Code Execution via the toJSFunction() API. An attacker can execute arbitrary JavaScript by supplying crafted expressions that are compiled into native code using new Function(). Because user-controlled expressions are transformed directly into ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-94",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/silentmatt/expr-eval/blob/master/src/expression.js%23L55",
+        "https://github.com/silentmatt/expr-eval/issues/292",
+        "https://security.snyk.io/vuln/SNYK-JS-EXPREVAL-15054690"
+      ],
+      "published": "2026-06-23T05:17:03.380"
+    },
+    {
+      "id": "CVE-2026-9733",
+      "description": "Mojolicious::Plugin::Web::Auth::OAuth2 versions through 0.17 for Perl have an insecure default state parameter.\n\nWhen no state generator is specified in the constructor, the module defaults to using a SHA-1 hash of predictable and low-entropy sources, including the epoch time (which is leaked via th",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-338",
+        "CWE-340"
+      ],
+      "references": [
+        "https://datatracker.ietf.org/doc/html/rfc6749#section-10.12",
+        "https://metacpan.org/release/HAYAJO/Mojolicious-Plugin-Web-Auth-0.17/source/lib/Mojolicious/Plugin/Web/Auth/OAuth2.pm#L129-131",
+        "https://security.metacpan.org/patches/M/Mojolicious-Plugin-Web-Auth/0.17/CVE-2026-9733-r2.patch"
+      ],
+      "published": "2026-06-23T08:16:26.037"
+    },
+    {
+      "id": "CVE-2026-11374",
+      "description": "In ManageEngine ADSelfService Plus, RecoveryManager Plus, M365 Manager Plus, and ADAudit Plus, the SSO tickets generated to authenticate that session could be predicted\n by an unauthenticated user, leading to account takeover.",
+      "severity": "CRITICAL",
+      "score": 9.0,
+      "cwes": [
+        "CWE-287",
+        "CWE-330",
+        "CWE-340"
+      ],
+      "references": [
+        "https://www.manageengine.com/products/self-service-password/advisory/CVE-2026-11374.html"
+      ],
+      "published": "2026-06-23T09:16:28.477"
+    },
+    {
+      "id": "CVE-2026-8163",
+      "description": "The Infility Global WordPress plugin before 2.15.19 does not properly sanitize and escape some parameters before using them in SQL statements, leading to a SQL Injection vulnerability exploitable by authenticated users with Subscriber-level access and above.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/e471516a-6f43-4a89-8486-7a638845e197/"
+      ],
+      "published": "2026-06-23T07:16:20.910"
+    },
+    {
+      "id": "CVE-2025-71337",
+      "description": "Flowise before 3.0.10 (affected versions 3.0.7 and earlier) contains an unverified email change vulnerability. An authenticated user can change the account email address, used as a login identifier and password-recovery channel, via the account profile endpoint without confirming the change to the o",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-620"
+      ],
+      "references": [
+        "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-x39m-3393-3qp4",
+        "https://www.vulncheck.com/advisories/flowise-unverified-email-change-via-account-profile-endpoint",
+        "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-x39m-3393-3qp4"
+      ],
+      "published": "2026-06-23T13:16:38.233"
+    },
+    {
+      "id": "CVE-2025-71341",
+      "description": "picklescan before 0.0.29 fails to detect the profile.Profile.runctx function when analyzing pickle files, allowing attackers to embed undetected malicious code. Remote attackers can craft malicious pickle files using profile.Profile.runctx in the reduce method to achieve remote code execution when t",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-6vqj-c2q5-j97w",
+        "https://www.vulncheck.com/advisories/picklescan-remote-code-execution-via-undetected-profile-profile-runctx",
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-6vqj-c2q5-j97w"
+      ],
+      "published": "2026-06-23T13:16:38.370"
+    },
+    {
+      "id": "CVE-2026-8379",
+      "description": "The Frontend File Manager Plugin WordPress plugin through 23.6 does not properly enforce its nonce check on the file download handler, allowing unauthenticated attackers to download files uploaded by any user through the Frontend File Manager Plugin WordPress plugin through 23.6 by iterating identif",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/71619406-19bb-437f-9538-fdf73de98827/"
+      ],
+      "published": "2026-06-23T07:16:21.203"
+    },
+    {
+      "id": "CVE-2023-54365",
+      "description": "Traefik before 2.10.5 and 3.0.0-beta4 is affected by a denial-of-service vulnerability in HTTP/2 request handling inherited from the Go standard library's HTTP/2 implementation (CVE-2023-44487 / CVE-2023-39325, the 'Rapid Reset' technique). A remote attacker can rapidly create and cancel HTTP/2 stre",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://github.com/traefik/traefik/security/advisories/GHSA-7v4p-328v-8v5g",
+        "https://www.vulncheck.com/advisories/traefik-denial-of-service-via-http-2-request-handling"
+      ],
+      "published": "2026-06-23T13:16:30.420"
+    },
+    {
+      "id": "CVE-2026-10521",
+      "description": "An high privileged remote attacker can access a hidden configuration method, that should not be accessible by any user, to modify critical program parameters. This can result in a total loss of confidentiality, integrity and availability.",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-425"
+      ],
+      "references": [
+        "https://www.certvde.com/en/advisories/VDE-2026-068/"
+      ],
+      "published": "2026-06-23T08:16:23.837"
+    },
+    {
+      "id": "CVE-2026-10651",
+      "description": "A malformed Bluetooth Classic SDP attribute can trigger a reachable assertion in Zephyr's SDP parser. In subsys/bluetooth/host/classic/sdp.c, bt_sdp_parse_attribute() accepts an input buffer once it contains the 1-byte attribute type and 2-byte attribute id, but then unconditionally pulls an additio",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-20",
+        "CWE-617"
+      ],
+      "references": [
+        "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-p93g-3r68-cj53"
+      ],
+      "published": "2026-06-23T01:16:26.747"
+    },
+    {
+      "id": "CVE-2026-10658",
+      "description": "A missing length validation in the Zephyr Bluetooth Host ISO receive path can be triggered by malformed HCI ISO data. In bt_iso_recv() (subsys/bluetooth/host/iso.c), when processing PB=START/SINGLE fragments, the code pulls a TS SDU header (8 bytes, ts=1) or a non-TS SDU header (4 bytes, ts=0) witho",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-26g8-rmpf-j6cw"
+      ],
+      "published": "2026-06-23T01:16:26.867"
+    },
+    {
+      "id": "CVE-2026-8172",
+      "description": "The Simple Basic Contact Form WordPress plugin through 20250114 does not escape user-supplied input before reflecting it into the contact form output on validation errors, leading to a Reflected Cross-Site Scripting vulnerability that unauthenticated attackers can exploit against site visitors via a",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/535ec1a1-b822-43c9-8264-6442199493d3/"
+      ],
+      "published": "2026-06-23T07:16:21.007"
+    },
+    {
+      "id": "CVE-2026-7842",
+      "description": "The Infility Global Infility Global WordPress plugin before 2.15.20 for WordPress does not sanitize or validate the orderby and order parameters in the import_list(), url_detail(), and file_detail() admin page callbacks before using them in SQL queries, allowing authenticated attackers with Editor-l",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/210303c4-0964-4a01-ac8e-13d7c7f424a2/"
+      ],
+      "published": "2026-06-23T07:16:20.187"
+    },
+    {
+      "id": "CVE-2026-8378",
+      "description": "The Frontend File Manager Plugin WordPress plugin through 23.6 does not sanitise nor escape a filename submitted to the frontend file-rename endpoint before storing it as post meta and rendering it back on the admin File Manager listing, leading to a Stored Cross-Site Scripting vulnerability exploit",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/19f5dd94-b16c-4ad2-9586-d15ddecf9805/"
+      ],
+      "published": "2026-06-23T07:16:21.107"
+    },
+    {
+      "id": "CVE-2026-55655",
+      "description": "A flaw was found in OpenSSH. A local unprivileged attacker on a Linux client host can hijack client-side X11 forwarding connections. This is possible by pre-binding the preferred abstract X socket name when X11 forwarding is enabled and a local UNIX-domain X socket is used. A successful attack can c",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-923"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-55655",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2462250"
+      ],
+      "published": "2026-06-23T04:17:40.787"
+    },
+    {
+      "id": "CVE-2026-10645",
+      "description": "Zephyr's ext2 directory-entry parser does not fully validate on-disk directory entry structure before copying the entry name and advancing traversal state. In ext2_fetch_direntry() (subsys/fs/ext2/ext2_diskops.c), the code only checks de_name_len <= EXT2_MAX_FILE_NAME and then copies the name with m",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-hwrh-9h3x-vccm"
+      ],
+      "published": "2026-06-23T01:16:26.607"
+    },
+    {
+      "id": "CVE-2026-55653",
+      "description": "A flaw was found in OpenSSH. A malicious SSH server can exploit a double free vulnerability in the Diffie-Hellman Group Exchange (DH-GEX) client path. This occurs during FIPS (Federal Information Processing Standards) mode known-group validation when the client processes attacker-controlled DH-GEX g",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-415"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-55653",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2462351"
+      ],
+      "published": "2026-06-23T04:17:36.600"
+    },
+    {
+      "id": "CVE-2026-4983",
+      "description": "Open VSX Registry does not sanitize SVG files uploaded as extension icons prior to storage, and serves them with Content-Type: image/svg+xml without security headers such as Content-Security-Policy or Content-Disposition: attachment. This allows an attacker to publish an extension with a malicious S",
+      "severity": "MEDIUM",
+      "score": 4.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://gitlab.eclipse.org/security/cve-assignment/-/work_items/91"
+      ],
+      "published": "2026-06-23T12:16:26.537"
+    },
+    {
+      "id": "CVE-2026-55654",
+      "description": "A flaw was found in OpenSSH. This vulnerability, a heap out-of-bounds read, occurs during the cleanup of GSSAPI (Generic Security Service Application Programming Interface) indicators when a trailing NULL termination is missing in the auth-indicators array. A remote attacker, under specific configur",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-55654",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2462493"
+      ],
+      "published": "2026-06-23T04:17:40.587"
+    },
+    {
+      "id": "CVE-2026-11833",
+      "description": "Overview: \nA vulnerability has been found in FAST/TOOLS and CI Server. The web server may return a response containing the CI Server setting information. This information could \nbe exploited by an attacker for other attacks. \n\nThe affected products and versions are as follows:\n\nFAST/TOOLS (Packages:",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-319"
+      ],
+      "references": [
+        "https://web-material3.yokogawa.com/1/39777/files/YSAR-26-0004-E.pdf"
+      ],
+      "published": "2026-06-23T02:16:30.917"
+    }
+  ]
+}
