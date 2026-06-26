@@ -1,0 +1,341 @@
+{
+  "timestamp": "2026-06-26T06:31:51.665477+00:00",
+  "scan_id": "1cdad4fdc1",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 8,
+      "HIGH": 5,
+      "MEDIUM": 4,
+      "UNKNOWN": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-121",
+        5
+      ],
+      [
+        "CWE-78",
+        4
+      ],
+      [
+        "CWE-79",
+        4
+      ],
+      [
+        "CWE-1321",
+        1
+      ],
+      [
+        "CWE-353",
+        1
+      ]
+    ],
+    "threat_index": 471.9,
+    "critical_count": 8
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 471.9,
+        "yesterday": 382.4,
+        "change_pct": 23.4
+      },
+      "critical_count": {
+        "today": 8,
+        "yesterday": 3,
+        "change_pct": 166.7
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-12485",
+      "description": "GV-I/O Box 4E is a smart embedded device with 4 input and 4 relays output that can be controlled over Ethernet and RS-485.\n\nDVRSearch is a service running by default on the IOBox listening for UDP messages on port 10001. Any user on the network can send messages to this service and interact with it.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2377",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-06-24T05:17:25.973"
+    },
+    {
+      "id": "CVE-2026-12846",
+      "description": "GV-I/O Box 4E is a smart embedded device with 4 input and 4 relays output that can be controlled over Ethernet and RS-485.\n\nDVRSearch is a service running by default on the IOBox listening for UDP messages on port 10001. Any user on the network can send messages to this service and interact with it.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2377",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-06-24T05:17:26.463"
+    },
+    {
+      "id": "CVE-2026-12847",
+      "description": "GV-I/O Box 4E is a smart embedded device with 4 input and 4 relays output that can be controlled over Ethernet and RS-485.\n\nDVRSearch is a service running by default on the IOBox listening for UDP messages on port 10001. Any user on the network can send messages to this service and interact with it.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2377",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-06-24T05:17:26.587"
+    },
+    {
+      "id": "CVE-2026-12848",
+      "description": "GV-I/O Box 4E is a smart embedded device with 4 input and 4 relays output that can be controlled over Ethernet and RS-485.\n\nDVRSearch is a service running by default on the IOBox listening for UDP messages on port 10001. Any user on the network can send messages to this service and interact with it.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2377",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-06-24T05:17:26.710"
+    },
+    {
+      "id": "CVE-2026-12486",
+      "description": "Multiple OS command injection vulnerabilities exist in the libNetSetObj.so functionality of GeoVision GV-I/O Box 4E 2.09. A specially crafted network packet can lead to command execution. An attacker can send a network request to trigger this vulnerability.\n\n\n`libNetSetObj.so` is an internal library",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2379",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-06-24T05:17:26.220"
+    },
+    {
+      "id": "CVE-2026-12849",
+      "description": "Multiple OS command injection vulnerabilities exist in the libNetSetObj.so functionality of GeoVision GV-I/O Box 4E 2.09. A specially crafted network packet can lead to command execution. An attacker can send a network request to trigger this vulnerability.\n\n\n`libNetSetObj.so` is an internal library",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2379",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-06-24T05:17:26.890"
+    },
+    {
+      "id": "CVE-2026-12850",
+      "description": "Multiple OS command injection vulnerabilities exist in the libNetSetObj.so functionality of GeoVision GV-I/O Box 4E 2.09. A specially crafted network packet can lead to command execution. An attacker can send a network request to trigger this vulnerability.\n\n\n`libNetSetObj.so` is an internal library",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2379",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-06-24T05:17:27.020"
+    },
+    {
+      "id": "CVE-2026-12851",
+      "description": "Multiple OS command injection vulnerabilities exist in the libNetSetObj.so functionality of GeoVision GV-I/O Box 4E 2.09. A specially crafted network packet can lead to command execution. An attacker can send a network request to trigger this vulnerability.\n\n\n`libNetSetObj.so` is an internal library",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2379",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-06-24T05:17:27.157"
+    },
+    {
+      "id": "CVE-2026-54639",
+      "description": "Style Dictionary, a build system for creating cross-platform styles, has a prototype pollution vulnerability starting in version 4.3.0 and prior to version 5.4.4. Impact users have: direct usage of `convertTokenData(tokens, { output: 'object' });`; indirect usage, via using Expand API; and/or indire",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-1321"
+      ],
+      "references": [
+        "https://github.com/style-dictionary/style-dictionary/commit/209085d9782cfc0783c4d983f3f1bb2c515954ec",
+        "https://github.com/style-dictionary/style-dictionary/commit/23b5e8dda143441f0d6b8e2b4222e2da98058bc5",
+        "https://github.com/style-dictionary/style-dictionary/pull/1702"
+      ],
+      "published": "2026-06-24T01:16:25.363"
+    },
+    {
+      "id": "CVE-2026-7574",
+      "description": "Anthropic Claude Desktop Cowork VM image handling (confirmed across v1.1348.0 through v1.2278.0, including v1.1348.0, v1.1617.0, and v1.2278.0) validates only file presence and a version marker string before booting rootfs.img, but does not verify image content integrity at time-of-use. A local atta",
+      "severity": "HIGH",
+      "score": 8.7,
+      "cwes": [
+        "CWE-353"
+      ],
+      "references": [
+        "https://cfp.recon.cx/recon-2026/talk/DZUQYU/",
+        "https://takeonme.org/gcves/GCVE-1337-2026-00000000000000000000000000000000000000000000000001110111111101011111111110000000000000000000000000000000000000000000000000000001010"
+      ],
+      "published": "2026-06-24T00:16:34.173"
+    },
+    {
+      "id": "CVE-2026-3652",
+      "description": "The ARForms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `value` parameter of the `arf_save_incomplete_form_data` AJAX action in all versions up to, and including, 7.1.3 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticate",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://codecanyon.net/item/arforms-wordpress-form-builder-plugin/6023165",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/b6ca5856-9010-4bb3-a024-92b3b4d500b4?source=cve"
+      ],
+      "published": "2026-06-24T04:17:06.923"
+    },
+    {
+      "id": "CVE-2026-10091",
+      "description": "The Email JavaScript Cloak plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'email' shortcode in all versions up to, and including, 1.03 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated ",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/email-javascript-cloaker/trunk/email-js-cloak.php#L45",
+        "https://plugins.trac.wordpress.org/browser/email-javascript-cloaker/trunk/email-js-cloak.php#L68",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/16ded5aa-c8e8-4d98-b07f-e689ad0e03c7?source=cve"
+      ],
+      "published": "2026-06-24T07:16:25.330"
+    },
+    {
+      "id": "CVE-2026-10092",
+      "description": "The Cincopa video and media plug-in plugin for WordPress is vulnerable to Stored Cross-Site Scripting via cincopa Shortcode in Post Comments in all versions up to, and including, 1.163 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/video-playlist-and-gallery-plugin/tags/1.163/wp-media-cincopa.php#L166",
+        "https://plugins.trac.wordpress.org/browser/video-playlist-and-gallery-plugin/tags/1.163/wp-media-cincopa.php#L179",
+        "https://plugins.trac.wordpress.org/browser/video-playlist-and-gallery-plugin/tags/1.163/wp-media-cincopa.php#L330"
+      ],
+      "published": "2026-06-24T07:16:25.520"
+    },
+    {
+      "id": "CVE-2026-9539",
+      "description": "An out-of-bounds heap read and integer underflow in the TCP urgent data handling (sosendoob) in freedesktop.org libslirp version before v4.9.2 on hypervisor host environments (e.g., QEMU) allows a privileged guest VM attacker (root or CAP_NET_RAW) to leak gigabytes of sensitive host-process heap mem",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://gitlab.freedesktop.org/slirp/libslirp/-/commit/927bca7344e31fd58e2f7afaca784aad4400eb84",
+        "https://gitlab.freedesktop.org/slirp/libslirp/-/releases/v4.9.2",
+        "https://gitlab.freedesktop.org/slirp/libslirp/-/work_items/93"
+      ],
+      "published": "2026-06-24T05:17:31.100"
+    },
+    {
+      "id": "CVE-2026-11614",
+      "description": "The Xpro Addons \u2014 140+ Widgets for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'custom_attributes' parameter in all versions up to, and including, 1.7.2 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attack",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/xpro-elementor-addons/tags/1.7.3/inc/helper-functions.php#L1069",
+        "https://plugins.trac.wordpress.org/browser/xpro-elementor-addons/tags/1.7.3/widgets/image-scroller/layout/frontend.php#L8",
+        "https://plugins.trac.wordpress.org/browser/xpro-elementor-addons/trunk/inc/helper-functions.php#L778"
+      ],
+      "published": "2026-06-24T04:17:05.340"
+    },
+    {
+      "id": "CVE-2026-12488",
+      "description": "A memory corruption vulnerability exists in the GV-Cloud functionality of GeoVision GV-VMS V20 20.0.2.\u00a0\n\n\nA specially crafted network request can lead to a denial of service. An attacker can impersonate the legitimate server to trigger this vulnerability.",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2411",
+        "https://www.geovision.com.tw/cyber_security.php",
+        "https://www.talosintelligence.com/vulnerability_reports/TALOS-2026-2411"
+      ],
+      "published": "2026-06-24T05:17:26.350"
+    },
+    {
+      "id": "CVE-2026-10531",
+      "description": "The AI Share & Summarize WordPress plugin before 2.0.4 does not sanitise and escape some of its shortcode attributes before outputting them in a page, allowing users with the Contributor role and above to perform Stored Cross-Site Scripting attacks.",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/ebc956c2-42f4-495f-a37e-f83ed156af08/"
+      ],
+      "published": "2026-06-24T07:16:25.643"
+    },
+    {
+      "id": "CVE-2026-5818",
+      "description": "Incorrect check of function return value in Caliptra Core Runtime Firmware (ActivateFirmwareCmd::activate_fw modules) allows bypass of Caliptra Core's verification of the MCU FW during a hitless update.\n\nThis issue affects Core Runtime Firmware: from 2.0.0 through 2.0.1, 2.1.0.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-253"
+      ],
+      "references": [
+        "https://github.com/chipsalliance/caliptra-sw/security/advisories/GHSA-456r-gcjr-6rxq"
+      ],
+      "published": "2026-06-24T00:16:33.830"
+    },
+    {
+      "id": "CVE-2026-6458",
+      "description": "Missing cryptographic step in Caliptra Core Firmware (aes_256_gcm_update module) results in an incorrect GCM authentication tag. When the streaming AES-256-GCM API is used with empty AAD, the hardware GHASH accumulator state is not saved after the first update call, causing the final tag to exclude ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-325"
+      ],
+      "references": [
+        "https://github.com/chipsalliance/caliptra-sw/security/advisories/GHSA-834g-h5x6-2hqr"
+      ],
+      "published": "2026-06-24T00:16:34.037"
+    },
+    {
+      "id": "CVE-2026-12681",
+      "description": "Improper Validation of Specified Index, Position, or Offset in Input vulnerability in Google go-attestation. parseEfiSignatureList() does not advance the buffer past vendor bytes before reading entries. For hashSHA256SigGUID lists, this allows attacker-controlled vendor header bytes to be appended t",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-1285"
+      ],
+      "references": [
+        "https://github.com/google/go-attestation/commit/b6e905e7ae52937f02b5ca494dd1c6a3ac7a1003",
+        "https://github.com/google/go-attestation/releases/tag/v0.6.1",
+        "https://github.com/google/go-attestation/security/advisories/GHSA-9r4w-jg96-92mv"
+      ],
+      "published": "2026-06-24T02:16:28.060"
+    }
+  ]
+}
