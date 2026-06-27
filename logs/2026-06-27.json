@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-27T15:42:18.571262+00:00",
-  "scan_id": "e89502b6cf",
+  "timestamp": "2026-06-27T21:35:17.116118+00:00",
+  "scan_id": "2af0067be6",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -18,15 +18,15 @@
         5
       ],
       [
+        "CWE-22",
+        3
+      ],
+      [
         "CWE-79",
         2
       ],
       [
         "CWE-416",
-        2
-      ],
-      [
-        "CWE-22",
         2
       ]
     ],
@@ -270,7 +270,8 @@
       "score": 6.5,
       "cwes": [
         "CWE-22",
-        "CWE-200"
+        "CWE-200",
+        "CWE-22"
       ],
       "references": [
         "https://extensions.rapid7.com/extension/sed"
