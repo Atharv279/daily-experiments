@@ -1,0 +1,326 @@
+{
+  "timestamp": "2026-06-28T06:39:34.592176+00:00",
+  "scan_id": "7526a537bc",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 6,
+      "MEDIUM": 9,
+      "LOW": 3,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-284",
+        3
+      ],
+      [
+        "CWE-836",
+        1
+      ],
+      [
+        "CWE-321",
+        1
+      ],
+      [
+        "CWE-327",
+        1
+      ],
+      [
+        "CWE-359",
+        1
+      ]
+    ],
+    "threat_index": 292.8,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 292.8,
+        "yesterday": 453.9,
+        "change_pct": -35.5
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 1,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-48930",
+      "description": "A flaw in Node.js TLS hostname handling can cause Embedded-nul hostnames can lead to silent authority rebinding due to c-string truncation in resolver bindings.\r\n\r\nThis vulnerability affects all supported release lines: **Node.js 22**, **Node.js 24**, and **Node.js 26**.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published": "2026-06-26T02:16:52.723"
+    },
+    {
+      "id": "CVE-2026-9222",
+      "description": "Setracker2 Android Companion App com.tgelec.setracker versions 3.1.5 and prior only require the password hash when authenticating with backend services from the client. This could allow an attacker, who knows the hash, to authenticate and gain full access.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-836"
+      ],
+      "references": [
+        "https://raw.githubusercontent.com/cisagov/CSAF/refs/heads/develop/csaf_files/VA/white/2026/va-26-176-01.json"
+      ],
+      "published": "2026-06-26T00:16:55.647"
+    },
+    {
+      "id": "CVE-2026-9220",
+      "description": "Setracker2 Android Companion App com.tgelec.setracker versions 3.1.5 and prior encrypts requests between the watch and its backend with static hardcoded AES keys and initialization vectors. This allows an attacker to decrypt Setracker2 watch traffic.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-321"
+      ],
+      "references": [
+        "https://raw.githubusercontent.com/cisagov/CSAF/refs/heads/develop/csaf_files/VA/white/2026/va-26-176-01.json"
+      ],
+      "published": "2026-06-26T00:16:55.367"
+    },
+    {
+      "id": "CVE-2026-9221",
+      "description": "The Setracker2 Android Companion App (com.tgelec.setracker) versions 3.1.5 and earlier uses MD5 to generate a request signature for authenticating communications between the mobile client and the backend REST API. Attackers could potentially reverse the signature to recover the session ID. With the ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-327"
+      ],
+      "references": [
+        "https://raw.githubusercontent.com/cisagov/CSAF/refs/heads/develop/csaf_files/VA/white/2026/va-26-176-01.json"
+      ],
+      "published": "2026-06-26T00:16:55.500"
+    },
+    {
+      "id": "CVE-2026-48615",
+      "description": "A flaw in Node.js proxy tunnel error handling could expose proxy credentials in `ERR_PROXY_TUNNEL` error messages.\r\n\r\nWhen proxy credentials are embedded in the proxy URL, they may be exposed through error handling paths and captured by logs, diagnostics, or other error consumers.\r\n\r\nThis vulnerabil",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-359"
+      ],
+      "references": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published": "2026-06-26T02:16:52.273"
+    },
+    {
+      "id": "CVE-2026-48619",
+      "description": "A flaw in Node.js HTTP/2 client allows a server to send an unlimited number of ORIGIN frames, which could lead to an Out of Memory error on the client.\r\n\r\nThis vulnerability affects all supported release lines: **Node.js 22**, **Node.js 24**, and **Node.js 26**.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published": "2026-06-26T02:16:52.507"
+    },
+    {
+      "id": "CVE-2026-48933",
+      "description": "A flaw in Node.js WebCrypto implementation can crash the process if the input of `subtle.encrypt()` is a multiple of 2GiB.\r\n\r\nThis vulnerability affects all supported release lines: **Node.js 22**, **Node.js 24**, and **Node.js 26**.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published": "2026-06-26T02:16:52.833"
+    },
+    {
+      "id": "CVE-2026-13083",
+      "description": "A flaw was found in the Pen Drive report generator. Cluster-sourced data is rendered into HTML reports without proper escaping or sanitization. An attacker with cluster administrator privileges can inject a stored cross-site scripting (XSS) payload into cluster objects (such as ClusterVersion spec.c",
+      "severity": "MEDIUM",
+      "score": 6.9,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-13083",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2491886"
+      ],
+      "published": "2026-06-26T00:16:50.883"
+    },
+    {
+      "id": "CVE-2026-12993",
+      "description": "A flaw was found in Apicurio Registry. The DocumentBuilderAccessor correctly blocks external DTD and schema access but does not disable DOCTYPE declarations or enable FEATURE_SECURE_PROCESSING. An attacker with artifact-write permission can upload XML documents with internal entity-expansion payload",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-776"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-12993",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2491692"
+      ],
+      "published": "2026-06-26T00:16:50.760"
+    },
+    {
+      "id": "CVE-2026-9219",
+      "description": "Setracker2 Android Companion App com.tgelec.setracker versions 3.1.5 and prior have a predictable registration ID derived from IMEI. The enrollment system lacks additional authentication before assignment. If an attacker is able to obtain the registration ID, they would be able to arbitrarily enroll",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-340"
+      ],
+      "references": [
+        "https://raw.githubusercontent.com/cisagov/CSAF/refs/heads/develop/csaf_files/VA/white/2026/va-26-176-01.json"
+      ],
+      "published": "2026-06-26T00:16:55.213"
+    },
+    {
+      "id": "CVE-2026-13226",
+      "description": "The Groundhogg \u2014 CRM, Newsletters, and Marketing Automation plugin for WordPress is vulnerable to generic SQL Injection via the 'after' parameter in all versions up to, and including, 4.5.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/groundhogg/tags/4.5.4/admin/contacts/contacts-page.php#L766",
+        "https://plugins.trac.wordpress.org/browser/groundhogg/tags/4.5.4/admin/contacts/tables/contacts-table.php#L101",
+        "https://plugins.trac.wordpress.org/browser/groundhogg/tags/4.5.4/includes/contact-query.php#L2586"
+      ],
+      "published": "2026-06-26T02:16:51.877"
+    },
+    {
+      "id": "CVE-2026-48618",
+      "description": "A flaw in Node.js TLS hostname handling can cause Node.js unicode dot separator handling can lead to tls wildcard-depth authentication bypass due to resolver and verifier hostname normalization mismat.\r\n\r\nThis can lead to confidentiality impact or bypass of the intended security boundary under affec",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-176"
+      ],
+      "references": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published": "2026-06-26T02:16:52.397"
+    },
+    {
+      "id": "CVE-2026-13318",
+      "description": "A server-side request forgery (SSRF) flaw was found in KubeVirt's virt-api port-forward handler. When processing a port-forward request to a VirtualMachineInstance (VMI), virt-api reads the target IP from vmi.Status.Interfaces[0].IP and passes it directly to net.Dial() without validation. For VMIs u",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-13318",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2492659"
+      ],
+      "published": "2026-06-26T00:16:51.277"
+    },
+    {
+      "id": "CVE-2026-48928",
+      "description": "A inconsistency in Node.js hostname matching can cause a trust-policy bypass in multi-context mTLS setups.\r\n\r\nThis vulnerability affects all supported release lines: **Node.js 22**, **Node.js 24**, and **Node.js 26**.",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published": "2026-06-26T02:16:52.610"
+    },
+    {
+      "id": "CVE-2026-48934",
+      "description": "A flaw in Node.js TLS host verification can cause an attacker to bypass certification validation.\r\n\r\nThis vulnerability affects all supported release lines: **Node.js 22**, **Node.js 24**, and **Node.js 26**.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [],
+      "references": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published": "2026-06-26T02:16:52.950"
+    },
+    {
+      "id": "CVE-2026-13218",
+      "description": "A flaw was found in KubeVirt's virt-handler network cache handling. The WriteToCachedFile function writes data to a launcher-rooted path using os.WriteFile and os.Chown without symlink protection. A user with access to the virt-launcher container can plant a symlink at the cache file path, causing v",
+      "severity": "MEDIUM",
+      "score": 4.2,
+      "cwes": [
+        "CWE-61"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-13218",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2492654"
+      ],
+      "published": "2026-06-26T00:16:51.147"
+    },
+    {
+      "id": "CVE-2026-13322",
+      "description": "A flaw was found in KubeVirt's downward metrics virtio-serial server. The server reads guest requests using textproto.Reader.ReadLine(), which buffers input indefinitely until a newline character is received, with no length limit or read deadline. A user with access to a VM guest that has the downwa",
+      "severity": "LOW",
+      "score": 3.8,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-13322",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2492681"
+      ],
+      "published": "2026-06-26T00:16:51.397"
+    },
+    {
+      "id": "CVE-2026-48935",
+      "description": "A flaw in Node.js Permission API can cause a file metadata to be modified even on a path that was set as read-only with e.g. `--allow-fs-read`.\r\n\r\nThis vulnerability affects all supported release lines: **Node.js 22**, **Node.js 24**, and **Node.js 26**.",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-276"
+      ],
+      "references": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published": "2026-06-26T02:16:53.050"
+    },
+    {
+      "id": "CVE-2026-48936",
+      "description": "A flaw in Node.js Permission API can cause a local server to be started (via a Unix domain socket), even without the `--allow-net` permission.\r\n\r\nThis vulnerability affects one supported release line: **Node.js 26**.",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published": "2026-06-26T02:16:53.157"
+    },
+    {
+      "id": "CVE-2026-43920",
+      "description": "FOSSBilling is a free, open-source billing and client management system. In versions 0.5.4 through 0.7.2, the /run-patcher maintenance endpoint in FOSSBilling was accessible without authentication, which allowed unauthenticated remote users to trigger update patch routines that modify configuration ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/FOSSBilling/FOSSBilling/releases/tag/0.8.0",
+        "https://github.com/FOSSBilling/FOSSBilling/security/advisories/GHSA-prx6-m547-rfmg"
+      ],
+      "published": "2026-06-26T00:16:52.817"
+    }
+  ]
+}
