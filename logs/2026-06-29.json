@@ -1,0 +1,347 @@
+{
+  "timestamp": "2026-06-29T07:10:19.427113+00:00",
+  "scan_id": "ffbdf7030f",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 1,
+      "MEDIUM": 16,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        6
+      ],
+      [
+        "CWE-862",
+        5
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-269",
+        1
+      ],
+      [
+        "CWE-1104",
+        1
+      ]
+    ],
+    "threat_index": 231.7,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 231.7,
+        "yesterday": 292.8,
+        "change_pct": -20.9
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 1,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-12415",
+      "description": "The Invoice Generator plugin for WordPress is vulnerable to privilege escalation due to a missing capability check on the pravel_invoice_edit_account() AJAX action in versions up to, and including, 1.0.0. The handler is exposed via wp_ajax_nopriv_pravel_invoice_edit_account, accepts an attacker-cont",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/invoice-creator/trunk/lib/user-manage-function.php#L184",
+        "https://plugins.trac.wordpress.org/browser/invoice-creator/trunk/lib/user-manage-function.php#L193",
+        "https://plugins.trac.wordpress.org/browser/invoice-creator/trunk/lib/user-manage-function.php#L203"
+      ],
+      "published": "2026-06-27T05:16:41.620"
+    },
+    {
+      "id": "CVE-2023-37524",
+      "description": "HCL Traveler for Microsoft Outlook (HTMO) is susceptible to vulnerabilities due to .NET Framework 4.5 being out of service. \u00a0Since .NET Framework 4.5 has reached end-of-life and no longer receives security updates, it may expose the application to publicly known security weaknesses through vulnerabl",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-1104"
+      ],
+      "references": [
+        "https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0131418"
+      ],
+      "published": "2026-06-27T02:16:27.603"
+    },
+    {
+      "id": "CVE-2026-13331",
+      "description": "The Groundhogg \u2014 CRM, Newsletters, and Marketing Automation plugin for WordPress is vulnerable to generic SQL Injection via the 'search' parameter in all versions up to, and including, 4.5.5 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existin",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/groundhogg/tags/4.5.5/api/v4/base-object-api.php#L488",
+        "https://plugins.trac.wordpress.org/browser/groundhogg/tags/4.5.5/db/db.php#L330",
+        "https://plugins.trac.wordpress.org/browser/groundhogg/tags/4.5.5/db/db.php#L395"
+      ],
+      "published": "2026-06-27T02:16:28.870"
+    },
+    {
+      "id": "CVE-2026-13333",
+      "description": "The Groundhogg \u2014 CRM, Newsletters, and Marketing Automation plugin for WordPress is vulnerable to generic SQL Injection via 'query[select]' Parameter in all versions up to, and including, 4.5.5 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the exis",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/groundhogg/tags/4.5.5/api/v3/contacts-api.php#L287",
+        "https://plugins.trac.wordpress.org/browser/groundhogg/tags/4.5.5/includes/contact-query.php#L2585",
+        "https://plugins.trac.wordpress.org/browser/groundhogg/tags/4.5.5/includes/legacy-contact-query.php#L708"
+      ],
+      "published": "2026-06-27T02:16:28.990"
+    },
+    {
+      "id": "CVE-2026-13335",
+      "description": "The CodePeople Post Map for Google Maps plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'cpm_point' Post Meta in all versions up to, and including, 1.2.6 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contrib",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/codepeople-post-map/tags/1.2.6/include/functions.php#L132",
+        "https://plugins.trac.wordpress.org/browser/codepeople-post-map/tags/1.2.6/include/functions.php#L163",
+        "https://plugins.trac.wordpress.org/browser/codepeople-post-map/tags/1.2.6/include/functions.php#L710"
+      ],
+      "published": "2026-06-27T02:16:29.110"
+    },
+    {
+      "id": "CVE-2026-11597",
+      "description": "The Surbma | Infusionsoft Shortcode plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'infusionsoft-form' shortcode in versions up to, and including, 2.0.1. This is due to insufficient input sanitization and output escaping on user-supplied 'account' and 'id' shortcode attrib",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/surbma-infusionsoft-shortcode/tags/2.0/surbma-infusionsoft-shortcode.php#L31",
+        "https://plugins.trac.wordpress.org/browser/surbma-infusionsoft-shortcode/tags/2.0/surbma-infusionsoft-shortcode.php#L35",
+        "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=3581906%40surbma-infusionsoft-shortcode&new=3581906%40surbma-infusionsoft-shortcode&sfp_email=&sfph_mail="
+      ],
+      "published": "2026-06-27T08:16:43.910"
+    },
+    {
+      "id": "CVE-2026-11783",
+      "description": "The Dokan: AI Powered WooCommerce Multivendor Marketplace Solution \u2013 Build Your Own Amazon, eBay, Etsy plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Product SKU in all versions up to, and including, 5.0.4 due to insufficient input sanitization and output escaping. This makes ",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/dokan-lite/tags/4.3.3/includes/Product/Hooks.php#L117",
+        "https://plugins.trac.wordpress.org/browser/dokan-lite/tags/4.3.3/includes/Product/Hooks.php#L137",
+        "https://plugins.trac.wordpress.org/browser/dokan-lite/tags/4.3.3/includes/Product/Hooks.php#L161"
+      ],
+      "published": "2026-06-27T08:16:44.197"
+    },
+    {
+      "id": "CVE-2026-13245",
+      "description": "The MaxButtons \u2013 Create buttons plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'view' parameter in all versions up to, and including, 9.8.5 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitra",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/maxbuttons/tags/9.8.5/classes/controllers/listController.php#L38",
+        "https://plugins.trac.wordpress.org/browser/maxbuttons/tags/9.8.5/includes/maxbuttons-list.php#L62",
+        "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=3586921%40maxbuttons&new=3586921%40maxbuttons&sfp_email=&sfph_mail="
+      ],
+      "published": "2026-06-27T06:16:31.773"
+    },
+    {
+      "id": "CVE-2025-59868",
+      "description": "HCL Traveler for Microsoft Outlook (HTMO) is susceptible to a sensitive data exposure vulnerability which could allow an attacker to exploit application information to then attempt additional attacks and cause unknown behavior in the application.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-532"
+      ],
+      "references": [
+        "https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0131419"
+      ],
+      "published": "2026-06-27T02:16:28.593"
+    },
+    {
+      "id": "CVE-2026-12404",
+      "description": "The NEX-Forms \u2013 Ultimate Forms Plugin for WordPress plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 9.2.2. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated atta",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/nex-forms-express-wp-form-builder/tags/9.1.12/main.php#L3648",
+        "https://plugins.trac.wordpress.org/browser/nex-forms-express-wp-form-builder/tags/9.1.12/main.php#L3654",
+        "https://plugins.trac.wordpress.org/browser/nex-forms-express-wp-form-builder/tags/9.1.12/main.php#L3792"
+      ],
+      "published": "2026-06-27T06:16:31.617"
+    },
+    {
+      "id": "CVE-2026-12432",
+      "description": "The WP Full Stripe Free plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 8.4.3 via the wpfs_update_failed_payment_status AJAX action. The handler is registered through both wp_ajax_ and wp_ajax_nopriv_ hooks and the underlying update_failed_payment_status",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-full-stripe-free/tags/8.4.1/includes/wpfs-customer.php#L3840",
+        "https://plugins.trac.wordpress.org/browser/wp-full-stripe-free/tags/8.4.1/includes/wpfs-customer.php#L3865",
+        "https://plugins.trac.wordpress.org/browser/wp-full-stripe-free/tags/8.4.1/includes/wpfs-customer.php#L706"
+      ],
+      "published": "2026-06-27T08:16:44.563"
+    },
+    {
+      "id": "CVE-2026-11356",
+      "description": "The Ivory Search \u2013 WordPress Search Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'menu_title' and 'menu_magnifier_color' Settings in all versions up to, and including, 5.5.15 due to insufficient input sanitization and output escaping. This makes it possible for authen",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/add-search-to-menu/tags/5.5.14/admin/class-is-settings-fields.php#L249",
+        "https://plugins.trac.wordpress.org/browser/add-search-to-menu/tags/5.5.14/public/class-is-public.php#L1199",
+        "https://plugins.trac.wordpress.org/browser/add-search-to-menu/tags/5.5.14/public/class-is-public.php#L222"
+      ],
+      "published": "2026-06-27T02:16:28.713"
+    },
+    {
+      "id": "CVE-2026-12399",
+      "description": "The Gutenverse \u2013 WordPress Blocks, Page Builder & Site Editor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 3.8.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attacker",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/gutenverse/tags/3.6.3/lib/framework/helper.php#L1440",
+        "https://plugins.trac.wordpress.org/browser/gutenverse/tags/3.6.3/lib/framework/helper.php#L1775",
+        "https://plugins.trac.wordpress.org/browser/gutenverse/tags/3.6.3/lib/framework/includes/class-api.php#L1956"
+      ],
+      "published": "2026-06-27T08:16:44.443"
+    },
+    {
+      "id": "CVE-2026-13422",
+      "description": "The HD Quiz plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions 2.2.0 to 2.2.1. This is due to missing or incorrect nonce validation on the hdq_validate_nonce function. This makes it possible for unauthenticated attackers to delete or modify quizzes and questions, create new",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/hd-quiz/tags/2.2.0/includes/actions-ajax.php#L155",
+        "https://plugins.trac.wordpress.org/browser/hd-quiz/tags/2.2.0/includes/actions-ajax.php#L179",
+        "https://plugins.trac.wordpress.org/browser/hd-quiz/tags/2.2.0/includes/actions-ajax.php#L53"
+      ],
+      "published": "2026-06-27T02:16:29.237"
+    },
+    {
+      "id": "CVE-2026-11364",
+      "description": "The Product Specifications for WooCommerce plugin for WordPress is vulnerable to unauthorized modification, creation, and deletion of data in versions up to and including 0.8.9. This is due to a missing capability check and missing nonce verification in the __invoke() methods of the AttributeGroupCo",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/product-specifications/tags/0.8.7/src/EntityUpdater/AttributeController.php#L18",
+        "https://plugins.trac.wordpress.org/browser/product-specifications/tags/0.8.7/src/EntityUpdater/AttributeGroupController.php#L13",
+        "https://plugins.trac.wordpress.org/browser/product-specifications/tags/0.8.7/src/EntityUpdater/Module.php#L19"
+      ],
+      "published": "2026-06-27T08:16:43.773"
+    },
+    {
+      "id": "CVE-2026-11773",
+      "description": "The Masteriyo LMS \u2013 LMS Course Builder, Quizzes & Certificates plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.2.1. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for authentic",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/learning-management-system/tags/2.1.8/addons/course-announcement/Controllers/CourseAnnouncementController.php#L619",
+        "https://plugins.trac.wordpress.org/browser/learning-management-system/tags/2.1.8/addons/course-announcement/Controllers/CourseAnnouncementController.php#L782",
+        "https://plugins.trac.wordpress.org/browser/learning-management-system/tags/2.2.1/addons/course-announcement/Controllers/CourseAnnouncementController.php#L619"
+      ],
+      "published": "2026-06-27T08:16:44.050"
+    },
+    {
+      "id": "CVE-2026-11987",
+      "description": "The Dokan: AI Powered WooCommerce Multivendor Marketplace Solution \u2013 Build Your Own Amazon, eBay, Etsy plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 5.0.4 via the 'id' parameter due to missing validation on a user controlled key. This ma",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/dokan-lite/tags/4.3.3/includes/Abstracts/DokanRESTController.php#L299",
+        "https://plugins.trac.wordpress.org/browser/dokan-lite/tags/4.3.3/includes/Abstracts/DokanRESTController.php#L39",
+        "https://plugins.trac.wordpress.org/browser/dokan-lite/tags/4.3.3/includes/Abstracts/DokanRESTController.php#L66"
+      ],
+      "published": "2026-06-27T08:16:44.327"
+    },
+    {
+      "id": "CVE-2026-12471",
+      "description": "The Spexo theme for WordPress is vulnerable to unauthorized access due to a missing capability check on the activate_plugin function in all versions up to, and including, 2.0.11. This makes it possible for authenticated attackers, with Subscriber-level access and above, to activate a limited set of ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://themes.trac.wordpress.org/browser/spexo/2.0.11/inc/activation/class-welcome-notice.php#L304",
+        "https://themes.trac.wordpress.org/browser/spexo/2.0.6/inc/activation/class-welcome-notice.php",
+        "https://themes.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=334799%40spexo&new=334799%40spexo&sfp_email=&sfph_mail="
+      ],
+      "published": "2026-06-27T08:16:44.680"
+    },
+    {
+      "id": "CVE-2026-10820",
+      "description": "The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content  WordPress plugin before 4.16.17 does not verify that the user performing a subscription action owns the targeted subscription, allowing any authenticated user (Subscriber+) to cancel other use",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/cb7ad514-e0d5-4ff3-803a-918cdc194f39/"
+      ],
+      "published": "2026-06-27T06:16:30.597"
+    },
+    {
+      "id": "CVE-2026-9677",
+      "description": "The Shariff for WordPress Shariff for WordPress plugin through 1.0.11 does not sanitize or escape the shariff_infourl setting before outputting it in the frontend HTML via the generateshariff() function, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting atta",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/c40298d0-42c2-406c-817a-9bbf246bbeea/"
+      ],
+      "published": "2026-06-27T06:16:34.783"
+    }
+  ]
+}
