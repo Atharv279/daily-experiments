@@ -1,13 +1,12 @@
 {
-  "timestamp": "2026-06-29T12:43:13.912969+00:00",
-  "scan_id": "8d8e2f0da0",
+  "timestamp": "2026-06-29T17:14:26.833086+00:00",
+  "scan_id": "934503abf0",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
       "CRITICAL": 1,
-      "HIGH": 1,
-      "MEDIUM": 16,
-      "UNKNOWN": 2
+      "HIGH": 2,
+      "MEDIUM": 17
     },
     "top_cwes": [
       [
@@ -31,7 +30,7 @@
         1
       ]
     ],
-    "threat_index": 231.7,
+    "threat_index": 265.6,
     "critical_count": 1
   },
   "delta": {
@@ -43,9 +42,9 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 231.7,
+        "today": 265.6,
         "yesterday": 292.8,
-        "change_pct": -20.9
+        "change_pct": -9.3
       },
       "critical_count": {
         "today": 1,
@@ -69,6 +68,17 @@
         "https://plugins.trac.wordpress.org/browser/invoice-creator/trunk/lib/user-manage-function.php#L203"
       ],
       "published": "2026-06-27T05:16:41.620"
+    },
+    {
+      "id": "CVE-2026-10820",
+      "description": "The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content  WordPress plugin before 4.16.17 does not verify that the user performing a subscription action owns the targeted subscription, allowing any authenticated user (Subscriber+) to cancel other use",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/cb7ad514-e0d5-4ff3-803a-918cdc194f39/"
+      ],
+      "published": "2026-06-27T06:16:30.597"
     },
     {
       "id": "CVE-2023-37524",
@@ -217,6 +227,17 @@
       "published": "2026-06-27T08:16:44.563"
     },
     {
+      "id": "CVE-2026-9677",
+      "description": "The Shariff for WordPress Shariff for WordPress plugin through 1.0.11 does not sanitize or escape the shariff_infourl setting before outputting it in the frontend HTML via the generateshariff() function, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting atta",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/c40298d0-42c2-406c-817a-9bbf246bbeea/"
+      ],
+      "published": "2026-06-27T06:16:34.783"
+    },
+    {
       "id": "CVE-2026-11356",
       "description": "The Ivory Search \u2013 WordPress Search Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'menu_title' and 'menu_magnifier_color' Settings in all versions up to, and including, 5.5.15 due to insufficient input sanitization and output escaping. This makes it possible for authen",
       "severity": "MEDIUM",
@@ -320,28 +341,6 @@
         "https://themes.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=334799%40spexo&new=334799%40spexo&sfp_email=&sfph_mail="
       ],
       "published": "2026-06-27T08:16:44.680"
-    },
-    {
-      "id": "CVE-2026-10820",
-      "description": "The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content  WordPress plugin before 4.16.17 does not verify that the user performing a subscription action owns the targeted subscription, allowing any authenticated user (Subscriber+) to cancel other use",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/cb7ad514-e0d5-4ff3-803a-918cdc194f39/"
-      ],
-      "published": "2026-06-27T06:16:30.597"
-    },
-    {
-      "id": "CVE-2026-9677",
-      "description": "The Shariff for WordPress Shariff for WordPress plugin through 1.0.11 does not sanitize or escape the shariff_infourl setting before outputting it in the frontend HTML via the generateshariff() function, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting atta",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/c40298d0-42c2-406c-817a-9bbf246bbeea/"
-      ],
-      "published": "2026-06-27T06:16:34.783"
     }
   ]
 }
