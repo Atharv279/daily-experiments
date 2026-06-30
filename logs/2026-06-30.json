@@ -1,0 +1,356 @@
+{
+  "timestamp": "2026-06-30T06:35:10.839857+00:00",
+  "scan_id": "57917184f4",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 9,
+      "MEDIUM": 7,
+      "LOW": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-787",
+        4
+      ],
+      [
+        "CWE-269",
+        2
+      ],
+      [
+        "CWE-863",
+        2
+      ],
+      [
+        "CWE-74",
+        2
+      ],
+      [
+        "CWE-89",
+        2
+      ]
+    ],
+    "threat_index": 335.5,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 335.5,
+        "yesterday": 265.6,
+        "change_pct": 26.3
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 1,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-58053",
+      "description": "Gitea act_runner with the Docker backend (through act 0.262.0) passes a workflow's container.options string to the Docker job container's HostConfig and, when configured with privileged: false, forces only the Privileged flag off while merging options such as --pid=host, --cap-add, and --security-op",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://github.com/bikini/exploitarium/tree/main/gitea-act-runner-container-options-poc",
+        "https://www.vulncheck.com/advisories/gitea-act-runner-container-hardening-bypass-via-workflow-container-options"
+      ],
+      "published": "2026-06-28T02:16:32.420"
+    },
+    {
+      "id": "CVE-2026-10643",
+      "description": "Zephyr's IP socket recvmsg() implementation (subsys/net/lib/sockets/sockets_inet.c, insert_pktinfo()) validated the user-supplied ancillary (msg_control) buffer using only the payload length (msg-msg_controllen < pktinfo_len) before writing a full control message consisting of an aligned cmsg header",
+      "severity": "HIGH",
+      "score": 8.7,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/zephyrproject-rtos/zephyr/commit/01fe77b2ec3885583f709a17c5203ce02bd77012"
+      ],
+      "published": "2026-06-28T00:16:24.637"
+    },
+    {
+      "id": "CVE-2026-58049",
+      "description": "FFmpeg's RASC video decoder (decode_dlta in libavcodec/rasc.c) performs 32-bit reads and writes at the row cursor before the NEXT_LINE row-boundary check and validates the DLTA region in pixel rather than byte units, so a DLTA run on a PAL8 frame can access several bytes past the row allocation. A c",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-787",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/FFmpeg/FFmpeg/blob/master/libavcodec/rasc.c",
+        "https://github.com/bikini/exploitarium/tree/main/ffmpeg-rasc-dlta-calc-poc",
+        "https://www.vulncheck.com/advisories/ffmpeg-out-of-bounds-write-in-rasc-decoder-decode-dlta"
+      ],
+      "published": "2026-06-28T02:16:30.477"
+    },
+    {
+      "id": "CVE-2026-8095",
+      "description": "The Frontend File Manager Plugin plugin for WordPress is vulnerable to Authenticated Arbitrary File Deletion in versions up to and including 23.6. This is due to a case-sensitive bypass of the wpfm_dir_path parameter sanitization in the wpfm_file_meta_update AJAX handler, where supplying WPFM_DIR_PA",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-73"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/nmedia-user-file-uploader/tags/23.6/inc/file.class.php#L729",
+        "https://plugins.trac.wordpress.org/browser/nmedia-user-file-uploader/tags/23.6/inc/files.php#L767",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/506006ce-7b1c-4f9d-93f3-abc87abea2bb?source=cve"
+      ],
+      "published": "2026-06-28T00:16:25.180"
+    },
+    {
+      "id": "CVE-2026-58056",
+      "description": "RustDesk gates incoming control messages on per-capability flags rather than on the session's authorized connection type, and a file-transfer session does not clear those flags. A peer holding only a valid FileTransfer authorization can inject keyboard and mouse input and reach the unguarded screens",
+      "severity": "HIGH",
+      "score": 7.6,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/bikini/exploitarium/tree/main/rustdesk-session-permission-pocs",
+        "https://www.vulncheck.com/advisories/rustdesk-filetransfer-session-authorization-scope-bypass"
+      ],
+      "published": "2026-06-28T02:16:32.860"
+    },
+    {
+      "id": "CVE-2026-10646",
+      "description": "Zephyr's BSD-sockets getaddrinfo() implementation (subsys/net/lib/sockets/getaddrinfo.c) passes a pointer to a stack-allocated state object (struct getaddrinfo_state ai_state) as the user_data of an asynchronous DNS resolver query. The socket layer waits on a semaphore with a timeout deliberately se",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/zephyrproject-rtos/zephyr/commit/cd27da58eedb8d0fe380dd340b81ca5afa35de45",
+        "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-h752-vhmf-29w6"
+      ],
+      "published": "2026-06-28T05:16:21.083"
+    },
+    {
+      "id": "CVE-2026-13485",
+      "description": "A vulnerability was found in SourceCodester Class and Exam Timetabling System 1.0. This affects an unknown function of the file /preview.php. Performing a manipulation of the argument course_year_section results in sql injection. The attack can be initiated remotely. The exploit has been made public",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/lffaker/cybersec/issues/6",
+        "https://vuldb.com/cve/CVE-2026-13485",
+        "https://vuldb.com/submit/838185"
+      ],
+      "published": "2026-06-28T10:16:26.133"
+    },
+    {
+      "id": "CVE-2026-13486",
+      "description": "A vulnerability was determined in SourceCodester Class and Exam Timetabling System 1.0/6.php. This impacts an unknown function of the file /preview6.php. Executing a manipulation of the argument course_year_section can lead to sql injection. The attack can be launched remotely. The exploit has been ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/lffaker/cybersec/issues/5",
+        "https://vuldb.com/cve/CVE-2026-13486",
+        "https://vuldb.com/submit/838188"
+      ],
+      "published": "2026-06-28T10:16:27.150"
+    },
+    {
+      "id": "CVE-2026-58054",
+      "description": "MyBB 1.8.40 does not restrict which usergroup a limited Admin Control Panel user may assign when creating or editing users; the user module offers the Administrators group (gid 4) and its datahandler's verify_usergroup() unconditionally returns true. An admin holding only the delegated user-manageme",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://github.com/bikini/exploitarium/tree/main/mybb-limited-acp-to-admin",
+        "https://www.vulncheck.com/advisories/mybb-privilege-escalation-from-limited-acp-user-management-to-administrator"
+      ],
+      "published": "2026-06-28T02:16:32.550"
+    },
+    {
+      "id": "CVE-2026-58050",
+      "description": "libssh2 through 1.11.1 reads an attacker-controlled 32-bit attribute count from a publickey-subsystem response and uses it in the allocation num_attrs * sizeof(libssh2_publickey_attribute) without bounds checking, so on 32-bit platforms the multiplication overflows to an undersized buffer. A malicio",
+      "severity": "HIGH",
+      "score": 7.0,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/bikini/exploitarium/tree/main/libssh2-publickey-list-calc-poc",
+        "https://github.com/libssh2/libssh2/blob/master/src/publickey.c",
+        "https://www.vulncheck.com/advisories/libssh2-integer-overflow-in-publickey-subsystem-attribute-allocation"
+      ],
+      "published": "2026-06-28T02:16:32.017"
+    },
+    {
+      "id": "CVE-2026-58051",
+      "description": "libssh2 through 1.11.1 grows its publickey list with SSH2_REALLOC but does not zero-initialize new entries before parsing populates them, so a parse failure reaching the cleanup path leaves libssh2_publickey_list_free operating on an uninitialized entry. A malicious SSH server offering the publickey",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-908"
+      ],
+      "references": [
+        "https://github.com/bikini/exploitarium/tree/main/libssh2-publickey-list-calc-poc",
+        "https://github.com/libssh2/libssh2/blob/master/src/publickey.c",
+        "https://www.vulncheck.com/advisories/libssh2-free-of-uninitialized-pointer-in-publickey-list-cleanup"
+      ],
+      "published": "2026-06-28T02:16:32.153"
+    },
+    {
+      "id": "CVE-2026-58058",
+      "description": "Nmap through 7.99 does not keep the IPv6 extension-header walk within the captured packet in ipv6_get_data_primitive (libnetutil/netutil.cc), so the pointer advances past the buffer and the remaining-length computation underflows to a large value. A scanned target or on-path attacker returning a cra",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-191"
+      ],
+      "references": [
+        "https://github.com/bikini/exploitarium/tree/main/nmap-ipv6-extlen-wrap-poc",
+        "https://github.com/nmap/nmap/commit/bb6754e76bb1686315008e1aa1c40202a513fb83",
+        "https://nmap.org/changelog.html"
+      ],
+      "published": "2026-06-28T02:16:33.130"
+    },
+    {
+      "id": "CVE-2026-10593",
+      "description": "The Zephyr Bluetooth LE Audio Basic Audio Profile (BAP) unicast client mishandles peer-supplied ASE state notifications. In unicast_client_ep_qos_state() (subsys/bluetooth/audio/bap_unicast_client.c), the handler writes attacker-controlled QoS fields (interval, framing, phy, sdu, rtn, latency, pd) t",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/zephyrproject-rtos/zephyr/commit/52f25c903f2926cb1281b50fd79654668e2d483f",
+        "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-22q8-m94g-2pwh"
+      ],
+      "published": "2026-06-28T05:16:20.097"
+    },
+    {
+      "id": "CVE-2026-58055",
+      "description": "nghttp2's nghttpx proxy through 1.69.0 forwards an HTTP/1.1 Upgrade request that also carries a Content-Length header and body onto reusable keep-alive backend connections, re-adding the Upgrade and Connection headers while passing Content-Length verbatim. A backend that resolves the resulting ambig",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-444"
+      ],
+      "references": [
+        "https://github.com/bikini/exploitarium/tree/main/nghttp2-nghttpx-upgrade-queue-poison-poc",
+        "https://github.com/nghttp2/nghttp2/commit/ab28105c4a0197da24f8bfc414bc116055249e1e",
+        "https://www.vulncheck.com/advisories/nghttp2-nghttpx-http-request-response-smuggling-via-upgrade-request-with-content-length"
+      ],
+      "published": "2026-06-28T02:16:32.677"
+    },
+    {
+      "id": "CVE-2026-58057",
+      "description": "Flowise before 3.1.3 validates Custom MCP stdio environment variables against a denylist using a case-sensitive comparison, so on Windows, where environment names are case-insensitive, supplying 'node_options' bypasses the NODE_OPTIONS denylist entry. An authenticated user who can configure a Custom",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-178"
+      ],
+      "references": [
+        "https://github.com/FlowiseAI/Flowise/pull/6471",
+        "https://github.com/bikini/exploitarium/tree/main/flowise-mcp-env-case-bypass-poc",
+        "https://www.vulncheck.com/advisories/flowise-custom-mcp-environment-variable-denylist-bypass-via-case-sensitivity"
+      ],
+      "published": "2026-06-28T02:16:32.990"
+    },
+    {
+      "id": "CVE-2026-13484",
+      "description": "A vulnerability has been found in MLflow up to 4666cffc7912ea606d592fc38d6a75e2935f65e7. The impacted element is an unknown function of the component Experiment-scoped Label Schema CRUD API. Such manipulation leads to missing authorization. It is possible to launch the attack remotely. A high comple",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-862",
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/mlflow/mlflow/",
+        "https://github.com/mlflow/mlflow/issues/23608",
+        "https://github.com/mlflow/mlflow/issues/23608#issuecomment-4560963877"
+      ],
+      "published": "2026-06-28T09:16:27.027"
+    },
+    {
+      "id": "CVE-2026-10644",
+      "description": "The Microchip SERCOM-G1 UART driver (drivers/serial/uart_mchp_sercom_g1.c), used by the PIC32CM-JH SoC family, contains an out-of-bounds write in its asynchronous (DMA) receive path. When uart_rx_enable() is invoked with a one-byte receive buffer (len == 1) and CONFIG_UART_MCHP_ASYNC is enabled, the",
+      "severity": "MEDIUM",
+      "score": 4.2,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/zephyrproject-rtos/zephyr/commit/5251d2bc0070be801769fb7ce7b9066fef5d9f81",
+        "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-xv2x-56j7-6wc3"
+      ],
+      "published": "2026-06-28T05:16:20.980"
+    },
+    {
+      "id": "CVE-2026-13482",
+      "description": "A vulnerability was detected in skypilot-org skypilot up to 0.12.0. Impacted is the function username.encode of the file sky/users/server.py of the component User ID Handler. The manipulation results in use of weak hash. The attack may be performed from remote. This attack is characterized by high c",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-327",
+        "CWE-328"
+      ],
+      "references": [
+        "https://github.com/skypilot-org/skypilot/",
+        "https://github.com/skypilot-org/skypilot/issues/9194",
+        "https://vuldb.com/cve/CVE-2026-13482"
+      ],
+      "published": "2026-06-28T05:16:21.200"
+    },
+    {
+      "id": "CVE-2026-58052",
+      "description": "7-Zip for Windows through 26.02 fails to preserve the Mark-of-the-Web when extracting a crafted RAR5 archive, because its guard that suppresses an archive-supplied Zone.Identifier stream matches the exact name 'Zone.Identifier' while a RAR5 STM record named ':Zone.Identifier:$DATA' is not matched an",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-693"
+      ],
+      "references": [
+        "https://github.com/bikini/exploitarium/tree/main/7zip-rar5-motw-chain-poc",
+        "https://github.com/ip7z/7zip",
+        "https://www.vulncheck.com/advisories/7-zip-mark-of-the-web-bypass-via-rar5-alternate-data-stream-name-collision"
+      ],
+      "published": "2026-06-28T02:16:32.283"
+    },
+    {
+      "id": "CVE-2026-13483",
+      "description": "A flaw has been found in arc53 DocsGPT up to 0.18.0. The affected element is the function encrypt_credentials of the file application/security/encryption.py of the component Credential Storage. This manipulation causes insufficient verification of data authenticity. It is possible to initiate the at",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-345"
+      ],
+      "references": [
+        "https://github.com/arc53/DocsGPT/",
+        "https://github.com/arc53/DocsGPT/issues/2503",
+        "https://github.com/arc53/DocsGPT/pull/2331"
+      ],
+      "published": "2026-06-28T07:16:21.417"
+    }
+  ]
+}
