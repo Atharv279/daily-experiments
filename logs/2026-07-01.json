@@ -1,0 +1,376 @@
+{
+  "timestamp": "2026-07-01T06:48:08.169792+00:00",
+  "scan_id": "2312aa884b",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 9,
+      "MEDIUM": 9,
+      "LOW": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        9
+      ],
+      [
+        "CWE-89",
+        9
+      ],
+      [
+        "CWE-119",
+        6
+      ],
+      [
+        "CWE-121",
+        5
+      ],
+      [
+        "CWE-285",
+        2
+      ]
+    ],
+    "threat_index": 329.3,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 329.3,
+        "yesterday": 335.5,
+        "change_pct": -1.8
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-13515",
+      "description": "A security vulnerability has been detected in Tenda JD12L 16.03.53.23. Impacted is the function formSetPPTPServer of the file /goform/SetPptpServerCfg. Such manipulation of the argument startIp leads to stack-based buffer overflow. The attack can be launched remotely. The exploit has been disclosed ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/cve-a/Vampirensa/issues/1",
+        "https://vuldb.com/cve/CVE-2026-13515",
+        "https://vuldb.com/submit/838885"
+      ],
+      "published": "2026-06-29T00:16:47.463"
+    },
+    {
+      "id": "CVE-2026-13516",
+      "description": "A vulnerability was detected in Tenda JD12L 16.03.53.23. The affected element is the function fromSetWifiGusetBasic of the file /goform/WifiGuestSet. Performing a manipulation of the argument shareSpeed results in stack-based buffer overflow. The attack may be initiated remotely. The exploit is now ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/cve-a/Vampirensa/issues/2",
+        "https://vuldb.com/cve/CVE-2026-13516",
+        "https://vuldb.com/submit/838887"
+      ],
+      "published": "2026-06-29T00:16:47.633"
+    },
+    {
+      "id": "CVE-2026-13517",
+      "description": "A flaw has been found in Tenda JD12L 16.03.53.23. The impacted element is the function formWifiBasicSet of the file /goform/WifiBasicSet. Executing a manipulation of the argument security_5g can lead to stack-based buffer overflow. The attack may be launched remotely. The exploit has been published ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/cve-a/Vampirensa/issues/3",
+        "https://vuldb.com/cve/CVE-2026-13517",
+        "https://vuldb.com/submit/838888"
+      ],
+      "published": "2026-06-29T01:16:30.517"
+    },
+    {
+      "id": "CVE-2026-13518",
+      "description": "A vulnerability has been found in Tenda JD12L 16.03.53.23. This affects the function fromAddressNat of the file /goform/addressNat. The manipulation of the argument page leads to stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been disclosed to the public ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/cve-a/Vampirensa/issues/4",
+        "https://vuldb.com/cve/CVE-2026-13518",
+        "https://vuldb.com/submit/838889"
+      ],
+      "published": "2026-06-29T01:16:30.683"
+    },
+    {
+      "id": "CVE-2026-13519",
+      "description": "A vulnerability was found in Tenda JD12L 16.03.53.23. This impacts the function fromNatStaticSetting of the file /goform/NatStaticSetting. The manipulation of the argument page results in stack-based buffer overflow. The attack can be executed remotely. The exploit has been made public and could be ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/cve-a/Yuanji-Wanshu/issues/1",
+        "https://vuldb.com/cve/CVE-2026-13519",
+        "https://vuldb.com/submit/838993"
+      ],
+      "published": "2026-06-29T02:16:25.063"
+    },
+    {
+      "id": "CVE-2026-13521",
+      "description": "A vulnerability was identified in SourceCodester Class and Exam Timetabling System 1.0/5.php. Affected by this vulnerability is an unknown functionality of the file /preview5.php. Such manipulation of the argument course_year_section leads to sql injection. The attack may be performed from remote. T",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/xiaoxuxu233/myCVE/issues/2",
+        "https://vuldb.com/cve/CVE-2026-13521",
+        "https://vuldb.com/submit/839572"
+      ],
+      "published": "2026-06-29T02:16:25.390"
+    },
+    {
+      "id": "CVE-2026-13526",
+      "description": "A flaw has been found in SourceCodester Class and Exam Timetabling System 1.0. Impacted is an unknown function of the file /edit_class.php. This manipulation of the argument ID causes sql injection. The attack may be initiated remotely. The exploit has been published and may be used.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/yuanyuandechen/vul/issues/2",
+        "https://vuldb.com/cve/CVE-2026-13526",
+        "https://vuldb.com/submit/840550"
+      ],
+      "published": "2026-06-29T03:16:45.810"
+    },
+    {
+      "id": "CVE-2026-13527",
+      "description": "A vulnerability has been found in SourceCodester Class and Exam Timetabling System 1.0. The affected element is an unknown function of the file /preview4.php. Such manipulation of the argument course_year_section leads to sql injection. The attack may be launched remotely. The exploit has been discl",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/yuanyuandechen/vul/issues/1",
+        "https://vuldb.com/cve/CVE-2026-13527",
+        "https://vuldb.com/submit/840551"
+      ],
+      "published": "2026-06-29T04:16:27.550"
+    },
+    {
+      "id": "CVE-2026-13528",
+      "description": "A vulnerability was found in YunaiV/zhijiantianya ruoyi-vue-pro up to 2026.04-jdk8-SNAPSHOT. The impacted element is the function generateUploadPath of the file yudao-module-infra/src/main/java/cn/iocoder/yudao/module/infra/service/file/FileServiceImpl.java of the component AppFileController File Up",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://gitee.com/zhijiantianya/ruoyi-vue-pro/commit/4ae3f6b2c9883978837638c14e3d18419819eeb0",
+        "https://github.com/YunaiV/ruoyi-vue-pro/",
+        "https://github.com/YunaiV/ruoyi-vue-pro/issues/1146"
+      ],
+      "published": "2026-06-29T04:16:29.317"
+    },
+    {
+      "id": "CVE-2026-13520",
+      "description": "A vulnerability was determined in itsourcecode Hospital Management System 1.0. Affected is an unknown function of the file /appointmentapproval.php of the component Appointment Handler. This manipulation of the argument editid causes sql injection. The attack is possible to be carried out remotely. ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/ltranquility/cve_submit/issues/20",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-13520"
+      ],
+      "published": "2026-06-29T02:16:25.230"
+    },
+    {
+      "id": "CVE-2026-13525",
+      "description": "A vulnerability was detected in CodeAstro Human Resource Management System 1.0. This issue affects the function emselectByCode of the file application/models/Employee_model.php of the component Update_Earn_Leave Endpoint. The manipulation of the argument emid results in sql injection. The attack can",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://codeastro.com/",
+        "https://github.com/ashikmd0507/CVE/tree/main/Time-Based%20Blind%20SQL%20Injection%20in%20Update_Earn_Leave%20via%20emid%20Parameter",
+        "https://vuldb.com/cve/CVE-2026-13525"
+      ],
+      "published": "2026-06-29T03:16:45.643"
+    },
+    {
+      "id": "CVE-2026-13530",
+      "description": "A vulnerability was identified in itsourcecode Hospital Management System 1.0. This impacts an unknown function of the file /appointmentdetail.php of the component Appointment Handler. The manipulation of the argument editid leads to sql injection. The attack is possible to be carried out remotely. ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Fomovet/cve/issues/1",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-13530"
+      ],
+      "published": "2026-06-29T04:16:29.680"
+    },
+    {
+      "id": "CVE-2026-13531",
+      "description": "A security flaw has been discovered in itsourcecode Hospital Management System 1.0. Affected is an unknown function of the file /department.php. The manipulation of the argument editid results in sql injection. The attack may be performed from remote. The exploit has been released to the public and ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Fomovet/cve/issues/2",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-13531"
+      ],
+      "published": "2026-06-29T04:16:29.870"
+    },
+    {
+      "id": "CVE-2026-13532",
+      "description": "A weakness has been identified in itsourcecode Hospital Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /departmentDoctor.php. This manipulation of the argument deptid causes sql injection. It is possible to initiate the attack remotely. The exploit has ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Fomovet/cve/issues/3",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-13532"
+      ],
+      "published": "2026-06-29T06:16:24.943"
+    },
+    {
+      "id": "CVE-2026-13524",
+      "description": "A security vulnerability has been detected in CherryHQ cherry-studio up to 1.9.6. This vulnerability affects unknown code of the file src/main/services/mcp/oauth/callback.ts of the component MCP OAuth Local Callback Server. The manipulation of the argument code leads to improper authorization. The a",
+      "severity": "MEDIUM",
+      "score": 5.6,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/CherryHQ/cherry-studio/",
+        "https://github.com/CherryHQ/cherry-studio/issues/15372",
+        "https://github.com/CherryHQ/cherry-studio/pull/15388"
+      ],
+      "published": "2026-06-29T03:16:45.470"
+    },
+    {
+      "id": "CVE-2026-13529",
+      "description": "A vulnerability was determined in YzmCMS up to 7.5. This affects an unknown function of the file /application/install/index.php. Executing a manipulation of the argument siteurl can lead to sql injection. The attack can be executed remotely. A high complexity level is associated with this attack. Th",
+      "severity": "MEDIUM",
+      "score": 5.6,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/drose025/security/blob/main/1.md",
+        "https://vuldb.com/cve/CVE-2026-13529",
+        "https://vuldb.com/submit/840800"
+      ],
+      "published": "2026-06-29T04:16:29.497"
+    },
+    {
+      "id": "CVE-2026-13513",
+      "description": "A security flaw has been discovered in MyScale MyScaleDB up to 1.8.0. This vulnerability affects the function SegmentId::getCacheKey in the library src/VectorIndex/Common/SegmentId.h. The manipulation results in insufficient verification of data authenticity. It is possible to launch the attack remo",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-345"
+      ],
+      "references": [
+        "https://github.com/myscale/MyScaleDB/",
+        "https://github.com/myscale/MyScaleDB/issues/54",
+        "https://github.com/myscale/MyScaleDB/pull/55"
+      ],
+      "published": "2026-06-29T00:16:47.110"
+    },
+    {
+      "id": "CVE-2026-13522",
+      "description": "A security flaw has been discovered in Investintech SlimPDFReader up to 2.0.14. Affected by this issue is the function SlimPDFReader!Investintech::PCV::TeighaDo+0x25cde0 of the file SlimPDFReader.exe of the component PDF File Handler. Performing a manipulation results in out-of-bounds read. It is po",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-125"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-13522",
+        "https://vuldb.com/submit/839637",
+        "https://vuldb.com/vuln/374530"
+      ],
+      "published": "2026-06-29T02:16:25.557"
+    },
+    {
+      "id": "CVE-2026-13523",
+      "description": "A weakness has been identified in GPAC up to 26.02.0. This affects an unknown part of the file src/utils/base_encoding.c of the component ISOBMFF Parser. Executing a manipulation can lead to highly compressed data. The attack needs to be launched locally. The exploit has been made available to the p",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-409"
+      ],
+      "references": [
+        "https://github.com/gpac/gpac/",
+        "https://github.com/gpac/gpac/commit/297f2d8d1f493d8b241330533cd47f7da758aeb3",
+        "https://github.com/gpac/gpac/issues/3588"
+      ],
+      "published": "2026-06-29T03:16:45.283"
+    },
+    {
+      "id": "CVE-2026-13514",
+      "description": "A weakness has been identified in Chess Play and Learn App up to 4.9.42 on Android. This issue affects some unknown processing of the file AndroidManifest.xml of the component com.chess. This manipulation causes exposure of backup file to an unauthorized control sphere. It is feasible to perform the",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-285",
+        "CWE-530"
+      ],
+      "references": [
+        "https://github.com/honestcorrupt/CHESS.COM-CVE-REQUEST",
+        "https://play.google.com/store/apps/details?id=com.chess",
+        "https://vuldb.com/cve/CVE-2026-13514"
+      ],
+      "published": "2026-06-29T00:16:47.280"
+    }
+  ]
+}
