@@ -1,0 +1,332 @@
+{
+  "timestamp": "2026-07-02T06:12:49.626258+00:00",
+  "scan_id": "fbd78b1516",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 8,
+      "MEDIUM": 9,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-22",
+        3
+      ],
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-78",
+        2
+      ],
+      [
+        "CWE-639",
+        1
+      ],
+      [
+        "CWE-502",
+        1
+      ]
+    ],
+    "threat_index": 326.0,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 326.0,
+        "yesterday": 329.3,
+        "change_pct": -1.0
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-12073",
+      "description": "The ProfileGrid \u2013 User Profiles, Groups and Communities plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 5.9.9.5. This is due to the plugin not validating a `user_login` on registration forms that don't contain this parameter, and ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3578435/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/2d35279d-299e-4ca2-8f84-165284e058c8?source=cve"
+      ],
+      "published": "2026-06-30T06:16:26.560"
+    },
+    {
+      "id": "CVE-2026-11589",
+      "description": "The WP Support Plus Responsive Ticket System WordPress plugin through 9.1.2 does not properly validate uploaded files, allowing unauthenticated users to upload files containing malicious JavaScript (such as HTML or SVG) to a publicly accessible location, leading to Stored Cross-Site Scripting attack",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/c46479c2-4eef-485f-ae98-1f487efa4263/"
+      ],
+      "published": "2026-06-30T07:16:31.627"
+    },
+    {
+      "id": "CVE-2026-11590",
+      "description": "The WP Support Plus Responsive Ticket System WordPress plugin through 9.1.2 does not sanitize user-supplied array keys before using them in a SQL statement, allowing unauthenticated users to perform SQL injection attacks.",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/117853ca-0fd3-4bfa-ad60-799eb5c77bdf/"
+      ],
+      "published": "2026-06-30T07:16:31.720"
+    },
+    {
+      "id": "CVE-2026-58302",
+      "description": "rtapi_app in linuxcnc-uspace in LinuxCNC before 2.9.9 allows privilege escalation. It is installed SUID root and loads shared library modules via dlopen() by using a user-supplied module name. Insufficient validation of the module name allows path traversal, enabling an unprivileged local user to lo",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://bugs.debian.org/1140943",
+        "https://github.com/LinuxCNC/linuxcnc/commit/00d534c87464a3ed446656998aa02b8abc74b391",
+        "https://github.com/LinuxCNC/linuxcnc/commit/ea7cd579d39b586952a42e3da9a26d3e36e7a272"
+      ],
+      "published": "2026-06-30T02:16:26.820"
+    },
+    {
+      "id": "CVE-2026-12240",
+      "description": "The Export User Data plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the unserialize function in all versions up to, and including, 2.2.6. This makes it possible for authenticated attackers, with subscriber-level access and above, to delete a",
+      "severity": "HIGH",
+      "score": 8.0,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/export-user-data/tags/2.2.6/library/core/helper.php#L171",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/39f12ff1-63ee-4131-a708-49633f22ccd4?source=cve"
+      ],
+      "published": "2026-06-30T07:16:31.810"
+    },
+    {
+      "id": "CVE-2026-56137",
+      "description": "RPG MAKER MV and MZ provided by Gotcha Gotcha Games Inc. contain an OS command injection vulnerability. If a user loads a specially crafted save-file, arbitrary OS command may be executed.",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://jvn.jp/en/jp/JVN69681784/",
+        "https://rpgmakerofficial.com/en/news/4188/",
+        "https://rpgmakerofficial.com/news/4183/"
+      ],
+      "published": "2026-06-30T07:16:32.400"
+    },
+    {
+      "id": "CVE-2026-12243",
+      "description": "NLTK version 3.9.4 is vulnerable to a path traversal attack due to an incomplete fix for GitHub Issue #3504. The `_UNSAFE_NO_PROTOCOL_RE` regex in `nltk/data.py` checks for literal `../` sequences but fails to account for percent-encoded traversal sequences such as `..%2f`. The `url2pathname()` func",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://huntr.com/bounties/39aa9354-54ca-4e77-96da-580eb1fe6ed1",
+        "https://huntr.com/bounties/39aa9354-54ca-4e77-96da-580eb1fe6ed1"
+      ],
+      "published": "2026-06-30T01:16:29.063"
+    },
+    {
+      "id": "CVE-2026-14164",
+      "description": "A double free issue has been identified in libarchive's RAR5 reader. During parsing of a specially crafted RAR5 archive, the filtered_buf pointer may remain stale after being freed during unpacking state reinitialization. Subsequent processing of another archive entry can trigger a second free of th",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-415"
+      ],
+      "references": [
+        "https://access.redhat.com/errata/RHSA-2026:30333",
+        "https://access.redhat.com/security/cve/CVE-2026-14164",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2493411"
+      ],
+      "published": "2026-06-30T07:16:32.170"
+    },
+    {
+      "id": "CVE-2026-56808",
+      "description": "DGM3103SCT provided by AVTECH Security Corporation contains an OS command injection vulnerability, which may lead to arbitrary command execution with the root privilege by a user who can log in to the web management console of the affected product.",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://jvn.jp/en/jp/JVN28979424/",
+        "https://www.avtech.com.tw/global/en/IP%20Camera?search=DGM3103SCT"
+      ],
+      "published": "2026-06-30T07:16:32.620"
+    },
+    {
+      "id": "CVE-2026-11367",
+      "description": "The PixMagix \u2013 WordPress Image Editor plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.7.2 via the move_image_on_server function. This makes it possible for authenticated attackers, with author-level access and above, to write files with attacker-cont",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/pixmagix/tags/1.7.2/includes/rest-api/rest-callback-save-template.php#L103",
+        "https://plugins.trac.wordpress.org/browser/pixmagix/tags/1.7.2/includes/rest-api/rest-callback-save-template.php#L91",
+        "https://plugins.trac.wordpress.org/browser/pixmagix/tags/1.7.2/includes/utils.php#L465"
+      ],
+      "published": "2026-06-30T06:16:23.083"
+    },
+    {
+      "id": "CVE-2026-56809",
+      "description": "Multiple laser printers and MFPs (multifunction printers) which implement Ricoh Web Image Monitor contain a reflected cross-site scripting vulnerability. An arbitrary script may be executed on the web browser of the user who accesses Web Image Monitor.",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://jp.ricoh.com/security/products/vulnerabilities/vul?id=ricoh-2026-000005",
+        "https://jvn.jp/en/jp/JVN48718197/",
+        "https://www.ricoh.com/products/security/vulnerabilities/vul?id=ricoh-2026-000005"
+      ],
+      "published": "2026-06-30T07:16:32.747"
+    },
+    {
+      "id": "CVE-2026-14160",
+      "description": "Time-of-check time-of-use (TOCTOU) race condition vulnerability in Samsung Open Source Escargot allows Leveraging Race Conditions.\n\nThis issue affects Escargot: bab3a5797557014ce3c2e28419a6310cfba90d0d.",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://github.com/Samsung/escargot/commit/9e8084ecc2f68e8584d389414c3f37fda12dab7d"
+      ],
+      "published": "2026-06-30T03:17:15.177"
+    },
+    {
+      "id": "CVE-2026-11581",
+      "description": "The Kali Forms \u2014 Contact Form & Drag-and-Drop Builder WordPress plugin before 2.4.13 does not sanitise a form field's caption before outputting it as a column header on the administrator form-entries screen, allowing users with Contributor-level access or above to store JavaScript that executes in a",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/a9282260-a0f2-4fe2-9acf-3191f4043910/"
+      ],
+      "published": "2026-06-30T07:16:31.527"
+    },
+    {
+      "id": "CVE-2026-12349",
+      "description": "The Premium Addons for KingComposer plugin for WordPress is vulnerable to unauthorized modification and loss of data in versions up to, and including, 1.1.1. This is due to missing authorization and capability checks on the add_custom_sidebar() and remove_custom_sidebar() AJAX handlers, both of whic",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/premium-addons-for-kingcomposer/trunk/core/class-sidebar.php#L100",
+        "https://plugins.trac.wordpress.org/browser/premium-addons-for-kingcomposer/trunk/core/class-sidebar.php#L23",
+        "https://plugins.trac.wordpress.org/browser/premium-addons-for-kingcomposer/trunk/core/class-sidebar.php#L68"
+      ],
+      "published": "2026-06-30T06:16:26.950"
+    },
+    {
+      "id": "CVE-2026-9576",
+      "description": "The Fluent Booking  WordPress plugin before 2.1.2 does not verify ownership of the requested group_id before exporting attendee data via the export endpoint, allowing users with at least the Calendar Manager role to retrieve attendees' PII (name, email, phone, address, payment information) from cale",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/f28759e0-f15e-4014-b0d1-8b58bf412b49/"
+      ],
+      "published": "2026-06-30T07:16:32.867"
+    },
+    {
+      "id": "CVE-2026-12114",
+      "description": "The Team Members \u2013 Multi Language Supported Team Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 8.7 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with ",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/team-showcase-supreme/tags/8.6/settings/helper/slider_form_save.php#L529",
+        "https://plugins.trac.wordpress.org/browser/team-showcase-supreme/tags/8.6/settings/helper/slider_form_save.php#L531",
+        "https://plugins.trac.wordpress.org/browser/team-showcase-supreme/tags/8.6/shortcode.php#L200"
+      ],
+      "published": "2026-06-30T03:17:09.940"
+    },
+    {
+      "id": "CVE-2026-12560",
+      "description": "The Editorial Rating \u2013 Product Review & Rating System plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'Link URL' Field in all versions up to, and including, 4.0.5 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, wit",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/editorial-rating/tags/4.0.3/admin/wpas-framework/options/metabox-options.php#L446",
+        "https://plugins.trac.wordpress.org/browser/editorial-rating/tags/4.0.3/public/class-average-score-public_display.php#L90",
+        "https://plugins.trac.wordpress.org/browser/editorial-rating/tags/4.0.3/public/template-parts/wpas-theme-1.php#L57"
+      ],
+      "published": "2026-06-30T06:16:27.207"
+    },
+    {
+      "id": "CVE-2026-8944",
+      "description": "The Plugin for Google Analytics by IO technologies plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 1.1. This is due to missing or incorrect nonce validation on the Google Analytics settings page (ga.php). This makes it possible for unauthenticated a",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/io-engagement-analytics/trunk/ga.php#L15",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/16f9ca70-50fe-4fab-8a58-57af795dc000?source=cve"
+      ],
+      "published": "2026-06-30T06:16:30.227"
+    },
+    {
+      "id": "CVE-2026-12818",
+      "description": "Delta Electronics DVP12SE PLCs are susceptible to a resource allocation vulnerability without limits or throttling (CWE-770) within their Modbus TCP service.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://filecenter.deltaww.com/news/download/doc/Delta-PCSA-2026-00011_DVP12SE%20Multiple%20Vulnerabilities%20(CVE-2026-12818,%20CVE-2026-12819)_v1.0.pdf"
+      ],
+      "published": "2026-06-30T07:16:31.933"
+    },
+    {
+      "id": "CVE-2026-12819",
+      "description": "Delta Electronics DVP12SE PLC exposes a Modbus TCP service over a specified port without authentication or access control, permitting unauthenticated interaction with security-sensitive PLC functions.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://filecenter.deltaww.com/news/download/doc/Delta-PCSA-2026-00011_DVP12SE%20Multiple%20Vulnerabilities%20(CVE-2026-12818,%20CVE-2026-12819)_v1.0.pdf"
+      ],
+      "published": "2026-06-30T07:16:32.060"
+    }
+  ]
+}
