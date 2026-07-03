@@ -1,0 +1,339 @@
+{
+  "timestamp": "2026-07-03T06:05:49.307783+00:00",
+  "scan_id": "f6b35c494a",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 4,
+      "MEDIUM": 6,
+      "LOW": 1,
+      "UNKNOWN": 9
+    },
+    "top_cwes": [
+      [
+        "CWE-416",
+        5
+      ],
+      [
+        "CWE-787",
+        4
+      ],
+      [
+        "CWE-125",
+        2
+      ],
+      [
+        "CWE-288",
+        2
+      ],
+      [
+        "CWE-190",
+        2
+      ]
+    ],
+    "threat_index": 164.1,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 164.1,
+        "yesterday": 326.0,
+        "change_pct": -49.7
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-53488",
+      "description": "containerd is an open-source container runtime. In versions prior to 1.7.33, 2.3.2, 2.2.5, 2.1.9, and 2.0.10 the CRI plugin propagates labels from an image config (LABEL instruction in Dockerfile) to a container without validation. This may result in executing an arbitrary command on the host, via a",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://github.com/containerd/containerd/security/advisories/GHSA-xhf5-7wjv-pqxp"
+      ],
+      "published": "2026-07-01T02:17:00.467"
+    },
+    {
+      "id": "CVE-2026-14191",
+      "description": "An out-of-bounds heap write exists in the RAR5 recovery-volume (.rev) parser in WinRAR and UnRAR (RecVolumes5::ReadHeader in recvol5.cpp). The RecItems vector is sized only when the first .rev file in a set is processed; subsequent .rev files supply an independent RecNum value that is validated agai",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-129",
+        "CWE-787"
+      ],
+      "references": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2023-40477",
+        "https://www.rarlab.com/download.htm"
+      ],
+      "published": "2026-07-01T04:16:58.647"
+    },
+    {
+      "id": "CVE-2026-54592",
+      "description": "Oj (Optimized JSON) is a JSON parser and Object marshaller packaged as a Ruby gem. In versions prior to 3.17.3, Oj::Doc#each_child, when invoked recursively over a deeply nested JSON document, overflows a fixed-size stack buffer and aborts the process, leading to DoS.  In a two-step chain in ext/oj/",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-125",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/ohler55/oj/security/advisories/GHSA-3m6q-jj5j-38c9",
+        "https://github.com/ohler55/oj/security/advisories/GHSA-3m6q-jj5j-38c9"
+      ],
+      "published": "2026-07-01T00:16:32.743"
+    },
+    {
+      "id": "CVE-2026-20458",
+      "description": "In Modem, there is a possible memory corruption due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://corp.mediatek.com/product-security-bulletin/July-2026"
+      ],
+      "published": "2026-07-01T04:17:13.943"
+    },
+    {
+      "id": "CVE-2026-57963",
+      "description": "An attacker who can send HTML chat messages (via Matrix or XMPP) can inject arbitrary styled content, phishing links, and CSS that manipulates the chat UI. This vulnerability was fixed in Thunderbird 152.0.1 and Thunderbird 140.12.1.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://bugzilla.mozilla.org/show_bug.cgi?id=2042910",
+        "https://www.mozilla.org/security/advisories/mfsa2026-63/",
+        "https://www.mozilla.org/security/advisories/mfsa2026-64/"
+      ],
+      "published": "2026-07-01T02:17:00.700"
+    },
+    {
+      "id": "CVE-2026-54500",
+      "description": "Oj (Optimized JSON) is a JSON parser and Object marshaller packaged as a Ruby gem. In versions prior to 3.17.3, Oj.load in :object mode reads uninitialized stack memory (and, for long keys, reads out of bounds) when parsing a JSON object whose key is 254 bytes or longer. The interned bytes can surfa",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-125",
+        "CWE-908"
+      ],
+      "references": [
+        "https://github.com/ohler55/oj/security/advisories/GHSA-fm7p-mprw-wjm9"
+      ],
+      "published": "2026-07-01T00:16:32.147"
+    },
+    {
+      "id": "CVE-2026-57962",
+      "description": "A malicious LDAP server, which a Thunderbird user is configured to query for address-book autocomplete, can stash arbitrarily large amounts of attacker-supplied data into the Thunderbird LDAP client until it crashes due to memory exhaustion. This vulnerability was fixed in Thunderbird 152.0.1 and Th",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://bugzilla.mozilla.org/show_bug.cgi?id=2042872",
+        "https://www.mozilla.org/security/advisories/mfsa2026-63/",
+        "https://www.mozilla.org/security/advisories/mfsa2026-64/"
+      ],
+      "published": "2026-07-01T02:17:00.597"
+    },
+    {
+      "id": "CVE-2026-20457",
+      "description": "In Modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch I",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://corp.mediatek.com/product-security-bulletin/July-2026"
+      ],
+      "published": "2026-07-01T04:17:13.100"
+    },
+    {
+      "id": "CVE-2026-20459",
+      "description": "In Modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch I",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-288"
+      ],
+      "references": [
+        "https://corp.mediatek.com/product-security-bulletin/July-2026"
+      ],
+      "published": "2026-07-01T04:17:14.247"
+    },
+    {
+      "id": "CVE-2026-20460",
+      "description": "In Modem, there is a possible information disclosure due to improper input validation. This could lead to remote information disclosure, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploi",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-288"
+      ],
+      "references": [
+        "https://corp.mediatek.com/product-security-bulletin/July-2026"
+      ],
+      "published": "2026-07-01T04:17:15.017"
+    },
+    {
+      "id": "CVE-2026-41579",
+      "description": "runc is a CLI tool for spawning and running containers according to the OCI specification. In versions prior to 1.3.6, 1.4.0-rc.1, 1.4.0-rc.12, 1.5.0-rc.1, and 1.5.0-rc.1, when setting up the container rootfs, setupPtmx and setupDevSymlinks call os.Remove and os.Symlink with a filepath.Join string w",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-61"
+      ],
+      "references": [
+        "https://github.com/opencontainers/runc/commit/864db8042dbb",
+        "https://github.com/opencontainers/runc/security/advisories/GHSA-xjvp-4fhw-gc47"
+      ],
+      "published": "2026-07-01T02:17:00.193"
+    },
+    {
+      "id": "CVE-2026-54502",
+      "description": "Oj (Optimized JSON) is a JSON parser and Object marshaller packaged as a Ruby gem. In versions prior to 3.17.2, Oj.dump is vulnerable to a stack-based buffer overflow when a large :indent value is provided by the developer. fill_indent in dump.h calls memset(indent_str, ' ', (size_t)opts->indent) wi",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/ohler55/oj/security/advisories/GHSA-3v45-f3vh-wg7m",
+        "https://github.com/ohler55/oj/security/advisories/GHSA-3v45-f3vh-wg7m"
+      ],
+      "published": "2026-07-01T00:16:32.620"
+    },
+    {
+      "id": "CVE-2026-54896",
+      "description": "Oj (Optimized JSON) is a JSON parser and Object marshaller packaged as a Ruby gem. In versions prior to 3.17.2, when in object mode, Oj.dump is vulnerable to a heap buffer overflow when serializing Exception objects with a large :indent value. The serializer allocates a buffer sized for the object's",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/ohler55/oj/security/advisories/GHSA-35w3-pjm6-wj95",
+        "https://github.com/ohler55/oj/security/advisories/GHSA-35w3-pjm6-wj95"
+      ],
+      "published": "2026-07-01T00:16:32.867"
+    },
+    {
+      "id": "CVE-2026-54897",
+      "description": "Oj (Optimized JSON) is a JSON parser and Object marshaller packaged as a Ruby gem. Prior to 3.17.2, Oj::Doc iterators (each_value, each_child, each_leaf) were vulnerable to a heap use-after-free. When a Ruby block yielded during iteration calls doc.close or d.close, the document's heap memory is fre",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/ohler55/oj/security/advisories/GHSA-9ppp-w3g4-fh4q",
+        "https://github.com/ohler55/oj/security/advisories/GHSA-9ppp-w3g4-fh4q"
+      ],
+      "published": "2026-07-01T00:16:32.983"
+    },
+    {
+      "id": "CVE-2026-54898",
+      "description": "Oj (Optimized JSON) is a JSON parser and Object marshaller packaged as a Ruby gem. In versions prior to 3.17.2,Oj::Parser#parse is vulnerable to a heap use-after-free when a SAJ/SAJ2 callback mutates the input JSON string during parsing. The C engine holds a raw const byte * pointer into the Ruby st",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/ohler55/oj/security/advisories/GHSA-q2gm-54r6-8fwm",
+        "https://github.com/ohler55/oj/security/advisories/GHSA-q2gm-54r6-8fwm"
+      ],
+      "published": "2026-07-01T00:16:33.103"
+    },
+    {
+      "id": "CVE-2026-54899",
+      "description": "Oj (Optimized JSON) is a JSON parser and Object marshaller packaged as a Ruby gem. Prior to version 3.17.2, disabling symbol_keys on a reused Oj::Parser instance triggers a heap use-after-free. When symbol_keys is toggled from true to false, opt_symbol_keys_set frees the internal key cache (cache_fr",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/ohler55/oj/security/advisories/GHSA-2cw7-v8ff-p88r",
+        "https://github.com/ohler55/oj/security/advisories/GHSA-2cw7-v8ff-p88r"
+      ],
+      "published": "2026-07-01T00:16:33.220"
+    },
+    {
+      "id": "CVE-2026-54900",
+      "description": "Oj (Optimized JSON) is a JSON parser and Object marshaller packaged as a Ruby gem. In versions prior to 3.17.2, when in usual mode with create_id enabled, Oj::Parser#parse is vulnerable to heap corruption via a negative-size memcpy. When a JSON object key is exactly 65,535 bytes long, an integer tru",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-190",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/ohler55/oj/security/advisories/GHSA-9cv6-qcjw-4grx",
+        "https://github.com/ohler55/oj/security/advisories/GHSA-9cv6-qcjw-4grx"
+      ],
+      "published": "2026-07-01T00:16:33.340"
+    },
+    {
+      "id": "CVE-2026-54901",
+      "description": "Oj (Optimized JSON) is a JSON parser and Object marshaller packaged as a Ruby gem. In versions prior to 3.17.2, Oj::Parser in usual mode does not mark array_class and hash_class references during garbage collection, leading to Use-After-Free. If GC runs after the class is assigned but before a parse",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/ohler55/oj/security/advisories/GHSA-vwm4-62gf-x745",
+        "https://github.com/ohler55/oj/security/advisories/GHSA-vwm4-62gf-x745"
+      ],
+      "published": "2026-07-01T00:16:33.467"
+    },
+    {
+      "id": "CVE-2026-54902",
+      "description": "Oj (Optimized JSON) is a JSON parser and Object marshaller packaged as a Ruby gem. Prior to version 3.17.2, is vulnerable to Use-After-Free when in SAJ mode. The Oj::Parser does not protect cached object keys (\u2265 35 bytes) from garbage collection, and a Ruby callback that triggers GC inside hash_end ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/ohler55/oj/security/advisories/GHSA-m578-w5vf-rfcm",
+        "https://github.com/ohler55/oj/security/advisories/GHSA-m578-w5vf-rfcm"
+      ],
+      "published": "2026-07-01T00:16:33.587"
+    },
+    {
+      "id": "CVE-2026-54903",
+      "description": "Oj (Optimized JSON) is a JSON parser and Object marshaller packaged as a Ruby gem. In versions prior to 3.17.2, Oj.load is vulnerable to heap corruption when parsing a JSON string longer than 2 GB. An integer overflow in buf_append_string (buf.h:61) converts the string length to a large negative siz",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/ohler55/oj/security/advisories/GHSA-475m-ph3x-64gp",
+        "https://github.com/ohler55/oj/security/advisories/GHSA-475m-ph3x-64gp"
+      ],
+      "published": "2026-07-01T00:16:33.707"
+    }
+  ]
+}
