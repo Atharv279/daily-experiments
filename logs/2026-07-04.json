@@ -1,0 +1,342 @@
+{
+  "timestamp": "2026-07-04T05:56:48.652613+00:00",
+  "scan_id": "1a359ee39e",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 15,
+      "UNKNOWN": 5
+    },
+    "top_cwes": [
+      [
+        "CWE-129",
+        11
+      ],
+      [
+        "CWE-120",
+        3
+      ],
+      [
+        "CWE-306",
+        1
+      ],
+      [
+        "CWE-285",
+        1
+      ],
+      [
+        "CWE-284",
+        1
+      ]
+    ],
+    "threat_index": 375.0,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 375.0,
+        "yesterday": 164.1,
+        "change_pct": 128.5
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-13125",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://www.geovision.com.tw/cyber_security.php",
+        "https://www.talosintelligence.com/vulnerability_reports/TALOS-2026-2370"
+      ],
+      "published": "2026-07-02T04:17:09.790"
+    },
+    {
+      "id": "CVE-2026-13131",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-129"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2373",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-07-02T04:17:11.520"
+    },
+    {
+      "id": "CVE-2026-13132",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-129"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2373",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-07-02T04:17:11.643"
+    },
+    {
+      "id": "CVE-2026-57264",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-129"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2373",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-07-02T04:17:11.777"
+    },
+    {
+      "id": "CVE-2026-57265",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-129"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2373",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-07-02T04:17:11.897"
+    },
+    {
+      "id": "CVE-2026-57266",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-129"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2373",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-07-02T04:17:12.017"
+    },
+    {
+      "id": "CVE-2026-57267",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-129"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2373",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-07-02T04:17:12.170"
+    },
+    {
+      "id": "CVE-2026-57268",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-129"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2373",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-07-02T04:17:12.467"
+    },
+    {
+      "id": "CVE-2026-57269",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-129"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2373",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-07-02T04:17:12.793"
+    },
+    {
+      "id": "CVE-2026-57270",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-129"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2373",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-07-02T04:17:13.103"
+    },
+    {
+      "id": "CVE-2026-57271",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-129"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2373",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-07-02T04:17:13.273"
+    },
+    {
+      "id": "CVE-2026-57272",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-129"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2373",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-07-02T04:17:13.423"
+    },
+    {
+      "id": "CVE-2026-57273",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-120"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2375",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-07-02T04:17:13.570"
+    },
+    {
+      "id": "CVE-2026-57274",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-120"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2375",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-07-02T04:17:14.430"
+    },
+    {
+      "id": "CVE-2026-57275",
+      "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates a websocket server that expands the capabilities of the various web-interfaces provided by the GeoVi",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-120"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2375",
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-07-02T04:17:14.587"
+    },
+    {
+      "id": "CVE-2026-50279",
+      "description": "Craft CMS is a content management system (CMS). IN versions 5.0.0-RC1 and above prior to 5.9.21, theEntriesController::actionSaveEntry() performs entry-edit permission checks before request-controlled author changes are applied to the model, allowing for authorship spoofing. The subsequent author mu",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/craftcms/cms/commit/9cc493be8b414d7116c7f2bc2a6d0926e73f1248",
+        "https://github.com/craftcms/cms/security/advisories/GHSA-qq2c-2q8j-jh27",
+        "https://github.com/craftcms/cms/security/advisories/GHSA-qq2c-2q8j-jh27"
+      ],
+      "published": "2026-07-02T00:16:44.543"
+    },
+    {
+      "id": "CVE-2026-50280",
+      "description": "Craft CMS is a content management system (CMS). In versions 5.0.0-RC1 and above prior to 5.9.21, the EntriesController::actionMoveToSection() endpoint gates the destination section only by viewEntries:$section->uid rather than requiring saveEntries permission (the source entry is separately checked ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/craftcms/cms/commit/0a6b916f6367b0162b2eaf2366add67b45fa98ea",
+        "https://github.com/craftcms/cms/security/advisories/GHSA-43cq-c2gq-pfpw"
+      ],
+      "published": "2026-07-02T00:16:44.677"
+    },
+    {
+      "id": "CVE-2026-55791",
+      "description": "Craft CMS is a content management system (CMS). Versions 4.0.0-RC1 and above, prior to 4.18.0 and 5.0.0-RC1, and above, prior to 5.10.0, are vulnerable to Server-Side Request Forgery (SSRF) and Arbitrary JavaScript Injection through the /actions/app/resource-js endpoint. By exploiting the default pe",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79",
+        "CWE-644",
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/craftcms/cms/pull/18559",
+        "https://github.com/craftcms/cms/security/advisories/GHSA-c55v-343g-5xff"
+      ],
+      "published": "2026-07-02T00:16:44.803"
+    },
+    {
+      "id": "CVE-2026-55792",
+      "description": "Craft CMS is a content management system (CMS). In versions starting from 4.0.0-RC1 and prior to 4.18.0, and 5.0.0-RC1 and above, prior to 5.10.0, the dataUrl() Twig function is included in Craft\u2019s Twig sandbox allowlist, allowing any control panel user granted the utility:system-messages permission",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://github.com/craftcms/cms/pull/18559",
+        "https://github.com/craftcms/cms/security/advisories/GHSA-287w-mxq6-x2cp",
+        "https://github.com/craftcms/cms/pull/18559"
+      ],
+      "published": "2026-07-02T00:16:44.940"
+    },
+    {
+      "id": "CVE-2026-55794",
+      "description": "Craft CMS is a content management system (CMS). In versions 5.9.0 and above prior to 5.10.0, control panel users with the ability to edit entries can execute unsandboxed Twig code via the HTTP Referrer header, potentially leading to authenticated RCE. The issue happens when a user is saving entries.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-94",
+        "CWE-1336"
+      ],
+      "references": [
+        "https://github.com/craftcms/cms/pull/18680",
+        "https://github.com/craftcms/cms/security/advisories/GHSA-f74w-488g-8x5r"
+      ],
+      "published": "2026-07-02T00:16:45.067"
+    }
+  ]
+}
