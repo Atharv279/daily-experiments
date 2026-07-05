@@ -1,0 +1,324 @@
+{
+  "timestamp": "2026-07-05T06:17:19.422070+00:00",
+  "scan_id": "68e7de941e",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "MEDIUM": 2,
+      "UNKNOWN": 17
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        5
+      ],
+      [
+        "CWE-787",
+        4
+      ],
+      [
+        "CWE-798",
+        2
+      ],
+      [
+        "CWE-644",
+        1
+      ],
+      [
+        "CWE-497",
+        1
+      ]
+    ],
+    "threat_index": 61.4,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 61.4,
+        "yesterday": 375.0,
+        "change_pct": -83.6
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-13768",
+      "description": "Gardyn devices expose a privileged iothubowner key. Access to this key will allow a malicious user to invoke an IoTHub Registry Manager function which returns connection information for all Gardyn Home Kit and Studio devices. Access to this key also allows a malicious user to execute arbitrary comma",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-798"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-183-03.json",
+        "https://mygardyn.com/security/",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-183-03"
+      ],
+      "published": "2026-07-03T00:16:52.270"
+    },
+    {
+      "id": "CVE-2026-54477",
+      "description": "The admin panel lacks standard security headers, enabling clickjacking and cross-site scripting attacks.",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-644"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-183-03.json",
+        "https://mygardyn.com/security/",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-183-03"
+      ],
+      "published": "2026-07-03T00:16:52.440"
+    },
+    {
+      "id": "CVE-2026-55726",
+      "description": "The Azure Blob Storage container used for Gardyn device logs is publicly listable without authentication. A malicious user would be able to access any device log file available in the blob storage container.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-497"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-183-03.json",
+        "https://mygardyn.com/security/",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-183-03"
+      ],
+      "published": "2026-07-03T00:16:52.607"
+    },
+    {
+      "id": "CVE-2026-13050",
+      "description": "An Out-of-bounds Write vulnerability in WatchGuard Fireware OS networkd process could allow an authenticated privileged user to execute arbitrary code via a specially crafted requests to the Management Web UI.This vulnerability affects Fireware OS 11.8 up to and including\u00a011.12.4_Update1, 12.0 up to",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00029"
+      ],
+      "published": "2026-07-03T00:16:49.333"
+    },
+    {
+      "id": "CVE-2026-13053",
+      "description": "An Out-of-bounds Write vulnerability in WatchGuard Fireware OS's CLI could allow an authenticated privileged user to execute arbitrary code via a specially crafted CLI command.\n\nThis vulnerability affects Fireware OS 11.0 up to and including 11.12.4_Update1, 12.0 up to and including 12.12 and 2025.1",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00030"
+      ],
+      "published": "2026-07-03T00:16:50.320"
+    },
+    {
+      "id": "CVE-2026-13054",
+      "description": "A path traversal vulnerability in the WatchGuard Fireware OS Management Web UI allows a privileged authenticated attacker to write arbitrary files on the Firebox's filesystem.\n\n\n\n\nThis vulnerability affects Fireware OS 11.0 up to and including 11.12.4_Update1, 12.0 up to and including 12.12 and 2025",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00028"
+      ],
+      "published": "2026-07-03T00:16:50.497"
+    },
+    {
+      "id": "CVE-2026-13079",
+      "description": "A local privilege escalation vulnerability in the WatchGuard Mobile VPN with SSL client for Windows allows a local attacker to escalate their privileges to NT AUTHORITY\\SYSTEM on the machine where the client is installed.\n\nThis issue affects the Mobile VPN with SSL client for Windows up to and inclu",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-732"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00027"
+      ],
+      "published": "2026-07-03T00:16:50.630"
+    },
+    {
+      "id": "CVE-2026-13084",
+      "description": "A null pointer dereference vulnerability in WatchGuard Fireware OS may allow a remote unauthenticated attacker to create a denial-of-service (DoS) condition by sending specially crafted IKEv2 messages.\u00a0This vulnerability affects both the Mobile User VPN with IKEv2 and the Branch Office VPN using IKE",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00024"
+      ],
+      "published": "2026-07-03T00:16:50.767"
+    },
+    {
+      "id": "CVE-2026-13368",
+      "description": "WatchGuard Fireware OS contains a race condition leading to a use-after-free vulnerability in LDAP authentication for the Mobile User VPN with IKEv2. A remote unauthenticated attacker could exploit this vulnerability to execute arbitrary code in the context of the iked process on Fireboxes that have",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00023"
+      ],
+      "published": "2026-07-03T00:16:50.890"
+    },
+    {
+      "id": "CVE-2026-13371",
+      "description": "An authenticated administrator can trigger a denial-of-service condition in the Fireware Management Web UI by sending malformed or crafted data to the put_data endpoint, which performs unsafe deserialization of the attacker-supplied input.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00014"
+      ],
+      "published": "2026-07-03T00:16:51.013"
+    },
+    {
+      "id": "CVE-2026-13373",
+      "description": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in WatchGuard Fireware OS (Tigerpaw Technology Integration module) allows Stored XSS. This vulnerability is an additional unmitigated attack path for CVE-2025-13936.\n\n\nThis issue affects Firewar",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00015"
+      ],
+      "published": "2026-07-03T00:16:51.137"
+    },
+    {
+      "id": "CVE-2026-13374",
+      "description": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in WatchGuard Fireware OS (ConnectWise Technology Integration module) allows Stored XSS. This vulnerability is an additional unmitigated attack path for CVE-2025-13937.\n\n\nThis issue affects Fire",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00016"
+      ],
+      "published": "2026-07-03T00:16:51.257"
+    },
+    {
+      "id": "CVE-2026-13375",
+      "description": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in WatchGuard Fireware OS (Autotask Technology Integration module) allows Stored XSS. This vulnerability is an additional unmitigated attack path for CVE-2025-13938.\n\n\nThis issue affects Firewar",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00017"
+      ],
+      "published": "2026-07-03T00:16:51.373"
+    },
+    {
+      "id": "CVE-2026-13376",
+      "description": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in WatchGuard Fireware OS spamBlocker module allows Stored XSS. This vulnerability is an additional unmitigated attack path for CVE-2025-1071.\n\nThis issue affects Fireware OS 12.0 up to and incl",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00018"
+      ],
+      "published": "2026-07-03T00:16:51.497"
+    },
+    {
+      "id": "CVE-2026-13377",
+      "description": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in WatchGuard Fireware OS SIP Proxy module allows Stored XSS. This vulnerability is an additional unmitigated attack path for CVE-2025-6947.\n\nThis issue affects Fireware OS 12.0 up to and includ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00019"
+      ],
+      "published": "2026-07-03T00:16:51.643"
+    },
+    {
+      "id": "CVE-2026-13383",
+      "description": "An Out-of-bounds Write vulnerability in WatchGuard Fireware OS ikestubd process could allow an authenticated privileged user to execute arbitrary code via a specially crafted requests to the Management Web UI.This vulnerability affects Fireware OS 12.1 up to and including 12.12 and 2025.1 up to and ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00020"
+      ],
+      "published": "2026-07-03T00:16:51.773"
+    },
+    {
+      "id": "CVE-2026-13384",
+      "description": "An Out-of-bounds Write vulnerability in WatchGuard Fireware OS wgagent process could allow an authenticated privileged user to execute arbitrary code via a specially crafted requests to the Management Web UI.This vulnerability affects Fireware OS 12.1 up to and including 12.12 and 2025.1 up to and i",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00021"
+      ],
+      "published": "2026-07-03T00:16:51.893"
+    },
+    {
+      "id": "CVE-2026-13722",
+      "description": "WatchGuard Fireware OS contains a firmware validation bypass when processing a backup image via the backup/restore feature. An authenticated administrator can exploit this vulnerability to install a tampered firmware image.This vulnerability affects Fireware OS 11.0 up to and including 11.12.4_Updat",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00022"
+      ],
+      "published": "2026-07-03T00:16:52.010"
+    },
+    {
+      "id": "CVE-2026-13728",
+      "description": "In exception circumstances, WatchGuard Fireware OS on a FireCluster may use a hard-coded encryption key to encrypt saved credentials for Access Portal resources.\n\nThis vulnerability affects Fireware OS 12.1 up to and including 12.12 and 2025.1 up to and including 2026.2. This vulnerability does not ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-798"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00025"
+      ],
+      "published": "2026-07-03T00:16:52.147"
+    },
+    {
+      "id": "CVE-2026-8247",
+      "description": "An Out-of-bounds Write vulnerability in WatchGuard Fireware OS may allow an unauthenticated attacker on the same local network segment to execute arbitrary code.\n\n\n\n\nThis vulnerability affects Fireware OS 11.0 up to and including 11.12.4_Update1, 12.0 up to and including 12.12 and 2025.1 up to and i",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-120"
+      ],
+      "references": [
+        "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2026-00026"
+      ],
+      "published": "2026-07-03T00:16:52.773"
+    }
+  ]
+}
