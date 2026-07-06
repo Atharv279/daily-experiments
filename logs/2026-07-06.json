@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-06T17:17:09.214274+00:00",
-  "scan_id": "1fdb1bb7d0",
+  "timestamp": "2026-07-06T21:52:23.146443+00:00",
+  "scan_id": "f9d07cff82",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -121,7 +121,8 @@
       ],
       "references": [
         "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-4whj-rm5r-c2v8",
-        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-torch-utils-bottleneck-main-run-autograd-prof"
+        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-torch-utils-bottleneck-main-run-autograd-prof",
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-4whj-rm5r-c2v8"
       ],
       "published": "2026-07-04T02:16:21.670"
     },
@@ -135,7 +136,8 @@
       ],
       "references": [
         "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-cffc-mxrf-mhh4",
-        "https://www.vulncheck.com/advisories/picklescan-undetected-remote-code-execution-via-numpy-f2py-crackfortran-param-eval"
+        "https://www.vulncheck.com/advisories/picklescan-undetected-remote-code-execution-via-numpy-f2py-crackfortran-param-eval",
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-cffc-mxrf-mhh4"
       ],
       "published": "2026-07-04T02:16:21.803"
     },
@@ -208,7 +210,8 @@
       ],
       "references": [
         "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-r8g5-cgf2-4m4m",
-        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-unsafe-deserialization-in-numpy-f2py-crackfortran"
+        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-unsafe-deserialization-in-numpy-f2py-crackfortran",
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-r8g5-cgf2-4m4m"
       ],
       "published": "2026-07-04T02:16:22.457"
     },
@@ -295,7 +298,8 @@
       ],
       "references": [
         "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-x843-g5mx-g377",
-        "https://www.vulncheck.com/advisories/picklescan-remote-code-execution-via-operator-methodcaller-detection-bypass"
+        "https://www.vulncheck.com/advisories/picklescan-remote-code-execution-via-operator-methodcaller-detection-bypass",
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-x843-g5mx-g377"
       ],
       "published": "2026-07-04T02:16:23.220"
     },
@@ -322,6 +326,7 @@
         "CWE-94"
       ],
       "references": [
+        "https://huntr.com/bounties/f5c93982-0cc9-4e2e-bb85-1b6ab29a2efb",
         "https://huntr.com/bounties/f5c93982-0cc9-4e2e-bb85-1b6ab29a2efb"
       ],
       "published": "2026-07-04T02:16:23.603"
