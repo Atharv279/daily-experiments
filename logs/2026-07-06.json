@@ -1,0 +1,338 @@
+{
+  "timestamp": "2026-07-06T06:49:20.582694+00:00",
+  "scan_id": "a706be8ccd",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 19,
+      "MEDIUM": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-502",
+        15
+      ],
+      [
+        "CWE-284",
+        1
+      ],
+      [
+        "CWE-648",
+        1
+      ],
+      [
+        "CWE-693",
+        1
+      ],
+      [
+        "CWE-94",
+        1
+      ]
+    ],
+    "threat_index": 472.4,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 472.4,
+        "yesterday": 61.4,
+        "change_pct": 669.4
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2025-71380",
+      "description": "The Execute Command node in n8n allows authenticated users to execute arbitrary commands on the host system where n8n runs. Attackers with user access or compromised credentials can exploit this node to run malicious commands, potentially leading to data exfiltration, service disruption, or complete",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/n8n-io/n8n/security/advisories/GHSA-365g-vjw2-grx8",
+        "https://www.vulncheck.com/advisories/n8n-arbitrary-command-execution-via-execute-command-node"
+      ],
+      "published": "2026-07-04T02:16:23.477"
+    },
+    {
+      "id": "CVE-2026-54424",
+      "description": "An Incorrect Use of Privileged APIs vulnerability in Unity Parsec on Windows hosts leads to a potential Elevation of Privilege. This issue affects Parsec through v2026-05-04.0. The patched version is\u00a0Parsec for Windows version 150-104a. A user can generate a situation where there is an instance of p",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-648"
+      ],
+      "references": [
+        "https://github.com/tomadimitrie/CVE-2026-54424",
+        "https://parsec.app/",
+        "https://support.parsec.app/hc/en-us/articles/50612943726612-CVE-2026-54424"
+      ],
+      "published": "2026-07-04T01:16:27.340"
+    },
+    {
+      "id": "CVE-2025-71342",
+      "description": "picklescan before 0.0.30 fails to detect malicious pickle files using idlelib.run.Executive.runcode in reduce methods. Attackers can embed undetected code in pickle files that executes during pickle.load, enabling remote code execution in PyTorch models and supply chain attacks.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-m869-42cg-3xwr",
+        "https://www.vulncheck.com/advisories/picklescan-undetected-remote-code-execution-via-idlelib-run-executive-runcode"
+      ],
+      "published": "2026-07-04T02:16:21.387"
+    },
+    {
+      "id": "CVE-2025-71343",
+      "description": "picklescan before 0.0.30 fails to detect malicious pickle files that exploit lib2to3.pgen2.pgen.ParserGenerator.make_label function in the reduce method. Attackers can craft malicious pickle files with embedded code that evades detection but executes arbitrary commands when pickle.load() is called.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-p9w7-82w4-7q8m",
+        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-lib2to3-pgen2-pgen-parsergenerator-make-label-detection-bypass"
+      ],
+      "published": "2026-07-04T02:16:21.527"
+    },
+    {
+      "id": "CVE-2025-71345",
+      "description": "picklescan before 0.0.30 fails to detect malicious pickle files that invoke torch.utils.bottleneck.__main__.run_autograd_prof function. Attackers can embed undetected code in pickle files that executes during deserialization, enabling remote code execution.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-4whj-rm5r-c2v8",
+        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-torch-utils-bottleneck-main-run-autograd-prof"
+      ],
+      "published": "2026-07-04T02:16:21.670"
+    },
+    {
+      "id": "CVE-2025-71347",
+      "description": "picklescan before 0.0.33 fails to detect malicious pickle files using numpy.f2py.crackfortran.param_eval function in reduce methods, allowing attackers to bypass security checks. Remote attackers can embed undetected code in pickle files that executes during deserialization, enabling arbitrary code ",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-cffc-mxrf-mhh4",
+        "https://www.vulncheck.com/advisories/picklescan-undetected-remote-code-execution-via-numpy-f2py-crackfortran-param-eval"
+      ],
+      "published": "2026-07-04T02:16:21.803"
+    },
+    {
+      "id": "CVE-2025-71353",
+      "description": "picklescan before 0.0.28 fails to detect malicious pickle files that exploit torch._dynamo.guards.GuardBuilder.get function in reduce methods. Attackers can craft pickle files with embedded code that evades picklescan detection and executes arbitrary commands when loaded.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-86cj-95qr-2p4f",
+        "https://www.vulncheck.com/advisories/picklescan-remote-code-execution-via-torch-dynamo-guards-guardbuilder-get"
+      ],
+      "published": "2026-07-04T02:16:21.933"
+    },
+    {
+      "id": "CVE-2025-71356",
+      "description": "picklescan before 0.0.28 fails to detect malicious torch.fx.experimental.symbolic_shapes.ShapeEnv.evaluate_guards_expression function calls in pickle files. Attackers can embed undetected code in pickle files that executes remote code when loaded by victims.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-f4x7-rfwp-v3xw",
+        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-torch-fx-experimental-symbolic-shapes-shapeenv-evaluate-guards-expression"
+      ],
+      "published": "2026-07-04T02:16:22.063"
+    },
+    {
+      "id": "CVE-2025-71359",
+      "description": "picklescan before 0.0.29 fails to detect malicious pickle payloads that utilize lib2to3.pgen2.grammar.Grammar.loads in the reduce method, allowing remote code execution. Attackers can craft pickle files embedding dangerous code that evades picklescan detection and executes during pickle.load() deser",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-f54q-57x4-jg88",
+        "https://www.vulncheck.com/advisories/picklescan-unsafe-deserialization-via-lib2to3-pgen2-grammar-grammar-loads"
+      ],
+      "published": "2026-07-04T02:16:22.197"
+    },
+    {
+      "id": "CVE-2025-71360",
+      "description": "picklescan before 0.0.29 fails to detect malicious pickle files using idlelib.calltip.get_entity function in reduce methods. Attackers can embed undetected code in pickle files that executes remote commands when loaded by victims.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-9xph-j2h6-g47v",
+        "https://www.vulncheck.com/advisories/picklescan-remote-code-execution-via-undetected-idlelib-calltip-get-entity"
+      ],
+      "published": "2026-07-04T02:16:22.327"
+    },
+    {
+      "id": "CVE-2025-71362",
+      "description": "picklescan before 0.0.33 fails to detect unsafe deserialization when numpy.f2py.crackfortran functions call eval on arbitrary strings. Attackers can embed malicious code in pickle files that executes when loaded from untrusted sources.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-r8g5-cgf2-4m4m",
+        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-unsafe-deserialization-in-numpy-f2py-crackfortran"
+      ],
+      "published": "2026-07-04T02:16:22.457"
+    },
+    {
+      "id": "CVE-2025-71364",
+      "description": "picklescan before 0.0.30 fails to detect the asyncio.unix_events._UnixSubprocessTransport._start function in pickle reduce methods, allowing remote code execution. Attackers can craft malicious pickle files embedding this built-in function that evade detection but execute arbitrary commands when loa",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-q77w-mwjj-7mqx",
+        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-undetected-asyncio-unix-events-unixsubprocesstransport-start"
+      ],
+      "published": "2026-07-04T02:16:22.583"
+    },
+    {
+      "id": "CVE-2025-71366",
+      "description": "picklescan before 0.0.28 fails to detect malicious torch.utils.bottleneck.__main__.run_cprofile function calls in pickle files, allowing attackers to bypass safety checks. Remote attackers can embed undetected code in pickle files to achieve arbitrary code execution when victims load the files.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-4r9r-ch6f-vxmx",
+        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-torch-utils-bottleneck-main-run-cprofile"
+      ],
+      "published": "2026-07-04T02:16:22.707"
+    },
+    {
+      "id": "CVE-2025-71367",
+      "description": "picklescan before 0.0.34 fails to detect _operator.attrgetter function calls in pickle payloads, allowing attackers to bypass security checks. Remote attackers can craft malicious pickle files using _operator.attrgetter in reduce methods to execute arbitrary code when pickle.load() processes the fil",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-46h3-79wf-xr6c",
+        "https://www.vulncheck.com/advisories/picklescan-remote-code-execution-via-operator-attrgetter-detection-bypass"
+      ],
+      "published": "2026-07-04T02:16:22.833"
+    },
+    {
+      "id": "CVE-2025-71369",
+      "description": "picklescan before 0.0.28 fails to detect malicious pickle files that use torch.utils.data.datapipes.utils.decoder.basichandlers in reduce methods, allowing attackers to bypass safety checks. Remote attackers can embed undetected malicious code in pickle files that executes during deserialization, en",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-h3qp-7fh3-f8h4",
+        "https://www.vulncheck.com/advisories/picklescan-unsafe-deserialization-via-torch-utils-data-datapipes-utils-decoder-basichandlers"
+      ],
+      "published": "2026-07-04T02:16:22.963"
+    },
+    {
+      "id": "CVE-2025-71372",
+      "description": "Picklescan before 0.0.33 fails to detect the numpy.f2py.crackfortran.getlincoef gadget in pickle __reduce__ methods, allowing arbitrary code execution. Attackers can craft malicious pickle files that execute arbitrary Python code when loaded, bypassing Picklescan's safety checks and enabling supply-",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-rrxm-2pvv-m66x",
+        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-numpy-f2py-crackfortran-getlincoef-gadget"
+      ],
+      "published": "2026-07-04T02:16:23.097"
+    },
+    {
+      "id": "CVE-2025-71373",
+      "description": "picklescan before 0.0.33 fails to detect operator.methodcaller function calls in pickle files, allowing attackers to bypass security checks. Remote attackers can craft malicious pickle payloads using operator.methodcaller that execute arbitrary code when loaded, compromising systems relying on pickl",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-693"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-x843-g5mx-g377",
+        "https://www.vulncheck.com/advisories/picklescan-remote-code-execution-via-operator-methodcaller-detection-bypass"
+      ],
+      "published": "2026-07-04T02:16:23.220"
+    },
+    {
+      "id": "CVE-2025-71375",
+      "description": "picklescan before 0.0.34 fails to detect the _operator.methodcaller built-in function when scanning pickle files for malicious code. Attackers can craft malicious pickle payloads using _operator.methodcaller that evade detection and execute arbitrary code when loaded by pickle.load().",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-955r-x9j8-7rhh",
+        "https://www.vulncheck.com/advisories/picklescan-undetected-remote-code-execution-via-operator-methodcaller"
+      ],
+      "published": "2026-07-04T02:16:23.347"
+    },
+    {
+      "id": "CVE-2026-12252",
+      "description": "In nltk/nltk versions 3.9.3 and earlier, five Stanford interface classes (StanfordPOSTagger, StanfordNERTagger, StanfordParser, StanfordDependencyParser, and StanfordNeuralDependencyParser) are vulnerable to untrusted JAR code execution. These classes accept user-controllable JAR paths and execute t",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://huntr.com/bounties/f5c93982-0cc9-4e2e-bb85-1b6ab29a2efb"
+      ],
+      "published": "2026-07-04T02:16:23.603"
+    },
+    {
+      "id": "CVE-2026-14618",
+      "description": "A vulnerability was detected in Open5GS up to 2.7.7. Affected by this vulnerability is the function amf_nnrf_handle_nf_discover of the file src/amf/nnrf-handler.c of the component AMF. The manipulation results in denial of service. The attack may be launched remotely. The exploit is now public and m",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/ferrancanellas/open5gs/commit/fb5f67703de0213fb9c6e6ef3b48b6c1707e9503",
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/issues/4517"
+      ],
+      "published": "2026-07-04T07:16:24.503"
+    }
+  ]
+}
