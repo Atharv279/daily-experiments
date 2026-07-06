@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-06T12:15:01.830336+00:00",
-  "scan_id": "31d788533a",
+  "timestamp": "2026-07-06T17:17:09.214274+00:00",
+  "scan_id": "1fdb1bb7d0",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -92,7 +92,8 @@
       ],
       "references": [
         "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-m869-42cg-3xwr",
-        "https://www.vulncheck.com/advisories/picklescan-undetected-remote-code-execution-via-idlelib-run-executive-runcode"
+        "https://www.vulncheck.com/advisories/picklescan-undetected-remote-code-execution-via-idlelib-run-executive-runcode",
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-m869-42cg-3xwr"
       ],
       "published": "2026-07-04T02:16:21.387"
     },
@@ -148,7 +149,8 @@
       ],
       "references": [
         "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-86cj-95qr-2p4f",
-        "https://www.vulncheck.com/advisories/picklescan-remote-code-execution-via-torch-dynamo-guards-guardbuilder-get"
+        "https://www.vulncheck.com/advisories/picklescan-remote-code-execution-via-torch-dynamo-guards-guardbuilder-get",
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-86cj-95qr-2p4f"
       ],
       "published": "2026-07-04T02:16:21.933"
     },
@@ -162,7 +164,8 @@
       ],
       "references": [
         "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-f4x7-rfwp-v3xw",
-        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-torch-fx-experimental-symbolic-shapes-shapeenv-evaluate-guards-expression"
+        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-torch-fx-experimental-symbolic-shapes-shapeenv-evaluate-guards-expression",
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-f4x7-rfwp-v3xw"
       ],
       "published": "2026-07-04T02:16:22.063"
     },
@@ -176,7 +179,8 @@
       ],
       "references": [
         "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-f54q-57x4-jg88",
-        "https://www.vulncheck.com/advisories/picklescan-unsafe-deserialization-via-lib2to3-pgen2-grammar-grammar-loads"
+        "https://www.vulncheck.com/advisories/picklescan-unsafe-deserialization-via-lib2to3-pgen2-grammar-grammar-loads",
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-f54q-57x4-jg88"
       ],
       "published": "2026-07-04T02:16:22.197"
     },
@@ -232,7 +236,8 @@
       ],
       "references": [
         "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-4r9r-ch6f-vxmx",
-        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-torch-utils-bottleneck-main-run-cprofile"
+        "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-torch-utils-bottleneck-main-run-cprofile",
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-4r9r-ch6f-vxmx"
       ],
       "published": "2026-07-04T02:16:22.707"
     },
@@ -246,7 +251,8 @@
       ],
       "references": [
         "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-46h3-79wf-xr6c",
-        "https://www.vulncheck.com/advisories/picklescan-remote-code-execution-via-operator-attrgetter-detection-bypass"
+        "https://www.vulncheck.com/advisories/picklescan-remote-code-execution-via-operator-attrgetter-detection-bypass",
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-46h3-79wf-xr6c"
       ],
       "published": "2026-07-04T02:16:22.833"
     },
@@ -260,7 +266,8 @@
       ],
       "references": [
         "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-h3qp-7fh3-f8h4",
-        "https://www.vulncheck.com/advisories/picklescan-unsafe-deserialization-via-torch-utils-data-datapipes-utils-decoder-basichandlers"
+        "https://www.vulncheck.com/advisories/picklescan-unsafe-deserialization-via-torch-utils-data-datapipes-utils-decoder-basichandlers",
+        "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-h3qp-7fh3-f8h4"
       ],
       "published": "2026-07-04T02:16:22.963"
     },
