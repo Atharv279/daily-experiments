@@ -1,0 +1,375 @@
+{
+  "timestamp": "2026-07-07T06:27:08.226357+00:00",
+  "scan_id": "f6e3274bf9",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 5,
+      "MEDIUM": 10,
+      "LOW": 5
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        9
+      ],
+      [
+        "CWE-89",
+        8
+      ],
+      [
+        "CWE-330",
+        2
+      ],
+      [
+        "CWE-266",
+        2
+      ],
+      [
+        "CWE-285",
+        2
+      ]
+    ],
+    "threat_index": 244.0,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 244.0,
+        "yesterday": 472.4,
+        "change_pct": -48.3
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-14570",
+      "description": "Crypt::DSA versions before 1.22 for Perl draw the DSA signing nonce and private key from a biased random generator, leading to private-key recovery.\n\n\"Crypt::DSA::Util::makerandom forces the high bit of every value it returns to obtain an exactly N-bit integer for prime search. The signing nonce and",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-330"
+      ],
+      "references": [
+        "https://metacpan.org/release/TIMLEGGE/Crypt-DSA-1.21/source/lib/Crypt/DSA/Util.pm#L56",
+        "https://metacpan.org/release/TIMLEGGE/Crypt-DSA-1.22/changes",
+        "https://metacpan.org/release/TIMLEGGE/Crypt-DSA-1.22/diff/TIMLEGGE/Crypt-DSA-1.21#lib/Crypt/DSA/Util.pm"
+      ],
+      "published": "2026-07-05T02:17:40.190"
+    },
+    {
+      "id": "CVE-2026-14688",
+      "description": "A vulnerability was identified in itsourcecode Online Hotel Management System 1.0. The affected element is an unknown function of the file /admin/login.php. The manipulation of the argument email leads to sql injection. The attack may be initiated remotely. The exploit is publicly available and migh",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/geminipolo1991-vampire/CVE---Web/issues/1",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-14688"
+      ],
+      "published": "2026-07-05T01:21:57.917"
+    },
+    {
+      "id": "CVE-2026-14690",
+      "description": "A weakness has been identified in SourceCodester Multi-Vendor Online Grocery Management System 1.0. This affects the function save_users of the file classes/Users.php. This manipulation causes improper authorization. Remote exploitation of the attack is possible. The exploit has been made available ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/lee945/cve/issues/1",
+        "https://vuldb.com/cve/CVE-2026-14690",
+        "https://vuldb.com/submit/846830"
+      ],
+      "published": "2026-07-05T02:17:40.743"
+    },
+    {
+      "id": "CVE-2026-14695",
+      "description": "A vulnerability was found in SourceCodester Multi-Vendor Online Grocery Management System 1.0. This affects the function save_client of the file classes/Users.php of the component Registration Handler. The manipulation of the argument Name results in sql injection. It is possible to launch the attac",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/lee945/cve/issues/6",
+        "https://vuldb.com/cve/CVE-2026-14695",
+        "https://vuldb.com/submit/846835"
+      ],
+      "published": "2026-07-05T03:16:20.137"
+    },
+    {
+      "id": "CVE-2026-14700",
+      "description": "A security vulnerability has been detected in code-projects Internship Management System 1.0. The impacted element is an unknown function of the file employer/login.php of the component Employer Login Endpoint. The manipulation of the argument email/password leads to sql injection. Remote exploitati",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/zzzxc643/CVE1/blob/main/assessment/vul7.md",
+        "https://vuldb.com/cve/CVE-2026-14700"
+      ],
+      "published": "2026-07-05T05:16:28.140"
+    },
+    {
+      "id": "CVE-2026-14689",
+      "description": "A security flaw has been discovered in CodeAstro Apartment Visitor Management System 1.0. The impacted element is an unknown function of the file /apartment-visitor/add-apartment.php. The manipulation of the argument apartmentno results in sql injection. The attack may be launched remotely. The expl",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://codeastro.com/",
+        "https://github.com/yihaofuweng/cve/issues/70",
+        "https://vuldb.com/cve/CVE-2026-14689"
+      ],
+      "published": "2026-07-05T02:17:40.470"
+    },
+    {
+      "id": "CVE-2026-14691",
+      "description": "A security vulnerability has been detected in SourceCodester Multi-Vendor Online Grocery Management System 1.0. This impacts the function update_settings_info of the file classes/SystemSettings.php of the component Setting Handler. Such manipulation of the argument content[] leads to code injection.",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/lee945/cve/issues/2",
+        "https://vuldb.com/cve/CVE-2026-14691",
+        "https://vuldb.com/submit/846831"
+      ],
+      "published": "2026-07-05T02:17:40.907"
+    },
+    {
+      "id": "CVE-2026-14692",
+      "description": "A vulnerability was detected in SourceCodester Multi-Vendor Online Grocery Management System 1.0/5.7.26. Affected is the function save_shop_type of the file classes/Master.php of the component POST Parameter Handler. Performing a manipulation results in sql injection. The attack is possible to be ca",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/lee945/cve/issues/3",
+        "https://vuldb.com/cve/CVE-2026-14692",
+        "https://vuldb.com/submit/846832"
+      ],
+      "published": "2026-07-05T03:16:18.470"
+    },
+    {
+      "id": "CVE-2026-14694",
+      "description": "A vulnerability has been found in SourceCodester Multi-Vendor Online Grocery Management System 1.0. Affected by this issue is the function cancel_order of the file classes/Master.php of the component POST Parameter Handler. The manipulation of the argument ID leads to sql injection. It is possible t",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/lee945/cve/issues/5",
+        "https://vuldb.com/cve/CVE-2026-14694",
+        "https://vuldb.com/submit/846834"
+      ],
+      "published": "2026-07-05T03:16:19.967"
+    },
+    {
+      "id": "CVE-2026-14698",
+      "description": "A security flaw has been discovered in SourceCodester Syllabus-Aligned Learning Management and Examination System 1.0. Impacted is an unknown function of the file upload_files.php. Performing a manipulation results in unrestricted upload. The attack may be initiated remotely. The exploit has been re",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://pastebin.com/PNJvBZwT",
+        "https://vuldb.com/cve/CVE-2026-14698",
+        "https://vuldb.com/submit/846859"
+      ],
+      "published": "2026-07-05T05:16:26.997"
+    },
+    {
+      "id": "CVE-2026-14701",
+      "description": "A vulnerability was detected in code-projects Internship Management System 1.0. This affects an unknown function of the file employer/details/change_password.php of the component Password Change Endpoint. The manipulation of the argument Current results in sql injection. The attack can be executed r",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/zzzxc643/CVE1/blob/main/assessment/vul8.md",
+        "https://vuldb.com/cve/CVE-2026-14701"
+      ],
+      "published": "2026-07-05T05:16:28.300"
+    },
+    {
+      "id": "CVE-2026-14703",
+      "description": "A vulnerability has been found in itsourcecode Hospital Management System 1.0. Affected is an unknown function of the file /patientorder.php. Such manipulation of the argument editid leads to sql injection. The attack may be performed from remote. The exploit has been disclosed to the public and may",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/ltranquility/submit_vuln/issues/1",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-14703"
+      ],
+      "published": "2026-07-05T05:16:28.610"
+    },
+    {
+      "id": "CVE-2026-14693",
+      "description": "A flaw has been found in SourceCodester Multi-Vendor Online Grocery Management System 1.0. Affected by this vulnerability is the function cancel_order of the file classes/Master.php. Executing a manipulation can lead to improper authorization. The attack may be performed from remote. The exploit has",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/lee945/cve/issues/4",
+        "https://vuldb.com/cve/CVE-2026-14693",
+        "https://vuldb.com/submit/846833"
+      ],
+      "published": "2026-07-05T03:16:19.773"
+    },
+    {
+      "id": "CVE-2026-14687",
+      "description": "A vulnerability was determined in 666ghj BettaFish up to 1.2.1. Impacted is the function _deduplicate_results of the file InsightEngine/agent.py of the component InsightEngine search-result Deduplication. Executing a manipulation can lead to partial string comparison. The attack can be launched remo",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-187",
+        "CWE-697"
+      ],
+      "references": [
+        "https://github.com/666ghj/BettaFish/",
+        "https://github.com/666ghj/BettaFish/issues/688",
+        "https://github.com/666ghj/BettaFish/pull/689"
+      ],
+      "published": "2026-07-05T01:21:57.753"
+    },
+    {
+      "id": "CVE-2026-14704",
+      "description": "A vulnerability was found in stephen-kruger bluebox up to 4.5.12. Affected by this vulnerability is an unknown functionality. Performing a manipulation of the argument code results in cross site scripting. It is possible to initiate the attack remotely. The exploit has been made public and could be ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/stephen-kruger/bluebox/",
+        "https://github.com/stephen-kruger/bluebox/issues/32",
+        "https://github.com/stephen-kruger/bluebox/issues/32#issuecomment-4632135192"
+      ],
+      "published": "2026-07-05T06:16:28.420"
+    },
+    {
+      "id": "CVE-2026-14684",
+      "description": "A flaw has been found in HdrHistogram up to 2.2.2. This affects the function org.HdrHistogram.AbstractHistogram.decodeFromByteBuffer of the file src/main/java/org/HdrHistogram/AbstractHistogram.java. This manipulation of the argument numberOfSignificantValueDigits causes uncontrolled memory allocati",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-789"
+      ],
+      "references": [
+        "https://github.com/HdrHistogram/HdrHistogram/",
+        "https://github.com/HdrHistogram/HdrHistogram/issues/220",
+        "https://vuldb.com/cve/CVE-2026-14684"
+      ],
+      "published": "2026-07-05T00:17:35.457"
+    },
+    {
+      "id": "CVE-2026-14685",
+      "description": "A vulnerability has been found in HdrHistogram up to 2.2.2. This vulnerability affects the function recordValueWithCount of the file src/main/java/org/HdrHistogram/AbstractHistogram.java of the component AbstractHistogram. Such manipulation of the argument Count leads to state issue. The attack can ",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-371"
+      ],
+      "references": [
+        "https://github.com/HdrHistogram/HdrHistogram/",
+        "https://github.com/HdrHistogram/HdrHistogram/issues/221",
+        "https://vuldb.com/cve/CVE-2026-14685"
+      ],
+      "published": "2026-07-05T00:17:35.610"
+    },
+    {
+      "id": "CVE-2026-14686",
+      "description": "A vulnerability was found in HdrHistogram up to 2.2.2. This issue affects the function org.HdrHistogram.DoubleHistogram.recordValue of the file src/main/java/org/HdrHistogram/DoubleHistogram.java of the component Range Check. Performing a manipulation results in incorrect comparison. The attack is o",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-697"
+      ],
+      "references": [
+        "https://github.com/HdrHistogram/HdrHistogram/",
+        "https://github.com/HdrHistogram/HdrHistogram/issues/222",
+        "https://vuldb.com/cve/CVE-2026-14686"
+      ],
+      "published": "2026-07-05T01:21:57.560"
+    },
+    {
+      "id": "CVE-2026-14699",
+      "description": "A weakness has been identified in zcaceres markdownify-mcp up to 1.1.0. The affected element is the function assertPathAllowed of the file src/Markdownify.ts. Executing a manipulation can lead to symlink following. The attack can only be executed locally. The pull request to fix this issue awaits ac",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-59",
+        "CWE-61"
+      ],
+      "references": [
+        "https://github.com/zcaceres/markdownify-mcp/",
+        "https://github.com/zcaceres/markdownify-mcp/issues/108",
+        "https://github.com/zcaceres/markdownify-mcp/pull/109"
+      ],
+      "published": "2026-07-05T05:16:27.977"
+    },
+    {
+      "id": "CVE-2026-14702",
+      "description": "A flaw has been found in zcaceres markdownify-mcp up to 1.1.0. This impacts the function saveToTempFile of the file src/Markdownify.ts of the component webpage-to-markdown/youtube-to-markdown/bing-search-to-markdown. This manipulation causes insufficiently random values. The attack is restricted to ",
+      "severity": "LOW",
+      "score": 2.5,
+      "cwes": [
+        "CWE-310",
+        "CWE-330"
+      ],
+      "references": [
+        "https://github.com/zcaceres/markdownify-mcp/",
+        "https://github.com/zcaceres/markdownify-mcp/issues/110",
+        "https://github.com/zcaceres/markdownify-mcp/pull/111"
+      ],
+      "published": "2026-07-05T05:16:28.450"
+    }
+  ]
+}
