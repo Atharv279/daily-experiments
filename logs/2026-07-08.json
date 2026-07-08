@@ -1,0 +1,371 @@
+{
+  "timestamp": "2026-07-08T05:33:07.509553+00:00",
+  "scan_id": "6b928da975",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 2,
+      "MEDIUM": 12,
+      "LOW": 6
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        5
+      ],
+      [
+        "CWE-89",
+        5
+      ],
+      [
+        "CWE-266",
+        3
+      ],
+      [
+        "CWE-285",
+        3
+      ],
+      [
+        "CWE-284",
+        2
+      ]
+    ],
+    "threat_index": 204.4,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 204.4,
+        "yesterday": 244.0,
+        "change_pct": -16.2
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2024-6228",
+      "description": "The Notifications for Forms & WordPress Actions WordPress plugin before 2.6 does not validate a user-supplied value before using it to build a server-side file inclusion path, allowing authenticated users with subscriber-level access and above to include and execute arbitrary local PHP files on the ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/6382bfea-6265-4f4b-b26e-4219d9ed78aa/"
+      ],
+      "published": "2026-07-06T08:16:34.057"
+    },
+    {
+      "id": "CVE-2026-14778",
+      "description": "A security vulnerability has been detected in SourceCodester Onlne Examination & Learning Management System 1.0. This affects an unknown part of the file /ajax_enroll.php of the component Enrollment Management. The manipulation of the argument student_id/schedule_id/action leads to improper authoriz",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/nuiifornet/A033/blob/main/OE-LMS-IDOR-ajax_enroll.md",
+        "https://vuldb.com/cve/CVE-2026-14778",
+        "https://vuldb.com/submit/850695"
+      ],
+      "published": "2026-07-06T00:16:54.880"
+    },
+    {
+      "id": "CVE-2026-14803",
+      "description": "Mojo::JSON versions before 9.47 for Perl allow memory exhaustion via unbounded recursion in the pure-Perl decoder.\n\nThe pure-Perl decode path (`_decode_value` dispatching to `_decode_array` and `_decode_object`) recurses with no depth limit, so a small deeply nested JSON document can consume excessi",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://github.com/mojolicious/mojo/commit/cc38b0554275c4d84f6b8b49bcbbc1bec2068fe1.patch",
+        "https://metacpan.org/release/SRI/Mojolicious-9.47/changes",
+        "http://www.openwall.com/lists/oss-security/2026/07/06/2"
+      ],
+      "published": "2026-07-06T02:16:21.683"
+    },
+    {
+      "id": "CVE-2026-14792",
+      "description": "A security vulnerability has been detected in Formbricks 5.0.0. This impacts an unknown function of the file apps/web/modules/survey/link/actions.ts of the component Survey Handler. The manipulation leads to improper access controls. Remote exploitation of the attack is possible. Upgrading to versio",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/formbricks/formbricks/",
+        "https://github.com/formbricks/formbricks/commit/af6023b5ac3b030ffcea24fac799f76f3e3512c6",
+        "https://github.com/formbricks/formbricks/pull/8094"
+      ],
+      "published": "2026-07-06T05:16:34.283"
+    },
+    {
+      "id": "CVE-2026-14777",
+      "description": "A weakness has been identified in SourceCodester Onlne Examination & Learning Management System 1.0. Affected by this issue is some unknown functionality of the file /announcements.php. Executing a manipulation can lead to unrestricted upload. The attack can be executed remotely. The exploit has bee",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/nuiifornet/A033/blob/main/OE-LMS-RCE-3-announcements.md",
+        "https://vuldb.com/cve/CVE-2026-14777",
+        "https://vuldb.com/submit/850679"
+      ],
+      "published": "2026-07-06T00:16:54.713"
+    },
+    {
+      "id": "CVE-2026-14784",
+      "description": "A vulnerability was identified in vxcontrol PentAGI up to 2.1.0. This affects an unknown function of the file backend/pkg/docker/client.go of the component Docker API. The manipulation leads to sandbox issue. The attack may be initiated remotely. The pull request to fix this issue awaits acceptance.",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-264",
+        "CWE-265"
+      ],
+      "references": [
+        "https://github.com/vxcontrol/pentagi/",
+        "https://github.com/vxcontrol/pentagi/issues/337",
+        "https://github.com/vxcontrol/pentagi/pull/355"
+      ],
+      "published": "2026-07-06T01:16:54.757"
+    },
+    {
+      "id": "CVE-2026-14795",
+      "description": "A vulnerability has been found in CodeAstro Apartment Visitor Management System 1.0. Affected by this issue is some unknown functionality of the file /apartment-visitor/action-visitor.php. Such manipulation of the argument remark leads to sql injection. The attack may be performed from remote. The e",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://codeastro.com/",
+        "https://github.com/lilukun337/cve/issues/6",
+        "https://vuldb.com/cve/CVE-2026-14795"
+      ],
+      "published": "2026-07-06T05:16:35.010"
+    },
+    {
+      "id": "CVE-2026-14796",
+      "description": "A vulnerability was found in CodeAstro Apartment Visitor Management System 1.0. This affects an unknown part of the file /apartment-visitor/report.php. Performing a manipulation of the argument fromdate results in sql injection. It is possible to initiate the attack remotely. The exploit has been ma",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://codeastro.com/",
+        "https://github.com/lilukun337/cve/issues/7",
+        "https://vuldb.com/cve/CVE-2026-14796"
+      ],
+      "published": "2026-07-06T05:16:35.223"
+    },
+    {
+      "id": "CVE-2026-14797",
+      "description": "A vulnerability was determined in CodeAstro Apartment Visitor Management System 1.0. This vulnerability affects unknown code of the file /apartment-visitor/edit-apartment.php. Executing a manipulation of the argument editid can lead to sql injection. It is possible to launch the attack remotely. The",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://codeastro.com/",
+        "https://github.com/lilukun337/cve/issues/9",
+        "https://vuldb.com/cve/CVE-2026-14797"
+      ],
+      "published": "2026-07-06T06:16:27.153"
+    },
+    {
+      "id": "CVE-2026-14798",
+      "description": "A vulnerability was identified in CodeAstro Apartment Visitor Management System 1.0. This issue affects some unknown processing of the file /apartment-visitor/visitor-entry.php. The manipulation of the argument visname leads to sql injection. The attack can be initiated remotely. The exploit is publ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://codeastro.com/",
+        "https://github.com/lilukun337/cve/issues/10",
+        "https://vuldb.com/cve/CVE-2026-14798"
+      ],
+      "published": "2026-07-06T06:16:27.513"
+    },
+    {
+      "id": "CVE-2026-14799",
+      "description": "A security flaw has been discovered in CodeAstro Ecommerce Website 1.0. Impacted is an unknown function of the file /customer/my_account.php?my_wishlist. The manipulation of the argument delete_wishlist results in sql injection. The attack can be launched remotely. The exploit has been released to t",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://codeastro.com/",
+        "https://github.com/lilukun337/cve/issues/8",
+        "https://vuldb.com/cve/CVE-2026-14799"
+      ],
+      "published": "2026-07-06T06:16:27.710"
+    },
+    {
+      "id": "CVE-2026-14783",
+      "description": "A vulnerability was determined in NousResearch hermes-agent 2026.5.29.2. The impacted element is the function skill_view of the file tools/skills_tool.py. Executing a manipulation of the argument Name can lead to path traversal. The attack can be launched remotely. The exploit has been publicly disc",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/NousResearch/hermes-agent/",
+        "https://github.com/NousResearch/hermes-agent/commit/56f833efa427ccb444c0f9ad1759af1012f2124d",
+        "https://github.com/NousResearch/hermes-agent/issues/38643"
+      ],
+      "published": "2026-07-06T00:16:55.037"
+    },
+    {
+      "id": "CVE-2026-14793",
+      "description": "A vulnerability was detected in Craft CMS up to 4.18.0.1. Affected is the function actionReorderSets of the file src/controllers/GlobalsController.php of the component reorder-sets Endpoint. The manipulation results in authorization bypass. The attack can be executed remotely. Upgrading to version 4",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/craftcms/cms/commit/9bd05c91e6a7e6da5e949ec41a31c220c059aa04",
+        "https://github.com/craftcms/cms/releases/tag/4.18.1",
+        "https://vuldb.com/cve/CVE-2026-14793"
+      ],
+      "published": "2026-07-06T05:16:34.603"
+    },
+    {
+      "id": "CVE-2026-14794",
+      "description": "A flaw has been found in Craft CMS up to 4.18.0.1. Affected by this vulnerability is the function actionGetNewUsersData of the file src/controllers/ChartsController.php of the component Charts Endpoint. This manipulation of the argument userGroupId causes improper authorization. The attack is possib",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/craftcms/cms/commit/9ee53efc1314e6aba32771c66a13e072a246f4ce",
+        "https://github.com/craftcms/cms/releases/tag/4.18.1",
+        "https://vuldb.com/cve/CVE-2026-14794"
+      ],
+      "published": "2026-07-06T05:16:34.817"
+    },
+    {
+      "id": "CVE-2026-14791",
+      "description": "A weakness has been identified in crater-invoice-inc crater up to 6.0.6. This affects the function getFormattedString of the file app/Http/Requests/InvoicesRequest.php of the component Invoice Note Handler. Executing a manipulation of the argument notes can lead to cross site scripting. The attack m",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/crater-invoice-inc/crater/",
+        "https://github.com/crater-invoice-inc/crater/issues/1327",
+        "https://vuldb.com/cve/CVE-2026-14791"
+      ],
+      "published": "2026-07-06T03:16:29.613"
+    },
+    {
+      "id": "CVE-2026-14786",
+      "description": "A security flaw has been discovered in radareorg radare2 up to 6.1.6. This impacts the function r_str_word_get0set of the file libr/util/str.c. The manipulation results in integer overflow. The attack must be initiated from a local position. The exploit has been released to the public and may be use",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-189",
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/radareorg/radare2/",
+        "https://github.com/radareorg/radare2/commit/11ac224c0eb8d57830fccc99e1c1cd8e5d958813",
+        "https://github.com/radareorg/radare2/issues/26047"
+      ],
+      "published": "2026-07-06T01:16:54.913"
+    },
+    {
+      "id": "CVE-2026-14787",
+      "description": "A weakness has been identified in radareorg radare2 up to 6.1.6. Affected is the function cmd_print in the library libr/core/cmd_print.inc of the component pb Print Command Handler. This manipulation causes integer overflow. The attack needs to be launched locally. The exploit has been made availabl",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-189",
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/phix33/radare2/commit/2b6265476c75567006b0fcbb749f4ae7b189c5df",
+        "https://github.com/radareorg/radare2/",
+        "https://github.com/radareorg/radare2/issues/26048"
+      ],
+      "published": "2026-07-06T02:16:21.360"
+    },
+    {
+      "id": "CVE-2026-14788",
+      "description": "A security vulnerability has been detected in radareorg radare2 up to 6.1.6. Affected by this vulnerability is the function r_core_bin_load of the file libr/core/cfile.c. Such manipulation leads to use after free. The attack needs to be performed locally. The exploit has been disclosed publicly and ",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/oldzhu/radare2/commit/635ab1eeb30340c26076722a90cb91fb2272130b",
+        "https://github.com/radareorg/radare2/",
+        "https://github.com/radareorg/radare2/issues/26049"
+      ],
+      "published": "2026-07-06T02:16:21.527"
+    },
+    {
+      "id": "CVE-2026-14789",
+      "description": "A vulnerability was detected in radareorg radare2 up to 6.1.6. Affected by this issue is some unknown functionality of the file libr/bin/format/mdmp/mdmp.c of the component Memory64ListStream Parser. Performing a manipulation results in stack-based buffer overflow. The attack requires a local approa",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/mengzhisuoliu/radare2/commit/175d4addb68981331c85b10681c2161c38fb5762",
+        "https://github.com/radareorg/radare2/",
+        "https://github.com/radareorg/radare2/issues/26051"
+      ],
+      "published": "2026-07-06T03:16:29.220"
+    },
+    {
+      "id": "CVE-2026-14790",
+      "description": "A flaw has been found in GPAC 26.02.0. This affects the function nhmldump_send_frame of the file src/filters/write_nhml.c of the component Media File Handler. Executing a manipulation can lead to null pointer dereference. The attack requires local access. The exploit has been published and may be us",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/gpac/gpac/",
+        "https://github.com/gpac/gpac/commit/bd1d94e70e3bef364c07c5a1d94eca5c9f56e160",
+        "https://github.com/gpac/gpac/issues/3596"
+      ],
+      "published": "2026-07-06T03:16:29.427"
+    }
+  ]
+}
