@@ -1,0 +1,358 @@
+{
+  "timestamp": "2026-07-09T06:25:43.015778+00:00",
+  "scan_id": "136d696c01",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 3,
+      "HIGH": 9,
+      "MEDIUM": 5,
+      "LOW": 1,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-78",
+        8
+      ],
+      [
+        "CWE-639",
+        2
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-863",
+        1
+      ],
+      [
+        "CWE-285",
+        1
+      ]
+    ],
+    "threat_index": 408.6,
+    "critical_count": 3
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 408.6,
+        "yesterday": 204.4,
+        "change_pct": 99.9
+      },
+      "critical_count": {
+        "today": 3,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-34037",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.464, the cloneTo() Livewire action in ResourceOperations.php authorizes the source resource but resolves destination resources with unscoped Eloquent lookups, allowing an authentic",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/commit/1759a1631cd63271ebf6caa250c6d93440eaa333",
+        "https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.464",
+        "https://github.com/coollabsio/coolify/security/advisories/GHSA-ggrr-wrvr-x83v"
+      ],
+      "published": "2026-07-07T04:17:48.020"
+    },
+    {
+      "id": "CVE-2026-34047",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, terminal WebSocket bootstrap routes did not enforce the expected authorization middleware, allowing an authenticated user to access terminal functionality for resources outsid",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/commit/bc91b41f92f1bbb53886a5d7a60335cbf1621cd5",
+        "https://github.com/coollabsio/coolify/pull/9169",
+        "https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.471"
+      ],
+      "published": "2026-07-07T04:17:48.287"
+    },
+    {
+      "id": "CVE-2026-34048",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, terminal websocket bootstrap routes only check authentication and do not enforce terminal authorization, allowing a low-privileged team member to connect to terminal routes an",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-285",
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/commit/847166a3f89b7c80972fa0d2e5c754976f95b6ad",
+        "https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.471",
+        "https://github.com/coollabsio/coolify/security/advisories/GHSA-mw6q-2hmg-mhxv"
+      ],
+      "published": "2026-07-07T04:17:48.417"
+    },
+    {
+      "id": "CVE-2026-34034",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.466, the sentinel_token setting is used in shell commands without sufficient validation, allowing an authenticated user with access to server Sentinel settings to inject shell synt",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/commit/096d4369e59b3db7ace2db3ca42588c41b9b6019",
+        "https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.466",
+        "https://github.com/coollabsio/coolify/security/advisories/GHSA-rpr8-p7jc-x844"
+      ],
+      "published": "2026-07-07T04:17:47.603"
+    },
+    {
+      "id": "CVE-2026-34035",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.466, log drain secret and environment values were interpolated into shell commands without sufficient encoding, allowing an authenticated user to inject commands executed on the ho",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/commit/fcd574e1eb1c2f504c48e5be4a5cb6d69f8f1f55",
+        "https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.466",
+        "https://github.com/coollabsio/coolify/security/advisories/GHSA-3xm2-hqg8-4m2p"
+      ],
+      "published": "2026-07-07T04:17:47.873"
+    },
+    {
+      "id": "CVE-2026-34057",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, the database import Livewire component (app/Livewire/Project/Database/Import.php) allows client-controlled container and server properties to reach shell commands without lock",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/commit/d486bf09ab2da8ad78fa721a079f066c76ce08d2",
+        "https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.471",
+        "https://github.com/coollabsio/coolify/security/advisories/GHSA-6r3g-w7x8-54fj"
+      ],
+      "published": "2026-07-07T04:17:48.647"
+    },
+    {
+      "id": "CVE-2026-34058",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, the Livewire component Server\\Resources exposes public methods (startUnmanaged, stopUnmanaged, restartUnmanaged) that accept a container ID parameter directly from the browser",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/commit/944a038349216f00b390e905c121355adc8b23c1",
+        "https://github.com/coollabsio/coolify/pull/9172",
+        "https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.471"
+      ],
+      "published": "2026-07-07T04:17:49.193"
+    },
+    {
+      "id": "CVE-2026-34152",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, pre-deployment and post-deployment commands are single-quote escaped but then sent through SSH heredoc transport that preserves newlines, allowing an authenticated user to inj",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/commit/ad95d65aca064f49b38f73f88d61f842737d5463",
+        "https://github.com/coollabsio/coolify/pull/9173",
+        "https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.471"
+      ],
+      "published": "2026-07-07T04:17:50.043"
+    },
+    {
+      "id": "CVE-2026-34168",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, the LocalPersistentVolume.name field is interpolated directly into docker volume shell commands without shell argument escaping, allowing an authenticated user to set a storag",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/commit/d2064dd4998694cda2eabd00149f7c4d1e94c699",
+        "https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.471",
+        "https://github.com/coollabsio/coolify/security/advisories/GHSA-mh8x-fppq-cp77"
+      ],
+      "published": "2026-07-07T04:17:50.180"
+    },
+    {
+      "id": "CVE-2026-42143",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, user-controlled persistent volume names are interpolated into shell commands executed on managed servers without escaping or validation, allowing an authenticated member to in",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/commit/d2064dd4998694cda2eabd00149f7c4d1e94c699",
+        "https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.471",
+        "https://github.com/coollabsio/coolify/security/advisories/GHSA-6pmw-6m96-4v4m"
+      ],
+      "published": "2026-07-07T04:17:51.200"
+    },
+    {
+      "id": "CVE-2026-34171",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, the GET /invitations/{uuid} endpoint can perform a state-changing password reset using an attacker-known invitation UUID, allowing an attacker who can cause a victim to visit ",
+      "severity": "HIGH",
+      "score": 8.0,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/commit/25d424c743d5134d4a005a6d8f754bb3235b632c",
+        "https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.471",
+        "https://github.com/coollabsio/coolify/security/advisories/GHSA-389w-cc6x-wr2m"
+      ],
+      "published": "2026-07-07T04:17:50.513"
+    },
+    {
+      "id": "CVE-2026-34044",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.466, the Logs::mount() component looks up resources by UUID without scoping the lookup to the current team, allowing an authenticated user to access logs for applications owned by ",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/commit/6fbb5e626a82c576ae7a1a08b4e1d16aee2e82ed",
+        "https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.466",
+        "https://github.com/coollabsio/coolify/security/advisories/GHSA-565g-9j4m-wqmr"
+      ],
+      "published": "2026-07-07T04:17:48.153"
+    },
+    {
+      "id": "CVE-2026-11328",
+      "description": "The Exclusive Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the post title parameter in all versions up to, and including, 2.7.9.8 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contrib",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/exclusive-addons-for-elementor/tags/2.7.9.8/extensions/post-duplicator.php#L19",
+        "https://plugins.trac.wordpress.org/browser/exclusive-addons-for-elementor/tags/2.7.9.8/extensions/post-duplicator.php#L34",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/690fd38c-0e12-45f3-9055-51252e4809b1?source=cve"
+      ],
+      "published": "2026-07-07T02:16:28.583"
+    },
+    {
+      "id": "CVE-2026-13356",
+      "description": "A malicious webpage could interrupt a pending navigation by enqueuing a synchronous JavaScript dialog, causing the browser UI to display the destination origin in the address bar while continuing to render attacker-controlled content. This vulnerability was fixed in Firefox for iOS 152.3.",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-451"
+      ],
+      "references": [
+        "https://bugzilla.mozilla.org/show_bug.cgi?id=2047768",
+        "https://www.mozilla.org/security/advisories/mfsa2026-65/"
+      ],
+      "published": "2026-07-07T00:16:34.063"
+    },
+    {
+      "id": "CVE-2026-34198",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, the TrustProxies middleware trusts all proxies ($proxies = '*'), accepting X-Forwarded-Host from any source. The TrustHosts middleware, intended to prevent host header attacks",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-346",
+        "CWE-640"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/commit/98569e4edbfc316877c9e0d27ea89fab3c49e3bd",
+        "https://github.com/coollabsio/coolify/pull/9193",
+        "https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.471"
+      ],
+      "published": "2026-07-07T04:17:50.847"
+    },
+    {
+      "id": "CVE-2024-56141",
+      "description": "Minosoft is an open-source, multi-version Minecraft Java Edition client written in Kotlin. Starting in commit f1ae30e2b046a490026a8413b075685deb795122, the CryptManager\u00a0 encryption routine (\u00a0CryptManager.kt\u00a0) initializes its AES cipher using an initialization vector (IV) that is set equal to the sec",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-329"
+      ],
+      "references": [
+        "https://github.com/Bixilon/Minosoft/blob/3a608abe2d0999e4e702cc1b2d28366884c7f31e/src/main/java/de/bixilon/minosoft/protocol/protocol/encryption/CryptManager.kt#L72",
+        "https://github.com/Bixilon/Minosoft/security/advisories/GHSA-rvr6-48rj-c94j"
+      ],
+      "published": "2026-07-07T00:16:33.607"
+    },
+    {
+      "id": "CVE-2026-34170",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, the GithubApp api_url field is used as the base URL for server-side HTTP requests without allowlisting or private IP blocking, allowing an authenticated user to configure a Gi",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/security/advisories/GHSA-3g6r-cxv5-3c7h",
+        "https://github.com/coollabsio/coolify/security/advisories/GHSA-3g6r-cxv5-3c7h"
+      ],
+      "published": "2026-07-07T04:17:50.357"
+    },
+    {
+      "id": "CVE-2026-34149",
+      "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, DatabaseBackupJob interpolates user-controlled database credentials and MongoDB collection exclusion names into backup shell commands without adequate escaping, allowing an au",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/coollabsio/coolify/commit/952f3247970d261ff93f85c79066192f58f9557e",
+        "https://github.com/coollabsio/coolify/commit/99043600ee881fd8581185e7590604d9882382cd",
+        "https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.471"
+      ],
+      "published": "2026-07-07T04:17:49.800"
+    },
+    {
+      "id": "CVE-2026-53647",
+      "description": "FOSSBilling is a free, open-source billing and client management system. In versions 0.5.3 through 0.7.2, the Guest `serviceapikey/get_info` API endpoint is accessible without authentication. Any caller with a valid API key can retrieve all custom configuration parameters (`custom_*` fields) stored ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-200",
+        "CWE-306",
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/FOSSBilling/FOSSBilling/security/advisories/GHSA-737q-9gpr-6mpq"
+      ],
+      "published": "2026-07-07T00:16:34.263"
+    },
+    {
+      "id": "CVE-2026-53648",
+      "description": "FOSSBilling is a free, open-source billing and client management system. Prior to version 0.8.1, downloadable product files are stored using a deterministic filename-derived path. When an administrator uploads a file for a downloadable product, FOSSBilling stores the file as `md5(<original filename>",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-73",
+        "CWE-668"
+      ],
+      "references": [
+        "https://github.com/FOSSBilling/FOSSBilling/security/advisories/GHSA-x7p2-xhvc-cfp9"
+      ],
+      "published": "2026-07-07T00:16:34.390"
+    }
+  ]
+}
