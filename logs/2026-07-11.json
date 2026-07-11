@@ -1,0 +1,306 @@
+{
+  "timestamp": "2026-07-11T05:23:43.724099+00:00",
+  "scan_id": "dd917c52bb",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 12,
+      "MEDIUM": 7
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        3
+      ],
+      [
+        "CWE-89",
+        3
+      ],
+      [
+        "CWE-79",
+        1
+      ],
+      [
+        "CWE-639",
+        1
+      ],
+      [
+        "CWE-22",
+        1
+      ]
+    ],
+    "threat_index": 395.8,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 395.8,
+        "yesterday": 312.3,
+        "change_pct": 26.7
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 1,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-47646",
+      "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Dynamics 365 Customer Voice allows an unauthorized attacker to perform spoofing over a network.",
+      "severity": "CRITICAL",
+      "score": 9.3,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47646"
+      ],
+      "published": "2026-07-09T00:17:23.160"
+    },
+    {
+      "id": "CVE-2026-5523",
+      "description": "The Divi Form Builder plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 5.1.8. This is due to the update_user() function accepting a user ID parameter from form submissions without verifying that the authenticated user has permission to edit that specific ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://diviengine.com/divi-form-builder-changelog/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/cb158acc-69d7-4a7d-b356-7de1f6b37019?source=cve"
+      ],
+      "published": "2026-07-09T06:16:21.300"
+    },
+    {
+      "id": "CVE-2026-47826",
+      "description": "The blobs.yml path key traversal vulnerability in the BOSH CLI tool allows an attacker to write arbitrary files and exfiltrate sensitive information.\nAffected versions: BOSH CLI tool versions prior to v7.10.4.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-47826-blobs-yaml-path-traversal-allows-file-writes/"
+      ],
+      "published": "2026-07-09T07:16:23.840"
+    },
+    {
+      "id": "CVE-2026-47830",
+      "description": "Incorrect Permission Assignment in BOSH.Utils.psm1 in BOSH-Ecosystem bosh-windows-stemcell-builder allows low-privilege authenticated users to overwrite C:\\bosh\\service_wrapper.exe or C:\\bosh\\bosh-agent.exe and gain NT AUTHORITY\\SYSTEM on the next service restart or reboot. This can lead to full hos",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-47830-incorrect-permission-assignment-allows-local-privilege-escalation-to-system-via-executable-overwrite/"
+      ],
+      "published": "2026-07-09T07:16:24.280"
+    },
+    {
+      "id": "CVE-2026-47829",
+      "description": "Argument Injection in bosh-cli allows a compromised BOSH Director to inject arbitrary OpenSSH options into the locally-spawned ssh process when an operator runs bosh ssh -c, bosh logs -f, or other non-interactive SSH paths, leading to local command execution on the operator's workstation.\nAffected v",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-47829-argument-injection-in-bosh-cli-allows-local-command-execution-on-operator-workstations-via-compromised-director/"
+      ],
+      "published": "2026-07-09T07:16:24.150"
+    },
+    {
+      "id": "CVE-2026-41857",
+      "description": "A compromised or malicious BOSH Director can execute arbitrary shell commands on the operator's workstation when the operator runs bosh ssh (or bosh scp/bosh logs -f) with default flags.\nAffected versions: BOSH CLI versions prior to 7.10.5.",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-41857-bosh-cli-shell-injection/"
+      ],
+      "published": "2026-07-09T06:16:20.287"
+    },
+    {
+      "id": "CVE-2026-11571",
+      "description": "The Everest Forms  WordPress plugin before 3.5.0 does not reliably delete temporary CSV files generated during email-notification processing and leaves them publicly accessible in the uploads directory, allowing unauthenticated attackers to retrieve other users' form submission records via predictab",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/4bd381e9-2f4e-4e61-99af-88f50aed71f5/"
+      ],
+      "published": "2026-07-09T07:16:22.847"
+    },
+    {
+      "id": "CVE-2026-47831",
+      "description": "Use of a cryptographically weak random number generator in the GenerateRandomPassword function in bosh-windows-stemcell-builder allows a remote attacker to brute-force the resulting SSH login via TCP/22.\nAffected versions: bosh-windows-stemcell-builder versions prior to v2019.98.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-47831-cryptographically-weak-password-generation-in-bosh-windows-stemcell-builder-allows-remote-ssh-brute-force-attacks/"
+      ],
+      "published": "2026-07-09T07:16:24.423"
+    },
+    {
+      "id": "CVE-2026-47840",
+      "description": "A network attacker positioned between UAA and its LDAP directory can impersonate the directory using any certificate from any trusted CA, then harvest the LDAP bind password and every end-user password sent during simple-bind authentication, and return forged group memberships that grant themselves ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-47840-ldap-starttls-unconditionally-disables-hostname-verification/"
+      ],
+      "published": "2026-07-09T07:16:24.553"
+    },
+    {
+      "id": "CVE-2026-15134",
+      "description": "A vulnerability was determined in CodeAstro Simple Online Leave Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /SimpleOnlineLeave/index.php. Executing a manipulation of the argument email can lead to sql injection. The attack may be performed from remot",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://codeastro.com/",
+        "https://github.com/yihaofuweng/cve/issues/71",
+        "https://vuldb.com/cve/CVE-2026-15134"
+      ],
+      "published": "2026-07-09T00:17:03.900"
+    },
+    {
+      "id": "CVE-2026-15135",
+      "description": "A security flaw has been discovered in code-projects Online Food Order System 1.0. This affects an unknown part of the file /edit_food_items.php. The manipulation of the argument update results in sql injection. It is possible to launch the attack remotely. The exploit has been released to the publi",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/susususua-AI/CVE/issues/1",
+        "https://vuldb.com/cve/CVE-2026-15135"
+      ],
+      "published": "2026-07-09T00:17:04.063"
+    },
+    {
+      "id": "CVE-2026-15137",
+      "description": "A weakness has been identified in code-projects Interview Management System 1.0. This vulnerability affects unknown code of the file \\inc\\classes\\View.php. This manipulation of the argument ID causes sql injection. The attack can be initiated remotely. The exploit has been made available to the publ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/susususua-AI/CVE/issues/2",
+        "https://vuldb.com/cve/CVE-2026-15137"
+      ],
+      "published": "2026-07-09T00:17:04.217"
+    },
+    {
+      "id": "CVE-2026-47828",
+      "description": "During bosh create-env and bosh delete-env, the CLI uploads compiled CPI packages and rendered job templates to the new VM's DAV blobstore over HTTPS without verifying the server certificate, even though a CA certificate for that endpoint is available in the installation manifest. A network attacker",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-47828-missing-tls-certificate-verification-in-bosh-cli-allows-root-code-execution-via-man-in-the-middle-credential-replay/"
+      ],
+      "published": "2026-07-09T07:16:23.990"
+    },
+    {
+      "id": "CVE-2026-12270",
+      "description": "The Everest Forms  WordPress plugin before 3.5.0 does not correctly restrict access to several REST API endpoints belonging to its onboarding assistant: the capability check is only applied when an attacker-controllable request header holds a specific value, so it can be bypassed by omitting or chan",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/30813664-2af7-45da-b37c-3d573bc80bd9/"
+      ],
+      "published": "2026-07-09T07:16:23.210"
+    },
+    {
+      "id": "CVE-2026-15138",
+      "description": "A security vulnerability has been detected in tumf mcp-text-editor up to 1.0.2. This issue affects the function _validate_file_path of the file mcp_text_editor/text_editor.py. Such manipulation of the argument file_path leads to path traversal. The attack can be launched remotely. The exploit has be",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/tumf/mcp-text-editor/",
+        "https://github.com/tumf/mcp-text-editor/issues/22",
+        "https://vuldb.com/cve/CVE-2026-15138"
+      ],
+      "published": "2026-07-09T01:19:06.637"
+    },
+    {
+      "id": "CVE-2026-11869",
+      "description": "The WP DSGVO Tools (GDPR) WordPress plugin before 3.1.40 does not perform an authorization check on the immediate-processing path of its data subject access request feature, allowing unauthenticated attackers to generate and download the full personal-data export (including name, postal address, pho",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/49170650-0006-4f3b-90f4-f8bb176beb7b/"
+      ],
+      "published": "2026-07-09T07:16:22.997"
+    },
+    {
+      "id": "CVE-2026-11875",
+      "description": "The WP Support Plus Responsive Ticket System WordPress plugin through 9.1.2 does not sign or verify its guest-session cookie, allowing unauthenticated attackers to forge it and impersonate any ticket owner (identified by email address) to read, reply to, and close that person's support tickets.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/1c69692e-5d0c-42cf-9b3d-b722f2ba4231/"
+      ],
+      "published": "2026-07-09T07:16:23.107"
+    },
+    {
+      "id": "CVE-2026-12516",
+      "description": "The Fediverse Embeds WordPress plugin before 1.5.8 does not validate the destination of the server-side request performed by an unauthenticated media-proxying endpoint, allowing anonymous users to make the site fetch arbitrary URLs, including internal and private-network addresses, and read back the",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/2ac80164-03b7-4966-b022-833b4194de80/"
+      ],
+      "published": "2026-07-09T07:16:23.303"
+    },
+    {
+      "id": "CVE-2026-12517",
+      "description": "The Fediverse Embeds WordPress plugin before 1.5.8 does not validate the destination of the server-side request performed by an unauthenticated site-info endpoint before fetching it, allowing anonymous users (the gating nonce is exposed on public pages carrying an embed) to make the site request int",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/460a996f-e27d-47e8-9d68-9e6be93100c0/"
+      ],
+      "published": "2026-07-09T07:16:23.410"
+    },
+    {
+      "id": "CVE-2026-11359",
+      "description": "The Memberships and User Profiles for WooCommerce \u2013 ProfileGrid WooCommerce Integration plugin for WordPress is vulnerable to unauthorized plugin installation and activation in versions up to, and including, 3.4. This is due to a missing capability check and missing nonce validation on the pg_instal",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/ecommerce-user-profiles-by-profilegrid/tags/3.4/admin/class-profilegrid-woocommerce-admin.php#L303",
+        "https://plugins.trac.wordpress.org/browser/ecommerce-user-profiles-by-profilegrid/tags/3.4/admin/class-profilegrid-woocommerce-admin.php#L352",
+        "https://plugins.trac.wordpress.org/browser/ecommerce-user-profiles-by-profilegrid/tags/3.4/includes/class-profilegrid-woocommerce.php#L166"
+      ],
+      "published": "2026-07-09T08:16:45.467"
+    }
+  ]
+}
