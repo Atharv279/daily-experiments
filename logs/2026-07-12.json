@@ -1,0 +1,352 @@
+{
+  "timestamp": "2026-07-12T05:40:12.041591+00:00",
+  "scan_id": "921b5220ae",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 8,
+      "MEDIUM": 5,
+      "LOW": 1,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-287",
+        3
+      ],
+      [
+        "CWE-22",
+        3
+      ],
+      [
+        "CWE-94",
+        2
+      ],
+      [
+        "CWE-434",
+        2
+      ],
+      [
+        "CWE-863",
+        2
+      ]
+    ],
+    "threat_index": 330.1,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 330.1,
+        "yesterday": 395.8,
+        "change_pct": -16.6
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 1,
+        "change_pct": 100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-54769",
+      "description": "Langroid is a framework for building large-language-model-powered applications. Versions prior to 0.65.2 are vulnerable to a critical Sandbox Escape leading to Remote Code Execution (RCE) in its `TableChatAgent` and `VectorStore` capabilities. When these agents evaluate LLM-generated tool messages w",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/langroid/langroid/security/advisories/GHSA-q9p7-wqxg-mrhc",
+        "https://github.com/langroid/langroid/security/advisories/GHSA-q9p7-wqxg-mrhc"
+      ],
+      "published": "2026-07-10T00:16:33.603"
+    },
+    {
+      "id": "CVE-2026-14894",
+      "description": "The Super Forms \u2013 Drag & Drop Form Builder plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 6.3.313 via the submit_form function. This is due to missing file type validation and the absence of any capability check on the submit_form nopriv AJAX handle",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/RensTillmann/super-forms/commit/c5838f5877c72b738c54ed970935c77ae6830c3a",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/e9c7fb16-efbb-41e9-be13-98e96c1e9100?source=cve"
+      ],
+      "published": "2026-07-10T04:17:47.587"
+    },
+    {
+      "id": "CVE-2026-15070",
+      "description": "The Salon Booking System \u2013 Free Version plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 10.30.32. This is due to missing or incorrect nonce validation on the setCustomText function. This makes it possible for unauthenticated attackers to inject ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/salon-booking-system/tags/10.30.32/src/SLN/Action/Ajax/SetCustomText.php#L17",
+        "https://plugins.trac.wordpress.org/browser/salon-booking-system/tags/10.30.32/src/SLN/Action/Init.php#L628",
+        "https://plugins.trac.wordpress.org/browser/salon-booking-system/tags/10.30.32/src/SLN/Plugin.php#L407"
+      ],
+      "published": "2026-07-10T04:17:47.727"
+    },
+    {
+      "id": "CVE-2026-12595",
+      "description": "The LoginPress Pro plugin for WordPress is vulnerable to Authentication Bypass via Unverified OAuth Email in all versions up to and including 6.2.3. The vulnerability exists in the loginpress_on_discord_login() Discord OAuth callback handler, which accepts the email field returned by Discord's /user",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://loginpress.pro/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/5949980f-2506-49be-9105-40ec2d2a4f77?source=cve"
+      ],
+      "published": "2026-07-10T00:16:32.120"
+    },
+    {
+      "id": "CVE-2026-12597",
+      "description": "The LoginPress Pro plugin for WordPress is vulnerable to Authentication Bypass via the GitHub OAuth callback in versions up to, and including, 6.2.3. The vulnerability exists in the loginpress_on_github_login() function, which blindly trusts the first element (profile[0]['email']) of the array retur",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://loginpress.pro/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/4f3ee9f6-6465-4caf-9aef-72dd37c61a2c?source=cve"
+      ],
+      "published": "2026-07-10T00:16:32.603"
+    },
+    {
+      "id": "CVE-2026-12598",
+      "description": "The LoginPress Pro plugin for WordPress is vulnerable to authentication bypass in versions up to and including 6.2.3 via the Spotify Social Login addon. This is due to the loginpress_on_spotify_login() function trusting the unverified 'email' field returned by Spotify's /v1/me endpoint and using it ",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://loginpress.pro/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/bef61f05-a2dc-4f61-a5da-7161a9912196?source=cve"
+      ],
+      "published": "2026-07-10T00:16:32.727"
+    },
+    {
+      "id": "CVE-2026-54771",
+      "description": "Langroid is a framework for building large-language-model-powered applications. Prior to version 0.65.3, a Langroid application exposing a chat interface to untrusted users may allow direct tool invocation via raw JSON payloads, even when tools are registered with `use=False, handle=True`. Version 0",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-75"
+      ],
+      "references": [
+        "https://github.com/langroid/langroid/security/advisories/GHSA-gjgq-w2m6-wr5q",
+        "https://github.com/langroid/langroid/security/advisories/GHSA-gjgq-w2m6-wr5q"
+      ],
+      "published": "2026-07-10T00:16:33.737"
+    },
+    {
+      "id": "CVE-2026-15319",
+      "description": "A security vulnerability has been detected in Sipeed PicoClaw up to 0.2.9. This affects the function IPAllowlist of the file web/backend/middleware/access_control.go of the component Launcher. Such manipulation leads to improper access controls. The attack may be performed from remote. The exploit h",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/sipeed/picoclaw/",
+        "https://github.com/sipeed/picoclaw/issues/3069",
+        "https://github.com/sipeed/picoclaw/pull/3126"
+      ],
+      "published": "2026-07-10T03:16:20.433"
+    },
+    {
+      "id": "CVE-2026-13430",
+      "description": "The Post Export Import with Media plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.13.1 via the import_media_file_secure function. This is due to insufficient file extension validation caused by a trailing-dot filename bypass, where the extension al",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/post-export-import-with-media/tags/1.13.1/includes/class-media-handler.php#L268",
+        "https://plugins.trac.wordpress.org/browser/post-export-import-with-media/tags/1.13.1/includes/class-media-handler.php#L364",
+        "https://plugins.trac.wordpress.org/browser/post-export-import-with-media/tags/1.13.1/includes/class-media-handler.php#L389"
+      ],
+      "published": "2026-07-10T04:17:47.430"
+    },
+    {
+      "id": "CVE-2026-50181",
+      "description": "Langroid is a framework for building large-language-model-powered applications. Prior to version 0.64.0, Langroid's `ReadFileTool` and `WriteFileTool` appear to treat `curr_dir` as the intended working-directory boundary for file operations. However, the tools only change the process working directo",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-22",
+        "CWE-23"
+      ],
+      "references": [
+        "https://github.com/langroid/langroid/commit/56e2756ecab70a70a7e6edbee2f2187b8484683e",
+        "https://github.com/langroid/langroid/security/advisories/GHSA-fg23-3346-88f5"
+      ],
+      "published": "2026-07-10T00:16:33.340"
+    },
+    {
+      "id": "CVE-2026-15317",
+      "description": "A security flaw has been discovered in Sipeed PicoClaw up to 0.2.9. Affected by this vulnerability is the function WebFetchTool.Execute of the file pkg/tools/integration/web.go of the component Guarded Web Fetch Flow. The manipulation results in server-side request forgery. The attack can be execute",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/sipeed/picoclaw/",
+        "https://github.com/sipeed/picoclaw/issues/3078",
+        "https://vuldb.com/cve/CVE-2026-15317"
+      ],
+      "published": "2026-07-10T00:16:33.027"
+    },
+    {
+      "id": "CVE-2026-15318",
+      "description": "A weakness has been identified in Sipeed PicoClaw up to 0.2.9. Affected by this issue is some unknown functionality of the file pkg/channels/mqtt/mqtt.go of the component MQTT Channel Handler. This manipulation of the argument client_id causes incorrect authorization. The attack is possible to be ca",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/sipeed/picoclaw/",
+        "https://github.com/sipeed/picoclaw/issues/3068",
+        "https://vuldb.com/cve/CVE-2026-15318"
+      ],
+      "published": "2026-07-10T02:16:25.457"
+    },
+    {
+      "id": "CVE-2026-11392",
+      "description": "The WP Hotel Booking plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'check_in_date' and 'check_out_date' parameters in all versions up to, and including, 2.3.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attacke",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-hotel-booking/tags/2.3.1/includes/class-wphb-helpers.php#L29",
+        "https://plugins.trac.wordpress.org/browser/wp-hotel-booking/tags/2.3.1/includes/elementor/widgets/archive-room/list-results-room.php#L214",
+        "https://plugins.trac.wordpress.org/browser/wp-hotel-booking/tags/2.3.1/includes/wphb-functions.php#L748"
+      ],
+      "published": "2026-07-10T04:17:35.223"
+    },
+    {
+      "id": "CVE-2026-15320",
+      "description": "A vulnerability was detected in Sipeed PicoClaw up to 0.2.9. This vulnerability affects the function rt.ReloadConfig of the file pkg/channels/pico/pico.go. Performing a manipulation of the argument message.send results in missing authorization. It is possible to initiate the attack remotely. The exp",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862",
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/sipeed/picoclaw/",
+        "https://github.com/sipeed/picoclaw/issues/3071",
+        "https://vuldb.com/cve/CVE-2026-15320"
+      ],
+      "published": "2026-07-10T03:16:20.723"
+    },
+    {
+      "id": "CVE-2026-11818",
+      "description": "The WPCafe \u2013 Restaurant Menu, Online Food Ordering & Table Booking System plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 3.0.14. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible f",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-cafe/tags/3.0.13/vendor/themewinter/email-notification-sdk/src/Flow/FlowAPI.php#L102",
+        "https://plugins.trac.wordpress.org/browser/wp-cafe/tags/3.0.13/vendor/themewinter/email-notification-sdk/src/Flow/FlowAPI.php#L110",
+        "https://plugins.trac.wordpress.org/browser/wp-cafe/tags/3.0.13/vendor/themewinter/email-notification-sdk/src/Flow/FlowAPI.php#L121"
+      ],
+      "published": "2026-07-10T04:17:47.277"
+    },
+    {
+      "id": "CVE-2026-15311",
+      "description": "A vulnerability was identified in NousResearch hermes-agent up to 2026.5.29.2. Affected by this issue is the function MatrixAdapter._markdown_to_html of the file gateway/platforms/matrix.py of the component Matrix Adapter. Such manipulation leads to cross site scripting. The attack can be executed r",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/NousResearch/hermes-agent/",
+        "https://github.com/NousResearch/hermes-agent/issues/42667",
+        "https://github.com/NousResearch/hermes-agent/pull/42759"
+      ],
+      "published": "2026-07-10T00:16:32.853"
+    },
+    {
+      "id": "CVE-2026-50180",
+      "description": "Langroid is a framework for building large-language-model-powered applications. Prior to version 0.64.0, `SQLChatAgent` in `langroid` ships a `_validate_query` defense-in-depth layer whose `_DANGEROUS_SQL_PATTERNS` regex blocklist enumerates dangerous SQL primitives by specific function name. The li",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-22",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/langroid/langroid/commit/00b7dd7b79c5d03c94be284cf3459d98195ebfba",
+        "https://github.com/langroid/langroid/security/advisories/GHSA-pmch-g965-grmr"
+      ],
+      "published": "2026-07-10T00:16:33.197"
+    },
+    {
+      "id": "CVE-2026-54760",
+      "description": "Langroid is a framework for building large-language-model-powered applications. Prior to version 0.65.1, the `SQLChatAgent` SQL-injection mitigation, with default `allow_dangerous_operations=False`, combines a raw-text regex blocklist (`_DANGEROUS_SQL_PATTERNS`) with a `sqlglot` SELECT-only statemen",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-22",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/langroid/langroid/security/advisories/GHSA-6xc5-4r68-67fc",
+        "https://github.com/langroid/langroid/security/advisories/GHSA-6xc5-4r68-67fc"
+      ],
+      "published": "2026-07-10T00:16:33.477"
+    },
+    {
+      "id": "CVE-2026-55615",
+      "description": "Langroid is a framework for building large-language-model-powered applications. Prior to version 0.65.5, Neo4jChatAgent passes LLM-generated Cypher queries straight to the Neo4j driver with no validation, no statement-type allowlist, and no opt-out gate. The query text is influenceable by prompt inj",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-74"
+      ],
+      "references": [
+        "https://github.com/langroid/langroid/commit/5a3097d9dd6378b08ced5480b0caf76cc58d00fa",
+        "https://github.com/langroid/langroid/security/advisories/GHSA-2pq5-3q89-j7cc",
+        "https://github.com/langroid/langroid/security/advisories/GHSA-2pq5-3q89-j7cc"
+      ],
+      "published": "2026-07-10T00:16:33.867"
+    },
+    {
+      "id": "CVE-2026-55616",
+      "description": "Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2026-49757. Reason: This candidate is a duplicate of CVE-2026-49757. Notes: All CVE users should reference CVE-2026-49757 instead of this candidate.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-07-10T00:16:33.993"
+    }
+  ]
+}
