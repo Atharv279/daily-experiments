@@ -1,0 +1,355 @@
+{
+  "timestamp": "2026-07-13T05:50:24.396046+00:00",
+  "scan_id": "1845f32ae6",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 5,
+      "MEDIUM": 15
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        6
+      ],
+      [
+        "CWE-89",
+        3
+      ],
+      [
+        "CWE-862",
+        3
+      ],
+      [
+        "CWE-269",
+        2
+      ],
+      [
+        "CWE-200",
+        2
+      ]
+    ],
+    "threat_index": 287.9,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 287.9,
+        "yesterday": 330.1,
+        "change_pct": -12.8
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 2,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-13756",
+      "description": "The WP Grid Builder plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.3.3. This is due to missing authorization and meta key validation in the `update()` handler for the `/wp-json/wpgb/v2/metadata` REST endpoint. This makes it possible for authenticat",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://docs.wpgridbuilder.com/changelog/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/6a42e0e8-a8c7-4bc5-80ca-5ef69d1f0b6c?source=cve"
+      ],
+      "published": "2026-07-11T02:16:17.457"
+    },
+    {
+      "id": "CVE-2026-13353",
+      "description": "The WP Ultimate CSV Importer \u2013 WordPress Import & Export for CSV, XML & Excel plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 8.0.1 via the 'MappedFields' parameter. This is due to missing capability checks on the AJAX handlers for install_addon, sav",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-ultimate-csv-importer/tags/8.0.1/InstallAddons.php#L66",
+        "https://plugins.trac.wordpress.org/browser/wp-ultimate-csv-importer/tags/8.0.1/SaveMapping.php#L1562",
+        "https://plugins.trac.wordpress.org/browser/wp-ultimate-csv-importer/tags/8.0.1/SaveMapping.php#L185"
+      ],
+      "published": "2026-07-11T04:17:16.937"
+    },
+    {
+      "id": "CVE-2026-14262",
+      "description": "The Simple JWT Login \u2013 Allows you to use JWT on REST endpoints. plugin for WordPress is vulnerable to Authentication Bypass to Privilege Escalation in all versions up to, and including, 3.6.6 via the `payload` parameter. The vulnerability exists because `AuthenticateService::generatePayload()` only ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/simple-jwt-login/tags/3.6.6/src/Services/AuthenticateService.php#L163",
+        "https://plugins.trac.wordpress.org/browser/simple-jwt-login/tags/3.6.6/src/Services/AuthenticateService.php#L34",
+        "https://plugins.trac.wordpress.org/browser/simple-jwt-login/tags/3.6.6/src/Services/BaseService.php#L269"
+      ],
+      "published": "2026-07-11T05:16:32.367"
+    },
+    {
+      "id": "CVE-2026-15338",
+      "description": "The LA-Studio Element Kit for Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.6.1 via the get_type_template function. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbit",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-98"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/lastudio-element-kit/tags/1.6.1/includes/addons/progress-bar.php#L866",
+        "https://plugins.trac.wordpress.org/browser/lastudio-element-kit/tags/1.6.1/includes/addons/progress-bar.php#L869",
+        "https://plugins.trac.wordpress.org/browser/lastudio-element-kit/tags/1.6.1/lastudio-element-kit.php#L430"
+      ],
+      "published": "2026-07-11T04:17:22.537"
+    },
+    {
+      "id": "CVE-2026-13114",
+      "description": "The Motors \u2013 Car Dealership & Classified Listings Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Comment Content and User Biographical Info in all versions up to, and including, 1.4.112 due to insufficient input sanitization and output escaping. This makes it possible f",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/motors-car-dealership-classified-listings/tags/1.4.108/assets/js/listing-manager/libs/tooltip.js#L59",
+        "https://plugins.trac.wordpress.org/browser/motors-car-dealership-classified-listings/tags/1.4.108/assets/js/listing-manager/libs/tooltip.js#L73",
+        "https://plugins.trac.wordpress.org/browser/motors-car-dealership-classified-listings/tags/1.4.108/includes/helpers.php#L278"
+      ],
+      "published": "2026-07-11T04:17:16.650"
+    },
+    {
+      "id": "CVE-2026-11426",
+      "description": "The UnderConstructionPage PRO plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 5.76. This is due to the plugin accepting arbitrary local file paths in the template_thumbnail parameter and copying their contents into a publicly accessible uploads file. T",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://underconstructionpage.com/changelog/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/29dff562-e9b0-4cc9-b974-9239fbf0310f?source=cve"
+      ],
+      "published": "2026-07-11T02:16:17.287"
+    },
+    {
+      "id": "CVE-2026-13262",
+      "description": "The Majestic Support \u2013 The Leading-Edge Help Desk & Customer Support Plugin plugin for WordPress is vulnerable to generic SQL Injection via the 'val' parameter in all versions up to, and including, 1.1.9 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation o",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/majestic-support/tags/1.1.8/includes/ajax.php#L19",
+        "https://plugins.trac.wordpress.org/browser/majestic-support/tags/1.1.8/modules/smartreply/model.php#L183",
+        "https://plugins.trac.wordpress.org/browser/majestic-support/tags/1.1.8/modules/smartreply/model.php#L184"
+      ],
+      "published": "2026-07-11T04:17:16.793"
+    },
+    {
+      "id": "CVE-2026-15072",
+      "description": "The KiviCare \u2013 Clinic & Patient Management System (EHR) plugin for WordPress is vulnerable to generic SQL Injection via the 'orderby' parameter in all versions up to, and including, 4.5.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing S",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/kivicare-clinic-management-system/tags/4.5.0/app/baseClasses/KCQueryBuilder.php#L1283",
+        "https://plugins.trac.wordpress.org/browser/kivicare-clinic-management-system/tags/4.5.0/app/baseClasses/KCQueryBuilder.php#L245",
+        "https://plugins.trac.wordpress.org/browser/kivicare-clinic-management-system/tags/4.5.0/app/baseClasses/KCQueryBuilder.php#L470"
+      ],
+      "published": "2026-07-11T04:17:19.953"
+    },
+    {
+      "id": "CVE-2026-15073",
+      "description": "The KiviCare \u2013 Clinic & Patient Management System (EHR) plugin for WordPress is vulnerable to generic SQL Injection via the 'orderby' parameter in all versions up to, and including, 4.5.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing S",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/kivicare-clinic-management-system/tags/4.5.0/app/baseClasses/KCQueryBuilder.php#L470",
+        "https://plugins.trac.wordpress.org/browser/kivicare-clinic-management-system/tags/4.5.0/app/controllers/api/DoctorSessionController.php#L648",
+        "https://plugins.trac.wordpress.org/browser/kivicare-clinic-management-system/tags/4.5.0/app/controllers/api/DoctorSessionController.php#L660"
+      ],
+      "published": "2026-07-11T04:17:21.943"
+    },
+    {
+      "id": "CVE-2026-5743",
+      "description": "The SimpLy Gallery Block & Lightbox plugin for WordPress is vulnerable to Stored Cross-Site Scripting via block attributes in all versions up to, and including, 3.3.3.2. This is due to insufficient input sanitization and output escaping on the sliderMaxHeight block attribute in the pgc_sgb_render_ca",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/simply-gallery-block/tags/3.3.2.2/blocks/init.php#L122",
+        "https://plugins.trac.wordpress.org/browser/simply-gallery-block/tags/3.3.2.2/blocks/init.php#L142",
+        "https://plugins.trac.wordpress.org/browser/simply-gallery-block/tags/3.3.2.2/blocks/init.php#L151"
+      ],
+      "published": "2026-07-11T04:17:23.843"
+    },
+    {
+      "id": "CVE-2025-13968",
+      "description": "The Starboard Suite Reservation Calendars plugin for WordPress is vulnerable to Stored Cross-Site Scripting via shortcode attributes in the [starboard-suite-lightbox] shortcode in all versions up to, and including, 3.1.4 due to insufficient input sanitization and output escaping. This makes it possi",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/starboard-suite-reservation-calendars/tags/3.0.0/starboard-suite.php#L64",
+        "https://plugins.trac.wordpress.org/browser/starboard-suite-reservation-calendars/tags/3.0.0/starboard-suite.php#L78",
+        "https://plugins.trac.wordpress.org/browser/starboard-suite-reservation-calendars/trunk/starboard-suite.php#L64"
+      ],
+      "published": "2026-07-11T05:16:30.190"
+    },
+    {
+      "id": "CVE-2026-15096",
+      "description": "The Themify Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Map Module 'b_width_map' Field in all versions up to, and including, 7.7.6 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level ",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/themify-builder/tags/7.7.6/classes/class-builder-data-manager.php#L154",
+        "https://plugins.trac.wordpress.org/browser/themify-builder/tags/7.7.6/classes/class-themify-builder-active.php#L559",
+        "https://plugins.trac.wordpress.org/browser/themify-builder/tags/7.7.6/templates/template-map.php#L143"
+      ],
+      "published": "2026-07-11T05:16:32.670"
+    },
+    {
+      "id": "CVE-2026-12426",
+      "description": "The Members \u2013 Membership & User Role Editor Plugin plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.2.22 via the members_filter_protected_posts_for_rest. This makes it possible for unauthenticated attackers to extract determine the existenc",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/members/tags/3.2.19/inc/functions-content-permissions.php#L337",
+        "https://plugins.trac.wordpress.org/browser/members/tags/3.2.19/inc/functions-private-site.php#L42",
+        "https://plugins.trac.wordpress.org/browser/members/tags/3.2.22/inc/functions-content-permissions.php#L337"
+      ],
+      "published": "2026-07-11T04:17:16.503"
+    },
+    {
+      "id": "CVE-2026-13250",
+      "description": "The Solace Extra plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.5.3. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to permanently delete all con",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/solace-extra/tags/1.5.1/admin/class-solace-extra-admin.php#L287",
+        "https://plugins.trac.wordpress.org/browser/solace-extra/tags/1.5.1/admin/import.php#L1424",
+        "https://plugins.trac.wordpress.org/browser/solace-extra/tags/1.5.1/includes/class-solace-extra.php#L313"
+      ],
+      "published": "2026-07-11T05:16:32.243"
+    },
+    {
+      "id": "CVE-2026-12141",
+      "description": "The Premium Addons for Elementor \u2013 Powerful Elementor Templates & Widgets plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'premium_tooltip_text' parameter in all versions up to, and including, 4.11.84 due to insufficient input sanitization and output escaping. This makes it",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/premium-addons-for-elementor/tags/4.11.82/addons/tooltips.php#L251",
+        "https://plugins.trac.wordpress.org/browser/premium-addons-for-elementor/tags/4.11.82/addons/tooltips.php#L68",
+        "https://plugins.trac.wordpress.org/browser/premium-addons-for-elementor/tags/4.11.82/addons/tooltips.php#L984"
+      ],
+      "published": "2026-07-11T05:16:32.000"
+    },
+    {
+      "id": "CVE-2026-3367",
+      "description": "The Lockme OAuth2 calendars integration plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'App ID' setting in all versions up to, and including, 2.11.0. This is due to insufficient input sanitization and output escaping. The register_setting() call on line 197 lacks a sanitiz",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/lockme-calendars-integration/tags/2.9.3/src/Plugin.php#L197",
+        "https://plugins.trac.wordpress.org/browser/lockme-calendars-integration/tags/2.9.3/src/Plugin.php#L212",
+        "https://plugins.trac.wordpress.org/browser/lockme-calendars-integration/tags/2.9.3/src/Plugin.php#L223"
+      ],
+      "published": "2026-07-11T04:17:23.670"
+    },
+    {
+      "id": "CVE-2026-10628",
+      "description": "The Points and Rewards for WooCommerce plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.10.0. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for authenticated attackers, with su",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/points-and-rewards-for-woocommerce/tags/2.10.0/admin/class-points-rewards-for-woocommerce-admin.php#L1814",
+        "https://plugins.trac.wordpress.org/browser/points-and-rewards-for-woocommerce/tags/2.10.0/admin/class-points-rewards-for-woocommerce-admin.php#L2568",
+        "https://plugins.trac.wordpress.org/browser/points-and-rewards-for-woocommerce/tags/2.10.0/admin/class-points-rewards-for-woocommerce-admin.php#L2657"
+      ],
+      "published": "2026-07-11T04:17:02.733"
+    },
+    {
+      "id": "CVE-2026-7544",
+      "description": "The Mux Video Uploader plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.1.4 via the muxvideo_enqueue_settings_script. This makes it possible for authenticated attackers, with subscriber-level access and above, to extract sensitive data incl",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/2coders-integration-mux-video/tags/1.1.4/includes/functions.php#L668",
+        "https://plugins.trac.wordpress.org/browser/2coders-integration-mux-video/tags/1.1.4/includes/functions.php#L672",
+        "https://plugins.trac.wordpress.org/browser/2coders-integration-mux-video/trunk/includes/functions.php#L668"
+      ],
+      "published": "2026-07-11T04:17:23.993"
+    },
+    {
+      "id": "CVE-2026-8678",
+      "description": "The MyParcel plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 4.25.1. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for authenticated attackers, with subscriber-level access and ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/woocommerce-myparcel/tags/4.24.3/includes/admin/class-wcmypa-admin.php#L118",
+        "https://plugins.trac.wordpress.org/browser/woocommerce-myparcel/tags/4.24.3/includes/admin/class-wcmypa-admin.php#L653",
+        "https://plugins.trac.wordpress.org/browser/woocommerce-myparcel/tags/4.24.3/includes/admin/class-wcmypa-admin.php#L872"
+      ],
+      "published": "2026-07-11T04:17:26.903"
+    },
+    {
+      "id": "CVE-2026-13116",
+      "description": "The PDF Invoices & Packing Slips for WooCommerce plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 5.14.0 via the generate_document_shortcode due to missing validation on a user controlled key. This makes it possible for authenticated attack",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/woocommerce-pdf-invoices-packing-slips/tags/5.14.0/includes/Endpoint.php#L111",
+        "https://plugins.trac.wordpress.org/browser/woocommerce-pdf-invoices-packing-slips/tags/5.14.0/includes/Frontend.php#L271",
+        "https://plugins.trac.wordpress.org/browser/woocommerce-pdf-invoices-packing-slips/tags/5.14.0/includes/Frontend.php#L284"
+      ],
+      "published": "2026-07-11T05:16:32.123"
+    }
+  ]
+}
