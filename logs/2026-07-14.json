@@ -1,0 +1,376 @@
+{
+  "timestamp": "2026-07-14T05:11:24.171871+00:00",
+  "scan_id": "270591a310",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 8,
+      "MEDIUM": 12
+    },
+    "top_cwes": [
+      [
+        "CWE-266",
+        7
+      ],
+      [
+        "CWE-74",
+        5
+      ],
+      [
+        "CWE-285",
+        5
+      ],
+      [
+        "CWE-77",
+        4
+      ],
+      [
+        "CWE-89",
+        4
+      ]
+    ],
+    "threat_index": 324.4,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 324.4,
+        "yesterday": 287.9,
+        "change_pct": 12.7
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-15480",
+      "description": "A vulnerability was identified in Trendnet TEW-635BRM up to 1.00.03. This affects the function start_httpd of the file /sbin/rc of the component Web Service. Such manipulation of the argument device_name leads to stack-based buffer overflow. The attack can be executed remotely. The exploit is public",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/glkfc/IoT-Vulnerability/blob/main/TRENDnet/TRENDnet_TEW635BRM_device_name_BOF_EN.md",
+        "https://vuldb.com/cve/CVE-2026-15480",
+        "https://vuldb.com/submit/838236"
+      ],
+      "published": "2026-07-12T06:16:42.650"
+    },
+    {
+      "id": "CVE-2026-15481",
+      "description": "A security flaw has been discovered in Trendnet TEW-635BRM up to 1.00.03. This vulnerability affects the function ipoa_test of the file /sbin/rc of the component IPoA WAN Connection Setup. Performing a manipulation of the argument ipoa_ipaddr results in command injection. The attack is possible to b",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/glkfc/IoT-Vulnerability/blob/main/TRENDnet/TRENDnet_TEW635BRM_ipoa_cmdinj_EN.md",
+        "https://vuldb.com/cve/CVE-2026-15481",
+        "https://vuldb.com/submit/838237"
+      ],
+      "published": "2026-07-12T06:16:42.863"
+    },
+    {
+      "id": "CVE-2026-15483",
+      "description": "A security vulnerability has been detected in TRENDnet TEW-821DAP 1.12B01. Impacted is the function sub_41EC14 of the file /goform/tools_nslookup of the component ssi. The manipulation of the argument nslookup_target leads to buffer overflow. It is possible to initiate the attack remotely. The vendo",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/IOTRes/IOT_Firmware_Update/blob/main/Trendnet/TEW-821DAP_BO2.md",
+        "https://vuldb.com/cve/CVE-2026-15483",
+        "https://vuldb.com/submit/842380"
+      ],
+      "published": "2026-07-12T07:16:24.927"
+    },
+    {
+      "id": "CVE-2026-15484",
+      "description": "A vulnerability was detected in TRENDnet TEW-821DAP 1.12B01. The affected element is the function sub_41EC14 of the file /goform/tools_nslookup of the component ssi. The manipulation results in buffer overflow. It is possible to launch the attack remotely. The vendor explains: \"We are unable to conf",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/IOTRes/IOT_Firmware_Update/blob/main/Trendnet/TEW-821DAP_BO3.md",
+        "https://vuldb.com/cve/CVE-2026-15484",
+        "https://vuldb.com/submit/842381"
+      ],
+      "published": "2026-07-12T07:16:25.107"
+    },
+    {
+      "id": "CVE-2026-15479",
+      "description": "A vulnerability was found in H3C NX15 V100R017. Affected by this vulnerability is the function change_passwd of the file /api/login/modify of the component Administrator Password Modification Endpoint. The manipulation of the argument newPass results in weak password recovery. The attack may be laun",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-640"
+      ],
+      "references": [
+        "https://github.com/coconut652-7/IOT_Vul_Public/tree/main/H3C/NX15R017/pre_auth_pwd_change",
+        "https://vuldb.com/cve/CVE-2026-15479",
+        "https://vuldb.com/submit/837069"
+      ],
+      "published": "2026-07-12T06:16:41.350"
+    },
+    {
+      "id": "CVE-2026-15482",
+      "description": "A weakness has been identified in Aster Telecom Azcall 10/11. This issue affects some unknown processing of the file /azcall/adm/gestao_loja/sis.php?t=consultar of the component HTTP Handler. Executing a manipulation of the argument nome/perfil/status can lead to sql injection. The attack may be per",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-15482",
+        "https://vuldb.com/submit/841457",
+        "https://vuldb.com/vuln/377789"
+      ],
+      "published": "2026-07-12T07:16:24.737"
+    },
+    {
+      "id": "CVE-2026-15488",
+      "description": "A vulnerability was determined in hcr707305003 shiroiAdmin 1.1/1.3. Affected is the function FileController::upload of the file app/common/controller/FileController.php. Executing a manipulation of the argument File can lead to unrestricted upload. The attack may be launched remotely. The exploit ha",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/hcr707305003/shiroiAdmin/",
+        "https://github.com/hcr707305003/shiroiAdmin/commit/3ecde28ea8a20a3840dbfefd6d6863ee79a83e70",
+        "https://github.com/hcr707305003/shiroiAdmin/releases/tag/v1.4"
+      ],
+      "published": "2026-07-12T09:16:39.740"
+    },
+    {
+      "id": "CVE-2026-15489",
+      "description": "A vulnerability was identified in RafyMrX TOKO-ONLINE-ROTI up to ddfe1cd587be0a0b5135d8b6e85cce2ec3aece99. Affected by this vulnerability is an unknown functionality of the file proses/login.php. The manipulation of the argument Username leads to sql injection. Remote exploitation of the attack is p",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-15489",
+        "https://vuldb.com/submit/844101",
+        "https://vuldb.com/vuln/377796"
+      ],
+      "published": "2026-07-12T09:16:39.913"
+    },
+    {
+      "id": "CVE-2026-15473",
+      "description": "A vulnerability was identified in Eleveo Call Recording Software 9.7.0. This issue affects some unknown processing of the file /callrec/restoreCallAction.do of the component Recorded Calls Page. The manipulation leads to improper authorization. The attack is possible to be carried out remotely. The ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/omarelshopky/cves/tree/main/eleveo/call-recording-software/CVE-2026-15473",
+        "https://vuldb.com/cve/CVE-2026-15473",
+        "https://vuldb.com/submit/797466"
+      ],
+      "published": "2026-07-12T03:16:09.530"
+    },
+    {
+      "id": "CVE-2026-15477",
+      "description": "A vulnerability was detected in Bahmni bahmnicore up to 0.93. This affects the function additionalParams of the file /openmrs/ws/rest/v1/bahmnicore/sql of the component Search Endpoint. Performing a manipulation of the argument test results in sql injection. The attack can be initiated remotely. The",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://bahmni.atlassian.net/wiki/spaces/BAH/pages/5519474693/Bahmni+Security+Patch+July+02+2026+Release+Notes",
+        "https://github.com/Bahmni/bahmni-core/security/advisories/GHSA-cg9w-r5g6-cxq5",
+        "https://vuldb.com/cve/CVE-2026-15477"
+      ],
+      "published": "2026-07-12T05:16:08.447"
+    },
+    {
+      "id": "CVE-2026-15478",
+      "description": "A flaw has been found in IceHRM up to 35.0.1. This impacts an unknown function of the file core/src/Reports/User/Reports/EmployeeAttendanceReport.php of the component UserReport Endpoint. Executing a manipulation of the argument employeeList can lead to sql injection. The attack can be launched remo",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/gamonoid/icehrm/issues/376",
+        "https://vuldb.com/cve/CVE-2026-15478",
+        "https://vuldb.com/submit/836330"
+      ],
+      "published": "2026-07-12T05:16:08.747"
+    },
+    {
+      "id": "CVE-2026-15485",
+      "description": "A flaw has been found in TRENDnet TEW-821DAP 1.11B03. The impacted element is the function sub_43F2C4 of the file /goform/tools_nslookup of the component DNS Lookup Handler. This manipulation of the argument nslookup_target/dns_server causes os command injection. The attack can be initiated remotely",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/IOTRes/IOT_Firmware_Update/blob/main/Trendnet/TEW-821DAP_CI3.md",
+        "https://vuldb.com/cve/CVE-2026-15485",
+        "https://vuldb.com/submit/842382"
+      ],
+      "published": "2026-07-12T08:16:10.940"
+    },
+    {
+      "id": "CVE-2026-15486",
+      "description": "A vulnerability has been found in TRENDnet TEW-821DAP 1.11B03. This affects the function sub_42026C of the file /goform/tools_ddns of the component Firmware Update Handler. Such manipulation of the argument hostname/username/password leads to os command injection. The attack can be launched remotely",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/IOTRes/IOT_Firmware_Update/blob/main/Trendnet/TEW-821DAP_CI4.md",
+        "https://vuldb.com/cve/CVE-2026-15486",
+        "https://vuldb.com/submit/842383"
+      ],
+      "published": "2026-07-12T09:16:38.560"
+    },
+    {
+      "id": "CVE-2026-15487",
+      "description": "A vulnerability was found in TRENDnet TEW-821DAP 1.11B03. This impacts the function sub_41FBD0 of the file /goform/system_ntp of the component Firmware Update Handler. Performing a manipulation of the argument Hostname results in os command injection. The attack may be initiated remotely. The vendor",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/IOTRes/IOT_Firmware_Update/blob/main/Trendnet/TEW-821DAP_CI5.md",
+        "https://vuldb.com/cve/CVE-2026-15487",
+        "https://vuldb.com/submit/842385"
+      ],
+      "published": "2026-07-12T09:16:39.577"
+    },
+    {
+      "id": "CVE-2026-15475",
+      "description": "A weakness has been identified in MiniTool Partition Wizard up to 13.6. The affected element is an unknown function in the library pwdrvio.sys of the component Signed Kernel Driver. This manipulation causes improper access controls. The attack can only be executed locally. The exploit has been made ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-15475",
+        "https://vuldb.com/submit/833842",
+        "https://vuldb.com/vuln/377780"
+      ],
+      "published": "2026-07-12T03:16:10.860"
+    },
+    {
+      "id": "CVE-2026-15476",
+      "description": "A security vulnerability has been detected in QILING Disk Master 6.0.0.0. The impacted element is an unknown function in the library diskbckp.sys of the component Kernel Driver. Such manipulation leads to improper access controls. The attack can only be performed from a local environment. The exploi",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-15476",
+        "https://vuldb.com/submit/835610",
+        "https://vuldb.com/vuln/377781"
+      ],
+      "published": "2026-07-12T04:16:20.087"
+    },
+    {
+      "id": "CVE-2026-15470",
+      "description": "A vulnerability has been found in Eleveo Call Recording Software 9.7.0. Affected by this issue is some unknown functionality of the file /callrec/group.jsp. Such manipulation leads to improper authorization. The attack may be launched remotely. The exploit has been disclosed to the public and may be",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/omarelshopky/cves/tree/main/eleveo/call-recording-software/CVE-2026-15470",
+        "https://vuldb.com/cve/CVE-2026-15470",
+        "https://vuldb.com/submit/797463"
+      ],
+      "published": "2026-07-12T00:16:17.480"
+    },
+    {
+      "id": "CVE-2026-15471",
+      "description": "A vulnerability was found in Eleveo Call Recording Software 9.7.0. This affects an unknown part of the file /callrec/pci_dss_status.jsp. Performing a manipulation results in improper authorization. Remote exploitation of the attack is possible. The exploit has been made public and could be used. The",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/omarelshopky/cves/tree/main/eleveo/call-recording-software/CVE-2026-15471",
+        "https://vuldb.com/cve/CVE-2026-15471",
+        "https://vuldb.com/submit/797464"
+      ],
+      "published": "2026-07-12T02:16:14.703"
+    },
+    {
+      "id": "CVE-2026-15472",
+      "description": "A vulnerability was determined in Eleveo Call Recording Software 9.7.0. This vulnerability affects unknown code of the file /callrec/composeEmailAction.do. Executing a manipulation can lead to improper authorization. The attack can be executed remotely. The exploit has been publicly disclosed and ma",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/omarelshopky/cves/tree/main/eleveo/call-recording-software/CVE-2026-15472",
+        "https://vuldb.com/cve/CVE-2026-15472",
+        "https://vuldb.com/submit/797465"
+      ],
+      "published": "2026-07-12T02:16:16.380"
+    },
+    {
+      "id": "CVE-2026-15474",
+      "description": "A security flaw has been discovered in Eleveo Call Recording Software 9.7.0. Impacted is an unknown function of the file /callrec/audio.jsp of the component Call Recording Handler. The manipulation of the argument callId results in improper authorization. The attack may be performed from remote. The",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://drive.google.com/file/d/14r-7V9dJHuoBPpuSj-puFzujq149Mbry/view?usp=sharing",
+        "https://vuldb.com/cve/CVE-2026-15474",
+        "https://vuldb.com/submit/797469"
+      ],
+      "published": "2026-07-12T03:16:10.700"
+    }
+  ]
+}
