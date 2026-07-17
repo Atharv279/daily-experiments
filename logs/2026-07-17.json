@@ -1,0 +1,331 @@
+{
+  "timestamp": "2026-07-17T05:24:23.377980+00:00",
+  "scan_id": "21f16b863f",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 7,
+      "MEDIUM": 2,
+      "UNKNOWN": 11
+    },
+    "top_cwes": [
+      [
+        "CWE-89",
+        6
+      ],
+      [
+        "CWE-610",
+        1
+      ],
+      [
+        "CWE-287",
+        1
+      ],
+      [
+        "CWE-427",
+        1
+      ],
+      [
+        "CWE-862",
+        1
+      ]
+    ],
+    "threat_index": 196.8,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 196.8,
+        "yesterday": 344.4,
+        "change_pct": -42.9
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 3,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-15804",
+      "description": "The HCM developed by MetaGuru has a SQL Injection vulnerability. Authenticated remote attackers can inject SQL commands via specific parameters, thereby compromising the confidentiality, integrity, and availability of database data.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://www.twcert.org.tw/en/cp-139-11036-986ec-2.html",
+        "https://www.twcert.org.tw/tw/cp-132-11035-5c640-1.html"
+      ],
+      "published": "2026-07-15T08:16:23.100"
+    },
+    {
+      "id": "CVE-2026-35152",
+      "description": "A SQL Injection vulnerability exists in Apache Fineract's Report Execution API (runreports endpoint) in versions up to and including 1.14.0. Report parameter values are incorporated into the generated SQL query without sufficient validation, allowing an authenticated user with permission to run repo",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/apache/fineract/pull/5980",
+        "https://lists.apache.org/thread/658yddn0bpxqw2hpxnyk3vqd05bkchg9",
+        "https://lists.apache.org/thread/d3bzcwsbywz7wg9zxvtlkvgmffqjyfn0"
+      ],
+      "published": "2026-07-15T10:16:46.850"
+    },
+    {
+      "id": "CVE-2026-12512",
+      "description": "The Quotes llama WordPress plugin before 3.1.6 does not properly sanitize and escape a user-supplied parameter before using it in a SQL query, allowing unauthenticated attackers to perform UNION-based SQL injection and read arbitrary data from the database, including password hashes.",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/39d038f6-f009-4274-a8a7-9d7c2597ec85/"
+      ],
+      "published": "2026-07-15T06:16:44.757"
+    },
+    {
+      "id": "CVE-2026-15583",
+      "description": "A confused-deputy flaw in Grafana MCP Server allows an unauthenticated remote attacker to exfiltrate the server's environment-configured Grafana service-account token by supplying a crafted X-Grafana-URL request header. This also enables SSRF against arbitrary internal services, including cloud meta",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-610"
+      ],
+      "references": [
+        "https://grafana.com/security/security-advisories/cve-2026-15583"
+      ],
+      "published": "2026-07-15T08:16:22.977"
+    },
+    {
+      "id": "CVE-2026-12281",
+      "description": "The Shibboleth WordPress plugin before 2.5.4 does not fail closed when its HTTP header identity mode is enabled without an anti-spoofing key, treating any request that carries identity headers as an authenticated session without verifying them. On a deployment where untrusted client headers reach th",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/8474eda4-6385-447a-9139-f57c049d1713/"
+      ],
+      "published": "2026-07-15T06:16:43.840"
+    },
+    {
+      "id": "CVE-2026-42936",
+      "description": "The installer of HYPER SBI 2 insecurely loads Dynamic Link Libraries. If there is a crafted DLL at the same directory when invoking the affected installer, arbitrary code may be executed with the privilege of the user invoking the installer.",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-427"
+      ],
+      "references": [
+        "https://jvn.jp/en/jp/JVN59875262/"
+      ],
+      "published": "2026-07-15T06:16:45.003"
+    },
+    {
+      "id": "CVE-2026-14251",
+      "description": "A flaw was found in the OpenShift GitOps operator. The ClusterRole reconciler does not validate resource ownership when reconciling ClusterRole objects. A namespace-scoped Argo CD instance can trigger deletion of a ClusterRole owned by a cluster-scoped Argo CD instance by crafting a name collision, ",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-14251",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2484710"
+      ],
+      "published": "2026-07-15T08:16:22.383"
+    },
+    {
+      "id": "CVE-2026-11580",
+      "description": "The Kali Forms \u2014 Contact Form & Drag-and-Drop Builder WordPress plugin before 2.4.17 does not perform a per-object capability check in its post-duplication AJAX action, allowing users with Contributor-level access or above to duplicate any post (regardless of owner, post type, or status) into a publ",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/d73500e1-a8bc-4d31-ad9b-d1f71212bcc7/"
+      ],
+      "published": "2026-07-15T06:16:43.663"
+    },
+    {
+      "id": "CVE-2026-11579",
+      "description": "The Kali Forms \u2014 Contact Form & Drag-and-Drop Builder WordPress plugin before 2.4.17 does not verify that a file upload is made against an existing form configured with a file-upload field, accepting uploads regardless of whether any such form exists, which allows unauthenticated users to upload fil",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/fae38fd0-8183-4864-8dae-0cd33a220bec/"
+      ],
+      "published": "2026-07-15T06:16:40.433"
+    },
+    {
+      "id": "CVE-2026-13230",
+      "description": "An information disclosure vulnerability was identified in TP-Link Kasa EC70 v4 and EC71 v4 in the local discovery mechanism, which\u00a0exposes\nsensitive geolocation information without requiring authentication. This issue\nallows an attacker on the same local network to retrieve geolocation-related\ndata ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://www.tp-link.com/en/support/download/ec70/v4/#Firmware-Release-Notes",
+        "https://www.tp-link.com/en/support/download/ec71/#Firmware-Release-Notes",
+        "https://www.tp-link.com/us/support/download/ec70/v4/#Firmware-Release-Notes"
+      ],
+      "published": "2026-07-15T01:16:14.620"
+    },
+    {
+      "id": "CVE-2026-9770",
+      "description": "Kasa EC71 v4 and EC70 v4 firmware contains a static cryptographic private key stored in a read-only filesystem\nthat is shared across devices.\u00a0 An\nattacker with access to the firmware image can extract the embedded key.\u00a0 \n\n\n\n\n\n\n\n\n\nSuccessful\nexploitation may allow an unauthenticated attacker on the s",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-321"
+      ],
+      "references": [
+        "https://www.tp-link.com/en/support/download/ec70/v4/#Firmware-Release-Notes",
+        "https://www.tp-link.com/en/support/download/ec71/v4/#Firmware-Release-Notes",
+        "https://www.tp-link.com/us/support/download/ec70/v4/#Firmware-Release-Notes"
+      ],
+      "published": "2026-07-15T01:17:10.387"
+    },
+    {
+      "id": "CVE-2026-11851",
+      "description": "Improper Neutralization of Special Elements used in an SQL Command (\"SQL Injection\") in the web management interface of certain ASUS router models\u00a0allows a remote authenticated user to disclose confidential information via a crafted request that bypasses existing input validation\nRefer to the '\u00a0\nSec",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory/"
+      ],
+      "published": "2026-07-15T02:18:04.743"
+    },
+    {
+      "id": "CVE-2026-13385",
+      "description": "An Improper Validation of Integrity Check Value and Improper Certificate Validation in certain ASUS router models allows a remote man-in-the-middle(MITM) user to make the router download and execute arbitrary command via a spoofed server.\nRefer to the '\u00a0\nSecurity Update for ASUS Router Firmware\u00a0\u00a0' s",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-295",
+        "CWE-354"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory/"
+      ],
+      "published": "2026-07-15T02:18:12.090"
+    },
+    {
+      "id": "CVE-2026-13585",
+      "description": "Allocation of Resources Without Limits and Throttling and Sensitive Information in Resource Not Removed Before Reuse in the ASUS System Control Interface driver and ASUS Business Manager allow a local administrator to disclose sensitive information via crafted IOCTL requests, which, in severe cases,",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-226",
+        "CWE-770"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory/"
+      ],
+      "published": "2026-07-15T02:18:12.213"
+    },
+    {
+      "id": "CVE-2026-15029",
+      "description": "Untrusted Pointer Dereference in ASUS System Control Interface v3, ASUS System Control Interface, and ASUS Business Manager allows a local administrator to perform arbitrary physical memory read and write operations via crafted IOCTL requests to the driver, bypassing OS-enforced memory protections.\n",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-822"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory"
+      ],
+      "published": "2026-07-15T02:18:13.033"
+    },
+    {
+      "id": "CVE-2026-15030",
+      "description": "Out-of-bounds Read in ASUS System Control Interface v3, ASUS System Control Interface, and ASUS Business Manager allows a local administrator to read memory regions beyond the intended firmware boundary by supplying a crafted IOCTL request that bypasses the validation.\nRefer to the '\u00a0Security Update",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory"
+      ],
+      "published": "2026-07-15T02:18:13.173"
+    },
+    {
+      "id": "CVE-2026-8919",
+      "description": "Permissive Cross-domain Security Policy with Untrusted Domains in ASUS GameSDK allows a remote user to obtain a local user\u2019s NTLM hash by convincing the user to visit a crafted web page that sends a request containing a UNC path to the application\u2019s local service endpoint. This can result in informa",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-942"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory/"
+      ],
+      "published": "2026-07-15T02:22:57.653"
+    },
+    {
+      "id": "CVE-2026-8920",
+      "description": "Improper Restriction of Communication Channel to Intended Endpoints and External Control of File Name or Path in Aura Wallpaper Service allow a local user to perform file operations by sending crafted commands containing an arbitrary file path and bypassing the service\u2019s path restrictions . On speci",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-73",
+        "CWE-923"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory/"
+      ],
+      "published": "2026-07-15T02:22:57.790"
+    },
+    {
+      "id": "CVE-2026-57831",
+      "description": "The Joomla extension DP Calendar is vulnerable to an unauthenticated SQL injection.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://joomla.digital-peak.com/products/dpcalendar",
+        "https://mysites.guru/blog/dpcalendar-sql-injection-disclosure/"
+      ],
+      "published": "2026-07-15T09:16:33.310"
+    },
+    {
+      "id": "CVE-2026-57832",
+      "description": "The Joomla extension EDocman is vulnerable to an unauthenticated SQL injection.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://joomdonation.com/joomla-extensions/edocman-joomla-download-manager.html",
+        "https://mysites.guru/blog/edocman-sql-injection-disclosure/"
+      ],
+      "published": "2026-07-15T09:16:33.450"
+    }
+  ]
+}
