@@ -1,0 +1,362 @@
+{
+  "timestamp": "2026-07-18T05:06:31.088941+00:00",
+  "scan_id": "8ff0c79a12",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 8,
+      "MEDIUM": 11
+    },
+    "top_cwes": [
+      [
+        "CWE-89",
+        5
+      ],
+      [
+        "CWE-79",
+        5
+      ],
+      [
+        "CWE-770",
+        3
+      ],
+      [
+        "CWE-284",
+        2
+      ],
+      [
+        "CWE-787",
+        2
+      ]
+    ],
+    "threat_index": 338.0,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 338.0,
+        "yesterday": 196.8,
+        "change_pct": 71.7
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-15013",
+      "description": "The SAML Single Sign On \u2013 SSO Login plugin for WordPress is vulnerable to Authentication Bypass via SAML Signature Algorithm Confusion in all versions up to, and including, 5.4.3. The vulnerability exists because `Mo_SAML_Utilities::mo_saml_cast_key()` reads the `SignatureMethod` Algorithm attribute",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/miniorange-saml-20-single-sign-on/tags/5.4.3/class-mo-saml-login-validate.php#L119",
+        "https://plugins.trac.wordpress.org/browser/miniorange-saml-20-single-sign-on/tags/5.4.3/class-mo-saml-utilities.php#L416",
+        "https://plugins.trac.wordpress.org/browser/miniorange-saml-20-single-sign-on/tags/5.4.3/class-mo-saml-utilities.php#L444"
+      ],
+      "published": "2026-07-16T05:16:18.043"
+    },
+    {
+      "id": "CVE-2026-1609",
+      "description": "A flaw was found in Keycloak. When the JSON Web Token (JWT) authorization grant preview feature is enabled and a user account is disabled, Keycloak fails to validate the user\u2019s disabled status during JWT authorization grant processing. A remote attacker with low privileges can exploit this improper ",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-284",
+        "CWE-284"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-1609",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2435257",
+        "https://github.com/keycloak/keycloak/issues/46144"
+      ],
+      "published": "2026-07-16T01:16:30.380"
+    },
+    {
+      "id": "CVE-2026-3842",
+      "description": "A flaw was found in QEMU. This vulnerability allows a local attacker within a guest virtual machine to write data beyond its allocated memory. This occurs when cpu_physical_memory_map() returns a shorter length than expected, leading to an out-of-bounds write. Successful exploitation could result in",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-787",
+        "CWE-787"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-3842",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2458150",
+        "https://access.redhat.com/security/cve/CVE-2026-3842"
+      ],
+      "published": "2026-07-16T01:16:30.697"
+    },
+    {
+      "id": "CVE-2026-23538",
+      "description": "A vulnerability was identified in the Feast Feature Server's `/ws/chat` endpoint that allows remote attackers to establish persistent WebSocket connections without any authentication. By opening a large number of simultaneous connections, an attacker can exhaust server resources\u2014such as memory, CPU,",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-770",
+        "CWE-770"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-23538",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2429311",
+        "https://github.com/red-hat-data-services/feast/pull/192"
+      ],
+      "published": "2026-07-16T01:16:30.530"
+    },
+    {
+      "id": "CVE-2026-48863",
+      "description": "A flaw was found in libsolv. A stack-based buffer overflow vulnerability exists in the PGP verification component due to incorrect length handling when copying EdDSA 's' MPI into a stack buffer. A remote attacker could craft a malicious Ed25519 PGP signature with mismatched MPI lengths. Processing t",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-121",
+        "CWE-121"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-48863",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2460975",
+        "https://github.com/openSUSE/libsolv/commit/44f8c085045b1f771641091bbb2b810d12cff9e8#diff-309f245ec9b669ec78b8159c39e6f50130b4d4a0448f742685f7833d04bc4caaR592"
+      ],
+      "published": "2026-07-16T01:16:30.830"
+    },
+    {
+      "id": "CVE-2026-12753",
+      "description": "The Advance Product Search- Voice & Ajax Search for WooCommerce plugin for WordPress is vulnerable to generic SQL Injection via the 's' and 'match' parameter in all versions up to, and including, 1.4.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/th-advance-product-search/tags/1.4.4/inc/thaps-function.php#L125",
+        "https://plugins.trac.wordpress.org/browser/th-advance-product-search/tags/1.4.4/inc/thaps-function.php#L34",
+        "https://plugins.trac.wordpress.org/browser/th-advance-product-search/tags/1.4.4/inc/thaps-function.php#L86"
+      ],
+      "published": "2026-07-16T04:17:16.073"
+    },
+    {
+      "id": "CVE-2026-21729",
+      "description": "Loki queries with large limits can cause large memory allocations which can impact the availability of the service, depending on its deployment strategy.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://grafana.com/security/security-advisories/cve-2026-21729"
+      ],
+      "published": "2026-07-16T04:17:29.260"
+    },
+    {
+      "id": "CVE-2026-15907",
+      "description": "A flaw has been found in H3C SecPath F1000-C8300 up to 20260522. This impacts an unknown function of the file /webui/?g=log_fw_nbc_mail_jsondata. Executing a manipulation of the argument subject can lead to sql injection. The attack can be executed remotely. The exploit has been published and may be",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://ucn9h68n9289.feishu.cn/docx/WCbgdWyJKoibcZxdsuMcUGKSnpf?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-15907",
+        "https://vuldb.com/submit/835656"
+      ],
+      "published": "2026-07-16T00:16:19.170"
+    },
+    {
+      "id": "CVE-2026-13042",
+      "description": "The RPB Chessboard plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Comment Content in all versions up to, and including, 8.1.2 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pag",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/rpb-chessboard/tags/8.1.0/php/abstractcontroller.php#L171",
+        "https://plugins.trac.wordpress.org/browser/rpb-chessboard/tags/8.1.0/php/abstractcontroller.php#L190",
+        "https://plugins.trac.wordpress.org/browser/rpb-chessboard/tags/8.1.0/php/abstractcontroller.php#L220"
+      ],
+      "published": "2026-07-16T05:16:17.780"
+    },
+    {
+      "id": "CVE-2026-12941",
+      "description": "The MultiVendorX \u2013 WooCommerce Multivendor Marketplace AI Powered Solutions plugin for WordPress is vulnerable to generic SQL Injection via the 'order_by' parameter in all versions up to, and including, 5.0.9 due to insufficient escaping on the user supplied parameter and lack of sufficient preparat",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/dc-woocommerce-multi-vendor/tags/5.0.8/classes/RestAPI/Controllers/Transactions.php#L113",
+        "https://plugins.trac.wordpress.org/browser/dc-woocommerce-multi-vendor/tags/5.0.8/classes/RestAPI/Controllers/Transactions.php#L76",
+        "https://plugins.trac.wordpress.org/browser/dc-woocommerce-multi-vendor/tags/5.0.8/classes/Transaction/Transaction.php#L274"
+      ],
+      "published": "2026-07-16T04:17:16.247"
+    },
+    {
+      "id": "CVE-2026-14987",
+      "description": "The GiveWP \u2013 Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'twitter_message' Sequoia Template Setting in all versions up to, and including, 4.16.3 due to insufficient input sanitization and output escaping. This makes it possible for a",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/give/tags/4.14.5/includes/admin/forms/class-metabox-form-data.php#L1180",
+        "https://plugins.trac.wordpress.org/browser/give/tags/4.14.5/includes/formatting.php#L768",
+        "https://plugins.trac.wordpress.org/browser/give/tags/4.14.5/src/Views/Form/Templates/Sequoia/views/social-sharing.php#L41"
+      ],
+      "published": "2026-07-16T04:17:19.400"
+    },
+    {
+      "id": "CVE-2026-15652",
+      "description": "The Easy Accordion \u2013 AI-Powered FAQ & Accordion Blocks, Product FAQ plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'align' Block Attribute in all versions up to, and including, 3.1.6 due to insufficient input sanitization and output escaping. This makes it possible for authent",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/easy-accordion-free/tags/3.1.5/Blocks/Includes/ShortcodeBlock.php#L127",
+        "https://plugins.trac.wordpress.org/browser/easy-accordion-free/tags/3.1.5/Blocks/Includes/ShortcodeBlock.php#L150",
+        "https://plugins.trac.wordpress.org/browser/easy-accordion-free/tags/3.1.5/Blocks/Includes/ShortcodeBlock.php#L153"
+      ],
+      "published": "2026-07-16T04:17:25.463"
+    },
+    {
+      "id": "CVE-2026-15909",
+      "description": "A vulnerability has been found in RafyMrX TOKO-ONLINE-ROTI up to ddfe1cd587be0a0b5135d8b6e85cce2ec3aece99. Affected is an unknown function of the file proses/add.php. The manipulation of the argument kd_cs leads to authorization bypass. The attack is possible to be carried out remotely. This product",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-15909",
+        "https://vuldb.com/submit/844299",
+        "https://vuldb.com/vuln/379368"
+      ],
+      "published": "2026-07-16T01:16:29.883"
+    },
+    {
+      "id": "CVE-2026-15306",
+      "description": "The Product Feed Manager For WooCommerce \u2013 Sell on 200+ Online Marketplaces plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via 's' Search Parameter in all versions up to, and including, 7.6.1 due to insufficient input sanitization and output escaping. This makes it possible for",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/best-woocommerce-feed/tags/7.6.0/admin/class-rex-product-feed-actions.php#L740",
+        "https://plugins.trac.wordpress.org/browser/best-woocommerce-feed/tags/7.6.0/admin/class-rex-product-feed-actions.php#L767",
+        "https://plugins.trac.wordpress.org/browser/best-woocommerce-feed/tags/7.6.0/admin/class-rex-product-feed-actions.php#L841"
+      ],
+      "published": "2026-07-16T05:16:18.170"
+    },
+    {
+      "id": "CVE-2026-15445",
+      "description": "The SEO Booster plugin for WordPress is vulnerable to time-based SQL Injection via the 'orderby' parameter in all versions up to, and including, 7.3.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for ",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/seo-booster/trunk/inc/SB_GSC_List_Table.php#L559",
+        "https://plugins.trac.wordpress.org/browser/seo-booster/trunk/inc/SB_GSC_List_Table.php#L579",
+        "https://plugins.trac.wordpress.org/browser/seo-booster/trunk/seo-booster-gsc.php#L27"
+      ],
+      "published": "2026-07-16T05:16:18.633"
+    },
+    {
+      "id": "CVE-2026-15458",
+      "description": "The SEO Booster plugin for WordPress is vulnerable to generic SQL Injection via the 'sort_field' parameter in all versions up to, and including, 7.3.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for ",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/seo-booster/tags/7.3.1/seo-booster.php#L389",
+        "https://plugins.trac.wordpress.org/browser/seo-booster/tags/7.3.1/seo-booster.php#L404",
+        "https://plugins.trac.wordpress.org/browser/seo-booster/tags/7.3.1/seo-booster.php#L406"
+      ],
+      "published": "2026-07-16T05:16:18.747"
+    },
+    {
+      "id": "CVE-2026-13005",
+      "description": "The MxChat \u2013 AI Chatbot & Content Generation for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 3.2.10 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers,",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/mxchat-basic/tags/3.2.10/admin/class-ajax-handler.php#L145",
+        "https://plugins.trac.wordpress.org/browser/mxchat-basic/tags/3.2.10/admin/class-ajax-handler.php#L522",
+        "https://plugins.trac.wordpress.org/browser/mxchat-basic/tags/3.2.10/admin/class-ajax-handler.php#L528"
+      ],
+      "published": "2026-07-16T04:17:16.390"
+    },
+    {
+      "id": "CVE-2026-12409",
+      "description": "The Landing Page Builder \u2013 Coming Soon page, Maintenance Mode, Lead Page, WordPress Landing Pages plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.5.3.6. This is due to missing or incorrect nonce validation on the ulpb_admin_ajax function. This",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/page-builder-add/tags/1.5.3.5/admin/classes/ajax-requests-class.php#L111",
+        "https://plugins.trac.wordpress.org/browser/page-builder-add/tags/1.5.3.5/admin/classes/ajax-requests-class.php#L19",
+        "https://plugins.trac.wordpress.org/browser/page-builder-add/tags/1.5.3.6/admin/classes/ajax-requests-class.php#L111"
+      ],
+      "published": "2026-07-16T04:17:14.213"
+    },
+    {
+      "id": "CVE-2026-12434",
+      "description": "The List category posts plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 0.95.0 via the sanitize_status. This makes it possible for authenticated attackers, with contributor-level access and above, to extract titles, full content, excerpts, d",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/list-category-posts/tags/0.95.0/include/lcp-catlist.php#L623",
+        "https://plugins.trac.wordpress.org/browser/list-category-posts/tags/0.95.0/include/lcp-catlist.php#L94",
+        "https://plugins.trac.wordpress.org/browser/list-category-posts/tags/0.95.0/include/lcp-parameters.php#L208"
+      ],
+      "published": "2026-07-16T04:17:15.847"
+    },
+    {
+      "id": "CVE-2026-15336",
+      "description": "The Catch Themes Demo Import plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 3.3. This is due to the catch_themes_demo_import_activate_plugin() function, hooked on admin_init when the activate_plugin GET parameter is present, calling Plugin_Upgrader::ins",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/catch-themes-demo-import/tags/3.2/inc/demo-importer.php#L135",
+        "https://plugins.trac.wordpress.org/browser/catch-themes-demo-import/tags/3.2/inc/demo-importer.php#L136",
+        "https://plugins.trac.wordpress.org/browser/catch-themes-demo-import/tags/3.2/inc/demo-importer.php#L233"
+      ],
+      "published": "2026-07-16T04:17:22.073"
+    }
+  ]
+}
