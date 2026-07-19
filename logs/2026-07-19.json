@@ -1,0 +1,340 @@
+{
+  "timestamp": "2026-07-19T05:33:54.181913+00:00",
+  "scan_id": "9b46073953",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 11,
+      "MEDIUM": 8
+    },
+    "top_cwes": [
+      [
+        "CWE-862",
+        3
+      ],
+      [
+        "CWE-122",
+        3
+      ],
+      [
+        "CWE-863",
+        2
+      ],
+      [
+        "CWE-400",
+        2
+      ],
+      [
+        "CWE-770",
+        2
+      ]
+    ],
+    "threat_index": 390.0,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 390.0,
+        "yesterday": 338.0,
+        "change_pct": 15.4
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 1,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-14956",
+      "description": "The Bricksforge plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.1.8.6. This is due to improper validation of the fieldIds parameter in the Pro Forms registration action, which allows attacker-supplied field IDs to be added to the trusted form-field ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://bricksforge.io/version-changelog/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/d0538778-5ba4-4bec-a89d-ef90a9ba8375?source=cve"
+      ],
+      "published": "2026-07-17T02:18:03.870"
+    },
+    {
+      "id": "CVE-2026-62202",
+      "description": "OpenClaw versions 2026.6.1 before 2026.6.9 contain a privilege escalation vulnerability in isolated cron jobs that allows lower-trust callers to regain denied execution tools. Attackers can execute or persist actions beyond their intended authorization by leveraging misconfigured input paths in the ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-mm9g-83wh-mhwj",
+        "https://www.vulncheck.com/advisories/openclaw-privilege-escalation-via-cron"
+      ],
+      "published": "2026-07-17T02:18:06.430"
+    },
+    {
+      "id": "CVE-2026-62203",
+      "description": "OpenClaw versions before 2026.6.6 contain an environment variable filtering vulnerability in host exec that fails to properly sanitize rustup startup variables. Attackers with lower-trust caller access or configured input paths can execute or persist actions beyond their intended authorization level",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-184"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-wxh3-g47h-q3mc",
+        "https://www.vulncheck.com/advisories/openclaw-environment-variable-injection-via-rustup"
+      ],
+      "published": "2026-07-17T02:18:06.587"
+    },
+    {
+      "id": "CVE-2026-62207",
+      "description": "OpenClaw versions before 2026.6.5 contain an authentication bypass vulnerability that allows lower-trust callers to reach admin-scoped tools. Attackers can perform actions requiring stronger authorization by exploiting insufficient policy checks on configured input paths.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-cf2p-f286-mphf",
+        "https://www.vulncheck.com/advisories/openclaw-authentication-bypass-via-admin-tools"
+      ],
+      "published": "2026-07-17T02:18:07.040"
+    },
+    {
+      "id": "CVE-2026-62209",
+      "description": "OpenClaw versions 2026.5.10-beta.1 before 2026.6.5 contain an authorization bypass in the ClickClack agent-mode dispatch feature, which could ignore the toolsAllow policy check. When the affected feature is enabled and reachable, a lower-trust caller or configured input path could perform actions th",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-wp73-f3gg-w4vr",
+        "https://www.vulncheck.com/advisories/openclaw-beta-1-authorization-bypass-via-agent-mode-dispatch"
+      ],
+      "published": "2026-07-17T02:18:07.327"
+    },
+    {
+      "id": "CVE-2026-62201",
+      "description": "OpenClaw versions before 2026.6.6 contain a network policy bypass vulnerability in the sandbox exec-server that allows lower-trust callers to reach internal network destinations blocked by OpenClaw policy. Attackers can send HTTP requests through the exec-server to access network resources that shou",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-mgvr-6gvw-3rgr",
+        "https://www.vulncheck.com/advisories/openclaw-network-policy-bypass-via-exec-server"
+      ],
+      "published": "2026-07-17T02:18:06.170"
+    },
+    {
+      "id": "CVE-2026-34150",
+      "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. In versions 1.0.0 and above, prior to 4.14.5, a heap buffer overflow in wazuh-analysisd allows an unauthenticated remote attacker to crash the Wazuh manager's analysis engine, causing complete loss of SIEM ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-rvr9-89q8-w883",
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-rvr9-89q8-w883"
+      ],
+      "published": "2026-07-17T00:16:25.520"
+    },
+    {
+      "id": "CVE-2026-39359",
+      "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. In versions 4.0.0 through 4.10.3 and 4.11.0 through 4.14.4, a logic flaw affects the Wazuh Manager's enrollment daemon (authd) and synchronization daemon (remoted). The authd process allows agents to select",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-6q95-fcwc-4h44",
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-6q95-fcwc-4h44"
+      ],
+      "published": "2026-07-17T00:16:25.663"
+    },
+    {
+      "id": "CVE-2026-54340",
+      "description": "h2o is an HTTP server with support for HTTP/1.x, HTTP/2 and HTTP/3. Prior to commit 9265bdd, there is an HTTP/2 state amplification issue that combines HPACK decompression amplification with Slowloris-style stream stalling. Amplified decoded header state can be retained by stalled HTTP/2 streams, an",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/h2o/h2o/commit/9265bdd9a996ed992681055e3996baf3e09d2063",
+        "https://github.com/h2o/h2o/security/advisories/GHSA-qcrr-wrhc-pgq9"
+      ],
+      "published": "2026-07-17T00:16:25.810"
+    },
+    {
+      "id": "CVE-2026-62205",
+      "description": "OpenClaw versions 2026.4.12-beta.1 before 2026.6.6 contain a missing-authorization vulnerability in the MS Teams message actions feature. When the affected feature is enabled and reachable, a lower-trust caller or a configured input path can perform actions that should have required a stronger autho",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-p5xh-frrh-cmgj",
+        "https://www.vulncheck.com/advisories/openclaw-beta-1-authorization-bypass-via-message-actions"
+      ],
+      "published": "2026-07-17T02:18:06.747"
+    },
+    {
+      "id": "CVE-2026-62206",
+      "description": "OpenClaw versions before 2026.6.9 contain a missing authorization vulnerability in Discord moderation actions. In affected versions, a lower-trust caller or configured input path could perform moderation actions that should have required a stronger authorization or policy check. Practical impact dep",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-f6p7-6326-vf7v",
+        "https://www.vulncheck.com/advisories/openclaw-authentication-bypass-via-moderation-actions"
+      ],
+      "published": "2026-07-17T02:18:06.887"
+    },
+    {
+      "id": "CVE-2026-62212",
+      "description": "OpenClaw before 2026.5.28 contains a race condition in the MS Teams safeFetch DNS rebinding check. When the affected feature is enabled and reachable, a lower-trust caller or configured input path could win a timing window between the DNS validation check and use, allowing actions that should have r",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-wxm8-ghhq-q688",
+        "https://www.vulncheck.com/advisories/openclaw-authentication-bypass-via-safefetch"
+      ],
+      "published": "2026-07-17T02:18:07.783"
+    },
+    {
+      "id": "CVE-2026-33754",
+      "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. In versions 3.9.0 and above, prior to 4.14.5, a remote attacker can trigger memory exhaustion in the cluster protocol parser by sending a crafted message header with an arbitrarily large payload length. The",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-476v-28pp-5wg9",
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-476v-28pp-5wg9"
+      ],
+      "published": "2026-07-17T00:16:25.383"
+    },
+    {
+      "id": "CVE-2026-44251",
+      "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. In versions 3.0.0 and above, prior to 4.14.5, a size_t integer underflow in os_crypto/shared/msgs.c:389 allows any enrolled Wazuh agent to crash the wazuh-remoted process on the manager, immediately disconn",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-122",
+        "CWE-191"
+      ],
+      "references": [
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-jv5r-5p7c-g9fq",
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-jv5r-5p7c-g9fq"
+      ],
+      "published": "2026-07-17T02:18:05.973"
+    },
+    {
+      "id": "CVE-2026-62208",
+      "description": "OpenClaw before 2026.6.5 could forward Authorization headers during MCP SSE redirects. When the affected feature is enabled and reachable, a lower-trust caller or configured input path could execute or persist actions beyond the caller's intended authorization. Impact depends on the operator's confi",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-9c3v-684m-579c",
+        "https://www.vulncheck.com/advisories/openclaw-authorization-header-forwarding-via-sse"
+      ],
+      "published": "2026-07-17T02:18:07.187"
+    },
+    {
+      "id": "CVE-2026-62210",
+      "description": "OpenClaw versions before 2026.6.1 contain a denial of service vulnerability where remote media URLs can trigger slow-read attacks that exhaust gateway worker resources. Attackers with access to configured input paths can supply remote media URLs that consume gateway resources and reduce availability",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-4xwj-mcc7-x7x5",
+        "https://www.vulncheck.com/advisories/openclaw-denial-of-service-via-remote-media-urls"
+      ],
+      "published": "2026-07-17T02:18:07.470"
+    },
+    {
+      "id": "CVE-2026-2594",
+      "description": "The Smart Custom Fields plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to, and including, 5.0.7. This is due to insufficient input sanitization and output escaping of uploaded image attachment titles. This makes it possible for authenticated attackers, with Author-l",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3485210/smart-custom-fields",
+        "https://plugins.trac.wordpress.org/changeset/3609564/smart-custom-fields",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/110a1b28-50e0-430e-82d4-c254d73836e2?source=cve"
+      ],
+      "published": "2026-07-17T02:18:05.607"
+    },
+    {
+      "id": "CVE-2026-62211",
+      "description": "OpenClaw versions before 2026.6.1 contain a credential redaction bypass vulnerability in the trajectory export feature that allows lower-trust callers to access data that should remain within trusted boundaries. Attackers can exploit misconfigured input paths or feature accessibility to expose sensi",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-532"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-j4cx-jvq7-79vm",
+        "https://www.vulncheck.com/advisories/openclaw-credential-redaction-bypass-via-trajectory-export"
+      ],
+      "published": "2026-07-17T02:18:07.620"
+    },
+    {
+      "id": "CVE-2026-40106",
+      "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. Versions 4.6.0 and above prior to 4.14.5 contain a heap-based buffer overflow vulnerability in the syscheck component of the Wazuh agent for Windows. When expanding registry paths containing wildcards (* or",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-qvrc-pcfc-jhqc",
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-qvrc-pcfc-jhqc"
+      ],
+      "published": "2026-07-17T02:18:05.780"
+    },
+    {
+      "id": "CVE-2026-33434",
+      "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. In versions 4.6.0 and above, prior to 4.14.5, a logic error in CheckRateLimitsMiddleware.dispatch() causes the /events endpoint rate check to unconditionally overwrite the general rate limit result. When th",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-799"
+      ],
+      "references": [
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-37qc-8242-6crg"
+      ],
+      "published": "2026-07-17T00:16:24.573"
+    }
+  ]
+}
