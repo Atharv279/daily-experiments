@@ -1,0 +1,352 @@
+{
+  "timestamp": "2026-07-20T05:51:20.999797+00:00",
+  "scan_id": "00a749998a",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 10,
+      "MEDIUM": 9
+    },
+    "top_cwes": [
+      [
+        "CWE-287",
+        3
+      ],
+      [
+        "CWE-119",
+        3
+      ],
+      [
+        "CWE-22",
+        2
+      ],
+      [
+        "CWE-121",
+        2
+      ],
+      [
+        "CWE-94",
+        2
+      ]
+    ],
+    "threat_index": 378.7,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 378.7,
+        "yesterday": 390.0,
+        "change_pct": -2.9
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 1,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-47865",
+      "description": "VMware Avi Load Balancer contains an authentication bypass vulnerability. A malicious user with network access may be able to access the Avi Control plane by bypassing the authentication mechanism.\n\nAffected versions:\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37926"
+      ],
+      "published": "2026-07-18T09:17:08.287"
+    },
+    {
+      "id": "CVE-2026-47871",
+      "description": "VMware Avi Load Balancer contains a directory traversal vulnerability. Flaws in file path validation allow malicious, authenticated network users to perform directory traversal attacks.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fi",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37926"
+      ],
+      "published": "2026-07-18T09:17:08.960"
+    },
+    {
+      "id": "CVE-2026-16095",
+      "description": "A flaw has been found in Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124. Affected by this issue is the function setup_conntrack of the file /sbin/rc. Executing a manipulation of the argument ct_tcp_timeout can lead to out-of-bounds write. The attack may be performed from remote. This project is supersed",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-787"
+      ],
+      "references": [
+        "https://gitee.com/Fengyi-Wang/CVE/issues/IJTQ5S",
+        "https://vuldb.com/cve/CVE-2026-16095",
+        "https://vuldb.com/submit/855123"
+      ],
+      "published": "2026-07-18T11:16:43.833"
+    },
+    {
+      "id": "CVE-2026-16096",
+      "description": "A vulnerability has been found in Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124. This affects the function sub_40BB50 of the file /proc/webmon_recent_domains. The manipulation leads to stack-based buffer overflow. It is possible to initiate the attack remotely. This project is superseded by FreshTomato",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://gitee.com/Fengyi-Wang/CVE/issues/IJTQ5T",
+        "https://vuldb.com/cve/CVE-2026-16096",
+        "https://vuldb.com/submit/855124"
+      ],
+      "published": "2026-07-18T12:17:11.223"
+    },
+    {
+      "id": "CVE-2026-16097",
+      "description": "A vulnerability was found in Shibby Tomato 1.28. This vulnerability affects the function sub_42537C of the component Scheduler Name Handler. The manipulation of the argument a1 results in stack-based buffer overflow. It is possible to launch the attack remotely. This project is superseded by FreshTo",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://gitee.com/Fengyi-Wang/CVE/issues/IJTQ5U",
+        "https://vuldb.com/cve/CVE-2026-16097",
+        "https://vuldb.com/submit/855125"
+      ],
+      "published": "2026-07-18T12:17:11.393"
+    },
+    {
+      "id": "CVE-2026-47867",
+      "description": "VMware Avi Load Balancer contains a remote code execution vulnerability. A malicious user with network access may be able to access the Avi Control plane and execute code remotely.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed i",
+      "severity": "HIGH",
+      "score": 8.7,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37926"
+      ],
+      "published": "2026-07-18T09:17:08.527"
+    },
+    {
+      "id": "CVE-2026-47869",
+      "description": "VMware Avi Load Balancer contains a remote code execution vulnerability. A malicious authenticated user with network access may be able to inject and execute code.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7)\n22.1.1 ",
+      "severity": "HIGH",
+      "score": 8.7,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37926"
+      ],
+      "published": "2026-07-18T09:17:08.740"
+    },
+    {
+      "id": "CVE-2026-47866",
+      "description": "VMware Avi Load Balancer contains an authorization bypass vulnerability. A malicious actor on the network can access a limited subset of the Avi Control Plane without proper authorization.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 ",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37926"
+      ],
+      "published": "2026-07-18T09:17:08.413"
+    },
+    {
+      "id": "CVE-2026-47868",
+      "description": "VMware Avi Load Balancer contains a local privilege escalation vulnerability. A malicious user with local access may be able to escalate their privileges to run code as root.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37926"
+      ],
+      "published": "2026-07-18T09:17:08.627"
+    },
+    {
+      "id": "CVE-2026-16084",
+      "description": "A weakness has been identified in Sipeed PicoClaw up to 0.2.9. This impacts the function web_fetch of the file pkg/tools/integration/web.go. This manipulation causes server-side request forgery. Remote exploitation of the attack is possible. The exploit has been made available to the public and coul",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/sipeed/picoclaw/",
+        "https://github.com/sipeed/picoclaw/commit/c15aac21fe05ee103a470e1104bc891754e83392",
+        "https://github.com/sipeed/picoclaw/issues/3074"
+      ],
+      "published": "2026-07-18T09:17:08.113"
+    },
+    {
+      "id": "CVE-2026-47870",
+      "description": "VMware Avi Load Balancer contains a privilege escalation vulnerability. A malicious authenticated user with network access may be able to execute remote code.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7)\n22.1.1 throu",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37926"
+      ],
+      "published": "2026-07-18T09:17:08.847"
+    },
+    {
+      "id": "CVE-2026-16076",
+      "description": "A vulnerability has been found in AstrBotDevs AstrBot up to 4.25.5. This issue affects the function OpenApiRoute.chat_send of the file astrbot/dashboard/routes/open_api.py of the component API. Such manipulation of the argument Username leads to authentication bypass by spoofing. It is possible to l",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-287",
+        "CWE-290"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/080ba55a71588dbbba3f27afed4c072c",
+        "https://vuldb.com/cve/CVE-2026-16076",
+        "https://vuldb.com/submit/852864"
+      ],
+      "published": "2026-07-18T06:16:35.203"
+    },
+    {
+      "id": "CVE-2026-16077",
+      "description": "A vulnerability was found in AstrBotDevs AstrBot up to 4.25.5. Impacted is the function _normalize_rw_path of the file astrbot/core/tools/computer_tools/fs.py of the component Filesystem Computer-Use Tool. Performing a manipulation results in link following. The attack is only possible with local ac",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-59"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/d2581be79bb3caf9a032b0614dfc7728",
+        "https://vuldb.com/cve/CVE-2026-16077",
+        "https://vuldb.com/submit/852865"
+      ],
+      "published": "2026-07-18T07:16:39.290"
+    },
+    {
+      "id": "CVE-2026-16082",
+      "description": "A vulnerability was identified in Sipeed PicoClaw up to 0.2.9. The impacted element is the function ExecTool.executeRun of the file pkg/agent/pipeline_execute.go. The manipulation of the argument cwe leads to time-of-check time-of-use. The attack must be carried out locally. The exploit is publicly ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-362",
+        "CWE-367"
+      ],
+      "references": [
+        "https://github.com/sipeed/picoclaw/",
+        "https://github.com/sipeed/picoclaw/issues/3081",
+        "https://vuldb.com/cve/CVE-2026-16082"
+      ],
+      "published": "2026-07-18T09:17:07.783"
+    },
+    {
+      "id": "CVE-2026-16083",
+      "description": "A security flaw has been discovered in Sipeed PicoClaw up to 0.2.9. This affects the function webhook.ParseRequest of the file pkg/channels/line/line.go of the component LINE Webhook. The manipulation results in authentication bypass by capture-replay. The attack may be launched remotely. The exploi",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-287",
+        "CWE-294"
+      ],
+      "references": [
+        "https://github.com/sipeed/picoclaw/",
+        "https://github.com/sipeed/picoclaw/issues/3073",
+        "https://vuldb.com/cve/CVE-2026-16083"
+      ],
+      "published": "2026-07-18T09:17:07.953"
+    },
+    {
+      "id": "CVE-2026-16085",
+      "description": "A security vulnerability has been detected in Sipeed PicoClaw up to 0.2.9. Affected is the function NewContextBuilder of the file pkg/agent/context.go. Such manipulation leads to inclusion of functionality from untrusted control sphere. The attack needs to be performed locally. The exploit has been ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-829"
+      ],
+      "references": [
+        "https://github.com/sipeed/picoclaw/",
+        "https://github.com/sipeed/picoclaw/issues/3075",
+        "https://vuldb.com/cve/CVE-2026-16085"
+      ],
+      "published": "2026-07-18T10:17:25.627"
+    },
+    {
+      "id": "CVE-2026-16088",
+      "description": "A vulnerability was detected in halo-dev halo up to 2.24.2. Affected by this vulnerability is the function Download of the file MigrationEndpoint.java of the component Files Backup Endpoint. Performing a manipulation results in path traversal. The attack is possible to be carried out remotely. The e",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/halo-dev/halo/",
+        "https://github.com/halo-dev/halo/issues/10064",
+        "https://vuldb.com/cve/CVE-2026-16088"
+      ],
+      "published": "2026-07-18T10:17:25.950"
+    },
+    {
+      "id": "CVE-2026-16075",
+      "description": "A flaw has been found in AstrBotDevs AstrBot up to 4.25.5. This vulnerability affects the function OpenApiRoute.get_chat_sessions of the file astrbot/dashboard/routes/open_api.py of the component session-listing Endpoint. This manipulation of the argument Username causes authorization bypass. It is ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://gist.github.com/YLChen-007/5fee3adfd95333b0f4eff8165af61f81",
+        "https://vuldb.com/cve/CVE-2026-16075",
+        "https://vuldb.com/submit/852863"
+      ],
+      "published": "2026-07-18T05:16:52.490"
+    },
+    {
+      "id": "CVE-2026-9734",
+      "description": "The W3SC Elementor to Zoho CRM plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2.2.0. This is due to missing or incorrect nonce validation on the storeInfo function. This makes it possible for unauthenticated attackers to modify the plugin's Zoh",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/w3sc-elementor-to-zoho/trunk/includes/Admin/Authdata.php#L33",
+        "https://plugins.trac.wordpress.org/browser/w3sc-elementor-to-zoho/trunk/includes/Admin/Authdata.php#L38",
+        "https://plugins.trac.wordpress.org/browser/w3sc-elementor-to-zoho/trunk/includes/Admin/Setting.php#L23"
+      ],
+      "published": "2026-07-18T05:16:56.570"
+    },
+    {
+      "id": "CVE-2026-16081",
+      "description": "A vulnerability was determined in Sipeed PicoClaw up to 0.2.9. The affected element is an unknown function of the file web/backend/api/auth.go. Executing a manipulation can lead to cross-site request forgery. The attack can be launched remotely. The exploit has been publicly disclosed and may be uti",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352",
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/sipeed/picoclaw/",
+        "https://github.com/sipeed/picoclaw/commit/4b0229351678f479429b8d8b19207757266f246b",
+        "https://github.com/sipeed/picoclaw/issues/3072"
+      ],
+      "published": "2026-07-18T08:16:35.130"
+    }
+  ]
+}
