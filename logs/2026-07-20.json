@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-20T05:51:20.999797+00:00",
-  "scan_id": "00a749998a",
+  "timestamp": "2026-07-20T11:16:27.889376+00:00",
+  "scan_id": "babf4fd8b5",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
