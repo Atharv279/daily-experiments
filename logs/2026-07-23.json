@@ -1,0 +1,357 @@
+{
+  "timestamp": "2026-07-23T05:36:39.733966+00:00",
+  "scan_id": "5e18a5bf1d",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 8,
+      "MEDIUM": 9,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-284",
+        5
+      ],
+      [
+        "CWE-434",
+        5
+      ],
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-400",
+        2
+      ],
+      [
+        "CWE-269",
+        1
+      ]
+    ],
+    "threat_index": 319.7,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 319.7,
+        "yesterday": 369.5,
+        "change_pct": -13.5
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 3,
+        "change_pct": -66.7
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-13439",
+      "description": "The Easy Form Builder by WhiteStudio plugin for WordPress is vulnerable to Unauthenticated Privilege Escalation to Administrator in versions up to, and including, 4.0.11 This is due to the password recovery flow using the publicly-visible session identifier ('sid') as the password reset token stored",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/easy-form-builder/trunk/includes/class-Emsfb-public.php#L1587",
+        "https://plugins.trac.wordpress.org/browser/easy-form-builder/trunk/includes/class-Emsfb-public.php#L5024",
+        "https://plugins.trac.wordpress.org/browser/easy-form-builder/trunk/includes/class-Emsfb-public.php#L5060"
+      ],
+      "published": "2026-07-21T06:16:28.060"
+    },
+    {
+      "id": "CVE-2026-55831",
+      "description": "Netty is a network application framework for development of protocol servers and clients. Prior to 4.1.136.Final and 4.2.16.Final, Netty's SPDY SETTINGS decoder accepts a peer-declared SETTINGS entry count up to the 24-bit frame-length limit and materializes every unique setting ID in `DefaultSpdySe",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/netty/netty/commit/5b68c61f37aa4a3045cba624cbea239655c9003b",
+        "https://github.com/netty/netty/commit/bb2ff68a1fb71cb4b0eb9a9e17b66c52aff680c6",
+        "https://github.com/netty/netty/releases/tag/netty-4.1.136.Final"
+      ],
+      "published": "2026-07-21T00:17:35.383"
+    },
+    {
+      "id": "CVE-2026-55833",
+      "description": "Netty is a network application framework for development of protocol servers and clients. Prior to 4.1.136.Final and 4.2.16.Final, Netty SPDY header decoding continues inflating zlib-compressed header blocks after the raw header parser has exceeded `maxHeaderSize` and marked the frame truncated in `",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://github.com/netty/netty/commit/5b68c61f37aa4a3045cba624cbea239655c9003b",
+        "https://github.com/netty/netty/commit/bb2ff68a1fb71cb4b0eb9a9e17b66c52aff680c6",
+        "https://github.com/netty/netty/releases/tag/netty-4.1.136.Final"
+      ],
+      "published": "2026-07-21T00:17:35.537"
+    },
+    {
+      "id": "CVE-2026-16327",
+      "description": "A vulnerability was determined in D-Link DNS-320 1.0.2. This issue affects some unknown processing of the file /web/web_file/upload.php. Executing a manipulation of the argument File can lead to unrestricted upload. The attack can be launched remotely. The exploit has been publicly disclosed and may",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://ucn9h68n9289.feishu.cn/wiki/JJcTwHz7aiKeq6kSItMcoeSUnMc?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-16327",
+        "https://vuldb.com/submit/858455"
+      ],
+      "published": "2026-07-21T00:16:53.570"
+    },
+    {
+      "id": "CVE-2026-16329",
+      "description": "A vulnerability was identified in D-Link DNS-320 1.0.2. Impacted is an unknown function of the file /photo_center/php/uploadify.php. The manipulation of the argument Malicious Handler leads to unrestricted upload. The attack may be initiated remotely. The exploit is publicly available and might be u",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://ucn9h68n9289.feishu.cn/docx/MBHDdPBz4oUXa9xCdujchmPZneg?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-16329",
+        "https://vuldb.com/submit/858462"
+      ],
+      "published": "2026-07-21T01:16:29.117"
+    },
+    {
+      "id": "CVE-2026-16330",
+      "description": "A weakness has been identified in D-Link DNS-320 1.0.2. The impacted element is an unknown function of the file /web/jquery/uploader/uploadify.php. This manipulation of the argument https:/ucn9h68n9289.feishu.cn/wiki/JJcTwHz7aiKeq6kSItMcoeSUnMc?from=from_copylink causes unrestricted upload. Remote e",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://ucn9h68n9289.feishu.cn/docx/EkMxdLlavojfsXxzKXec5yUknEg?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-16330",
+        "https://vuldb.com/submit/858463"
+      ],
+      "published": "2026-07-21T01:16:29.280"
+    },
+    {
+      "id": "CVE-2026-16331",
+      "description": "A security vulnerability has been detected in D-Link DNS-320 1.0.2. This affects an unknown function of the file /web/function/save_ajax.php. Such manipulation of the argument Malicious Handler leads to unrestricted upload. The attack can be executed remotely. The exploit has been disclosed publicly",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://ucn9h68n9289.feishu.cn/docx/UZ6id3F1Joqlpxxn3NFcL8r7nHb?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-16331",
+        "https://vuldb.com/submit/858464"
+      ],
+      "published": "2026-07-21T01:16:29.450"
+    },
+    {
+      "id": "CVE-2026-16332",
+      "description": "A vulnerability was detected in D-Link DNS-320 1.0.2. This impacts an unknown function of the file /mydlink/multi_uploadify.php. Performing a manipulation of the argument Filedata[] results in unrestricted upload. The attack is possible to be carried out remotely. The exploit is now public and may b",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://ucn9h68n9289.feishu.cn/docx/EbAkdl1v8oC3Q3xAEJLcZFcZnMY?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-16332",
+        "https://vuldb.com/submit/858465"
+      ],
+      "published": "2026-07-21T03:16:40.833"
+    },
+    {
+      "id": "CVE-2026-6952",
+      "description": "A post-authentication command injection vulnerability in the \"LogServer\" field of the syslog component in Zyxel AX7501-B1 firmware versions through\u00a05.17(ABPC.7.2)C0 could allow an authenticated attacker with administrator privileges to execute OS commands on an affected device.",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-post-authentication-command-injection-vulnerability-in-certain-dsl-ethernet-cpe-fiber-onts-and-wireless-extenders-07-21-2026"
+      ],
+      "published": "2026-07-21T03:16:42.610"
+    },
+    {
+      "id": "CVE-2026-59776",
+      "description": "Missing Cryptographic Step (CWE-325) vulnerability exists in certain FeliCa IC chips shipped in or before 2017. If the vulnerability is exploited, information stored in the IC chip may be read or tampered with.",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-325"
+      ],
+      "references": [
+        "https://jvn.jp/en/jp/JVN40509781/",
+        "https://www.sony.co.jp/en/Products/felica/business/information/2025001.html"
+      ],
+      "published": "2026-07-21T04:16:51.480"
+    },
+    {
+      "id": "CVE-2026-63729",
+      "description": "The SyncTeX parser (synctex_parser.c) shipped with TeX Live and embedded by downstream consumers such as GNOME Evince contains a heap use-after-free vulnerability that allows attackers to crash applications or potentially execute arbitrary code by supplying a malformed .synctex or .synctex.gz file. ",
+      "severity": "MEDIUM",
+      "score": 6.6,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://fatihhcelik.github.io/posts/evince-synctex-heap-use-after-free/",
+        "https://github.com/TeX-Live/texlive-source/",
+        "https://github.com/TeX-Live/texlive-source/commit/002dcd3eac30db5c352f53d4181737961cc7ee9a"
+      ],
+      "published": "2026-07-21T03:16:42.470"
+    },
+    {
+      "id": "CVE-2026-15156",
+      "description": "The Essential Addons for Elementor \u2013 Popular Elementor Templates & Widgets plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Reading Progress Global Color Settings in all versions up to, and including, 6.6.11 due to insufficient input sanitization and output escaping. This makes ",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/essential-addons-for-elementor-lite/tags/6.6.10/includes/Classes/Bootstrap.php#L145",
+        "https://plugins.trac.wordpress.org/browser/essential-addons-for-elementor-lite/tags/6.6.10/includes/Traits/Core.php#L185",
+        "https://plugins.trac.wordpress.org/browser/essential-addons-for-elementor-lite/tags/6.6.10/includes/Traits/Elements.php#L496"
+      ],
+      "published": "2026-07-21T05:16:34.110"
+    },
+    {
+      "id": "CVE-2026-63728",
+      "description": "Gitleaks prior to 8.30.1 contains a template injection vulnerability that allows attackers who can supply or influence report templates to read arbitrary environment variables and exfiltrate sensitive data by leveraging non-hermetic Sprig template functions. Attackers can craft malicious report temp",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-1336"
+      ],
+      "references": [
+        "https://fatihhcelik.github.io/posts/gitleaks-abusing-sprig-for-exfiltration/#the-fix",
+        "https://github.com/gitleaks/gitleaks",
+        "https://github.com/gitleaks/gitleaks/commit/83d9cd684c87d95d656c1458ef04895a7f1cbd8e"
+      ],
+      "published": "2026-07-21T00:17:48.953"
+    },
+    {
+      "id": "CVE-2026-16334",
+      "description": "A vulnerability was identified in itsourcecode Hospital Management System 1.0. This vulnerability affects unknown code of the file /prescriptionorder.php. Such manipulation of the argument editid leads to sql injection. The attack can be launched remotely. The exploit is publicly available and might",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/LiamJim/cve/issues/1",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-16334"
+      ],
+      "published": "2026-07-21T03:16:41.007"
+    },
+    {
+      "id": "CVE-2026-15811",
+      "description": "A vulnerability was found in kronosnet's (version <=1.34) cryptographic configuration management. The framework does not correctly zero-out or wipe sensitive memory segments after executing changes to its cryptographic configuration. This omission leaves raw encryption keys resident in memory after ",
+      "severity": "MEDIUM",
+      "score": 5.8,
+      "cwes": [
+        "CWE-212"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-15811",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2500849"
+      ],
+      "published": "2026-07-21T06:16:28.343"
+    },
+    {
+      "id": "CVE-2026-15782",
+      "description": "The WPForms \u2013 AI Form Builder for WordPress \u2013 Contact Forms, Payment Forms, Survey Form, Quiz & More plugin for WordPress is vulnerable to Stored Cross-Site Scripting via OptinMonster Integration data-sitekey Attribute in Post Content in all versions up to, and including, 2.0.0.1 due to insufficient",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wpforms-lite/tags/1.10.0.4/assets/js/frontend/wpforms.min.js#L5",
+        "https://plugins.trac.wordpress.org/browser/wpforms-lite/tags/1.10.2.1/assets/js/frontend/wpforms.min.js#L5",
+        "https://plugins.trac.wordpress.org/changeset/3610719/wpforms-lite/trunk/assets/js/frontend/wpforms.min.js?old=3586095&old_path=wpforms-lite%2Ftrunk%2Fassets%2Fjs%2Ffrontend%2Fwpforms.min.js"
+      ],
+      "published": "2026-07-21T06:16:28.210"
+    },
+    {
+      "id": "CVE-2026-15812",
+      "description": "A vulnerability was found in the internal Access Control List (ACL) subsystem of kronosnet (Version affected: <= 1.34). When the framework is explicitly configured to manage dynamic links (accepting network traffic from any IP address) without network payload encryption, the validation architecture ",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-290"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-15812",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2500851"
+      ],
+      "published": "2026-07-21T06:16:28.480"
+    },
+    {
+      "id": "CVE-2026-16336",
+      "description": "A vulnerability was found in trinodb trino 481. Affected is an unknown function of the file core/trino-main/src/main/java/io/trino/server/ExternalUriInfo.java of the component OAuth2/OIDC. Performing a manipulation of the argument redirect_uri results in open redirect. It is possible to initiate the",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-601"
+      ],
+      "references": [
+        "https://github.com/trinodb/trino/",
+        "https://github.com/trinodb/trino/issues/29754",
+        "https://vuldb.com/cve/CVE-2026-16336"
+      ],
+      "published": "2026-07-21T04:16:50.310"
+    },
+    {
+      "id": "CVE-2023-37508",
+      "description": "HCL DevOps Plan is potentially susceptible to Cross-Site Scripting (XSS) which could allow an attacker to exploit this vulnerability if certain browser weaknesses are present.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0132308"
+      ],
+      "published": "2026-07-21T05:16:33.263"
+    },
+    {
+      "id": "CVE-2023-37507",
+      "description": "HCL DevOps Plan is susceptible to an information disclosure that can allow an attacker to focus their attacks based upon the information revealed.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-497"
+      ],
+      "references": [
+        "https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0132309"
+      ],
+      "published": "2026-07-21T06:16:27.113"
+    }
+  ]
+}
