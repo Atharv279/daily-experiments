@@ -1,0 +1,339 @@
+{
+  "timestamp": "2026-07-24T05:31:24.801188+00:00",
+  "scan_id": "46cfa83909",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 6,
+      "MEDIUM": 10,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-78",
+        4
+      ],
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-77",
+        3
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-284",
+        2
+      ]
+    ],
+    "threat_index": 259.3,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 259.3,
+        "yesterday": 319.7,
+        "change_pct": -18.9
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-12968",
+      "description": "The Product Addons and Product Options With Custom Fields  WordPress plugin before 1.6.15 does not restrict an unauthenticated file-upload endpoint and accepts SVG files that are stored and served inline, allowing an unauthenticated attacker to upload a malicious SVG whose embedded script executes i",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/8ae2ff84-a4a0-4fb1-842b-b3193e673d27/"
+      ],
+      "published": "2026-07-22T07:16:34.710"
+    },
+    {
+      "id": "CVE-2026-3821",
+      "description": "Supermicro (SMC) SMASH services contain an Arbitrary code execution issue in\u00a0X14DBG-DAP and X14DBI.\nAn authorized attacker can exploit SMASH\u2019s input capability to compromise data integrity or launch a Denial-of-Service (DoS) attack against the BMC.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://www.supermicro.com/en/support/security_BMC_IPMI_Jul_2026"
+      ],
+      "published": "2026-07-22T07:16:35.413"
+    },
+    {
+      "id": "CVE-2026-14551",
+      "description": "The servereye client (also known as sensorhub, technically ClientAgentContainerService) versions 20.15 and earlier are vulnerable to Local Privilege Escalation. The high-privileged service SE3Recovery (EmergencyRecoveryService.exe), running as SYSTEM, periodically monitors the directory %ProgramData",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-73",
+        "CWE-269",
+        "CWE-379"
+      ],
+      "references": [
+        "https://www.servereye.de/security-bulletins/2026-001/"
+      ],
+      "published": "2026-07-22T10:17:13.810"
+    },
+    {
+      "id": "CVE-2026-15802",
+      "description": "The WP Foodbakery plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'delete_locations_backup_file_callback' function in all versions up to, and including, 4.9. This makes it possible for authenticated attackers, with subscriber-level access",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-23"
+      ],
+      "references": [
+        "https://themeforest.net/item/food-bakery-restaurant-bakery-responsive-wordpress-theme/18970331",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/45c8d883-1f97-4c9d-b406-c61e33a0959e?source=cve"
+      ],
+      "published": "2026-07-22T05:17:08.820"
+    },
+    {
+      "id": "CVE-2026-12987",
+      "description": "The Events Manager  WordPress plugin before 7.3.7 does not safely handle booking-registration data on sites using No-User-Account Booking Mode: a booker-supplied registration field is stored as booking meta and later deserialized without restricting allowed classes, enabling PHP object injection. Th",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/dac83702-298d-4422-b795-b7684cc3fb2b/"
+      ],
+      "published": "2026-07-22T07:16:35.203"
+    },
+    {
+      "id": "CVE-2026-63047",
+      "description": "Joomla Extension - joomdonation.com - Invoice data exfiltration via incorrect ACL check in Events Booking 5.0.0-5.8.1 - The Joomla extension Events Booking prior version 5.0-5.8.1 did not properly verify that an actor is allowed to download invoice information.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://joomdonation.com/joomla-extensions/events-booking-joomla-events-registration.html"
+      ],
+      "published": "2026-07-22T08:16:23.950"
+    },
+    {
+      "id": "CVE-2026-63263",
+      "description": "Uncontrolled Resource Consumption (CWE-400) in Elasticsearch can lead to denial of service via Exponential Data Expansion (CAPEC-197). An authenticated user may submit a specially crafted query to the ES|QL engine that causes exponential CPU consumption during query evaluation. Because the resource ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://discuss.elastic.co/t/elasticsearch-8-19-19-9-3-8-9-4-4-security-update-esa-2026-74/388577"
+      ],
+      "published": "2026-07-22T00:17:31.283"
+    },
+    {
+      "id": "CVE-2026-2406",
+      "description": "Authorization bypass through User-Controlled key vulnerability in Universe Software Computer Marketing Trade and Industry Inc. Online Registration and Workflow Management System allows Exploiting Trust in Client.\n\nThis issue affects Online Registration and Workflow Management System: through 1202202",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-0594"
+      ],
+      "published": "2026-07-22T09:16:28.903"
+    },
+    {
+      "id": "CVE-2026-15787",
+      "description": "The Ultimate Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Navigation Menu Widget data-toggle-icon/data-close-icon Attributes in all versions up to, and including, 2.9.1 due to insufficient input sanitization and output escaping. This makes it possible fo",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/header-footer-elementor/tags/2.8.8/inc/js/frontend.js#L682",
+        "https://plugins.trac.wordpress.org/browser/header-footer-elementor/tags/2.8.8/inc/js/frontend.js#L684",
+        "https://plugins.trac.wordpress.org/browser/header-footer-elementor/tags/2.8.8/inc/js/frontend.js#L701"
+      ],
+      "published": "2026-07-22T09:16:27.847"
+    },
+    {
+      "id": "CVE-2026-16490",
+      "description": "A security flaw has been discovered in itsourcecode Hospital Management System 1.0. Impacted is an unknown function of the file /prescription.php. The manipulation of the argument editid results in sql injection. The attack can be executed remotely. The exploit has been released to the public and ma",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/shohatmedhat535-dotcom/cve-records/issues/1",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-16490"
+      ],
+      "published": "2026-07-22T01:16:25.197"
+    },
+    {
+      "id": "CVE-2026-16492",
+      "description": "A weakness has been identified in umijs umi up to 4.6.63. The affected element is the function git.getFileCreateInfo of the file packages/utils/src/getFileGitIno.ts of the component GIT File Helper. This manipulation causes os command injection. The exploit has been made available to the public and ",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/umijs/umi/",
+        "https://github.com/umijs/umi/commit/b6da12c17b024a43badb1fa565720c38cf42e647",
+        "https://github.com/umijs/umi/issues/13345"
+      ],
+      "published": "2026-07-22T01:16:26.257"
+    },
+    {
+      "id": "CVE-2026-16489",
+      "description": "A vulnerability was identified in jsforce up to 3.10.16. This issue affects the function _execCommand in the library lib/registry/sfdx.js of the component SFDX Connection Registry. The manipulation leads to os command injection. The attack can only be performed from a local environment. The exploit ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/jsforce/jsforce/",
+        "https://github.com/jsforce/jsforce/issues/1805",
+        "https://vuldb.com/cve/CVE-2026-16489"
+      ],
+      "published": "2026-07-22T00:17:30.887"
+    },
+    {
+      "id": "CVE-2026-14322",
+      "description": "The Timetics  WordPress plugin before 1.0.57 does not enforce a pending or unpaid status for new bookings created through a payment method other than its recognised gateways, allowing unauthenticated users to create fully-approved bookings for priced appointments without making any payment.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/0fb14dca-d4aa-4c24-bf15-37099edb7614/"
+      ],
+      "published": "2026-07-22T07:16:35.307"
+    },
+    {
+      "id": "CVE-2026-16488",
+      "description": "A vulnerability was determined in QUSETIONS MiniCode-Python 0.1.0. This vulnerability affects the function subprocess.Popen of the file minicode/config.py of the component Project File Handler. Executing a manipulation can lead to os command injection. The attack may be launched remotely. A high com",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://gist.github.com/menelausx/2e6275222cb2e8aa412a145ba7abec66",
+        "https://github.com/QUSETIONS/MiniCode-Python/",
+        "https://github.com/QUSETIONS/MiniCode-Python/commit/9d868dc2550f426c6ddf8ee98f30ffe450ca5e32"
+      ],
+      "published": "2026-07-22T00:17:30.693"
+    },
+    {
+      "id": "CVE-2026-63262",
+      "description": "Missing Authorization (CWE-862) in Kibana can lead to unauthorized cross-space information disclosure via user-supplied input that circumvents space-level access control.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://discuss.elastic.co/t/kibana-9-4-4-security-update-esa-2026-73/388576"
+      ],
+      "published": "2026-07-22T00:17:31.173"
+    },
+    {
+      "id": "CVE-2026-16473",
+      "description": "A flaw was found in the sbc library (BlueZ SBC codec). An off-by-one error in the SBC frame decoder allows a crafted audio payload to trigger a one-byte heap out-of-bounds read. This could allow an adjacent attacker streaming Bluetooth audio to read a single byte of adjacent heap memory.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-16473",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2503650",
+        "https://git.kernel.org/pub/scm/bluetooth/sbc.git"
+      ],
+      "published": "2026-07-22T11:16:50.097"
+    },
+    {
+      "id": "CVE-2026-56844",
+      "description": "A vulnerability in the Veeam Updater component of the Veeam Software Appliance that could allow a local user to elevate their privileges and gain root-level access to the underlying operating system.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://www.veeam.com/kb4879"
+      ],
+      "published": "2026-07-22T01:16:26.523"
+    },
+    {
+      "id": "CVE-2026-45820",
+      "description": "fflate through 0.8.2 is vulnerable to denial of service via an infinite loop in unzipSync(). A crafted ZIP archive with a central directory entry declaring compressed_size=0xFFFFFFFF (ZIP64 sentinel) but missing the required ZIP64 extra field tag 0x0001 causes z64e() to loop indefinitely due to out-",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-400",
+        "CWE-835"
+      ],
+      "references": [
+        "https://github.com/101arrowz/fflate/blob/f7873560ad229c22c4b23b06c6a3806ffde77569/src/index.ts#L2714",
+        "https://www.npmjs.com/package/fflate"
+      ],
+      "published": "2026-07-22T08:16:23.280"
+    },
+    {
+      "id": "CVE-2026-63048",
+      "description": "Joomla Extension - joomlack.fr - Improper access control in Page Builder CK < 3.6.2 - The Joomla extension Page Builder CK is vulnerable to an authenticated arbitrary file upload, leading to RCE.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://www.joomlack.fr/"
+      ],
+      "published": "2026-07-22T08:16:24.063"
+    },
+    {
+      "id": "CVE-2026-63264",
+      "description": "Joomla Extension - joomshopping.com - Reflective XSS in JoomShopping < 5.9.3 - The Joomla extension JoomShopping is vulnerable to an reflected XSS vulnerability in the product frontend controller.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.joomshopping.com/"
+      ],
+      "published": "2026-07-22T09:16:29.060"
+    }
+  ]
+}
