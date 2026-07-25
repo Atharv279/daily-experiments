@@ -1,0 +1,337 @@
+{
+  "timestamp": "2026-07-25T05:25:49.580795+00:00",
+  "scan_id": "d0eb8397cc",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 7,
+      "MEDIUM": 9,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        6
+      ],
+      [
+        "CWE-22",
+        2
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-287",
+        1
+      ],
+      [
+        "CWE-20",
+        1
+      ]
+    ],
+    "threat_index": 256.4,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 256.4,
+        "yesterday": 259.3,
+        "change_pct": -1.1
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-15074",
+      "description": "@fastify/static up to and including version 10.1.0 fails to reject dot-dot path segments in request pathnames before the file-resolution stage. This is a bypass of the earlier fix for CVE-2026-6414, which only covered encoded forward slashes. Because the underlying send library normalizes dot segmen",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://cna.openjsf.org/security-advisories.html",
+        "https://github.com/fastify/fastify-static/security/advisories/GHSA-83w8-p2f5-377r"
+      ],
+      "published": "2026-07-23T04:16:31.980"
+    },
+    {
+      "id": "CVE-2026-12082",
+      "description": "The Praison AI SEO WordPress plugin before 5.0.7 does not perform authorization checks on several of its REST API routes, allowing unauthenticated users to modify the permalink of any published post and to read Praison AI SEO WordPress plugin before 5.0.7 configuration data.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/d23cb7bd-b40c-4f87-a134-7c3b62043f18/"
+      ],
+      "published": "2026-07-23T07:16:31.423"
+    },
+    {
+      "id": "CVE-2026-14291",
+      "description": "The security-ninja-premium WordPress plugin before 5.290 does not verify the second authentication factor in one of its two-factor authentication code paths, allowing an unauthenticated attacker who knows a user's password to complete authentication without the one-time code and bypass enforced two-",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/e62cfba9-4956-43ba-8554-6cdb0eb8815b/"
+      ],
+      "published": "2026-07-23T07:16:32.397"
+    },
+    {
+      "id": "CVE-2026-16632",
+      "description": "A flaw has been found in boazsegev facil.io up to 0.7.4. Affected is the function websocket_on_protocol_error in the library lib/facil/http/parsers/websocket_parser.h of the component WebSocket Frame Parser. This manipulation of the argument on_message causes improper input validation. The attack ca",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://github.com/boazsegev/facil.io/",
+        "https://github.com/boazsegev/facil.io/issues/169",
+        "https://vuldb.com/cve/CVE-2026-16632"
+      ],
+      "published": "2026-07-23T00:16:28.020"
+    },
+    {
+      "id": "CVE-2026-7232",
+      "description": "The FormCraft plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the '[parameter name]' parameter in all versions up to, and including, 3.9.14 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web s",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://formcraft-wp.com/changelog/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/6b30089a-2267-47b9-b0a5-d6eeadfe51d2?source=cve"
+      ],
+      "published": "2026-07-23T06:16:50.607"
+    },
+    {
+      "id": "CVE-2026-7534",
+      "description": "The SUMO Reward Points plugin for WordPress is vulnerable to Unauthenticated Stored Cross-Site Scripting via the REST API endpoint `/wp-json/wc-srp/v1/earning` in versions up to, and including, 32.7.0. This is due to the `user_has_cap` filter in the `SRP_REST_Earning_Controller` class unconditionall",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://codecanyon.net/item/sumo-reward-points-woocommerce-reward-system/7791451",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/366b5051-d042-4425-9aad-b77d93bcd485?source=cve"
+      ],
+      "published": "2026-07-23T06:16:50.780"
+    },
+    {
+      "id": "CVE-2026-12421",
+      "description": "The ARforms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'password' Field Values in all versions up to, and including, 7.2.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pa",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/arforms/trunk/core/helpers/arrecordhelper.php#L704",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/19e48549-8a28-4626-b0b5-b781cd01fa5b?source=cve"
+      ],
+      "published": "2026-07-23T08:16:23.683"
+    },
+    {
+      "id": "CVE-2026-6390",
+      "description": "A flaw was found in GNU nano's multi-buffer error message handling. When a user opens multiple files at startup and one triggers an ALERT-level error, a specially crafted filename containing printf format specifiers can be reinterpreted. This format string vulnerability may allow an attacker to achi",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-134"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-6390",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2458767"
+      ],
+      "published": "2026-07-23T05:16:38.360"
+    },
+    {
+      "id": "CVE-2026-9635",
+      "description": "The WP Shortcode by MyThemeShop plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'title' parameter of the [tab] shortcode in versions up to, and including, 1.4.17. This is due to insufficient input sanitization and output escaping in the mts_tabs() function, which outputs th",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-shortcode/trunk/wp-shortcode.php#L766",
+        "https://plugins.trac.wordpress.org/browser/wp-shortcode/trunk/wp-shortcode.php#L774",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/6f3bcf70-2900-4a13-9ed4-264a15af9725?source=cve"
+      ],
+      "published": "2026-07-23T08:16:25.253"
+    },
+    {
+      "id": "CVE-2026-9066",
+      "description": "The WP Compress  WordPress plugin before 7.10.04 does not validate the value of a query parameter that controls the asset CDN host before using it to build the URLs of JavaScript files emitted on the page, leading to Reflected XSS. When a visitor follows a crafted link, the WP Compress  WordPress pl",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/133e2ca0-8cde-4b59-b680-0ddf95004625/"
+      ],
+      "published": "2026-07-23T07:16:32.830"
+    },
+    {
+      "id": "CVE-2026-63226",
+      "description": "Printers and Multifunction Printers (MFPs) provided by Ricoh Company, Ltd. do not implement restrictions on SSH port forwarding, allowing to connect to arbitrary destinations. When SSH is enabled on an affected product, SSH port forwarding may be leveraged to connect to other node on the LAN.",
+      "severity": "MEDIUM",
+      "score": 5.8,
+      "cwes": [
+        "CWE-923"
+      ],
+      "references": [
+        "https://jp.ricoh.com/security/products/vulnerabilities/vul?id=ricoh-2026-000006",
+        "https://jvn.jp/en/jp/JVN32082029/",
+        "https://www.ricoh.com/products/security/vulnerabilities/vul?id=ricoh-2026-000006"
+      ],
+      "published": "2026-07-23T06:16:49.037"
+    },
+    {
+      "id": "CVE-2026-16631",
+      "description": "A vulnerability was detected in publint up to 0.1.4. This impacts the function child_process.exec of the file src/node/pack.js of the component package-manager Command Handler. The manipulation results in os command injection. Attacking locally is a requirement. The exploit is now public and may be ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/publint/publint/",
+        "https://github.com/publint/publint/commit/adf2d9a09945fc98c85a2520a89f441d78b2dbd8",
+        "https://github.com/publint/publint/issues/236"
+      ],
+      "published": "2026-07-23T00:16:26.927"
+    },
+    {
+      "id": "CVE-2026-16653",
+      "description": "A security flaw has been discovered in boazsegev facil.io up to 0.7.58. This affects the function http_sendfile2 of the file lib/facil/http/http.c of the component Public Folder Handler. Performing a manipulation results in path traversal. Remote exploitation of the attack is possible. The exploit h",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/boazsegev/facil.io/",
+        "https://github.com/boazsegev/facil.io/issues/170",
+        "https://vuldb.com/cve/CVE-2026-16653"
+      ],
+      "published": "2026-07-23T02:16:27.720"
+    },
+    {
+      "id": "CVE-2026-21723",
+      "description": "The alertmanager templates test endpoint (/api/alertmanager/grafana/config/api/v1/templates/test) can execute templates with no memory limits. Mass-executing templates in a short period causes OOM and crashes the Grafana service. The endpoint requires very low privileges and is exploitable with anon",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://grafana.com/security/security-advisories/cve-2026-21723"
+      ],
+      "published": "2026-07-23T03:16:30.000"
+    },
+    {
+      "id": "CVE-2026-7120",
+      "description": "@fastify/static evaluates the allowedPath callback before normalizing dot segments and duplicate path separators in the pathname used for file resolution. Versions up to and including 10.1.1 are affected. An unauthenticated attacker can bypass allowedPath restrictions by requesting equivalent non-ca",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-180"
+      ],
+      "references": [
+        "https://cna.openjsf.org/security-advisories.html",
+        "https://github.com/fastify/fastify-static/security/advisories/GHSA-8pvw-jcv7-9cmj"
+      ],
+      "published": "2026-07-23T04:16:33.187"
+    },
+    {
+      "id": "CVE-2026-9577",
+      "description": "The Post Status Notifier Lite WordPress plugin before 1.13.0 does not properly escape the `mod` URL parameter before reflecting it into the admin settings page (`admin.php?page=post-status-notifier-lite`), leading to a Reflected Cross-Site Scripting vulnerability that fires in the administrator's se",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/b316e14a-4260-43c4-996c-345c7f9f7d74/"
+      ],
+      "published": "2026-07-23T07:16:32.933"
+    },
+    {
+      "id": "CVE-2026-64600",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfs: resample the data fork mapping after cycling ILOCK\n\nxfs_reflink_fill_{cow_hole,delalloc} are both presented with an inode,\na data fork mapping, and a cow fork mapping.  Unfortunately, these two\nhelpers cycle the ILOCK to grab ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://cdn2.qualys.com/advisory/2026/07/22/RefluXFS.txt",
+        "https://git.kernel.org/stable/c/206c09b04dc5469c7ff14d8aceff2d47c88078d9",
+        "https://git.kernel.org/stable/c/2f4acd0fcd862e22eab45690ec2c08c80b6ef2e7"
+      ],
+      "published": "2026-07-23T06:16:50.493"
+    },
+    {
+      "id": "CVE-2026-59676",
+      "description": "A Time-of-check Time-of-use (TOCTOU) Race Condition vulnerability in seunshare of selinux policycoreutils allows a user calling seunshare\u00a0that is running in the unconfined SELinux domain to delete arbitrary root-owned files,\n\n\n\n\n\n\nThis issue affects policycoreutils through 3.10.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://bugzilla.suse.com/show_bug.cgi?id=1268256",
+        "https://security.opensuse.org/2026/07/15/selinux-seunshare.html"
+      ],
+      "published": "2026-07-23T07:16:32.540"
+    },
+    {
+      "id": "CVE-2026-59677",
+      "description": "A Missing Authorization vulnerability in selinux policycoreutils seunshares allows a\u00a0user that is running in unconfined context to kill e.g. root-owned processes running also in\nunconfined context\n\n\n\n\n\n\nThis issue affects policycoreutils through 3.10.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://bugzilla.suse.com/show_bug.cgi?id=1268256",
+        "https://security.opensuse.org/2026/07/15/selinux-seunshare.html"
+      ],
+      "published": "2026-07-23T08:16:24.737"
+    },
+    {
+      "id": "CVE-2026-59678",
+      "description": "An Incorrect Authorization vulnerability in Linux-Gaming PortProtonQt allows any users to mount and unmount arbitrary file systems and modify the network configuration via NetworkManager.\n\n\n\n\n\n\nThis issue affects PortProtonQt before 0d0f0950ebd948cdf82e8c3e1ebd2bcb9b8bafbe.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://bugzilla.suse.com/show_bug.cgi?id=CVE-2026-59678"
+      ],
+      "published": "2026-07-23T08:16:25.003"
+    }
+  ]
+}
