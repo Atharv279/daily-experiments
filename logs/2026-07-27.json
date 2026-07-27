@@ -1,15 +1,19 @@
 {
-  "timestamp": "2026-07-27T11:44:41.568534+00:00",
-  "scan_id": "de0a7aa073",
+  "timestamp": "2026-07-27T16:35:40.063703+00:00",
+  "scan_id": "18fd913a52",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
-      "CRITICAL": 3,
+      "CRITICAL": 4,
       "HIGH": 8,
       "MEDIUM": 2,
-      "UNKNOWN": 7
+      "UNKNOWN": 6
     },
     "top_cwes": [
+      [
+        "CWE-78",
+        1
+      ],
       [
         "CWE-1284",
         1
@@ -25,14 +29,10 @@
       [
         "CWE-22",
         1
-      ],
-      [
-        "CWE-79",
-        1
       ]
     ],
-    "threat_index": 325.9,
-    "critical_count": 3
+    "threat_index": 365.1,
+    "critical_count": 4
   },
   "delta": {
     "status": "compared",
@@ -43,18 +43,33 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 325.9,
+        "today": 365.1,
         "yesterday": 475.1,
-        "change_pct": -31.4
+        "change_pct": -23.2
       },
       "critical_count": {
-        "today": 3,
+        "today": 4,
         "yesterday": 7,
-        "change_pct": -57.1
+        "change_pct": -42.9
       }
     }
   },
   "cves": [
+    {
+      "id": "CVE-2026-16766",
+      "description": "Catalyst::View::Wkhtmltopdf versions before 0.6.1 for Perl allow shell command injection (RCE) via PDF render options.\n\nOptions are passed directly to the wkhtmltopdf command without sanitization.\n\nAny web application that passes user-controlled options such as the page_size, orientation or margins ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/mc7244/Catalyst-View-Wkhtmltopdf/issues/6",
+        "https://github.com/robrwo/Catalyst-View-Wkhtmltopdf/security/advisories/GHSA-42w4-jj8w-6p98",
+        "https://metacpan.org/release/RRWO/Catalyst-View-Wkhtmltopdf-v0.6.1/changes"
+      ],
+      "published": "2026-07-25T09:16:32.000"
+    },
     {
       "id": "CVE-2026-64268",
       "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nRDMA/siw: bound Read Response placement to the RREAD length\n\nIn drivers/infiniband/sw/siw/siw_qp_rx.c, siw_proc_rresp() places each\ninbound Read Response DDP segment at sge->laddr + wqe->processed and then\naccumulates wqe->processe",
@@ -104,7 +119,8 @@
       ],
       "references": [
         "https://github.com/venglin/knot-doq",
-        "https://openwall.com/lists/oss-security/2026/07/23/6"
+        "https://openwall.com/lists/oss-security/2026/07/23/6",
+        "https://github.com/venglin/knot-doq"
       ],
       "published": "2026-07-25T01:16:26.423"
     },
@@ -230,21 +246,6 @@
         "https://plugins.trac.wordpress.org/browser/wordpress-seo/tags/28.0/admin/class-bulk-editor-list-table.php#L898"
       ],
       "published": "2026-07-25T07:17:09.897"
-    },
-    {
-      "id": "CVE-2026-16766",
-      "description": "Catalyst::View::Wkhtmltopdf versions before 0.6.1 for Perl allow shell command injection (RCE) via PDF render options.\n\nOptions are passed directly to the wkhtmltopdf command without sanitization.\n\nAny web application that passes user-controlled options such as the page_size, orientation or margins ",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-78"
-      ],
-      "references": [
-        "https://github.com/mc7244/Catalyst-View-Wkhtmltopdf/issues/6",
-        "https://github.com/robrwo/Catalyst-View-Wkhtmltopdf/security/advisories/GHSA-42w4-jj8w-6p98",
-        "https://metacpan.org/release/RRWO/Catalyst-View-Wkhtmltopdf-v0.6.1/changes"
-      ],
-      "published": "2026-07-25T09:16:32.000"
     },
     {
       "id": "CVE-2026-64256",
