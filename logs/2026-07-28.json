@@ -1,0 +1,350 @@
+{
+  "timestamp": "2026-07-28T05:26:50.603493+00:00",
+  "scan_id": "a367960d77",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 8,
+      "MEDIUM": 10,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-266",
+        3
+      ],
+      [
+        "CWE-918",
+        2
+      ],
+      [
+        "CWE-346",
+        2
+      ],
+      [
+        "CWE-285",
+        2
+      ]
+    ],
+    "threat_index": 338.1,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 338.1,
+        "yesterday": 365.1,
+        "change_pct": -7.4
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 4,
+        "change_pct": -75.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-64530",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: cls_api: Handle TC_ACT_CONSUMED in tcf_qevent_handle\n\ntcf_classify() can return TC_ACT_CONSUMED while the skb is held by the\ndefragmentation engine (e.g. act_ct on out-of-order fragments). When\nthat happens the skb is no",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/2140c2f3f2e7b066e1ae616ede8856cafd8015e9",
+        "https://git.kernel.org/stable/c/447d493034a9cf7bf13a2abac86d0573d907ec2f",
+        "https://git.kernel.org/stable/c/5ed3d6f85991656667059d3fa5a1d683ac58c447"
+      ],
+      "published": "2026-07-26T07:16:41.680"
+    },
+    {
+      "id": "CVE-2026-15962",
+      "description": "The Fluent Forms Pro Add On Pack plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 6.2.6 via deserialization of untrusted input. This makes it possible for authenticated attackers, with Subscriber-level access and above, to inject a PHP Object. The addi",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://fluentforms.com",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/b95ec70c-ac76-48fa-9d9d-01cf1983e504?source=cve"
+      ],
+      "published": "2026-07-26T02:16:28.790"
+    },
+    {
+      "id": "CVE-2025-15662",
+      "description": "The Printcart Web to Print Product Designer for WooCommerce WordPress plugin before 2.5.3 does not restrict a user-supplied URL before fetching it server-side and does not enforce a valid authorization check, allowing unauthenticated attackers to read arbitrary local files (including configuration f",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/6294afde-d23a-4634-a49a-168ce463278c/"
+      ],
+      "published": "2026-07-27T07:16:23.680"
+    },
+    {
+      "id": "CVE-2026-17497",
+      "description": "NoteGen before 0.32.0 grants the Tauri shell plugin shell:allow-execute capability for bash, python, and python3 with arbitrary arguments in the default desktop capabilities. JavaScript running in the application webview can therefore invoke plugin:shell|execute to run attacker-controlled operating ",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-78",
+        "CWE-276",
+        "CWE-1249"
+      ],
+      "references": [
+        "https://github.com/codexu/note-gen",
+        "https://github.com/codexu/note-gen/commit/00064a4a8ec4177d51094ffb3e15bf0758009c1f",
+        "https://github.com/codexu/note-gen/releases/tag/note-gen-v0.32.0"
+      ],
+      "published": "2026-07-26T15:16:27.873"
+    },
+    {
+      "id": "CVE-2026-17496",
+      "description": "NoteGen before 0.32.0 renders AI chat responses with markdown-it configured with html:true and injects the result into the DOM via dangerouslySetInnerHTML in chat-preview, without HTML sanitization and with CSP set to null. Attacker-controlled content that reaches the model prompt (for example a mal",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/codexu/note-gen",
+        "https://github.com/codexu/note-gen/commit/ae3ba948c41d8a74b4a20f4c6f26fcdda2002298",
+        "https://github.com/codexu/note-gen/releases/tag/note-gen-v0.32.0"
+      ],
+      "published": "2026-07-26T15:16:27.710"
+    },
+    {
+      "id": "CVE-2024-14040",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: nexthop: Increase weight to u16\n\nIn CLOS networks, as link failures occur at various points in the network,\nECMP weights of the involved nodes are adjusted to compensate. With high\nfan-out of the involved nodes, and overall hi",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/b72a6a7ab9573e06d5c2fcb92eaa28614a735bfd"
+      ],
+      "published": "2026-07-26T07:16:39.583"
+    },
+    {
+      "id": "CVE-2026-63720",
+      "description": "datamodel-code-generator prior to version 0.70.0 contains a code injection vulnerability that allows attackers who control input schemas to achieve remote code execution by supplying a malicious customBasePath value containing embedded newlines and a dot-free Python expression. The crafted value is ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/koxudaxi/datamodel-code-generator",
+        "https://github.com/koxudaxi/datamodel-code-generator/commit/545a96c5",
+        "https://www.vulncheck.com/advisories/datamodel-code-generator-code-injection-via-unvalidated-custombasepath-schema-field"
+      ],
+      "published": "2026-07-26T05:16:23.927"
+    },
+    {
+      "id": "CVE-2026-57989",
+      "description": "Origin validation error in Microsoft Edge (Chromium-based) allows an unauthorized attacker to disclose information over a network.",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-346"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57989"
+      ],
+      "published": "2026-07-26T18:18:25.033"
+    },
+    {
+      "id": "CVE-2026-57990",
+      "description": "Files or directories accessible to external parties in Microsoft Edge (Chromium-based) allows an unauthorized attacker to disclose information over a network.",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-552"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57990"
+      ],
+      "published": "2026-07-26T18:18:25.153"
+    },
+    {
+      "id": "CVE-2026-17434",
+      "description": "A flaw has been found in nanocoai NanoClaw up to 2.0.64. Affected is the function handleAddMcpServer of the file src/modules/self-mod/request.ts of the component add_mcp_server. Executing a manipulation can lead to improper authorization. The attack may be launched remotely. The exploit has been pub",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/nanocoai/nanoclaw/",
+        "https://github.com/nanocoai/nanoclaw/commit/e5b928783d5c485637565eb07d2967922dfbf8d8",
+        "https://github.com/nanocoai/nanoclaw/issues/2762"
+      ],
+      "published": "2026-07-26T04:16:46.573"
+    },
+    {
+      "id": "CVE-2026-17458",
+      "description": "A vulnerability was found in mf-yang openclaw-cn up to 0.2.1. This affects the function clickViaPlaywright of the file src/browser/routes/agent.act.ts of the component Browser Control HTTP API. Performing a manipulation results in server-side request forgery. It is possible to initiate the attack re",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/mf-yang/openclaw-cn/",
+        "https://github.com/mf-yang/openclaw-cn/issues/562",
+        "https://vuldb.com/cve/CVE-2026-17458"
+      ],
+      "published": "2026-07-26T11:16:58.470"
+    },
+    {
+      "id": "CVE-2026-10082",
+      "description": "The Advanced Ads  WordPress plugin before 2.0.23 does not sanitize and escape a shortcode parameter before outputting it in the page, allowing users with the Contributor role and above to inject arbitrary web scripts that execute when the affected content is viewed, including by higher-privileged us",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/088a832d-2153-432e-849f-2c22b63a1b54/"
+      ],
+      "published": "2026-07-27T07:16:24.183"
+    },
+    {
+      "id": "CVE-2026-57978",
+      "description": "Origin validation error in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-346"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57978"
+      ],
+      "published": "2026-07-26T18:18:23.780"
+    },
+    {
+      "id": "CVE-2026-17433",
+      "description": "A vulnerability was detected in nanocoai NanoClaw up to 2.0.64. This impacts the function createChatSdkBridge.setup of the file src/channels/chat-sdk-bridge.ts of the component MCP Server Approval. Performing a manipulation results in improper authorization. The attack needs to be approached locally",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/nanocoai/nanoclaw/",
+        "https://github.com/nanocoai/nanoclaw/issues/2761",
+        "https://vuldb.com/cve/CVE-2026-17433"
+      ],
+      "published": "2026-07-26T03:16:32.490"
+    },
+    {
+      "id": "CVE-2026-17500",
+      "description": "A vulnerability was detected in ggml-org llama.cpp d006858/e15efe0. This affects the function _visit_pattern of the file common/json-schema-to-grammar.cpp. The manipulation results in null pointer dereference. The attack can be launched remotely. The pull request to fix this issue awaits acceptance.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/ggml-org/llama.cpp/",
+        "https://github.com/ggml-org/llama.cpp/issues/25284",
+        "https://github.com/ggml-org/llama.cpp/pull/25308"
+      ],
+      "published": "2026-07-27T01:16:26.380"
+    },
+    {
+      "id": "CVE-2026-17501",
+      "description": "A flaw has been found in ggml-org llama.cpp e15efe0. This vulnerability affects the function transform of the file common/json-schema-to-grammar.cpp of the component JSON-Schema-to-GBNF Conversion. This manipulation causes allocation of resources. The attack may be initiated remotely. The pull reque",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/ggml-org/llama.cpp/",
+        "https://github.com/ggml-org/llama.cpp/issues/25283",
+        "https://github.com/ggml-org/llama.cpp/pull/25308"
+      ],
+      "published": "2026-07-27T01:16:26.570"
+    },
+    {
+      "id": "CVE-2026-17432",
+      "description": "A vulnerability was detected in NousResearch hermes-agent 2026.6.5. Affected by this vulnerability is an unknown functionality of the file hermes-agent/plugins/platforms/simplex/adapter.py of the component SimpleX Gateway Authorization. The manipulation of the argument contactId results in improper ",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/NousResearch/hermes-agent/",
+        "https://github.com/NousResearch/hermes-agent/commit/490c486ff65b766d9de0fe0e6f26e1778aaa8fb3",
+        "https://github.com/NousResearch/hermes-agent/issues/44729"
+      ],
+      "published": "2026-07-26T01:16:25.783"
+    },
+    {
+      "id": "CVE-2026-17457",
+      "description": "A vulnerability has been found in mf-yang openclaw-cn up to 0.2.1. Affected by this issue is the function assertBrowserNavigationAllowed of the file src/browser/navigation-guard.ts of the component Scheme Handler. Such manipulation of the argument url leads to information disclosure. The attack may ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-200",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/mf-yang/openclaw-cn/",
+        "https://github.com/mf-yang/openclaw-cn/issues/561",
+        "https://vuldb.com/cve/CVE-2026-17457"
+      ],
+      "published": "2026-07-26T10:16:25.163"
+    },
+    {
+      "id": "CVE-2026-17459",
+      "description": "A vulnerability was determined in perwendel spark up to 2.9.4. This vulnerability affects the function staticFiles.externalLocation of the file src/main/java/spark/resource/ExternalResourceHandler.jav of the component SparkJava. Executing a manipulation can lead to symlink following. It is possible ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-59",
+        "CWE-61"
+      ],
+      "references": [
+        "https://github.com/perwendel/spark/",
+        "https://github.com/perwendel/spark/issues/1296",
+        "https://vuldb.com/cve/CVE-2026-17459"
+      ],
+      "published": "2026-07-26T11:16:58.643"
+    },
+    {
+      "id": "CVE-2026-15928",
+      "description": "XMLRPC-C Library versions 1.07 through 1.67.01 are vulnerable to a reflected cross-site scripting (XSS) vulnerability in the error page component.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.themissinglink.com.au/security-advisories/cve-2026-15928",
+        "https://xmlrpc-c.sourceforge.io/"
+      ],
+      "published": "2026-07-27T03:16:18.830"
+    }
+  ]
+}
