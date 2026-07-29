@@ -1,0 +1,327 @@
+{
+  "timestamp": "2026-07-29T05:33:41.337211+00:00",
+  "scan_id": "1d5598b71e",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 4,
+      "HIGH": 6,
+      "MEDIUM": 8,
+      "LOW": 1,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        7
+      ],
+      [
+        "CWE-287",
+        4
+      ],
+      [
+        "CWE-269",
+        2
+      ],
+      [
+        "CWE-434",
+        1
+      ],
+      [
+        "CWE-918",
+        1
+      ]
+    ],
+    "threat_index": 385.9,
+    "critical_count": 4
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 385.9,
+        "yesterday": 338.1,
+        "change_pct": 14.1
+      },
+      "critical_count": {
+        "today": 4,
+        "yesterday": 1,
+        "change_pct": 300.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-12394",
+      "description": "The MemberGlut  WordPress plugin before 1.1.5 does not validate the role chosen during front-end registration, allowing unauthenticated users to register an account with an arbitrary role, including administrator, leading to full site compromise.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/6b126a3e-30d5-4bed-ba47-33e589ec2852/"
+      ],
+      "published": "2026-07-27T07:16:24.383"
+    },
+    {
+      "id": "CVE-2026-13714",
+      "description": "The Realtyna Organic IDX plugin + WPL Real Estate WordPress plugin before 5.3.0 does not validate the type of uploaded files, and its file upload functionality is gated only by an API that is enabled by default and authenticated with hardcoded credentials shipped identically across all installations",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/69f9dcd8-ab3c-46ed-ac6b-2f1db35f8d1f/"
+      ],
+      "published": "2026-07-27T07:16:25.227"
+    },
+    {
+      "id": "CVE-2026-13332",
+      "description": "The Masteriyo LMS  WordPress plugin before 2.3.1 does not correctly verify authorization on an unauthenticated AJAX action used to clear user sessions, allowing unauthenticated attackers to terminate the active sessions (force-logout) of any user on the site, including administrators.",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/f987c823-f215-48f6-86fe-8d898f2c2d94/"
+      ],
+      "published": "2026-07-27T07:16:24.820"
+    },
+    {
+      "id": "CVE-2026-13597",
+      "description": "The \u5fae\u4fe1\u4e8c\u7ef4\u7801\u767b\u9646 WordPress plugin through 1.3 does not properly validate WeChat webhook requests, as its signature check always passes, and it discloses the generated login code in the webhook response. This allows an unauthenticated attacker to forge a login event for any existing username, read the log",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/5e856219-ece5-4d79-8375-fc0cbdc37d6c/"
+      ],
+      "published": "2026-07-27T07:16:25.127"
+    },
+    {
+      "id": "CVE-2025-15662",
+      "description": "The Printcart Web to Print Product Designer for WooCommerce WordPress plugin before 2.5.3 does not restrict a user-supplied URL before fetching it server-side and does not enforce a valid authorization check, allowing unauthenticated attackers to read arbitrary local files (including configuration f",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/6294afde-d23a-4634-a49a-168ce463278c/"
+      ],
+      "published": "2026-07-27T07:16:23.680"
+    },
+    {
+      "id": "CVE-2026-12255",
+      "description": "The MainWP Child  WordPress plugin before 6.1.2 does not verify the requester's identity in its site-registration request handler when password authentication has been disabled for the targeted account, allowing an unauthenticated attacker to obtain a valid authentication session as that account, in",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/6ecd37bf-f48a-4f7f-8a93-e7f0475371af/"
+      ],
+      "published": "2026-07-27T07:16:24.283"
+    },
+    {
+      "id": "CVE-2026-13152",
+      "description": "The Custom Fields Account Registration For Woocommerce WordPress plugin before 1.4 does not prevent its custom registration fields from writing to the user capabilities meta key on sites that use a non-default database table prefix, so an unauthenticated user who registers an account can be granted ",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/36aaba38-3143-4e80-8386-748632ff6704/"
+      ],
+      "published": "2026-07-27T07:16:24.697"
+    },
+    {
+      "id": "CVE-2026-12493",
+      "description": "The Clover Payment Gateway by Zaytech for WooCommerce WordPress plugin before 1.3.6 does not verify that an approved external payment record actually belongs to the WooCommerce order being completed, nor that the paid amount matches the order total, allowing unauthenticated users to mark arbitrary o",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/b9f3f6d8-b56f-4d0e-9102-c69e6756ab74/"
+      ],
+      "published": "2026-07-27T07:16:24.480"
+    },
+    {
+      "id": "CVE-2026-14235",
+      "description": "The Download Manager WordPress plugin before 3.3.62 does not bind its temporary download token to the requesting session nor expire it promptly, making the token a long-lived, multi-use, portable bearer token, so that an attacker who obtains one leaked download key can repeatedly download a role- or",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/9634b51c-59a1-45f6-8b09-421d6bfd0204/"
+      ],
+      "published": "2026-07-27T07:16:25.700"
+    },
+    {
+      "id": "CVE-2026-13726",
+      "description": "The MPG  WordPress plugin before 4.1.8 does not sanitise and escape a parameter before reflecting it back in the response, allowing unauthenticated attackers to perform Reflected Cross-Site Scripting against a victim who is induced to send a crafted request.",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/4f97b6c6-c05b-4ea5-987d-d289b89cdea8/"
+      ],
+      "published": "2026-07-27T07:16:25.320"
+    },
+    {
+      "id": "CVE-2026-10082",
+      "description": "The Advanced Ads  WordPress plugin before 2.0.23 does not sanitize and escape a shortcode parameter before outputting it in the page, allowing users with the Contributor role and above to inject arbitrary web scripts that execute when the affected content is viewed, including by higher-privileged us",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/088a832d-2153-432e-849f-2c22b63a1b54/"
+      ],
+      "published": "2026-07-27T07:16:24.183"
+    },
+    {
+      "id": "CVE-2026-12982",
+      "description": "The Document Gallery WordPress plugin before 5.1.1 does not properly sanitise and escape user input before reflecting it back in the response of an unauthenticated AJAX action, leading to a Reflected Cross-Site Scripting vulnerability which can be exploited against unauthenticated users.",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/a3c279ce-5db1-4331-ad74-4eef49619737/"
+      ],
+      "published": "2026-07-27T07:16:24.577"
+    },
+    {
+      "id": "CVE-2026-13400",
+      "description": "Simply Schedule Appointments is vulnerable to unauthenticated Stored Cross-Site Scripting in all versions up to and including 1.6.12.2. The root cause is a sanitization-ordering defect: the rendered notification content is decoded back into live HTML after it has already passed through the Simply Sc",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/501b2929-3216-4587-8124-088fd51becf1/"
+      ],
+      "published": "2026-07-27T07:16:25.023"
+    },
+    {
+      "id": "CVE-2026-14190",
+      "description": "The Sina Extension for Elementor WordPress plugin before 3.10.2 does not escape a value reconstructed from request input in one of its unauthenticated AJAX handlers before reflecting it into the HTML response, allowing unauthenticated attackers to execute arbitrary JavaScript in the browser of anyon",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/9b855913-a55e-469d-b3cd-324c31b0d4d8/"
+      ],
+      "published": "2026-07-27T07:16:25.510"
+    },
+    {
+      "id": "CVE-2026-17500",
+      "description": "A vulnerability was detected in ggml-org llama.cpp d006858/e15efe0. This affects the function _visit_pattern of the file common/json-schema-to-grammar.cpp. The manipulation results in null pointer dereference. The attack can be launched remotely. The pull request to fix this issue awaits acceptance.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/ggml-org/llama.cpp/",
+        "https://github.com/ggml-org/llama.cpp/issues/25284",
+        "https://github.com/ggml-org/llama.cpp/pull/25308"
+      ],
+      "published": "2026-07-27T01:16:26.380"
+    },
+    {
+      "id": "CVE-2026-17501",
+      "description": "A flaw has been found in ggml-org llama.cpp e15efe0. This vulnerability affects the function transform of the file common/json-schema-to-grammar.cpp of the component JSON-Schema-to-GBNF Conversion. This manipulation causes allocation of resources. The attack may be initiated remotely. The pull reque",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/ggml-org/llama.cpp/",
+        "https://github.com/ggml-org/llama.cpp/issues/25283",
+        "https://github.com/ggml-org/llama.cpp/pull/25308"
+      ],
+      "published": "2026-07-27T01:16:26.570"
+    },
+    {
+      "id": "CVE-2026-13390",
+      "description": "The Events Calendar WordPress plugin before 6.16.5.1 does not perform an authorization check on one of its Event Aggregator import REST API routes and skips an integrity check for a particular status value, allowing unauthenticated attackers to mark existing import records as failed and to store arb",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/c7d3b1c5-3b3a-4359-aa41-0dfccb091fa4/"
+      ],
+      "published": "2026-07-27T07:16:24.930"
+    },
+    {
+      "id": "CVE-2026-14203",
+      "description": "The Smart Manager  WordPress plugin before 8.92.0 does not properly encode a post field before rendering it into an HTML attribute in its management grid, allowing users with the Contributor role or above to inject JavaScript that executes in the browser session of an administrator who views the gri",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/efcaa453-80f3-4565-a4f8-eefa231d77b6/"
+      ],
+      "published": "2026-07-27T07:16:25.607"
+    },
+    {
+      "id": "CVE-2026-14189",
+      "description": "The WPBot  WordPress plugin before 8.5.2 does not validate administrator-configured field identifiers before using them in a SQL query, allowing users with administrator access to perform SQL injection that executes when a visitor triggers a search.",
+      "severity": "LOW",
+      "score": 3.8,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/e25ea94a-f5a0-4cae-975b-9e0a45af6bc2/"
+      ],
+      "published": "2026-07-27T07:16:25.413"
+    },
+    {
+      "id": "CVE-2026-15928",
+      "description": "XMLRPC-C Library versions 1.07 through 1.67.01 are vulnerable to a reflected cross-site scripting (XSS) vulnerability in the error page component.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.themissinglink.com.au/security-advisories/cve-2026-15928",
+        "https://xmlrpc-c.sourceforge.io/"
+      ],
+      "published": "2026-07-27T03:16:18.830"
+    }
+  ]
+}
