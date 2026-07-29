@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-29T05:33:41.337211+00:00",
-  "scan_id": "1d5598b71e",
+  "timestamp": "2026-07-29T10:58:16.595999+00:00",
+  "scan_id": "fde9ed692f",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -24,11 +24,11 @@
         2
       ],
       [
-        "CWE-434",
-        1
+        "CWE-404",
+        2
       ],
       [
-        "CWE-918",
+        "CWE-434",
         1
       ]
     ],
@@ -256,12 +256,12 @@
     },
     {
       "id": "CVE-2026-17501",
-      "description": "A flaw has been found in ggml-org llama.cpp e15efe0. This vulnerability affects the function transform of the file common/json-schema-to-grammar.cpp of the component JSON-Schema-to-GBNF Conversion. This manipulation causes allocation of resources. The attack may be initiated remotely. The pull reque",
+      "description": "A flaw has been found in ggml-org llama.cpp e15efe0. This vulnerability affects the function transform of the file common/json-schema-to-grammar.cpp of the component JSON-Schema-to-GBNF Conversion. This manipulation causes uncontrolled recursion. The attack may be initiated remotely. The pull reques",
       "severity": "MEDIUM",
       "score": 5.3,
       "cwes": [
-        "CWE-400",
-        "CWE-770"
+        "CWE-404",
+        "CWE-674"
       ],
       "references": [
         "https://github.com/ggml-org/llama.cpp/",
