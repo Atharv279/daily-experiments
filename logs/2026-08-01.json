@@ -1,0 +1,334 @@
+{
+  "timestamp": "2026-08-01T05:38:10.159178+00:00",
+  "scan_id": "d0827aee3a",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 4,
+      "HIGH": 9,
+      "MEDIUM": 7
+    },
+    "top_cwes": [
+      [
+        "CWE-416",
+        8
+      ],
+      [
+        "CWE-20",
+        5
+      ],
+      [
+        "CWE-190",
+        2
+      ],
+      [
+        "CWE-362",
+        1
+      ],
+      [
+        "CWE-125",
+        1
+      ]
+    ],
+    "threat_index": 450.9,
+    "critical_count": 4
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 450.9,
+        "yesterday": 355.4,
+        "change_pct": 26.9
+      },
+      "critical_count": {
+        "today": 4,
+        "yesterday": 2,
+        "change_pct": 100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-17651",
+      "description": "Insufficient validation of untrusted input in Dawn in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/517307966"
+      ],
+      "published": "2026-07-30T01:16:26.967"
+    },
+    {
+      "id": "CVE-2026-17652",
+      "description": "Use after free in Views in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/519262990"
+      ],
+      "published": "2026-07-30T01:16:27.080"
+    },
+    {
+      "id": "CVE-2026-17655",
+      "description": "Insufficient validation of untrusted input in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/522556145"
+      ],
+      "published": "2026-07-30T01:16:27.420"
+    },
+    {
+      "id": "CVE-2026-17656",
+      "description": "Use after free in Ozone in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/523725277"
+      ],
+      "published": "2026-07-30T01:16:27.530"
+    },
+    {
+      "id": "CVE-2026-17658",
+      "description": "Use after free in V8 in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/523030583"
+      ],
+      "published": "2026-07-30T01:16:27.763"
+    },
+    {
+      "id": "CVE-2026-17661",
+      "description": "Use after free in Loader in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/497451790"
+      ],
+      "published": "2026-07-30T01:16:28.090"
+    },
+    {
+      "id": "CVE-2026-17665",
+      "description": "Use after free in V8 in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/511277457"
+      ],
+      "published": "2026-07-30T01:16:28.540"
+    },
+    {
+      "id": "CVE-2026-17650",
+      "description": "Use after free in Compositing in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/514442821"
+      ],
+      "published": "2026-07-30T01:16:26.850"
+    },
+    {
+      "id": "CVE-2026-17653",
+      "description": "Use after free in Skia in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/520514458"
+      ],
+      "published": "2026-07-30T01:16:27.190"
+    },
+    {
+      "id": "CVE-2026-17657",
+      "description": "Use after free in Navigation in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/502293787"
+      ],
+      "published": "2026-07-30T01:16:27.640"
+    },
+    {
+      "id": "CVE-2026-17660",
+      "description": "Insufficient validation of untrusted input in Network in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/497428001"
+      ],
+      "published": "2026-07-30T01:16:27.980"
+    },
+    {
+      "id": "CVE-2026-17663",
+      "description": "Insufficient validation of untrusted input in GPU in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/500225310"
+      ],
+      "published": "2026-07-30T01:16:28.303"
+    },
+    {
+      "id": "CVE-2026-17654",
+      "description": "Race in Updater in Google Chrome on Mac prior to 151.0.7922.72 allowed a local attacker to perform OS-level privilege escalation via a malicious file. (Chromium security severity: Critical)",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-362"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/522314940"
+      ],
+      "published": "2026-07-30T01:16:27.303"
+    },
+    {
+      "id": "CVE-2026-17664",
+      "description": "Insufficient validation of untrusted input in Loader in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/500554346"
+      ],
+      "published": "2026-07-30T01:16:28.413"
+    },
+    {
+      "id": "CVE-2026-64685",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. In versions prior to 7.1.2-27, the BGR decoder does not check for an end-of-file in every location so a crafted image could result in an heap buffer over-read. This issue has been fixed in version 7.1.2-27",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-7rgw-xg25-prjm"
+      ],
+      "published": "2026-07-30T00:16:25.490"
+    },
+    {
+      "id": "CVE-2026-62946",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. In versions prior to both 6.9.13-52 and 7.1.2-27, processing an extremely large JNX file on 32-bit platforms can cause an integer overflow, leading to a heap buffer over-write. This issue has been fixed in",
+      "severity": "MEDIUM",
+      "score": 5.1,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-h22j-f9xw-xjjm"
+      ],
+      "published": "2026-07-30T00:16:25.353"
+    },
+    {
+      "id": "CVE-2026-62363",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. In versions prior to 7.1.2-27, a heap buffer over-write can occur in the fx operation by passing a crafted argument. This issue has been fixed in version 7.1.2-27.",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-422r-8c97-xcg4"
+      ],
+      "published": "2026-07-30T00:16:25.213"
+    },
+    {
+      "id": "CVE-2026-62343",
+      "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. In versions prior to 6.9.13-51 and 7.0.1-0 and above prior to 7.1.2-26, an invalid kernel can cause a heap buffer over-write when performing a morphology operation with a user supplied kernel. This issue h",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-f5m7-cqgw-8hm7"
+      ],
+      "published": "2026-07-30T00:16:24.200"
+    },
+    {
+      "id": "CVE-2026-17662",
+      "description": "Insufficient policy enforcement in Prefetch in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-346"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/497491557"
+      ],
+      "published": "2026-07-30T01:16:28.203"
+    },
+    {
+      "id": "CVE-2026-17659",
+      "description": "Inappropriate implementation in SiteIsolation in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "MEDIUM",
+      "score": 4.2,
+      "cwes": [
+        "CWE-693"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0887107924.html",
+        "https://issues.chromium.org/issues/495463654"
+      ],
+      "published": "2026-07-30T01:16:27.870"
+    }
+  ]
+}
