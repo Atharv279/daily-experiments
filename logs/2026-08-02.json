@@ -1,0 +1,327 @@
+{
+  "timestamp": "2026-08-02T05:38:42.641515+00:00",
+  "scan_id": "d8156a12dd",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 5,
+      "MEDIUM": 5,
+      "LOW": 1,
+      "UNKNOWN": 8
+    },
+    "top_cwes": [
+      [
+        "CWE-863",
+        5
+      ],
+      [
+        "CWE-121",
+        3
+      ],
+      [
+        "CWE-770",
+        2
+      ],
+      [
+        "CWE-77",
+        1
+      ],
+      [
+        "CWE-88",
+        1
+      ]
+    ],
+    "threat_index": 206.1,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 206.1,
+        "yesterday": 450.9,
+        "change_pct": -54.3
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 4,
+        "change_pct": -75.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-43830",
+      "description": "Full details and mitigation steps are currently restricted and will be published at a later date.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-77"
+      ],
+      "references": [
+        "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-xxx"
+      ],
+      "published": "2026-07-31T04:17:21.760"
+    },
+    {
+      "id": "CVE-2026-18157",
+      "description": "A flaw was found in yggdrasil-worker-package-manager. A local attacker with existing access to the system could exploit an argument injection vulnerability in the APT backend. This allows specially crafted package names, which begin with a hyphen, to be misinterpreted as command options by apt-get. ",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-88"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-18157",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2465250",
+        "https://github.com/RedHatInsights/yggdrasil-worker-package-manager/commit/959745bb5917c17f0316af199aace6c71baa5ad7"
+      ],
+      "published": "2026-07-31T03:16:25.223"
+    },
+    {
+      "id": "CVE-2026-43829",
+      "description": "Full details and mitigation steps are currently restricted and will be published at a later date.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-xxx"
+      ],
+      "published": "2026-07-31T04:17:20.193"
+    },
+    {
+      "id": "CVE-2026-43831",
+      "description": "Full details and mitigation steps are currently restricted and will be published at a later date.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-xxx"
+      ],
+      "published": "2026-07-31T04:17:21.963"
+    },
+    {
+      "id": "CVE-2026-43832",
+      "description": "Full details and mitigation steps are currently restricted and will be published at a later date.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-xxx"
+      ],
+      "published": "2026-07-31T04:17:22.187"
+    },
+    {
+      "id": "CVE-2026-55502",
+      "description": "Cloudreve is a self-hosted file management and sharing system. Prior to 4.17.0, POST /api/v4/admin/policy/oauth/signin requires only Admin.Read even though GetOauthRedirectService persists caller-supplied OneDrive secret and app_id values, allowing an OAuth token without Admin.Write to modify storag",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/cloudreve/cloudreve/security/advisories/GHSA-hq88-5x99-x3gf",
+        "https://github.com/cloudreve/cloudreve/security/advisories/GHSA-hq88-5x99-x3gf"
+      ],
+      "published": "2026-07-31T04:17:23.563"
+    },
+    {
+      "id": "CVE-2026-55497",
+      "description": "Cloudreve is a self-hosted file management and sharing system. Prior to 4.17.0, the built-in thumbnail and avatar image decoders limit compressed file size but do not limit decoded pixel dimensions, allowing an authenticated user to submit a small PNG, JPEG, or GIF that triggers an unbounded allocat",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-400",
+        "CWE-409",
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/cloudreve/cloudreve/commit/3607f79bb44c35d0be4fa8b6e24c0502b51415a9",
+        "https://github.com/cloudreve/cloudreve/releases/tag/4.17.0",
+        "https://github.com/cloudreve/cloudreve/security/advisories/GHSA-g9j2-8w95-3vwv"
+      ],
+      "published": "2026-07-31T04:17:23.137"
+    },
+    {
+      "id": "CVE-2026-62323",
+      "description": "Cloudreve is a self-hosted file management and sharing system. Prior to 4.17.0, ViewerSessionValidation uses only the session-id prefix of a WOPI access token and does not enforce the requested viewer action, allowing a malicious or compromised WOPI viewer with a view session to forge the token suff",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/cloudreve/cloudreve/commit/f3347130ac48f2ff996af9ef66c97be2dda9cba9",
+        "https://github.com/cloudreve/cloudreve/releases/tag/4.17.0",
+        "https://github.com/cloudreve/cloudreve/security/advisories/GHSA-c3jm-gv5r-9wcp"
+      ],
+      "published": "2026-07-31T04:17:24.160"
+    },
+    {
+      "id": "CVE-2026-55495",
+      "description": "Cloudreve is a self-hosted file management and sharing system. Prior to 4.17.0, the WOPI PUT_RELATIVE handler passes X-WOPI-SuggestedTarget to URI.JoinRaw as a path rather than a filename, allowing slash and dot-dot segments to escape the source file directory and create or conditionally overwrite f",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/cloudreve/cloudreve/commit/7968e50429efab40ffa8f57fecdfbd5a73d23630",
+        "https://github.com/cloudreve/cloudreve/releases/tag/4.17.0",
+        "https://github.com/cloudreve/cloudreve/security/advisories/GHSA-49h3-cwhj-4737"
+      ],
+      "published": "2026-07-31T04:17:22.597"
+    },
+    {
+      "id": "CVE-2026-55496",
+      "description": "Cloudreve is a self-hosted file management and sharing system. Prior to 4.17.0, GET /api/v4/user/search calls SearchActive without adding a StatusActive predicate and serializes matches at RedactLevelUser, allowing any logged-in user to enumerate email addresses and profile metadata for inactive or ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-200",
+        "CWE-359"
+      ],
+      "references": [
+        "https://github.com/cloudreve/cloudreve/commit/7e1289d552794bdbeb551be78456115c87dcb3da",
+        "https://github.com/cloudreve/cloudreve/releases/tag/4.17.0",
+        "https://github.com/cloudreve/cloudreve/security/advisories/GHSA-8r7f-r8hj-r3rv"
+      ],
+      "published": "2026-07-31T04:17:22.877"
+    },
+    {
+      "id": "CVE-2026-55499",
+      "description": "Cloudreve is a self-hosted file management and sharing system. Prior to 4.17.0, a single-file share event-stream subscription resolves the share root to the owner\u2019s parent folder and subscribes to that folder topic, allowing an authenticated share recipient to receive names, paths, rename targets, e",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/cloudreve/cloudreve/commit/0b00dd308f132d6e6e8476857ef79f4865600bbc",
+        "https://github.com/cloudreve/cloudreve/releases/tag/4.17.0",
+        "https://github.com/cloudreve/cloudreve/security/advisories/GHSA-w8x7-h2px-xmq8"
+      ],
+      "published": "2026-07-31T04:17:23.380"
+    },
+    {
+      "id": "CVE-2026-58039",
+      "description": "A flaw in Node.js Permission Model enforcement allows process.report writes (and overwrites) files outside --allow-fs-write paths.\n\nThis can lead to confidentiality impact or bypass of the intended security boundary under affected configurations.\n\nThis vulnerability affects Node.js **22.x**, **24.x*",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://nodejs.org/en/blog/vulnerability"
+      ],
+      "published": "2026-07-31T01:16:31.530"
+    },
+    {
+      "id": "CVE-2026-14537",
+      "description": "Incorrect Authorization in the direct HTTP API tool invocation endpoint in Google mcp-toolbox versions v1.3.0 and v1.4.0 allows an unauthenticated attacker to invoke tools protected by the scopeRequired feature via sending tool invocation requests through legacy HTTP endpoints when the --enable-api ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/googleapis/mcp-toolbox/pull/3435"
+      ],
+      "published": "2026-07-31T02:16:27.687"
+    },
+    {
+      "id": "CVE-2026-14538",
+      "description": "An improper authorization and security-boundary bypass vulnerability in the bigquery-execute-sql tool component of Google mcp-toolbox versions 0.16.1 through 1.4.0 allows an authenticated attacker to bypass allowedDatasets validation checks. The toolbox relies on the BigQuery dry-run API to enforce ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-285",
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/googleapis/mcp-toolbox/pull/3452"
+      ],
+      "published": "2026-07-31T02:16:28.757"
+    },
+    {
+      "id": "CVE-2026-14539",
+      "description": "An allocation of resources without limits vulnerability in the HTTP handler component of Google mcp-toolbox versions up to and including 1.4.0 allows an unauthenticated attacker to cause a denial of service (DoS). The /mcp endpoint handler reads incoming payloads directly into system memory using an",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/googleapis/mcp-toolbox/pull/3216"
+      ],
+      "published": "2026-07-31T02:16:28.920"
+    },
+    {
+      "id": "CVE-2026-14540",
+      "description": "A Server-Side Request Forgery (SSRF) vulnerability exists in the generic HTTP source and tool components of Google mcp-toolbox versions 0.3.0 through 1.4.0. While the toolbox implements baseline input sanitization for user-controlled parameters, the underlying HTTP client (internal/sources/http/http",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/googleapis/mcp-toolbox/pull/3448"
+      ],
+      "published": "2026-07-31T02:16:29.060"
+    },
+    {
+      "id": "CVE-2026-14541",
+      "description": "An authentication bypass and audience confusion vulnerability exists in the Google OAuth provider component of Google mcp-toolbox version 1.4.0. When a Google authService is initialized with mcpEnabled: true but lacks an explicitly defined audience or clientId, the ValidateMCPAuth pipeline for opaqu",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/googleapis/mcp-toolbox/pull/3450"
+      ],
+      "published": "2026-07-31T03:16:24.170"
+    },
+    {
+      "id": "CVE-2026-6889",
+      "description": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-07-31T03:16:25.387"
+    },
+    {
+      "id": "CVE-2026-6890",
+      "description": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-07-31T03:16:25.530"
+    },
+    {
+      "id": "CVE-2026-43833",
+      "description": "Full details and mitigation steps are currently restricted and will be published at a later date.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-xxx"
+      ],
+      "published": "2026-07-31T04:17:22.380"
+    }
+  ]
+}
