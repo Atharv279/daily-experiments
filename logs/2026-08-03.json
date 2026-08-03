@@ -1,0 +1,303 @@
+{
+  "timestamp": "2026-08-03T05:54:45.745732+00:00",
+  "scan_id": "9e8d9d4166",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 2,
+      "MEDIUM": 3,
+      "UNKNOWN": 14
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        2
+      ],
+      [
+        "CWE-862",
+        1
+      ],
+      [
+        "CWE-269",
+        1
+      ],
+      [
+        "CWE-22",
+        1
+      ],
+      [
+        "CWE-89",
+        1
+      ]
+    ],
+    "threat_index": 120.7,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 120.7,
+        "yesterday": 206.1,
+        "change_pct": -41.4
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 1,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-3141",
+      "description": "The FormGent plugin for WordPress is vulnerable to unauthorized arbitrary file deletion due to a missing capability check on the /wp-json/formgent/responses/attachments REST API endpoint in all versions up to, and including, 1.9.2 This is due to the REST API route being registered without any authen",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/formgent/tags/1.3.1/app/Http/Controllers/AttachmentController.php#L59",
+        "https://plugins.trac.wordpress.org/browser/formgent/tags/1.3.1/routes/rest/api.php#L27",
+        "https://plugins.trac.wordpress.org/browser/formgent/trunk/app/Http/Controllers/AttachmentController.php#L59"
+      ],
+      "published": "2026-08-01T06:16:26.030"
+    },
+    {
+      "id": "CVE-2026-15414",
+      "description": "The Subscriptions for WooCommerce plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 2.0.0. This is due to the `save_meta_boxes()` function persisting the `_wps_plan_user_role` membership plan meta from `$_POST` without an allowlist that excludes privileged ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/subscriptions-for-woocommerce/tags/2.0.0/admin/partials/membership/meta-box-plan-details.php#L102",
+        "https://plugins.trac.wordpress.org/browser/subscriptions-for-woocommerce/tags/2.0.0/includes/membership/class-wps-membership-plan-cpt.php#L275",
+        "https://plugins.trac.wordpress.org/browser/subscriptions-for-woocommerce/tags/2.0.0/includes/membership/class-wps-membership-plan-cpt.php#L477"
+      ],
+      "published": "2026-08-01T03:16:25.757"
+    },
+    {
+      "id": "CVE-2026-15006",
+      "description": "The Bit integrations \u2013 Form Integration, Webhook, Spreadsheets, CRM, LMS & Email Automation plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 2.9.0 via the processAttachment function. This makes it possible for unauthenticated attackers to read the conte",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/bit-integrations/tags/2.8.11/backend/Actions/Mail/MailController.php#L123",
+        "https://plugins.trac.wordpress.org/browser/bit-integrations/tags/2.8.11/backend/Actions/Mail/MailController.php#L59",
+        "https://plugins.trac.wordpress.org/browser/bit-integrations/tags/2.8.11/backend/Triggers/CF7/CF7Controller.php#L127"
+      ],
+      "published": "2026-08-01T03:16:25.460"
+    },
+    {
+      "id": "CVE-2026-13362",
+      "description": "The SendPulse Email Marketing Newsletter plugin for WordPress is vulnerable to Stored Cross-Site Scripting via _sp_form_code Post Meta in all versions up to, and including, 2.2.5 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with cont",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/sendpulse-email-marketing-newsletter/tags/2.2.5/inc/class-senpulse-newsletter-forms.php#L103",
+        "https://plugins.trac.wordpress.org/browser/sendpulse-email-marketing-newsletter/tags/2.2.5/inc/class-senpulse-newsletter-shortcodes.php#L101",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/4bae687b-5b54-4151-871e-7a9b6e56986e?source=cve"
+      ],
+      "published": "2026-08-01T03:16:25.307"
+    },
+    {
+      "id": "CVE-2026-7623",
+      "description": "The SureForms \u2013 Contact Form, Payment Form & Other Custom Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'headingWrapper' parameter in all versions up to, and including, 2.8.1 due to insufficient input sanitization and output escaping. This makes it possible f",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/sureforms/tags/2.5.1/modules/gutenberg/dist/blocks/advanced-heading/class-advanced-heading.php#L663",
+        "https://plugins.trac.wordpress.org/browser/sureforms/tags/2.5.1/modules/gutenberg/dist/blocks/advanced-heading/class-advanced-heading.php#L729",
+        "https://plugins.trac.wordpress.org/browser/sureforms/tags/2.8.1/modules/gutenberg/dist/blocks/advanced-heading/class-advanced-heading.php#L663"
+      ],
+      "published": "2026-08-01T03:16:26.070"
+    },
+    {
+      "id": "CVE-2026-15403",
+      "description": "The Pinpoint Booking System \u2013 Version 2 plugin for WordPress is vulnerable to blind SQL Injection via the 'field' parameter in all versions up to, and including, 2.9.9.6.9 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This m",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/booking-system/tags/2.9.9.6.9/dopbs.php#L2300",
+        "https://plugins.trac.wordpress.org/browser/booking-system/tags/2.9.9.6.9/includes/calendars/class-backend-calendar.php#L155",
+        "https://plugins.trac.wordpress.org/browser/booking-system/tags/2.9.9.6.9/includes/calendars/class-backend-calendar.php#L164"
+      ],
+      "published": "2026-08-01T03:16:25.620"
+    },
+    {
+      "id": "CVE-2025-15669",
+      "description": "The Bit Form  WordPress plugin before 3.1.4 does not sanitise one of its conversational-form display settings before rendering it on the public-facing form, allowing high-privilege users (such as administrators, who do not hold the unfiltered_html capability on multisite) to store JavaScript that ex",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/69800fa9-4fbd-489c-8759-96df745d77d6/"
+      ],
+      "published": "2026-08-01T07:16:27.603"
+    },
+    {
+      "id": "CVE-2026-10827",
+      "description": "The Spectra Legacy  WordPress plugin before 2.20.0 does not validate or escape several block style attributes before using them to build the CSS it outputs on the front end, allowing users with the Contributor role and above to inject arbitrary CSS into the pages that render the affected block. The ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/068ac525-423b-42f8-9ef4-f102f948dc78/"
+      ],
+      "published": "2026-08-01T07:16:28.573"
+    },
+    {
+      "id": "CVE-2026-11882",
+      "description": "The Builderall for WordPress plugin before 3.0.2 does not bind the state value of its public OAuth authentication routes to the initiating user session, allowing unauthenticated attackers to complete the connection flow and overwrite the stored third-party integration access token. A durable overwri",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/23e0eb03-ec19-4cec-8127-cb6c2c2f4d7b/"
+      ],
+      "published": "2026-08-01T07:16:28.687"
+    },
+    {
+      "id": "CVE-2026-12696",
+      "description": "The wpForo Forum WordPress plugin before 3.1.2 does not sanitize and escape a user profile field before outputting it inside an HTML attribute on the public participant profile page, allowing users with a subscriber-level account to inject JavaScript that executes in the browser of any visitor who v",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/0dde2d89-267f-4aca-b2f0-d086b15adff0/"
+      ],
+      "published": "2026-08-01T07:16:28.797"
+    },
+    {
+      "id": "CVE-2026-12966",
+      "description": "The Direct Payments for WooCommerce  WordPress plugin before 2.5.3 does not verify that the requester owns the targeted WooCommerce order in several unauthenticated AJAX handlers before changing its status and overwriting its payment metadata, allowing unauthenticated attackers to tamper with other ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/b2b7f90e-359f-4fb4-9b48-c87ecb229f76/"
+      ],
+      "published": "2026-08-01T07:16:28.913"
+    },
+    {
+      "id": "CVE-2026-13157",
+      "description": "The  Demo Import WordPress plugin through 1.1.3 does not validate the type of files uploaded during demo-content import (the WordPress file-type test is disabled), allowing high-privilege users (Administrator by default, including non-super-admin site administrators on multisite) to upload executabl",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/5d6a6a8e-c224-4034-8ed5-2d63f37f9479/"
+      ],
+      "published": "2026-08-01T07:16:29.030"
+    },
+    {
+      "id": "CVE-2026-13158",
+      "description": "The Everest Toolkit WordPress plugin through 1.2.3 does not validate the type of files uploaded during demo-content import (the WordPress file-type test is disabled), allowing high-privilege users (Administrator by default, including non-super-admin site administrators on multisite) to upload execut",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/f101071f-402a-40a2-bbdb-666512cd4049/"
+      ],
+      "published": "2026-08-01T07:16:29.133"
+    },
+    {
+      "id": "CVE-2026-13329",
+      "description": "The Buckaroo Woocommerce Payments Plugin WordPress plugin before 4.9.0 does not perform any capability check or nonce validation on an AJAX action that processes payment capture refunds, allowing any authenticated user, including Subscribers, to trigger refunds against captured orders.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/6e60d271-574d-4259-ab51-32a014e480d4/"
+      ],
+      "published": "2026-08-01T07:16:29.243"
+    },
+    {
+      "id": "CVE-2026-13596",
+      "description": "The Participants Database WordPress plugin before 2.7.8.4 does not properly sanitize and escape a user-supplied parameter before using it in a SQL query, allowing unauthenticated attackers to perform SQL injection attacks.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/e22227c8-506e-4188-a7a1-1952b41c47f5/"
+      ],
+      "published": "2026-08-01T07:16:29.347"
+    },
+    {
+      "id": "CVE-2026-13604",
+      "description": "The Pixelavo  WordPress plugin before 1.5.4 registers an unauthenticated AJAX action, gated only by a nonce that it emits publicly on every front-end page, that forwards client-supplied event data to the configured Facebook Conversions API using the administrator's stored access token. This allows a",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/766c961e-e5aa-4ebe-8107-032f46316f91/"
+      ],
+      "published": "2026-08-01T07:16:29.457"
+    },
+    {
+      "id": "CVE-2026-13725",
+      "description": "The Dynamic Pricing With Discount Rules for WooCommerce WordPress plugin before 5.0.0 does not validate a nonce or user capabilities on one of its AJAX actions and reflects unsanitised user input in the response, allowing unauthenticated attackers to perform Reflected Cross-Site Scripting against a ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/5e3786de-4b4d-4da2-b129-7b0fef90a386/"
+      ],
+      "published": "2026-08-01T07:16:29.560"
+    },
+    {
+      "id": "CVE-2026-13729",
+      "description": "The Podlove Podcast Publisher WordPress plugin before 4.5.3 does not perform nonce validation on some of its administrative create and delete actions, allowing attackers to create rogue records or delete legitimate ones via a forged request (CSRF) when a logged-in administrator is tricked into visit",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/24022bde-e87a-4bee-87da-68897cbb8b93/"
+      ],
+      "published": "2026-08-01T07:16:29.667"
+    },
+    {
+      "id": "CVE-2026-14195",
+      "description": "The Brizy  WordPress plugin before 2.8.18 does not properly verify authorization on a request handler before returning post content, allowing users with the Contributor role or higher to read the content of arbitrary posts, including other users' private, pending, and draft posts.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/2ed270b0-c01e-4615-b365-3455c161a2d9/"
+      ],
+      "published": "2026-08-01T07:16:29.763"
+    },
+    {
+      "id": "CVE-2026-14197",
+      "description": "The Fluent Support  WordPress plugin before 2.3.1 does not perform a per-ticket access check before reassigning a ticket's customer, allowing a restricted support agent to change the assigned customer of any ticket in the system, including tickets outside their granted scope.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/cd488221-6efd-42a0-badc-315c60ec0b99/"
+      ],
+      "published": "2026-08-01T07:16:29.883"
+    }
+  ]
+}
