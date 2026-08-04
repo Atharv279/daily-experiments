@@ -1,0 +1,311 @@
+{
+  "timestamp": "2026-08-04T05:27:17.521996+00:00",
+  "scan_id": "96f30474ea",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 6,
+      "MEDIUM": 6,
+      "UNKNOWN": 7
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        4
+      ],
+      [
+        "CWE-22",
+        3
+      ],
+      [
+        "CWE-284",
+        2
+      ],
+      [
+        "CWE-289",
+        1
+      ],
+      [
+        "CWE-287",
+        1
+      ]
+    ],
+    "threat_index": 243.6,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 243.6,
+        "yesterday": 201.1,
+        "change_pct": 21.1
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 2,
+        "change_pct": -50.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-8457",
+      "description": "The WooCommerce - Social Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to and including 2.8.7. This is due to the plugin's Apple login handler accepting the Apple id_token and decoding only its base64 payload without verifying the JWT signature against Apple's ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-289"
+      ],
+      "references": [
+        "https://codecanyon.net/item/social-login-wordpress-woocommerce-plugin/8495883",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/53e83037-2cc5-4dc9-b55d-03829df12a65?source=cve"
+      ],
+      "published": "2026-08-02T00:16:23.047"
+    },
+    {
+      "id": "CVE-2026-13339",
+      "description": "The CubeWP Framework plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.1.30 via the 'cubewp_get_svg_content' function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensiti",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/cubewp-framework/tags/1.1.30/cube/functions/admin-functions.php#L1170",
+        "https://plugins.trac.wordpress.org/changeset/3627738/cubewp-framework",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/7ea72320-0e1e-45e3-987d-9ab7eecf1aee?source=cve"
+      ],
+      "published": "2026-08-02T00:16:22.760"
+    },
+    {
+      "id": "CVE-2026-18352",
+      "description": "The User Access Manager plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 2.3.15 via the 'uamgetfile' parameter parameter. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensi",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/user-access-manager/tags/2.3.14/src/Controller/BaseControllerTrait.php%3A22-50",
+        "https://plugins.trac.wordpress.org/browser/user-access-manager/tags/2.3.14/src/Controller/Frontend/RedirectController.php%3A50-99%2C119-141%2C245-252",
+        "https://plugins.trac.wordpress.org/browser/user-access-manager/tags/2.3.14/src/File/FileHandler.php%3A79-124%2C270-294"
+      ],
+      "published": "2026-08-02T00:16:22.900"
+    },
+    {
+      "id": "CVE-2026-15151",
+      "description": "The Five Star Restaurant Reservations  WordPress plugin before 2.7.23 does not perform a capability check on one of its AJAX actions, allowing users with the lowest booking-management role (which by default cannot access the Five Star Restaurant Reservations  WordPress plugin before 2.7.23's setting",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/2c28e8b9-4293-4cf4-990d-09727275935b/"
+      ],
+      "published": "2026-08-02T06:16:36.227"
+    },
+    {
+      "id": "CVE-2026-15206",
+      "description": "The SMS Alert  WordPress plugin before 3.9.8 does not bind its \"mobile verified\" session flag to the phone number that was actually verified: after an attacker verifies an OTP sent to their own phone, the signup/login handler reads a fresh, attacker-supplied phone number to select the account and lo",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/d0bb4c41-392a-4209-9e44-93dbf3898417/"
+      ],
+      "published": "2026-08-02T06:16:36.513"
+    },
+    {
+      "id": "CVE-2026-15236",
+      "description": "The Gallery for Google Photos  WordPress plugin before 1.2.1 does not properly restrict access to the stored third-party OAuth credentials of the connected account, exposing the persistent access and refresh tokens to unauthenticated users and allowing long-term compromise of the linked account.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/bfec461b-0dfa-48c6-84c1-6ea38a7d4546/"
+      ],
+      "published": "2026-08-02T06:16:36.830"
+    },
+    {
+      "id": "CVE-2026-15241",
+      "description": "The AI ChatBot for WooCommerce  WordPress plugin before 4.8.4 does not perform any authorization or nonce check on one of its AJAX actions, allowing unauthenticated users to abuse the site owner's stored third-party API key to send requests billed to the owner's account and, when an optional feature",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/81ab9ecd-5d7b-4d10-b255-65af869c46e2/"
+      ],
+      "published": "2026-08-02T06:16:37.100"
+    },
+    {
+      "id": "CVE-2026-9335",
+      "description": "A vulnerability in keras-team/keras versions <= 3.14.0 allows arbitrary local HDF5 file content disclosure due to improper handling of HDF5 ExternalLinks. The `KerasFileEditor` and `keras.saving.load_weights` functions bypass the `safe_get_h5_group` and `safe_get_h5_dataset` helpers, which are desig",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/keras-team/keras/commit/23370f16b0ab9a200f7550a34e54a3ceab74ba0e",
+        "https://huntr.com/bounties/876a7226-5428-4a66-9d05-232461120db5"
+      ],
+      "published": "2026-08-02T05:16:20.827"
+    },
+    {
+      "id": "CVE-2026-13389",
+      "description": "The webtoffee-cookie-consent WordPress plugin before 3.5.3 does not perform authorization checks on several of its REST API routes, allowing unauthenticated attackers to export and delete stored visitor consent records, create posts, and modify the webtoffee-cookie-consent WordPress plugin before 3.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/a591c79d-5db7-4716-8b6c-004b1195edf7/"
+      ],
+      "published": "2026-08-02T06:16:34.550"
+    },
+    {
+      "id": "CVE-2026-14841",
+      "description": "The King Addons for Elementor  WordPress plugin before 51.1.76 does not escape a user-supplied grid setting before reflecting it into an HTML attribute in an unauthenticated AJAX response, allowing attackers to execute arbitrary JavaScript in the browser of a visitor who is tricked into loading a cr",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/667d1f8d-fcdb-498f-abda-5655a5af7591/"
+      ],
+      "published": "2026-08-02T06:16:35.097"
+    },
+    {
+      "id": "CVE-2026-14864",
+      "description": "The JetEngine WordPress plugin before 3.8.12 does not escape a post meta value before outputting it through one of its shortcodes, allowing users with the Contributor role and above to perform Stored Cross-Site Scripting attacks that execute in the context of higher-privileged users such as administ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/7222601e-4f2b-4dfb-88aa-692a556f3e86/"
+      ],
+      "published": "2026-08-02T06:16:35.370"
+    },
+    {
+      "id": "CVE-2026-15385",
+      "description": "The RT Mega Menu  WordPress plugin before 1.5.2 does not perform a capability check on the AJAX action that saves mega-menu configuration and per-menu-item settings; its only gate is a nonce that any logged-in user can read from a standard admin page. A subscriber-level user can therefore enable the",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/b13b19c6-b6e1-45eb-95f3-ac334bda8b84/"
+      ],
+      "published": "2026-08-02T06:16:37.687"
+    },
+    {
+      "id": "CVE-2025-15675",
+      "description": "The Charitable  WordPress plugin before 1.8.5.3 does not sanitise and escape one of its campaign image text fields before outputting it in an HTML attribute, allowing users with a high-privilege campaign-management role to perform Stored Cross-Site Scripting attacks that execute on the front-end cam",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/19381d34-3942-4ba6-92a9-0290e1006da0/"
+      ],
+      "published": "2026-08-02T06:16:32.060"
+    },
+    {
+      "id": "CVE-2026-11872",
+      "description": "The Clever Mega Menu for Visual Composer WordPress plugin through 1.0.1 does not perform a nonce or capability check in an AJAX action that updates navigation menu item metadata, allowing any authenticated user, including Subscribers, to overwrite menu item content and settings that are rendered in ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/23c9232c-73e1-477e-a0b5-bceebb6ab6dd/"
+      ],
+      "published": "2026-08-02T06:16:33.920"
+    },
+    {
+      "id": "CVE-2026-12586",
+      "description": "The Lenxel WP WordPress theme through 1.0.31 does not perform any authorization or ownership check on its password-reset action, validating only a CSRF nonce, allowing unauthenticated attackers to reset the password of any user (including an administrator) and take over the account.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/84555dc3-b35e-478f-b681-ea0a0fe481d9/"
+      ],
+      "published": "2026-08-02T06:16:34.223"
+    },
+    {
+      "id": "CVE-2026-14817",
+      "description": "The Element Pack Addons for Elementor  WordPress plugin before 8.7.13 does not sanitize option values passed through certain data attributes before a bundled front-end library re-parses and renders them in the browser, allowing users with contributor-level access or higher to inject arbitrary JavaSc",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/b2554df8-3083-41cf-8f62-04568ab3a9de/"
+      ],
+      "published": "2026-08-02T06:16:34.793"
+    },
+    {
+      "id": "CVE-2026-14920",
+      "description": "## Summary",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/66e61aa1-4e2e-4fe7-b92b-a0d11e4b596f/"
+      ],
+      "published": "2026-08-02T06:16:35.677"
+    },
+    {
+      "id": "CVE-2026-14938",
+      "description": "The FluentBoards  WordPress plugin before 1.95.3 does not verify that the items selected for a board import operation belong to a board the requesting user is authorized to access, allowing any authenticated user with member access to a single board to copy and read the stages and tasks (including t",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/44d91e8d-ad2f-429c-a21e-364b1fc13fdc/"
+      ],
+      "published": "2026-08-02T06:16:35.947"
+    },
+    {
+      "id": "CVE-2026-15248",
+      "description": "The Meta Box WordPress plugin before 5.13.1 does not verify that a user is authorized to delete the supplied attachment before deleting it, allowing users with a low-privilege role such as Contributor to permanently delete arbitrary media attachments belonging to other users.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/a101136d-606f-4529-ae78-a4fff7724e2c/"
+      ],
+      "published": "2026-08-02T06:16:37.403"
+    },
+    {
+      "id": "CVE-2026-15939",
+      "description": "The Simple Restrict WordPress plugin before 1.2.9 does not enforce its content-restriction permission check on the REST API the way it does on the front end, relying there on a generic capability check instead of the Simple Restrict WordPress plugin before 1.2.9's own permission system, allowing use",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/307a3033-ca65-4c3a-9a08-dd4a6f7dacea/"
+      ],
+      "published": "2026-08-02T06:16:37.980"
+    }
+  ]
+}
