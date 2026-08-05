@@ -1,0 +1,343 @@
+{
+  "timestamp": "2026-08-05T05:26:48.961405+00:00",
+  "scan_id": "1a5d42bcea",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 2,
+      "LOW": 1,
+      "UNKNOWN": 17
+    },
+    "top_cwes": [
+      [
+        "CWE-789",
+        3
+      ],
+      [
+        "CWE-770",
+        3
+      ],
+      [
+        "CWE-347",
+        2
+      ],
+      [
+        "CWE-502",
+        1
+      ],
+      [
+        "CWE-1236",
+        1
+      ]
+    ],
+    "threat_index": 47.1,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 47.1,
+        "yesterday": 306.1,
+        "change_pct": -84.6
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-3245",
+      "description": "A deserialization vulnerability in PRISMAproduction Version 6.5 or earlier that may lead to arbitrary code execution.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://cpp.canon/vulnerability-in-prismaproduction-cve-2026-3245/",
+        "https://psirt.canon/advisory-information/cp2026-007/",
+        "https://www.canon-europe.com/support/product-security/"
+      ],
+      "published": "2026-08-03T00:16:29.280"
+    },
+    {
+      "id": "CVE-2026-65875",
+      "description": "BaserCMS provided by baserCMS Users Community contains a CSV file injection vulnerability. If a user downloads and opens a CSV file containing malicious code injected by an attacker, the malicious code may be executed.",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-1236"
+      ],
+      "references": [
+        "https://basercms.net/security/JVN_94952030",
+        "https://jvn.jp/en/vu/JVNVU94952030/"
+      ],
+      "published": "2026-08-03T01:16:45.657"
+    },
+    {
+      "id": "CVE-2026-18581",
+      "description": "A vulnerability was determined in ggml-org llama.cpp e15efe0. Affected by this issue is some unknown functionality of the file common/jinja/parser.cpp of the component Jinja Minja Template Parser. Executing a manipulation with the input {{9|9|{ can lead to reachable assertion. The attack requires lo",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-617"
+      ],
+      "references": [
+        "https://drive.proton.me/urls/R8D8NGZ6Z0#C2cVZYn5z1Xc",
+        "https://github.com/ggml-org/llama.cpp/",
+        "https://github.com/ggml-org/llama.cpp/issues/25282"
+      ],
+      "published": "2026-08-03T01:16:43.300"
+    },
+    {
+      "id": "CVE-2026-12185",
+      "description": "In Bouncy Castle for Java before 1.85, BKS/UBER keystore allocates from untrusted lengths before integrity check. This issue also affects Bouncy Castle for Java LTS before 2.73.12.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-789"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/7bbd7fe5f44132e5b6140a2914435c12430eeb3d",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9012185"
+      ],
+      "published": "2026-08-03T01:16:42.987"
+    },
+    {
+      "id": "CVE-2026-15055",
+      "description": "In Bouncy Castle for Java before 1.85, PKCS#8 / PBES2 decryptors honour unbounded KDF cost from input. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java FIPS (BC-FJA) before bcpkix-fips 1.0.12 (1.0.X series), 2.0.12 (2.0.X series) and 2.1.12 (2.1.X series)",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/7ab4ee67a0135950001b29b41a96d8a9a5d3b68b",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9015055"
+      ],
+      "published": "2026-08-03T01:16:43.157"
+    },
+    {
+      "id": "CVE-2026-59638",
+      "description": "In Bouncy Castle for Java before 1.85, JSSE hostname verifier CN-fallback enabled by default despite documented opt-in. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java FIPS (BC-FJA) before bctls-fips 1.0.24 (1.0.X series), 2.0.24 (2.0.X series) and 2.1.2",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-297"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/5ac55351cd1a8a7184d41c96a7ee87df0770240a",
+        "https://github.com/bcgit/bc-java/commit/799bd15320a6310a447863638aa3df64acef829b",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059638"
+      ],
+      "published": "2026-08-03T01:16:43.543"
+    },
+    {
+      "id": "CVE-2026-59639",
+      "description": "In Bouncy Castle for Java before 1.85, CMS verifySignatures returns true for SignedData with zero signers. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java FIPS (BC-FJA) before bcpkix-fips 1.0.12 (1.0.X series), 2.0.12 (2.0.X series) and 2.1.12 (2.1.X ser",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/99ddc6dcc6782e6a76b0dd587c77e62eb7096ad0",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059639"
+      ],
+      "published": "2026-08-03T01:16:43.700"
+    },
+    {
+      "id": "CVE-2026-59640",
+      "description": "In Bouncy Castle for Java before 1.85, OpenPGP CFB quick-check oracle active on symmetric/session-key paths. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java FIPS (BC-FJA) before bcpg-fips 1.0.13 (1.0.X series), 2.0.13 (2.0.X series) and 2.1.13 (2.1.X ser",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-203"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/6b94b1c146cec1f565d9a85847fae511af77503e",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059640"
+      ],
+      "published": "2026-08-03T01:16:43.907"
+    },
+    {
+      "id": "CVE-2026-59641",
+      "description": "In Bouncy Castle for Java before 1.85, S/MIME validator trusts signer-asserted signingTime for path validation. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java FIPS (BC-FJA) before bcmail-fips and bcjmail-fips 1.0.7 (1.0.X series), 2.0.7 (2.0.X series) a",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-345"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/2f81b22d559b3a1b026388e1ca78dd547384def8",
+        "https://github.com/bcgit/bc-java/commit/fd89fe918b37fea1c71e95fae50284a325b09721",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059641"
+      ],
+      "published": "2026-08-03T01:16:44.060"
+    },
+    {
+      "id": "CVE-2026-59642",
+      "description": "In Bouncy Castle for Java before 1.85, CMS AuthenticatedData content not bound to MAC when authAttrs present. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java FIPS (BC-FJA) before bcpkix-fips 1.0.12 (1.0.X series), 2.0.12 (2.0.X series) and 2.1.12 (2.1.X ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-354"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/2117f316a5a47308f3e569695a6592b16aac0dd7",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059642"
+      ],
+      "published": "2026-08-03T01:16:44.203"
+    },
+    {
+      "id": "CVE-2026-59643",
+      "description": "In Bouncy Castle for Java before 1.85, OpenPGP inline-signature policy failures silently ignored. This issue also affects Bouncy Castle for Java FIPS (BC-FJA) before bcpg-fips 2.0.13.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/d3f8cc408b4a36d28e5a410c93436fe3d0fe726b",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059643"
+      ],
+      "published": "2026-08-03T01:16:44.333"
+    },
+    {
+      "id": "CVE-2026-59644",
+      "description": "In Bouncy Castle for Java before 1.85, MLS hash-ratchet honours arbitrary 32-bit generation counter from sender.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-834"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/610d8757d855afe197df0de6d831cb75c81e3b9f",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059644"
+      ],
+      "published": "2026-08-03T01:16:44.467"
+    },
+    {
+      "id": "CVE-2026-59645",
+      "description": "In Bouncy Castle for Java before 1.85, OER parser recurses without depth limit on self-referential IEEE 1609.2 schema. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java FIPS (BC-FJA) before bcutil-fips 2.0.7 (2.0.X series) and 2.1.7 (2.1.X series).",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/822b2478b131097368a56290f5728e28dd042989",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059645"
+      ],
+      "published": "2026-08-03T01:16:44.600"
+    },
+    {
+      "id": "CVE-2026-59646",
+      "description": "In Bouncy Castle for Java before 1.85, DTLS handshake reassembler allocates buffer from unchecked 24-bit length. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java FIPS (BC-FJA) before bctls-fips 1.0.24 (1.0.X series), 2.0.24 (2.0.X series) and 2.1.24 (2.1.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-789"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/2d98721e71bbd822ffa0f84e088eea645cf679fa",
+        "https://github.com/bcgit/bc-java/commit/2ea38942c7917f6d7ab4de93d8a5336d021df0d9",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059646"
+      ],
+      "published": "2026-08-03T01:16:44.733"
+    },
+    {
+      "id": "CVE-2026-59647",
+      "description": "In Bouncy Castle for Java before 1.85, CRMF/CMP password-MAC honours unbounded iteration count. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java FIPS (BC-FJA) before bcpkix-fips 1.0.12 (1.0.X series), 2.0.12 (2.0.X series) and 2.1.12 (2.1.X series).",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/c99d6427d6818d04165b07b45dfda96f2b384c53",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059647"
+      ],
+      "published": "2026-08-03T01:16:44.863"
+    },
+    {
+      "id": "CVE-2026-59648",
+      "description": "In Bouncy Castle for Java before 1.85, OpenPGP Argon2 S2K honours attacker-chosen memory and passes. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java FIPS (BC-FJA) before bcpg-fips 1.0.13 (1.0.X series), 2.0.13 (2.0.X series) and 2.1.13 (2.1.X series).",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/c915cc3f7a8d58f5ea2f88f01dfef2d402dd0799",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059648"
+      ],
+      "published": "2026-08-03T01:16:44.993"
+    },
+    {
+      "id": "CVE-2026-59649",
+      "description": "In Bouncy Castle for Java before 1.85, OpenPGP user-attribute subpacket length bounded only by JVM max memory. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java FIPS (BC-FJA) before bcpg-fips 1.0.13 (1.0.X series), 2.0.13 (2.0.X series) and 2.1.13 (2.1.X s",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-789"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/a43c40dc12c3e1c6cbd03c83fe30aaec4029b824",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059649"
+      ],
+      "published": "2026-08-03T01:16:45.120"
+    },
+    {
+      "id": "CVE-2026-59650",
+      "description": "In Bouncy Castle for Java before 1.85, MTI/A0 DH agreement exponentiates unvalidated peer value. This issue also affects Bouncy Castle for Java LTS before 2.73.12.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/daeaae9d7075d04f40812e68671ebf4c777b5148",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059650"
+      ],
+      "published": "2026-08-03T01:16:45.250"
+    },
+    {
+      "id": "CVE-2026-59651",
+      "description": "In Bouncy Castle for Java before 1.85, BKS keystore accepts legacy version with 16-bit integrity MAC key. This issue also affects Bouncy Castle for Java LTS before 2.73.12.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-326"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/faf5daa6e9b8460f862afc0af1cc0da365f7d4d2",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059651"
+      ],
+      "published": "2026-08-03T01:16:45.380"
+    },
+    {
+      "id": "CVE-2026-59652",
+      "description": "In Bouncy Castle for Java before 1.85, LDAP filter injection in legacy jdk1.4 LDAPStoreHelper.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-90"
+      ],
+      "references": [
+        "https://github.com/bcgit/bc-java/commit/27c468af54ee6c6af87eab5a3a8468dce17e24a0",
+        "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9059652"
+      ],
+      "published": "2026-08-03T01:16:45.513"
+    }
+  ]
+}
