@@ -1,0 +1,364 @@
+{
+  "timestamp": "2026-08-07T00:55:48.117683+00:00",
+  "scan_id": "12a98563ff",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 10,
+      "MEDIUM": 7,
+      "LOW": 1,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-89",
+        6
+      ],
+      [
+        "CWE-121",
+        4
+      ],
+      [
+        "CWE-119",
+        3
+      ],
+      [
+        "CWE-74",
+        3
+      ],
+      [
+        "CWE-23",
+        1
+      ]
+    ],
+    "threat_index": 315.1,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 315.1,
+        "yesterday": 351.4,
+        "change_pct": -10.3
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 2,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-18895",
+      "description": "A vulnerability was found in UTT HiPER 1250GW up to 3.2.7-210907-180535. Impacted is the function strcpy of the file /goform/APSecurity_5g. Performing a manipulation of the argument cipher results in stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been ma",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/7wkajk/CVE-VUL/blob/main/101.md",
+        "https://vuldb.com/cve/CVE-2026-18895",
+        "https://vuldb.com/submit/858607"
+      ],
+      "published": "2026-08-05T02:16:37.403"
+    },
+    {
+      "id": "CVE-2026-18897",
+      "description": "A vulnerability was identified in UTT HiPER 1250GW up to v3.2.7-210907-180535. The impacted element is the function strcpy of the file /goform/getOneApConfTempEntry. The manipulation of the argument tempName leads to stack-based buffer overflow. The attack can be initiated remotely. The exploit is p",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/7wkajk/CVE-VUL/blob/main/102.md",
+        "https://vuldb.com/cve/CVE-2026-18897",
+        "https://vuldb.com/submit/858617"
+      ],
+      "published": "2026-08-05T02:16:37.773"
+    },
+    {
+      "id": "CVE-2026-18898",
+      "description": "A security flaw has been discovered in UTT HiPER 1200GW up to v2.5.3-170306. This affects the function strcpy of the file /goform/ConfigAdvideo. The manipulation of the argument timestart results in stack-based buffer overflow. The attack can be launched remotely. The exploit has been released to th",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/7wkajk/CVE-VUL/blob/main/103.md",
+        "https://vuldb.com/cve/CVE-2026-18898",
+        "https://vuldb.com/submit/858620"
+      ],
+      "published": "2026-08-05T04:17:16.790"
+    },
+    {
+      "id": "CVE-2026-18907",
+      "description": "Path Traversal in Download File Feature in com.talpa.hibrowser 2.23.1.1 on Android allows arbitrary file write via directory traversal sequences in the filename.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-23"
+      ],
+      "references": [
+        "https://security.tecno.com/SRC/securityUpdates"
+      ],
+      "published": "2026-08-05T02:16:37.950"
+    },
+    {
+      "id": "CVE-2026-15918",
+      "description": "VikAppointments Service Booking Calendar wordpress plugin is vulnerable to unauthenticated SQL injection due to one of the parameters that controls how the public reviews list is sorted is taken from the incoming request and used to build a database query without proper validation or sanitization. B",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/vikappointments/tags/1.2.19/site/helpers/lib.vikappointments.php#L5907",
+        "https://plugins.trac.wordpress.org/browser/vikappointments/tags/1.2.19/site/helpers/lib.vikappointments.php#L6011",
+        "https://plugins.trac.wordpress.org/browser/vikappointments/tags/1.2.19/site/views/employeesearch/view.html.php#L74"
+      ],
+      "published": "2026-08-05T06:16:36.587"
+    },
+    {
+      "id": "CVE-2026-18854",
+      "description": "A vulnerability has been found in Shandong Hoteam PDM Product Data Management System up to 8.3.10. The impacted element is the function GetStoredClassByFilter of the file /Base/BaseService.asmx/DataService. The manipulation of the argument FilterString leads to sql injection. Remote exploitation of ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://ucn9h68n9289.feishu.cn/docx/NEAJdL0fgoCy2jxQwVBcR2mOn7e?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-18854",
+        "https://vuldb.com/submit/858470"
+      ],
+      "published": "2026-08-05T00:16:59.717"
+    },
+    {
+      "id": "CVE-2026-18859",
+      "description": "A vulnerability was identified in ESAFENET CDG up to 20260615. Affected is an unknown function of the file /CDGServer3/ukey/usbkey;logindojojs. Such manipulation of the argument keyid leads to sql injection. The attack may be performed from remote. The exploit is publicly available and might be used",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://ucn9h68n9289.feishu.cn/docx/LHkddOv7Jo6quTxlJKZcf8gfnOe?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-18859",
+        "https://vuldb.com/submit/858586"
+      ],
+      "published": "2026-08-05T01:16:44.947"
+    },
+    {
+      "id": "CVE-2026-18900",
+      "description": "A weakness has been identified in H3C NX15 V100R017. This impacts the function file.exec of the file /api/esps of the component Backend RPC. This manipulation of the argument File causes os command injection. The attack may be initiated remotely. The exploit has been made available to the public and",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/coconut652-7/IOT_Vul_Public/blob/main/H3C/NX15R017/file_exec_root_rce/poc/postauth_file_exec_rce.py",
+        "https://github.com/coconut652-7/IOT_Vul_Public/blob/main/H3C/NX15R017/file_exec_root_rce/report/postauth_file_exec_rce_report.md",
+        "https://vuldb.com/cve/CVE-2026-18900"
+      ],
+      "published": "2026-08-05T05:16:49.243"
+    },
+    {
+      "id": "CVE-2026-18901",
+      "description": "A security vulnerability has been detected in H3C NX15 V100R017. Affected is the function service.add of the file /api/esps of the component Web API. Such manipulation leads to exposed dangerous routine. The attack may be launched remotely. The exploit has been disclosed publicly and may be used. Th",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-749"
+      ],
+      "references": [
+        "https://github.com/coconut652-7/IOT_Vul_Public/blob/main/H3C/NX15R017/service_add_root_rce_chain/poc/postauth_service_add_rce.py",
+        "https://github.com/coconut652-7/IOT_Vul_Public/tree/main/H3C/NX15R017/service_add_root_rce_chain/report",
+        "https://vuldb.com/cve/CVE-2026-18901"
+      ],
+      "published": "2026-08-05T05:16:49.433"
+    },
+    {
+      "id": "CVE-2026-16143",
+      "description": "The VikRentItems \u2013 Flexible Rental Management System plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the customer email field of the booking checkout form in versions up to, and including, 1.2.1. This is due to insufficient input sanitization and output escaping in the saveorde",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/vikrentitems/tags/1.2.1/admin/views/editorder/tmpl/default.php#L499",
+        "https://plugins.trac.wordpress.org/browser/vikrentitems/tags/1.2.1/site/controller.php#L389",
+        "https://plugins.trac.wordpress.org/changeset/3617300/vikrentitems/trunk/admin/views/editorder/tmpl/default.php"
+      ],
+      "published": "2026-08-05T06:16:36.880"
+    },
+    {
+      "id": "CVE-2026-11421",
+      "description": "The ERP: Complete HR, Accounting & CRM Suite with WooCommerce CRM Support plugin for WordPress is vulnerable to SQL Injection via the 'erpadvancefilter' parameter in all versions up to, and including, 1.17.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparati",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/erp/tags/1.17.4/includes/functions-people.php#L203",
+        "https://plugins.trac.wordpress.org/browser/erp/tags/1.17.4/includes/functions-people.php#L228",
+        "https://plugins.trac.wordpress.org/browser/erp/tags/1.17.4/modules/crm/CRM.php"
+      ],
+      "published": "2026-08-05T06:16:36.387"
+    },
+    {
+      "id": "CVE-2026-15941",
+      "description": "The plugin provides an Admin Search page that allows users with the `edit_posts` capability to run Relevanssi searches from the WordPress dashboard. The AJAX handler accepts a URL-encoded `args` parameter, parses it into a `WP_Query`, and then passes user-controlled taxonomy query data into Relevans",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/relevanssi/tags/4.27.1/lib/admin-ajax.php#L195",
+        "https://plugins.trac.wordpress.org/browser/relevanssi/tags/4.27.1/lib/search-tax-query.php#L411",
+        "https://plugins.trac.wordpress.org/browser/relevanssi/tags/4.27.1/lib/search.php#L969"
+      ],
+      "published": "2026-08-05T06:16:36.740"
+    },
+    {
+      "id": "CVE-2026-18896",
+      "description": "A vulnerability was determined in lavkush-maurya Student-Registration-System 1.0. The affected element is an unknown function of the file /student/changepass.php. Executing a manipulation of the argument oldpass can lead to sql injection. It is possible to launch the attack remotely. The exploit has",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/sudaisnazir2381-lang/Student-Registration-System/blob/main/sql_injection_time.md",
+        "https://vuldb.com/cve/CVE-2026-18896",
+        "https://vuldb.com/submit/858612"
+      ],
+      "published": "2026-08-05T02:16:37.593"
+    },
+    {
+      "id": "CVE-2026-18853",
+      "description": "A security vulnerability has been detected in ZomboDroid Meme Generator App 4.6830 on Android. This issue affects the function t5.l.c of the component com.zombodroid.MemeGenerator. Such manipulation leads to path traversal. Local access is required to approach this attack. The exploit has been discl",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/actuator/com.zombodroid.MemeGenerator/",
+        "https://vuldb.com/cve/CVE-2026-18853",
+        "https://vuldb.com/submit/858251"
+      ],
+      "published": "2026-08-05T00:16:59.547"
+    },
+    {
+      "id": "CVE-2026-45705",
+      "description": "OpenSIPS is a Session Initiation Protocol (SIP) server implementation. In versions prior to 3.6.6 and 4.0.0-rc1, the find_line_delimiter() function in the multipart body parser performs an out-of-bounds read via strncmp() when searching for MIME boundary delimiters. After finding a -- pattern near t",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/OpenSIPS/opensips/commit/4d23613b65579b073784a07a65d3bf52443a4efb",
+        "https://github.com/OpenSIPS/opensips/commit/5f103effaf5f372cccffe0b138f16998eba12668",
+        "https://github.com/OpenSIPS/opensips/security/advisories/GHSA-chxf-9368-fqcp"
+      ],
+      "published": "2026-08-05T00:16:59.890"
+    },
+    {
+      "id": "CVE-2026-18103",
+      "description": "A flaw was found in dhcp-server. A remote attacker with network access to the OMAPI (Open Management Application Programming Interface) port, especially if not secured with TSIG (Transaction Signature) key authentication, could send a specially crafted lease creation request. This request, containin",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-120"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-18103",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2508081"
+      ],
+      "published": "2026-08-05T00:16:59.110"
+    },
+    {
+      "id": "CVE-2026-18856",
+      "description": "A vulnerability was determined in Poesis Rhymix CMS up to 2.1.33. This impacts the function procImporterAdminCheckXmlFile of the file modules/importer/importer.admin.controller.php of the component Data Import Module. This manipulation of the argument filename causes server-side request forgery. The",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/MCzhao2006/Rhymix-SSRF-Report",
+        "https://rhymix.org/files/attach/releases/rhymix-2.1.34.zip",
+        "https://rhymix.org/news/1948042"
+      ],
+      "published": "2026-08-05T01:16:44.757"
+    },
+    {
+      "id": "CVE-2026-18852",
+      "description": "A vulnerability has been found in epsilla-cloud vectordb up to 0.3.18/df5a5f5afb85a2376a0f2f316c79dea9b2c6ac7a. This impacts the function SplitTokens/ShuntingYard of the file engine/query/expr/expr.cpp of the component Filter Parser. Such manipulation leads to improper check for unusual conditions. ",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-754"
+      ],
+      "references": [
+        "https://github.com/fa1c4/security-advisories/tree/main/VectorDB",
+        "https://github.com/fa1c4/security-advisories/tree/main/VectorDB/PoC",
+        "https://vuldb.com/cve/CVE-2026-18852"
+      ],
+      "published": "2026-08-05T00:16:59.370"
+    },
+    {
+      "id": "CVE-2026-45809",
+      "description": "OpenSIPS is a Session Initiation Protocol (SIP) server implementation. Versions prior to 3.6.6 and 4.0.0-rc1 contain a denial of service vulnerability in the watcherinfo generation functionality. An attacker can create an oversized watcher entry by sending a SUBSCRIBE Event: presence request with a ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/OpenSIPS/opensips/commit/c5970d3ee25b457ad2d78fe6e9662a12dae577cd",
+        "https://github.com/OpenSIPS/opensips/commit/dd86461b71ff4a4f5194205896ae5f48f144240d",
+        "https://github.com/OpenSIPS/opensips/security/advisories/GHSA-gx83-2gh8-7v56"
+      ],
+      "published": "2026-08-05T00:17:00.030"
+    },
+    {
+      "id": "CVE-2026-46334",
+      "description": "OpenSIPS is a Session Initiation Protocol (SIP) server implementation. Versions prior to 3.6.6 and 4.0.0-rc1 contain a denial of service vulnerability in the SDP bandwidth-line parsing logic. A SIP request with Content-Type: application/sdp and a malformed session-level SDP bandwidth line missing th",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-20",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/OpenSIPS/opensips/commit/8fe74b01f6fbf86c0b5e290735275530cb65e0fb",
+        "https://github.com/OpenSIPS/opensips/commit/ac5309d5b8206cd3dbe1b4e01567c8db1ce31444",
+        "https://github.com/OpenSIPS/opensips/security/advisories/GHSA-rh36-mhpv-cx2r"
+      ],
+      "published": "2026-08-05T00:17:00.177"
+    }
+  ]
+}
