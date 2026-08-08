@@ -1,0 +1,273 @@
+{
+  "timestamp": "2026-08-08T03:48:01.436306+00:00",
+  "scan_id": "85ed1a25d3",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 2,
+      "MEDIUM": 1,
+      "UNKNOWN": 17
+    },
+    "top_cwes": [
+      [
+        "CWE-125",
+        2
+      ],
+      [
+        "CWE-284",
+        1
+      ],
+      [
+        "CWE-434",
+        1
+      ],
+      [
+        "CWE-74",
+        1
+      ],
+      [
+        "CWE-89",
+        1
+      ]
+    ],
+    "threat_index": 52.4,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 52.4,
+        "yesterday": 315.1,
+        "change_pct": -83.4
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-18969",
+      "description": "A vulnerability was detected in Rongzhitong Visual Integrated Command and Dispatch Platform up to 20260617. Impacted is an unknown function of the file /dm/dispatch/userinfo/upload. Performing a manipulation of the argument File results in unrestricted upload. It is possible to initiate the attack r",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://ucn9h68n9289.feishu.cn/wiki/CVIpwknSYiQXejkvw7McPrs1n2g?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-18969",
+        "https://vuldb.com/submit/860572"
+      ],
+      "published": "2026-08-06T00:16:52.870"
+    },
+    {
+      "id": "CVE-2026-18970",
+      "description": "A flaw has been found in Rongzhitong Visual Integrated Command and Dispatch Platform up to 20260617. The affected element is an unknown function of the file /dm/dispatch/user/findAll. Executing a manipulation of the argument Name can lead to sql injection. It is possible to launch the attack remotel",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://ucn9h68n9289.feishu.cn/wiki/UfgVwvpW5iRtLFkZs4icV6LfnGb?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-18970",
+        "https://vuldb.com/submit/860573"
+      ],
+      "published": "2026-08-06T00:16:53.060"
+    },
+    {
+      "id": "CVE-2026-18968",
+      "description": "A security vulnerability has been detected in ttttonyhe OBlog up to 3ca6a45a2fcc81f6086751d8af124658720e8f8f. This issue affects some unknown processing of the file /tags.php. Such manipulation of the argument day leads to cross site scripting. The attack may be performed from remote. The exploit ha",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://gist.github.com/hackusman/a1ba43253d6a62ace31ef39ec325e973",
+        "https://vuldb.com/cve/CVE-2026-18968",
+        "https://vuldb.com/submit/860184"
+      ],
+      "published": "2026-08-06T00:16:52.187"
+    },
+    {
+      "id": "CVE-2023-54375",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; superseded by correct-year CVE.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:50.760"
+    },
+    {
+      "id": "CVE-2023-54376",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; superseded by correct-year CVE.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:51.363"
+    },
+    {
+      "id": "CVE-2023-54377",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; superseded by correct-year CVE.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:51.427"
+    },
+    {
+      "id": "CVE-2023-54378",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; superseded by correct-year CVE.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:51.473"
+    },
+    {
+      "id": "CVE-2023-54379",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; superseded by correct-year CVE.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:51.530"
+    },
+    {
+      "id": "CVE-2023-54380",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; superseded by correct-year CVE.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:51.590"
+    },
+    {
+      "id": "CVE-2023-54381",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; superseded by correct-year CVE.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:51.647"
+    },
+    {
+      "id": "CVE-2023-54382",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; superseded by correct-year CVE.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:51.707"
+    },
+    {
+      "id": "CVE-2023-54383",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; never assigned.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:51.763"
+    },
+    {
+      "id": "CVE-2023-54384",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; never assigned.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:51.817"
+    },
+    {
+      "id": "CVE-2023-54385",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; never assigned.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:51.870"
+    },
+    {
+      "id": "CVE-2023-54386",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; never assigned.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:51.927"
+    },
+    {
+      "id": "CVE-2023-54387",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; never assigned.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:51.977"
+    },
+    {
+      "id": "CVE-2023-54388",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; never assigned.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:52.037"
+    },
+    {
+      "id": "CVE-2023-54389",
+      "description": "Rejected reason: Erroneously reserved under wrong year by automation defect; never assigned.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-06T00:16:52.093"
+    },
+    {
+      "id": "CVE-2026-19027",
+      "description": "The H5Z__nbit_decompress_one_byte, H5Z__nbit_decompress_one_nooptype, and H5Z__nbit_decompress_one_atomic functions in H5Znbit.c in HDF5 through 2.3.0 advance a read index into the compressed chunk buffer without bounding it against the buffer's actual size. This allows attackers to cause an out-of-",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/HDFGroup/hdf5/issues/6489",
+        "https://github.com/HDFGroup/hdf5/issues/6492",
+        "https://github.com/HDFGroup/hdf5/pull/6497"
+      ],
+      "published": "2026-08-06T00:16:53.253"
+    },
+    {
+      "id": "CVE-2026-19028",
+      "description": "H5Z__filter_fletcher32 in H5Zfletcher32.c in HDF5 through 2.3.0 computes the data length to checksum by subtracting the 4-byte trailing checksum size from the input buffer size without checking that the buffer is at least 4 bytes, allowing a size_t underflow. This allows attackers to cause a denial ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-125",
+        "CWE-190",
+        "CWE-1284"
+      ],
+      "references": [
+        "https://github.com/HDFGroup/hdf5/issues/6488",
+        "https://github.com/HDFGroup/hdf5/issues/6490",
+        "https://github.com/HDFGroup/hdf5/pull/6497"
+      ],
+      "published": "2026-08-06T00:16:53.427"
+    }
+  ]
+}
