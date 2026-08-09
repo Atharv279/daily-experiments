@@ -1,0 +1,320 @@
+{
+  "timestamp": "2026-08-09T03:55:18.375436+00:00",
+  "scan_id": "efbd474e36",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 13,
+      "HIGH": 5,
+      "MEDIUM": 1,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-287",
+        2
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-347",
+        2
+      ],
+      [
+        "CWE-284",
+        2
+      ],
+      [
+        "CWE-306",
+        1
+      ]
+    ],
+    "threat_index": 639.8,
+    "critical_count": 13
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 639.8,
+        "yesterday": 52.4,
+        "change_pct": 1121.0
+      },
+      "critical_count": {
+        "today": 13,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-56162",
+      "description": "Improper authentication in Azure SQL Database allows an unauthorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56162"
+      ],
+      "published": "2026-08-07T00:16:31.990"
+    },
+    {
+      "id": "CVE-2026-63508",
+      "description": "Missing authentication for critical function in Microsoft Planetary Computer Pro allows an unauthorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63508"
+      ],
+      "published": "2026-08-07T00:16:36.973"
+    },
+    {
+      "id": "CVE-2026-65667",
+      "description": "Missing authorization in Microsoft Teams allows an unauthorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65667"
+      ],
+      "published": "2026-08-07T00:16:38.680"
+    },
+    {
+      "id": "CVE-2026-50481",
+      "description": "Modification of assumed-immutable data (maid) in Azure Active Directory allows an authorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-471"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50481"
+      ],
+      "published": "2026-08-07T00:16:30.980"
+    },
+    {
+      "id": "CVE-2026-50515",
+      "description": "Deserialization of untrusted data in Azure Service Bus allows an authorized attacker to execute code over a network.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50515"
+      ],
+      "published": "2026-08-07T00:16:31.140"
+    },
+    {
+      "id": "CVE-2026-59115",
+      "description": "'.../...//' in Microsoft Entra Provisioning Service (SyncFabric) allows an authorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-35"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59115"
+      ],
+      "published": "2026-08-07T00:16:33.780"
+    },
+    {
+      "id": "CVE-2026-62830",
+      "description": "Missing authorization in Azure SRE Agent allows an authorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62830"
+      ],
+      "published": "2026-08-07T00:16:34.593"
+    },
+    {
+      "id": "CVE-2026-62873",
+      "description": "Improper verification of cryptographic signature in Microsoft 365 Admin Center allows an unauthorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62873"
+      ],
+      "published": "2026-08-07T00:16:36.350"
+    },
+    {
+      "id": "CVE-2026-56161",
+      "description": "Improper access control in Azure Logic Apps allows an authorized attacker to disclose information over a network.",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56161"
+      ],
+      "published": "2026-08-07T00:16:31.827"
+    },
+    {
+      "id": "CVE-2026-62896",
+      "description": "Improper authentication in Microsoft Teams allows an authorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62896"
+      ],
+      "published": "2026-08-07T00:16:36.590"
+    },
+    {
+      "id": "CVE-2026-70332",
+      "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network.",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70332"
+      ],
+      "published": "2026-08-07T00:16:41.040"
+    },
+    {
+      "id": "CVE-2026-59118",
+      "description": "Improper authorization in Microsoft Power Apps allows an unauthorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 9.3,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59118"
+      ],
+      "published": "2026-08-07T00:16:33.923"
+    },
+    {
+      "id": "CVE-2026-68823",
+      "description": "Exposed dangerous method or function in Azure Confidential Ledger allows an authorized attacker to execute code over a network.",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-749"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68823"
+      ],
+      "published": "2026-08-07T00:16:40.900"
+    },
+    {
+      "id": "CVE-2026-49163",
+      "description": "Improper limitation of a pathname to a restricted directory ('path traversal') in Application Insights Profiler allows an authorized attacker to elevate privileges over a network.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49163"
+      ],
+      "published": "2026-08-07T00:16:30.800"
+    },
+    {
+      "id": "CVE-2026-65668",
+      "description": "Improper access control in Microsoft Purview eDiscovery allows an authorized attacker to elevate privileges over a network.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65668"
+      ],
+      "published": "2026-08-07T00:16:38.833"
+    },
+    {
+      "id": "CVE-2026-62836",
+      "description": "Improper restriction of communication channel to intended endpoints in Azure SQL Managed Instance allows an unauthorized attacker to elevate privileges over a network.",
+      "severity": "HIGH",
+      "score": 8.7,
+      "cwes": [
+        "CWE-923"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62836"
+      ],
+      "published": "2026-08-07T00:16:34.727"
+    },
+    {
+      "id": "CVE-2026-19189",
+      "description": "A security flaw has been discovered in Power Sofware PowerISO 9.3.0.0. Affected by this issue is some unknown functionality in the library C:\\Windows\\System32\\drivers\\scdemu.sys of the component Kernel Driver. The manipulation results in improper privilege management. The attack is only possible wit",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-266",
+        "CWE-269"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-19189",
+        "https://vuldb.com/submit/864536",
+        "https://vuldb.com/vuln/386707"
+      ],
+      "published": "2026-08-07T03:16:18.450"
+    },
+    {
+      "id": "CVE-2026-62918",
+      "description": "Improper verification of cryptographic signature in Microsoft Teams allows an unauthorized attacker to perform spoofing over a network.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62918"
+      ],
+      "published": "2026-08-07T00:16:36.833"
+    },
+    {
+      "id": "CVE-2026-17264",
+      "description": "Opening a crafted DICOM file containing malicious JPEG-compressed pixel data triggers an attacker-controlled heap out-of-bounds write, which may allow an attacker to remotely execute arbitrary code.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsma-26-218-01.json",
+        "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-218-01",
+        "https://www.radiantviewer.com/files/RadiAnt-2026.1-Setup.exe"
+      ],
+      "published": "2026-08-07T00:16:30.600"
+    },
+    {
+      "id": "CVE-2026-15805",
+      "description": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-07T00:16:29.940"
+    }
+  ]
+}
