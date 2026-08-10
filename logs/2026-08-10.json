@@ -1,20 +1,25 @@
 {
-  "timestamp": "2026-08-10T15:26:54.675760+00:00",
-  "scan_id": "11e31a63fd",
+  "timestamp": "2026-08-10T21:08:57.647600+00:00",
+  "scan_id": "4299387ecf",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
       "CRITICAL": 1,
-      "MEDIUM": 1,
-      "UNKNOWN": 18
+      "HIGH": 2,
+      "MEDIUM": 6,
+      "UNKNOWN": 11
     },
     "top_cwes": [
       [
-        "CWE-269",
-        1
+        "CWE-200",
+        5
       ],
       [
         "CWE-79",
+        3
+      ],
+      [
+        "CWE-269",
         1
       ],
       [
@@ -26,7 +31,7 @@
         1
       ]
     ],
-    "threat_index": 52.0,
+    "threat_index": 159.0,
     "critical_count": 1
   },
   "delta": {
@@ -38,9 +43,9 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 52.0,
+        "today": 159.0,
         "yesterday": 639.8,
-        "change_pct": -91.9
+        "change_pct": -75.1
       },
       "critical_count": {
         "today": 1,
@@ -66,6 +71,71 @@
       "published": "2026-08-08T07:17:08.297"
     },
     {
+      "id": "CVE-2026-16578",
+      "description": "The Admin Safety Guard \u2014 Login Security, Limit Logins, 2FA & Brute Force Protection WordPress plugin before 1.4.0 does not perform any capability check on one of its REST API endpoints, allowing unauthenticated attackers to retrieve the full list of registered users including their usernames, email ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/c02393ee-1ade-433e-bbd0-c09785e5c426/"
+      ],
+      "published": "2026-08-08T07:17:10.573"
+    },
+    {
+      "id": "CVE-2026-16594",
+      "description": "The WP Directory Kit WordPress plugin before 1.5.5 does not perform authorization or nonce checks on one of its authenticated AJAX actions, allowing any authenticated user such as a Subscriber to disclose the WP Directory Kit WordPress plugin before 1.5.5 settings including sensitive API keys and se",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/d055d385-7e8a-4179-aa21-f07e240fd181/"
+      ],
+      "published": "2026-08-08T07:17:10.910"
+    },
+    {
+      "id": "CVE-2026-16562",
+      "description": "The WP Statistics  WordPress plugin before 14.16.10 does not perform a capability check on a set of dashboard analytics AJAX handlers, relying only on a nonce that every authenticated user holds, allowing users with Subscriber-level access and above to disclose the site's visitor analytics data.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/09d79a3f-7bf0-47ab-bf6d-913eaeb71630/"
+      ],
+      "published": "2026-08-08T07:17:10.350"
+    },
+    {
+      "id": "CVE-2026-16590",
+      "description": "The WP Directory Kit WordPress plugin before 1.5.5 does not perform authorization or nonce checks on one of its authenticated AJAX actions, allowing any authenticated user such as a Subscriber to retrieve stored contact messages and associated user data belonging to other users.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/ddf13b08-4ee2-46a1-929c-1f435e9e49d4/"
+      ],
+      "published": "2026-08-08T07:17:10.807"
+    },
+    {
+      "id": "CVE-2026-16595",
+      "description": "The WP Directory Kit WordPress plugin before 1.5.5 does not perform authorization or nonce checks on one of its authenticated AJAX actions, allowing any authenticated user such as a Subscriber to disclose the site's user list and unpublished listings belonging to other users.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/e960f5b2-18e9-436b-8828-6a105c7f9dd5/"
+      ],
+      "published": "2026-08-08T07:17:11.020"
+    },
+    {
       "id": "CVE-2026-18988",
       "description": "The Easy Accordion plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'accordionTitleTag' block attribute in versions up to, and including, 3.1.8. This is due to insufficient input sanitization and output escaping in the accordion_header_renderer() function, which emits the at",
       "severity": "MEDIUM",
@@ -79,6 +149,32 @@
         "https://plugins.trac.wordpress.org/browser/easy-accordion-free/tags/3.1.2/Blocks/Includes/Render_Blocks_Template.php#L89"
       ],
       "published": "2026-08-08T05:17:06.790"
+    },
+    {
+      "id": "CVE-2026-16535",
+      "description": "The Link Library WordPress plugin before 7.9.4 does not sanitise and escape a parameter before reflecting it back in a response, allowing unauthenticated attackers to perform Reflected Cross-Site Scripting attacks against users who can be tricked into performing an action.",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/3b6c0efb-c503-437a-8f9b-f8a8c032313c/"
+      ],
+      "published": "2026-08-08T07:17:10.013"
+    },
+    {
+      "id": "CVE-2026-16558",
+      "description": "The YMC Filter WordPress plugin before 3.12.8 does not sanitize and escape a layout builder setting before outputting it on a public endpoint, and does not verify object ownership when the setting is saved, allowing users with the Contributor role and above to store JavaScript that executes in the b",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/06ba0551-deab-41fb-b501-eef0727b431a/"
+      ],
+      "published": "2026-08-08T07:17:10.130"
     },
     {
       "id": "CVE-2026-8798",
@@ -140,28 +236,6 @@
       "published": "2026-08-08T07:17:09.900"
     },
     {
-      "id": "CVE-2026-16535",
-      "description": "The Link Library WordPress plugin before 7.9.4 does not sanitise and escape a parameter before reflecting it back in a response, allowing unauthenticated attackers to perform Reflected Cross-Site Scripting attacks against users who can be tricked into performing an action.",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/3b6c0efb-c503-437a-8f9b-f8a8c032313c/"
-      ],
-      "published": "2026-08-08T07:17:10.013"
-    },
-    {
-      "id": "CVE-2026-16558",
-      "description": "The YMC Filter WordPress plugin before 3.12.8 does not sanitize and escape a layout builder setting before outputting it on a public endpoint, and does not verify object ownership when the setting is saved, allowing users with the Contributor role and above to store JavaScript that executes in the b",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/06ba0551-deab-41fb-b501-eef0727b431a/"
-      ],
-      "published": "2026-08-08T07:17:10.130"
-    },
-    {
       "id": "CVE-2026-16559",
       "description": "The YMC Filter WordPress plugin before 3.12.9 does not sanitize SVG files uploaded through one of its icon upload features and permits their upload by low-privileged users, allowing users with the Author role and above to upload a file containing JavaScript that executes in the site's origin when th",
       "severity": "UNKNOWN",
@@ -171,17 +245,6 @@
         "https://wpscan.com/vulnerability/9b8d265a-542f-4e1b-966d-3fc3dbf7a800/"
       ],
       "published": "2026-08-08T07:17:10.237"
-    },
-    {
-      "id": "CVE-2026-16562",
-      "description": "The WP Statistics  WordPress plugin before 14.16.10 does not perform a capability check on a set of dashboard analytics AJAX handlers, relying only on a nonce that every authenticated user holds, allowing users with Subscriber-level access and above to disclose the site's visitor analytics data.",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/09d79a3f-7bf0-47ab-bf6d-913eaeb71630/"
-      ],
-      "published": "2026-08-08T07:17:10.350"
     },
     {
       "id": "CVE-2026-16574",
@@ -195,17 +258,6 @@
       "published": "2026-08-08T07:17:10.467"
     },
     {
-      "id": "CVE-2026-16578",
-      "description": "The Admin Safety Guard \u2014 Login Security, Limit Logins, 2FA & Brute Force Protection WordPress plugin before 1.4.0 does not perform any capability check on one of its REST API endpoints, allowing unauthenticated attackers to retrieve the full list of registered users including their usernames, email ",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/c02393ee-1ade-433e-bbd0-c09785e5c426/"
-      ],
-      "published": "2026-08-08T07:17:10.573"
-    },
-    {
       "id": "CVE-2026-16589",
       "description": "The WP Directory Kit WordPress plugin before 1.5.5 does not sanitize and escape a parameter before using it in a SQL statement through one of its authenticated AJAX actions, which lacks authorization and nonce checks, allowing any authenticated user such as a Subscriber to perform SQL injection atta",
       "severity": "UNKNOWN",
@@ -215,39 +267,6 @@
         "https://wpscan.com/vulnerability/6ee8c3b7-5ffe-4b9e-877a-ea3e1924e8d3/"
       ],
       "published": "2026-08-08T07:17:10.687"
-    },
-    {
-      "id": "CVE-2026-16590",
-      "description": "The WP Directory Kit WordPress plugin before 1.5.5 does not perform authorization or nonce checks on one of its authenticated AJAX actions, allowing any authenticated user such as a Subscriber to retrieve stored contact messages and associated user data belonging to other users.",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/ddf13b08-4ee2-46a1-929c-1f435e9e49d4/"
-      ],
-      "published": "2026-08-08T07:17:10.807"
-    },
-    {
-      "id": "CVE-2026-16594",
-      "description": "The WP Directory Kit WordPress plugin before 1.5.5 does not perform authorization or nonce checks on one of its authenticated AJAX actions, allowing any authenticated user such as a Subscriber to disclose the WP Directory Kit WordPress plugin before 1.5.5 settings including sensitive API keys and se",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/d055d385-7e8a-4179-aa21-f07e240fd181/"
-      ],
-      "published": "2026-08-08T07:17:10.910"
-    },
-    {
-      "id": "CVE-2026-16595",
-      "description": "The WP Directory Kit WordPress plugin before 1.5.5 does not perform authorization or nonce checks on one of its authenticated AJAX actions, allowing any authenticated user such as a Subscriber to disclose the site's user list and unpublished listings belonging to other users.",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/e960f5b2-18e9-436b-8828-6a105c7f9dd5/"
-      ],
-      "published": "2026-08-08T07:17:11.020"
     },
     {
       "id": "CVE-2026-16608",
