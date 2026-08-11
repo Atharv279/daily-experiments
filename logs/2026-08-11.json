@@ -1,0 +1,361 @@
+{
+  "timestamp": "2026-08-11T03:57:27.645701+00:00",
+  "scan_id": "8414832035",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 10,
+      "HIGH": 1,
+      "MEDIUM": 7,
+      "LOW": 1,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-78",
+        10
+      ],
+      [
+        "CWE-22",
+        7
+      ],
+      [
+        "CWE-23",
+        1
+      ],
+      [
+        "CWE-74",
+        1
+      ],
+      [
+        "CWE-77",
+        1
+      ]
+    ],
+    "threat_index": 490.2,
+    "critical_count": 10
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 490.2,
+        "yesterday": 159.0,
+        "change_pct": 208.3
+      },
+      "critical_count": {
+        "today": 10,
+        "yesterday": 1,
+        "change_pct": 900.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-71984",
+      "description": "MSI Radix AXE6600 router firmware version v781521 contains a command injection vulnerability in the urlfilter function that allows remote attackers to execute arbitrary commands on the affected device. Attackers can exploit the urlfilter function to inject malicious commands and obtain root privileg",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://us.msi.com/Networking/RadiX-AXE6600-WiFi-6E-Tri-Band-Gaming-Router/support",
+        "https://www.msi.com/",
+        "https://www.vulncheck.com/advisories/msi-radix-axe6600-v781521-command-injection-via-urlfilter"
+      ],
+      "published": "2026-08-09T00:16:47.207"
+    },
+    {
+      "id": "CVE-2026-71985",
+      "description": "MSI Radix AXE6600 router firmware version v781521 contains a command injection vulnerability in the accesscontrol function that allows remote attackers to execute arbitrary commands on the affected device. Attackers can exploit this vulnerability through the accesscontrol function to execute malicio",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://us.msi.com/Networking/RadiX-AXE6600-WiFi-6E-Tri-Band-Gaming-Router/support",
+        "https://www.msi.com/",
+        "https://www.vulncheck.com/advisories/msi-radix-axe6600-v781521-command-injection-via-accesscontrol-function"
+      ],
+      "published": "2026-08-09T00:16:47.360"
+    },
+    {
+      "id": "CVE-2026-71986",
+      "description": "MSI Radix AXE6600 router firmware version v781521 contains a command injection vulnerability in the dmz function that allows remote attackers to execute arbitrary commands on the affected device. Attackers can exploit this vulnerability through the dmz function to execute malicious commands and obta",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://us.msi.com/Networking/RadiX-AXE6600-WiFi-6E-Tri-Band-Gaming-Router/support",
+        "https://www.msi.com/",
+        "https://www.vulncheck.com/advisories/msi-radix-axe6600-v781521-command-injection-via-dmz-function"
+      ],
+      "published": "2026-08-09T00:16:47.500"
+    },
+    {
+      "id": "CVE-2026-71987",
+      "description": "MSI Radix AXE6600 router firmware version v781521 contains a command injection vulnerability in the alg function that allows remote attackers to execute arbitrary commands on the affected device. Attackers can exploit this vulnerability through the alg function to execute malicious commands and obta",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://us.msi.com/Networking/RadiX-AXE6600-WiFi-6E-Tri-Band-Gaming-Router/support",
+        "https://www.msi.com/",
+        "https://www.vulncheck.com/advisories/msi-radix-axe6600-v781521-command-injection-via-alg-function"
+      ],
+      "published": "2026-08-09T00:16:47.637"
+    },
+    {
+      "id": "CVE-2026-71988",
+      "description": "MSI Radix AXE6600 router firmware version v781521 contains a command injection vulnerability in the portFw function that allows remote attackers to execute arbitrary commands on the affected device. Attackers can exploit this vulnerability through the alg function to execute malicious commands and o",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://us.msi.com/Networking/RadiX-AXE6600-WiFi-6E-Tri-Band-Gaming-Router/support",
+        "https://www.msi.com/",
+        "https://www.vulncheck.com/advisories/msi-radix-axe6600-v781521-command-injection-via-portfw-function"
+      ],
+      "published": "2026-08-09T00:16:47.780"
+    },
+    {
+      "id": "CVE-2026-71989",
+      "description": "MSI Radix AXE6600 router firmware version v781521 contains a command injection vulnerability in the porTrigger function that allows remote attackers to execute arbitrary commands on the affected device. Attackers can exploit this vulnerability through the alg function to execute malicious commands a",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://us.msi.com/Networking/RadiX-AXE6600-WiFi-6E-Tri-Band-Gaming-Router/support",
+        "https://www.msi.com/",
+        "https://www.vulncheck.com/advisories/msi-radix-axe6600-v781521-command-injection-via-portrigger-function"
+      ],
+      "published": "2026-08-09T00:16:47.953"
+    },
+    {
+      "id": "CVE-2026-71990",
+      "description": "MSI Radix AXE6600 router firmware version v781521 contains a command injection vulnerability in the TelnetSSH function used for SSH configuration that allows remote attackers to execute arbitrary commands on the affected device. Attackers can exploit this vulnerability through the SSH configuration ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://us.msi.com/Networking/RadiX-AXE6600-WiFi-6E-Tri-Band-Gaming-Router/support",
+        "https://www.msi.com/",
+        "https://www.vulncheck.com/advisories/msi-radix-axe6600-v781521-command-injection-via-telnetssh-function"
+      ],
+      "published": "2026-08-09T00:16:48.130"
+    },
+    {
+      "id": "CVE-2026-71991",
+      "description": "MSI Radix AXE6600 router firmware version v781521 contains a command injection vulnerability in the TelnetSSH function used for Telnet configuration that allows remote attackers to execute arbitrary commands on the affected device. Attackers can exploit this vulnerability through the Telnet configur",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://us.msi.com/Networking/RadiX-AXE6600-WiFi-6E-Tri-Band-Gaming-Router/support",
+        "https://www.msi.com/",
+        "https://www.vulncheck.com/advisories/msi-radix-axe6600-v781521-command-injection-via-telnetssh-function-used-for-telnet-configuration"
+      ],
+      "published": "2026-08-09T00:16:48.270"
+    },
+    {
+      "id": "CVE-2026-71992",
+      "description": "MSI Radix AXE6600 router firmware version v781521 contains a command injection vulnerability in the macfilter function that allows remote attackers to execute arbitrary commands on the affected device. Attackers can exploit the macfilter function to inject malicious commands and obtain root privileg",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://us.msi.com/Networking/RadiX-AXE6600-WiFi-6E-Tri-Band-Gaming-Router/support",
+        "https://www.msi.com/",
+        "https://www.vulncheck.com/advisories/msi-radix-axe6600-v781521-command-injection-via-macfilter"
+      ],
+      "published": "2026-08-09T00:16:48.410"
+    },
+    {
+      "id": "CVE-2026-71993",
+      "description": "MSI Radix AXE6600 router firmware version v781521 contains a command injection vulnerability in the openvpn function that allows remote attackers to execute arbitrary commands on the affected device. Attackers can exploit the macfilter function to inject malicious commands and obtain root privileges",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://us.msi.com/Networking/RadiX-AXE6600-WiFi-6E-Tri-Band-Gaming-Router/support",
+        "https://www.msi.com/",
+        "https://www.vulncheck.com/advisories/msi-radix-axe6600-v781521-command-injection-via-openvpn-function"
+      ],
+      "published": "2026-08-09T00:16:48.550"
+    },
+    {
+      "id": "CVE-2026-10595",
+      "description": "A path traversal vulnerability exists in parisneo/lollms version 2.1.0, specifically in the SPA catch-all route implemented in `backend/routers/ui.py`. The vulnerability arises from the improper handling of user-controlled path input, which is directly joined into a filesystem path without sanitizat",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-23"
+      ],
+      "references": [
+        "https://github.com/parisneo/lollms/commit/9bc6431ae7b708da76d51e7626a7cf48ff2b1d24",
+        "https://huntr.com/bounties/af3f40a3-38a1-49d8-a5ae-3d72b9b05b98",
+        "https://huntr.com/bounties/af3f40a3-38a1-49d8-a5ae-3d72b9b05b98"
+      ],
+      "published": "2026-08-09T04:17:29.400"
+    },
+    {
+      "id": "CVE-2026-19323",
+      "description": "A security flaw has been discovered in azer react-analyzer-mcp up to 335f2a3585f265e2e88352b59b10d3b478d678b0. Affected by this vulnerability is the function generateProjectDocs of the file src/index.ts of the component analyze-projec. The manipulation of the argument projectName results in path tra",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/azer/react-analyzer-mcp/",
+        "https://github.com/azer/react-analyzer-mcp/issues/3",
+        "https://vuldb.com/cve/CVE-2026-19323"
+      ],
+      "published": "2026-08-09T00:16:47.010"
+    },
+    {
+      "id": "CVE-2026-19325",
+      "description": "A security vulnerability has been detected in IncomeStreamSurfer roo-code-memory-bank-mcp-server up to 9dcb2fb5e6b65a35ac1983885a6d4e5621a0081e. This affects the function readMemoryBankFile/appendMemoryBankEntry of the file src/index.ts of the component read_memory_bank_file/append_memory_bank_entry",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/IncomeStreamSurfer/roo-code-memory-bank-mcp-server/",
+        "https://github.com/IncomeStreamSurfer/roo-code-memory-bank-mcp-server/issues/7",
+        "https://vuldb.com/cve/CVE-2026-19325"
+      ],
+      "published": "2026-08-09T03:16:56.687"
+    },
+    {
+      "id": "CVE-2026-19327",
+      "description": "A flaw has been found in abracadabra50 claude-sesh 1.0.0. This issue affects the function getEnrichedData/enrichSession of the file src/services/enricher.ts. Executing a manipulation of the argument sessionId can lead to path traversal. The attack needs to be launched locally. This patch is called 7",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/abracadabra50/claude-sesh/",
+        "https://github.com/abracadabra50/claude-sesh/commit/786c9d74800e6d0858b65778f31beb71b3983a50",
+        "https://github.com/abracadabra50/claude-sesh/issues/2"
+      ],
+      "published": "2026-08-09T03:16:57.057"
+    },
+    {
+      "id": "CVE-2026-19328",
+      "description": "A vulnerability has been found in aktsmm skill-ninja-mcp-server 0.1.0. Impacted is the function getInstalledSkills/installSkill/updateAgentsMd/uninstallSkill of the file src/installer.ts. The manipulation of the argument workspacePath leads to path traversal. The attack needs to be performed locally",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/aktsmm/skill-ninja-mcp-server/",
+        "https://github.com/aktsmm/skill-ninja-mcp-server/commit/855b46739e0f6e8388f17f9d0066ac4298a3965d",
+        "https://github.com/aktsmm/skill-ninja-mcp-server/issues/2"
+      ],
+      "published": "2026-08-09T03:16:57.243"
+    },
+    {
+      "id": "CVE-2026-19329",
+      "description": "A vulnerability was found in andreahaku codex_mcp up to 1ff521cc6cc57cfe56ddef946c644b8534771390. The affected element is an unknown function of the file src/codex-process-simple.ts of the component ask MCP Tool. The manipulation of the argument model results in command injection. The attack require",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/andreahaku/codex_mcp/",
+        "https://github.com/andreahaku/codex_mcp/issues/1",
+        "https://vuldb.com/cve/CVE-2026-19329"
+      ],
+      "published": "2026-08-09T04:17:37.780"
+    },
+    {
+      "id": "CVE-2026-19330",
+      "description": "A vulnerability was determined in angrysky56 advanced-reasoning-mcp 1.0.0. The impacted element is the function create_system_json/create_library to get_system_json/switch_memory_library of the file src/index.ts. This manipulation causes path traversal. The attack requires local access. The project ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/angrysky56/advanced-reasoning-mcp/",
+        "https://github.com/angrysky56/advanced-reasoning-mcp/issues/3",
+        "https://vuldb.com/cve/CVE-2026-19330"
+      ],
+      "published": "2026-08-09T04:17:42.917"
+    },
+    {
+      "id": "CVE-2026-19326",
+      "description": "A vulnerability was detected in Jevon-Zhong Ai-doctor 0.0.1. This vulnerability affects the function deleteImage of the file ai-doctor-server/src/filemanagement/filemanagement.service.ts. Performing a manipulation of the argument imagePath results in path traversal. The attack must be initiated from",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/Jevon-Zhong/Ai-doctor/",
+        "https://github.com/Jevon-Zhong/Ai-doctor/issues/1",
+        "https://vuldb.com/cve/CVE-2026-19326"
+      ],
+      "published": "2026-08-09T03:16:56.873"
+    },
+    {
+      "id": "CVE-2026-19324",
+      "description": "A weakness has been identified in HelloGGX shadcn-vue-mcp up to e170e277b94235cde627803277fc8c41103a4d38. Affected by this issue is the function fs.promises.readFile of the file src/server/callback-server.ts. This manipulation of the argument filepath causes path traversal. The attack is restricted ",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/HelloGGX/shadcn-vue-mcp/",
+        "https://github.com/HelloGGX/shadcn-vue-mcp/issues/14",
+        "https://vuldb.com/cve/CVE-2026-19324"
+      ],
+      "published": "2026-08-09T03:16:56.377"
+    },
+    {
+      "id": "CVE-2026-17510",
+      "description": "Crypt::OpenSSL::PKCS12 versions before 1.98 for Perl allow a NULL pointer dereference in print_attribute via a zero length BMPSTRING attribute.\n\nprint_attribute() sizes the destination buffer for a BMPSTRING attribute from its declared byte length with `Renew(*attribute, length, char)`. A zero lengt",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/dsully/perl-crypt-openssl-pkcs12/commit/6cb282d8d8e8ded4859551cd2d3cfa7c6028ce48.patch",
+        "https://metacpan.org/release/JONASBN/Crypt-OpenSSL-PKCS12-1.98/source/Changes.md",
+        "http://www.openwall.com/lists/oss-security/2026/08/09/1"
+      ],
+      "published": "2026-08-09T02:16:34.117"
+    }
+  ]
+}
