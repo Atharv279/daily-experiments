@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-08-12T09:34:19.953274+00:00",
-  "scan_id": "f874e3686a",
+  "timestamp": "2026-08-12T15:24:23.269290+00:00",
+  "scan_id": "cf6b9b5534",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
-      "HIGH": 8,
+      "HIGH": 9,
       "MEDIUM": 6,
       "LOW": 3,
-      "UNKNOWN": 3
+      "UNKNOWN": 2
     },
     "top_cwes": [
       [
@@ -31,7 +31,7 @@
         1
       ]
     ],
-    "threat_index": 250.4,
+    "threat_index": 272.0,
     "critical_count": 0
   },
   "delta": {
@@ -43,9 +43,9 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 250.4,
+        "today": 272.0,
         "yesterday": 490.2,
-        "change_pct": -48.9
+        "change_pct": -44.5
       },
       "critical_count": {
         "today": 0,
@@ -159,6 +159,19 @@
         "https://vuldb.com/submit/867120"
       ],
       "published": "2026-08-10T03:16:40.050"
+    },
+    {
+      "id": "CVE-2026-13170",
+      "description": "The Eventin  WordPress plugin before 4.1.20 does not properly validate a template path setting before using it to include a local file, allowing users with editor-level access and above to include and execute arbitrary local PHP files.",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/c7bdaa80-a446-4c72-be79-bfc5022a4eca/"
+      ],
+      "published": "2026-08-10T07:16:46.360"
     },
     {
       "id": "CVE-2026-19389",
@@ -331,17 +344,6 @@
         "https://line.github.io/security-advisory-blog/CVE-2026-13133/"
       ],
       "published": "2026-08-10T07:16:46.173"
-    },
-    {
-      "id": "CVE-2026-13170",
-      "description": "The Eventin  WordPress plugin before 4.1.20 does not properly validate a template path setting before using it to include a local file, allowing users with editor-level access and above to include and execute arbitrary local PHP files.",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/c7bdaa80-a446-4c72-be79-bfc5022a4eca/"
-      ],
-      "published": "2026-08-10T07:16:46.360"
     }
   ]
 }
