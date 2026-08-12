@@ -1,0 +1,347 @@
+{
+  "timestamp": "2026-08-12T04:20:02.719007+00:00",
+  "scan_id": "c2e6013564",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 8,
+      "MEDIUM": 6,
+      "LOW": 3,
+      "UNKNOWN": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-266",
+        2
+      ],
+      [
+        "CWE-918",
+        2
+      ],
+      [
+        "CWE-79",
+        2
+      ],
+      [
+        "CWE-287",
+        1
+      ],
+      [
+        "CWE-269",
+        1
+      ]
+    ],
+    "threat_index": 250.4,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 250.4,
+        "yesterday": 490.2,
+        "change_pct": -48.9
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 10,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-13600",
+      "description": "The AutoNetTV Relay WordPress plugin before 3.0.14 does not perform any capability or authentication check before setting a WordPress administrator authentication cookie during its scheduled content-synchronization task. On server configurations where the scheduled task executes before the HTTP resp",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/2f69e28f-cc9f-422e-a014-662f3fddfad3/"
+      ],
+      "published": "2026-08-10T07:16:46.473"
+    },
+    {
+      "id": "CVE-2026-19381",
+      "description": "A security flaw has been discovered in Kingston FURY CTRL RGB Control Software 2.0.65.0. The impacted element is an unknown function in the library NTIOLib_KSFX.sys of the component Driver. Performing a manipulation results in improper privilege management. The attack needs to be approached locally.",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-266",
+        "CWE-269"
+      ],
+      "references": [
+        "https://drive.google.com/file/d/19a8Qix5YVMNy8TH5k4PWiu0FQLtPRsJp/view?usp=sharing;https://drive.google.com/file/d/1Vqw9d9jkKbl4r2dC1Ry5m_1uzL5JV25H/view?usp=sharing",
+        "https://vuldb.com/cve/CVE-2026-19381",
+        "https://vuldb.com/submit/866727"
+      ],
+      "published": "2026-08-10T01:16:48.367"
+    },
+    {
+      "id": "CVE-2026-19387",
+      "description": "A heap out-of-bounds write vulnerability was found in the GStreamer gst-plugins-bad adpcmdec element when decoding IMA/DVI ADPCM audio. Insufficient validation of the per-block sample count for multi-channel streams allows a crafted WAV file to cause writes beyond the allocated output buffer. This c",
+      "severity": "HIGH",
+      "score": 7.6,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-19387",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2513015",
+        "https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/12235"
+      ],
+      "published": "2026-08-10T03:16:40.223"
+    },
+    {
+      "id": "CVE-2026-14206",
+      "description": "The HT Contact Form  WordPress plugin before 2.9.3 does not perform any authorization check on the endpoint that returns a saved form draft, allowing unauthenticated users to read the personal data (name, email, phone, address) stored in form drafts.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/36ae857c-6812-46e0-a0e7-6c868108ef39/"
+      ],
+      "published": "2026-08-10T07:16:46.710"
+    },
+    {
+      "id": "CVE-2026-19376",
+      "description": "A vulnerability has been found in Uasoft Badaso 3.0.0-alpha. This vulnerability affects the function ApiRequest::class of the file src/Routes/api.php of the component File API. The manipulation leads to permission issues. It is possible to initiate the attack remotely. The exploit has been disclosed",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-275"
+      ],
+      "references": [
+        "https://github.com/uasoft-indonesia/badaso/issues/1100",
+        "https://vuldb.com/cve/CVE-2026-19376",
+        "https://vuldb.com/submit/866302"
+      ],
+      "published": "2026-08-10T00:17:10.847"
+    },
+    {
+      "id": "CVE-2026-19379",
+      "description": "A vulnerability was determined in EFM ipTIME AX8004M 15.09.0. Impacted is the function popen of the file /cgi/d.cgi of the component CGI Endpoint. This manipulation of the argument fname causes os command injection. The attack can be initiated remotely. The exploit has been publicly disclosed and ma",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/seting-and-break/vulnerability-reports/blob/main/ipTIME_AX8004M_Vulnerability_Report.md",
+        "https://vuldb.com/cve/CVE-2026-19379",
+        "https://vuldb.com/submit/866635"
+      ],
+      "published": "2026-08-10T01:16:47.980"
+    },
+    {
+      "id": "CVE-2026-19384",
+      "description": "A weakness has been identified in SourceCodester Simple Doctors Appointment System 1.0. The affected element is an unknown function of the file /admin/ajax.php?action=set_appointment. This manipulation of the argument ID causes sql injection. The attack may be initiated remotely. The exploit has bee",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/HZFW2026/cve/issues/2",
+        "https://vuldb.com/cve/CVE-2026-19384",
+        "https://vuldb.com/submit/867120"
+      ],
+      "published": "2026-08-10T03:16:40.050"
+    },
+    {
+      "id": "CVE-2026-19389",
+      "description": "Multiple integer overflow and underflow vulnerabilities were found in the GStreamer gst-plugins-ugly ASF demuxer (asfdemux) when parsing header objects from crafted ASF, WMV, or WMA files. Insufficient validation of attacker-controlled length and size values can bypass bounds checks and cause out-of",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-19389",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2513016",
+        "https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/12233"
+      ],
+      "published": "2026-08-10T03:16:40.380"
+    },
+    {
+      "id": "CVE-2026-19375",
+      "description": "A vulnerability was detected in dmitriiweb article-scraper-mcp 1.0.0. This vulnerability affects the function fetch_article of the file news_scraper_mcp/server.py. The manipulation of the argument url results in server-side request forgery. The attack may be performed from remote. The exploit is now",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/dmitriiweb/article-scraper-mcp/",
+        "https://github.com/dmitriiweb/article-scraper-mcp/issues/3",
+        "https://vuldb.com/cve/CVE-2026-19375"
+      ],
+      "published": "2026-08-10T00:17:09.677"
+    },
+    {
+      "id": "CVE-2026-72522",
+      "description": "libexpat before 2.8.3 has an out-of-bounds read and resultant infinite loop because low surrogates are treated the same as high surrogates during Unicode processing in the *_toUtf16 functions.",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://bugzilla.mozilla.org/show_bug.cgi?id=2053153",
+        "https://github.com/libexpat/libexpat/pull/1296",
+        "http://www.openwall.com/lists/oss-security/2026/08/11/5"
+      ],
+      "published": "2026-08-10T04:16:50.910"
+    },
+    {
+      "id": "CVE-2026-12570",
+      "description": "A vulnerability in keras-team/keras versions <= 3.15.0 allows for a denial of service (DoS) attack when loading malicious .keras model files via the keras.models.load_model() function. The H5IOStore.__getitem__ method in keras/src/saving/saving_lib.py does not validate the shape or size of datasets,",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/keras-team/keras/commit/4933ea4a5b3fcc24ceacdc276f5bb5dfbd06756c",
+        "https://huntr.com/bounties/a064f475-780a-409a-82f7-678512f27ad8",
+        "https://huntr.com/bounties/a064f475-780a-409a-82f7-678512f27ad8"
+      ],
+      "published": "2026-08-10T07:16:44.370"
+    },
+    {
+      "id": "CVE-2026-13701",
+      "description": "The Advanced Excerpt WordPress plugin before 4.5 does not sanitise and escape one of its settings before outputting it on the front end of the site, which could allow administrators (including those without the unfiltered_html capability, such as on multisite) to perform Stored Cross-Site Scripting ",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/2710686c-055c-460c-8480-573e394f24d8/"
+      ],
+      "published": "2026-08-10T07:16:46.597"
+    },
+    {
+      "id": "CVE-2026-19383",
+      "description": "A security vulnerability has been detected in saithink/saigroup SaiAdmin up to 5.0.1. This impacts the function shell_exec of the file /app/saipackage/install/upload of the component Plugin Upload Endpoint. The manipulation leads to unrestricted upload. Remote exploitation of the attack is possible.",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/sign9981/CVE/issues/1",
+        "https://vuldb.com/cve/CVE-2026-19383",
+        "https://vuldb.com/submit/866981"
+      ],
+      "published": "2026-08-10T02:16:43.910"
+    },
+    {
+      "id": "CVE-2026-19378",
+      "description": "A vulnerability was found in code-projects Task Management System 1.0. This issue affects some unknown processing of the file /user/CommentSave.php. The manipulation of the argument comment/task_id/mineId/recId/myName/myImage results in cross site scripting. It is possible to launch the attack remot",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/littleRain1355/PHPissue/issues/5",
+        "https://vuldb.com/cve/CVE-2026-19378"
+      ],
+      "published": "2026-08-10T00:17:11.023"
+    },
+    {
+      "id": "CVE-2026-19380",
+      "description": "A vulnerability was identified in Mullvad wireguard.sys 0.10.1. The affected element is the function AdapterState of the component IOCTL Handler. Such manipulation leads to improper update of reference count. Local access is required to approach this attack. The exploit is publicly available and mig",
+      "severity": "LOW",
+      "score": 2.3,
+      "cwes": [
+        "CWE-664",
+        "CWE-911"
+      ],
+      "references": [
+        "https://drive.google.com/file/d/1LN68wxIx_2EI4IBVq13UlP4G1aqyz--x/view?usp=sharing",
+        "https://vuldb.com/cve/CVE-2026-19380",
+        "https://vuldb.com/submit/866726"
+      ],
+      "published": "2026-08-10T01:16:48.163"
+    },
+    {
+      "id": "CVE-2026-19382",
+      "description": "A weakness has been identified in Almico Speedfan 4.52. This affects the function KiSystemCall64 in the library speedfan.sys of the component MSR Index Handler. Executing a manipulation can lead to memory leak. The attack can only be executed locally. The exploit has been made available to the publi",
+      "severity": "LOW",
+      "score": 2.3,
+      "cwes": [
+        "CWE-401",
+        "CWE-404"
+      ],
+      "references": [
+        "https://drive.google.com/file/d/18ocvgZ9aYGpaqMuojNH1jzVpQ1AJBI7d/view?usp=sharing",
+        "https://vuldb.com/cve/CVE-2026-19382",
+        "https://vuldb.com/submit/866833"
+      ],
+      "published": "2026-08-10T01:16:48.537"
+    },
+    {
+      "id": "CVE-2026-12971",
+      "description": "The LearnPress  WordPress plugin before 4.4.4 does not validate a user-supplied URL before the server fetches it, allowing users with the instructor role to induce the server to issue requests to arbitrary external hosts, a blind and bounded server-side request forgery.",
+      "severity": "LOW",
+      "score": 2.2,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/ef69bd9d-ec2a-4526-b2b9-51948fa76980/"
+      ],
+      "published": "2026-08-10T07:16:46.043"
+    },
+    {
+      "id": "CVE-2026-17519",
+      "description": "Rejected reason: This is rejected.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-10T06:16:42.693"
+    },
+    {
+      "id": "CVE-2026-13133",
+      "description": "A vulnerability has been identified in LineInst.exe (LINE for Windows) prior to version 26.4.0, where Msftedit.dll is loaded via a relative path without a secure DLL search path, allowing a malicious DLL placed in the installer's directory to be loaded ahead of the legitimate System32 copy.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-427"
+      ],
+      "references": [
+        "https://line.github.io/security-advisory-blog/CVE-2026-13133/"
+      ],
+      "published": "2026-08-10T07:16:46.173"
+    },
+    {
+      "id": "CVE-2026-13170",
+      "description": "The Eventin  WordPress plugin before 4.1.20 does not properly validate a template path setting before using it to include a local file, allowing users with editor-level access and above to include and execute arbitrary local PHP files.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/c7bdaa80-a446-4c72-be79-bfc5022a4eca/"
+      ],
+      "published": "2026-08-10T07:16:46.360"
+    }
+  ]
+}
