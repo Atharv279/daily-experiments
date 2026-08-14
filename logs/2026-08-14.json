@@ -1,0 +1,312 @@
+{
+  "timestamp": "2026-08-14T04:20:34.937313+00:00",
+  "scan_id": "fe0cf62c1e",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 6,
+      "MEDIUM": 2,
+      "UNKNOWN": 11
+    },
+    "top_cwes": [
+      [
+        "CWE-119",
+        2
+      ],
+      [
+        "CWE-122",
+        1
+      ],
+      [
+        "CWE-120",
+        1
+      ]
+    ],
+    "threat_index": 207.4,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 207.4,
+        "yesterday": 312.0,
+        "change_pct": -33.5
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 2,
+        "change_pct": -50.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-68431",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: validate minimum PDU size for transform requests\n\nThe receive path applies the minimum SMB2 PDU size check only when\nProtocolId is SMB2_PROTO_NUMBER. A packet carrying\nSMB2_TRANSFORM_PROTO_NUM bypasses the check even when th",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/b62c510f59803f82f9b4c76ead2a56833b2984c7",
+        "https://git.kernel.org/stable/c/cfc0b8e5080aec87700774e8568765eaa4b7b92b"
+      ],
+      "published": "2026-08-12T00:17:43.180"
+    },
+    {
+      "id": "CVE-2026-68432",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nvxlan: require CAP_NET_ADMIN in the device netns for changelink\n\nA tunnel changelink() operates on at most two netns, dev_net(dev) and\nthe sticky underlay netns vxlan->net. They differ once the device is\ncreated in or moved to a ne",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/32d10c46bfde3e9b274e9e1bd6399d0ebea8f60f",
+        "https://git.kernel.org/stable/c/3a61bd9637f3d929aa846e4eb3d98b48c26fcb0e",
+        "https://git.kernel.org/stable/c/730c7e5fea7f06e0cdf21c547222ec93234fd1d6"
+      ],
+      "published": "2026-08-12T00:17:43.290"
+    },
+    {
+      "id": "CVE-2026-68433",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nlibceph: bound get_version reply decode to front len\n\nhandle_get_version_reply() uses msg->front_alloc_len as the decode\nboundary for MON_GET_VERSION_REPLY.  That is the size of the reused\nreply buffer, not the number of bytes actu",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/0d934c934ec746d53fc7e4f53239792647bbae63",
+        "https://git.kernel.org/stable/c/340e0386aa39da181015bee38f309018c335ce16",
+        "https://git.kernel.org/stable/c/4e7ebfaa0d14cf50e44041bfde38070d6dbc019f"
+      ],
+      "published": "2026-08-12T00:17:43.403"
+    },
+    {
+      "id": "CVE-2026-68440",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: txgbe: fix heap overflow when reading module EEPROM\n\ntxgbe_read_eeprom_hostif() always copies round_up(length, 4) bytes\ninto the caller buffer, which ethtool allocates with exactly 'length'\nbytes. A non-4-aligned length theref",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/6a905a71fd43ce8b45f05044b11491337f232c9d",
+        "https://git.kernel.org/stable/c/febcced6958158e7e90a55a8567b3f5c3639c0b9"
+      ],
+      "published": "2026-08-12T00:17:44.247"
+    },
+    {
+      "id": "CVE-2026-68442",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbtrfs: don't propagate EXTENT_FLAG_LOGGING to split extent maps\n\nWhen btrfs_drop_extent_map_range() splits an extent map, the new split\nmaps inherit the original map's flags through a local 'flags' variable.\nCommit f86f7a75e2fb (\"b",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/0e465c63f103a5ce6849614d6bda048d70eebec8",
+        "https://git.kernel.org/stable/c/2a9246a424f45f33a1b8367052611ebe874868ad",
+        "https://git.kernel.org/stable/c/5eff4d5b17fa1950e80bfd1ba43dc0699e61a644"
+      ],
+      "published": "2026-08-12T00:17:44.477"
+    },
+    {
+      "id": "CVE-2026-68445",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/vc4: Prevent shader BO mappings from becoming writable\n\nvc4_gem_object_mmap() rejects a writable mapping of a validated shader\nBO, but leaves VM_MAYWRITE set.  Userspace can map the BO read-only and\nthen turn it writable with m",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/019e6ad247f7fd038d2e009789f6d9bfcccb1ae7",
+        "https://git.kernel.org/stable/c/0c9e6367639548307d3f578f6943ce72c9d39087",
+        "https://git.kernel.org/stable/c/6deaa317201851c644c431b57682e54d06b35838"
+      ],
+      "published": "2026-08-12T00:17:44.860"
+    },
+    {
+      "id": "CVE-2026-68446",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/vmwgfx: Validate vmw_surface_metadata::array_size\n\nThis field comes from userspace and should be validated against specific\nlimits depending on which Shader Model (SM) is available.",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/5ff94e1279176b539d451e3e754fdcbd1a8d520a",
+        "https://git.kernel.org/stable/c/6910ccaf41678f7761ba2e57d72b77d056320b4d",
+        "https://git.kernel.org/stable/c/71779fe8bf403a9b3e28dc59229fa556db32d35d"
+      ],
+      "published": "2026-08-12T00:17:44.970"
+    },
+    {
+      "id": "CVE-2024-14043",
+      "description": "A vulnerability was determined in Open5GS up to 2.7.1. This vulnerability affects the function mme_s6a_subscription_data_from_avp of the file src/mme/mme-fd-path.c of the component Diameter S6a Interface. Executing a manipulation of the argument msisdn_len can lead to heap-based buffer overflow. It ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/commit/7ea82cb87bb65c3694d8d7c7a5efed1c4d3c9304",
+        "https://github.com/open5gs/open5gs/files/15051238/capture.pcap.gz"
+      ],
+      "published": "2026-08-12T00:17:11.410"
+    },
+    {
+      "id": "CVE-2024-14044",
+      "description": "A vulnerability was identified in Open5GS up to 2.7.1. This issue affects the function pcrf_rx_aar_cb of the file src/pcrf/pcrf-rx-path.c of the component Diameter Rx Handler. The manipulation of the argument num_of_media_component/num_of_sub leads to buffer overflow. The attack can be initiated rem",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/open5gs/open5gs/",
+        "https://github.com/open5gs/open5gs/commit/87b4e4535c77ded627cdb6f4e4e2e3ea761f40b7",
+        "https://github.com/open5gs/open5gs/files/15051247/capture.pcap.gz"
+      ],
+      "published": "2026-08-12T01:17:06.207"
+    },
+    {
+      "id": "CVE-2026-68429",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/dp_mst: Handle torn-down topology gracefully in drm_dp_mst_topology_queue_probe()\n\nA hotplug or link-loss event can tear down the MST topology\n(setting mgr->mst_state = false and mgr->mst_primary = NULL) concurrently\nwith a cal",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/4ed6d08c4a59ee6a8cb806347f6d9873de5d229e",
+        "https://git.kernel.org/stable/c/613059875958e7b217b250ed14c3b189f9488421",
+        "https://git.kernel.org/stable/c/8c6d84a54823cd839e6ce22af559925f1320c310"
+      ],
+      "published": "2026-08-12T00:17:42.940"
+    },
+    {
+      "id": "CVE-2026-68430",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/gfx8: drop unecessary BUG_ON()\n\nThere's no need to crash the kernel for this case.\n\n(cherry picked from commit 4d7c25208ca612b754f3bf39e9f16e725b828891)",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/2404600dca5c0979485c6f2d9c62bd356a98870a",
+        "https://git.kernel.org/stable/c/84a1a8a952ab4b8c23c5dd1f2eea4049cb4914f5",
+        "https://git.kernel.org/stable/c/ab05af6c345bc8460052c60de657ce6d4a2386f7"
+      ],
+      "published": "2026-08-12T00:17:43.067"
+    },
+    {
+      "id": "CVE-2026-68434",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nserial: 8250_mid: Fix NULL function pointer dereference on DNV/ICX-D/SNR platforms\n\nCommit b1b4efea05a5 (\"serial: 8250_mid: Disable DMA for selected\nplatforms\") replaced the dnv_board setup and exit callbacks with\nPTR_IF(false, ...",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/1096397c31f6bffa95e77bdd18fbca085be83e10",
+        "https://git.kernel.org/stable/c/600dcd548fb2b00a69f447684f52ba45d5a3540e",
+        "https://git.kernel.org/stable/c/7fb13fd7e9a59a37cd911efff83abe19e3ee029d"
+      ],
+      "published": "2026-08-12T00:17:43.520"
+    },
+    {
+      "id": "CVE-2026-68435",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nLoongArch: Fix address space mismatch in kexec command line lookup\n\nWhen searching the loaded segments for the \"kexec\" command line marker,\nthe kexec_load(2) path (file_mode == 0) passes the user-space segment\nbuffer straight to st",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/485ed44db5694d8d2e5027f63ad608e705286f30",
+        "https://git.kernel.org/stable/c/7a54e0cbaad4a5a09e7cc7a4f05d181048e98ca7",
+        "https://git.kernel.org/stable/c/a94d6726ec8680a2b0c453fc782a543f68a1ea06"
+      ],
+      "published": "2026-08-12T00:17:43.650"
+    },
+    {
+      "id": "CVE-2026-68436",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amd/display: use kvzalloc to allocate struct dc\n\nstruct dc has grown large over time (most of it the two inlined\ndc_scratch_space copies) and now sits close to the page allocator's 4 MiB\ncontiguous allocation limit. Its actual ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/75050390151a14802be433c3856ddcb483cecd24",
+        "https://git.kernel.org/stable/c/dbad70d40cad9c5e7586953275287fe7531fb811"
+      ],
+      "published": "2026-08-12T00:17:43.757"
+    },
+    {
+      "id": "CVE-2026-68437",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/imagination: Fit paired fragment job in the correct CCCB\n\nFor geometry jobs with a paired fragment job, at the moment, the\nDRM scheduler's prepare_job() callback:\n\n- checks for internal (driver) dependencies for the geometry jo",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/15a9863929206911a08b6f62de9c5da6931dbc9e",
+        "https://git.kernel.org/stable/c/4baf9e70cb756d78dd56419f8baee2978a72d0c3",
+        "https://git.kernel.org/stable/c/4ddf82c18ee4b3d14ec7fa002c4039b46c961abc"
+      ],
+      "published": "2026-08-12T00:17:43.863"
+    },
+    {
+      "id": "CVE-2026-68438",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmp: Make CSD lock acquisition atomic for debug mode\n\nCommit b0473dcd4b1d (\"smp: Improve smp_call_function_single()\nCSD-lock diagnostics\") changed smp_call_function_single() so that,\nwhen CSD lock debugging is enabled, async !wait ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/282d220bae5fbfc90cf0e3d5b5e42c00ad79f989",
+        "https://git.kernel.org/stable/c/35551efb155e3b83445a6c3f66cb498d5efc182c"
+      ],
+      "published": "2026-08-12T00:17:44.013"
+    },
+    {
+      "id": "CVE-2026-68439",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: mt76: mt7925: fix possible NULL-pointer deref in mt7925_mcu_bss_he_tlv()\n\nmt76_connac_get_he_phy_cap routine can theoretically return NULL so\ncheck cap pointer before dereferencing it.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/313343ab8cab7417973e7bdd43d3c3e93044b447",
+        "https://git.kernel.org/stable/c/42288cca984fb72ad3ebe43d4e7fdce9dcabfdb5",
+        "https://git.kernel.org/stable/c/856f1588a2590e70b119e76c15315615a36aebc8"
+      ],
+      "published": "2026-08-12T00:17:44.120"
+    },
+    {
+      "id": "CVE-2026-68441",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: Handle TC_ACT_REDIRECT from qdisc filter chains\n\nWhen a TC filter attached to a qdisc filter chain returns\nTC_ACT_REDIRECT (ex: via an eBPF program calling bpf_redirect() or an\nact_bpf action), the redirect was silently ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/c8fd74445e86f88096d2f6cf0f9e4d54d8ed1781",
+        "https://git.kernel.org/stable/c/ec48b3be2c8595dd290be883dbd4fb8b2f9f5d5e"
+      ],
+      "published": "2026-08-12T00:17:44.353"
+    },
+    {
+      "id": "CVE-2026-68443",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nhwmon: (gigabyte_waterforce) Stop device IO before calling hid_hw_stop\n\nCalling hid_hw_stop() does not stop the device IO.\nThis results in a race condition between hid_input_report() and the point\nimmediately following the executio",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/0842e9faab04f784d01125085195031252ff9695",
+        "https://git.kernel.org/stable/c/a855f678ba37ef82c4dd22926ad740ecfb8dbedf",
+        "https://git.kernel.org/stable/c/f36e12cc8cfe996d627b8a82bd9df9e43270f6e2"
+      ],
+      "published": "2026-08-12T00:17:44.617"
+    },
+    {
+      "id": "CVE-2026-68444",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfirmware: arm_ffa: Fix NULL dereference in ffa_partition_info_get()\n\nffa_partition_info_get() passes uuid_str directly to uuid_parse()\nwithout a NULL check. When a caller passes NULL, uuid_parse() ->\n__uuid_parse() -> uuid_is_valid",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://git.kernel.org/stable/c/12a42c610e4432e7708cc48d607e5903fffe0aad",
+        "https://git.kernel.org/stable/c/7201e56e52d18abf4cd0a2fee45daf9dc08b5b97",
+        "https://git.kernel.org/stable/c/86f5ea90f73bb7154593bb96f3411e197f3d4fbe"
+      ],
+      "published": "2026-08-12T00:17:44.747"
+    }
+  ]
+}
