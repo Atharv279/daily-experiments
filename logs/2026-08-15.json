@@ -1,0 +1,337 @@
+{
+  "timestamp": "2026-08-15T03:08:31.196023+00:00",
+  "scan_id": "aa4978be8b",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 1,
+      "MEDIUM": 2,
+      "LOW": 1,
+      "UNKNOWN": 14
+    },
+    "top_cwes": [
+      [
+        "CWE-78",
+        2
+      ],
+      [
+        "CWE-522",
+        2
+      ],
+      [
+        "CWE-88",
+        1
+      ],
+      [
+        "CWE-269",
+        1
+      ],
+      [
+        "CWE-306",
+        1
+      ]
+    ],
+    "threat_index": 131.6,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 131.6,
+        "yesterday": 207.4,
+        "change_pct": -36.5
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 1,
+        "change_pct": 100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-16770",
+      "description": "PDF::WebKit versions through 1.2 for Perl allow argument injection into wkhtmltopdf via meta tags in the source document.\n\nFor an HTML string or file source, the constructor collects every <meta name=\"pdf-webkit-KEY\" content=\"VALUE\"> element in the document head through _pdf_webkit_meta_tags and tur",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-88"
+      ],
+      "references": [
+        "https://github.com/kingpong/perl-PDF-WebKit/issues/9",
+        "https://security.metacpan.org/patches/P/PDF-WebKit/1.2/CVE-2026-16770-r1.patch",
+        "https://wkhtmltopdf.org/status.html"
+      ],
+      "published": "2026-08-13T00:17:31.763"
+    },
+    {
+      "id": "CVE-2026-49819",
+      "description": "UpSnap is a wake on lan web app. Versions 4.4.1 through 5.3.5 are vulnerable to a missing-authentication / privilege-escalation chain in `pb.HandlerInitSuperuser` (`backend/pb/handlers.go:249`), reachable as `POST /api/upsnap/init-superuser`. The vulnerable code lacks any authentication, setup token",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78",
+        "CWE-269",
+        "CWE-306",
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/seriousm4x/UpSnap/releases/tag/5.4.0",
+        "https://github.com/seriousm4x/UpSnap/security/advisories/GHSA-w4jr-728f-5jhq",
+        "https://github.com/seriousm4x/UpSnap/security/advisories/GHSA-w4jr-728f-5jhq"
+      ],
+      "published": "2026-08-13T00:17:32.747"
+    },
+    {
+      "id": "CVE-2026-49473",
+      "description": "@cedar-policy/authorization-for-expressjs is an open-source Express.js middleware that integrates Cedar authorization into Express applications by mapping HTTP requests to Cedar actions and evaluating authorization policies before allowing requests to proceed. Versions prior to 0.3.0 have an issue w",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-436",
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/cedar-policy/authorization-for-expressjs/releases/tag/v0.3.0",
+        "https://github.com/cedar-policy/authorization-for-expressjs/security/advisories/GHSA-g4w6-vmgf-xqvx"
+      ],
+      "published": "2026-08-13T00:17:32.587"
+    },
+    {
+      "id": "CVE-2026-50544",
+      "description": "NortheBridge/luminalshine is a Sunshine-compatible game stream host for Moonlight. Prior to version 26.05.0-rc4, a latent gap exists on a default install, the file at `src/platform/windows/misc.cpp` lives at `C:\\ProgramData\\LuminalShine\\config\\apps.json` and is created by the `SYSTEM` service. Under",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-379",
+        "CWE-732"
+      ],
+      "references": [
+        "https://github.com/NortheBridge/luminalshine/security/advisories/GHSA-52q6-5x97-2747"
+      ],
+      "published": "2026-08-13T00:17:32.930"
+    },
+    {
+      "id": "CVE-2026-17431",
+      "description": "PDF::WebKit versions through 1.2 for Perl allow OS command injection via a 2-arg open() of the output path in to_pdf and of stylesheet paths in _style_tag_for.\n\nto_pdf reads the generated PDF back from its path argument, and _style_tag_for reads each entry of the stylesheets list, by assigning the p",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-73",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/kingpong/perl-PDF-WebKit/issues/8",
+        "https://security.metacpan.org/patches/P/PDF-WebKit/1.2/CVE-2026-17431-r1.patch",
+        "https://wkhtmltopdf.org/status.html"
+      ],
+      "published": "2026-08-13T00:17:31.917"
+    },
+    {
+      "id": "CVE-2026-48791",
+      "description": "sigstore-java is a sigstore java client for interacting with sigstore infrastructure. Version 2.0.0 erroneously removed verification of the integrated (Rekor entry) time) against the Fulcio certificate. Version 2.1.0 re-added this verification with enhancements that adhere to the Sigstore verificati",
+      "severity": "LOW",
+      "score": 2.0,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://github.com/sigstore/sigstore-java/commit/4b7a49ebb1813f5b1ff113bcad63246358222d61",
+        "https://github.com/sigstore/sigstore-java/commit/b529335728fc5cfb574161b4b3c06859a8a2aa88",
+        "https://github.com/sigstore/sigstore-java/pull/1008"
+      ],
+      "published": "2026-08-13T00:17:32.407"
+    },
+    {
+      "id": "CVE-2026-46382",
+      "description": "The Meeting Room Booking System (MRBS) is a PHP-based application for booking meeting rooms. Prior to version 1.12.2, a user-supplied private/local URI can be made to be fetched without checks. Version 1.12.2 contains a fix. No known workarounds are available.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/meeting-room-booking-system/mrbs-code/releases/tag/v1.12.2",
+        "https://github.com/meeting-room-booking-system/mrbs-code/security/advisories/GHSA-gh77-mpcm-f8r3"
+      ],
+      "published": "2026-08-13T00:17:32.090"
+    },
+    {
+      "id": "CVE-2026-46688",
+      "description": "The Meeting Room Booking System (MRBS) is a PHP-based application for booking meeting rooms. Prior to version 1.12.2, an unauthenticated request can be made to redirect the user to a query-specified location. This allows an attacker to create a specially-crafted URL to an MRBS installation that will",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-601"
+      ],
+      "references": [
+        "https://github.com/meeting-room-booking-system/mrbs-code/releases/tag/v1.12.2",
+        "https://github.com/meeting-room-booking-system/mrbs-code/security/advisories/GHSA-6xcj-g522-859f"
+      ],
+      "published": "2026-08-13T00:17:32.250"
+    },
+    {
+      "id": "CVE-2026-0289",
+      "description": "A  security bypass vulnerability in the Account Protection feature of Palo Alto Networks Prisma\u00ae Browser enables\u00a0a user to bypass intended security controls.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0289"
+      ],
+      "published": "2026-08-13T03:16:43.107"
+    },
+    {
+      "id": "CVE-2026-0290",
+      "description": "An information disclosure vulnerability in the Account Protection feature of  Palo Alto Networks Prisma\u00ae Browser enables a local attacker to view sensitive data.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0290"
+      ],
+      "published": "2026-08-13T03:16:43.647"
+    },
+    {
+      "id": "CVE-2026-0291",
+      "description": "An improper link resolution before file access vulnerability exists in the Palo Alto Networks Prisma\u00ae Access Agent on Linux platforms that enables a local low privileged user to delete system files in a limited scope and disable Prisma Access Agent.\n\nThe Prisma Access Agent on macOS, Windows, iOS, A",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-59"
+      ],
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0291"
+      ],
+      "published": "2026-08-13T03:16:43.800"
+    },
+    {
+      "id": "CVE-2026-0292",
+      "description": "An authentication bypass vulnerability in the network driver of Palo Alto Networks Prisma\u00ae Access Agent on Windows enables a local administrator to bypass security inspection, subsequently allowing them to  inject and intercept arbitrary network traffic.\n\nThe Prisma Access Agent on Linux, macOS, iOS",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-290"
+      ],
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0292"
+      ],
+      "published": "2026-08-13T03:16:43.983"
+    },
+    {
+      "id": "CVE-2026-0293",
+      "description": "A vulnerability in Palo Alto Networks Prisma\u00ae Access Agent on Windows enables a local attacker with administrator privileges to bypass the anti-tamper protection, enabling unauthorized access to protected processes and files.\n\nThe Prisma Access Agent on Linux, macOS, iOS, Android, and Chrome OS is n",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-693"
+      ],
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0293"
+      ],
+      "published": "2026-08-13T03:16:44.160"
+    },
+    {
+      "id": "CVE-2026-0294",
+      "description": "A privilege escalation (PE) vulnerability in the Palo Alto Networks Prisma\u00ae Access Agent app on Windows and macOS devices enables a local user to execute code with elevated privileges. \n\nThe Prisma Access Agent on Linux, iOS, Android, and ChromeOS is not affected.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-427"
+      ],
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0294"
+      ],
+      "published": "2026-08-13T03:16:44.323"
+    },
+    {
+      "id": "CVE-2026-0295",
+      "description": "A race condition in the Palo Alto Networks GlobalProtect\u2122 client on macOS enables a locally authenticated low-privileged attacker to escalate their privileges to root.\n\nThe GlobalProtect app on Linux, Windows, iOS, Android, and Chrome OS is not affected.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-362"
+      ],
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0295"
+      ],
+      "published": "2026-08-13T03:16:44.493"
+    },
+    {
+      "id": "CVE-2026-0296",
+      "description": "Improper certificate validation vulnerabilities in Palo Alto Networks GlobalProtect\u2122 app enable an unauthenticated attacker with man-in-the-middle (MitM) access to intercept and modify application communications. VPN tunnel traffic is not impacted.\n\nThe GlobalProtect app on iOS, Android, and Chrome ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-295"
+      ],
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0296"
+      ],
+      "published": "2026-08-13T03:16:44.703"
+    },
+    {
+      "id": "CVE-2026-0297",
+      "description": "A buffer overflow vulnerability exists in the Palo Alto Networks GlobalProtect\u2122 app that enables a man-in-the-middle (MitM) attacker or a rogue gateway to disrupt system processes and potentially execute arbitrary code with elevated privileges (SYSTEM privileges on Windows, and root privileges on ma",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0297"
+      ],
+      "published": "2026-08-13T03:16:45.077"
+    },
+    {
+      "id": "CVE-2026-0298",
+      "description": "An improper input validation vulnerability exists in the Windows Pre-Logon Access Provider (PLAP) component of the Palo Alto Networks GlobalProtect\u2122 app on Windows devices which enables a man-in-the-middle (MitM) attacker to execute arbitrary code with SYSTEM privileges on an affected client.\n\nThe G",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0298"
+      ],
+      "published": "2026-08-13T03:16:45.560"
+    },
+    {
+      "id": "CVE-2026-0299",
+      "description": "Local privilege escalation vulnerabilities in the Palo Alto Networks GlobalProtect\u2122 app enable a local user to escalate their privileges to NT AUTHORITY\\SYSTEM on Windows, and root on macOS and Linux. This enables a non-administrative user to execute arbitrary commands with administrative privileges",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-426"
+      ],
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0299"
+      ],
+      "published": "2026-08-13T03:16:45.793"
+    },
+    {
+      "id": "CVE-2026-0301",
+      "description": "An information disclosure vulnerability in the URL Filtering feature of Palo Alto Networks PAN-OS\u00ae software enables an unauthenticated user with network access to obtain sensitive information.\n\nPanorama is not impacted by this vulnerability.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-908"
+      ],
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0301"
+      ],
+      "published": "2026-08-13T03:16:46.097"
+    }
+  ]
+}
