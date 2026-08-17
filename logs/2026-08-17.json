@@ -1,0 +1,358 @@
+{
+  "timestamp": "2026-08-17T03:23:50.699066+00:00",
+  "scan_id": "75c6c4f130",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 3,
+      "HIGH": 7,
+      "MEDIUM": 10
+    },
+    "top_cwes": [
+      [
+        "CWE-89",
+        7
+      ],
+      [
+        "CWE-79",
+        5
+      ],
+      [
+        "CWE-287",
+        2
+      ],
+      [
+        "CWE-269",
+        2
+      ],
+      [
+        "CWE-22",
+        1
+      ]
+    ],
+    "threat_index": 397.3,
+    "critical_count": 3
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 397.3,
+        "yesterday": 333.2,
+        "change_pct": 19.2
+      },
+      "critical_count": {
+        "today": 3,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-15303",
+      "description": "The 6Storage Rentals plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.27.0. This is due to the six_storage_create_wp_user() AJAX handler being registered on wp_ajax_nopriv_six_storage_create_wp_user without any nonce, capability, credential, or ownershi",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/6storage-rentals/tags/2.27.0/inc/Base/Six_Storage_DashboardController.php#L14",
+        "https://plugins.trac.wordpress.org/browser/6storage-rentals/tags/2.27.0/inc/Base/Six_Storage_DashboardController.php#L3834",
+        "https://plugins.trac.wordpress.org/browser/6storage-rentals/tags/2.27.0/inc/Base/Six_Storage_DashboardController.php#L3905"
+      ],
+      "published": "2026-08-15T03:16:47.670"
+    },
+    {
+      "id": "CVE-2026-15341",
+      "description": "The User Session Synchronizer plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all versions up to, and including, 1.4.0. The `synchronize_session()` function, hooked on `init` and therefore executed on every request, performs no nonce, capability, or shared-",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/user-session-synchronizer/tags/1.4.0/includes/class-user-session-synchronizer.php#L117",
+        "https://plugins.trac.wordpress.org/browser/user-session-synchronizer/tags/1.4.0/includes/class-user-session-synchronizer.php#L286",
+        "https://plugins.trac.wordpress.org/browser/user-session-synchronizer/tags/1.4.0/includes/class-user-session-synchronizer.php#L310"
+      ],
+      "published": "2026-08-15T03:16:47.943"
+    },
+    {
+      "id": "CVE-2026-14484",
+      "description": "The RapiSafe \u2013 Secure Multi File Upload for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the handleAjaxRemoveUpload function in all versions up to, and including, 1.0.4. This makes it possible for unauthenticated attackers t",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/rapisafe-multi-file-cf7/trunk/src/RSMFCF7_Assets.php#L201",
+        "https://plugins.trac.wordpress.org/browser/rapisafe-multi-file-cf7/trunk/src/RSMFCF7_Assets.php#L235",
+        "https://plugins.trac.wordpress.org/browser/rapisafe-multi-file-cf7/trunk/src/RSMFCF7_Assets.php#L237"
+      ],
+      "published": "2026-08-15T03:16:47.263"
+    },
+    {
+      "id": "CVE-2026-15001",
+      "description": "The bLoyal: Loyalty & Promotions by bLoyal plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.1.611.78. This is due to the AJAX actions `save_bloyal_configuration_data` and `save_bloyal_accesskeyverification_data` being registered without any capabilit",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/bloyal/tags/3.1.611.78/app/controller/class-bloyalcontroller.php#L2429",
+        "https://plugins.trac.wordpress.org/browser/bloyal/tags/3.1.611.78/app/controller/class-bloyalcontroller.php#L2470",
+        "https://plugins.trac.wordpress.org/browser/bloyal/tags/3.1.611.78/app/controller/class-bloyalcontroller.php#L2512"
+      ],
+      "published": "2026-08-15T03:16:47.393"
+    },
+    {
+      "id": "CVE-2026-15312",
+      "description": "The Propovoice: All-in-One Client Management System plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.7.8. This is due to the `create()` function's REST endpoint failing to validate the user-supplied `role` parameter against an allowlist of permitted ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/propovoice/trunk/includes/Api/Type/Team.php#L169",
+        "https://plugins.trac.wordpress.org/browser/propovoice/trunk/includes/Api/Type/Team.php#L219",
+        "https://plugins.trac.wordpress.org/browser/propovoice/trunk/includes/Api/Type/Team.php#L38"
+      ],
+      "published": "2026-08-15T03:16:47.817"
+    },
+    {
+      "id": "CVE-2026-15965",
+      "description": "The MaxUpload \u2013 Big File Uploads \u2013 Increase Maximum File Upload Size plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.4.0 via the handle_upload function. This is due to a filename-validation mismatch in the handle_upload function where extension and",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/maxupload-upload-larger-files-easily/tags/1.4.0/includes/uploader.php#L121",
+        "https://plugins.trac.wordpress.org/browser/maxupload-upload-larger-files-easily/tags/1.4.0/includes/uploader.php#L174",
+        "https://plugins.trac.wordpress.org/browser/maxupload-upload-larger-files-easily/tags/1.4.0/includes/uploader.php#L19"
+      ],
+      "published": "2026-08-15T03:16:48.077"
+    },
+    {
+      "id": "CVE-2026-15162",
+      "description": "The Object Sync for Salesforce plugin is vulnerable to unauthenticated SQL Injection via the wordpress_object_type parameter of its /wp-json/object-sync-for-salesforce/push/ REST route. The route's permission callback (can_process()) checks only the HTTP method for the push class \u2014 no capability or ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/object-sync-for-salesforce/trunk/classes/class-object-sync-sf-rest.php#L224",
+        "https://plugins.trac.wordpress.org/browser/object-sync-for-salesforce/trunk/classes/class-object-sync-sf-salesforce-push.php#L210",
+        "https://plugins.trac.wordpress.org/browser/object-sync-for-salesforce/trunk/classes/class-object-sync-sf-wordpress.php#L328"
+      ],
+      "published": "2026-08-15T03:16:47.523"
+    },
+    {
+      "id": "CVE-2026-14433",
+      "description": "The Online Booking & Scheduling Calendar for WordPress by vcita plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'business_id' parameter in all versions up to, and including, 4.6.0 due to insufficient input sanitization and output escaping. This makes it possible for unauthe",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/meeting-scheduler-by-vcita/tags/4.6.0/vcita-api-functions.php#L17",
+        "https://plugins.trac.wordpress.org/browser/meeting-scheduler-by-vcita/tags/4.6.0/vcita-api-functions.php#L83",
+        "https://plugins.trac.wordpress.org/browser/meeting-scheduler-by-vcita/tags/4.6.0/vcita-scheduler.php#L379"
+      ],
+      "published": "2026-08-15T03:16:47.130"
+    },
+    {
+      "id": "CVE-2026-13360",
+      "description": "The Cookie Banner for GDPR / CCPA \u2013 WPLP Cookie Consent plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'regionArray' parameter in all versions up to, and including, 4.3.5 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/gdpr-cookie-consent/tags/4.2.7/admin/class-gdpr-cookie-consent-admin.php#L4961",
+        "https://plugins.trac.wordpress.org/browser/gdpr-cookie-consent/tags/4.2.7/includes/class-gdpr-cookie-consent.php#L245",
+        "https://plugins.trac.wordpress.org/browser/gdpr-cookie-consent/tags/4.2.7/public/class-gdpr-cookie-consent-public.php#L209"
+      ],
+      "published": "2026-08-15T04:18:01.957"
+    },
+    {
+      "id": "CVE-2026-16145",
+      "description": "The Invisible Anti-Spam & CAPTCHA \u2014 reCAPTCHA Alternative for All Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'action' parameter in all versions up to, and including, 5.1 due to insufficient input sanitization and output escaping. This makes it possible for unauth",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/gdpr-compliant-recaptcha-for-all-forms/tags/5.0/includes/class-message-page.php#L621",
+        "https://plugins.trac.wordpress.org/browser/gdpr-compliant-recaptcha-for-all-forms/tags/5.0/includes/class-stamp.php#L136",
+        "https://plugins.trac.wordpress.org/browser/gdpr-compliant-recaptcha-for-all-forms/tags/5.0/includes/class-stamp.php#L771"
+      ],
+      "published": "2026-08-15T04:18:10.233"
+    },
+    {
+      "id": "CVE-2026-16080",
+      "description": "The Image Uploader for Welcart plugin for WordPress is vulnerable to generic SQL Injection via the 'post_title' parameter in all versions up to, and including, 1.4.6 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes i",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/image-uploader-for-welcart/tags/1.4.6/image-uploader-for-welcart.php#L26",
+        "https://plugins.trac.wordpress.org/browser/image-uploader-for-welcart/tags/1.4.6/image-uploader-for-welcart.php#L291",
+        "https://plugins.trac.wordpress.org/browser/image-uploader-for-welcart/tags/1.4.6/image-uploader-for-welcart.php#L299"
+      ],
+      "published": "2026-08-15T03:16:48.207"
+    },
+    {
+      "id": "CVE-2026-15453",
+      "description": "The KiviCare \u2013 Clinic & Patient Management System (EHR) plugin for WordPress is vulnerable to generic SQL Injection via the 'searchTerm' parameter in all versions up to, and including, 4.5.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existin",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/kivicare-clinic-management-system/tags/4.5.0/app/controllers/api/SettingsController/ListingData.php#L442",
+        "https://plugins.trac.wordpress.org/browser/kivicare-clinic-management-system/tags/4.5.0/app/controllers/api/SettingsController/ListingData.php#L456",
+        "https://plugins.trac.wordpress.org/browser/kivicare-clinic-management-system/tags/4.5.0/app/controllers/api/SettingsController/ListingData.php#L69"
+      ],
+      "published": "2026-08-15T04:18:07.300"
+    },
+    {
+      "id": "CVE-2026-16586",
+      "description": "The Contest Gallery \u2013 Upload & Vote Photos, Media, Sell with PayPal & Stripe plugin for WordPress is vulnerable to Second-Order SQL Injection via MultipleFiles Second-Order Payload via 'cg_multiple_files_for_post' -> 'cgRealId' in all versions up to, and including, 30.0.7 due to insufficient escapin",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/contest-gallery/tags/30.0.6/ajax/ajax-functions-backend.php#L135",
+        "https://plugins.trac.wordpress.org/browser/contest-gallery/tags/30.0.6/ajax/ajax-functions-backend.php#L286",
+        "https://plugins.trac.wordpress.org/browser/contest-gallery/tags/30.0.6/ajax/ajax-functions-backend.php#L310"
+      ],
+      "published": "2026-08-15T04:18:10.607"
+    },
+    {
+      "id": "CVE-2026-15948",
+      "description": "The Hydra Booking \u2014 Appointment Scheduling & Booking Calendar plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'first_name' parameter in all versions up to, and including, 1.2.2 due to insufficient input sanitization and output escaping. This makes it possible for authentica",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/hydra-booking/trunk/admin/Controller/HostsController.php#L495",
+        "https://plugins.trac.wordpress.org/browser/hydra-booking/trunk/admin/Controller/HostsController.php#L77",
+        "https://plugins.trac.wordpress.org/browser/hydra-booking/trunk/app/Content/Archive/archive-page-tfhb-host.php#L30"
+      ],
+      "published": "2026-08-15T04:18:08.773"
+    },
+    {
+      "id": "CVE-2026-17090",
+      "description": "The Beaver Builder Page Builder \u2013 Drag and Drop Website Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Button Module 'button' (Button Code) Setting in all versions up to, and including, 2.10.2.2 due to insufficient input sanitization and output escaping. This makes it ",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/beaver-builder-lite-version/tags/2.10.1.5/classes/class-fl-builder-model.php#L4659",
+        "https://plugins.trac.wordpress.org/browser/beaver-builder-lite-version/tags/2.10.1.5/modules/button/button.php#L341",
+        "https://plugins.trac.wordpress.org/browser/beaver-builder-lite-version/tags/2.10.1.5/modules/button/includes/frontend.js.php#L8"
+      ],
+      "published": "2026-08-15T04:18:15.940"
+    },
+    {
+      "id": "CVE-2026-12128",
+      "description": "The Pinpoint Booking System \u2013 Version 2 plugin for WordPress is vulnerable to Price Manipulation via the `cart_data` parameter in all versions up to, and including, 2.9.9.6.8. This is due to the `dopbsp_woocommerce_add_to_cart` AJAX action being registered via `wp_ajax_nopriv_*` with no authenticati",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/booking-system/tags/2.9.9.6.7/addons/woocommerce/dopbsp-woocommerce.php#L141",
+        "https://plugins.trac.wordpress.org/browser/booking-system/tags/2.9.9.6.7/addons/woocommerce/includes/class-woocommerce-cart.php#L125",
+        "https://plugins.trac.wordpress.org/browser/booking-system/tags/2.9.9.6.7/addons/woocommerce/includes/class-woocommerce-cart.php#L293"
+      ],
+      "published": "2026-08-15T03:16:46.970"
+    },
+    {
+      "id": "CVE-2026-8840",
+      "description": "The Booking calendar, Appointment Booking System plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 3.2.36. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attack",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/booking-calendar/tags/3.2.35/admin/controllers/Payment.php#L16",
+        "https://plugins.trac.wordpress.org/browser/booking-calendar/tags/3.2.35/admin/controllers/Payment.php#L26",
+        "https://plugins.trac.wordpress.org/browser/booking-calendar/tags/3.2.35/booking_calendar.php#L131"
+      ],
+      "published": "2026-08-15T03:16:48.357"
+    },
+    {
+      "id": "CVE-2026-15993",
+      "description": "The Form Maker by 10Web \u2013 Mobile-Friendly Drag & Drop Contact Form Builder plugin for WordPress is vulnerable to blind SQL Injection via '{username}' Placeholder in Dynamic-Choice Field WHERE Clause in all versions up to, and including, 1.15.44 due to insufficient escaping on the user supplied param",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.43/framework/WDW_FM_Library.php#L6147",
+        "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.43/framework/WDW_FM_Library.php#L6657",
+        "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.43/frontend/controllers/form_maker.php#L252"
+      ],
+      "published": "2026-08-15T04:18:09.727"
+    },
+    {
+      "id": "CVE-2026-16094",
+      "description": "The Invisible Anti-Spam & CAPTCHA \u2014 reCAPTCHA Alternative for All Forms plugin for WordPress is vulnerable to generic SQL Injection via the 'key' parameter in all versions up to, and including, 5.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the ",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/gdpr-compliant-recaptcha-for-all-forms/tags/5.0/includes/class-message-page.php#L428",
+        "https://plugins.trac.wordpress.org/browser/gdpr-compliant-recaptcha-for-all-forms/tags/5.0/includes/class-message-page.php#L451",
+        "https://plugins.trac.wordpress.org/browser/gdpr-compliant-recaptcha-for-all-forms/tags/5.0/includes/class-message-page.php#L503"
+      ],
+      "published": "2026-08-15T04:18:09.987"
+    },
+    {
+      "id": "CVE-2026-16146",
+      "description": "The Invisible Anti-Spam & CAPTCHA \u2014 reCAPTCHA Alternative for All Forms plugin for WordPress is vulnerable to generic SQL Injection via Pattern JSON Keys/Values in all versions up to, and including, 5.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/gdpr-compliant-recaptcha-for-all-forms/tags/5.0/includes/class-message-page.php#L428",
+        "https://plugins.trac.wordpress.org/browser/gdpr-compliant-recaptcha-for-all-forms/tags/5.0/includes/class-message-page.php#L451",
+        "https://plugins.trac.wordpress.org/browser/gdpr-compliant-recaptcha-for-all-forms/tags/5.0/includes/class-message-page.php#L519"
+      ],
+      "published": "2026-08-15T04:18:10.440"
+    }
+  ]
+}
