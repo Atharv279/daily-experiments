@@ -1,0 +1,370 @@
+{
+  "timestamp": "2026-08-18T03:12:50.939636+00:00",
+  "scan_id": "2acbc013d5",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 2,
+      "MEDIUM": 16,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        7
+      ],
+      [
+        "CWE-89",
+        6
+      ],
+      [
+        "CWE-79",
+        4
+      ],
+      [
+        "CWE-639",
+        3
+      ],
+      [
+        "CWE-266",
+        2
+      ]
+    ],
+    "threat_index": 265.9,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 265.9,
+        "yesterday": 397.3,
+        "change_pct": -33.1
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 3,
+        "change_pct": -66.7
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-19924",
+      "description": "A security vulnerability has been detected in Tenda AC10 16.03.10.09_multi_TDE01. This vulnerability affects the function R7WebsSecurityHandler of the component httpd. The manipulation leads to improper authentication. The attack may be initiated remotely. The exploit has been disclosed publicly and",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/teiwiet/tenda-ac10-vulnerabilities/blob/main/authen-bypass-tenda-ac10.md",
+        "https://vuldb.com/cve/CVE-2026-19924",
+        "https://vuldb.com/submit/871957"
+      ],
+      "published": "2026-08-16T02:16:47.247"
+    },
+    {
+      "id": "CVE-2026-19919",
+      "description": "A vulnerability was found in code-projects Online Shopping System 1.0. This impacts an unknown function of the file /login.php of the component Login. The manipulation of the argument email results in sql injection. The attack may be performed from remote. The exploit has been made public and could ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/zzzxc643/CVE1/blob/main/online-shopping-system/vul1.md",
+        "https://vuldb.com/cve/CVE-2026-19919"
+      ],
+      "published": "2026-08-16T00:16:50.360"
+    },
+    {
+      "id": "CVE-2026-19926",
+      "description": "A vulnerability has been found in Evergreen up to 3.14.11/3.15.11/3.16.5/3.17-beta1. The affected element is an unknown function of the file /osrf-gateway-v1 of the component open-ils.fielder OpenSRF Service. Such manipulation leads to sql injection. The attack can be executed remotely. The exploit ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://bugs.launchpad.net/evergreen/+bug/2147196",
+        "https://bugs.launchpad.net/evergreen/+bug/2147196/+attachment/5958185/+files/2.png",
+        "https://evergreen-ils.org/Evergreen-security-release-3-14-12-3-15-12-3-16-6-3-17-beta2"
+      ],
+      "published": "2026-08-16T02:16:48.790"
+    },
+    {
+      "id": "CVE-2026-13358",
+      "description": "The Appointment Booking Calendar \u2014 Simply Schedule Appointments Booking Plugin plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.6.12.10 via the ssa_past_appointments due to missing validation on a user controlled key. This makes it possib",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.11.0/includes/class-appointment-model.php#L1936",
+        "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.11.0/includes/class-db-model.php#L325",
+        "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.11.0/includes/class-divi.php#L237"
+      ],
+      "published": "2026-08-16T05:16:46.213"
+    },
+    {
+      "id": "CVE-2026-11780",
+      "description": "The Quiz and Survey Master (QSM) \u2013 Easy Quiz and Survey Maker plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'question_title' parameter in all versions up to, and including, 11.2.1 due to insufficient input sanitization and output escaping. This makes it possible for authe",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/quiz-master-next/tags/11.0.0/php/admin/options-page-questions-tab.php#L1557",
+        "https://plugins.trac.wordpress.org/browser/quiz-master-next/tags/11.0.0/php/admin/options-page-questions-tab.php#L1580",
+        "https://plugins.trac.wordpress.org/browser/quiz-master-next/tags/11.0.0/php/rest-api.php#L301"
+      ],
+      "published": "2026-08-16T05:16:45.643"
+    },
+    {
+      "id": "CVE-2026-19918",
+      "description": "A vulnerability has been found in SpaceX Starlink Router Gen 3 2025.11.14.mr64708.3. This affects the function get_status of the component gRPC Management Interface. The manipulation leads to improper access controls. The attack can only be initiated within the local network. The exploit has been di",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-19918",
+        "https://vuldb.com/submit/870897",
+        "https://vuldb.com/vuln/390168"
+      ],
+      "published": "2026-08-16T00:16:50.180"
+    },
+    {
+      "id": "CVE-2026-19920",
+      "description": "A vulnerability was determined in code-projects Online Shopping System 1.0. Affected is an unknown function of the file /action.php. This manipulation of the argument proId causes sql injection. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may be utiliz",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/zzzxc643/CVE1/blob/main/online-shopping-system/vul2.md",
+        "https://vuldb.com/cve/CVE-2026-19920"
+      ],
+      "published": "2026-08-16T00:16:50.530"
+    },
+    {
+      "id": "CVE-2026-19921",
+      "description": "A vulnerability was identified in code-projects Online Shopping System 1.0. Affected by this vulnerability is an unknown functionality of the file /homeaction.php. Such manipulation of the argument cat_id leads to sql injection. It is possible to launch the attack remotely. The exploit is publicly a",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/zzzxc643/CVE1/blob/main/online-shopping-system/vul3.md",
+        "https://vuldb.com/cve/CVE-2026-19921"
+      ],
+      "published": "2026-08-16T00:16:50.687"
+    },
+    {
+      "id": "CVE-2026-19923",
+      "description": "A weakness has been identified in code-projects Online Shopping System 1.0. This affects an unknown part of the file /checkout_process.php. Executing a manipulation of the argument total_count can lead to sql injection. The attack can be launched remotely. The exploit has been made available to the ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/zzzxc643/CVE1/blob/main/online-shopping-system/vul5.md",
+        "https://vuldb.com/cve/CVE-2026-19923"
+      ],
+      "published": "2026-08-16T01:17:08.080"
+    },
+    {
+      "id": "CVE-2026-19927",
+      "description": "A vulnerability was found in OpenBoxes up to 0.9.7. The impacted element is the function Upload of the file grails-app/controllers/org/pih/warehouse/product/ProductController.groovy of the component Product Upload Endpoint. Performing a manipulation of the argument params.url results in server-side ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://gist.github.com/nedlir/4eefb532d29cbb9a7091266fc1cbd55c",
+        "https://github.com/OpenBoxes/OpenBoxes/",
+        "https://github.com/OpenBoxes/OpenBoxes/pull/5944"
+      ],
+      "published": "2026-08-16T03:16:49.333"
+    },
+    {
+      "id": "CVE-2026-19928",
+      "description": "A vulnerability was determined in OpenBoxes up to 0.9.7. This affects the function needManager of the file grails-app/controllers/org/pih/warehouse/RoleInterceptor.groovy of the component Role Interceptor. Executing a manipulation can lead to improper privilege management. The attack may be performe",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-269"
+      ],
+      "references": [
+        "https://gist.github.com/nedlir/2bc3a6e5bd4d67b863223e1bfc2e4390",
+        "https://github.com/OpenBoxes/OpenBoxes/",
+        "https://github.com/OpenBoxes/OpenBoxes/pull/5948"
+      ],
+      "published": "2026-08-16T03:16:50.143"
+    },
+    {
+      "id": "CVE-2026-19929",
+      "description": "A vulnerability was identified in OpenBoxes up to 0.9.6. This impacts the function buildZebraTemplate of the file grails-app/controllers/org/pih/warehouse/core/DocumentController.groovy of the component Template Processing. The manipulation leads to improper neutralization of special elements used i",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-791",
+        "CWE-1336"
+      ],
+      "references": [
+        "https://gist.github.com/nedlir/220a30213b5a5c6bc26d1000012c6a4d",
+        "https://github.com/OpenBoxes/OpenBoxes/",
+        "https://github.com/OpenBoxes/OpenBoxes/pull/5943"
+      ],
+      "published": "2026-08-16T03:16:50.300"
+    },
+    {
+      "id": "CVE-2026-19930",
+      "description": "A security flaw has been discovered in Dolibarr up to 23.0.3. Affected is an unknown function of the file htdocs/user/card.php of the component User Cloning. The manipulation of the argument ID results in ldap injection. It is possible to launch the attack remotely. The exploit has been released to ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-90"
+      ],
+      "references": [
+        "https://drive.google.com/file/d/1tI3kUdqocvdQwQtqOi5zCFmTMm6eA3sF/view",
+        "https://github.com/Dolibarr/dolibarr/",
+        "https://github.com/Dolibarr/dolibarr/commit/798e65356ede03c2812ab1a728f23fae34de5592"
+      ],
+      "published": "2026-08-16T04:16:26.747"
+    },
+    {
+      "id": "CVE-2026-19925",
+      "description": "A vulnerability was detected in SourceCodester Stock Management System 1.0. This issue affects some unknown processing of the file /classes/Master.php?f=delete_supplier. The manipulation of the argument ID results in sql injection. The attack may be launched remotely. The exploit is now public and m",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/miku01leon/CVE/issues/5",
+        "https://vuldb.com/cve/CVE-2026-19925",
+        "https://vuldb.com/submit/871969"
+      ],
+      "published": "2026-08-16T02:16:48.633"
+    },
+    {
+      "id": "CVE-2026-2487",
+      "description": "The Admin Custom Login plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 3.6.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/admin-custom-login/tags/3.6.3/includes/login-form-setting/login-form-background.php#L759",
+        "https://plugins.trac.wordpress.org/browser/admin-custom-login/tags/3.6.3/login-form-screen.php#L162",
+        "https://plugins.trac.wordpress.org/browser/admin-custom-login/trunk/includes/login-form-setting/login-form-background.php#L759"
+      ],
+      "published": "2026-08-16T04:16:27.943"
+    },
+    {
+      "id": "CVE-2026-12477",
+      "description": "The Gravity Booster \u2013 Styles & Layouts for Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 5.26 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, wit",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/styles-and-layouts-for-gravity-forms/tags/5.26/display/class-styles.php#L147",
+        "https://plugins.trac.wordpress.org/browser/styles-and-layouts-for-gravity-forms/tags/5.26/display/class-styles.php#L148",
+        "https://plugins.trac.wordpress.org/browser/styles-and-layouts-for-gravity-forms/tags/5.26/display/class-styles.php#L76"
+      ],
+      "published": "2026-08-16T05:16:45.810"
+    },
+    {
+      "id": "CVE-2025-10005",
+      "description": "The PPWP \u2013 Password Protect WordPress | #1 Most-Reviewed Password Plugin plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.9.20 via the ppw_free_set_password AJAX action due to missing validation on a user controlled key. This makes it pos",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset?reponame=&old=3637624%40password-protect-page&new=3637624%40password-protect-page",
+        "https://research.cleantalk.org/CVE-2025-10005",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/b1850e16-6fac-4d72-9346-ea6280fe84d0?source=cve"
+      ],
+      "published": "2026-08-16T05:16:44.747"
+    },
+    {
+      "id": "CVE-2026-12905",
+      "description": "The Bookly plugin for WordPress is vulnerable to Insecure Direct Object Reference in versions up to, and including, 27.7 via the appointment() method of the Mobile Staff Cabinet API (resource=appointment, action=bookly_mobile_staff_cabinet) in frontend/modules/mobile_staff_cabinet/api/handlers/Handl",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/bookly-responsive-appointment-booking-tool/tags/24.9/frontend/modules/mobile_staff_cabinet/Ajax.php#L17",
+        "https://plugins.trac.wordpress.org/browser/bookly-responsive-appointment-booking-tool/tags/24.9/frontend/modules/mobile_staff_cabinet/api/handlers/Handler.php#L82",
+        "https://plugins.trac.wordpress.org/browser/bookly-responsive-appointment-booking-tool/tags/24.9/frontend/modules/mobile_staff_cabinet/api/handlers/Handler1_0.php#L70"
+      ],
+      "published": "2026-08-16T05:16:45.947"
+    },
+    {
+      "id": "CVE-2026-13167",
+      "description": "The Everest Forms \u2013 Contact Form, Payment Form, Quiz, Survey & Custom Form Builder with AI plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 3.5.2. This is due to the plugin not properly verifying that a user is authorized to perform an action. This mak",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/everest-forms/tags/3.4.5/includes/RestApi/controllers/version1/class-evf-modules.php#L315",
+        "https://plugins.trac.wordpress.org/browser/everest-forms/tags/3.4.5/includes/RestApi/controllers/version1/class-evf-modules.php#L730",
+        "https://plugins.trac.wordpress.org/browser/everest-forms/tags/3.4.5/includes/class-evf-ajax.php#L121"
+      ],
+      "published": "2026-08-16T05:16:46.077"
+    },
+    {
+      "id": "CVE-2026-19922",
+      "description": "A security flaw has been discovered in code-projects Online Shopping System 1.0. Affected by this issue is some unknown functionality of the file /checkout.php. Performing a manipulation of the argument amount_1 results in cross site scripting. The attack can be initiated remotely. The exploit has b",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/zzzxc643/CVE1/blob/main/online-shopping-system/vul4.md",
+        "https://vuldb.com/cve/CVE-2026-19922"
+      ],
+      "published": "2026-08-16T01:17:07.840"
+    }
+  ]
+}
