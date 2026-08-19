@@ -1,0 +1,372 @@
+{
+  "timestamp": "2026-08-19T03:14:49.983442+00:00",
+  "scan_id": "013d076afe",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 3,
+      "MEDIUM": 12,
+      "LOW": 2,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        6
+      ],
+      [
+        "CWE-77",
+        4
+      ],
+      [
+        "CWE-119",
+        4
+      ],
+      [
+        "CWE-287",
+        3
+      ],
+      [
+        "CWE-122",
+        3
+      ]
+    ],
+    "threat_index": 252.1,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 252.1,
+        "yesterday": 265.9,
+        "change_pct": -5.2
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 1,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-19977",
+      "description": "A vulnerability was detected in EFM ipTIME A3004T 14.19.0. The affected element is the function httpcon_check_session_url of the component Session Validation. Performing a manipulation results in improper authentication. Remote exploitation of the attack is possible. The exploit is now public and ma",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/AdminSafe/CVE/issues/1",
+        "https://vuldb.com/cve/CVE-2026-19977",
+        "https://vuldb.com/submit/873848"
+      ],
+      "published": "2026-08-17T03:16:50.517"
+    },
+    {
+      "id": "CVE-2026-19979",
+      "description": "A vulnerability was identified in GL.iNet A1300, AX1800, AXT1800, BE1400, BE3600, BE6500, BE9300, BE10000, E5800, MT2500, MT3000, MT3600BE, MT5000, MT6000, X2000, X3000 and XE3000 up to 4.8.x. Affected by this vulnerability is the function COPY/MOVE of the component WebDAV Service. Such manipulation",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/gl-inet/CVE-issues/blob/main/4.0.0/WebDAV%20Public-Share%20Destination%20Authorization%20Bypass.md",
+        "https://vuldb.com/cve/CVE-2026-19979",
+        "https://vuldb.com/submit/873915"
+      ],
+      "published": "2026-08-17T04:16:55.693"
+    },
+    {
+      "id": "CVE-2026-19962",
+      "description": "A flaw has been found in Edimax EW-7478APC 1.04. Affected by this vulnerability is the function setWAN of the file /goform/setWAN. Executing a manipulation of the argument pppUserName/pptpUserName/L2TPUserName can lead to command injection. The attack may be performed from remote. The exploit has be",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/EDIMAX-EW-7478APC-setWAN-34b53a41781f808aaf2bc972cc6d38d3?source=copy_link",
+        "https://vuldb.com/cve/CVE-2026-19962",
+        "https://vuldb.com/submit/872876"
+      ],
+      "published": "2026-08-17T00:16:26.490"
+    },
+    {
+      "id": "CVE-2026-19963",
+      "description": "A vulnerability has been found in Edimax EW-7478APC 1.04. Affected by this issue is the function stainfo of the file /goform/stainfo. The manipulation of the argument interface leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public an",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://lavender-bicycle-a5a.notion.site/EDIMAX-EW-7478APC-stainfo-34b53a41781f80ed8e15c109f7a50844?source=copy_link",
+        "https://vuldb.com/cve/CVE-2026-19963",
+        "https://vuldb.com/submit/872877"
+      ],
+      "published": "2026-08-17T00:16:27.137"
+    },
+    {
+      "id": "CVE-2026-19976",
+      "description": "A security vulnerability has been detected in COMFAST CF-N1-S 2.6.0.1. Impacted is the function sub_44A968 of the file /cgi-bin/mbox-config?method=SET&section=ptest_macaddress. Such manipulation of the argument macaddress leads to command injection. The attack may be launched remotely. The exploit h",
+      "severity": "MEDIUM",
+      "score": 6.6,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/1ChaoRen1/IOT/blob/main/CF-N1-S-V2.6.0.1%20.pdf",
+        "https://vuldb.com/cve/CVE-2026-19976",
+        "https://vuldb.com/submit/873821"
+      ],
+      "published": "2026-08-17T03:16:50.333"
+    },
+    {
+      "id": "CVE-2026-19967",
+      "description": "A security flaw has been discovered in Open Asset Import Library Assimp 17c12da. Impacted is the function Assimp::Compression::decompressBlock of the file code/Common/Compression.cpp of the component File Parser. Performing a manipulation results in heap-based buffer overflow. The attack may be init",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/assimp/assimp/issues/6624",
+        "https://github.com/user-attachments/files/27237535/poc.zip",
+        "https://vuldb.com/cve/CVE-2026-19967"
+      ],
+      "published": "2026-08-17T01:16:44.370"
+    },
+    {
+      "id": "CVE-2026-19970",
+      "description": "A vulnerability was detected in Open Asset Import Library Assimp 17c12da. This affects the function Assimp::MDLImporter::AddBonesToNodeGraph_3DGS_MDL7 of the file code/AssetLib/MDL/MDLLoader.cpp of the component Node Parser. The manipulation of the argument bones_num results in heap-based buffer ove",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/assimp/assimp/issues/6632",
+        "https://github.com/user-attachments/files/27428677/poc.zip",
+        "https://vuldb.com/cve/CVE-2026-19970"
+      ],
+      "published": "2026-08-17T02:16:41.033"
+    },
+    {
+      "id": "CVE-2026-19972",
+      "description": "A vulnerability has been found in itsourcecode Hospital Management System 1.0. Affected is an unknown function of the file /viewpatient.php. Such manipulation of the argument delid leads to sql injection. The attack may be performed from remote. The exploit has been disclosed to the public and may b",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Fomovet/cve/issues/6",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-19972"
+      ],
+      "published": "2026-08-17T02:16:41.383"
+    },
+    {
+      "id": "CVE-2026-19973",
+      "description": "A vulnerability was found in itsourcecode Hospital Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /viewpaymentreport.php. Performing a manipulation of the argument delid results in sql injection. It is possible to initiate the attack remotely. The explo",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Fomovet/cve/issues/7",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-19973"
+      ],
+      "published": "2026-08-17T03:16:49.750"
+    },
+    {
+      "id": "CVE-2026-19974",
+      "description": "A security flaw has been discovered in treefrogframework treefrog-framework up to 2.11.2. This vulnerability affects the function std::strncmp of the file src/tsessioncookiestore.cpp of the component Session Cookie Handler. The manipulation results in improper authentication. The attack can be launc",
+      "severity": "MEDIUM",
+      "score": 5.6,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/theopaid/Authentication-Bypass-via-HMAC-Session-Cookie-Forgery-treefrog-framework-",
+        "https://github.com/treefrogframework/treefrog-framework/",
+        "https://github.com/treefrogframework/treefrog-framework/issues/436"
+      ],
+      "published": "2026-08-17T03:16:49.960"
+    },
+    {
+      "id": "CVE-2026-19964",
+      "description": "A vulnerability was found in Jij-Inc Jij-MCP-Server 0.1.0. This affects the function PythonREPL.run of the file jij_mcp/python_repr.py of the component jm_check. The manipulation of the argument code results in code injection. It is possible to launch the attack remotely. The exploit has been made p",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-74",
+        "CWE-94"
+      ],
+      "references": [
+        "http://github.com/Jij-Inc/Jij-MCP-Server/issues/4",
+        "https://vuldb.com/cve/CVE-2026-19964",
+        "https://vuldb.com/submit/872906"
+      ],
+      "published": "2026-08-17T00:16:27.290"
+    },
+    {
+      "id": "CVE-2026-19966",
+      "description": "A vulnerability was identified in CodeCanyon TimeCamp Integration for CRM up to 2.8. This issue affects some unknown processing of the file /clients/save_contact of the component Contact Information Update. Such manipulation of the argument contact_id leads to authorization bypass. The attack can be",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/4m3rr0r/PoCVulDb/issues/19",
+        "https://vuldb.com/cve/CVE-2026-19966",
+        "https://vuldb.com/submit/873105"
+      ],
+      "published": "2026-08-17T01:16:44.200"
+    },
+    {
+      "id": "CVE-2026-19969",
+      "description": "A security vulnerability has been detected in Open Asset Import Library Assimp 17c12da. The impacted element is the function Assimp::MDLImporter::GenerateOutputMeshes_3DGS_MDL7 of the file code/AssetLib/MDL/MDLLoader.cpp of the component 3DGS MDL7 Model Output Mesh Generator. The manipulation leads ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/assimp/assimp/issues/6631",
+        "https://github.com/user-attachments/files/27425495/poc.zip",
+        "https://vuldb.com/cve/CVE-2026-19969"
+      ],
+      "published": "2026-08-17T01:16:44.727"
+    },
+    {
+      "id": "CVE-2026-19978",
+      "description": "A flaw has been found in jiantao88 android-mcp-server up to cfb872b2446794193b58edd63f4dbf6af48a6292. The impacted element is the function child_process.exec of the file build/index.js of the component Command Execution. Executing a manipulation of the argument deviceId/packageName/permission/extras",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/jiantao88/android-mcp-server/",
+        "https://github.com/jiantao88/android-mcp-server/commit/14e2bf27c88ba137e35cbb0c2a75f72b595bb98a",
+        "https://github.com/jiantao88/android-mcp-server/issues/1"
+      ],
+      "published": "2026-08-17T04:16:54.783"
+    },
+    {
+      "id": "CVE-2026-19971",
+      "description": "A flaw has been found in LB-Link WR1210M 1.0.3. This impacts the function main of the file /www/cgi-bin/backup.cgi of the component Backup Endpoint. This manipulation causes missing authentication. The attack is only possible within the local network. The vendor was contacted early about this disclo",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-19971",
+        "https://vuldb.com/submit/873139",
+        "https://vuldb.com/vuln/391148"
+      ],
+      "published": "2026-08-17T02:16:41.203"
+    },
+    {
+      "id": "CVE-2026-19968",
+      "description": "A weakness has been identified in Open Asset Import Library Assimp 17c12da. The affected element is the function Assimp::MDLImporter::ReadFaces_3DGS_MDL7 in the library code/AssetLib/LWO/LWOLoader.h of the component 3DGS MDL7 Model Parser. Executing a manipulation can lead to heap-based buffer overf",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/assimp/assimp/commit/ee77bb09a42a49843ac85ef64c14d2328b251df1",
+        "https://github.com/assimp/assimp/issues/6630",
+        "https://github.com/assimp/assimp/pull/6717"
+      ],
+      "published": "2026-08-17T01:16:44.560"
+    },
+    {
+      "id": "CVE-2026-19965",
+      "description": "A vulnerability was determined in automad up to 2.0.0-beta.32. This vulnerability affects the function requestPasswordResetToken of the file automad/src/server/Controllers/API/UserController.php of the component Password Reset Endpoint. This manipulation of the argument name-or-email causes observab",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-203",
+        "CWE-204"
+      ],
+      "references": [
+        "https://github.com/marcantondahmen/automad/commit/eac0b05dafdb0ddf8b9139dad8929aaba86568ca",
+        "https://github.com/marcantondahmen/automad/issues/191",
+        "https://github.com/marcantondahmen/automad/releases/tag/2.0.0-beta.33"
+      ],
+      "published": "2026-08-17T00:16:27.450"
+    },
+    {
+      "id": "CVE-2026-19975",
+      "description": "A weakness has been identified in Azuriom CMS up to 1.2.12. This issue affects the function transferMoney of the file app/Http/Controllers/ProfileController.php of the component Money Transfer Handler. This manipulation causes time-of-check time-of-use. The attack may be initiated remotely. A high d",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-362",
+        "CWE-367"
+      ],
+      "references": [
+        "https://github.com/Azuriom/Azuriom/commit/ae5596a9548e010a8a79838806eff60ef9554539",
+        "https://github.com/Azuriom/Azuriom/releases/tag/v1.2.13",
+        "https://vuldb.com/cve/CVE-2026-19975"
+      ],
+      "published": "2026-08-17T03:16:50.143"
+    },
+    {
+      "id": "CVE-2026-50601",
+      "description": "A security vulnerability has been identified in the Planet9 desktop application where a hardcoded read-only API key permitted unauthorized access to internal repositories. An attacker could exploit this access to extract embedded administrative keys and secrets, potentially allowing them to gain adm",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-798"
+      ],
+      "references": [
+        "https://community.acer.com/en/kb/articles/19869"
+      ],
+      "published": "2026-08-17T03:16:50.703"
+    },
+    {
+      "id": "CVE-2026-50602",
+      "description": "A security vulnerability has been identified in Planet9 due to incorrect file permissions assigned to an application executable used by the Planet9 background service. The service runs with SYSTEM privileges, while the affected executable grants excessive permissions to non-administrative users. As ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-732"
+      ],
+      "references": [
+        "https://community.acer.com/en/kb/articles/19870"
+      ],
+      "published": "2026-08-17T03:16:50.840"
+    }
+  ]
+}
