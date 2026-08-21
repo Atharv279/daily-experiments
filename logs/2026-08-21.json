@@ -1,0 +1,366 @@
+{
+  "timestamp": "2026-08-21T03:25:53.583187+00:00",
+  "scan_id": "27b84e1258",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 4,
+      "HIGH": 10,
+      "MEDIUM": 4,
+      "LOW": 1,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        6
+      ],
+      [
+        "CWE-119",
+        4
+      ],
+      [
+        "CWE-121",
+        4
+      ],
+      [
+        "CWE-89",
+        4
+      ],
+      [
+        "CWE-77",
+        2
+      ]
+    ],
+    "threat_index": 439.7,
+    "critical_count": 4
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 439.7,
+        "yesterday": 342.3,
+        "change_pct": 28.5
+      },
+      "critical_count": {
+        "today": 4,
+        "yesterday": 3,
+        "change_pct": 33.3
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-76008",
+      "description": "A flaw has been found in Comfast CF-N1-S 2.6.0.1. This affects the function get_para_from_uri of the file /cgi-bin/mbox-config of the component URI Parameter Parsing. This manipulation of the argument width/height causes stack-based buffer overflow. The attack can be initiated remotely.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/1ChaoRen1/IOT_3",
+        "https://vuldb.com/cve/CVE-2026-76008",
+        "https://vuldb.com/submit/878007"
+      ],
+      "published": "2026-08-19T03:16:53.077"
+    },
+    {
+      "id": "CVE-2026-75976",
+      "description": "A weakness has been identified in TRENDnet TEW-823DRU 1.1.02b01. Impacted is the function strcpy of the file /cgi-bin/wan.cgi of the component NVRAM. This manipulation of the argument wan_l2tp_password causes stack-based buffer overflow. The attack can be initiated remotely. The exploit has been mad",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/meishigana/CVE/blob/main/team15_20260702/10_823dru-rc-bof/poc/poc-rc-overflow.py",
+        "https://github.com/meishigana/CVE/tree/main/team15_20260702/10_823dru-rc-bof",
+        "https://vuldb.com/cve/CVE-2026-75976"
+      ],
+      "published": "2026-08-19T00:16:28.510"
+    },
+    {
+      "id": "CVE-2026-76003",
+      "description": "A weakness has been identified in UTT HiPER 1200GW up to 2.5.3-170306. Affected is the function strcpy of the file /goform/formGroupConfig. Executing a manipulation of the argument timestart can lead to stack-based buffer overflow. The attack may be performed from remote. The exploit has been made a",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/7wkajk/CVE-VUL/blob/main/105.md",
+        "https://vuldb.com/cve/CVE-2026-76003",
+        "https://vuldb.com/submit/877884"
+      ],
+      "published": "2026-08-19T03:16:52.727"
+    },
+    {
+      "id": "CVE-2026-76004",
+      "description": "A security vulnerability has been detected in UTT HiPER 1250GW up to 3.2.7-210907-180535. Affected by this vulnerability is the function strcpy of the file /goform/aspApBasicConfigUrcp of the component HTTP Handler. The manipulation of the argument pvid leads to stack-based buffer overflow. It is po",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/7wkajk/CVE-VUL/blob/main/106.md",
+        "https://vuldb.com/cve/CVE-2026-76004",
+        "https://vuldb.com/submit/877885"
+      ],
+      "published": "2026-08-19T03:16:52.900"
+    },
+    {
+      "id": "CVE-2026-49415",
+      "description": "During execve(2) of a SUID binary, the new virtual address space is installed before the process credentials are updated.  During this window, a process running as the same user can access the target process's memory via procfs or linprocfs, because the kernel's debugging permission check still saw ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://security.freebsd.org/advisories/FreeBSD-SA-26:39.execve.asc"
+      ],
+      "published": "2026-08-19T05:17:03.830"
+    },
+    {
+      "id": "CVE-2026-49418",
+      "description": "When msync(MS_INVALIDATE) is called on a mapping of an unmanaged device object, the physical pages in the mapping range are marked invalid but remain in the pager's page list.  A subsequent page fault will cause the fault handler to re-insert the page into the object's list.  This corrupts the list,",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://security.freebsd.org/advisories/FreeBSD-SA-26:37.vm.asc"
+      ],
+      "published": "2026-08-19T05:17:03.943"
+    },
+    {
+      "id": "CVE-2026-19942",
+      "description": "The Atarim \u2013 AI Agency for WordPress: Edit Pages, Fix Code, Update Plugins, SEO & Client Feedback plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the AVCF_Abilities_Media::register (replace-media-file execute_callback) function in all version",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/atarim-visual-collaboration/tags/5.1.1/doit/abilities/class-avcf-abilities-media.php#L1212",
+        "https://plugins.trac.wordpress.org/browser/atarim-visual-collaboration/tags/5.1.1/doit/abilities/class-avcf-abilities-metadata.php#L1279",
+        "https://plugins.trac.wordpress.org/browser/atarim-visual-collaboration/tags/5.1.1/doit/class-avcf-mcp.php#L329"
+      ],
+      "published": "2026-08-19T05:17:02.217"
+    },
+    {
+      "id": "CVE-2026-75984",
+      "description": "A vulnerability was detected in TRENDnet TEW-823DRU 1.1.02b01. Impacted is an unknown function of the file /cgi-bin/admin.cgi. The manipulation of the argument Hostname results in command injection. The attack can be launched remotely. The exploit is now public and may be used.",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/meishigana/CVE/blob/main/team15_20260702/11_823dru-rc-cmdi/poc/poc-rc-injection.py",
+        "https://github.com/meishigana/CVE/tree/main/team15_20260702/11_823dru-rc-cmdi",
+        "https://vuldb.com/cve/CVE-2026-75984"
+      ],
+      "published": "2026-08-19T01:16:57.640"
+    },
+    {
+      "id": "CVE-2026-75985",
+      "description": "A flaw has been found in TRENDnet Router 1.1.02b01. The affected element is an unknown function of the file /cgi-bin/ping.cgi. This manipulation of the argument wan_type causes command injection. The attack may be initiated remotely. The exploit has been published and may be used.",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/meishigana/CVE/blob/main/team15_20260702/12_823dru-ssi-cmdi/poc/poc-ssi-injection.py",
+        "https://github.com/meishigana/CVE/tree/main/team15_20260702/12_823dru-ssi-cmdi",
+        "https://vuldb.com/cve/CVE-2026-75985"
+      ],
+      "published": "2026-08-19T02:16:12.830"
+    },
+    {
+      "id": "CVE-2026-75986",
+      "description": "A vulnerability has been found in code-projects Online Job Portal System 1.0. The impacted element is an unknown function of the file /ForPass.php of the component Password Recovery. Such manipulation of the argument txtUserName leads to sql injection. The attack may be launched remotely. The exploi",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/niaoniaollll/cve/issues/7",
+        "https://vuldb.com/cve/CVE-2026-75986"
+      ],
+      "published": "2026-08-19T02:16:12.993"
+    },
+    {
+      "id": "CVE-2026-75987",
+      "description": "A vulnerability was found in SPLWare esProc up to 20260507. This affects the function ObjectInputStream.readUnshared of the file src/main/java/com/scudata/parallel/SocketData.java. Performing a manipulation results in deserialization. Remote exploitation of the attack is possible.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-20",
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/SPLWare/esProc/",
+        "https://github.com/SPLWare/esProc/issues/67",
+        "https://vuldb.com/cve/CVE-2026-75987"
+      ],
+      "published": "2026-08-19T02:16:13.173"
+    },
+    {
+      "id": "CVE-2026-76048",
+      "description": "A flaw has been found in SourceCodester Simple Online Food Ordering System 1.0. The impacted element is an unknown function of the file /admin/ajax.php?action=login. Executing a manipulation of the argument Username can lead to sql injection. The attack may be performed from remote. The exploit has ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Kristin5634487/cve/issues/5",
+        "https://vuldb.com/cve/CVE-2026-76048",
+        "https://vuldb.com/submit/878218"
+      ],
+      "published": "2026-08-19T03:16:53.430"
+    },
+    {
+      "id": "CVE-2026-76049",
+      "description": "A vulnerability has been found in SourceCodester Simple Online Food Ordering System 1.0. This affects an unknown function of the file /admin/ajax.php?action=save_menu. The manipulation of the argument ID leads to sql injection. It is possible to initiate the attack remotely. The exploit has been dis",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Kristin5634487/cve/issues/6",
+        "https://vuldb.com/cve/CVE-2026-76049",
+        "https://vuldb.com/submit/878227"
+      ],
+      "published": "2026-08-19T04:17:38.277"
+    },
+    {
+      "id": "CVE-2026-76050",
+      "description": "A vulnerability was found in SourceCodester Simple Online Food Ordering System 1.0. This impacts an unknown function of the file /admin/ajax.php?action=delete_menu. The manipulation of the argument ID results in sql injection. It is possible to launch the attack remotely. The exploit has been made p",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/jackkoz0512/cve/issues/1",
+        "https://vuldb.com/cve/CVE-2026-76050",
+        "https://vuldb.com/submit/878241"
+      ],
+      "published": "2026-08-19T04:17:42.060"
+    },
+    {
+      "id": "CVE-2026-15421",
+      "description": "The Speed Optimizer \u2013 The All-In-One Performance-Boosting Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Image Tag Attributes in all versions up to, and including, 7.8.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/sg-cachepress/tags/7.7.11/core/Lazy_Load/Abstract_Lazy_Load.php#L109",
+        "https://plugins.trac.wordpress.org/browser/sg-cachepress/tags/7.7.11/core/Lazy_Load/Lazy_Load.php#L39",
+        "https://plugins.trac.wordpress.org/browser/sg-cachepress/tags/7.7.11/core/Lazy_Load/Lazy_Load_Images.php#L31"
+      ],
+      "published": "2026-08-19T02:16:12.677"
+    },
+    {
+      "id": "CVE-2026-75978",
+      "description": "A security vulnerability has been detected in xianrendzw EasyReport up to 2.0.17.0522_Beta. The affected element is the function DataSourceController.add of the file DataSourceController.java of the component QueryerFactory. Such manipulation of the argument queryerClass leads to permission issues. ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-275"
+      ],
+      "references": [
+        "https://github.com/xianrendzw/EasyReport/",
+        "https://github.com/xianrendzw/EasyReport/issues/83",
+        "https://vuldb.com/cve/CVE-2026-75978"
+      ],
+      "published": "2026-08-19T00:16:28.810"
+    },
+    {
+      "id": "CVE-2026-75979",
+      "description": "A vulnerability was found in xianrendzw EasyReport up to 2.0.17.0522_Beta. Affected is the function execSqlText/previewSqlText of the file DesignerController.java of the component SQL Preview Endpoint. The manipulation of the argument sqlText results in improper neutralization of special elements us",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-791",
+        "CWE-1336"
+      ],
+      "references": [
+        "https://github.com/xianrendzw/EasyReport/",
+        "https://github.com/xianrendzw/EasyReport/issues/82",
+        "https://vuldb.com/cve/CVE-2026-75979"
+      ],
+      "published": "2026-08-19T01:16:57.460"
+    },
+    {
+      "id": "CVE-2025-11729",
+      "description": "The PPWP: Password Protect Pages, Posts & Full or Partial Content plugin for WordPress is vulnerable to unauthorized access of data due to a improper capability check on the can_access function in all versions up to, and including, 1.9.15. This makes it possible for authenticated attackers, with Con",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3486400/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/d1e041f0-3019-4d1f-b1a3-b40275c0966a?source=cve"
+      ],
+      "published": "2026-08-19T00:16:24.943"
+    },
+    {
+      "id": "CVE-2026-76014",
+      "description": "A vulnerability has been found in BusyBox up to 1.30.1. This vulnerability affects unknown code of the file networking/wget.c of the component FEATURE_WGET_TIMEOUT Handler. Such manipulation of the argument -T leads to null pointer dereference. Local access is required to approach this attack. The e",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://gist.github.com/wyxstarry/5c199ec824928c5ae5816aaecbc6df03",
+        "https://github.com/mirror/busybox/commit/83a40bf7a93c8ac093d33ab452222dd5b9eb57ff",
+        "https://github.com/mirror/busybox/issues/124"
+      ],
+      "published": "2026-08-19T03:16:53.247"
+    },
+    {
+      "id": "CVE-2026-11751",
+      "description": "A vulnerability has been identified in armeria-xds versions prior to 1.41.0, where xDS upstream TLS peer verification may be silently disabled, allowing man-in-the-middle attacks against xDS-managed upstream connections.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://github.com/line/armeria/security/advisories/GHSA-6qfw-3mvj-m6v5",
+        "https://line.github.io/security-advisory-blog/CVE-2026-11751/"
+      ],
+      "published": "2026-08-19T02:16:12.530"
+    }
+  ]
+}
