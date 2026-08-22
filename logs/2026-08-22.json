@@ -1,0 +1,351 @@
+{
+  "timestamp": "2026-08-22T03:11:00.670436+00:00",
+  "scan_id": "325a9ce8f9",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 6,
+      "MEDIUM": 10,
+      "LOW": 2,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        4
+      ],
+      [
+        "CWE-89",
+        4
+      ],
+      [
+        "CWE-434",
+        2
+      ],
+      [
+        "CWE-79",
+        2
+      ],
+      [
+        "CWE-787",
+        1
+      ]
+    ],
+    "threat_index": 258.0,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 258.0,
+        "yesterday": 439.7,
+        "change_pct": -41.3
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 4,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-19582",
+      "description": "In binutils 2.46.1 and prior versions, a victim who opens a crafted PE file using binutils could execute arbitrary code unknowningly via a stack buffer overflow out of bounds write.",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-19582",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2513754"
+      ],
+      "published": "2026-08-20T05:16:27.987"
+    },
+    {
+      "id": "CVE-2026-76762",
+      "description": "A vulnerability was detected in code-projects Assessment Management 1.0. The affected element is an unknown function of the file /welcome.php. The manipulation of the argument userid results in sql injection. The attack may be launched remotely. The exploit is now public and may be used.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/niaoniaollll/cve/issues/8",
+        "https://vuldb.com/cve/CVE-2026-76762"
+      ],
+      "published": "2026-08-20T00:16:52.817"
+    },
+    {
+      "id": "CVE-2026-76764",
+      "description": "A flaw has been found in code-projects Employee Management System 1.0. The impacted element is an unknown function of the file /process/aprocess.php of the component Admin Login Endpoint. This manipulation of the argument mailuid causes sql injection. Remote exploitation of the attack is possible. T",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/niaoniaollll/cve/issues/10",
+        "https://vuldb.com/cve/CVE-2026-76764"
+      ],
+      "published": "2026-08-20T00:16:52.983"
+    },
+    {
+      "id": "CVE-2026-76783",
+      "description": "A security vulnerability has been detected in DeDeCMS 53_1_UTF8. This vulnerability affects unknown code of the file /plus/advancedsearch.php. Such manipulation of the argument sql leads to sql injection. The attack can be launched remotely. The exploit has been disclosed publicly and may be used.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://uvxbywu62qm.feishu.cn/wiki/X1T5w8jPUinAsVkM0bhcZf4XnHe?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-76783",
+        "https://vuldb.com/submit/879225"
+      ],
+      "published": "2026-08-20T01:16:53.923"
+    },
+    {
+      "id": "CVE-2026-76795",
+      "description": "A vulnerability has been found in AeternaLabsHQ PullMD 3.2.0. This impacts an unknown function of the file /api of the component REST API Endpoint. The manipulation of the argument url leads to server-side request forgery. The attack can be initiated remotely. The exploit has been disclosed to the p",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/AeternaLabsHQ/pullmd/",
+        "https://github.com/AeternaLabsHQ/pullmd/commit/96448894cc93ccecb0bdcbf263a9d25390a8455e",
+        "https://github.com/AeternaLabsHQ/pullmd/issues/41"
+      ],
+      "published": "2026-08-20T01:16:54.277"
+    },
+    {
+      "id": "CVE-2026-15049",
+      "description": "The Depicter \u2014 Popup & Slider Builder WordPress plugin before 4.8.0 does not validate the type of a file uploaded through its import feature and does not remove a malformed upload, allowing users with editor-level access to write an arbitrary file (including executable PHP) into a web-accessible dir",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/c32e6a11-98f2-48e8-be64-f0c1966ddc18/"
+      ],
+      "published": "2026-08-20T06:16:49.710"
+    },
+    {
+      "id": "CVE-2026-19615",
+      "description": "The Admin and Site Enhancements (ASE) WordPress plugin before 9.0.1 does not sanitise uploaded SVG files on every route it accepts them through, allowing users with a role the site owner granted upload access to store a file containing JavaScript which then executes in the browser of anyone who open",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/3a318175-8d25-4dba-a6ad-7a09d0a7fa5a/"
+      ],
+      "published": "2026-08-20T06:17:07.777"
+    },
+    {
+      "id": "CVE-2026-19697",
+      "description": "The GutenKit  WordPress plugin before 2.5.0 does not sanitise uploaded SVG files on all of the upload paths it enables, allowing users with the file upload capability, such as Author, to upload a malicious SVG and perform Stored Cross-Site Scripting attacks against any user opening it, including adm",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/d144679c-10ef-4a69-b0e9-fd9e18a2aafc/"
+      ],
+      "published": "2026-08-20T06:17:07.927"
+    },
+    {
+      "id": "CVE-2026-13405",
+      "description": "The Royal Addons for Elementor  WordPress plugin before 1.7.1066 does not correctly sanitise custom widget markup before writing it to a file that is later executed, allowing users with the manage_options capability (and, on WordPress Multisite, non-super subsite administrators who do not otherwise ",
+      "severity": "MEDIUM",
+      "score": 6.6,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/247be7fc-a49f-429e-875d-8649510c42b5/"
+      ],
+      "published": "2026-08-20T06:16:41.710"
+    },
+    {
+      "id": "CVE-2026-76785",
+      "description": "A security flaw has been discovered in amirsanni Mini-Inventory-and-Sales-Management-System 0.1. Affected is the function Transaction::getAll of the file application/models/Transaction.php. Performing a manipulation of the argument orderBy/orderFormat results in sql injection. It is possible to init",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/amirsanni/Mini-Inventory-and-Sales-Management-System/",
+        "https://github.com/amirsanni/Mini-Inventory-and-Sales-Management-System/issues/101",
+        "https://vuldb.com/cve/CVE-2026-76785"
+      ],
+      "published": "2026-08-20T01:16:54.100"
+    },
+    {
+      "id": "CVE-2026-76800",
+      "description": "A flaw has been found in DeDeCMS 3. Affected by this vulnerability is an unknown functionality of the file /include/dialog/select_media_post.php. Executing a manipulation of the argument uploadfile can lead to unrestricted upload. The attack can be executed remotely. The exploit has been published a",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://uvxbywu62qm.feishu.cn/wiki/TKqDwJGYaiBVXpk3EtFcdjRDnsg?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-76800",
+        "https://vuldb.com/submit/880081"
+      ],
+      "published": "2026-08-20T03:16:23.887"
+    },
+    {
+      "id": "CVE-2026-76956",
+      "description": "In libexpat 2.8.2 and 2.8.3 before 2.8.4, misinterpretation of getentropy's return code leads to insufficient entropy, which results in being vulnerable to hash flooding attacks, causing a denial of service via crafted XML content.",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-394"
+      ],
+      "references": [
+        "https://github.com/libexpat/libexpat/pull/1326",
+        "https://github.com/libexpat/libexpat/pull/1329"
+      ],
+      "published": "2026-08-20T05:16:29.610"
+    },
+    {
+      "id": "CVE-2022-4996",
+      "description": "A flaw has been found in mruby 3.1.0. Affected is the function udiv of the file bigint.c. Executing a manipulation can lead to floating point comparison with incorrect operator. It is possible to launch the attack remotely. The exploit has been published and may be used. It is best practice to apply",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-1077"
+      ],
+      "references": [
+        "https://huntr.com/bounties/5a5092df-1699-4497-a8b2-38318bce0c4e",
+        "https://vuldb.com/cve/CVE-2022-4996",
+        "https://vuldb.com/submit/877513"
+      ],
+      "published": "2026-08-20T00:16:50.980"
+    },
+    {
+      "id": "CVE-2026-76799",
+      "description": "A weakness has been identified in code-projects Login Registration System 1.0. This affects an unknown function of the file /loginsystem/database/login_registration_system.sql of the component SQL Database Backup Handler. This manipulation causes files or directories accessible. The attack may be in",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-425",
+        "CWE-552"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://raw.githubusercontent.com/anubhavv106/Security-Advisories/refs/heads/main/Login-Registration-System-login_registration_system.sql-Sensitive-Database-Disclosure.md",
+        "https://vuldb.com/cve/CVE-2026-76799"
+      ],
+      "published": "2026-08-20T02:16:21.753"
+    },
+    {
+      "id": "CVE-2026-17153",
+      "description": "The AI Agent by SiteGround plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.2.7. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to upload images to",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/sg-ai-studio/tags/1.2.6/core/Helper/Helper.php#L1077",
+        "https://plugins.trac.wordpress.org/browser/sg-ai-studio/tags/1.2.6/core/Helper/Helper.php#L604",
+        "https://plugins.trac.wordpress.org/browser/sg-ai-studio/tags/1.2.6/core/Rest/Gutenberg.php#L118"
+      ],
+      "published": "2026-08-20T06:16:58.230"
+    },
+    {
+      "id": "CVE-2026-76957",
+      "description": "libexpat before 2.8.4 lacks handler call depth tracking with custom encoding callbacks. Thus, a use-after-free can occur. NOTE: this is similar to CVE-2026-50219, CVE-2026-56131 and CVE-2026-56412.",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/libexpat/libexpat/pull/1322",
+        "https://github.com/libexpat/libexpat/pull/1329"
+      ],
+      "published": "2026-08-20T05:16:29.747"
+    },
+    {
+      "id": "CVE-2026-73542",
+      "description": "Multiple SEIKO EPSON printers and scanners contain revoked root certificates. A man-in-the-middle attack may allow an attacker to obtain communication data transmitted by the product. As for the details of the affected products and versions, refer to the vendor's information.",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-296"
+      ],
+      "references": [
+        "https://jvn.jp/en/vu/JVNVU91609598/",
+        "https://www.epson.jp/news/info/a-security202608.htm"
+      ],
+      "published": "2026-08-20T06:17:13.287"
+    },
+    {
+      "id": "CVE-2026-19699",
+      "description": "The GutenKit  WordPress plugin before 2.5.0 does not have a sufficient capability check on some of its REST API endpoints, allowing users with the Contributor role and above to retrieve mailing-list audience metadata from the site's connected marketing account.",
+      "severity": "LOW",
+      "score": 2.7,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/301f10fd-ac72-4d80-8ca3-402a4a55ba3d/"
+      ],
+      "published": "2026-08-20T06:17:13.167"
+    },
+    {
+      "id": "CVE-2026-8619",
+      "description": "An\nunauthenticated denial-of-service vulnerability was identified in TP-Link TL-MR100 v3.2, TL-MR150 v3.2, TL-MR6400 v8.0 and Archer MR600 v2, due to improper handling of exceptional request conditions\nthat may lead to a NULL pointer dereference.\u00a0\nA remote attacker on an adjacent network can send a ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://www.tp-link.com/en/support/download/archer-mr600/v2/#Firmware",
+        "https://www.tp-link.com/en/support/download/tl-mr100/v3.20/#Firmware",
+        "https://www.tp-link.com/en/support/download/tl-mr150/v3.20/#Firmware"
+      ],
+      "published": "2026-08-20T00:16:53.157"
+    },
+    {
+      "id": "CVE-2026-75628",
+      "description": "Punk::OAuth2 versions before 0.03 for Perl allow an attacker-chosen off-site redirect after login because same_origin_path accepts a backslash or tab in the return parameter.\n\noauth2_login reads the return parameter from the initiation request, runs same_origin_path over it, and stores the survivor ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-601"
+      ],
+      "references": [
+        "https://datatracker.ietf.org/doc/html/rfc9700#section-4.11.1",
+        "https://metacpan.org/release/LNATION/Punk-OAuth2-0.02/source/include/pox/pox_util.h#L94",
+        "https://metacpan.org/release/LNATION/Punk-OAuth2-0.03/changes"
+      ],
+      "published": "2026-08-20T01:16:53.803"
+    }
+  ]
+}
