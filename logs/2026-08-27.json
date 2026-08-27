@@ -1,0 +1,352 @@
+{
+  "timestamp": "2026-08-27T12:55:09.395145+00:00",
+  "scan_id": "36d221478e",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 5,
+      "MEDIUM": 11,
+      "NONE": 1,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-190",
+        3
+      ],
+      [
+        "CWE-20",
+        3
+      ],
+      [
+        "CWE-73",
+        2
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-434",
+        1
+      ]
+    ],
+    "threat_index": 280.5,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 280.5,
+        "yesterday": 432.7,
+        "change_pct": -35.2
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 4,
+        "change_pct": -75.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-56705",
+      "description": "Adminer before 5.4.3 fails to sanitize the server field before constructing a PDO DSN string, allowing unauthenticated attackers to inject ODBC parameters via semicolons. Attackers can inject TraceFile and TraceOn parameters to write PHP code to the web root, achieving remote code execution when the",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-73"
+      ],
+      "references": [
+        "https://github.com/vrana/adminer/security/advisories/GHSA-r4x9-5m63-3vxw",
+        "https://www.vulncheck.com/advisories/adminer-before-remote-code-execution-via-mssql-pdo-dsn-injection",
+        "https://github.com/vrana/adminer/security/advisories/GHSA-r4x9-5m63-3vxw"
+      ],
+      "published": "2026-08-25T02:16:42.330"
+    },
+    {
+      "id": "CVE-2026-56702",
+      "description": "Adminer versions before 5.4.3 contain an unrestricted file upload vulnerability in the AdminerFileUpload plugin that allows authenticated users to upload PHP files by exploiting a permissive default extension allowlist. Attackers can upload PHP webshells to columns ending in _path and execute arbitr",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/vrana/adminer/security/advisories/GHSA-vcvj-rwwm-x6g5",
+        "https://www.vulncheck.com/advisories/adminer-before-unrestricted-file-upload-via-adminerfileupload"
+      ],
+      "published": "2026-08-25T02:16:41.900"
+    },
+    {
+      "id": "CVE-2026-34968",
+      "description": "Adminer before 5.4.3 contains an arbitrary file deletion vulnerability in SQLite mode where the database-list drop action fails to validate file extensions before deletion. An authenticated attacker can submit arbitrary relative file paths in the db[] parameter to delete any files writable by the PH",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/vrana/adminer/security/advisories/GHSA-6pg3-chwq-wgqc",
+        "https://www.vulncheck.com/advisories/adminer-before-arbitrary-file-deletion-via-sqlite-drop",
+        "https://github.com/vrana/adminer/security/advisories/GHSA-6pg3-chwq-wgqc"
+      ],
+      "published": "2026-08-25T02:16:40.843"
+    },
+    {
+      "id": "CVE-2026-56707",
+      "description": "Grav Flex Objects plugin versions 1.4.0 through 1.4.7 contain an authorization bypass vulnerability in the flex-objects shortcode that allows users with page-edit access to render any registered Flex collection without permission checks. Attackers can place the shortcode in published pages to expose",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/getgrav/grav/security/advisories/GHSA-x929-528m-vx2m",
+        "https://www.vulncheck.com/advisories/grav-flex-objects-through-authorization-bypass-via-shortcode"
+      ],
+      "published": "2026-08-25T02:16:42.637"
+    },
+    {
+      "id": "CVE-2026-66766",
+      "description": "SAP S/4HANA (Private Cloud) uses a third-party component that contains a Regular Expression Denial of Service (ReDoS) vulnerability. An unauthenticated attacker could supply specially crafted input that triggers excessive processing within the affected functionality. Successful exploitation could ex",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-1333"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3771065",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-08-25T01:16:37.230"
+    },
+    {
+      "id": "CVE-2026-56703",
+      "description": "Adminer before 5.4.3 contains a remote code execution vulnerability in SQLite query handling where VACUUM INTO is not blocked despite ATTACH restrictions. Authenticated attackers can execute VACUUM INTO to write PHP code to arbitrary file paths and execute commands on the server.",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/vrana/adminer/security/advisories/GHSA-gmx3-g29w-77wf",
+        "https://www.vulncheck.com/advisories/adminer-before-remote-code-execution-via-sqlite-vacuum-into",
+        "https://github.com/vrana/adminer/security/advisories/GHSA-gmx3-g29w-77wf"
+      ],
+      "published": "2026-08-25T02:16:42.043"
+    },
+    {
+      "id": "CVE-2026-56706",
+      "description": "Adminer before 5.4.3 uses a CSRF token scheme that transmits both the XOR mask and the masked value in every token (format (rand XOR secret):rand), allowing anyone who observes a single CSRF token (e.g., via network sniffing, log files, Referrer header, or XSS) to recover the session secret with a s",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-330"
+      ],
+      "references": [
+        "https://github.com/vrana/adminer/security/advisories/GHSA-33j4-hc95-pggg",
+        "https://www.vulncheck.com/advisories/adminer-before-csrf-token-secret-recovery-via-xor-masking",
+        "https://github.com/vrana/adminer/security/advisories/GHSA-33j4-hc95-pggg"
+      ],
+      "published": "2026-08-25T02:16:42.477"
+    },
+    {
+      "id": "CVE-2026-15023",
+      "description": "The Events Manager \u2013 Calendar, Bookings, Tickets, and more! plugin for WordPress is vulnerable to generic SQL Injection via Stored 'meta_key' via Event/Location Duplicate Action in all versions up to, and including, 7.4.0 due to insufficient escaping on the user supplied parameter and lack of suffic",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/events-manager/tags/7.2.3.1/classes/em-event.php#L1720",
+        "https://plugins.trac.wordpress.org/browser/events-manager/tags/7.2.3.1/classes/em-event.php#L1727",
+        "https://plugins.trac.wordpress.org/browser/events-manager/tags/7.2.3.1/classes/em-location.php#L613"
+      ],
+      "published": "2026-08-25T02:16:39.940"
+    },
+    {
+      "id": "CVE-2026-55373",
+      "description": "OpenEXR is the reference implementation and specification for the EXR image format, widely used in the motion picture industry. Versions prior to 3.2.10, 3.3.12, and 3.4.13 contain an infinite-loop vulnerability in SampleCountChannel. The helper roundListSizeUp() rounds a sample-list size up to the ",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-190",
+        "CWE-400",
+        "CWE-835"
+      ],
+      "references": [
+        "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-mff9-68x3-h8rh",
+        "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-mff9-68x3-h8rh"
+      ],
+      "published": "2026-08-25T01:16:36.947"
+    },
+    {
+      "id": "CVE-2026-55059",
+      "description": "OpenEXR is the reference implementation and specification for the EXR image format, widely used in the motion picture industry. Versions prior to 3.2.10, 3.3.12 and 3.4.13 contain a heap out-of-bounds write in Imf_4_0::SampleCountChannel::set(int r, unsigned int newNumSamples[]). The row-based sampl",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-54cp-3rq6-7mq8"
+      ],
+      "published": "2026-08-25T01:16:36.667"
+    },
+    {
+      "id": "CVE-2026-56704",
+      "description": "Adminer before 5.4.3 inserts unsanitized database server version strings into script tags with valid CSP nonces without proper validation. Attackers controlling a rogue MySQL server can return crafted version strings that break out of the JavaScript context and execute arbitrary code, bypassing Cont",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/vrana/adminer/security/advisories/GHSA-h6jr-7pr6-grgj",
+        "https://www.vulncheck.com/advisories/adminer-before-cross-site-scripting-via-mysql-version-string"
+      ],
+      "published": "2026-08-25T02:16:42.187"
+    },
+    {
+      "id": "CVE-2026-34964",
+      "description": "Adminer before 5.5.0 contains a server-side request forgery vulnerability in the login form's server field validator, which only inspects leading integers for privileged ports and fails to reject non-numeric port values. Attackers can inject PDO DSN keys like host= and port= into the server paramete",
+      "severity": "MEDIUM",
+      "score": 5.8,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/vrana/adminer/security/advisories/GHSA-58cq-mgw2-38m5",
+        "https://www.vulncheck.com/advisories/adminer-before-ssrf-via-pdo-dsn-injection"
+      ],
+      "published": "2026-08-25T02:16:40.553"
+    },
+    {
+      "id": "CVE-2026-59183",
+      "description": "OpenEXR is the reference implementation and specification for the EXR image format, widely used in the motion picture industry. In versions 3.1.0 through 3.2.10, 3.3.0 through 3.3.12, and 3.4.0 through 3.4.13, an int32_t multiplication in OpenEXRCore's unpack_sample_table() can overflow while decodi",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/AcademySoftwareFoundation/openexr/commit/5e55a64ad1f119a8166542f4b6e034c31b7e043a",
+        "https://github.com/AcademySoftwareFoundation/openexr/commit/a6cf183725b5665ac3fdbec640125fba5ee1ab39",
+        "https://github.com/AcademySoftwareFoundation/openexr/commit/e2adb5be3bbc3a1f82f2bc06cc9699995a99a607"
+      ],
+      "published": "2026-08-25T01:16:37.087"
+    },
+    {
+      "id": "CVE-2026-34967",
+      "description": "Adminer versions 5.3.0 through 5.4.2 with the sql-log plugin enabled contain an arbitrary file write vulnerability in the ns parameter of plugins/sql-log.php. An authenticated user can supply path traversal sequences in the ns parameter to write arbitrary .sql files with attacker-controlled content ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-73"
+      ],
+      "references": [
+        "https://github.com/vrana/adminer/security/advisories/GHSA-75xm-qwfq-9wp5",
+        "https://www.vulncheck.com/advisories/adminer-sql-log-plugin-through-arbitrary-file-write",
+        "https://github.com/vrana/adminer/security/advisories/GHSA-75xm-qwfq-9wp5"
+      ],
+      "published": "2026-08-25T02:16:40.697"
+    },
+    {
+      "id": "CVE-2026-34959",
+      "description": "Adminer 4.6.0 before 5.5.0 prepends the client-supplied X-Forwarded-Prefix header to $_SERVER[\"REQUEST_URI\"] with no trusted-proxy check and no validation of the prefix value. An attacker can supply an absolute URL (e.g. X-Forwarded-Prefix: https://evil.example) that flows into Location redirect hea",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://github.com/vrana/adminer/security/advisories/GHSA-8478-xrj3-h9c2",
+        "https://www.vulncheck.com/advisories/adminer-before-open-redirect-via-x-forwarded-prefix",
+        "https://github.com/vrana/adminer/security/advisories/GHSA-8478-xrj3-h9c2"
+      ],
+      "published": "2026-08-25T02:16:40.400"
+    },
+    {
+      "id": "CVE-2026-10630",
+      "description": "The WP Courses LMS \u2013 Online Courses Builder, eLearning Courses, Courses Solution, Education Courses plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 3.2.29 via the 'resultID' parameter due to missing validation on a user controlled key. Thi",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-courses/tags/3.2.28/classes/WPCQ_Ajax.php#L28",
+        "https://plugins.trac.wordpress.org/browser/wp-courses/tags/3.2.28/classes/WPCQ_Ajax.php#L87",
+        "https://plugins.trac.wordpress.org/browser/wp-courses/tags/3.2.28/classes/WPCQ_Ajax.php#L91"
+      ],
+      "published": "2026-08-25T02:16:39.037"
+    },
+    {
+      "id": "CVE-2026-19801",
+      "description": "The BetterLinks \u2013 Link Shortener, Link Cloaking, Redirects, Affiliate Link Manager & MCP plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 3.1.0. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/betterlinks/tags/3.0.0/betterlinks.php#L254",
+        "https://plugins.trac.wordpress.org/browser/betterlinks/tags/3.0.0/includes/Admin/Ajax.php#L180",
+        "https://plugins.trac.wordpress.org/browser/betterlinks/tags/3.0.0/includes/Admin/Ajax.php#L99"
+      ],
+      "published": "2026-08-25T02:16:40.250"
+    },
+    {
+      "id": "CVE-2026-54920",
+      "description": "OpenEXR is the reference implementation and specification for the EXR image format, widely used in the motion picture industry. In versions 3.4.0 through 3.4.12, a reachable assertion failure in the HTJ2K decode path allows a crafted HTJ2K-compressed EXR file to cause an unconditional process abort ",
+      "severity": "NONE",
+      "score": 0.0,
+      "cwes": [
+        "CWE-190",
+        "CWE-824"
+      ],
+      "references": [
+        "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-fp75-87pr-8329",
+        "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-fp75-87pr-8329"
+      ],
+      "published": "2026-08-25T01:16:36.290"
+    },
+    {
+      "id": "CVE-2026-55371",
+      "description": "OpenEXR is the reference implementation and specification for the EXR high-dynamic-range image file format, widely used in the motion picture industry. Versions 3.4.0 through 3.4.12 contain a NULL pointer dereference in the OpenEXRCore function exr_attr_set_bytes(). The public setter validates the t",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-20",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-xx72-f24p-cf6r"
+      ],
+      "published": "2026-08-25T01:16:36.810"
+    },
+    {
+      "id": "CVE-2026-16434",
+      "description": "Adminer 4.6.0 through 5.5.0 (fixed in 5.5.1) contains an incomplete fix for a prior X-Forwarded-Prefix vulnerability (GHSA-8478-xrj3-h9c2). The validation guard (bootstrap.inc.php) only rejects prefixes matching ^/[^/], blocking //evil.com but allowing values such as /\\evil.com whose second characte",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://github.com/vrana/adminer/security/advisories/GHSA-fr74-9mf9-gf44",
+        "https://www.vulncheck.com/advisories/adminer-before-x-forwarded-prefix-backslash-bypass"
+      ],
+      "published": "2026-08-25T02:16:40.110"
+    }
+  ]
+}
