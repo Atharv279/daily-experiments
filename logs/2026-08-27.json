@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-27T12:55:09.395145+00:00",
-  "scan_id": "36d221478e",
+  "timestamp": "2026-08-27T19:08:50.673752+00:00",
+  "scan_id": "bce116aff0",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -81,7 +81,8 @@
       ],
       "references": [
         "https://github.com/vrana/adminer/security/advisories/GHSA-vcvj-rwwm-x6g5",
-        "https://www.vulncheck.com/advisories/adminer-before-unrestricted-file-upload-via-adminerfileupload"
+        "https://www.vulncheck.com/advisories/adminer-before-unrestricted-file-upload-via-adminerfileupload",
+        "https://github.com/vrana/adminer/security/advisories/GHSA-vcvj-rwwm-x6g5"
       ],
       "published": "2026-08-25T02:16:41.900"
     },
@@ -198,6 +199,7 @@
         "CWE-787"
       ],
       "references": [
+        "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-54cp-3rq6-7mq8",
         "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-54cp-3rq6-7mq8"
       ],
       "published": "2026-08-25T01:16:36.667"
@@ -344,7 +346,8 @@
       ],
       "references": [
         "https://github.com/vrana/adminer/security/advisories/GHSA-fr74-9mf9-gf44",
-        "https://www.vulncheck.com/advisories/adminer-before-x-forwarded-prefix-backslash-bypass"
+        "https://www.vulncheck.com/advisories/adminer-before-x-forwarded-prefix-backslash-bypass",
+        "https://github.com/vrana/adminer/security/advisories/GHSA-fr74-9mf9-gf44"
       ],
       "published": "2026-08-25T02:16:40.110"
     }
