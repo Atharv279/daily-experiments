@@ -1,0 +1,321 @@
+{
+  "timestamp": "2026-08-29T02:51:49.062800+00:00",
+  "scan_id": "062ed94713",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 4,
+      "MEDIUM": 12,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-22",
+        4
+      ],
+      [
+        "CWE-918",
+        2
+      ],
+      [
+        "CWE-770",
+        2
+      ],
+      [
+        "CWE-674",
+        1
+      ],
+      [
+        "CWE-377",
+        1
+      ]
+    ],
+    "threat_index": 223.2,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 223.2,
+        "yesterday": 394.9,
+        "change_pct": -43.5
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-47851",
+      "description": "Analyzing a PDF with a deeply nested or cyclic table of contents can cause a StackOverflowError in the ingestion thread.\nSpring AI 2.0.0\nSpring AI 1.1.0 - 1.1.8\nSpring AI 1.0.0 - 1.0.9",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-47851"
+      ],
+      "published": "2026-08-27T01:17:32.150"
+    },
+    {
+      "id": "CVE-2026-47852",
+      "description": "A local attacker on a multi-user host can pre-create the deterministic cache path and plant a malicious ONNX model file.\nSpring AI 2.0.0\nSpring AI 1.1.0 - 1.1.8\nSpring AI 1.0.0 - 1.0.9",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-377"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-47852"
+      ],
+      "published": "2026-08-27T01:17:32.320"
+    },
+    {
+      "id": "CVE-2026-81421",
+      "description": "A security flaw has been discovered in ddfourtwo sentry-selfhosted-mcp 0.4.0. The affected element is an unknown function of the component raw_sentry_api. The manipulation of the argument endpoint results in server-side request forgery. It is possible to launch the attack remotely. The exploit has b",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/ddfourtwo/sentry-selfhosted-mcp/",
+        "https://github.com/ddfourtwo/sentry-selfhosted-mcp/issues/2",
+        "https://vuldb.com/cve/CVE-2026-81421"
+      ],
+      "published": "2026-08-27T01:18:16.227"
+    },
+    {
+      "id": "CVE-2026-81491",
+      "description": "A flaw has been found in boxpositron with-context-mcp up to 3.0.7. This affects the function ingest_notes/teleport_notes/sync_notes/project_folder of the file src/index.ts. Executing a manipulation can lead to path traversal. It is possible to launch the attack remotely. The exploit has been publish",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "http://github.com/boxpositron/with-context-mcp/issues/2",
+        "https://vuldb.com/cve/CVE-2026-81491",
+        "https://vuldb.com/submit/887138"
+      ],
+      "published": "2026-08-27T04:17:59.853"
+    },
+    {
+      "id": "CVE-2026-47860",
+      "description": "An attacker who can publish to a queue consumed by an application that has enabled message decompression can crash the consumer JVM with a single ~1 MB message.\nSpring AMQP 4.1.0\nSpring AMQP 4.0.0 - 4.0.4\nSpring AMQP 3.2.0 - 3.2.12\nSpring AMQP 2.4.18 and earlier",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [],
+      "references": [
+        "https://spring.io/security/cve-2026-47860"
+      ],
+      "published": "2026-08-27T01:17:33.000"
+    },
+    {
+      "id": "CVE-2026-47856",
+      "description": "Spring Integration's JSON to object conversion uses the json__TypeId__ header to choose the deserialization target type, and resolves that header value to a class with ClassUtils.forName and no type/package allow-list.\nSpring Integration 7.1.0\nSpring Integration 7.0.0 - 7.0.5\nSpring Integration 6.5.",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-47856"
+      ],
+      "published": "2026-08-27T01:17:32.487"
+    },
+    {
+      "id": "CVE-2026-47861",
+      "description": "An unauthenticated remote attacker who can send a single UDP packet to a Spring Integration UDP inbound adapter can cause the server to emit an outbound UDP datagram to an arbitrary internal or external host and port of the attacker's choosing.\nSpring Integration 7.1.0\nSpring Integration 7.0.0 - 7.0",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-47861"
+      ],
+      "published": "2026-08-27T01:17:33.157"
+    },
+    {
+      "id": "CVE-2026-47857",
+      "description": "In Reactor Core, applications that use the Flux.windowTimeout operator with fairBackpressure enabled are vulnerable to a Denial of Service (DoS) condition.\nReactor Core 3.8.0 - 3.8.6\nReactor Core 3.5.0 - 3.7.19\nReactor Core 3.4.41 and earlier",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-47857"
+      ],
+      "published": "2026-08-27T01:17:32.687"
+    },
+    {
+      "id": "CVE-2026-47863",
+      "description": "In Reactor Core, applications that use the Flux.bufferTimeout operator with fairBackpressure enabled are vulnerable to a Denial of Service (DoS) condition.\nReactor Core 3.8.0 - 3.8.6\nReactor Core 3.7.19 and earlier",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-835"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-47863"
+      ],
+      "published": "2026-08-27T01:17:33.467"
+    },
+    {
+      "id": "CVE-2026-47859",
+      "description": "RFC6587SyslogDeserializer, used by the Spring Integration syslog TCP inbound adapter to decode RFC 6587 / RFC 5424 frames, trusts the sender-supplied octet count of an octet-counted frame and allocates a byte array of exactly that size with no upper bound.\nSpring Integration 7.1.0\nSpring Integration",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-47859"
+      ],
+      "published": "2026-08-27T01:17:32.850"
+    },
+    {
+      "id": "CVE-2026-47862",
+      "description": "An attacker who can set the file_name header on a message reaching a ZipTransformer with ZipResultType.FILE (the default) can cause the resulting .zip archive to be written to an arbitrary filesystem path outside the configured workDirectory.\nSpring Integration 7.1.0\nSpring Integration 7.0.0 - 7.0.5",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-47862"
+      ],
+      "published": "2026-08-27T01:17:33.313"
+    },
+    {
+      "id": "CVE-2026-47845",
+      "description": "In specific scenarios, Reactor Netty HTTP Server may incorrectly evaluate the remote IP address when HAProxy Protocol is enabled. In order for this to happen, the application must be configured to use HAProxy Protocol.\nReactor Netty 1.3.0 - 1.3.6\nReactor Netty 1.1.0 - 1.2.18\nReactor Netty 1.0.52 and",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-290"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-47845"
+      ],
+      "published": "2026-08-27T01:17:31.827"
+    },
+    {
+      "id": "CVE-2026-47874",
+      "description": "The vulnerability occurs when a client sends HTTP/1.1 pipelined requests over a single connection, causing the Reactor Netty HTTP server to consume an excessive amount of memory.\nReactor Netty 1.3.0 - 1.3.6\nReactor Netty 1.1.0 - 1.2.18\nReactor Netty 1.0.52 and earlier",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-47874"
+      ],
+      "published": "2026-08-27T01:17:33.620"
+    },
+    {
+      "id": "CVE-2026-81485",
+      "description": "A security vulnerability has been detected in danielpopamd linkedin-ads-mcp 1.0.0. Affected by this vulnerability is the function fs.readFileSync of the file src/tools/campaign-management.ts of the component Media Upload. Such manipulation of the argument filePath leads to path traversal. The attack",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/danielpopamd/linkedin-ads-mcp/",
+        "https://github.com/danielpopamd/linkedin-ads-mcp/issues/5",
+        "https://vuldb.com/cve/CVE-2026-81485"
+      ],
+      "published": "2026-08-27T02:16:28.553"
+    },
+    {
+      "id": "CVE-2026-81486",
+      "description": "A vulnerability was detected in bsmi021 mcp-file-context-server 1.0.0. Affected by this issue is the function read_context of the file src/index.ts of the component Path Resolution. Performing a manipulation of the argument path results in path traversal. It is possible to initiate the attack remote",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/bsmi021/mcp-file-context-server/",
+        "https://github.com/bsmi021/mcp-file-context-server/issues/15",
+        "https://vuldb.com/cve/CVE-2026-81486"
+      ],
+      "published": "2026-08-27T02:16:28.747"
+    },
+    {
+      "id": "CVE-2026-47850",
+      "description": "Spring Data REST does not preserve the persisted version (@Version) property of an aggregate root when handling an HTTP PUT against an immutable target type.\nSpring Data REST 5.1.0\nSpring Data REST 5.0.0 - 5.0.6\nSpring Data REST 4.5.0 - 4.5.12\nSpring Data REST 4.0.0 - 4.4.15\nSpring Data REST 3.7.20 ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-915"
+      ],
+      "references": [
+        "https://spring.io/security/cve-2026-47850"
+      ],
+      "published": "2026-08-27T01:17:31.997"
+    },
+    {
+      "id": "CVE-2026-80183",
+      "description": "In OpenStack Keystone before 29.0.3, any authenticated user holding role:reader on any project can list every project-scoped role assignment under any domain by passing a domain ID as scope.project.id with include_subtree to the GET /v3/role_assignments endpoint. The domain's project record has doma",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-843"
+      ],
+      "references": [
+        "https://launchpad.net/bugs/2154645"
+      ],
+      "published": "2026-08-27T01:18:16.050"
+    },
+    {
+      "id": "CVE-2026-19398",
+      "description": "\u201cunsupported-when-assigned.\u201d An out-of-bounds write in the SmiFlash SMM module of ASUS FA507NU and FA507NV BIOS allows a local\u00a0 administrator to cause a system crash (BSOD) or BIOS corruption via a crafted software SMI (SW SMI) request with an oversized length value.Refer to the '\u00a0\nSecurity Update f",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory"
+      ],
+      "published": "2026-08-27T02:16:27.460"
+    },
+    {
+      "id": "CVE-2026-16895",
+      "description": "A logic vulnerability (fail-open condition) has been identified within the Metasploit Framework's JSON-RPC web service interface. When an exception occurs during the database health check (db.check) and the environment variable MSF_WS_JSON_RPC_API_TOKEN is not explicitly set, the application resets ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-305"
+      ],
+      "references": [
+        "https://github.com/rapid7/metasploit-framework/pull/21768",
+        "https://www.rapid7.com/blog/post/pt-metasploit-wrap-up-lot-of-summer-shells-and-fit-http-profiles/"
+      ],
+      "published": "2026-08-27T04:16:41.530"
+    },
+    {
+      "id": "CVE-2023-22289",
+      "description": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-08-27T06:16:44.280"
+    }
+  ]
+}
