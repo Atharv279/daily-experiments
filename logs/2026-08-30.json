@@ -1,0 +1,329 @@
+{
+  "timestamp": "2026-08-30T08:23:56.367932+00:00",
+  "scan_id": "b097aabe00",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 12,
+      "MEDIUM": 1,
+      "UNKNOWN": 6
+    },
+    "top_cwes": [
+      [
+        "CWE-190",
+        4
+      ],
+      [
+        "CWE-327",
+        2
+      ],
+      [
+        "CWE-285",
+        1
+      ],
+      [
+        "CWE-862",
+        1
+      ],
+      [
+        "CWE-22",
+        1
+      ]
+    ],
+    "threat_index": 332.3,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 332.3,
+        "yesterday": 223.2,
+        "change_pct": 48.9
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-50152",
+      "description": "Ceph is an open-source distributed storage platform providing object, block, and file storage. In versions prior to 20.2.4 and 19.2.6, the Monitor subscription handler fails to properly authorize access to the configuration-key store, allowing any CephX user with only \u00a0`mon allow r` capabilities to ",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/ceph/ceph/commit/d971bb2b6199f70b1708a20a63fa944ee7a94727",
+        "https://github.com/ceph/ceph/commit/f2840d2fd338ab5de2865f0f78684bbf7b888c84",
+        "https://github.com/ceph/ceph/security/advisories/GHSA-rg9p-5xcp-wm8h"
+      ],
+      "published": "2026-08-28T00:18:07.073"
+    },
+    {
+      "id": "CVE-2025-30156",
+      "description": "Ceph is an open-source distributed storage platform providing object, block, and file storage. In versions prior to 20.2.4 and 19.2.6, the CephX authentication protocol encrypts tickets with AES-128-CBC in an unauthenticated mode that uses a hard-coded initialization vector and no message authentica",
+      "severity": "HIGH",
+      "score": 8.9,
+      "cwes": [
+        "CWE-327"
+      ],
+      "references": [
+        "https://github.com/ceph/ceph/commit/2ba086255de09c8b95177717cc7e9dd4377e2f0f",
+        "https://github.com/ceph/ceph/commit/3078188a7bdd89e2975280f2a906c71c2f6effd6",
+        "https://github.com/ceph/ceph/security/advisories/GHSA-7q3q-3975-qw3q"
+      ],
+      "published": "2026-08-28T00:16:45.557"
+    },
+    {
+      "id": "CVE-2026-18965",
+      "description": "PayRange API\u00a0is missing proper authorization on management endpoints, which allows verbose details of every device on the PayRange network to be publicly accessible, with or without an account.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-237-04.json",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-237-04"
+      ],
+      "published": "2026-08-28T00:16:48.933"
+    },
+    {
+      "id": "CVE-2026-39944",
+      "description": "Ceph is an open-source distributed storage platform providing object, block, and file storage. In versions prior to 20.2.4 and 19.2.6, the RADOS Gateway (RGW) protects STS session tokens with an AES-128-CBC handler that provides no message authentication, allowing an attacker who holds any valid STS",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-327"
+      ],
+      "references": [
+        "https://github.com/ceph/ceph/releases/tag/v19.2.6",
+        "https://github.com/ceph/ceph/releases/tag/v20.2.4",
+        "https://github.com/ceph/ceph/security/advisories/GHSA-j73r-qrgx-jvq2"
+      ],
+      "published": "2026-08-28T00:17:27.860"
+    },
+    {
+      "id": "CVE-2026-54083",
+      "description": "Wazuh is an open-source security platform providing unified XDR and SIEM protection for endpoints and cloud workloads. The \u00a0ip-customblock\u00a0 active response script contains a path traversal vulnerability that lets an attacker create or delete arbitrary files on the filesystem as root. The script buil",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/wazuh/wazuh/commit/e6ef99025b2ca4ba8003efb591c51545006bc2d4",
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-m4mf-qmhf-8vj6"
+      ],
+      "published": "2026-08-28T00:18:07.233"
+    },
+    {
+      "id": "CVE-2026-54330",
+      "description": "Ceph is an open-source distributed storage platform providing object, block, and file storage. In versions prior to 20.2.4 and 19.2.6, the Ceph Object Gateway (RGW) SigV4 handler does not reject requests that carry x-amz-* headers absent from the signed header set, allowing anyone holding a presigne",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://github.com/ceph/ceph/commit/5837aa8e60471128dbb672b0ff6f1b1feebe08a7",
+        "https://github.com/ceph/ceph/commit/5978c866d4a0812fbb024745c4f1e79aaecd6c6a",
+        "https://github.com/ceph/ceph/security/advisories/GHSA-rmjq-ffrm-j6vj"
+      ],
+      "published": "2026-08-28T00:18:07.683"
+    },
+    {
+      "id": "CVE-2026-44629",
+      "description": "Improper access control to the Synergis Softwire installation folder. This vulnerability affects Streamvault all-in-one appliances (SV-100E and SV-300E series) and Synergis Softwire installed on Windows servers.",
+      "severity": "HIGH",
+      "score": 7.9,
+      "cwes": [
+        "CWE-922"
+      ],
+      "references": [
+        "https://techdocs.genetec.com/r/en-US/Security-Updates-for-SynergisTM-Softwire-12.0/Resolved-vulnerabilities-in-Synergis-Softwire-12.0.2",
+        "https://techdocs.genetec.com/r/en-US/Security-Updates-for-SynergisTM-Softwire-12.2/Resolved-vulnerabilities-in-Synergis-Softwire-12.2.0"
+      ],
+      "published": "2026-08-28T00:17:28.117"
+    },
+    {
+      "id": "CVE-2026-38346",
+      "description": "An integer overflow in the yuv2planeX_8_c() function (libswscale/output.c) of FFmpeg N-122528-gdd2976b9e1 allows attackers to cause a Denial of Service (DoS) via supplying a crafted video file.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/21584"
+      ],
+      "published": "2026-08-28T00:17:27.317"
+    },
+    {
+      "id": "CVE-2026-38348",
+      "description": "An integer overflow in the libswscale/utils.c component of FFmpeg N-122528-gdd2976b9e1 allows attackers to cause a Denial of Service (DoS) via supplying a crafted image file.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/21588"
+      ],
+      "published": "2026-08-28T00:17:27.530"
+    },
+    {
+      "id": "CVE-2026-38349",
+      "description": "An integer overflow in the hScale16To19_c() function (libswscale/output.c) of FFmpeg N-122528-gdd2976b9e1 allows attackers to cause a Denial of Service (DoS) via supplying a crafted image file.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/21592"
+      ],
+      "published": "2026-08-28T00:17:27.630"
+    },
+    {
+      "id": "CVE-2026-38350",
+      "description": "An integer overflow in the target_sws_fuzzer() function (libswscale/output.c) of FFmpeg N-122528-gdd2976b9e1 allows attackers to cause a Denial of Service (DoS) via supplying a crafted input.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://trac.ffmpeg.org/ticket/11686"
+      ],
+      "published": "2026-08-28T00:17:27.743"
+    },
+    {
+      "id": "CVE-2026-18717",
+      "description": "ASE2000 2.35 through 2.37 is vulnerable to an improper certificate validation vulnerability, which may allow an attacker to impersonate the trusted peer, complete the TLS handshake, and read or modify protected communications.",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-295"
+      ],
+      "references": [
+        "http://www.ase-systems.com",
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-239-04.json",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-239-04"
+      ],
+      "published": "2026-08-28T00:16:48.740"
+    },
+    {
+      "id": "CVE-2026-54085",
+      "description": "Wazuh is an open-source security platform providing unified XDR and SIEM protection for endpoints and cloud workloads. In versions 4.2.0 through 4.14.6, multiple active response scripts pass attacker-influenced alert fields to privileged system commands without validating their format, allowing argu",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-88"
+      ],
+      "references": [
+        "https://github.com/wazuh/wazuh/commit/b7f3a5e59000e4cdef75f397f1107ae3e1c186a9",
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-mvh4-g699-984j"
+      ],
+      "published": "2026-08-28T00:18:07.520"
+    },
+    {
+      "id": "CVE-2026-54084",
+      "description": "Wazuh is an open-source security platform providing unified XDR and SIEM protection for endpoints and cloud workloads. In versions 4.0.0 through 4.14.6, a malicious or man-in-the-middle enrollment manager can crash a Wazuh agent during enrollment by returning a malformed key response with fewer than",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/wazuh/wazuh/commit/7dfbb4a292bc6ae8e3bb4c1982f687f35216a748",
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-ppc7-hj9v-vx39",
+        "https://github.com/wazuh/wazuh/security/advisories/GHSA-ppc7-hj9v-vx39"
+      ],
+      "published": "2026-08-28T00:18:07.370"
+    },
+    {
+      "id": "CVE-2026-17610",
+      "description": "In SiSDK v2026.6.0 and earlier, high network traffic loads can cause a dropped ACK leading to a denial of service. This is only present for EFR32MG24 and EFR32MG26 devices running concurrent multiprotocol Zigbee and Thread.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/SiliconLabsSoftware/sisdk-release/tree/sisdk-2026.6",
+        "https://siliconlabs.lightning.force.com/sfc/servlet.shepherd/document/download/a45Vm000000F7VpIAK?operationContext=S1"
+      ],
+      "published": "2026-08-28T00:16:48.470"
+    },
+    {
+      "id": "CVE-2026-38343",
+      "description": "An integer overflow in the libavfilter/vf_scale.c component of FFmpeg N-122528-gdd2976b9e1 allows attackers to cause a Denial of Service (DoS) via supplying a crafted video file.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/21587"
+      ],
+      "published": "2026-08-28T00:17:26.980"
+    },
+    {
+      "id": "CVE-2026-38344",
+      "description": "A NULL pointer dereference in the get_min_buffer_size function (/libswscale/slice.c) of FFmpeg N-122528-gdd2976b9e1 allows attackers to cause a Denial of Service (DoS) via supplying a crafted video file.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/21583"
+      ],
+      "published": "2026-08-28T00:17:27.087"
+    },
+    {
+      "id": "CVE-2026-38345",
+      "description": "A Division-by-Zero vulnerability in the ff_sws_init_single_context function (/libswscale/utils.c) of FFmpeg N-122528-gdd2976b9e1 allows attackers to cause a Denial of Service (DoS) via a crafted input.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/21585"
+      ],
+      "published": "2026-08-28T00:17:27.197"
+    },
+    {
+      "id": "CVE-2026-38347",
+      "description": "A heap overflow in the ff_sws_alphablendaway function (libswscale/alphablend.c) of FFmpeg git-master commit 722a217 allows attackers to cause a Denial of Service (DoS) via a crafted input.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://trac.ffmpeg.org/ticket/11692"
+      ],
+      "published": "2026-08-28T00:17:27.420"
+    },
+    {
+      "id": "CVE-2026-5706",
+      "description": "In Bluetooth Mesh SDK 6.1.4 and earlier, malformed extended advertisements can trigger out-of-bounds writes leading to stack corruption and remote code execution. These messages must come from a device that has already joined the network. Only provisioners supporting extended advertisements may be i",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-130"
+      ],
+      "references": [
+        "https://github.com/SiliconLabs/gecko_sdk/releases",
+        "https://siliconlabs.lightning.force.com/sfc/servlet.shepherd/document/download/a45Vm000000Et6HIAS?operationContext=S1"
+      ],
+      "published": "2026-08-28T00:18:07.853"
+    }
+  ]
+}
