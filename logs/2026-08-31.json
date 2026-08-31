@@ -1,0 +1,318 @@
+{
+  "timestamp": "2026-08-31T08:44:11.033068+00:00",
+  "scan_id": "079b9bb77e",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 3,
+      "HIGH": 6,
+      "MEDIUM": 9,
+      "LOW": 1,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-918",
+        3
+      ],
+      [
+        "CWE-284",
+        3
+      ],
+      [
+        "CWE-862",
+        3
+      ],
+      [
+        "CWE-269",
+        1
+      ],
+      [
+        "CWE-89",
+        1
+      ]
+    ],
+    "threat_index": 366.9,
+    "critical_count": 3
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 366.9,
+        "yesterday": 332.3,
+        "change_pct": 10.4
+      },
+      "critical_count": {
+        "today": 3,
+        "yesterday": 1,
+        "change_pct": 200.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-16259",
+      "description": "The Uix UserCenter WordPress plugin through 1.0.3 does not verify that the account being modified through an unauthenticated profile-update action belongs to the requester, and it authenticates that action with a token whose signing key is hardcoded and identical across every install, allowing unaut",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/e551128c-c9b1-4e6a-a2aa-92830b7a4887/"
+      ],
+      "published": "2026-08-29T06:17:00.360"
+    },
+    {
+      "id": "CVE-2026-77012",
+      "description": "The \u7231\u91c7\u96c6\u6570\u636e\u91c7\u96c6\u548c\u53d1\u5e03\u63d2\u4ef6 WordPress plugin through 1.0.0 does not require a per-install secret for one of its unauthenticated endpoints, relying on a hardcoded default, and does not validate the URLs or destination paths it is given, allowing unauthenticated attackers to read arbitrary files from the server,",
+      "severity": "CRITICAL",
+      "score": 9.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/025664f8-2af7-4692-a9a0-1d28916a1565/"
+      ],
+      "published": "2026-08-29T06:17:44.040"
+    },
+    {
+      "id": "CVE-2026-16947",
+      "description": "The Total processing card payments for WooCommerce WordPress plugin through 7.3 does not validate a user-supplied path before using it to build a server-side verification request, and does not verify the authenticity of the response, allowing unauthenticated attackers to redirect that request to an ",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/53fe46b3-e8c4-448e-aa80-b7fb02fffa51/"
+      ],
+      "published": "2026-08-29T06:17:05.583"
+    },
+    {
+      "id": "CVE-2026-16061",
+      "description": "The Rest Routes  WordPress plugin through 5.5.5 does not sanitize and validate a value taken from the URL of one of its public REST routes before using it in a SQL query, allowing unauthenticated attackers to perform SQL injection attacks.",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/a5114034-797c-44cd-ba9b-6ab3655fd3e8/"
+      ],
+      "published": "2026-08-29T06:17:00.247"
+    },
+    {
+      "id": "CVE-2026-76548",
+      "description": "The User Profile Builder  WordPress plugin before 4.0.1 does not properly restrict its front-end file upload feature, granting unauthenticated visitors capabilities reserved to privileged roles. This allows them to list the site's media library and to modify unpublished posts, pages and media items ",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/75e0611d-e11d-44f8-8fc1-7c40bb113f64/"
+      ],
+      "published": "2026-08-29T06:17:29.450"
+    },
+    {
+      "id": "CVE-2026-41012",
+      "description": "Traffic interception vulnerability in BOSH Director vCenter CPI allows attackers positioned between BOSH Director and vCenter to impersonate vCenter REST API and capture administrator credentials via HTTP Basic auth, leading to complete virtualization infrastructure takeover.\n\n\n\nAn attacker who can ",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-295"
+      ],
+      "references": [
+        "https://www.cloudfoundry.org/blog/cve-2026-41012-bosh-vsphere-cpi-improper-cert-validation/"
+      ],
+      "published": "2026-08-29T03:17:06.637"
+    },
+    {
+      "id": "CVE-2026-16600",
+      "description": "The SmartAIPress WordPress plugin through 1.2.0 does not perform a capability check on one of its AJAX actions and does not validate a user-supplied URL before fetching it server-side, allowing users with subscriber-level access and above to make the site retrieve arbitrary internal or external URLs",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/66d2dc2d-fe77-4d34-bfca-d47b086a9c96/"
+      ],
+      "published": "2026-08-29T06:17:05.443"
+    },
+    {
+      "id": "CVE-2026-76586",
+      "description": "The Appointment Booking Calendar Plugin and Scheduling Plugin  WordPress plugin before 1.6.3 does not verify the amount actually paid against the server-side price staged for a booking when confirming an online payment, allowing unauthenticated users to have a paid appointment approved for a fractio",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/bc74bc9b-92ce-434e-a21d-34d7525c8600/"
+      ],
+      "published": "2026-08-29T06:17:34.353"
+    },
+    {
+      "id": "CVE-2026-77007",
+      "description": "The HEL Online Classroom: AI-powered Online Classrooms WordPress plugin through 1.0.3 does not perform any authorisation check on one of its REST API routes, allowing unauthenticated users to retrieve its stored settings, including the shared secret used to sign API requests to the connected BigBlue",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/24f1da87-4217-4876-a0f3-5e125f694651/"
+      ],
+      "published": "2026-08-29T06:17:34.453"
+    },
+    {
+      "id": "CVE-2026-76546",
+      "description": "The User Profile Builder  WordPress plugin before 4.0.1 does not escape the output of one of its optional shortcodes, allowing users with a role as low as contributor to perform Stored Cross-Site Scripting attacks against any user viewing the affected content, including administrators. The shortcode",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/2c67d682-3e11-4fcd-9aae-ab7895d5da67/"
+      ],
+      "published": "2026-08-29T06:17:24.977"
+    },
+    {
+      "id": "CVE-2026-76547",
+      "description": "The User Profile Builder  WordPress plugin before 4.0.1 does not validate the type of data being deserialized when importing a configuration file, allowing high privilege users such as administrators to conduct PHP Object Injection. The affected feature is a free add-on which is disabled by default,",
+      "severity": "MEDIUM",
+      "score": 6.6,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/b80151f4-e910-4263-9ecc-470fb39d7583/"
+      ],
+      "published": "2026-08-29T06:17:29.343"
+    },
+    {
+      "id": "CVE-2026-18233",
+      "description": "The MStore API  WordPress plugin before 4.21.1 does not verify that the order targeted by one of its delivery endpoints belongs to the requester, allowing any authenticated user, including Subscribers, to mark arbitrary orders as completed and paid without any payment being made.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/241c0394-8dfa-475c-a91b-e2b5e47add53/"
+      ],
+      "published": "2026-08-29T06:17:16.007"
+    },
+    {
+      "id": "CVE-2026-18234",
+      "description": "The MStore API  WordPress plugin before 4.21.1 does not verify that the order targeted by its wallet payment handling belongs to the requester, and does not deduct the wallet balance for most payment methods, allowing any authenticated user, including Subscribers, to mark arbitrary orders as paid wi",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/1dc31c4e-9687-4056-a93e-9509c5a88828/"
+      ],
+      "published": "2026-08-29T06:17:20.960"
+    },
+    {
+      "id": "CVE-2026-77008",
+      "description": "The HEL Online Classroom: AI-powered Online Classrooms WordPress plugin through 1.0.3 does not have any authorisation or authentication check when saving its settings, allowing unauthenticated users to overwrite them and repoint every online classroom, along with the shared secret those sessions are",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/529663a1-87ed-4cff-92f5-85641e9718b3/"
+      ],
+      "published": "2026-08-29T06:17:38.927"
+    },
+    {
+      "id": "CVE-2026-77010",
+      "description": "The HEL Online Classroom: AI-powered Online Classrooms WordPress plugin through 1.0.3 does not perform authorisation checks on its REST API routes and does not consistently enforce the per-class access code, allowing unauthenticated users to obtain a signed meeting join link for any classroom, inclu",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/c50e6d2c-fe67-44d4-af10-a261d0afc6d7/"
+      ],
+      "published": "2026-08-29T06:17:39.037"
+    },
+    {
+      "id": "CVE-2026-17522",
+      "description": "The Newsletters WordPress plugin before 4.17 does not perform any nonce or capability check when saving one of its settings screens, and writes every submitted parameter into its own options, allowing attackers to make a logged in administrator overwrite arbitrary Newsletters WordPress plugin before",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/ebb8d4b7-14b5-49ed-b727-129123d6ce45/"
+      ],
+      "published": "2026-08-29T06:17:12.290"
+    },
+    {
+      "id": "CVE-2026-19430",
+      "description": "The Catfolders Document Gallery Pro WordPress plugin before 2.0.7 does not authorise some of its REST API routes, and the token identifying the requested content is forgeable client side, allowing unauthenticated users to list and download the contents of folders that were never published on the sit",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/ebf45bc7-a782-48b6-99ca-25bc78697e20/"
+      ],
+      "published": "2026-08-29T06:17:24.857"
+    },
+    {
+      "id": "CVE-2026-17520",
+      "description": "The Newsletters WordPress plugin before 4.17 does not generate its API key using a sufficiently random source, deriving it from a publicly known value, allowing unauthenticated attackers to compute the key and perform privileged actions such as adding and deleting subscribers and sending emails, whe",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-326"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/5a719e6b-22e1-4950-bf17-cd92e2ea6685/"
+      ],
+      "published": "2026-08-29T06:17:12.177"
+    },
+    {
+      "id": "CVE-2026-77704",
+      "description": "The Booking for Appointments and Events Calendar  WordPress plugin before 2.4.9 does not check that a user holds the required capability before letting them change an appointment's status, allowing customers to set arbitrary statuses on appointments they are booked on, including approving their own ",
+      "severity": "LOW",
+      "score": 2.7,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/7b444920-28c4-4e4c-b5fd-38fdc31aef0c/"
+      ],
+      "published": "2026-08-29T06:17:44.150"
+    },
+    {
+      "id": "CVE-2026-10522",
+      "description": "The MemberHero  WordPress plugin through 6.9 does not restrict which account fields can be supplied during its frontend registration process, allowing unauthenticated attackers to register a new user with an arbitrary role, including Administrator, leading to a full site takeover.\n\nVersion 6.9 is ad",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/8d531f22-1e8b-4e35-adec-c9304f4f7a07/"
+      ],
+      "published": "2026-08-29T06:16:57.717"
+    }
+  ]
+}
