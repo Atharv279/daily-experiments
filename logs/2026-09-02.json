@@ -1,0 +1,369 @@
+{
+  "timestamp": "2026-09-02T07:10:20.465887+00:00",
+  "scan_id": "40ea10c497",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 4,
+      "MEDIUM": 6,
+      "LOW": 1,
+      "UNKNOWN": 8
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        4
+      ],
+      [
+        "CWE-94",
+        3
+      ],
+      [
+        "CWE-119",
+        2
+      ],
+      [
+        "CWE-77",
+        2
+      ],
+      [
+        "CWE-22",
+        2
+      ]
+    ],
+    "threat_index": 190.5,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 190.5,
+        "yesterday": 221.6,
+        "change_pct": -14.0
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 1,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-82593",
+      "description": "A flaw has been found in D-Link DIR-825M 1.1.8. This impacts the function sub_41802C of the file /boafrm/formLtefotaUpgradeFibocom of the component LTE Module Firmware Upgrade. This manipulation of the argument fota_url causes stack-based buffer overflow. The attack is possible to be carried out rem",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/Robots10/IoT_vlu/blob/main/reports/Dlink/formLtefotaUpgradeFibocom/formLtefotaUpgradeFibocom.md",
+        "https://vuldb.com/cve/CVE-2026-82593",
+        "https://vuldb.com/submit/892516"
+      ],
+      "published": "2026-08-31T00:16:41.630"
+    },
+    {
+      "id": "CVE-2026-82595",
+      "description": "A vulnerability was found in D-Link DIR-825M 1.1.8. Affected by this vulnerability is the function sub_456CF4 of the file /boafrm/formSysCmd of the component System Command Execution. Performing a manipulation of the argument sysCmd results in command injection. It is possible to initiate the attack",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/Robots10/IoT_vlu/blob/main/reports/Dlink/formSysCmd/formSysCmd.md",
+        "https://vuldb.com/cve/CVE-2026-82595",
+        "https://vuldb.com/submit/892630"
+      ],
+      "published": "2026-08-31T00:16:41.980"
+    },
+    {
+      "id": "CVE-2026-82597",
+      "description": "A vulnerability was identified in TOTOLINK NR1800X 9.1.0u.6681_B20230703. This affects the function setUssd of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ussd leads to command injection. The attack can be initiated remotely. The exploit is publicly available and might be used.",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/lxiansheng488-bit/-/blob/main/TOTOlink/totolink%20setuuid%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5.pdf",
+        "https://vuldb.com/cve/CVE-2026-82597",
+        "https://vuldb.com/submit/892696"
+      ],
+      "published": "2026-08-31T01:16:50.190"
+    },
+    {
+      "id": "CVE-2026-82598",
+      "description": "A vulnerability was determined in SeaCMS up to 13.6. Affected is the function parseIf of the file search.php of the component Template Engine. This manipulation of the argument searchtype causes code injection. It is possible to initiate the attack remotely. The exploit has been publicly disclosed a",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/T-Chachamaru/seacms-13.6-security-advisories/blob/a084a3e573240d54860153321df271280daec262/c-009-search-cascade-template-rce.md",
+        "https://vuldb.com/cve/CVE-2026-82598",
+        "https://vuldb.com/submit/892763"
+      ],
+      "published": "2026-08-31T01:16:50.417"
+    },
+    {
+      "id": "CVE-2026-82600",
+      "description": "A security flaw has been discovered in SeaCMS up to 13.6. Affected by this issue is some unknown functionality of the file /zyapi.php?ac=videolist. Performing a manipulation of the argument ids results in sql injection. The attack can be initiated remotely. The exploit has been released to the publi",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/T-Chachamaru/seacms-13.6-security-advisories/blob/a084a3e573240d54860153321df271280daec262/c-004-zyapi-ids-sql-injection.md",
+        "https://vuldb.com/cve/CVE-2026-82600",
+        "https://vuldb.com/submit/892781"
+      ],
+      "published": "2026-08-31T02:17:02.603"
+    },
+    {
+      "id": "CVE-2026-82599",
+      "description": "A vulnerability was identified in SeaCMS up to 13.6. Affected by this vulnerability is the function unlink of the file /member.php?action=chgpwdsubmit of the component Avatar Upload. Such manipulation of the argument oldpic leads to path traversal. It is possible to launch the attack remotely. The e",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/T-Chachamaru/seacms-13.6-security-advisories/blob/a084a3e573240d54860153321df271280daec262/c-002b-member-oldpic-file-deletion.md",
+        "https://vuldb.com/cve/CVE-2026-82599",
+        "https://vuldb.com/submit/892780"
+      ],
+      "published": "2026-08-31T01:16:50.630"
+    },
+    {
+      "id": "CVE-2026-82603",
+      "description": "A vulnerability was detected in SeaCMS up to 13.6. This issue affects some unknown processing of the file /member.php?action=del_pl of the component Comment Cache. The manipulation of the argument itype/vid results in path traversal. The attack may be launched remotely. The exploit is now public and",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/T-Chachamaru/seacms-13.6-security-advisories/blob/a084a3e573240d54860153321df271280daec262/c-008-member-del-pl-js-file-deletion.md",
+        "https://vuldb.com/cve/CVE-2026-82603",
+        "https://vuldb.com/submit/892790"
+      ],
+      "published": "2026-08-31T02:17:03.190"
+    },
+    {
+      "id": "CVE-2026-82602",
+      "description": "A security vulnerability has been detected in SeaCMS up to 13.6. This vulnerability affects unknown code of the file /ass.php. The manipulation leads to authorization bypass. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/T-Chachamaru/seacms-13.6-security-advisories/blob/a084a3e573240d54860153321df271280daec262/c-011-ass-paywall-url-disclosure.md",
+        "https://vuldb.com/cve/CVE-2026-82602",
+        "https://vuldb.com/submit/892789"
+      ],
+      "published": "2026-08-31T02:17:03.003"
+    },
+    {
+      "id": "CVE-2026-82594",
+      "description": "A vulnerability has been found in LogNet grpc-spring-boot-starter up to 5.2.0. Affected is an unknown function of the component Annotation Processing. Such manipulation leads to improper authorization. The attack may be performed from remote. A high complexity level is associated with this attack. T",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/LogNet/grpc-spring-boot-starter/",
+        "https://github.com/LogNet/grpc-spring-boot-starter/issues/423",
+        "https://vuldb.com/cve/CVE-2026-82594"
+      ],
+      "published": "2026-08-31T00:16:41.800"
+    },
+    {
+      "id": "CVE-2026-82601",
+      "description": "A weakness has been identified in SeaCMS up to 13.6. This affects an unknown part of the file /err.php. Executing a manipulation of the argument errtxt can lead to cross site scripting. The attack can be launched remotely. The exploit has been made available to the public and could be used for attac",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/T-Chachamaru/seacms-13.6-security-advisories/blob/a084a3e573240d54860153321df271280daec262/c-007-errtxt-reflected-xss.md",
+        "https://vuldb.com/cve/CVE-2026-82601",
+        "https://vuldb.com/submit/892786"
+      ],
+      "published": "2026-08-31T02:17:02.817"
+    },
+    {
+      "id": "CVE-2026-82604",
+      "description": "A flaw has been found in BareBones BBEdit up to 15.5.5. Impacted is an unknown function of the component Java Language Module. This manipulation causes uncontrolled recursion. Remote exploitation of the attack is possible. Upgrading to version 16.0 is recommended to address this issue. You should up",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-674"
+      ],
+      "references": [
+        "https://ciphersecuritylabs.com/research/articles/fuzzing-bbedit-language-modules-stack-exhaustion-and-infinite-loop-dos-bugs",
+        "https://vuldb.com/cve/CVE-2026-82604",
+        "https://vuldb.com/submit/892839"
+      ],
+      "published": "2026-08-31T02:17:03.370"
+    },
+    {
+      "id": "CVE-2026-82596",
+      "description": "A vulnerability was determined in LatencyUtils up to 2.0.3. Affected by this issue is the function LatencyStats.recordDetectedPause of the file src/main/java/org/LatencyUtils/LatencyStats.java of the component PauseDetector. Executing a manipulation can lead to memory corruption. The attack needs to",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://github.com/LatencyUtils/LatencyUtils/",
+        "https://github.com/LatencyUtils/LatencyUtils/issues/22",
+        "https://vuldb.com/cve/CVE-2026-82596"
+      ],
+      "published": "2026-08-31T00:16:42.150"
+    },
+    {
+      "id": "CVE-2026-77956",
+      "description": "Improper Control of Generation of Code (Code Injection) vulnerability in ash-project ash_ai allows a remote, unauthenticated client to execute arbitrary Elixir code.\n\nAshAi.Actions.Prompt evaluates prompt content through EEx.eval_string/2. The documented prompt: fn input, context -> ... end form let",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-77956.html",
+        "https://github.com/ash-project/ash_ai/commit/e9948254b5659c1143b73dc2f59f457931e64514",
+        "https://github.com/ash-project/ash_ai/security/advisories/GHSA-2g59-hg7m-qc83"
+      ],
+      "published": "2026-08-31T01:16:49.563"
+    },
+    {
+      "id": "CVE-2026-81315",
+      "description": "Origin Validation Error vulnerability in ash-project ash_ai allows a malicious web page to bypass the MCP server's DNS-rebinding protection and issue cross-site requests to a user's local MCP server with that user's actor.\n\nIn AshAi.Mcp.Server, with the default allowed_origins: nil, origin_allowed?/",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-346"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-81315.html",
+        "https://github.com/ash-project/ash_ai/commit/28af68d73134df0b8fb3aa6ab03e8fd795b07c21",
+        "https://github.com/ash-project/ash_ai/security/advisories/GHSA-c92r-f3rr-q49h"
+      ],
+      "published": "2026-08-31T01:16:49.977"
+    },
+    {
+      "id": "CVE-2026-75760",
+      "description": "Generation of Error Message Containing Sensitive Information vulnerability in ash-project ash_ai discloses provider request state and credentials in a user-facing validation error.\n\nIn AshAi.Changes.Vectorize, when the embedding provider call fails the change added a changeset error whose message in",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-209"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-75760.html",
+        "https://github.com/ash-project/ash_ai/commit/088a2562e16d65f36cec178070de683636479f58",
+        "https://github.com/ash-project/ash_ai/security/advisories/GHSA-p5cr-mmmf-6w39"
+      ],
+      "published": "2026-08-31T02:17:01.313"
+    },
+    {
+      "id": "CVE-2026-82564",
+      "description": "Authorization Bypass Through User-Controlled Key vulnerability in ash-project ash_ai allows a caller of an identity-configured tool to update or destroy records it never identified, including every row in the table.\n\nIn AshAi.Tool.Execution, identity_filter/3 built the update/destroy filter directly",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-82564.html",
+        "https://github.com/ash-project/ash_ai/commit/87f616d5bfbf7af43346f0701ae17f853789a602",
+        "https://github.com/ash-project/ash_ai/security/advisories/GHSA-jg86-xh36-h5xc"
+      ],
+      "published": "2026-08-31T02:17:02.103"
+    },
+    {
+      "id": "CVE-2026-82579",
+      "description": "Loop with Unreachable Exit Condition (Infinite Loop) vulnerability in ash-project ash_ai allows an attacker who can influence a model's output to hang the tool loop and drive unbounded, repeated model requests.\n\nAshAi.ToolLoop classifies a model response of :tool_calls, then filters the calls throug",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-835"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-82579.html",
+        "https://github.com/ash-project/ash_ai/commit/53325fdab90afab628c6a53232ef2a9001580bd9",
+        "https://github.com/ash-project/ash_ai/security/advisories/GHSA-rcx7-x2w5-mmc2"
+      ],
+      "published": "2026-08-31T02:17:02.270"
+    },
+    {
+      "id": "CVE-2026-82580",
+      "description": "Generation of Error Message Containing Sensitive Information vulnerability in ash-project ash_ai discloses internal error text to chat users.\n\nIn AshAi.ToolLoop and AshAi.Tools, an exception raised while executing a tool was serialized verbatim with Exception.message/1 into the tool-result content. ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-209"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-82580.html",
+        "https://github.com/ash-project/ash_ai/commit/c68dfbdb220426dc015b58379e95bde8e9f0995a",
+        "https://github.com/ash-project/ash_ai/security/advisories/GHSA-5747-6mpw-6m9c"
+      ],
+      "published": "2026-08-31T02:17:02.440"
+    },
+    {
+      "id": "CVE-2026-75757",
+      "description": "Reliance on Cookies without Validation and Integrity Checking vulnerability in ash-project ash_admin lets an attacker who controls a sibling subdomain rebind an admin's session to a different actor, tenant, or authorization mode.\n\nAshAdmin's client JavaScript read its state cookies (tenant, actor_re",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-565"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-75757.html",
+        "https://github.com/ash-project/ash_admin/commit/e93a3408a85035e1f90275d02bc2470c96095e56",
+        "https://github.com/ash-project/ash_admin/security/advisories/GHSA-3259-55fp-w94j"
+      ],
+      "published": "2026-08-31T03:16:42.133"
+    },
+    {
+      "id": "CVE-2026-77850",
+      "description": "Stored Cross-site Scripting vulnerability in ash-project ash_admin executes attacker-supplied record content as script in an administrator's browser.\n\nThe relationship typeahead components AshAdmin.Components.Resource.RelationshipField and AshAdmin.Components.Resource.ManagedRelationshipSelectField ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-77850.html",
+        "https://github.com/ash-project/ash_admin/commit/07289191ccdac27dd70ab7c6413ed057bc7fdade",
+        "https://github.com/ash-project/ash_admin/security/advisories/GHSA-m23x-576h-73w8"
+      ],
+      "published": "2026-08-31T03:16:42.307"
+    }
+  ]
+}
