@@ -1,0 +1,349 @@
+{
+  "timestamp": "2026-09-03T07:19:41.882661+00:00",
+  "scan_id": "d00a0c6179",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "MEDIUM": 2,
+      "LOW": 2,
+      "UNKNOWN": 15
+    },
+    "top_cwes": [
+      [
+        "CWE-770",
+        2
+      ],
+      [
+        "CWE-209",
+        2
+      ],
+      [
+        "CWE-20",
+        2
+      ],
+      [
+        "CWE-434",
+        1
+      ],
+      [
+        "CWE-22",
+        1
+      ]
+    ],
+    "threat_index": 67.8,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 67.8,
+        "yesterday": 190.5,
+        "change_pct": -64.4
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 1,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-75865",
+      "description": "The WPLP Cookie Consent \u2013 Cookie Banner & Consent Management for GDPR, CCPA & Google Consent Mode plugin for WordPress is vulnerable to arbitrary file upload due to missing file type validation in the saas_upload_logo() function combined with an authorization bypass on the WPLP connector REST endpoi",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3674117/gdpr-cookie-consent",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/96a2a552-e73f-4b27-88de-50eb63a8d131?source=cve"
+      ],
+      "published": "2026-09-01T03:16:51.370"
+    },
+    {
+      "id": "CVE-2026-67395",
+      "description": "A path traversal vulnerability exists in Sage Employee Self Service\u2019s custom logo functionality due to improper validation of file path parameters. By leveraging directory traversal sequences and their encoded variants, an attacker may bypass directory restrictions and access files outside the appli",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://docs.sage.com/docs/en/customer/hrms/current/open/SageHRMS_PU_Q22026_RN.pdf"
+      ],
+      "published": "2026-09-01T03:16:51.060"
+    },
+    {
+      "id": "CVE-2026-19032",
+      "description": "jackson-databind's deserializer for java.nio.file.Path resolves an attacker-supplied URI without restricting the URI scheme. In JDKFromStringDeserializer.NioPathHelper.deserialize, a string bound from untrusted JSON is passed to new URI(value) and then to Path.of(uri). When that throws FileSystemNot",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-470",
+        "CWE-610"
+      ],
+      "references": [
+        "https://github.com/FasterXML/jackson-databind/commit/cc6756b61ed90b6b9227f670e0408d5d9bd48551",
+        "https://github.com/FasterXML/jackson-databind/commit/ce26eda3481cd796f76ba4c53ffe1da23b53f166",
+        "https://github.com/FasterXML/jackson-databind/commit/d94bb632becfe0ba96926b9909ab06d1f87aad6d"
+      ],
+      "published": "2026-09-01T04:18:00.433"
+    },
+    {
+      "id": "CVE-2026-48932",
+      "description": "A flaw in Node.js HTTP client can cause a request desynchronization for Node.js-based forwarding proxies that rebuild outbound headers from the visible `IncomingMessage` headers while piping the original body to a reused backend connection.\r\n\r\nNode.js can omit headers beyond `maxHeadersCount` / `max",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-444"
+      ],
+      "references": [
+        "https://hackerone.com/reports/3564941"
+      ],
+      "published": "2026-09-01T03:16:48.680"
+    },
+    {
+      "id": "CVE-2026-18743",
+      "description": "A flaw was found in popt. This vulnerability allows an attacker to provide specially crafted configuration content to a host, which, when loaded, can lead to a small memory corruption issue. This occurs because of an error in how the `poptConfigFileToString` function reallocates memory for buffers. ",
+      "severity": "LOW",
+      "score": 2.5,
+      "cwes": [
+        "CWE-131"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-18743",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2510809"
+      ],
+      "published": "2026-09-01T02:16:57.647"
+    },
+    {
+      "id": "CVE-2026-19820",
+      "description": "A vulnerability in the Backblaze Client allows a local user to make the system not bootable by creating a link from Backblaze's folder to Windows OS system files during a backup. Successful exploitation requires an administrator-level system change that results in the absence of specific Windows OS ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-59"
+      ],
+      "references": [
+        "https://www.backblaze.com/computer-backup/docs/backup-client-release-notes-windows",
+        "https://www.backblaze.com/status/update"
+      ],
+      "published": "2026-09-01T01:16:33.137"
+    },
+    {
+      "id": "CVE-2026-65643",
+      "description": "Eval injection in cPanel 11.138.0.0 and earlier allows remote authenticated users to execute arbitrary code as root.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-95"
+      ],
+      "references": [
+        "https://support.cpanel.net/hc/en-us/articles/42959571221527-Security-CVE-2026-65643-Park-API-Vulnerability-August-27-2026"
+      ],
+      "published": "2026-09-01T03:16:50.807"
+    },
+    {
+      "id": "CVE-2026-67394",
+      "description": "A critical local privilege escalation via OS command injection vulnerability has been discovered in Plesk for Linux, affecting all versions from 18.0.34 before 18.0.79.9 and 18.0.80.5. The vulnerability allows a customer or reseller with shell access (or allowed to change their own shell access) to ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://support.plesk.com/hc/en-us/articles/42968165026967-CVE-2026-67394-Vulnerability-in-Plesk-allows-privilege-escalation-to-root"
+      ],
+      "published": "2026-09-01T03:16:50.937"
+    },
+    {
+      "id": "CVE-2026-74837",
+      "description": "Allocation of Resources Without Limits or Throttling vulnerability in ash-project ash_typescript allows an unauthenticated attacker to exhaust the BEAM atom table and abort the node via client-supplied RPC field names.\n\nAshTypescript.FieldFormatter.convert_to_field_atom/2 in lib/ash_typescript/field",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-74837.html",
+        "https://github.com/ash-project/ash_typescript/commit/df95df4b9afdca5e5bbce32dbd566ccc49a7f14b",
+        "https://github.com/ash-project/ash_typescript/security/advisories/GHSA-mhxc-mhqx-3v28"
+      ],
+      "published": "2026-09-01T03:16:51.187"
+    },
+    {
+      "id": "CVE-2026-77856",
+      "description": "Allocation of Resources Without Limits or Throttling vulnerability in ash-project ash_typescript allows an unauthenticated attacker to exhaust the BEAM atom table and abort the node via client-supplied typed struct field names.\n\nresolve_typed_struct_field/2 in lib/ash_typescript/rpc/field_processing",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-77856.html",
+        "https://github.com/ash-project/ash_typescript/commit/0ab5c83a7df28d51a6de1fb9b859a142b2b12919",
+        "https://github.com/ash-project/ash_typescript/security/advisories/GHSA-rj47-h936-4cxw"
+      ],
+      "published": "2026-09-01T03:16:51.500"
+    },
+    {
+      "id": "CVE-2026-77950",
+      "description": "Generation of Error Message Containing Sensitive Information vulnerability in ash-project ash_typescript allows an unauthenticated attacker to receive unredacted internal error data by provoking an error shape the configured error handler does not match.\n\napply_error_handler/3 in lib/ash_typescript/",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-209"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-77950.html",
+        "https://github.com/ash-project/ash_typescript/commit/59d8e985a98cf2e01794dbe5b919b897a95311f4",
+        "https://github.com/ash-project/ash_typescript/security/advisories/GHSA-mjr7-r3rf-x963"
+      ],
+      "published": "2026-09-01T03:16:51.660"
+    },
+    {
+      "id": "CVE-2026-82730",
+      "description": "Incorrect Authorization vulnerability in ash-project ash_typescript allows an unauthorized RPC caller to read attribute values that Ash field policies denied.\n\nWhen a field policy denies an attribute, Ash substitutes %Ash.ForbiddenField{}, which retains the real value in original_value because embed",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-82730.html",
+        "https://github.com/ash-project/ash_typescript/commit/aa7f9f1967b0bec806ac1156142267e805d70a55",
+        "https://github.com/ash-project/ash_typescript/security/advisories/GHSA-6929-rjmh-4x62"
+      ],
+      "published": "2026-09-01T03:16:52.787"
+    },
+    {
+      "id": "CVE-2026-82731",
+      "description": "URL Redirection to Untrusted Site ('Open Redirect') vulnerability in ash-project ash_typescript allows an attacker who controls a path-parameter value to redirect a generated client's request, and the credentials attached to it, to an unintended route or an external origin.\n\nThe URL builders in lib/",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-601"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-82731.html",
+        "https://github.com/ash-project/ash_typescript/commit/5165f752f5f92b755d946f2d1ce750ff69083ffc",
+        "https://github.com/ash-project/ash_typescript/security/advisories/GHSA-6g23-p936-fm2f"
+      ],
+      "published": "2026-09-01T03:16:52.993"
+    },
+    {
+      "id": "CVE-2026-82732",
+      "description": "Improper Input Validation vulnerability in ash-project ash_typescript allows a remote attacker to submit argument values outside a declared allowlist or bound on typed-controller routes.\n\nAshTypescript.TypedController.RequestHandler in lib/ash_typescript/typed_controller/request_handler.ex calls Ash",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-82732.html",
+        "https://github.com/ash-project/ash_typescript/commit/21ab6f1229a4dccdb56bc37ed437d9672a0c4a4e",
+        "https://github.com/ash-project/ash_typescript/security/advisories/GHSA-f7fq-hwq6-jhvv"
+      ],
+      "published": "2026-09-01T03:16:53.193"
+    },
+    {
+      "id": "CVE-2026-82733",
+      "description": "Generation of Error Message Containing Sensitive Information vulnerability in ash-project ash_typescript allows an unauthenticated attacker to read internal application data from an HTTP 500 response body.\n\nWhen a typed-controller route handler returns anything other than a %Plug.Conn{}, dispatch/3 ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-209"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-82733.html",
+        "https://github.com/ash-project/ash_typescript/commit/dec80e29543f96e43eeece8501376562f17ac638",
+        "https://github.com/ash-project/ash_typescript/security/advisories/GHSA-ghhw-qh7p-55xr"
+      ],
+      "published": "2026-09-01T03:16:53.373"
+    },
+    {
+      "id": "CVE-2026-82734",
+      "description": "Improper Validation of Specified Quantity in Input vulnerability in ash-project ash allows an attacker to submit a non-finite decimal value that bypasses numeric bounds constraints or fails later operations on the value.\n\nAsh.Type.Decimal cast input through Ecto's decimal cast in cast_input/2 and ca",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-1284"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-82734.html",
+        "https://github.com/ash-project/ash/commit/818087b1b3364f2af6f5460d6b01262ad0f69204",
+        "https://github.com/ash-project/ash/security/advisories/GHSA-mvvh-q33h-q62v"
+      ],
+      "published": "2026-09-01T04:18:02.600"
+    },
+    {
+      "id": "CVE-2026-82735",
+      "description": "Uncontrolled Resource Consumption vulnerability in ash-project ash allows an attacker to force an expensive regular expression to run on input that a length constraint should have already rejected.\n\nAsh.Type.String.apply_constraints/2 (lib/ash/type/string.ex) evaluated the :match regex regardless of",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-82735.html",
+        "https://github.com/ash-project/ash/commit/14928412a1a94a69c47df8e98920d3a2b09cdec4",
+        "https://github.com/ash-project/ash/security/advisories/GHSA-mq7g-pffw-m8xh"
+      ],
+      "published": "2026-09-01T04:18:02.817"
+    },
+    {
+      "id": "CVE-2026-82736",
+      "description": "Incorrect Behavior Order: Validate Before Canonicalize vulnerability in ash-project ash lets an attacker store a case-insensitive string value that violates its length or match constraints.\n\nAsh.Type.CiString.apply_constraints/2 (lib/ash/type/ci_string.ex) validated the max_length, min_length, and m",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-180"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-82736.html",
+        "https://github.com/ash-project/ash/commit/d8320b0127c8ef453679d70e5dd23a9506951d21",
+        "https://github.com/ash-project/ash/security/advisories/GHSA-gg9w-7593-hxg9"
+      ],
+      "published": "2026-09-01T04:18:03.007"
+    },
+    {
+      "id": "CVE-2026-82737",
+      "description": "Integer Overflow or Wraparound vulnerability in ash-project ash lets an attacker corrupt a stored vector and crash later reads of it by submitting a vector with more than 65,535 elements.\n\nAsh.Vector.new/1 (lib/ash/vector.ex) encodes a vector as <<dim::unsigned-16, 0::unsigned-16>> followed by the e",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-82737.html",
+        "https://github.com/ash-project/ash/commit/cef5eb7b0693f04d1699a36e02a4e09ce1e7bffe",
+        "https://github.com/ash-project/ash/security/advisories/GHSA-68q3-w4w3-2gfv"
+      ],
+      "published": "2026-09-01T04:18:03.193"
+    },
+    {
+      "id": "CVE-2026-82738",
+      "description": "Improper Input Validation vulnerability in ash-project ash allows an attacker to persistently deny reads of a record by storing a non-version-7 UUID in an Ash.Type.UUIDv7 attribute.\n\nAsh.Type.UUIDv7.cast_input/2 accepts any well-formed UUID string, including non-version-7 UUIDs, and stores it as a 1",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-82738.html",
+        "https://github.com/ash-project/ash/commit/c453cdc0b8570e86ffef0d10e136247f52b3ea76",
+        "https://github.com/ash-project/ash/security/advisories/GHSA-7xfw-9jwm-9c4c"
+      ],
+      "published": "2026-09-01T04:18:03.387"
+    }
+  ]
+}
