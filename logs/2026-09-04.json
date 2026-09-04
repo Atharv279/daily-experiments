@@ -1,0 +1,340 @@
+{
+  "timestamp": "2026-09-04T07:18:03.447013+00:00",
+  "scan_id": "f7d83853b6",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 4,
+      "HIGH": 8,
+      "MEDIUM": 6,
+      "LOW": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-416",
+        6
+      ],
+      [
+        "CWE-863",
+        5
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-20",
+        1
+      ],
+      [
+        "CWE-908",
+        1
+      ]
+    ],
+    "threat_index": 429.9,
+    "critical_count": 4
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 429.9,
+        "yesterday": 67.8,
+        "change_pct": 534.1
+      },
+      "critical_count": {
+        "today": 4,
+        "yesterday": 1,
+        "change_pct": 300.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-84325",
+      "description": "Improper input validation in DataTransfer in Google Chrome prior to 152.0.7977.75 allowed a remote attacker leveraging social engineering to bypass system access restrictions via a co-installed app. (Chromium security severity: High)",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/553117928"
+      ],
+      "published": "2026-09-02T00:18:27.340"
+    },
+    {
+      "id": "CVE-2026-84333",
+      "description": "Use after free in Dawn in Google Chrome on on Android prior to 152.0.7977.75 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/549311485"
+      ],
+      "published": "2026-09-02T00:18:28.217"
+    },
+    {
+      "id": "CVE-2026-84352",
+      "description": "Use after free in WebGL in Google Chrome on on Android prior to 152.0.7977.75 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/546260492"
+      ],
+      "published": "2026-09-02T00:18:29.097"
+    },
+    {
+      "id": "CVE-2026-84324",
+      "description": "Use after free in Proxy in Google Chrome prior to 152.0.7977.75 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: High)",
+      "severity": "CRITICAL",
+      "score": 9.0,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/533534913"
+      ],
+      "published": "2026-09-02T00:18:27.230"
+    },
+    {
+      "id": "CVE-2026-84326",
+      "description": "Uninitialized resource in V8 in Google Chrome prior to 152.0.7977.75 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-908"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/547936520"
+      ],
+      "published": "2026-09-02T00:18:27.447"
+    },
+    {
+      "id": "CVE-2026-84347",
+      "description": "Use after free in WebRTC in Google Chrome prior to 152.0.7977.75 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/501679156"
+      ],
+      "published": "2026-09-02T00:18:28.550"
+    },
+    {
+      "id": "CVE-2026-84350",
+      "description": "Use after free in TabStrip in Google Chrome prior to 152.0.7977.75 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via UI Interaction. (Chromium security severity: Low)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/513713427"
+      ],
+      "published": "2026-09-02T00:18:28.873"
+    },
+    {
+      "id": "CVE-2026-84335",
+      "description": "Incorrect authorization in TabStrip in Google Chrome prior to 152.0.7977.75 allowed a remote attacker who had compromised the renderer process and leveraged social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/522302504"
+      ],
+      "published": "2026-09-02T00:18:28.443"
+    },
+    {
+      "id": "CVE-2026-84349",
+      "description": "Use after free in Browser in Google Chrome prior to 152.0.7977.75 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/537105664"
+      ],
+      "published": "2026-09-02T00:18:28.770"
+    },
+    {
+      "id": "CVE-2026-84351",
+      "description": "Buffer overflow in GPU in Google Chrome on on Windows prior to 152.0.7977.75 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/551593376"
+      ],
+      "published": "2026-09-02T00:18:28.983"
+    },
+    {
+      "id": "CVE-2026-84334",
+      "description": "Incorrect authorization in Chromoting in Google Chrome on on Windows prior to 152.0.7977.75 allowed a local attacker to execute arbitrary code outside the sandbox via a local program. (Chromium security severity: Medium)",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/517798926"
+      ],
+      "published": "2026-09-02T00:18:28.337"
+    },
+    {
+      "id": "CVE-2026-81928",
+      "description": "Net::DNS versions before 1.57 for Perl allow memory exhaustion via unbounded recursion in sig_data when re-encoding a message with a misplaced TSIG record.\n\nsig_data signs a message by re-encoding it, and removes TSIG records only from the additional section. A TSIG decoded into the answer or author",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://datatracker.ietf.org/doc/html/rfc8945#section-5.2",
+        "https://metacpan.org/release/NLNETLABS/Net-DNS-1.56/source/lib/Net/DNS/RR/TSIG.pm#L245-262",
+        "https://metacpan.org/release/NLNETLABS/Net-DNS-1.56/source/lib/Net/DNS/RR/TSIG.pm#L62-73"
+      ],
+      "published": "2026-09-02T00:18:26.147"
+    },
+    {
+      "id": "CVE-2026-84327",
+      "description": "Incorrect authorization in Autofill in Google Chrome on on Android prior to 152.0.7977.75 allowed a remote attacker leveraging social engineering to obtain sensitive information via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/498725213"
+      ],
+      "published": "2026-09-02T00:18:27.557"
+    },
+    {
+      "id": "CVE-2026-84332",
+      "description": "Incorrect authorization in SiteSettings in Google Chrome prior to 152.0.7977.75 allowed a remote attacker to bypass system access restrictions via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/514489238"
+      ],
+      "published": "2026-09-02T00:18:28.090"
+    },
+    {
+      "id": "CVE-2026-84348",
+      "description": "Information leak in MediaCapture in Google Chrome prior to 152.0.7977.75 allowed a remote attacker to potentially leak sensitive information via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/518100026"
+      ],
+      "published": "2026-09-02T00:18:28.660"
+    },
+    {
+      "id": "CVE-2026-84330",
+      "description": "UI misrepresentation in FullScreen in Google Chrome on on Android prior to 152.0.7977.75 allowed a remote attacker to spoof address bar via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-451"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/517091927"
+      ],
+      "published": "2026-09-02T00:18:27.870"
+    },
+    {
+      "id": "CVE-2026-84323",
+      "description": "Missing authorization in FileSystem in Google Chrome prior to 152.0.7977.75 allowed a remote attacker who had compromised the renderer process and leveraged social engineering to obtain sensitive information via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/502411391"
+      ],
+      "published": "2026-09-02T00:18:27.113"
+    },
+    {
+      "id": "CVE-2026-84329",
+      "description": "Confused deputy in CredentialProvider in Google Chrome on on Windows prior to 152.0.7977.75 allowed a remote attacker who had compromised the renderer process to leak sensitive information via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-441"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/498850269"
+      ],
+      "published": "2026-09-02T00:18:27.767"
+    },
+    {
+      "id": "CVE-2026-84328",
+      "description": "Missing authorization in FileSystem in Google Chrome prior to 152.0.7977.75 allowed a remote attacker who had compromised the renderer process to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/498710886"
+      ],
+      "published": "2026-09-02T00:18:27.657"
+    },
+    {
+      "id": "CVE-2026-84331",
+      "description": "Incorrect authorization in Actor in Google Chrome prior to 152.0.7977.75 allowed a remote attacker who had compromised the renderer process to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html",
+        "https://issues.chromium.org/issues/521753402"
+      ],
+      "published": "2026-09-02T00:18:27.980"
+    }
+  ]
+}
