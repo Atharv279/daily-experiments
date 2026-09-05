@@ -1,0 +1,324 @@
+{
+  "timestamp": "2026-09-05T06:59:16.293412+00:00",
+  "scan_id": "79d4eed745",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 4,
+      "MEDIUM": 12,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-404",
+        3
+      ],
+      [
+        "CWE-256",
+        2
+      ],
+      [
+        "CWE-79",
+        2
+      ],
+      [
+        "CWE-400",
+        2
+      ],
+      [
+        "CWE-436",
+        1
+      ]
+    ],
+    "threat_index": 225.6,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 225.6,
+        "yesterday": 429.9,
+        "change_pct": -47.5
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 4,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2021-38489",
+      "description": "HDD password plaintext is stored in a UEFI variable.",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-256"
+      ],
+      "references": [
+        "https://www.insyde.com/security-pledge/sa-2022025/"
+      ],
+      "published": "2026-09-03T13:04:10.943"
+    },
+    {
+      "id": "CVE-2026-84394",
+      "description": "fast-uri accepts a host that contains an unbalanced or misplaced authority bracket without reporting an error. A host that starts with an opening bracket but does not end with a closing bracket is neither validated as an IP literal nor canonicalized as a domain name, so parse() returns it as the hos",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-436"
+      ],
+      "references": [
+        "https://cna.openjsf.org/security-advisories.html",
+        "https://github.com/fastify/fast-uri/security/advisories/GHSA-58mr-gqgx-xq4g"
+      ],
+      "published": "2026-09-03T05:16:38.680"
+    },
+    {
+      "id": "CVE-2026-84851",
+      "description": "An uncontrolled recursion issue exists in Amazon Ion-C versions before 1.1.6 that might allow a remote unauthenticated actor to craft Ion data that exhausts the native call stack and crashes the application using the library, resulting in a denial of service.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://aws.amazon.com/security/security-bulletins/2026-094-aws/",
+        "https://github.com/amazon-ion/ion-c/releases/tag/v1.1.6",
+        "https://github.com/amazon-ion/ion-c/security/advisories/GHSA-9gfg-hgj4-gh44"
+      ],
+      "published": "2026-09-03T05:16:46.640"
+    },
+    {
+      "id": "CVE-2026-71220",
+      "description": "A stack out-of-bounds write vulnerability was found in gfs2-utils. In gfs2_edit, the di_height field from on-disk inode metadata is used as an array index without bounds checking, causing a stack buffer overflow that may lead to arbitrary code execution when processing crafted GFS2 filesystem images",
+      "severity": "HIGH",
+      "score": 7.0,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-71220",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2511398"
+      ],
+      "published": "2026-09-03T13:06:02.703"
+    },
+    {
+      "id": "CVE-2026-68860",
+      "description": "Dell PowerProtect Data Manager, versions 20.2.0.0 and below, contain a Reliance on Data/Memory Layout vulnerability. An unauthenticated remote attacker could potentially exploit this vulnerability, leading to Launch of phishing attacks.",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-188"
+      ],
+      "references": [
+        "https://www.dell.com/support/kbdoc/en-us/000501452/dsa-2026-368-security-update-for-dell-powerprotect-data-manager-multiple-vulnerabilities"
+      ],
+      "published": "2026-09-03T13:06:01.480"
+    },
+    {
+      "id": "CVE-2021-43614",
+      "description": "Error in handling the PlatformLangCodes UEFI variable could cause a buffer overflow, leading to resource exhaustion and failure.",
+      "severity": "MEDIUM",
+      "score": 6.7,
+      "cwes": [
+        "CWE-120"
+      ],
+      "references": [
+        "https://www.insyde.com/security-pledge/sa-2022026/"
+      ],
+      "published": "2026-09-03T13:04:12.283"
+    },
+    {
+      "id": "CVE-2021-43613",
+      "description": "An issue was discovered in SysPasswordDxe in Insyde InsydeH2O. User and administrator password hashes are exposed in runtime UEFI variables, leading to escalation of privilege",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-732"
+      ],
+      "references": [
+        "https://www.insyde.com/security-pledge/sa-2022027/"
+      ],
+      "published": "2026-09-03T13:04:12.157"
+    },
+    {
+      "id": "CVE-2026-2573",
+      "description": "The GutenKit \u2013 Page Builder Blocks, Patterns, and Templates for Gutenberg Block Editor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018postBodyCss\u2019 parameter in all versions up to, and including, 2.4.4 due to insufficient input sanitization and output escaping. This makes ",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3468273/gutenkit-blocks-addon",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/7e94cbf8-c74a-4546-83de-b5c5b094762b?source=cve"
+      ],
+      "published": "2026-09-03T13:05:06.937"
+    },
+    {
+      "id": "CVE-2026-3852",
+      "description": "The Divi theme for WordPress is vulnerable to Stored Cross-Site Scripting via the `skype_url` shortcode attribute of the Social Media Follow module in all versions up to, and including, 4.27.6. This is due to a three-part sanitization failure: (1) the `skype_url` field is not included in the `$url_o",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.divichangelog.com/divi-update/divi-4/version-4-27-7",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/bfc5d53b-272a-4b66-8460-2134087535eb?source=cve"
+      ],
+      "published": "2026-09-03T13:05:38.903"
+    },
+    {
+      "id": "CVE-2026-17539",
+      "description": "RTU500 has a vulnerability, where high-load scenarios, such as sending GI requests at short intervals, may cause a NULL pointer dereference in the last entry of the enhanced message queue. This can cause a BCI_IEC104 fatal write error, resulting in connection interruption and restart, and ultimately",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://publisher.hitachienergy.com/preview?DocumentID=8DBD000259&LanguageCode=en&DocumentPartId=&Action=Launch"
+      ],
+      "published": "2026-09-03T13:04:35.693"
+    },
+    {
+      "id": "CVE-2026-3416",
+      "description": "The API Publisher component previously used a non-cryptographic pseudorandom number generator (PRNG) to create shared secrets for Webhook HMAC validation. This PRNG lacks sufficient entropy for security-sensitive operations, allowing a sophisticated attacker to predict future secrets. This enables m",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-330"
+      ],
+      "references": [
+        "https://security.docs.wso2.com/en/latest/security-announcements/security-advisories/2026/WSO2-2026-5174/"
+      ],
+      "published": "2026-09-03T13:05:37.847"
+    },
+    {
+      "id": "CVE-2026-84886",
+      "description": "A vulnerability was determined in simular-ai Agent-S up to 0.3.2. Affected by this vulnerability is the function ImageData of the file gui_agents/s1/utils/ocr_server.py of the component OCR HTTP API. Executing a manipulation of the argument img_bytes can lead to resource consumption. The attack may ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/hackerguopeng/cve/tree/main/AgentS_OCR_HTTP_Body_Image_DoS_Report",
+        "https://vuldb.com/cve/CVE-2026-84886",
+        "https://vuldb.com/submit/886443"
+      ],
+      "published": "2026-09-03T05:16:47.167"
+    },
+    {
+      "id": "CVE-2026-71219",
+      "description": "A stack overflow vulnerability was found in gfs2-utils. The hash table traversal code in metawalk.c uses alloca() with an exponentially-derived size from the untrusted on-disk di_depth field without bounds validation. A crafted GFS2 filesystem image with a large di_depth value causes stack exhaustio",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-71219",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2507750"
+      ],
+      "published": "2026-09-03T13:06:02.550"
+    },
+    {
+      "id": "CVE-2026-84885",
+      "description": "A vulnerability has been found in simular-ai Agent-S 0.3.1/0.3.2. This impacts an unknown function of the file code_agent.py of the component CodeAgent. Such manipulation leads to denial of service. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. Th",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/outlookgp/CVE/tree/main/AgentS_CodeAgent_Tool_Output_DoS_Report",
+        "https://vuldb.com/cve/CVE-2026-84885",
+        "https://vuldb.com/submit/886431"
+      ],
+      "published": "2026-09-03T05:16:47.010"
+    },
+    {
+      "id": "CVE-2026-84887",
+      "description": "A vulnerability was identified in simular-ai Agent-S up to 0.3.2. Affected by this issue is some unknown functionality of the file grounding.py of the component Model-generated GUI Action Execution Workflow. The manipulation leads to denial of service. Remote exploitation of the attack is possible. ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/outlookgp/CVE/tree/main/AgentS_Action_Parameter_Budget_DoS_Report",
+        "https://vuldb.com/cve/CVE-2026-84887",
+        "https://vuldb.com/submit/886451"
+      ],
+      "published": "2026-09-03T05:16:47.333"
+    },
+    {
+      "id": "CVE-2026-84888",
+      "description": "A weakness has been identified in RightNow-AI OpenFang up to 0.6.9. This vulnerability affects the function shell_exec of the file crates/openfang-runtime/src/tool_runner.rs. This manipulation causes uncontrolled memory allocation. The attack is possible to be carried out remotely. The exploit has b",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-789"
+      ],
+      "references": [
+        "https://github.com/outlookgp/CVE/tree/main/OpenFang_ShellExec_Output_Buffer_DoS_Report",
+        "https://vuldb.com/cve/CVE-2026-84888",
+        "https://vuldb.com/submit/886466"
+      ],
+      "published": "2026-09-03T05:16:47.493"
+    },
+    {
+      "id": "CVE-2026-66048",
+      "description": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-09-03T05:05:41.247"
+    },
+    {
+      "id": "CVE-2026-66049",
+      "description": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-09-03T05:05:41.440"
+    },
+    {
+      "id": "CVE-2026-15926",
+      "description": "Rejected reason: Red Hat Product Security has determined that this CVE ID is not needed",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-09-03T13:04:35.160"
+    },
+    {
+      "id": "CVE-2026-15933",
+      "description": "OptimiDoc Server (On-Premise) stores credentials for external services in cleartext. An authenticated administrator can view previously configured service passwords, including SMTP, FTP (for scan delivery), Active Directory (for user list import), and SharePoint credentials, in cleartext via the web",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-256"
+      ],
+      "references": [
+        "https://cert.pl/en/posts/2026/09/CVE-2026-15933",
+        "https://optimidoc.com/category/optimidoc-server/"
+      ],
+      "published": "2026-09-03T13:04:35.243"
+    }
+  ]
+}
