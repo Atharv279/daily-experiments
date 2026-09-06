@@ -1,0 +1,351 @@
+{
+  "timestamp": "2026-09-06T07:11:39.860629+00:00",
+  "scan_id": "f01190b8e7",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 6,
+      "MEDIUM": 6,
+      "UNKNOWN": 6
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        5
+      ],
+      [
+        "CWE-89",
+        5
+      ],
+      [
+        "CWE-798",
+        4
+      ],
+      [
+        "CWE-284",
+        2
+      ],
+      [
+        "CWE-918",
+        2
+      ]
+    ],
+    "threat_index": 274.2,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 274.2,
+        "yesterday": 225.6,
+        "change_pct": 21.5
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-85146",
+      "description": "SmartIT Desktop Manager developed by Lightstar has a Use of Hard-coded Credentials vulnerability. Unauthenticated remote attackers can obtain the SSH service account credentials and passwords for the SmartIT Agent directly from the application source code.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-798"
+      ],
+      "references": [
+        "https://www.twcert.org.tw/en/cp-139-11177-13ca3-2.html",
+        "https://www.twcert.org.tw/tw/cp-132-11176-a4cc2-1.html"
+      ],
+      "published": "2026-09-04T03:17:45.770"
+    },
+    {
+      "id": "CVE-2026-85148",
+      "description": "SmartIT Desktop Manager developed by Lightstar has a Use of Hard-coded Credentials vulnerability. Unauthenticated remote attackers can exploit a fixed password to remotely access user hosts.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-798"
+      ],
+      "references": [
+        "https://www.twcert.org.tw/en/cp-139-11177-13ca3-2.html",
+        "https://www.twcert.org.tw/tw/cp-132-11176-a4cc2-1.html"
+      ],
+      "published": "2026-09-04T03:17:46.050"
+    },
+    {
+      "id": "CVE-2026-85147",
+      "description": "SmartIT Desktop Manager developed by Lightstar has a Use of Hard-coded Credentials vulnerability. Unauthenticated remote attackers can obtain a specific password from the source code, which can be used to retrieve the AES encryption key used for communication.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://www.twcert.org.tw/en/cp-139-11177-13ca3-2.html",
+        "https://www.twcert.org.tw/tw/cp-132-11176-a4cc2-1.html"
+      ],
+      "published": "2026-09-04T03:17:45.920"
+    },
+    {
+      "id": "CVE-2026-85379",
+      "description": "A security flaw has been discovered in light0011 cms c774dce31c6df0055568a8d5c53d964d99be199d/f72cf46f601efb2a0618c3814cc2f61380b38930. This affects the function ChapterModel::searchChapter of the file App/Home/Controller/ChapterController.class.php of the component Query Builder. The manipulation o",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/light0011/cms/",
+        "https://github.com/light0011/cms/issues/7",
+        "https://vuldb.com/cve/CVE-2026-85379"
+      ],
+      "published": "2026-09-04T01:17:22.537"
+    },
+    {
+      "id": "CVE-2026-85380",
+      "description": "A weakness has been identified in light0011 cms c774dce31c6df0055568a8d5c53d964d99be199d/f72cf46f601efb2a0618c3814cc2f61380b38930. This vulnerability affects the function catchimage of the file Public/ueditor/php/controller.php of the component UEditor. This manipulation of the argument source[] cau",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/light0011/cms/",
+        "https://github.com/light0011/cms/issues/6",
+        "https://vuldb.com/cve/CVE-2026-85380"
+      ],
+      "published": "2026-09-04T01:17:22.710"
+    },
+    {
+      "id": "CVE-2026-85397",
+      "description": "A vulnerability was determined in code-projects Hospital Information System 1.0. This impacts the function findBySearch of the file addReq.php. This manipulation of the argument Search causes sql injection. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and m",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/lccc-t/CVE/issues/2",
+        "https://vuldb.com/cve/CVE-2026-85397"
+      ],
+      "published": "2026-09-04T02:17:20.363"
+    },
+    {
+      "id": "CVE-2026-85398",
+      "description": "A vulnerability was identified in code-projects Hospital Information System 1.0. Affected is the function viewReq of the file viewReq.php. Such manipulation of the argument ID leads to sql injection. It is possible to launch the attack remotely. The exploit is publicly available and might be used.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/lccc-t/CVE/issues/3",
+        "https://vuldb.com/cve/CVE-2026-85398"
+      ],
+      "published": "2026-09-04T03:17:46.327"
+    },
+    {
+      "id": "CVE-2026-85399",
+      "description": "A security flaw has been discovered in code-projects Hospital Information System 1.0. Affected by this vulnerability is the function getSinglePresp of the file includes/presp/PrespController.php. Performing a manipulation of the argument ID results in sql injection. The attack can be initiated remot",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/lccc-t/CVE/issues/4",
+        "https://vuldb.com/cve/CVE-2026-85399"
+      ],
+      "published": "2026-09-04T03:17:46.500"
+    },
+    {
+      "id": "CVE-2026-85383",
+      "description": "A flaw has been found in itsourcecode Sales and Inventory System 1.0. The affected element is an unknown function of the file /pages/inv_del.php. Executing a manipulation of the argument ID can lead to sql injection. The attack can be executed remotely. The exploit has been published and may be used",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/ltranquility/submit_repository/issues/3",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-85383"
+      ],
+      "published": "2026-09-04T02:17:20.187"
+    },
+    {
+      "id": "CVE-2026-85401",
+      "description": "A weakness has been identified in Dolibarr up to 21.0.4/22.0.5/23.0.3. Affected by this issue is some unknown functionality of the file htdocs/core/filemanagerdol/connectors/php/config.inc.php of the component Legacy File Manager. Executing a manipulation can lead to improper access controls. The at",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/Dolibarr/dolibarr/",
+        "https://github.com/Dolibarr/dolibarr/commit/ef6631e9bd5ec4b8cec0e88f1796d3d10dad02ec",
+        "https://github.com/Dolibarr/dolibarr/issues/38963"
+      ],
+      "published": "2026-09-04T03:17:46.677"
+    },
+    {
+      "id": "CVE-2026-85381",
+      "description": "A security vulnerability has been detected in light0011 cms c774dce31c6df0055568a8d5c53d964d99be199d/f72cf46f601efb2a0618c3814cc2f61380b38930. This issue affects some unknown processing of the file App/Home/Controller/ChapterController.class.php of the component Chapter Controller. Such manipulation",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/light0011/cms/",
+        "https://github.com/light0011/cms/issues/5",
+        "https://vuldb.com/cve/CVE-2026-85381"
+      ],
+      "published": "2026-09-04T01:17:22.883"
+    },
+    {
+      "id": "CVE-2026-85149",
+      "description": "SmartIT Desktop Manager developed by Lightstar has a Use of Hard-coded Credentials vulnerability. Unauthenticated remote attackers can obtain the SFTP service credentials of the SmartIT Agent application from the source code, thereby browsing the file system of the user's host.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-798"
+      ],
+      "references": [
+        "https://www.twcert.org.tw/en/cp-139-11177-13ca3-2.html",
+        "https://www.twcert.org.tw/tw/cp-132-11176-a4cc2-1.html"
+      ],
+      "published": "2026-09-04T03:17:46.190"
+    },
+    {
+      "id": "CVE-2026-49509",
+      "description": "Out-of-bounds read vulnerability in Samsung Opensource Escargot allows Overread Buffers.\n\nThis issue affects Escargot: 25648aef19187b3f87f4d9420b8d761453ad4630.",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/Samsung/rlottie/pull/604"
+      ],
+      "published": "2026-09-04T00:17:12.820"
+    },
+    {
+      "id": "CVE-2026-85382",
+      "description": "A vulnerability was detected in light0011 cms c774dce31c6df0055568a8d5c53d964d99be199d/f72cf46f601efb2a0618c3814cc2f61380b38930. Impacted is the function htmlspecialchars_decode of the file App/Home/View/Default/Chapter/oneChapter.tpl of the component Chapter Content Output. Performing a manipulatio",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/light0011/cms/",
+        "https://github.com/light0011/cms/issues/8",
+        "https://vuldb.com/cve/CVE-2026-85382"
+      ],
+      "published": "2026-09-04T02:17:20.017"
+    },
+    {
+      "id": "CVE-2026-67397",
+      "description": "Path traversal in Plesk 18.0.79.9 and earlier and 18.0.80 through 18.0.80.5 allows local users to execute arbitrary code as root.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://support.plesk.com/hc/en-us/articles/43070000520855-Vulnerability-CVE-2026-67397-Arbitrary-code-execution-as-root-in-Plesk"
+      ],
+      "published": "2026-09-04T00:17:13.437"
+    },
+    {
+      "id": "CVE-2026-67398",
+      "description": "Missing authorization vulnerability has been discovered in 2Checkout payment gateway of WHMCS from 8.13.0 before 8.13.8, from 9.0.0 before 9.0.8, all other EOL versions from 4.5.0. The vulnerability allows an unauthenticated user to get WHMCS customer's data via 2Checkout payment gateway's endpoint ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://help.whmcs.com/m/125386/l/2116695-cve-2026-67398-whmcs-security-update-2026-09-03"
+      ],
+      "published": "2026-09-04T00:17:13.563"
+    },
+    {
+      "id": "CVE-2026-67402",
+      "description": "An insecure Apache configuration in ConfigServer Security & Firewall maps /usr/bin as CGI programs through the Messenger v3 HTTPS virtual host. A remote unauthenticated attacker whose address is blocked can request a mapped executable and run arbitrary commands as the Apache user. The vulnerability ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-552"
+      ],
+      "references": [
+        "https://support.cpanel.net/hc/en-us/articles/43171958716439-Security-CSF-Security-Release-September-3rd-2026"
+      ],
+      "published": "2026-09-04T00:17:13.690"
+    },
+    {
+      "id": "CVE-2026-45197",
+      "description": "Kernel software installed and running inside a Guest VM may post improper commands to the GPU Firmware to trigger a read and/or write data outside the Guest's virtualised GPU memory.\n\n\n\nThe firmware uses data provided by the Guest VM to set up accesses to memory. It validated this before use, but a ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://www.imaginationtech.com/gpu-driver-vulnerabilities/"
+      ],
+      "published": "2026-09-04T02:17:19.003"
+    },
+    {
+      "id": "CVE-2026-45200",
+      "description": "Software installed and run as a non-privileged user may conduct improper GPU driver IOCTL calls to create an allocation scenario that when freed would cause double free and kernel heap corruption.\n\n\n\nScenario caused by fabricating a specific combination of flags on the allocation interface that woul",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://www.imaginationtech.com/gpu-driver-vulnerabilities/"
+      ],
+      "published": "2026-09-04T02:17:19.113"
+    },
+    {
+      "id": "CVE-2026-75754",
+      "description": "Missing Authentication for Critical Function, Server-Side Request Forgery (SSRF), and Use of Hard-coded Credentials in ASUS Control Center\u00a0allow an unauthorized user to obtain the encryption key via an HTTP request, causing a local service to enable SSH on port 2222. The attacker can then log in wit",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-306",
+        "CWE-798",
+        "CWE-918"
+      ],
+      "references": [
+        "https://www.asus.com/security-advisory"
+      ],
+      "published": "2026-09-04T03:17:41.927"
+    }
+  ]
+}
