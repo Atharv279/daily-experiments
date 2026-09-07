@@ -1,0 +1,360 @@
+{
+  "timestamp": "2026-09-07T07:24:25.167337+00:00",
+  "scan_id": "e33862a52e",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 6,
+      "MEDIUM": 9,
+      "LOW": 2,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-89",
+        4
+      ],
+      [
+        "CWE-918",
+        2
+      ],
+      [
+        "CWE-190",
+        2
+      ],
+      [
+        "CWE-80",
+        2
+      ],
+      [
+        "CWE-276",
+        1
+      ]
+    ],
+    "threat_index": 305.9,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 305.9,
+        "yesterday": 274.2,
+        "change_pct": 11.6
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 2,
+        "change_pct": -50.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-52766",
+      "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.6, the {{erasespamedcomments}} wiki action (actions/EraseSpamedCommentsAction.php) accepts a suppr[] array from POST and deletes every wiki page whose tag appears in that array, with no authorization check anywhere in the action body or i",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-276",
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/YesWiki/yeswiki/commit/ed5b548a705c8091ba0282aaaba73ddda976abef",
+        "https://github.com/YesWiki/yeswiki/releases/tag/v4.6.6",
+        "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-6x7x-gcmf-7r8x"
+      ],
+      "published": "2026-09-05T00:17:19.393"
+    },
+    {
+      "id": "CVE-2026-52775",
+      "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.6, YesWiki through the latest development branch contains a SQL injection vulnerability in ReactionManager::deleteUserReaction() that allows any authenticated user to inject arbitrary SQL via the {idreaction} and {id} URL path parameters.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/YesWiki/yeswiki/commit/90ca54fb518e1c43a1ead6e4f5bf9f0389789841",
+        "https://github.com/YesWiki/yeswiki/releases/tag/v4.6.6",
+        "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-4pf7-cc4r-g63h"
+      ],
+      "published": "2026-09-05T00:17:20.520"
+    },
+    {
+      "id": "CVE-2026-52769",
+      "description": "YesWiki is a wiki system written in PHP. From version 4.6.2 to before version 4.6.6, the POST /api/forms/{formId}/actor/inbox route - exposed publicly with acl:\"public\" - accepts an HTTP Signature header whose keyId parameter is a URL. HttpSignatureService::verifySignature() parses the header and im",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "http://github.com/YesWiki/yeswiki/commit/87e627f33e79879827a3669fee2aa1244612c487",
+        "https://github.com/YesWiki/yeswiki/releases/tag/v4.6.6",
+        "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-vw42-752g-5mrp"
+      ],
+      "published": "2026-09-05T00:17:19.683"
+    },
+    {
+      "id": "CVE-2026-52771",
+      "description": "YesWiki is a wiki system written in PHP. From version 4.2.0 to before version 4.6.6, ApiController::deletePage() interpolates a page tag retrieved from the database into a DELETE FROM \u2026_links WHERE to_tag = '$tag' query without escaping. The page tag is attacker-controlled \u2014 the POST /api/pages/{tag",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/YesWiki/yeswiki/commit/23d3cc124613b9428ab963b31807c08879a9c631",
+        "https://github.com/YesWiki/yeswiki/releases/tag/v4.6.6",
+        "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-8f2v-2qhj-gfwg"
+      ],
+      "published": "2026-09-05T00:17:19.963"
+    },
+    {
+      "id": "CVE-2026-52767",
+      "description": "YesWiki is a wiki system written in PHP. From version 4.6.2 to before version 4.6.6, HttpSignatureService::verifySignature() checks the result of PHP's openssl_verify() with a loose boolean negation - if (!openssl_verify(...)) { throw ... }. PHP's openssl_verify has four possible return values: 1, 0",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://github.com/YesWiki/yeswiki/commit/d1795e0301e1a1078f17b4b98f56fff70de2029e",
+        "https://github.com/YesWiki/yeswiki/releases/tag/v4.6.6",
+        "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-mv28-wj57-f57g"
+      ],
+      "published": "2026-09-05T00:17:19.540"
+    },
+    {
+      "id": "CVE-2026-86140",
+      "description": "In libxml2 before 2.15.4, xmlSnprintfElements in valid.c has a strcat stack-based buffer overflow.",
+      "severity": "HIGH",
+      "score": 8.0,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/GNOME/libxml2/commit/d1686f91dbda141a752200419d35639fd6b38340",
+        "https://github.com/GNOME/libxml2/compare/v2.15.3...v2.15.4"
+      ],
+      "published": "2026-09-05T05:17:12.877"
+    },
+    {
+      "id": "CVE-2026-52770",
+      "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.6, YesWiki\u2019s public Bazar entry-listing APIs are vulnerable to unauthenticated SQL injection in numeric query / queries filters. For Bazar fields whose value structure is numeric, YesWiki escapes the attacker-controlled filter value but i",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/YesWiki/yeswiki/commit/f3b0dd093a7ace47dc29a515faeb02635baceae2",
+        "https://github.com/YesWiki/yeswiki/releases/tag/v4.6.6",
+        "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-qg78-vmvc-fhjw"
+      ],
+      "published": "2026-09-05T00:17:19.827"
+    },
+    {
+      "id": "CVE-2026-86138",
+      "description": "In libxml2 before 2.15.4, xmlDictAddQString in dict.c has an integer overflow and resultant heap-based buffer overflow.",
+      "severity": "MEDIUM",
+      "score": 6.9,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/GNOME/libxml2/commit/a4cba4b5b5a8c42e155ed42d2d2a44955465a2e4",
+        "https://github.com/GNOME/libxml2/compare/v2.15.3...v2.15.4"
+      ],
+      "published": "2026-09-05T05:17:12.600"
+    },
+    {
+      "id": "CVE-2026-86139",
+      "description": "In libxml2 before 2.15.4, xmlURIEscapeStr in uri.c has an integer overflow.",
+      "severity": "MEDIUM",
+      "score": 6.9,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/GNOME/libxml2/commit/8edbbdb09f24d26a2f900141fddc2b9d014f53b0",
+        "https://github.com/GNOME/libxml2/compare/v2.15.3...v2.15.4"
+      ],
+      "published": "2026-09-05T05:17:12.730"
+    },
+    {
+      "id": "CVE-2026-86142",
+      "description": "In libxml2 before 2.15.4, there is a heap-based buffer overflow in xmlXPtrEvalXPtrPart because of xmlXPtrEval xpointer length saturation.",
+      "severity": "MEDIUM",
+      "score": 6.9,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/GNOME/libxml2/commit/6b3a736c0edc74ceec3d82f5252499d7911b3a58",
+        "https://github.com/GNOME/libxml2/compare/v2.15.3...v2.15.4",
+        "https://gitlab.gnome.org/GNOME/libxml2/-/work_items/1113"
+      ],
+      "published": "2026-09-05T05:17:13.133"
+    },
+    {
+      "id": "CVE-2026-86143",
+      "description": "In xmlIO in libxml2 before 2.15.4, an inconsistency in xmlOutputWriteCallback and xmlBufUse causes negative lengths to reach write callbacks, aka a lack of a check for integer overflow before calling writecallback. This has security relevance for many types of uses of that length value within a call",
+      "severity": "MEDIUM",
+      "score": 6.9,
+      "cwes": [
+        "CWE-192"
+      ],
+      "references": [
+        "https://github.com/GNOME/libxml2/commit/90f293ba74d28b1d570920382e707586f68ebf35",
+        "https://github.com/GNOME/libxml2/compare/v2.15.3...v2.15.4",
+        "https://gitlab.gnome.org/GNOME/libxml2/-/work_items/1111"
+      ],
+      "published": "2026-09-05T05:17:13.270"
+    },
+    {
+      "id": "CVE-2026-52763",
+      "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.6, the recentchanges action (actions/recentchanges.php) accepts a period argument from two disjoint parameter spaces. A whitelist validates only the URL form against ['day','week','month']. The action-argument form takes the else branch w",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89",
+        "CWE-1287"
+      ],
+      "references": [
+        "https://github.com/YesWiki/yeswiki/releases/tag/v4.6.6",
+        "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-89v6-j5x6-cmj3"
+      ],
+      "published": "2026-09-05T00:17:19.257"
+    },
+    {
+      "id": "CVE-2026-86100",
+      "description": "Camaleon CMS versions 2.7.5 through 2.9.1 fail to validate redirect targets when fetching remote files in the Upload from URL media feature. Authenticated attackers can supply URLs that pass initial validation but redirect to internal network addresses, allowing server-side request forgery to intern",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/owen2345/camaleon-cms",
+        "https://github.com/owen2345/camaleon-cms/blob/2.9.1/app/helpers/camaleon_cms/uploader_helper.rb",
+        "https://github.com/owen2345/camaleon-cms/commit/3c46b6e512518ded476226162305c8eae00aac3f"
+      ],
+      "published": "2026-09-05T00:17:20.810"
+    },
+    {
+      "id": "CVE-2026-52773",
+      "description": "YesWiki is a wiki system written in PHP. From version 4.1.0 to before version 4.6.6, YesWiki's archived-revision view reflects the time GET parameter into a hidden HTML input in handlers/page/show.php without escaping. Because MySQL coerces malformed DATETIME strings, an attacker can append HTML or ",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-80"
+      ],
+      "references": [
+        "https://github.com/YesWiki/yeswiki/commit/35ad9c2bb6cd338198b37c1f745e24bc302a3560",
+        "https://github.com/YesWiki/yeswiki/releases/tag/v4.6.6",
+        "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-35f3-pg38-486f"
+      ],
+      "published": "2026-09-05T00:17:20.243"
+    },
+    {
+      "id": "CVE-2026-52774",
+      "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.6, YesWiki's Bazar widget handler reflects the id GET parameter into HTML attributes using strip_tags() only. Because strip_tags() does not escape double quotes, an attacker can break out of the attribute value, inject an event handler su",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-80"
+      ],
+      "references": [
+        "https://github.com/YesWiki/yeswiki/commit/1aa2710c7505630b858f2142a65f9441bfaba2b2",
+        "https://github.com/YesWiki/yeswiki/releases/tag/v4.6.6",
+        "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-r5xw-gcgw-hwp5"
+      ],
+      "published": "2026-09-05T00:17:20.380"
+    },
+    {
+      "id": "CVE-2026-52772",
+      "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.6, Bazar form-field templates still apply |raw('html') to field.label / field.hint in attribute and label-body contexts, resulting stored XSS in form renders. This issue has been patched in version 4.6.6.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-79",
+        "CWE-116"
+      ],
+      "references": [
+        "https://github.com/YesWiki/yeswiki/commit/5d1a4d07fecb0706f33e5dfbbe6ff5ef1892b2a7",
+        "https://github.com/YesWiki/yeswiki/releases/tag/v4.6.6",
+        "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-xc7j-3g8q-9vh4"
+      ],
+      "published": "2026-09-05T00:17:20.110"
+    },
+    {
+      "id": "CVE-2026-86137",
+      "description": "In libxml2 before 2.15.4, xmlFAParsePosCharGroup has an out-of-bounds read, aka an out-of-bounds read in the NXT macro in xmlregexp.",
+      "severity": "LOW",
+      "score": 2.9,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/GNOME/libxml2/commit/76fe08d97de88bfaef2f7d5cd27f11954cc5bee2",
+        "https://github.com/GNOME/libxml2/compare/v2.15.3...v2.15.4",
+        "https://gitlab.gnome.org/GNOME/libxml2/-/work_items/1099"
+      ],
+      "published": "2026-09-05T05:17:11.490"
+    },
+    {
+      "id": "CVE-2026-86141",
+      "description": "xmlregexp in libxml2 before 2.15.4 has a NULL pointer dereference in xmlRegNewParserCtxt after a strdup failure, i.e., it does not calculate a string length after NULL checking.",
+      "severity": "LOW",
+      "score": 2.9,
+      "cwes": [
+        "CWE-252"
+      ],
+      "references": [
+        "https://github.com/GNOME/libxml2/commit/e89a8aae4c9b40cdafcf66b3f9e57c62db37bb55",
+        "https://github.com/GNOME/libxml2/compare/v2.15.3...v2.15.4",
+        "https://gitlab.gnome.org/GNOME/libxml2/-/work_items/1107"
+      ],
+      "published": "2026-09-05T05:17:13.007"
+    },
+    {
+      "id": "CVE-2026-52762",
+      "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.6, YesWiki Bazar contains a stored Server-Side Template Injection (SSTI) vulnerability in the semantic template feature that can be escalated to confirmed Remote Code Execution (RCE). An authenticated administrator can place arbitrary Twi",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-1336"
+      ],
+      "references": [
+        "https://github.com/YesWiki/yeswiki/commit/89462f1577a8a1fe7fcff75e77b5058a74d8047b",
+        "https://github.com/YesWiki/yeswiki/releases/tag/v4.6.6",
+        "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-65p8-9433-jpcp"
+      ],
+      "published": "2026-09-05T00:17:18.607"
+    },
+    {
+      "id": "CVE-2026-52777",
+      "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.6, there is an authenticated PHP object injection vulnerability in BazarImportAction via unserialize. This issue has been patched in version 4.6.6.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-352",
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/YesWiki/yeswiki/commit/8f70a8d6b8befa0e644d03c785701dbbc55b8fd0",
+        "https://github.com/YesWiki/yeswiki/releases/tag/v4.6.6",
+        "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-9369-69wj-7m2f"
+      ],
+      "published": "2026-09-05T00:17:20.663"
+    }
+  ]
+}
