@@ -1,13 +1,12 @@
 {
-  "timestamp": "2026-09-08T17:57:35.953657+00:00",
-  "scan_id": "721ab5e35b",
+  "timestamp": "2026-09-08T22:48:29.646120+00:00",
+  "scan_id": "e7e4f9545e",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
-      "CRITICAL": 7,
+      "CRITICAL": 8,
       "HIGH": 8,
-      "MEDIUM": 4,
-      "UNKNOWN": 1
+      "MEDIUM": 4
     },
     "top_cwes": [
       [
@@ -31,8 +30,8 @@
         2
       ]
     ],
-    "threat_index": 501.2,
-    "critical_count": 7
+    "threat_index": 540.4,
+    "critical_count": 8
   },
   "delta": {
     "status": "compared",
@@ -43,14 +42,14 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 501.2,
+        "today": 540.4,
         "yesterday": 305.9,
-        "change_pct": 63.8
+        "change_pct": 76.7
       },
       "critical_count": {
-        "today": 7,
+        "today": 8,
         "yesterday": 1,
-        "change_pct": 600.0
+        "change_pct": 700.0
       }
     }
   },
@@ -115,6 +114,20 @@
         "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/tags/3.29.10/main/frontend/forms/actions/post.php#L1224"
       ],
       "published": "2026-09-06T03:17:16.607"
+    },
+    {
+      "id": "CVE-2026-86218",
+      "description": "N-central is vulnerable to a pre-auth remote code execution This issue affects N-central: before 2026.3.1.14.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-96"
+      ],
+      "references": [
+        "https://me.n-able.com/s/security-advisory/aArVy0000002Ld3KAE/cve202686218-preauthentication-remote-code-execution",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-86218"
+      ],
+      "published": "2026-09-06T03:17:17.373"
     },
     {
       "id": "CVE-2026-86165",
@@ -348,19 +361,6 @@
         "https://wpscan.com/vulnerability/3eea9204-d9ea-474e-a299-31d1aa0385e0/"
       ],
       "published": "2026-09-06T07:16:41.900"
-    },
-    {
-      "id": "CVE-2026-86218",
-      "description": "N-central is vulnerable to a pre-auth remote code execution This issue affects N-central: before 2026.3.1.14.",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-96"
-      ],
-      "references": [
-        "https://me.n-able.com/s/security-advisory/aArVy0000002Ld3KAE/cve202686218-preauthentication-remote-code-execution"
-      ],
-      "published": "2026-09-06T03:17:17.373"
     }
   ]
 }
