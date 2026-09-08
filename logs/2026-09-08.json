@@ -1,0 +1,366 @@
+{
+  "timestamp": "2026-09-08T07:18:40.956600+00:00",
+  "scan_id": "c156d80d59",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 7,
+      "HIGH": 8,
+      "MEDIUM": 4,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        8
+      ],
+      [
+        "CWE-89",
+        8
+      ],
+      [
+        "CWE-77",
+        3
+      ],
+      [
+        "CWE-78",
+        3
+      ],
+      [
+        "CWE-287",
+        2
+      ]
+    ],
+    "threat_index": 501.2,
+    "critical_count": 7
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 501.2,
+        "yesterday": 305.9,
+        "change_pct": 63.8
+      },
+      "critical_count": {
+        "today": 7,
+        "yesterday": 1,
+        "change_pct": 600.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-86152",
+      "description": "A flaw has been found in Tenda CP3 27.5.57.101. The impacted element is the function CAutoAddWifi::ThreadProc of the file Functions/AutoAddWifi.cpp of the component Kylin. Executing a manipulation can lead to os command injection. The attack may be launched remotely.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-86152",
+        "https://vuldb.com/submit/895353",
+        "https://vuldb.com/vuln/399275"
+      ],
+      "published": "2026-09-06T02:17:19.370"
+    },
+    {
+      "id": "CVE-2026-86167",
+      "description": "A vulnerability was identified in Tenda HG10 300001138. Impacted is the function formgponConf of the file /boaform/admin/formgponConf of the component Boa. The manipulation of the argument fmgpon_loid leads to os command injection. Remote exploitation of the attack is possible. The exploit is public",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/SunnyYANGyaya/cuicuishark-sheep-fishIOT/blob/main/Tenda/HG10/command-formgponConf-fmgpon_loid.md",
+        "https://vuldb.com/cve/CVE-2026-86167",
+        "https://vuldb.com/submit/895596"
+      ],
+      "published": "2026-09-06T05:16:50.477"
+    },
+    {
+      "id": "CVE-2026-16310",
+      "description": "The MemberDash plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.8.5 via the 'id' parameter due to missing validation on a user controlled key. This makes it possible for unauthenticated attackers to change the password of any WordPress us",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://www.memberdashwp.com",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/222e0f27-f269-4751-9544-1a6cb03ab3a7?source=cve"
+      ],
+      "published": "2026-09-06T03:17:15.540"
+    },
+    {
+      "id": "CVE-2026-75816",
+      "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to Authentication Bypass to Account Takeover in all versions up to, and including, 3.29.12. This is due to the pre_update_value function lacking any capability or ownership check, and ActionPost::conditions_logic() short-circuiting ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/tags/3.29.10/main/frontend/fields/user/class-user-email.php#L127",
+        "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/tags/3.29.10/main/frontend/forms/actions/post.php#L1001",
+        "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/tags/3.29.10/main/frontend/forms/actions/post.php#L1224"
+      ],
+      "published": "2026-09-06T03:17:16.607"
+    },
+    {
+      "id": "CVE-2026-86165",
+      "description": "A vulnerability was found in Tenda HG10 300001138. This vulnerability affects the function formURL of the file /boaform/admin/formURL. Performing a manipulation of the argument Keywd/urlFQDN results in buffer overflow. The attack may be initiated remotely. The exploit has been made public and could ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/SunnyYANGyaya/cuicuishark-sheep-fishIOT/blob/main/Tenda/HG10/bof-formURL-keywd.md",
+        "https://vuldb.com/cve/CVE-2026-86165",
+        "https://vuldb.com/submit/895583"
+      ],
+      "published": "2026-09-06T04:18:32.523"
+    },
+    {
+      "id": "CVE-2026-86151",
+      "description": "A vulnerability was detected in Tenda CP3 27.5.57.101. The affected element is the function sub_2F77E8 of the file Apis/system.c of the component Network Configuration Management. Performing a manipulation results in os command injection. The attack may be initiated remotely.",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-86151",
+        "https://vuldb.com/submit/895352",
+        "https://vuldb.com/vuln/399274"
+      ],
+      "published": "2026-09-06T00:16:55.773"
+    },
+    {
+      "id": "CVE-2026-86153",
+      "description": "A vulnerability has been found in Tenda CP3 27.5.57.101. This affects the function CRedirServer::SetRedirectEnable of the file Functions/Redirect.cpp. The manipulation leads to improper privilege management. Remote exploitation of the attack is possible.",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-266",
+        "CWE-269"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-86153",
+        "https://vuldb.com/submit/895354",
+        "https://vuldb.com/vuln/399276"
+      ],
+      "published": "2026-09-06T02:17:19.770"
+    },
+    {
+      "id": "CVE-2026-86166",
+      "description": "A vulnerability was determined in Tenda HG10 300001138. This issue affects the function formWanRedirect of the file /boaform/formWanRedirect of the component Boa Web Server. Executing a manipulation of the argument if can lead to buffer overflow. The attack may be launched remotely. The exploit has ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/SunnyYANGyaya/cuicuishark-sheep-fishIOT/blob/main/Tenda/HG10/bof-formWanRedirect-if.md",
+        "https://vuldb.com/cve/CVE-2026-86166",
+        "https://vuldb.com/submit/895595"
+      ],
+      "published": "2026-09-06T04:18:32.783"
+    },
+    {
+      "id": "CVE-2026-18480",
+      "description": "The SureCart  WordPress plugin before 4.6.3 does not ensure that the account affected by a customer update is the same account its permission check authorised, allowing users with a subscriber-level account to change another user's email address, including an administrator's, and take over that acco",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/88839ada-9c59-44cb-96e6-3548e5a59b9f/"
+      ],
+      "published": "2026-09-06T07:16:43.097"
+    },
+    {
+      "id": "CVE-2026-18056",
+      "description": "The HivePress Authentication plugin for WordPress is vulnerable to Authentication Bypass via the access_token parameter in all versions up to, and including, 1.1.4. This is due to the authenticate_user function's Facebook authenticator resolving third-party identity by forwarding the attacker-suppli",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://developers.facebook.com/docs/facebook-login/guides/advanced/manual-flow/#confirm",
+        "https://github.com/hivepress/hivepress-authentication/commit/f97d9109002905cf57597d15c535d1155dc64657",
+        "https://plugins.trac.wordpress.org/browser/hivepress-authentication/tags/1.1.4/includes/components/class-facebook-authentication.php#L59"
+      ],
+      "published": "2026-09-06T03:17:16.467"
+    },
+    {
+      "id": "CVE-2026-86159",
+      "description": "A flaw has been found in SourceCodester Online Voting System 1.0. Impacted is an unknown function of the file /ajax.php?action=save_user. This manipulation of the argument ID causes sql injection. The attack may be initiated remotely. The exploit has been published and may be used.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/lwcc223/CVE/issues/1",
+        "https://vuldb.com/cve/CVE-2026-86159",
+        "https://vuldb.com/submit/895412"
+      ],
+      "published": "2026-09-06T03:17:16.730"
+    },
+    {
+      "id": "CVE-2026-86160",
+      "description": "A vulnerability has been found in SourceCodester Online Voting System 1.0. The affected element is an unknown function of the file /ajax.php?action=delete_voting. Such manipulation of the argument ID leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the p",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/lwcc223/CVE/issues/2",
+        "https://vuldb.com/cve/CVE-2026-86160",
+        "https://vuldb.com/submit/895415"
+      ],
+      "published": "2026-09-06T03:17:16.913"
+    },
+    {
+      "id": "CVE-2026-86161",
+      "description": "A vulnerability was found in SourceCodester Online Voting System 1.0. The impacted element is an unknown function of the file /ajax.php?action=delete_category. Performing a manipulation of the argument ID results in sql injection. Remote exploitation of the attack is possible. The exploit has been m",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/lwcc223/CVE/issues/3",
+        "https://vuldb.com/cve/CVE-2026-86161",
+        "https://vuldb.com/submit/895416"
+      ],
+      "published": "2026-09-06T03:17:17.067"
+    },
+    {
+      "id": "CVE-2026-86162",
+      "description": "A vulnerability was determined in SourceCodester Online Voting System 1.0. This affects an unknown function of the file /ajax.php?action=login. Executing a manipulation of the argument Username can lead to sql injection. The attack can be executed remotely. The exploit has been publicly disclosed an",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Aurora-Song/cve/issues/1",
+        "https://vuldb.com/cve/CVE-2026-86162",
+        "https://vuldb.com/submit/895450"
+      ],
+      "published": "2026-09-06T03:17:17.220"
+    },
+    {
+      "id": "CVE-2026-86168",
+      "description": "A security flaw has been discovered in code-projects Content Management System 1.0. The affected element is an unknown function of the file /login.php. The manipulation of the argument user_name results in sql injection. The attack can be executed remotely. The exploit has been released to the publi",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/ahmadmarz10-hub/CVEsMarz/blob/main/SQL%20Injection%20Vulnerability%20in%20Content%20Management%20System%20%60user_name%60%20Parameter.md",
+        "https://vuldb.com/cve/CVE-2026-86168"
+      ],
+      "published": "2026-09-06T05:16:50.673"
+    },
+    {
+      "id": "CVE-2026-86163",
+      "description": "A vulnerability was identified in itsourcecode Sales and Inventory System 1.0. This impacts an unknown function of the file /pages/pro_del.php. The manipulation of the argument ID leads to sql injection. The attack is possible to be carried out remotely. The exploit is publicly available and might b",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/CSDVi/cve/issues/3",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-86163"
+      ],
+      "published": "2026-09-06T04:18:30.320"
+    },
+    {
+      "id": "CVE-2026-86164",
+      "description": "A security flaw has been discovered in itsourcecode Sales and Inventory System 1.0. Affected is an unknown function of the file /pages/trans_view.php. The manipulation of the argument ID results in sql injection. The attack may be performed from remote. The exploit has been released to the public an",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/ltranquility/submit_repository/issues/4",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-86164"
+      ],
+      "published": "2026-09-06T04:18:31.037"
+    },
+    {
+      "id": "CVE-2026-86170",
+      "description": "A weakness has been identified in DefaultFuction CRM 1.0.0. The impacted element is an unknown function of the file /modules/orders/edit.php. This manipulation of the argument ID causes sql injection. The attack is possible to be carried out remotely. The exploit has been made available to the publi",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/DefaultFuction/Customer-Relationship-Management-System/issues/3",
+        "https://vuldb.com/cve/CVE-2026-86170",
+        "https://vuldb.com/submit/895742"
+      ],
+      "published": "2026-09-06T06:16:41.403"
+    },
+    {
+      "id": "CVE-2026-13159",
+      "description": "The Real Estate Papi WordPress theme through 1.0.5 does not perform capability or CSRF checks on one of its AJAX actions, allowing any authenticated user, such as a subscriber, to install a fixed set of companion  from the WordPress.org repository. Where the request runs in the session of a user who",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/3eea9204-d9ea-474e-a299-31d1aa0385e0/"
+      ],
+      "published": "2026-09-06T07:16:41.900"
+    },
+    {
+      "id": "CVE-2026-86218",
+      "description": "N-central is vulnerable to a pre-auth remote code execution This issue affects N-central: before 2026.3.1.14.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-96"
+      ],
+      "references": [
+        "https://me.n-able.com/s/security-advisory/aArVy0000002Ld3KAE/cve202686218-preauthentication-remote-code-execution"
+      ],
+      "published": "2026-09-06T03:17:17.373"
+    }
+  ]
+}
