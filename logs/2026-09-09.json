@@ -1,0 +1,335 @@
+{
+  "timestamp": "2026-09-09T07:27:23.830684+00:00",
+  "scan_id": "47c2defe21",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 2,
+      "MEDIUM": 17,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        4
+      ],
+      [
+        "CWE-89",
+        4
+      ],
+      [
+        "CWE-416",
+        3
+      ],
+      [
+        "CWE-122",
+        2
+      ],
+      [
+        "CWE-617",
+        2
+      ]
+    ],
+    "threat_index": 254.8,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 254.8,
+        "yesterday": 540.4,
+        "change_pct": -52.8
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 8,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-20501",
+      "description": "In vdec, there is a possible out of bounds write due to a heap buffer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS11262030; Issue ID: MSV-9197.",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://www.mediatek.com/product-security-bulletin/September-2026"
+      ],
+      "published": "2026-09-07T02:17:18.800"
+    },
+    {
+      "id": "CVE-2026-20502",
+      "description": "In vdec, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS11262030; Issue ID: MSV-9196.",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://www.mediatek.com/product-security-bulletin/September-2026"
+      ],
+      "published": "2026-09-07T02:17:18.917"
+    },
+    {
+      "id": "CVE-2026-20506",
+      "description": "In Audio HAL, there is a possible escalation of privilege due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11191981; Issue ID: MSV-9126.",
+      "severity": "MEDIUM",
+      "score": 6.7,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://www.mediatek.com/product-security-bulletin/September-2026"
+      ],
+      "published": "2026-09-07T02:17:19.250"
+    },
+    {
+      "id": "CVE-2026-20507",
+      "description": "In Audio HAL, there is a possible escalation of privilege due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11191981; Issue ID: MSV-9125.",
+      "severity": "MEDIUM",
+      "score": 6.7,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://www.mediatek.com/product-security-bulletin/September-2026"
+      ],
+      "published": "2026-09-07T02:17:19.360"
+    },
+    {
+      "id": "CVE-2026-20508",
+      "description": "In Power HAL, there is a possible escalation of privilege due to type confusion. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11165543; Issue ID: MSV-9012.",
+      "severity": "MEDIUM",
+      "score": 6.7,
+      "cwes": [
+        "CWE-843"
+      ],
+      "references": [
+        "https://www.mediatek.com/product-security-bulletin/September-2026"
+      ],
+      "published": "2026-09-07T02:17:19.470"
+    },
+    {
+      "id": "CVE-2026-20509",
+      "description": "In Power HAL, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11165543; Issue ID: MSV-9011.",
+      "severity": "MEDIUM",
+      "score": 6.7,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://www.mediatek.com/product-security-bulletin/September-2026"
+      ],
+      "published": "2026-09-07T02:17:19.587"
+    },
+    {
+      "id": "CVE-2026-20510",
+      "description": "In camera middleware, there is a possible escalation of privilege due to double free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11134622; Issue ID: MSV-8894.",
+      "severity": "MEDIUM",
+      "score": 6.7,
+      "cwes": [
+        "CWE-415"
+      ],
+      "references": [
+        "https://www.mediatek.com/product-security-bulletin/September-2026"
+      ],
+      "published": "2026-09-07T02:17:19.697"
+    },
+    {
+      "id": "CVE-2026-20511",
+      "description": "In SurfaceFlinger, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11123860; Issue ID: MSV-8890.",
+      "severity": "MEDIUM",
+      "score": 6.7,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://www.mediatek.com/product-security-bulletin/September-2026"
+      ],
+      "published": "2026-09-07T02:17:19.810"
+    },
+    {
+      "id": "CVE-2026-20512",
+      "description": "In Audio HAL, there is a possible escalation of privilege due to improper input validation. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11087540; Issue ID: MSV-8246.",
+      "severity": "MEDIUM",
+      "score": 6.7,
+      "cwes": [
+        "CWE-307"
+      ],
+      "references": [
+        "https://www.mediatek.com/product-security-bulletin/September-2026"
+      ],
+      "published": "2026-09-07T02:17:19.923"
+    },
+    {
+      "id": "CVE-2026-86233",
+      "description": "A security vulnerability has been detected in itsourcecode Sales and Inventory System 1.0. Affected by this issue is some unknown functionality of the file /pages/us_del.php?type=user. The manipulation of the argument ID leads to sql injection. It is possible to initiate the attack remotely. The exp",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/v89269561-web/CyberseReasearch/issues/2",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-86233"
+      ],
+      "published": "2026-09-07T00:17:46.683"
+    },
+    {
+      "id": "CVE-2026-86234",
+      "description": "A vulnerability was detected in itsourcecode Sales and Inventory System 1.0. This affects an unknown part of the file /pages/cust_transac.php?action=add. The manipulation of the argument firstname results in sql injection. It is possible to launch the attack remotely. The exploit is now public and m",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/v89269561-web/CyberseReasearch/issues/3",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-86234"
+      ],
+      "published": "2026-09-07T00:17:46.867"
+    },
+    {
+      "id": "CVE-2026-86235",
+      "description": "A flaw has been found in itsourcecode Sales and Inventory System 1.0. This vulnerability affects unknown code of the file /pages/pos_transac.php?action=add. This manipulation of the argument Customer causes sql injection. The attack can be initiated remotely. The exploit has been published and may b",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/ltranquility/submit_repository/issues/5",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-86235"
+      ],
+      "published": "2026-09-07T00:17:47.030"
+    },
+    {
+      "id": "CVE-2026-86236",
+      "description": "A vulnerability has been found in itsourcecode Sales and Inventory System 1.0. This issue affects some unknown processing of the file /pages/pro_transac.php?action=add. Such manipulation of the argument Name leads to sql injection. The attack can be launched remotely. The exploit has been disclosed ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/ltranquility/submit_repository/issues/6",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-86236"
+      ],
+      "published": "2026-09-07T01:16:55.863"
+    },
+    {
+      "id": "CVE-2026-20500",
+      "description": "In Modem, there is a possible system crash due to improper input validation. This could lead to local denial of service with User execution privileges needed. User interaction is needed for exploitation. Patch ID: MOLY01810811; Issue ID: MSV-9232.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-295"
+      ],
+      "references": [
+        "https://www.mediatek.com/product-security-bulletin/September-2026"
+      ],
+      "published": "2026-09-07T02:17:18.673"
+    },
+    {
+      "id": "CVE-2026-86237",
+      "description": "A vulnerability was found in openagents-org openagents up to 0.8.19/0.9.3.post20. Impacted is the function test_default_model of the file sdk/src/openagents/sdk/transports/http.py. Performing a manipulation of the argument base_url results in server-side request forgery. The attack may be initiated ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/openagents-org/openagents/",
+        "https://github.com/openagents-org/openagents/issues/566",
+        "https://vuldb.com/cve/CVE-2026-86237"
+      ],
+      "published": "2026-09-07T01:16:56.040"
+    },
+    {
+      "id": "CVE-2026-20503",
+      "description": "In Modem, there is a possible system crash due to a missing bounds check. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-617"
+      ],
+      "references": [
+        "https://www.mediatek.com/product-security-bulletin/September-2026"
+      ],
+      "published": "2026-09-07T02:17:19.030"
+    },
+    {
+      "id": "CVE-2026-20504",
+      "description": "In Modem, there is a possible system crash due to a missing bounds check. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-617"
+      ],
+      "references": [
+        "https://www.mediatek.com/product-security-bulletin/September-2026"
+      ],
+      "published": "2026-09-07T02:17:19.143"
+    },
+    {
+      "id": "CVE-2026-20513",
+      "description": "In Audio HAL, there is a possible information disclosure due to improper input validation. This could lead to local information disclosure if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11087533; Issue ID: MSV-8245.",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-35"
+      ],
+      "references": [
+        "https://www.mediatek.com/product-security-bulletin/September-2026"
+      ],
+      "published": "2026-09-07T02:17:20.040"
+    },
+    {
+      "id": "CVE-2026-86238",
+      "description": "A vulnerability was determined in projectworlds Online Examination System 1.0. The affected element is an unknown function of the file feedback.php of the component Feedback Form. Executing a manipulation of the argument Name/Subject can lead to cross site scripting. The attack may be launched remot",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/CyberShailendra1/Online-Examination-System-Project",
+        "https://vuldb.com/cve/CVE-2026-86238",
+        "https://vuldb.com/submit/901822"
+      ],
+      "published": "2026-09-07T01:16:56.223"
+    },
+    {
+      "id": "CVE-2026-16876",
+      "description": "An authentication bypass vulnerability exists in the WebGUI of Series UNIVERGE IX-R/IX-V. A user could bypass authentication and execute arbitrary CLI commands by tampering with WebGUI messages and sending them to the device via internet.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://jpn.nec.com/security-info/secinfo/nv26-005_en.html"
+      ],
+      "published": "2026-09-07T02:17:17.630"
+    }
+  ]
+}
