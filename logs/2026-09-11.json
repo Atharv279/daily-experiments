@@ -1,0 +1,346 @@
+{
+  "timestamp": "2026-09-11T07:20:59.275717+00:00",
+  "scan_id": "349abdd5bc",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 6,
+      "MEDIUM": 9,
+      "LOW": 2,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-862",
+        5
+      ],
+      [
+        "CWE-200",
+        3
+      ],
+      [
+        "CWE-787",
+        2
+      ],
+      [
+        "CWE-122",
+        2
+      ],
+      [
+        "CWE-321",
+        1
+      ]
+    ],
+    "threat_index": 340.7,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 340.7,
+        "yesterday": 386.0,
+        "change_pct": -11.7
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 6,
+        "change_pct": -66.7
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-87438",
+      "description": "Out of bounds write in WebGL in Google Chrome on on Android prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/548127218"
+      ],
+      "published": "2026-09-09T01:17:00.027"
+    },
+    {
+      "id": "CVE-2026-53939",
+      "description": "OpenIDC/cjose is a C library implementing the Javascript Object Signing and Encryption (JOSE). In versions 0.6.1 through 0.6.2.5, when cjose encrypts a JWE using an AES-CBC-HMAC content-encryption algorithm (`A128CBC-HS256`, `A192CBC-HS384`, or `A256CBC-HS512`) together with any key-management algor",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-321",
+        "CWE-330"
+      ],
+      "references": [
+        "https://github.com/OpenIDC/cjose/commit/2a6e5bd969fa20059fb00913fb9f57d77ea6a4d9",
+        "https://github.com/OpenIDC/cjose/releases/tag/v0.6.2.6",
+        "https://github.com/OpenIDC/cjose/security/advisories/GHSA-f6wf-pqg3-6wqq"
+      ],
+      "published": "2026-09-09T00:17:31.700"
+    },
+    {
+      "id": "CVE-2026-87430",
+      "description": "Buffer overflow in WebRTC in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/542449805"
+      ],
+      "published": "2026-09-09T01:16:59.130"
+    },
+    {
+      "id": "CVE-2026-87433",
+      "description": "Race condition in FileAPI in Google Chrome prior to 153.0.8010.36 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/497574154"
+      ],
+      "published": "2026-09-09T01:16:59.450"
+    },
+    {
+      "id": "CVE-2026-87440",
+      "description": "Out of bounds read in Media in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/513458719"
+      ],
+      "published": "2026-09-09T01:17:00.240"
+    },
+    {
+      "id": "CVE-2026-87444",
+      "description": "Memory corruption in Codecs in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/489489002"
+      ],
+      "published": "2026-09-09T01:17:00.677"
+    },
+    {
+      "id": "CVE-2026-53938",
+      "description": "OpenIDC/cjose is a C library implementing the Javascript Object Signing and Encryption (JOSE). Prior to version 0.6.2.5, cjose's JWE decryption path for the AES Key Wrap key-management algorithms (`alg` = `A128KW`, `A192KW`, `A256KW`) does not validate the length of the attacker-supplied `encrypted_",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-122",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/OpenIDC/cjose/commit/8c51d245273583a658f24ef7b08ba22f848a34a5",
+        "https://github.com/OpenIDC/cjose/security/advisories/GHSA-75r7-f5cv-g3wj"
+      ],
+      "published": "2026-09-09T00:17:31.557"
+    },
+    {
+      "id": "CVE-2026-87431",
+      "description": "Missing authorization in Extensions in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to obtain sensitive information via a crafted Chrome extension. (Chromium security severity: Medium)",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/523313374"
+      ],
+      "published": "2026-09-09T01:16:59.240"
+    },
+    {
+      "id": "CVE-2026-87429",
+      "description": "Missing authorization in ServiceWorker in Google Chrome prior to 153.0.8010.36 allowed a remote attacker who had compromised the renderer process to bypass system access restrictions via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/497025031"
+      ],
+      "published": "2026-09-09T01:16:59.013"
+    },
+    {
+      "id": "CVE-2026-87436",
+      "description": "Incomplete cleanup in Browser in Google Chrome prior to 153.0.8010.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted Chrome extension. (Chromium security severity: Medium)",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-459"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/511754574"
+      ],
+      "published": "2026-09-09T01:16:59.793"
+    },
+    {
+      "id": "CVE-2026-87437",
+      "description": "Information leak in Frames in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to leak sensitive information via a crafted HTML page. (Chromium security severity: Low)",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/540082621"
+      ],
+      "published": "2026-09-09T01:16:59.920"
+    },
+    {
+      "id": "CVE-2026-87441",
+      "description": "Missing authorization in Downloads in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to bypass system access restrictions via a crafted Chrome extension. (Chromium security severity: Medium)",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/514556469"
+      ],
+      "published": "2026-09-09T01:17:00.350"
+    },
+    {
+      "id": "CVE-2026-87443",
+      "description": "Missing authorization in Actor in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to obtain sensitive information via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/502768228"
+      ],
+      "published": "2026-09-09T01:17:00.570"
+    },
+    {
+      "id": "CVE-2026-53937",
+      "description": "MCP Kotlin SDK is the Kotlin Multiplatform software development kit for the Model Context Protocol. In versions 0.7.0 through 0.12.0, `ReadBuffer.append` in `kotlin-sdk-core/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/shared/ReadBuffer.kt` writes every chunk of bytes received from the s",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/modelcontextprotocol/kotlin-sdk/blob/6d5bac1/kotlin-sdk-core/src/commonMain/kotlin/io/modelcontextprotocol/kotlin/sdk/shared/ReadBuffer.kt",
+        "https://github.com/modelcontextprotocol/kotlin-sdk/commit/6e6f80512fb8fcc9f3c031cfd693ccbcf9c4aaab",
+        "https://github.com/modelcontextprotocol/kotlin-sdk/releases/tag/0.13.0"
+      ],
+      "published": "2026-09-09T00:17:31.407"
+    },
+    {
+      "id": "CVE-2026-87435",
+      "description": "Information leak in ControlledFrame in Google Chrome prior to 153.0.8010.36 allowed a remote attacker who had compromised the renderer process to obtain sensitive information via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/533070113"
+      ],
+      "published": "2026-09-09T01:16:59.663"
+    },
+    {
+      "id": "CVE-2026-87439",
+      "description": "Information leak in ServiceWorker in Google Chrome prior to 153.0.8010.36 allowed a remote attacker who had compromised the renderer process to obtain sensitive information via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/517415433"
+      ],
+      "published": "2026-09-09T01:17:00.137"
+    },
+    {
+      "id": "CVE-2026-87432",
+      "description": "Incorrect authorization in Navigation in Google Chrome prior to 153.0.8010.36 allowed a remote attacker who had compromised the renderer process to spoof UI elements via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "MEDIUM",
+      "score": 4.2,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/511820041"
+      ],
+      "published": "2026-09-09T01:16:59.340"
+    },
+    {
+      "id": "CVE-2026-87434",
+      "description": "Missing authorization in CORS in Google Chrome prior to 153.0.8010.36 allowed a remote attacker who had compromised the renderer process to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/493322521"
+      ],
+      "published": "2026-09-09T01:16:59.557"
+    },
+    {
+      "id": "CVE-2026-87442",
+      "description": "Confused deputy in Prerender in Google Chrome prior to 153.0.8010.36 allowed a remote attacker who had compromised the renderer process to potentially bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-441"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html",
+        "https://issues.chromium.org/issues/497443419"
+      ],
+      "published": "2026-09-09T01:17:00.463"
+    },
+    {
+      "id": "CVE-2026-19201",
+      "description": "An uncontrolled recursion vulnerability in the Windows SIPA event log parser of Google go-attestation versions up to and including 0.6.1 allows an attacker to cause a denial of service (DoS). The (*WinEvents).readELAMAggregation function recurses for every nested elamAggregation sub-event without en",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://github.com/google/go-attestation/pull/506",
+        "https://github.com/google/go-attestation/releases/tag/v0.6.2",
+        "https://github.com/google/go-attestation/security/advisories/GHSA-hcm6-rjfh-f25p"
+      ],
+      "published": "2026-09-09T00:17:30.993"
+    }
+  ]
+}
