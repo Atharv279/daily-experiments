@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-16T13:34:09.265374+00:00",
-  "scan_id": "6b9a898c2e",
+  "timestamp": "2026-09-16T18:14:17.309288+00:00",
+  "scan_id": "38c22c193a",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
@@ -143,7 +143,8 @@
       ],
       "references": [
         "https://github.com/mda1r/biostar2-ad-credential-exposure",
-        "https://www.supremainc.com"
+        "https://www.supremainc.com",
+        "https://github.com/mda1r/CVE-2026-31278"
       ],
       "published": "2026-09-14T02:17:14.080"
     },
