@@ -1,0 +1,368 @@
+{
+  "timestamp": "2026-09-17T07:49:00.150683+00:00",
+  "scan_id": "bf6fdaa563",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 9,
+      "MEDIUM": 7,
+      "LOW": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        5
+      ],
+      [
+        "CWE-74",
+        4
+      ],
+      [
+        "CWE-89",
+        4
+      ],
+      [
+        "CWE-94",
+        3
+      ],
+      [
+        "CWE-77",
+        2
+      ]
+    ],
+    "threat_index": 337.2,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 337.2,
+        "yesterday": 306.3,
+        "change_pct": 10.1
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 4,
+        "change_pct": -75.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-90847",
+      "description": "A vulnerability was determined in EFM ipTIME C200E 1.094. The impacted element is an unknown function of the file iux_set.cgi of the component System Setup. This manipulation causes os command injection. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may ",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://drive.google.com/file/d/19WVo2tOImpmSEg3dFsmyB5Rw1aMQXyyd/view?usp=drive_link",
+        "https://vuldb.com/cve/CVE-2026-90847",
+        "https://vuldb.com/submit/925831"
+      ],
+      "published": "2026-09-15T01:16:54.423"
+    },
+    {
+      "id": "CVE-2026-91771",
+      "description": "Weights & Biases wandb before 0.29.0 fails to validate the file name from server responses in the File.download function, allowing path traversal attacks. Attackers controlling the backend can supply file names with directory traversal sequences to write files outside the intended download directory",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/wandb/wandb",
+        "https://github.com/wandb/wandb/blob/v0.27.2/wandb/apis/public/files.py#L319-L347",
+        "https://github.com/wandb/wandb/commit/e52558f3a6a94ea816af74969a13a35e5904cad6"
+      ],
+      "published": "2026-09-15T02:16:49.680"
+    },
+    {
+      "id": "CVE-2026-90843",
+      "description": "A security vulnerability has been detected in SabyasachiRana WebMap up to 8b95fe4dc301a3c09ddf145b895de0bf9f8d2a25. This affects the function nmap_newscan of the file functions_nmap.py of the component New Nmap Scan Handler. Such manipulation of the argument target/params leads to os command injecti",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://calledstriker.gitbook.io/blog/security-research/webmap",
+        "https://github.com/SabyasachiRana/WebMap/",
+        "https://github.com/SabyasachiRana/WebMap/commit/3d52f65803a2716bff14d938352c6fef45b0cfb6"
+      ],
+      "published": "2026-09-15T01:16:53.627"
+    },
+    {
+      "id": "CVE-2026-91751",
+      "description": "Flextype CMS through 1.0.0-alpha.3 fails to properly validate id and new_id parameters in the Entries REST API, allowing API token holders to read, create, or overwrite files outside the entries directory. Attackers can use traversal sequences in API requests to escape the project entries directory ",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/flextype/flextype",
+        "https://github.com/flextype/flextype/blob/v1.0.0-alpha.3/src/flextype/core/Entries/Entries.php#L856-L906",
+        "https://github.com/flextype/flextype/issues/596"
+      ],
+      "published": "2026-09-15T01:16:54.797"
+    },
+    {
+      "id": "CVE-2026-91752",
+      "description": "GNU libextractor before 1.15 contains a stack-based buffer overflow vulnerability in the process_star_office function that sizes a variable-length stack array from attacker-controlled OLE2 stream data. Attackers can craft malicious StarOffice documents that allocate up to 4 MB on the stack, causing ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-789"
+      ],
+      "references": [
+        "https://git.gnunet.org/gnunet/libextractor/commit/04004eb19033e093938138b09befdf31e71e8522.html",
+        "https://git.gnunet.org/gnunet/libextractor/commit/2781c7e9095f4ddaff4f535d69342f3903b18422.html",
+        "https://github.com/Haitam-lazaar/libextractor-ole2-rce"
+      ],
+      "published": "2026-09-15T01:16:54.967"
+    },
+    {
+      "id": "CVE-2026-90840",
+      "description": "A vulnerability was identified in PHPGurukul Blood Donor Management System 1.0. Affected is the function __construct of the file /application/controllers/admin/Dashboard.php of the component Admin Controllers. The manipulation leads to improper authentication. The attack can be initiated remotely. T",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/usernamevnq/CVEs/issues/1",
+        "https://phpgurukul.com/",
+        "https://vuldb.com/cve/CVE-2026-90840"
+      ],
+      "published": "2026-09-15T00:17:30.957"
+    },
+    {
+      "id": "CVE-2026-90841",
+      "description": "A security flaw has been discovered in PHPGurukul Blood Donor Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /application/controllers/admin/Report.php of the component Report Endpoint. The manipulation of the argument fromdate/todate results in sql inje",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/usernamevnq/CVEs/issues/2",
+        "https://phpgurukul.com/",
+        "https://vuldb.com/cve/CVE-2026-90841"
+      ],
+      "published": "2026-09-15T00:17:31.140"
+    },
+    {
+      "id": "CVE-2026-90844",
+      "description": "A vulnerability was detected in PHPGurukul Daily Expense Tracker System 1.1. This vulnerability affects unknown code of the file /dets/index.php of the component Login. Performing a manipulation of the argument email results in sql injection. Remote exploitation of the attack is possible. The exploi",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/usernamevnq/CVEs/issues/4",
+        "https://phpgurukul.com/",
+        "https://vuldb.com/cve/CVE-2026-90844"
+      ],
+      "published": "2026-09-15T01:16:53.833"
+    },
+    {
+      "id": "CVE-2026-90846",
+      "description": "A vulnerability has been found in PHPGurukul Daily Expense Tracker System 1.1. Impacted is an unknown function of the file /dets/forgot-password.php. The manipulation of the argument email/contactno leads to sql injection. The attack is possible to be carried out remotely. The exploit has been discl",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/usernamevnq/CVEs/issues/8",
+        "https://phpgurukul.com/",
+        "https://vuldb.com/cve/CVE-2026-90846"
+      ],
+      "published": "2026-09-15T01:16:54.230"
+    },
+    {
+      "id": "CVE-2026-90849",
+      "description": "A security vulnerability has been detected in SourceCodester College Notes Gallery Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /College/login.php. The manipulation of the argument User leads to sql injection. The attack may be initiated remotely. The",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/akaiwen/cve/issues/1",
+        "https://vuldb.com/cve/CVE-2026-90849",
+        "https://vuldb.com/submit/926860"
+      ],
+      "published": "2026-09-15T02:16:48.960"
+    },
+    {
+      "id": "CVE-2026-91750",
+      "description": "WeKnora before 0.7.0 fails to re-validate HTTP redirect targets in the POST /api/v1/knowledge-bases/:id/knowledge/url endpoint when downloading documents from user-supplied URLs. Authenticated attackers can bypass initial SSRF validation by supplying a public URL that redirects to internal network a",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/Tencent/WeKnora",
+        "https://github.com/Tencent/WeKnora/blob/v0.6.2/internal/application/service/knowledge_util.go#L339-L348",
+        "https://github.com/Tencent/WeKnora/commit/1d322c525a6197d24f07555b4b18ad33313b4328"
+      ],
+      "published": "2026-09-15T01:16:54.630"
+    },
+    {
+      "id": "CVE-2026-91770",
+      "description": "IceHRM before 36.0.0 fails to validate employee ownership on seven REST sub-resource endpoints, allowing authenticated employees to read any colleague's HR records. Attackers can substitute arbitrary employee IDs in skill, education, certification, language, leave, attendance, and status endpoints t",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/gamonoid/icehrm",
+        "https://github.com/gamonoid/icehrm/blob/e75ed7e45de41f7b2b3ea319d9406514afa2bf29/core/src/Employees/Rest/EmployeeSkillsRestEndPoint.php#L20-L51",
+        "https://github.com/gamonoid/icehrm/commit/19674f29a0591c985712dc4a5c841e21d7dbf971"
+      ],
+      "published": "2026-09-15T02:16:49.517"
+    },
+    {
+      "id": "CVE-2026-85575",
+      "description": "The ShopEngine Elementor WooCommerce Builder Addon \u2013 All in One WooCommerce Solution with eCommerce Templates & Woo Widgets plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018shopengine_product_title_header_size\u2019 parameter in all versions up to, and including, 4.9.5 due to in",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3693396/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/acd7b1b5-9618-4e8a-b320-bb65978d2c92?source=cve"
+      ],
+      "published": "2026-09-15T01:16:53.300"
+    },
+    {
+      "id": "CVE-2026-90851",
+      "description": "A flaw has been found in PHPGurukul Hostel Management System 3.0. This affects an unknown part of the file /admin/includes/checklogin.php. This manipulation of the argument ID causes improper access controls. Remote exploitation of the attack is possible. The exploit has been published and may be us",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/usernamevnq/CVEs/issues/10",
+        "https://phpgurukul.com/",
+        "https://vuldb.com/cve/CVE-2026-90851"
+      ],
+      "published": "2026-09-15T02:16:49.330"
+    },
+    {
+      "id": "CVE-2026-91772",
+      "description": "Halo through 2.26.1 contains an open redirect vulnerability in the anonymous thumbnail endpoint that fails to validate the uri query parameter. Attackers can craft malicious links on the trusted Halo domain that redirect visitors to arbitrary external sites, enabling phishing attacks and abuse of re",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-601"
+      ],
+      "references": [
+        "https://github.com/halo-dev/halo",
+        "https://github.com/halo-dev/halo/blob/v2.26.1/application/src/main/java/run/halo/app/core/endpoint/theme/ThumbnailEndpoint.java#L76-L98",
+        "https://github.com/halo-dev/halo/blob/v2.26.1/application/src/main/resources/extensions/role-template-anonymous.yaml#L53-L55"
+      ],
+      "published": "2026-09-15T02:16:49.843"
+    },
+    {
+      "id": "CVE-2026-85657",
+      "description": "The Co-Authors, Multiple Authors and Guest Authors in an Author Box with PublishPress Authors plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018profile_fields_user_email_value_prefix\u2019 parameter in all versions up to, and including, 4.15.0 due to insufficient input sanitizati",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/publishpress-authors/tags/4.15.0/src/modules/author-boxes/author-boxes.php#L2019",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/d4cc9537-879c-4c12-8b76-60241b7a3420?source=cve"
+      ],
+      "published": "2026-09-15T01:16:53.460"
+    },
+    {
+      "id": "CVE-2026-90848",
+      "description": "A weakness has been identified in Governikus AusweisApp up to 2.5.4. Affected is an unknown function of the component StartPAOSResponse Handler. Executing a manipulation of the argument ResultMessage can lead to cross site scripting. The attack can be launched remotely. Upgrading to version 2.5.5 is",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-90848",
+        "https://vuldb.com/submit/925923",
+        "https://vuldb.com/vuln/403403"
+      ],
+      "published": "2026-09-15T02:16:48.780"
+    },
+    {
+      "id": "CVE-2026-90842",
+      "description": "A weakness has been identified in PHPGurukul Blood Donor Management System 1.0. Affected by this issue is some unknown functionality of the file application/models/admin/Login_Model.php. This manipulation of the argument password/email/currentpassword/dbcurrentpwd/newpassword causes cleartext storag",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-312",
+        "CWE-313"
+      ],
+      "references": [
+        "https://github.com/usernamevnq/CVEs/issues/3",
+        "https://phpgurukul.com/",
+        "https://vuldb.com/cve/CVE-2026-90842"
+      ],
+      "published": "2026-09-15T00:17:31.337"
+    },
+    {
+      "id": "CVE-2026-90845",
+      "description": "A flaw has been found in PHPGurukul Daily Expense Tracker System 1.1. This issue affects some unknown processing of the file /dets/includes/sidebar.php. Executing a manipulation of the argument FullName can lead to cross site scripting. The attack can be executed remotely. The exploit has been publi",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/usernamevnq/CVEs/issues/6",
+        "https://phpgurukul.com/",
+        "https://vuldb.com/cve/CVE-2026-90845"
+      ],
+      "published": "2026-09-15T01:16:54.030"
+    },
+    {
+      "id": "CVE-2026-90850",
+      "description": "A vulnerability was detected in PHPGurukul Hostel Management System 3.0. Affected by this issue is some unknown functionality of the file /admin/manage-students.php. The manipulation results in cross site scripting. The attack may be launched remotely. The exploit is now public and may be used.",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/usernamevnq/CVEs/issues/9",
+        "https://phpgurukul.com/",
+        "https://vuldb.com/cve/CVE-2026-90850"
+      ],
+      "published": "2026-09-15T02:16:49.143"
+    }
+  ]
+}
