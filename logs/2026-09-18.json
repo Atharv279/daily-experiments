@@ -1,0 +1,347 @@
+{
+  "timestamp": "2026-09-18T07:28:49.102892+00:00",
+  "scan_id": "9e54e3e97b",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 5,
+      "MEDIUM": 11,
+      "LOW": 1,
+      "UNKNOWN": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-918",
+        2
+      ],
+      [
+        "CWE-74",
+        2
+      ],
+      [
+        "CWE-79",
+        2
+      ],
+      [
+        "CWE-78",
+        1
+      ],
+      [
+        "CWE-696",
+        1
+      ]
+    ],
+    "threat_index": 239.0,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 239.0,
+        "yesterday": 337.2,
+        "change_pct": -29.1
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-86108",
+      "description": "Insufficient validation of inputs supplied through affected VeloCloud Edge management and configuration workflows may allow an authorized management request or configuration value to be interpreted as an operating-system command. Successful exploitation may allow command execution with elevated priv",
+      "severity": "HIGH",
+      "score": 8.0,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://www.arista.com/zh/support/advisories-notices/security-advisory/24737-security-advisory-0181"
+      ],
+      "published": "2026-09-16T03:17:00.077"
+    },
+    {
+      "id": "CVE-2026-73446",
+      "description": "On affected platforms running Arista EOS with IS-IS configured on a broadcast interface, an unauthenticated attacker can send a crafted IS-IS Hello Protocol Data Unit (PDU) that causes the device to tear down an established IS-IS adjacency. This may result in traffic disruption and loss of IP reacha",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-696"
+      ],
+      "references": [
+        "https://www.arista.com/en/support/advisories-notices/security-advisory/24716-security-advisory-0160"
+      ],
+      "published": "2026-09-16T00:17:05.000"
+    },
+    {
+      "id": "CVE-2026-73459",
+      "description": "On affected platforms running Arista EOS with IS-IS configured, an unauthenticated attacker who can inject a specially crafted IS-IS LSP PDU can cause the legitimate LSP to be unexpectedly purged from the IS-IS link-state database. This may result in traffic loss.",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-354"
+      ],
+      "references": [
+        "https://www.arista.com/en/support/advisories-notices/security-advisory/24716-security-advisory-0160"
+      ],
+      "published": "2026-09-16T00:17:05.213"
+    },
+    {
+      "id": "CVE-2026-92299",
+      "description": "@jitsi/electron-sdk before 10.0.5 exposes getDesktopSources() via contextBridge without requiring an active getDisplayMedia() picker, allowing any script in the meeting page to enumerate screens and windows. Attackers can call the jitsi-screen-sharing-get-sources IPC route to retrieve desktop thumbn",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/jitsi/jitsi-meet-electron-sdk",
+        "https://github.com/jitsi/jitsi-meet-electron-sdk/blob/002dae740e63a225c0bc8ed7bd53ed7ce104ebc8/screensharing/main.js#L93-L96",
+        "https://github.com/jitsi/jitsi-meet-electron-sdk/blob/v10.0.5/screensharing/main.js#L131-L137"
+      ],
+      "published": "2026-09-16T02:17:39.317"
+    },
+    {
+      "id": "CVE-2026-92215",
+      "description": "A vulnerability has been found in a2ui-project a2ui up to 0.10.7. Affected by this vulnerability is the function httpx.get of the file agent_sdks/python/a2ui_agent/src/a2ui/extensions/file_resolve/file_resolver.py of the component FileResolver. The manipulation leads to server-side request forgery. ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/a2ui-project/a2ui/",
+        "https://github.com/a2ui-project/a2ui/commit/2bb8423060308bbdea8ba468dabed4fc256d18ea",
+        "https://github.com/a2ui-project/a2ui/issues/2295"
+      ],
+      "published": "2026-09-16T02:17:38.650"
+    },
+    {
+      "id": "CVE-2026-73450",
+      "description": "On affected platforms running Arista EOS with MLAG Dual Primary Detection configured, an unauthenticated attacker with access to the Dual Primary Detection network segment can send specially crafted packets to interfere with the dual-primary state. If the MLAG primary switch fails while these packet",
+      "severity": "MEDIUM",
+      "score": 6.9,
+      "cwes": [
+        "CWE-345"
+      ],
+      "references": [
+        "https://www.arista.com/en/support/advisories-notices/security-advisory/24717-security-advisory-0161"
+      ],
+      "published": "2026-09-16T03:16:59.437"
+    },
+    {
+      "id": "CVE-2026-86109",
+      "description": "The VeloCloud Edge software update workflow may accept update bundles without properly validating their signatures because the workflow does not restrict the digest algorithm used for artifact verification. An attacker with either sufficient privileges to upload packages to VeloCloud Orchestrator or",
+      "severity": "MEDIUM",
+      "score": 6.6,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://www.arista.com/zh/support/advisories-notices/security-advisory/24738-security-advisory-0182"
+      ],
+      "published": "2026-09-16T03:17:00.250"
+    },
+    {
+      "id": "CVE-2026-92184",
+      "description": "A security flaw has been discovered in ag-ui-protocol ag-ui 0.3.0. Affected is the function urllib.request.urlopen of the file integrations/aws-strands/python/src/ag_ui_strands/utils.py of the component Multimodal Content. The manipulation of the argument Value results in server-side request forgery",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/ag-ui-protocol/ag-ui/",
+        "https://github.com/ag-ui-protocol/ag-ui/commit/bf0c34df34cbb4b1992bc37c9bfffe6dd54bb189",
+        "https://github.com/ag-ui-protocol/ag-ui/issues/2432"
+      ],
+      "published": "2026-09-16T00:17:30.080"
+    },
+    {
+      "id": "CVE-2026-92217",
+      "description": "A vulnerability was determined in a2ui-project a2ui up to 0.10.6. This affects the function processMessages of the file renderers/web_core/src/v0_9/processing/message-processor.ts of the component Message Parsing. This manipulation causes dynamically-determined object attributes. The attack can be i",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-913",
+        "CWE-915"
+      ],
+      "references": [
+        "https://github.com/a2ui-project/a2ui/",
+        "https://github.com/a2ui-project/a2ui/issues/2297",
+        "https://vuldb.com/cve/CVE-2026-92217"
+      ],
+      "published": "2026-09-16T02:17:38.997"
+    },
+    {
+      "id": "CVE-2026-73460",
+      "description": "On affected platforms running Arista EOS with IS-IS graceful restart enabled, an unauthenticated attacker who can inject a malformed IS-IS LSP PDU packet can cause the IS-IS graceful restart procedure to terminate prematurely. This may result in traffic loss following a restart event.",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://www.arista.com/en/support/advisories-notices/security-advisory/24716-security-advisory-0160"
+      ],
+      "published": "2026-09-16T00:17:05.397"
+    },
+    {
+      "id": "CVE-2026-92213",
+      "description": "A vulnerability was detected in a2ui-project a2ui up to 0.10.6. This impacts the function z.any of the file renderers/web_core/src/v0_9/schema/server-to-client.ts of the component Angular Renderer. Performing a manipulation of the argument primaryColor results in injection. The attack is possible to",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-74",
+        "CWE-707"
+      ],
+      "references": [
+        "https://github.com/a2ui-project/a2ui/",
+        "https://github.com/a2ui-project/a2ui/commit/fb8e85aec78d04e81feb9992a57638ca1ec4dc1b",
+        "https://github.com/a2ui-project/a2ui/issues/2293"
+      ],
+      "published": "2026-09-16T01:16:29.247"
+    },
+    {
+      "id": "CVE-2026-92220",
+      "description": "A vulnerability was found in vllm-project vLLM 0.26.0/0.27.0. Affected is the function MoRIIOConnectorScheduler.request_finished/MoRIIOConnectorWorker.get_finished/MoRIIOWrapper._handle_release_message of the file vllm/distributed/kv_transfer/kv_connector/v1/moriio/moriio_connector.py of the compone",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/vllm-project/vllm/",
+        "https://github.com/vllm-project/vllm/pull/50674",
+        "https://vuldb.com/cve/CVE-2026-92220"
+      ],
+      "published": "2026-09-16T03:17:00.407"
+    },
+    {
+      "id": "CVE-2026-92298",
+      "description": "EspoCRM through 10.0.8 uses PHP's rand() function to generate tokens for lead-capture opt-in, event invitation, and campaign URLs instead of a cryptographically secure generator. Remote unauthenticated attackers can guess these roughly 31-bit tokens to confirm opt-ins, accept or decline event invita",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-338"
+      ],
+      "references": [
+        "https://gist.github.com/kazisabu/9e3109aab24245fde19b88f53f965e93",
+        "https://github.com/espocrm/espocrm",
+        "https://github.com/espocrm/espocrm/blob/10.0.8/application/Espo/Core/Utils/Util.php#L585-L590"
+      ],
+      "published": "2026-09-16T02:17:39.170"
+    },
+    {
+      "id": "CVE-2026-92221",
+      "description": "A vulnerability was determined in gedelumbung HospitalManagement up to c2d45543789a3887067d3915f69d44cfc2cf76a8. Affected by this vulnerability is the function generate_index_pasien of the file application/models/app_global_admin_model.php. Executing a manipulation of the argument cari can lead to s",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/gedelumbung/HospitalManagement/",
+        "https://github.com/gedelumbung/HospitalManagement/issues/4",
+        "https://vuldb.com/cve/CVE-2026-92221"
+      ],
+      "published": "2026-09-16T03:17:00.590"
+    },
+    {
+      "id": "CVE-2026-92247",
+      "description": "A security vulnerability has been detected in synaptikcms synaptik-cms up to 1.3.4.4. This affects the function rename of the file admin/file-manager.php of the component Admin File Manager. The manipulation leads to unrestricted upload. The attack can be initiated remotely. The exploit has been dis",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/d1n3sh-0x3/synaptikcms-security-research",
+        "https://github.com/synaptikcms/synaptik-cms/releases/tag/v1.3.5",
+        "https://vuldb.com/cve/CVE-2026-92247"
+      ],
+      "published": "2026-09-16T03:17:00.777"
+    },
+    {
+      "id": "CVE-2026-92216",
+      "description": "A vulnerability was found in a2ui-project a2ui up to 0.10.7. Affected by this issue is the function openUrl of the file renderers/web_core/src/v0_9/rendering/generic-binder.ts of the component Binder. The manipulation results in open redirect. It is possible to launch the attack remotely. The projec",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-601"
+      ],
+      "references": [
+        "https://github.com/a2ui-project/a2ui/",
+        "https://github.com/a2ui-project/a2ui/issues/2296",
+        "https://vuldb.com/cve/CVE-2026-92216"
+      ],
+      "published": "2026-09-16T02:17:38.827"
+    },
+    {
+      "id": "CVE-2026-92214",
+      "description": "A flaw has been found in a2ui-project a2ui up to 0.10.7. Affected is an unknown function of the file samples/community/client/angular/projects/a2a-chat-canvas/src/lib/services/sanitizer-markdown-renderer-service.ts of the component a2a-chat-canvas. Executing a manipulation can lead to cross site scr",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/a2ui-project/a2ui/",
+        "https://github.com/a2ui-project/a2ui/issues/2294",
+        "https://vuldb.com/cve/CVE-2026-92214"
+      ],
+      "published": "2026-09-16T02:17:37.547"
+    },
+    {
+      "id": "CVE-2026-15638",
+      "description": "An unauthenticated user with access to Secret Server could leverage a padding oracle to decrypt or encrypt data using one of the server's cryptographic keys. The key itself is not exposed.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-327"
+      ],
+      "references": [
+        "https://delinea.com/security-advisories"
+      ],
+      "published": "2026-09-16T00:17:02.600"
+    },
+    {
+      "id": "CVE-2026-15639",
+      "description": "An attacker can craft a malicious link that, if used by a legitimate user, may cause the user's browser to run JavaScript supplied by the attacker.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://delinea.com/security-advisories"
+      ],
+      "published": "2026-09-16T00:17:03.453"
+    },
+    {
+      "id": "CVE-2026-15640",
+      "description": "Under certain conditions a valid SAML IdP response may be used to impersonate another Secret Server user.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-290"
+      ],
+      "references": [
+        "https://delinea.com/security-advisories"
+      ],
+      "published": "2026-09-16T00:17:03.577"
+    }
+  ]
+}
