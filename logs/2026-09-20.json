@@ -1,0 +1,349 @@
+{
+  "timestamp": "2026-09-20T07:48:15.562799+00:00",
+  "scan_id": "72e262480e",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 3,
+      "HIGH": 5,
+      "MEDIUM": 10,
+      "LOW": 1,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-400",
+        3
+      ],
+      [
+        "CWE-770",
+        3
+      ],
+      [
+        "CWE-787",
+        2
+      ],
+      [
+        "CWE-639",
+        2
+      ]
+    ],
+    "threat_index": 342.9,
+    "critical_count": 3
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 342.9,
+        "yesterday": 394.6,
+        "change_pct": -13.1
+      },
+      "critical_count": {
+        "today": 3,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-62874",
+      "description": "Insufficient verification of data authenticity in Azure Billing allows an unauthorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-345"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62874"
+      ],
+      "published": "2026-09-18T00:16:57.930"
+    },
+    {
+      "id": "CVE-2026-69843",
+      "description": "Authentication bypass by spoofing in Microsoft Fabric allows an unauthorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-290"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69843"
+      ],
+      "published": "2026-09-18T00:17:24.923"
+    },
+    {
+      "id": "CVE-2026-85878",
+      "description": "Improper authorization in Azure Database for PostgreSQL allows an authorized attacker to elevate privileges over a network.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85878"
+      ],
+      "published": "2026-09-18T00:17:47.777"
+    },
+    {
+      "id": "CVE-2026-93453",
+      "description": "SOGo before 5.12.11 constructs password-reset links using the client-supplied Origin header as the authority, allowing unauthenticated attackers to redirect recovery tokens to attacker-controlled domains. Attackers can submit password recovery requests with a malicious Origin header to have valid pa",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-640"
+      ],
+      "references": [
+        "https://github.com/Alinto/sogo",
+        "https://github.com/Alinto/sogo/blob/SOGo-5.12.10/UI/MainUI/SOGoRootPage.m#L1375",
+        "https://github.com/Alinto/sogo/commit/04a3e9823889acaf6c247b224f5f7a0108f8f829"
+      ],
+      "published": "2026-09-18T00:17:49.693"
+    },
+    {
+      "id": "CVE-2026-83946",
+      "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Azure Portal allows an unauthorized attacker to perform spoofing over a network.",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83946"
+      ],
+      "published": "2026-09-18T00:17:44.960"
+    },
+    {
+      "id": "CVE-2026-85887",
+      "description": "Incorrect permission assignment for critical resource in M365 Copilot allows an authorized attacker to disclose information over a network.",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-732"
+      ],
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85887"
+      ],
+      "published": "2026-09-18T00:17:47.920"
+    },
+    {
+      "id": "CVE-2026-93450",
+      "description": "go-openapi/swag jsonutils before 0.27.1 contains a stack overflow vulnerability in ordered JSON parsing and serialization due to unbounded recursion with no depth limit. Remote unauthenticated attackers can submit deeply nested JSON documents to services accepting OpenAPI specifications, causing fat",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://github.com/go-openapi/swag",
+        "https://github.com/go-openapi/swag/blob/v0.27.0/jsonutils/adapters/stdlib/json/adapter.go#L68",
+        "https://github.com/go-openapi/swag/blob/v0.27.0/jsonutils/adapters/stdlib/json/ordered_map.go#L214"
+      ],
+      "published": "2026-09-18T00:17:49.230"
+    },
+    {
+      "id": "CVE-2026-93452",
+      "description": "snappy-java through 1.1.10.8 contains a buffer overflow vulnerability in Snappy.compress(ByteBuffer, ByteBuffer) that writes past the end of the destination buffer. Attackers can supply incompressible data that exceeds the destination buffer's remaining capacity, corrupting off-heap memory and causi",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/xerial/snappy-java",
+        "https://github.com/xerial/snappy-java/blob/v1.1.10.8/src/main/java/org/xerial/snappy/Snappy.java#L137",
+        "https://github.com/xerial/snappy-java/issues/732"
+      ],
+      "published": "2026-09-18T00:17:49.540"
+    },
+    {
+      "id": "CVE-2026-93451",
+      "description": "snappy-java through 1.1.10.8 contains a buffer overflow vulnerability in typed Snappy.uncompress*Array methods that allocate output arrays by dividing uncompressed length by element size but pass the undivided length to native code. Attackers controlling compressed input can cause misaligned length ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/xerial/snappy-java",
+        "https://github.com/xerial/snappy-java/blob/v1.1.10.8/src/main/java/org/xerial/snappy/Snappy.java#L802",
+        "https://github.com/xerial/snappy-java/issues/729"
+      ],
+      "published": "2026-09-18T00:17:49.380"
+    },
+    {
+      "id": "CVE-2026-2585",
+      "description": "The Brizy \u2013 Page Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018rootAttributes\u2019 parameter in all versions up to, and including, 2.8.14 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3565838/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/89e0babf-780c-467b-b1df-62b5b9403c8f?source=cve"
+      ],
+      "published": "2026-09-18T00:16:57.450"
+    },
+    {
+      "id": "CVE-2026-77164",
+      "description": "Circles' remote-instance signature verification fetches the attacker-supplied keyId URL before trust in the remote instance is established, and explicitly allows local/private addresses for this request, bypassing Nextcloud's core SSRF protections. The public, unauthenticated endpoints POST /apps/ci",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://hackerone.com/reports/3303283"
+      ],
+      "published": "2026-09-18T02:17:07.510"
+    },
+    {
+      "id": "CVE-2026-93454",
+      "description": "Aureus ERP through 1.6.0 stores the Payment Term note field unsanitized and renders it as raw HTML in the Accounting plugin. Authenticated users with payment-term create permission can submit arbitrary JavaScript to the payment-terms endpoint, which persists to the database and executes in browsers ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/aureuserp/aureuserp",
+        "https://github.com/aureuserp/aureuserp/blob/v1.6.0/plugins/webkul/accounts/src/Filament/Resources/PaymentTermResource/Schemas/PaymentTermInfolist.php#L59",
+        "https://github.com/aureuserp/aureuserp/pull/1562"
+      ],
+      "published": "2026-09-18T00:17:49.853"
+    },
+    {
+      "id": "CVE-2026-93310",
+      "description": "A vulnerability was identified in O-RAN-SC SMO OAM 2025-06-10. This affects an unknown part of the component VES Collector. The manipulation leads to allocation of resources. Remote exploitation of the attack is possible. The exploit is publicly available and might be used. The project was informed ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "references": [
+        "https://gist.github.com/fklement/f70321f38513c2e82a87f062e519c587",
+        "https://lf-o-ran-sc.atlassian.net/browse/SMO-204",
+        "https://vuldb.com/cve/CVE-2026-93310"
+      ],
+      "published": "2026-09-18T01:16:56.363"
+    },
+    {
+      "id": "CVE-2026-18441",
+      "description": "The Appointment Booking Plugin \u2013 LatePoint | Calendar & Scheduling for WordPress plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 5.6.9  via the set_customer_object due to missing validation on a user controlled key. This makes it possible ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.6.9/latepoint.php#L1006",
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.6.9/lib/controllers/steps_controller.php#L341",
+        "https://plugins.trac.wordpress.org/browser/latepoint/tags/5.6.9/lib/helpers/steps_helper.php#L1184"
+      ],
+      "published": "2026-09-18T00:16:57.297"
+    },
+    {
+      "id": "CVE-2026-93308",
+      "description": "A vulnerability was found in O-RAN-SC SMO OAM 2025-06-10. Affected by this vulnerability is an unknown functionality of the component VES Collector. Performing a manipulation results in allocation of resources. The attack may be initiated remotely. The exploit has been made public and could be used.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "references": [
+        "https://gist.github.com/fklement/9f217219b95f7ced94527a2d18b5f059",
+        "https://lf-o-ran-sc.atlassian.net/browse/SMO-202",
+        "https://vuldb.com/cve/CVE-2026-93308"
+      ],
+      "published": "2026-09-18T00:17:48.830"
+    },
+    {
+      "id": "CVE-2026-93309",
+      "description": "A vulnerability was determined in O-RAN-SC SMO OAM 2025-06-10. Affected by this issue is some unknown functionality of the component VES Collector. Executing a manipulation can lead to allocation of resources. The attack may be launched remotely. The exploit has been publicly disclosed and may be ut",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "references": [
+        "https://gist.github.com/fklement/639eb04a12cc5c015f9b960b0de96d80",
+        "https://lf-o-ran-sc.atlassian.net/browse/SMO-203",
+        "https://vuldb.com/cve/CVE-2026-93309"
+      ],
+      "published": "2026-09-18T00:17:49.010"
+    },
+    {
+      "id": "CVE-2026-93311",
+      "description": "A vulnerability was detected in Freedesktop Poppler 26.07.0. This issue affects the function SampledFunction::SampledFunction of the file poppler/Function.cc of the component SampledFunction. The manipulation of the argument BitsPerSample results in integer overflow. The attack may be performed from",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-189",
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/r1ck9-2q/cve_summit/blob/main/Shift-exponent-undefined-behavior-in-SampledFunction-Function.cc-376.md",
+        "https://gitlab.freedesktop.org/poppler/poppler/-/work_items/1758",
+        "https://vuldb.com/cve/CVE-2026-93311"
+      ],
+      "published": "2026-09-18T01:16:56.533"
+    },
+    {
+      "id": "CVE-2026-93312",
+      "description": "A flaw has been found in Freedesktop Poppler 26.07.0. Impacted is the function JBIG2Stream::rewind of the file poppler/JBIG2Stream.cc. This manipulation causes null pointer dereference. It is possible to initiate the attack remotely. The exploit has been published and may be used. Upgrading to versi",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/r1ck9-2q/cve_summit/blob/main/Null-pointer-offset-undefined-behavior-in-JBIG2Stream-rewind-JBIG2Stream.cc-1229.md",
+        "https://gitlab.freedesktop.org/poppler/poppler/-/commit/5e49250f13b0390edeb3f90eb4c02c9941f97067",
+        "https://gitlab.freedesktop.org/poppler/poppler/-/merge_requests/2314"
+      ],
+      "published": "2026-09-18T01:16:56.710"
+    },
+    {
+      "id": "CVE-2026-68493",
+      "description": "After guessing a 62^15 complex unique identifier, a malicious logged in user was able to retrieve a list of memberships for a circle they are not a member of.",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://hackerone.com/reports/3484601"
+      ],
+      "published": "2026-09-18T02:17:07.350"
+    },
+    {
+      "id": "CVE-2026-79954",
+      "description": "NASA CryptoLib 1.5.0 contains an authentication downgrade vulnerability in the Telecommand (TC) receive path. The receiver selects the Security Association used for SDLS processing solely from the SPI field inside the incoming frame, but it does not verify that the selected SA is authorized for the ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://fluidattacks.com/advisories/linkin",
+        "https://github.com/nasa/CryptoLib"
+      ],
+      "published": "2026-09-18T01:16:56.120"
+    }
+  ]
+}
