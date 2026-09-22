@@ -1,0 +1,349 @@
+{
+  "timestamp": "2026-09-22T07:48:00.218866+00:00",
+  "scan_id": "9e7690ca91",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 3,
+      "HIGH": 4,
+      "MEDIUM": 10,
+      "LOW": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        3
+      ],
+      [
+        "CWE-639",
+        3
+      ],
+      [
+        "CWE-77",
+        2
+      ],
+      [
+        "CWE-269",
+        2
+      ],
+      [
+        "CWE-89",
+        2
+      ]
+    ],
+    "threat_index": 320.7,
+    "critical_count": 3
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 320.7,
+        "yesterday": 356.7,
+        "change_pct": -10.1
+      },
+      "critical_count": {
+        "today": 3,
+        "yesterday": 3,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-94083",
+      "description": "Suricata before 8.0.7 has a DoH2 type confusion that can cause an invalid free, because cleanup code for the HTTP2 state is executed even though the actual state is HTTP1 (when there is a DoH2 request with an HTTP1 to HTTP2 upgrade). This requires app-layer.protocols.doh2 to be enabled, which is the",
+      "severity": "CRITICAL",
+      "score": 9.4,
+      "cwes": [
+        "CWE-843"
+      ],
+      "references": [
+        "https://forum.suricata.io/t/suricata-8-0-7-released/6467",
+        "https://github.com/OISF/suricata/commit/e574009add9c208f319e1d9d15b3bb1229c88074",
+        "https://github.com/OISF/suricata/compare/suricata-8.0.6...suricata-8.0.7"
+      ],
+      "published": "2026-09-20T02:16:53.520"
+    },
+    {
+      "id": "CVE-2026-94084",
+      "description": "Suricata before 8.0.7 has an Http2ThreadMultiBuf use-after-free when a transaction is inspected by rules that use http.response_header with and without a transform.",
+      "severity": "CRITICAL",
+      "score": 9.4,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://forum.suricata.io/t/suricata-8-0-7-released/6467",
+        "https://github.com/OISF/suricata/commit/1d66355dc8737bb2ae7a198115b3067e3ad49808",
+        "https://github.com/OISF/suricata/compare/suricata-8.0.6...suricata-8.0.7"
+      ],
+      "published": "2026-09-20T02:16:53.717"
+    },
+    {
+      "id": "CVE-2026-93958",
+      "description": "A vulnerability was found in D-Link R95 BE9500_1.00.16. This vulnerability affects the function system of the file /bin/ssi of the component DHMAPI. The manipulation of the argument NTPServer results in os command injection. The attack can be executed remotely. The exploit has been made public and c",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/FoundTL/D-Link-R95-BE9500",
+        "https://vuldb.com/cve/CVE-2026-93958",
+        "https://vuldb.com/submit/944149"
+      ],
+      "published": "2026-09-20T02:16:53.307"
+    },
+    {
+      "id": "CVE-2026-86553",
+      "description": "SmartLife app dynamically generates fresh SmartLife application authentication parameters inside its runtime process. Using the acquired SmartLife application authentication parameters, an attacker can directly call the backend interface /account/verify.serv to obtain the real account ID correspondi",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/2171542593031840100"
+      ],
+      "published": "2026-09-20T04:17:06.240"
+    },
+    {
+      "id": "CVE-2026-93962",
+      "description": "A weakness has been identified in Kamailio up to 5.8.8/6.0.7/6.1.4/6.2.0-dev1. The impacted element is the function shm_malloc of the file src/modules/cdp/receiver.c of the component CDP Diameter Receiver. Executing a manipulation can lead to heap-based buffer overflow. It is possible to launch the ",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/kamailio/kamailio/",
+        "https://github.com/kamailio/kamailio/commit/38711a3e788de0130d48cb485578c482b57d9351",
+        "https://github.com/kamailio/kamailio/issues/4876"
+      ],
+      "published": "2026-09-20T05:16:29.067"
+    },
+    {
+      "id": "CVE-2026-93959",
+      "description": "A vulnerability was determined in SourceCodester Online Reviewer Management System 1.0. This issue affects some unknown processing of the file /reviewer_0/admins/assessments/course/btn_functions.php. This manipulation of the argument Course causes sql injection. The attack is possible to be carried ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/zliang512/cve/issues/1",
+        "https://vuldb.com/cve/CVE-2026-93959",
+        "https://vuldb.com/submit/944169"
+      ],
+      "published": "2026-09-20T03:16:31.513"
+    },
+    {
+      "id": "CVE-2026-81650",
+      "description": "The Photo Gallery, Sliders, Proofing and   WordPress plugin before 4.5.0 does not correctly validate the extensions of files extracted from an uploaded archive, due to a variable being reused as a loop counter so that the check always passes, allowing users granted its gallery-management capability ",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/7c1443ae-14b4-43ca-bb1a-b6a3f9b27c57/"
+      ],
+      "published": "2026-09-20T07:16:49.590"
+    },
+    {
+      "id": "CVE-2026-14844",
+      "description": "The Master Slider  WordPress plugin through 3.11.2 does not sanitise and escape some of its shortcode attributes before outputting them in an inline script context, which could allow users with the Contributor role and above to perform Stored Cross-Site Scripting attacks that execute when the affect",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/06a5409c-3070-417f-98cb-0ca8ddbfe14c/"
+      ],
+      "published": "2026-09-20T07:16:48.533"
+    },
+    {
+      "id": "CVE-2026-93965",
+      "description": "A flaw has been found in aiyiyi121 SxDevOps 1.0/1.1. Affected is the function subprocess.Popen of the file backend/aiops/services.py of the component MCP STDIO Server Management. This manipulation of the argument endpoint_or_command causes command injection. The attack may be initiated remotely. Pat",
+      "severity": "MEDIUM",
+      "score": 6.6,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/aiyiyi121/sxdevops/",
+        "https://github.com/aiyiyi121/sxdevops/commit/2b4bf8585c3e731e7a8af30801ea46680bc783f9",
+        "https://github.com/aiyiyi121/sxdevops/issues/16"
+      ],
+      "published": "2026-09-20T06:16:50.713"
+    },
+    {
+      "id": "CVE-2026-93963",
+      "description": "A security vulnerability has been detected in itsourcecode Leave Management System 1.0. This affects an unknown function of the file /module/department/controller.php. The manipulation of the argument DEPTID leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/VivianQYW/cve/issues/2",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-93963"
+      ],
+      "published": "2026-09-20T06:16:49.003"
+    },
+    {
+      "id": "CVE-2026-86552",
+      "description": "SmartLife app dynamically generates brand\u2011new SmartLife application authentication parameters at runtime. With the acquired SmartLife application authentication credentials, an attacker can directly complete registration using any arbitrary email address via the backend interface /account/person/sig",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/460174866982102946"
+      ],
+      "published": "2026-09-20T04:17:02.840"
+    },
+    {
+      "id": "CVE-2026-93961",
+      "description": "A security flaw has been discovered in Dromara UJCMS up to 12.3.1. The affected element is the function usernameExist of the file ujcms-cms/src/main/java/com/ujcms/cms/core/web/api/UserController.java of the component UserController. Performing a manipulation of the argument Username results in impr",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "references": [
+        "https://github.com/dromara/ujcms/",
+        "https://github.com/dromara/ujcms/issues/22",
+        "https://vuldb.com/cve/CVE-2026-93961"
+      ],
+      "published": "2026-09-20T05:16:28.093"
+    },
+    {
+      "id": "CVE-2026-93964",
+      "description": "A vulnerability was detected in NginxProxyManager nginx-proxy-manager up to 2.15.1. This impacts the function internalCertificate.validate of the file backend/internal/certificate.js of the component Validate Route. The manipulation results in missing authentication. The attack can be launched remot",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/NginxProxyManager/nginx-proxy-manager/",
+        "https://github.com/NginxProxyManager/nginx-proxy-manager/issues/5594",
+        "https://vuldb.com/cve/CVE-2026-93964"
+      ],
+      "published": "2026-09-20T06:16:50.477"
+    },
+    {
+      "id": "CVE-2026-93957",
+      "description": "A vulnerability has been found in olivier-ls PHP-FTS up to 1.1.3. This affects the function SearchEngine::matchesSingleFilter of the file src/SearchEngine.php of the component Filter Matching. The manipulation leads to incorrect comparison. Remote exploitation of the attack is possible. The exploit ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-697"
+      ],
+      "references": [
+        "https://github.com/olivier-ls/php-fts/",
+        "https://github.com/olivier-ls/php-fts/commit/0b2fae333d6b022da7ed4c43e2d41aa03f91dff3",
+        "https://github.com/olivier-ls/php-fts/issues/2"
+      ],
+      "published": "2026-09-20T02:16:52.973"
+    },
+    {
+      "id": "CVE-2026-93960",
+      "description": "A vulnerability was identified in Pixelfed up to 0.12.11. Impacted is the function instancePeers of the file app/Http/Controllers/Api/ApiV1Controller.php of the component OAuth Scope Handler. Such manipulation of the argument ID leads to missing authentication. The attack may be performed from remot",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/pixelfed/pixelfed/",
+        "https://github.com/pixelfed/pixelfed/commit/68dca5097305fa0065d029587b2233524636025a",
+        "https://github.com/pixelfed/pixelfed/issues/6643"
+      ],
+      "published": "2026-09-20T04:17:55.540"
+    },
+    {
+      "id": "CVE-2026-81653",
+      "description": "The Photo Gallery, Sliders, Proofing and   WordPress plugin before 4.5.0 does not verify that the user acting on an image owns the gallery it belongs to, allowing users granted its gallery-management capability by an administrator to delete, copy and re-tag any image on the site, including images in",
+      "severity": "MEDIUM",
+      "score": 4.2,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/0bceb61b-6986-4669-896c-4279ecef0603/"
+      ],
+      "published": "2026-09-20T07:16:49.900"
+    },
+    {
+      "id": "CVE-2026-16542",
+      "description": "The Import and export users and customers WordPress plugin before 2.4.5 does not validate a user-supplied URL before requesting it server-side during a CSV import, allowing high-privileged users to perform Server-Side Request Forgery attacks.",
+      "severity": "MEDIUM",
+      "score": 4.1,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/f57577b2-3031-433a-a3e1-758d12b244d1/"
+      ],
+      "published": "2026-09-20T07:16:49.467"
+    },
+    {
+      "id": "CVE-2026-86551",
+      "description": "The Z80Ultra (NX741J) product contains a vulnerability where non-privileged programs can retrieve the Wi-Fi MAC address by querying the read-only field factory_mac_address in the Settings.Secure database.",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-668"
+      ],
+      "references": [
+        "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/6413948624371024003"
+      ],
+      "published": "2026-09-20T02:16:51.310"
+    },
+    {
+      "id": "CVE-2026-81651",
+      "description": "The Photo Gallery, Sliders, Proofing and   WordPress plugin before 4.5.0 does not verify that the user saving a gallery owns it, allowing any user granted its gallery-management capability by an administrator to overwrite the stored settings of any gallery on the site, including its filesystem path,",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/69ccebff-414d-49bb-b914-cae87ab27f4f/"
+      ],
+      "published": "2026-09-20T07:16:49.700"
+    },
+    {
+      "id": "CVE-2026-81652",
+      "description": "The Photo Gallery, Sliders, Proofing and   WordPress plugin before 4.5.0 does not verify that the requesting user is entitled to a given image record before returning it, allowing users with the Contributor role and above to read the stored metadata of any image on the site, including images in gall",
+      "severity": "LOW",
+      "score": 2.7,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/58759289-adca-47d5-8c15-c073c9f14c31/"
+      ],
+      "published": "2026-09-20T07:16:49.803"
+    }
+  ]
+}
