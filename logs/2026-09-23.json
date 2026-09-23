@@ -1,0 +1,366 @@
+{
+  "timestamp": "2026-09-23T07:50:44.452149+00:00",
+  "scan_id": "a7246bce35",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 8,
+      "HIGH": 6,
+      "MEDIUM": 4,
+      "LOW": 1,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        10
+      ],
+      [
+        "CWE-77",
+        7
+      ],
+      [
+        "CWE-119",
+        5
+      ],
+      [
+        "CWE-123",
+        3
+      ],
+      [
+        "CWE-120",
+        2
+      ]
+    ],
+    "threat_index": 504.3,
+    "critical_count": 8
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 504.3,
+        "yesterday": 320.7,
+        "change_pct": 57.2
+      },
+      "critical_count": {
+        "today": 8,
+        "yesterday": 3,
+        "change_pct": 166.7
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-94097",
+      "description": "A vulnerability was determined in Netcore NBR200V2 1.3.241127.071246. This affects an unknown part of the file /www/cgi-bin/network_tools of the component CGI Diagnostic Endpoint. This manipulation of the argument param/key/val causes command injection. Remote exploitation of the attack is possible.",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://app.notion.com/p/Netcore-NBR200V2-Vul-5-39f797159f15809dbc06d2d3ae6b1f04",
+        "https://vuldb.com/cve/CVE-2026-94097",
+        "https://vuldb.com/submit/892990"
+      ],
+      "published": "2026-09-21T00:16:59.793"
+    },
+    {
+      "id": "CVE-2026-94095",
+      "description": "A vulnerability has been found in Netcore NBR200V2 1.3.241127.071246. Affected by this vulnerability is an unknown functionality of the file /usr/bin/network_tools of the component Traceroute Diagnostic Feature. The manipulation of the argument url leads to command injection. The attack may be initi",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://app.notion.com/p/Netcore-NBR200V2-Vul-3-39f797159f15802296c7f6e110363435",
+        "https://vuldb.com/cve/CVE-2026-94095",
+        "https://vuldb.com/submit/892986"
+      ],
+      "published": "2026-09-21T00:16:59.440"
+    },
+    {
+      "id": "CVE-2026-94096",
+      "description": "A vulnerability was found in Netcore NBR200V2 1.3.241127.071246. Affected by this issue is some unknown functionality of the file /usr/bin/network_tools of the component LAN IP Configuration Handler. The manipulation of the argument ipv4 results in command injection. The attack may be launched remot",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://app.notion.com/p/Netcore-NBR200V2-Vul-4-39f797159f158004b8baf1bbf3b956ca",
+        "https://vuldb.com/cve/CVE-2026-94096",
+        "https://vuldb.com/submit/892988"
+      ],
+      "published": "2026-09-21T00:16:59.617"
+    },
+    {
+      "id": "CVE-2026-94099",
+      "description": "A security flaw has been discovered in Netcore NBR200V2 1.3.241127.071246. This issue affects some unknown processing of the file restore.cgi of the component Backup Restore. Performing a manipulation of the argument QUERY_STRING results in command injection. The attack is possible to be carried out",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://app.notion.com/p/Netcore-NBR200V2-Vul-7-39f797159f158028ab02c136450d87e4",
+        "https://vuldb.com/cve/CVE-2026-94099",
+        "https://vuldb.com/submit/892992"
+      ],
+      "published": "2026-09-21T01:16:29.983"
+    },
+    {
+      "id": "CVE-2026-94100",
+      "description": "A weakness has been identified in Netcore NBR200V2 1.3.241127.071246. Impacted is the function wan_config_set_vlan of the file /usr/bin/routerd of the component WAN VLAN Reconfiguration. Executing a manipulation of the argument vlan_wanX.ports can lead to buffer overflow. The attack may be performed",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://app.notion.com/p/Netcore-NBR200V2-Vul-8-39f797159f158003ad3eff2fd36342b6",
+        "https://vuldb.com/cve/CVE-2026-94100",
+        "https://vuldb.com/submit/892994"
+      ],
+      "published": "2026-09-21T01:16:30.170"
+    },
+    {
+      "id": "CVE-2026-94101",
+      "description": "A security vulnerability has been detected in Netcore NBR200V2 1.3.241127.071246. The affected element is the function vlan_load_form_uci of the file /usr/bin/routerd. The manipulation of the argument wan_num leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has b",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "references": [
+        "https://app.notion.com/p/Netcore-NBR200V2-Vul-9-39f797159f1580668db9e8df031dbdd5",
+        "https://vuldb.com/cve/CVE-2026-94101",
+        "https://vuldb.com/submit/892995"
+      ],
+      "published": "2026-09-21T02:16:53.317"
+    },
+    {
+      "id": "CVE-2026-82187",
+      "description": "The Web to Print Online Designer WordPress plugin before 2.15.0 does not validate the type or extension of uploaded files, and hands the token protecting those uploads to any visitor who asks for it, allowing unauthenticated attackers to upload arbitrary files, including PHP ones, and run code on th",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/d3e49486-6c08-41d5-86c9-3aaff670fc63/"
+      ],
+      "published": "2026-09-21T07:16:53.317"
+    },
+    {
+      "id": "CVE-2026-94098",
+      "description": "A vulnerability was identified in Netcore NBR200V2 1.3.241127.071246. This vulnerability affects unknown code of the file /www/cgi-bin/upgrade of the component Firmware Upgrade CGI Endpoint. Such manipulation of the argument QUERY_STRING leads to command injection. The attack can be executed remotel",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://app.notion.com/p/Netcore-NBR200V2-Vul-6-39f797159f1580259aa3cc1d0f512fde",
+        "https://vuldb.com/cve/CVE-2026-94098",
+        "https://vuldb.com/submit/892991"
+      ],
+      "published": "2026-09-21T01:16:29.800"
+    },
+    {
+      "id": "CVE-2026-94128",
+      "description": "A security vulnerability has been detected in BioStar VIVID LED DJ 4.0.2411.1500. This affects the function sub_1105C of the file BS_LED64.sys of the component IOCTL Handler. The manipulation of the argument AssociatedIrp leads to write-what-where condition. Local access is required to approach this",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-123"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-94128",
+        "https://vuldb.com/submit/893651",
+        "https://vuldb.com/vuln/408048"
+      ],
+      "published": "2026-09-21T02:16:54.037"
+    },
+    {
+      "id": "CVE-2026-94129",
+      "description": "A vulnerability was detected in BioStar VALKYRIE AURORA 2.10.2411.0800. This vulnerability affects the function sub_1105C of the file BS_RVSIO64.sys of the component IOCTL Handler. The manipulation of the argument PhysicalAddress results in write-what-where condition. The attack needs to be approach",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-123"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-94129",
+        "https://vuldb.com/submit/893721",
+        "https://vuldb.com/vuln/408049"
+      ],
+      "published": "2026-09-21T02:16:54.213"
+    },
+    {
+      "id": "CVE-2026-94142",
+      "description": "A security vulnerability has been detected in BioStar Temperature Monitor Utility 1.2.1806.2200. Affected by this vulnerability is the function sub_1105C of the file BS_HWMIO64_W10.sys of the component IOCTL Handler. Such manipulation of the argument PhysicalAddress leads to write-what-where conditi",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119",
+        "CWE-123"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-94142",
+        "https://vuldb.com/submit/893919",
+        "https://vuldb.com/vuln/408057"
+      ],
+      "published": "2026-09-21T05:16:42.053"
+    },
+    {
+      "id": "CVE-2026-94139",
+      "description": "A weakness has been identified in Chengdu Feiyuxing Technology Feiyu Star Router B-MB5E202-210322-r11656. Affected is an unknown function of the file /send_order.cgi?parameter=loginout of the component Cookie Handler. This manipulation of the argument session_id causes command injection. Remote expl",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://uvxbywu62qm.feishu.cn/wiki/ZvaTwad1viClSYkBYtFcnG7Knve?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-94139",
+        "https://vuldb.com/submit/893914"
+      ],
+      "published": "2026-09-21T05:16:41.857"
+    },
+    {
+      "id": "CVE-2026-94110",
+      "description": "A security vulnerability has been detected in QCMS up to 6.0.6. This issue affects the function self_Tmp in the library Lib/Config/Controllers.php of the component Content Detail Page. Such manipulation of the argument ID leads to sql injection. The attack may be performed from remote. The exploit h",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/yukino06/CVE/issues/1",
+        "https://vuldb.com/cve/CVE-2026-94110",
+        "https://vuldb.com/submit/944567"
+      ],
+      "published": "2026-09-21T02:16:53.853"
+    },
+    {
+      "id": "CVE-2026-94143",
+      "description": "A vulnerability was detected in drogonframework drogon up to 1.9.13. Affected by this issue is the function Mapper::orderBy in the library Mapper.h of the component ORM Mapper. Performing a manipulation of the argument sort results in sql injection. The attack is possible to be carried out remotely.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://gist.github.com/2H-K/33f46c954fd3ed16b32eeddd598f90cf",
+        "https://github.com/drogonframework/drogon/",
+        "https://github.com/drogonframework/drogon/issues/2575"
+      ],
+      "published": "2026-09-21T06:17:02.003"
+    },
+    {
+      "id": "CVE-2026-94138",
+      "description": "A security flaw has been discovered in Chengdu Feiyuxing Technology Feiyu Star Router B-MB5E202-210322-r11656. This impacts an unknown function of the file /send_order.cgi?parameter=del_expmac. The manipulation of the argument mac results in command injection. The attack may be launched remotely. Th",
+      "severity": "MEDIUM",
+      "score": 6.6,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://uvxbywu62qm.feishu.cn/wiki/UJfEwIEjJijyHskIuxccnHkTnmh?from=from_copylink",
+        "https://vuldb.com/cve/CVE-2026-94138",
+        "https://vuldb.com/submit/893913"
+      ],
+      "published": "2026-09-21T04:17:37.083"
+    },
+    {
+      "id": "CVE-2026-94185",
+      "description": "nvm resolves a requested version or alias by treating it as a filename under $NVM_DIR/alias. Before 0.40.8, nvm_alias() concatenated the requested name onto that directory and read the result with no containment check, so a name containing a `..` component escaped the alias directory; under the defa",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-22",
+        "CWE-200"
+      ],
+      "references": [
+        "https://github.com/nvm-sh/nvm/security/advisories/GHSA-8grh-q73j-ffrc"
+      ],
+      "published": "2026-09-21T03:16:34.243"
+    },
+    {
+      "id": "CVE-2026-94103",
+      "description": "A vulnerability has been found in RooCMS up to 1.2.2/1.3.4/1.4RC2. This impacts the function eval of the file roocms/site_pagePHP.php of the component Frontend Rendering. Such manipulation of the argument content leads to code injection. The attack can be launched remotely. The exploit has been disc",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-74",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/boyslikesports/202607_vul_dir/blob/main/RooCMS-C1-EN.md",
+        "https://vuldb.com/cve/CVE-2026-94103",
+        "https://vuldb.com/submit/893004"
+      ],
+      "published": "2026-09-21T02:16:53.673"
+    },
+    {
+      "id": "CVE-2026-94102",
+      "description": "A flaw has been found in WuzhiCMS up to 4.1.0. This affects an unknown function of the file /index.php?m=member&v=Login of the component Login. This manipulation of the argument forward causes open redirect. The attack can be initiated remotely. The exploit has been published and may be used. The on",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-601"
+      ],
+      "references": [
+        "https://github.com/ArrestX/wuzhicms-advisories/blob/main/advisories/VULN-021-member-open-redirect.md",
+        "https://vuldb.com/cve/CVE-2026-94102",
+        "https://vuldb.com/submit/892905"
+      ],
+      "published": "2026-09-21T02:16:53.490"
+    },
+    {
+      "id": "CVE-2026-94137",
+      "description": "A vulnerability was identified in Hangzhou Shunwang Technology shzh 10.7.2.693. This affects the function sub_180004AC0 of the file shdrv_x64.sys of the component IRP_MJ_DEVICE_CONTROL Handler. The manipulation of the argument PID leads to denial of service. The attack must be carried out locally.",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-404"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-94137",
+        "https://vuldb.com/submit/893882",
+        "https://vuldb.com/vuln/408054"
+      ],
+      "published": "2026-09-21T04:17:36.393"
+    },
+    {
+      "id": "CVE-2026-90839",
+      "description": "Rejected reason: this is rejected",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-09-21T05:16:41.723"
+    }
+  ]
+}
