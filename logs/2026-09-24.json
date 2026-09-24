@@ -1,0 +1,354 @@
+{
+  "timestamp": "2026-09-24T07:40:48.560132+00:00",
+  "scan_id": "552901bc1c",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 3,
+      "HIGH": 8,
+      "MEDIUM": 9
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        6
+      ],
+      [
+        "CWE-269",
+        2
+      ],
+      [
+        "CWE-502",
+        2
+      ],
+      [
+        "CWE-22",
+        2
+      ],
+      [
+        "CWE-74",
+        2
+      ]
+    ],
+    "threat_index": 402.4,
+    "critical_count": 3
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 402.4,
+        "yesterday": 504.3,
+        "change_pct": -20.2
+      },
+      "critical_count": {
+        "today": 3,
+        "yesterday": 8,
+        "change_pct": -62.5
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-94493",
+      "description": "A vulnerability was detected in Gigatech PDV5701 1.0.31_240305_112640. This issue affects some unknown processing of the file /index.html of the component WebSocket Service. The manipulation results in missing authentication. The attack can be launched remotely. The exploit is now public and may be ",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/CSDVi/cve/issues/2",
+        "https://vuldb.com/cve/CVE-2026-94493",
+        "https://vuldb.com/submit/895425"
+      ],
+      "published": "2026-09-22T01:16:56.437"
+    },
+    {
+      "id": "CVE-2026-13355",
+      "description": "The Meta Box AIO plugin for WordPress is vulnerable to Privilege Escalation to Administrator in versions up to, and including, 3.11.0. This is due to a chained flaw: the populate_via_query_string() function in the mb-frontend-submission component unconditionally overrides the form's target object_id",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://metabox.io/changelog/",
+        "https://metabox.io/plugins/meta-box-aio/changelog/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/3b7b6e7e-b944-45f8-a6d8-bfd859bec0d1?source=cve"
+      ],
+      "published": "2026-09-22T05:16:54.960"
+    },
+    {
+      "id": "CVE-2026-19658",
+      "description": "The Give Tributes plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.3.1 via deserialization of untrusted input . This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software, whi",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://www.liquidweb.com/software/give/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/0cdd5562-8755-4ca3-9c16-a5b364f8408b?source=cve"
+      ],
+      "published": "2026-09-22T05:16:55.167"
+    },
+    {
+      "id": "CVE-2026-92438",
+      "description": "The Ninja Forms WordPress plugin 3.15.3 does not escape submitted form field values before outputting them on the submission edit screen in the admin area, which could allow unauthenticated users to submit values through a public form that then execute in the browser of any high-privileged user who ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/eeed1378-2c51-4d38-9dda-4a13ce330b25/"
+      ],
+      "published": "2026-09-22T07:16:31.220"
+    },
+    {
+      "id": "CVE-2026-93710",
+      "description": "Dancer2 versions from 2.0.0 before 2.2.0 for Perl dispatch a route that a dying hook refused when the exception handler halts the response in compile_hooks.\n\nA hook that dies fires core.app.hook_exception, then calls cleanup unless the failing hook is the exception handler. A handler that halts does",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-460"
+      ],
+      "references": [
+        "https://github.com/PerlDancer/Dancer2/commit/8fd31a32798f9aa25e4fccbd6c7cb9dd3a0c1029.patch",
+        "https://github.com/PerlDancer/Dancer2/security/advisories/GHSA-v527-r4px-7vx7",
+        "https://metacpan.org/release/CROMEDOME/Dancer2-2.2.0/changes"
+      ],
+      "published": "2026-09-22T01:16:55.730"
+    },
+    {
+      "id": "CVE-2026-93712",
+      "description": "Dancer2 versions from 2.1.0 before 2.2.0 for Perl serve files from outside public_dir via relative path segments in the File route handler.\n\nThe handler joins the request path onto public_dir without collapsing relative segments, and checks only that the result is a readable regular file. A request ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/PerlDancer/Dancer2/commit/2446a09ffb83fef71cc75c327bd6e4b1f007b885.patch",
+        "https://github.com/PerlDancer/Dancer2/security/advisories/GHSA-6xw8-v24c-m783",
+        "https://metacpan.org/release/CROMEDOME/Dancer2-2.2.0/changes"
+      ],
+      "published": "2026-09-22T01:16:55.957"
+    },
+    {
+      "id": "CVE-2026-91827",
+      "description": "The Ninja Forms WordPress plugin 3.15.3 does not prevent user-submitted form field values from being deserialised when an administrator later exports form submissions to CSV, allowing unauthenticated attackers to perform PHP Object Injection; if a suitable POP chain is present via another installed ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/7b279db2-92e0-4122-b5c6-aa12b7b01858/"
+      ],
+      "published": "2026-09-22T07:16:31.093"
+    },
+    {
+      "id": "CVE-2026-94491",
+      "description": "A weakness has been identified in Yonyou KSOA 9.0. This affects an unknown part of the file /cardcase/search_list.jsp. Executing a manipulation of the argument address can lead to sql injection. It is possible to launch the attack remotely. The exploit has been made available to the public and could",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-94491",
+        "https://vuldb.com/submit/895364",
+        "https://vuldb.com/vuln/408191"
+      ],
+      "published": "2026-09-22T01:16:56.077"
+    },
+    {
+      "id": "CVE-2026-12470",
+      "description": "The CMP \u2013 Coming Soon & Maintenance Plugin by NiteoThemes plugin for WordPress is vulnerable to unauthorized modification of data that can lead to privilege escalation due to a missing capability check on the 'cmp_ajax_import_settings' AJAX action in all versions up to, and including, 4.1.17. This m",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/cmp-coming-soon-maintenance/tags/4.1.17/niteo-cmp.php#L3104",
+        "https://plugins.trac.wordpress.org/browser/cmp-coming-soon-maintenance/tags/4.1.17/niteo-cmp.php#L3143",
+        "https://plugins.trac.wordpress.org/changeset?reponame=&old=3661069%40cmp-coming-soon-maintenance&new=3661069%40cmp-coming-soon-maintenance"
+      ],
+      "published": "2026-09-22T06:16:48.700"
+    },
+    {
+      "id": "CVE-2026-89412",
+      "description": "The TranslatePress \u2013 Translate Multilingual sites with AI Translation plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Translation Memory Suggestion Panel (v-html on suggestion.original) in all versions up to, and including, 3.3.5 due to insufficient input sanitization and outpu",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/translatepress-multilingual/tags/3.3.3/assets/src/js/components/translation-memory.vue#L12",
+        "https://plugins.trac.wordpress.org/browser/translatepress-multilingual/tags/3.3.3/includes/class-translation-memory.php#L47",
+        "https://plugins.trac.wordpress.org/browser/translatepress-multilingual/tags/3.3.3/includes/class-translation-memory.php#L60"
+      ],
+      "published": "2026-09-22T07:16:29.927"
+    },
+    {
+      "id": "CVE-2026-94504",
+      "description": "Ninja Forms 3.15.3 stores an anonymous non-RTE textarea value and renders it without safe HTML encoding in the legacy submission editor. An attacker can break out of the textarea with stored script. When an Administrator opens the attacker-known direct submission URL, the script runs in the WordPres",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.15.3/includes/Database/Models/Submission.php#L205",
+        "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.15.3/includes/Fields/Textarea.php#L35",
+        "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.15.3/includes/Templates/admin-metabox-sub-fields.html.php#L23"
+      ],
+      "published": "2026-09-22T07:16:31.340"
+    },
+    {
+      "id": "CVE-2026-88788",
+      "description": "The Text Styler WordPress plugin through 1.1.1 does not sanitise and escape user-supplied styling values before outputting them within a front-end style block, and does not verify that a user may edit the target post, allowing users with contributor-level access or above to store JavaScript that exe",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/6175fc16-960b-4dbe-bda2-21b4ce7de54b/"
+      ],
+      "published": "2026-09-22T06:16:49.777"
+    },
+    {
+      "id": "CVE-2026-93711",
+      "description": "Dancer2 versions before 2.2.0 for Perl do not strip CR and LF from response header names in headers_to_array.\n\nThe routine removes CR and LF from each header value but not from the name. A name carrying them therefore reaches the PSGI server intact. A server that does not validate keys writes it to ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-113"
+      ],
+      "references": [
+        "https://github.com/PerlDancer/Dancer2/commit/ff89ac12af7b8899812a79e9924dfea7a5d9833b.patch",
+        "https://github.com/PerlDancer/Dancer2/issues/1822",
+        "https://metacpan.org/release/CROMEDOME/Dancer2-2.2.0/changes"
+      ],
+      "published": "2026-09-22T01:16:55.847"
+    },
+    {
+      "id": "CVE-2026-85653",
+      "description": "The Contextual Related Posts plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'other_attributes' Block Parameter in all versions up to, and including, 4.4.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with autho",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/contextual-related-posts/tags/4.2.4/includes/frontend/blocks/class-blocks.php#L95",
+        "https://plugins.trac.wordpress.org/browser/contextual-related-posts/tags/4.2.4/includes/frontend/class-media-handler.php#L133",
+        "https://plugins.trac.wordpress.org/browser/contextual-related-posts/tags/4.2.4/includes/frontend/class-media-handler.php#L854"
+      ],
+      "published": "2026-09-22T06:16:49.597"
+    },
+    {
+      "id": "CVE-2026-94492",
+      "description": "A security vulnerability has been detected in Yonyou U8cloud 5.x. This vulnerability affects unknown code of the file /u8cloud/openapi/so.saleorder.sendaudit of the component OpenAPI. The manipulation of the argument operator leads to sql injection. The attack can be initiated remotely. The exploit ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/mjh134/--POC/blob/master/exploits/yonyou_u8cloud_so_saleorder_sendaudit_sqli.go",
+        "https://vuldb.com/cve/CVE-2026-94492",
+        "https://vuldb.com/submit/895368"
+      ],
+      "published": "2026-09-22T01:16:56.253"
+    },
+    {
+      "id": "CVE-2026-93655",
+      "description": "The Booking Calendar plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'wpbc_auto_fill' parameter in all versions up to, and including, 11.8.3 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitra",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/booking/tags/11.8.3/_dist/all/_src/wpbc_all.js#L3370",
+        "https://plugins.trac.wordpress.org/browser/booking/tags/11.8.3/_dist/all/_src/wpbc_all.js#L3396",
+        "https://plugins.trac.wordpress.org/browser/booking/tags/11.8.3/js/wpbc_time-selector.js#L87"
+      ],
+      "published": "2026-09-22T06:16:49.893"
+    },
+    {
+      "id": "CVE-2026-76974",
+      "description": "SAP Fiori Launchpad does not sufficiently validate certain user-controlled input. An unauthenticated attacker could craft a malicious link that, when clicked by an authenticated user, causes the browser to load attacker-controlled content from an external location. This could be used to exfiltrate s",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-95"
+      ],
+      "references": [
+        "https://me.sap.com/notes/3680888",
+        "https://url.sap/sapsecuritypatchday"
+      ],
+      "published": "2026-09-22T01:16:53.837"
+    },
+    {
+      "id": "CVE-2026-93709",
+      "description": "Dancer2 versions before 2.2.0 for Perl serve a layout as a page when an equivalent spelling of its path misses the guard in the AutoPage handler.\n\nThe handler compares the request path against the layout directory name as text, while the lookup that follows canonicalises it. A doubled slash, a dot s",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-41"
+      ],
+      "references": [
+        "https://github.com/PerlDancer/Dancer2/commit/293fce08812b0928f34ab2d7b9357450707c3630.patch",
+        "https://github.com/PerlDancer/Dancer2/commit/753b385350a54acb8d4b686723890205268634a8.patch",
+        "https://github.com/PerlDancer/Dancer2/issues/1823"
+      ],
+      "published": "2026-09-22T01:16:55.610"
+    },
+    {
+      "id": "CVE-2026-94490",
+      "description": "A security flaw has been discovered in OctoPrint 1.0.0. Affected by this issue is the function executeSystemCommand of the file src/octoprint/server/api/system.py of the component Command API. Performing a manipulation of the argument command results in os command injection. It is possible to initia",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-94490",
+        "https://vuldb.com/submit/895339",
+        "https://vuldb.com/vuln/408190"
+      ],
+      "published": "2026-09-22T00:16:32.360"
+    },
+    {
+      "id": "CVE-2026-94489",
+      "description": "A vulnerability was identified in OctoPrint 1.0.0. Affected by this vulnerability is the function _validate of the file src/octoprint/server/api/files.py of the component File Download API. Such manipulation of the argument filename leads to path traversal. The attack may be performed from remote. T",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-94489",
+        "https://vuldb.com/submit/895338",
+        "https://vuldb.com/vuln/408189"
+      ],
+      "published": "2026-09-22T00:16:32.187"
+    }
+  ]
+}
