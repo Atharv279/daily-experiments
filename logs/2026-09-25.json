@@ -1,0 +1,364 @@
+{
+  "timestamp": "2026-09-25T07:58:39.695096+00:00",
+  "scan_id": "f2231dc31d",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 10,
+      "MEDIUM": 10
+    },
+    "top_cwes": [
+      [
+        "CWE-89",
+        8
+      ],
+      [
+        "CWE-74",
+        7
+      ],
+      [
+        "CWE-400",
+        3
+      ],
+      [
+        "CWE-20",
+        2
+      ],
+      [
+        "CWE-502",
+        2
+      ]
+    ],
+    "threat_index": 339.9,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 339.9,
+        "yesterday": 402.4,
+        "change_pct": -15.5
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 3,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-96272",
+      "description": "ClipBucket v5 before 5.5.3-#182 contains a blind SQL injection vulnerability in the photo search endpoint where the query parameter is passed unsanitized into SQL WHERE and ORDER BY clauses. Unauthenticated attackers can exploit time-based blind SQL injection techniques to extract user credentials, ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/MacWarrior/clipbucket-v5",
+        "https://github.com/MacWarrior/clipbucket-v5/blob/57b0235f2eae390f4946c042bf81c182a9f82782/upload/includes/classes/photos.class.php#L408-L413",
+        "https://github.com/MacWarrior/clipbucket-v5/commit/7fd0af6f8b5826c2d6ef0976dbb1867f5c36b707"
+      ],
+      "published": "2026-09-23T01:16:32.633"
+    },
+    {
+      "id": "CVE-2026-89425",
+      "description": "UTF8DataInputJsonParser._reportInvalidToken() in FasterXML jackson-core builds the offending-token text for its error message by appending Java identifier characters to a StringBuilder in a loop that has no upper bound. Unlike the three sibling parser implementations, including UTF8StreamJsonParser,",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/FasterXML/jackson-core/pull/1698",
+        "https://github.com/FasterXML/jackson-core/security/advisories/GHSA-7hhh-6rmp-j9qf",
+        "https://github.com/FasterXML/jackson-core/security/advisories/GHSA-7hhh-6rmp-j9qf"
+      ],
+      "published": "2026-09-23T03:17:04.357"
+    },
+    {
+      "id": "CVE-2026-91776",
+      "description": "TypeDeserializerBase._findDeserializer() in FasterXML jackson-databind caches the resolved deserializer under the raw, attacker-supplied type ID. When name-based polymorphism is configured with a fallback, for example @JsonTypeInfo(use = Id.NAME, defaultImpl = ...), every distinct unrecognized type ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://github.com/FasterXML/jackson-databind/issues/6203",
+        "https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-wv8q-qhhj-9h54",
+        "https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-wv8q-qhhj-9h54"
+      ],
+      "published": "2026-09-23T03:17:04.620"
+    },
+    {
+      "id": "CVE-2026-91777",
+      "description": "Forward-reference completion for @JsonIdentityInfo object IDs in FasterXML jackson-databind performs a linear scan of the pending-reference accumulator for every resolved ID. The affected paths are CollectionDeserializer.CollectionReferringAccumulator.resolveForwardReference() and the equivalent imp",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://github.com/FasterXML/jackson-databind/issues/6204",
+        "https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-cxp5-3px4-pw24",
+        "https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-cxp5-3px4-pw24"
+      ],
+      "published": "2026-09-23T03:17:04.783"
+    },
+    {
+      "id": "CVE-2026-95924",
+      "description": "A vulnerability has been found in SourceCodester Online Reviewer Management System 1.0. Impacted is an unknown function of the file /reviewer_0/admins/assessments/databank/btn_functions.php?action=add. The manipulation of the argument difficulty_id leads to sql injection. Remote exploitation of the ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/huliangjia/cve/issues/4",
+        "https://vuldb.com/cve/CVE-2026-95924",
+        "https://vuldb.com/submit/953303"
+      ],
+      "published": "2026-09-23T01:16:32.110"
+    },
+    {
+      "id": "CVE-2026-95925",
+      "description": "A vulnerability was found in SourceCodester Online Reviewer Management System 1.0. The affected element is an unknown function of the file /reviewer_0/admins/assessments/databank/btn_functions.php?action=update. The manipulation of the argument difficulty_id results in sql injection. The attack can ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/huliangjia/cve/issues/5",
+        "https://vuldb.com/cve/CVE-2026-95925",
+        "https://vuldb.com/submit/953304"
+      ],
+      "published": "2026-09-23T01:16:32.293"
+    },
+    {
+      "id": "CVE-2026-95926",
+      "description": "A vulnerability was determined in SourceCodester Online Reviewer Management System 1.0. The impacted element is an unknown function of the file /reviewer_0/admins/assessments/pretest/btn_functions.php?action=update. This manipulation of the argument test_id causes sql injection. The attack is possib",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/huliangjia/cve/issues/7",
+        "https://vuldb.com/cve/CVE-2026-95926",
+        "https://vuldb.com/submit/953308"
+      ],
+      "published": "2026-09-23T02:16:54.527"
+    },
+    {
+      "id": "CVE-2026-95927",
+      "description": "A vulnerability was identified in SourceCodester Online Reviewer Management System 1.0. This affects an unknown function of the file /reviewer_0/admins/assessments/pretest/exam-delete.php. Such manipulation of the argument test_id leads to sql injection. The attack may be performed from remote. The ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/huliangjia/cve/issues/8",
+        "https://vuldb.com/cve/CVE-2026-95927",
+        "https://vuldb.com/submit/953309"
+      ],
+      "published": "2026-09-23T02:16:55.537"
+    },
+    {
+      "id": "CVE-2026-94367",
+      "description": "OpenEye Apex Network Video Recorder (NVR) firmware 3.2.9.376 contains an OS command injection vulnerability in recbackup. An authenticated administrator can supply crafted backup-area configuration input that is passed to a shell command, allowing commands to execute with the privileges of the nvr u",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://portal.openeye.net/updates/issue-alerts/1061",
+        "https://www.securifera.com/advisories/"
+      ],
+      "published": "2026-09-23T00:17:01.200"
+    },
+    {
+      "id": "CVE-2026-96271",
+      "description": "Photoview through 2.4.0 contains an authorization bypass vulnerability in the shareAlbum GraphQL mutation that allows authenticated users to create share links for albums owned by other users. Attackers can supply arbitrary album IDs to generate working share tokens for victim albums, exposing photo",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/photoview/photoview",
+        "https://github.com/photoview/photoview/blob/81affea602401c2f0207d955919ddcc0670a9222/api/graphql/models/actions/share_token_actions.go#L64-L82",
+        "https://github.com/photoview/photoview/commit/20541762fe6d9e0ce363c3d4c55556e4ccdc57a2"
+      ],
+      "published": "2026-09-23T01:16:32.477"
+    },
+    {
+      "id": "CVE-2026-92928",
+      "description": "OpenEye Apex Network Video Recorder (NVR) firmware 3.2.9.376 contains a hardcoded, undocumented recovery account with a shared credential that cannot be changed, disabled, or rotated. An unauthenticated remote attacker can use the account to authenticate to the password-reset workflow. The account d",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-798"
+      ],
+      "references": [
+        "https://portal.openeye.net/updates/issue-alerts/1058",
+        "https://www.securifera.com/advisories/"
+      ],
+      "published": "2026-09-23T00:16:59.773"
+    },
+    {
+      "id": "CVE-2026-95829",
+      "description": "A vulnerability was identified in TDuckCloud tduck-platform up to 5.3. This vulnerability affects the function PaginationInnerInterceptor.concatOrderBy of the file tduck-api/src/main/java/com/tduck/cloud/api/config/MybatisPlusConfig.java of the component Pagination Inner Interceptor. The manipulatio",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/TDuckCloud/tduck-survey-form/commit/ea7f0fae7cb0fd998a3284c11addce689350cd69",
+        "https://vuldb.com/cve/CVE-2026-95829",
+        "https://vuldb.com/submit/897248"
+      ],
+      "published": "2026-09-23T00:17:01.333"
+    },
+    {
+      "id": "CVE-2026-95830",
+      "description": "A security flaw has been discovered in theRealSain Pixtream up to 866afd4f0cea812b918780fb74b67dccf8c4d6a0. This issue affects some unknown processing of the file /post_upload.php. The manipulation of the argument media results in unrestricted upload. The attack can be launched remotely. The exploit",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/yingxiujie/cve/issues/11",
+        "https://vuldb.com/cve/CVE-2026-95830",
+        "https://vuldb.com/submit/897169"
+      ],
+      "published": "2026-09-23T00:17:01.537"
+    },
+    {
+      "id": "CVE-2026-95833",
+      "description": "A weakness has been identified in itsourcecode Leave Management System 1.0. Impacted is an unknown function of the file /module/leavetype/index.php. This manipulation of the argument ID causes sql injection. The attack may be initiated remotely. The exploit has been made available to the public and ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/ltranquility/submit_repository/issues/16",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-95833"
+      ],
+      "published": "2026-09-23T00:17:01.743"
+    },
+    {
+      "id": "CVE-2026-95868",
+      "description": "A weakness has been identified in AdithyaYelloju Restaurant-Management-System up to 7f0e7e84255e8fcfd488e83f8f91451bbbff6b9c. Affected by this issue is the function mysqli_query of the file admin/display_menu.php of the component Search Form. This manipulation of the argument s1 causes sql injection",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/AdithyaYelloju/Restaurant-Management-System/",
+        "https://github.com/AdithyaYelloju/Restaurant-Management-System/issues/4",
+        "https://vuldb.com/cve/CVE-2026-95868"
+      ],
+      "published": "2026-09-23T00:17:01.937"
+    },
+    {
+      "id": "CVE-2026-92930",
+      "description": "OpenEye Apex Network Video Recorder (NVR) firmware 3.2.9.376 uses an administrator password-reset unlock-code design that lacks a per-device secret or other server-side cryptographic material. An attacker with physical-console access and access to the privileged password-reset workflow can forge a v",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-330"
+      ],
+      "references": [
+        "https://portal.openeye.net/updates/issue-alerts/1060",
+        "https://www.securifera.com/advisories/"
+      ],
+      "published": "2026-09-23T00:17:01.080"
+    },
+    {
+      "id": "CVE-2026-95897",
+      "description": "A security vulnerability has been detected in Dask up to 2026.8.0. This affects the function from_npy_stack of the file dask/array/core.py of the component Loader. Such manipulation leads to deserialization. The attack can be launched remotely. The exploit has been disclosed publicly and may be used",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-20",
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/dask/dask/",
+        "https://github.com/dask/dask/issues/12578",
+        "https://vuldb.com/cve/CVE-2026-95897"
+      ],
+      "published": "2026-09-23T01:16:31.920"
+    },
+    {
+      "id": "CVE-2026-96273",
+      "description": "Ghidra before 12.1.4 fails to validate the TYPE_COL byte in OptionsDB.createUnregisteredOption(), causing an ArrayIndexOutOfBoundsException that leaves domain objects permanently locked. Attackers can craft a malicious program database file that, when imported, causes the application to stall and pr",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-460"
+      ],
+      "references": [
+        "https://github.com/NationalSecurityAgency/ghidra",
+        "https://github.com/NationalSecurityAgency/ghidra/blob/Ghidra_12.1.3_build/Ghidra/Framework/Project/src/main/java/ghidra/framework/data/OptionsDB.java#L358-L366",
+        "https://github.com/NationalSecurityAgency/ghidra/commit/594da048431aab082a9da7c4a965874d07d33310"
+      ],
+      "published": "2026-09-23T01:16:32.790"
+    },
+    {
+      "id": "CVE-2026-95928",
+      "description": "A security flaw has been discovered in recommenders-team recommenders up to 1.2.1. This impacts the function pickle.load of the file recommenders/models/newsrec/io/mind_iterator.py of the component Dict Loading. Performing a manipulation results in deserialization. It is possible to initiate the att",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-20",
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/recommenders-team/recommenders/",
+        "https://github.com/recommenders-team/recommenders/issues/2368",
+        "https://vuldb.com/cve/CVE-2026-95928"
+      ],
+      "published": "2026-09-23T02:16:55.717"
+    },
+    {
+      "id": "CVE-2026-92929",
+      "description": "OpenEye Apex Network Video Recorder (NVR) firmware 3.2.9.376 trusts an X-Forwarded-For header supplied by an arbitrary client when determining the request source address. An unauthenticated remote attacker can spoof a loopback address to bypass local-connection-only security controls exposed on the ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-290"
+      ],
+      "references": [
+        "https://portal.openeye.net/updates/issue-alerts/1059",
+        "https://www.securifera.com/advisories/"
+      ],
+      "published": "2026-09-23T00:17:00.897"
+    }
+  ]
+}
