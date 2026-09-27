@@ -1,0 +1,354 @@
+{
+  "timestamp": "2026-09-27T08:22:04.010078+00:00",
+  "scan_id": "158763508a",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 4,
+      "MEDIUM": 10,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        4
+      ],
+      [
+        "CWE-1390",
+        2
+      ],
+      [
+        "CWE-285",
+        2
+      ],
+      [
+        "CWE-639",
+        2
+      ],
+      [
+        "CWE-347",
+        2
+      ]
+    ],
+    "threat_index": 268.9,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 268.9,
+        "yesterday": 312.2,
+        "change_pct": -13.9
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 3,
+        "change_pct": -33.3
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-92288",
+      "description": "Lemonldap::NG::Portal versions from 2.20.0 before 2.21.6, from 2.22.0 before 2.23.4 for Perl allow unauthenticated OAuth2 token introspection because checkEndPointAuthenticationCredentials does not verify the client secret of a public Relying Party.\n\ncheckEndPointAuthenticationCredentials() skips th",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-1390"
+      ],
+      "references": [
+        "https://gitlab.ow2.org/lemonldap-ng/lemonldap-ng/-/releases/v2.21.6",
+        "https://gitlab.ow2.org/lemonldap-ng/lemonldap-ng/-/releases/v2.23.4",
+        "https://gitlab.ow2.org/lemonldap-ng/lemonldap-ng/-/work_items/3719"
+      ],
+      "published": "2026-09-25T01:16:48.820"
+    },
+    {
+      "id": "CVE-2026-92289",
+      "description": "Lemonldap::NG::Portal versions from 2.23.0 before 2.23.4 for Perl allow a PKCE bypass for public Relying Parties in \"PKCE or secret\" mode because checkEndPointAuthenticationCredentials does not verify the client secret.\n\nWith oidcRPMetaDataOptionsRequirePKCE set to 2, the authorization endpoint issu",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-1390"
+      ],
+      "references": [
+        "https://gitlab.ow2.org/lemonldap-ng/lemonldap-ng/-/releases/v2.23.4",
+        "https://gitlab.ow2.org/lemonldap-ng/lemonldap-ng/-/work_items/3719",
+        "http://www.openwall.com/lists/oss-security/2026/09/25/2"
+      ],
+      "published": "2026-09-25T01:16:48.943"
+    },
+    {
+      "id": "CVE-2026-97730",
+      "description": "In Netgate pfSense Plus before 26.07 and pfSense CE before 2.9.0, a Local File Inclusion (LFI) vulnerability in the Dashboard (index.php) widget sequence data handling allows an authenticated attacker to execute arbitrary PHP code. To exploit this, an attacker with privileges to modify Dashboard set",
+      "severity": "HIGH",
+      "score": 8.5,
+      "cwes": [
+        "CWE-24"
+      ],
+      "references": [
+        "https://docs.netgate.com/downloads/pfSense-SA-26_18.webgui.asc",
+        "https://docs.netgate.com/pfsense/en/latest/install/upgrade-guide.html",
+        "https://redmine.pfsense.org/attachments/7146"
+      ],
+      "published": "2026-09-25T03:16:59.533"
+    },
+    {
+      "id": "CVE-2026-97735",
+      "description": "ITFlow before 26.08 allows SVG attachments in the ticket email parser (cron/ticket_email_parser.php) for email messages that may arrive over SMTP from arbitrary senders.",
+      "severity": "HIGH",
+      "score": 8.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/itflow-org/itflow/commit/16000efcf7f7c833aae9f8da22d2a82df21a49c0",
+        "https://github.com/itflow-org/itflow/security/advisories/GHSA-89fw-w69c-vghj"
+      ],
+      "published": "2026-09-25T04:17:50.763"
+    },
+    {
+      "id": "CVE-2026-97646",
+      "description": "A weakness has been identified in ningzichun student-management-system up to 98760f5711cf6dc8b4adca53a9e207ca49b02ebf. This affects an unknown function of the file admin/fun/getStudent.php. This manipulation of the argument sid causes authorization bypass. The attack is possible to be carried out re",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/ningzichun/student-management-system/",
+        "https://github.com/ningzichun/student-management-system/issues/9",
+        "https://vuldb.com/cve/CVE-2026-97646"
+      ],
+      "published": "2026-09-25T01:16:49.063"
+    },
+    {
+      "id": "CVE-2026-97731",
+      "description": "MinIO through 7aac2a2 does not verify that every x-amz-* header present on a request also appears in the client-supplied X-Amz-SignedHeaders list. extractSignedHeaders() in cmd/signature-v4-utils.go iterates only the claimed list and never enumerates the headers that actually arrived, and thus a hea",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://github.com/pgsty/silo/commit/1233254309b15571f101b2b26d531951ceaeef1e",
+        "https://silo.pgsty.com/about/security-advisories/#sn-2026-011"
+      ],
+      "published": "2026-09-25T03:16:59.697"
+    },
+    {
+      "id": "CVE-2026-95811",
+      "description": "Lemonldap::NG::Handler versions from 2.0.0 before 2.16.10, from 2.17.0 before 2.21.6, from 2.22.0 before 2.23.4 for Perl allow an equivalent spelling of a path to bypass the locationRules that restrict it.\n\nThe handler matches each vhost's locationRules regular expressions against REQUEST_URI, the r",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-180",
+        "CWE-863"
+      ],
+      "references": [
+        "https://gitlab.ow2.org/lemonldap-ng/lemonldap-ng/-/issues/3723",
+        "https://gitlab.ow2.org/lemonldap-ng/lemonldap-ng/-/releases/v2.16.10",
+        "https://gitlab.ow2.org/lemonldap-ng/lemonldap-ng/-/releases/v2.21.6"
+      ],
+      "published": "2026-09-25T02:16:54.677"
+    },
+    {
+      "id": "CVE-2025-14814",
+      "description": "The CSS & JavaScript Toolbox plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's cjtoolbox shortcode in all versions up to, and including, 12.0.6 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenti",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3667323/css-javascript-toolbox",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/b20e71d3-627e-49e0-a2f7-20cdbb8622e7?source=cve"
+      ],
+      "published": "2026-09-25T04:17:31.093"
+    },
+    {
+      "id": "CVE-2026-97723",
+      "description": "madpsy ka9q_ubersdr before 0.1.58 has a stored cross-site scripting (XSS) vulnerability in the chat message rendering functionality. User-controlled URLs in chat messages were insufficiently neutralized before being converted into HTML links. Quotation characters could break out of the generated hre",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/madpsy/ka9q_ubersdr/commit/6aa858da1c030cae11b94c7d6c72322adb9ec60d",
+        "https://github.com/madpsy/ka9q_ubersdr/pull/114"
+      ],
+      "published": "2026-09-25T02:16:55.377"
+    },
+    {
+      "id": "CVE-2026-97736",
+      "description": "tinyauth before 5.1.3 allows rule bypass by appending an allowed route string. This is caused by an unanchored regular expression.",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-777"
+      ],
+      "references": [
+        "https://github.com/tinyauthapp/tinyauth/security/advisories/GHSA-r27r-rr9v-vv37"
+      ],
+      "published": "2026-09-25T04:17:50.977"
+    },
+    {
+      "id": "CVE-2026-97647",
+      "description": "A security vulnerability has been detected in ningzichun student-management-system up to 98760f5711cf6dc8b4adca53a9e207ca49b02ebf. This impacts an unknown function of the file user/editLog.php. Such manipulation of the argument sid/addtime/type/reason/detail/logdate leads to authorization bypass. Th",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/ningzichun/student-management-system/",
+        "https://github.com/ningzichun/student-management-system/issues/10",
+        "https://vuldb.com/cve/CVE-2026-97647"
+      ],
+      "published": "2026-09-25T02:16:54.817"
+    },
+    {
+      "id": "CVE-2026-97732",
+      "description": "IRONMACE Ironshield 1.0.0.167 has a tvk.sys kernel-mode driver that authenticates client executables by checking for expected publisher and root-certificate strings in WIN_CERTIFICATE data (\"IRONMACE Co., Ltd.\" and \"DigiCert Trusted Root G4\") instead of parsing and validating the PKCS signature data",
+      "severity": "MEDIUM",
+      "score": 5.1,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://github.com/hseoa/ironshield-analysis",
+        "https://store.steampowered.com/eula/2016590_eula_0"
+      ],
+      "published": "2026-09-25T04:17:50.537"
+    },
+    {
+      "id": "CVE-2026-97649",
+      "description": "A flaw has been found in ningzichun student-management-system up to 98760f5711cf6dc8b4adca53a9e207ca49b02ebf. Affected by this vulnerability is an unknown functionality of the file example_lite.sql. Executing a manipulation can lead to use of default credentials. It is possible to launch the attack ",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-1392"
+      ],
+      "references": [
+        "https://github.com/ningzichun/student-management-system/",
+        "https://github.com/ningzichun/student-management-system/issues/13",
+        "https://vuldb.com/cve/CVE-2026-97649"
+      ],
+      "published": "2026-09-25T02:16:55.183"
+    },
+    {
+      "id": "CVE-2026-97648",
+      "description": "A vulnerability was detected in ningzichun student-management-system up to 98760f5711cf6dc8b4adca53a9e207ca49b02ebf. Affected is an unknown function. Performing a manipulation results in cross-site request forgery. It is possible to initiate the attack remotely. The exploit is now public and may be ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352",
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/ningzichun/student-management-system/",
+        "https://github.com/ningzichun/student-management-system/issues/12",
+        "https://vuldb.com/cve/CVE-2026-97648"
+      ],
+      "published": "2026-09-25T02:16:55.000"
+    },
+    {
+      "id": "CVE-2026-97650",
+      "description": "A vulnerability has been found in ningzichun student-management-system up to 98760f5711cf6dc8b4adca53a9e207ca49b02ebf. Affected by this issue is the function echo of the file admin/fun/addLog.php. The manipulation of the argument reason/detail leads to cross site scripting. The attack can be initiat",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/ningzichun/student-management-system/",
+        "https://github.com/ningzichun/student-management-system/issues/11",
+        "https://vuldb.com/cve/CVE-2026-97650"
+      ],
+      "published": "2026-09-25T03:16:59.087"
+    },
+    {
+      "id": "CVE-2026-97724",
+      "description": "A prototype pollution vulnerability in Software Mansion React Native Worklets before 0.12.2 allows an attacker-controlled object containing a __proto__ property to modify the prototype of an object created during serialization in clonePlainJSObject in packages/react-native-worklets/src/memory/serial",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-1321"
+      ],
+      "references": [
+        "https://docs.swmansion.com/react-native-reanimated/",
+        "https://github.com/software-mansion/react-native-reanimated/issues/10436",
+        "https://github.com/software-mansion/react-native-reanimated/pull/10451"
+      ],
+      "published": "2026-09-25T03:16:59.327"
+    },
+    {
+      "id": "CVE-2026-84283",
+      "description": "Secure Folder 1.2 stores files selected for its password-protected vault as unencrypted files in the Android shared-storage tree. A local application or file manager that has access to the relevant shared-storage path can enumerate, copy, and open those files without authenticating to Secure Folder.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-922"
+      ],
+      "references": [
+        "https://fluidattacks.com/advisories/sanguisugabogg",
+        "https://play.google.com/store/apps/details?id=com.securefolder.securevault"
+      ],
+      "published": "2026-09-25T00:16:57.570"
+    },
+    {
+      "id": "CVE-2026-85082",
+      "description": "Root Browser Classic 3.3.0 passes the path of a selected SQLite database to an operating-system shell without safely separating the filename from the command.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://fluidattacks.com/advisories/infant",
+        "https://play.google.com/store/apps/details?id=com.jrummyapps.rootbrowser.classic",
+        "https://fluidattacks.com/advisories/infant"
+      ],
+      "published": "2026-09-25T00:16:57.720"
+    },
+    {
+      "id": "CVE-2026-53493",
+      "description": "containerd is an open-source container runtime. Prior to versions 1.7.36, 2.0.13, 2.2.9, 2.3.6, and 2.4.1, a crafted OCI index graph can force very high CPU/memory usage during PullImage (before container start), causing long ContainerCreating stalls and, at larger sizes, node/runtime instability. V",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-400",
+        "CWE-770",
+        "CWE-834"
+      ],
+      "references": [
+        "https://github.com/containerd/containerd/security/advisories/GHSA-pg57-6jwg-q645"
+      ],
+      "published": "2026-09-25T01:16:48.227"
+    },
+    {
+      "id": "CVE-2026-85417",
+      "description": "Incomplete property masking in the SANnav logging subsystem permits SNMP authentication and privacy passwords to be recorded in application logs under specific configuration conditions. Individuals with read access to system logs or support bundles can retrieve these credentials, leading to unauthor",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-532"
+      ],
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39001"
+      ],
+      "published": "2026-09-25T01:16:48.580"
+    }
+  ]
+}
