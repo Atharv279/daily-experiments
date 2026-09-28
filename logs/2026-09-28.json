@@ -1,0 +1,346 @@
+{
+  "timestamp": "2026-09-28T08:48:03.014385+00:00",
+  "scan_id": "9959e75119",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 5,
+      "MEDIUM": 13,
+      "LOW": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-22",
+        3
+      ],
+      [
+        "CWE-862",
+        3
+      ],
+      [
+        "CWE-863",
+        3
+      ],
+      [
+        "CWE-639",
+        2
+      ],
+      [
+        "CWE-79",
+        2
+      ]
+    ],
+    "threat_index": 268.7,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 268.7,
+        "yesterday": 268.9,
+        "change_pct": -0.1
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 2,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-100520",
+      "description": "Laranode versions before 1.2.1 contain a path traversal vulnerability in the POST /filemanager/upload-file endpoint that allows authenticated users to write arbitrary files outside their home directory. Attackers can supply directory traversal sequences in the path parameter to write PHP files into ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/crivion/laranode",
+        "https://github.com/crivion/laranode/blob/v1.2/app/Actions/Filemanager/UploadFileAction.php",
+        "https://github.com/crivion/laranode/commit/5c2b18ae99caf77a6fb6cc5c0ab66562bd673424"
+      ],
+      "published": "2026-09-26T01:17:00.357"
+    },
+    {
+      "id": "CVE-2026-100532",
+      "description": "@openclaw/whatsapp (npm) before 2026.8.1 exposes the WhatsApp login tool through the generic channel-tool path without preserving the originating sender's owner status, so the owner-only tool boundary is not enforced. An admitted non-owner sender able to steer the tool can request a forced login and",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-9m4p-cqp4-jppq",
+        "https://www.vulncheck.com/advisories/openclaw-whatsapp-before-2026.8.1-authentication-bypass"
+      ],
+      "published": "2026-09-26T03:16:58.660"
+    },
+    {
+      "id": "CVE-2026-100535",
+      "description": "OpenClaw (npm package 'openclaw') versions >= 2026.4.5 and < 2026.8.1 can lose the originating requester's restrictions and untrusted provenance when session-derived text is persisted to session memory. In deployments where session-memory capture and dreaming are enabled, a restricted external sende",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-62qm-6fjj-6g23",
+        "https://www.vulncheck.com/advisories/openclaw-before-2026.8.1-privilege-escalation-via-session-memory"
+      ],
+      "published": "2026-09-26T03:16:59.103"
+    },
+    {
+      "id": "CVE-2026-100530",
+      "description": "OpenClaw versions before 2026.8.1 fail to bind working directory context to reusable exec approvals, allowing approved commands to execute in different directories. Attackers with an allow-always approval can reuse it to run the same command against unreviewed files or repositories with materially d",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-3mq7-q27j-mq7q",
+        "https://www.vulncheck.com/advisories/openclaw-before-2026.8.1-exec-approval-directory-binding"
+      ],
+      "published": "2026-09-26T03:16:58.367"
+    },
+    {
+      "id": "CVE-2026-100504",
+      "description": "Ghidra versions through 12.1.4 contain a stack-based out-of-bounds write vulnerability in the decompiler's leftshift128 function when processing negative shift amounts from p-code. Attackers can craft malicious binaries with specific instruction sequences that trigger the overflow when decompiled, c",
+      "severity": "HIGH",
+      "score": 7.0,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/NationalSecurityAgency/ghidra",
+        "https://github.com/NationalSecurityAgency/ghidra/blob/8b6bbb857accdfa20dc5b2f5dea471178c2e9fbc/Ghidra/Features/Decompiler/src/decompile/cpp/multiprecision.cc#L29-L61",
+        "https://github.com/NationalSecurityAgency/ghidra/blob/8b6bbb857accdfa20dc5b2f5dea471178c2e9fbc/Ghidra/Features/Decompiler/src/decompile/cpp/ruleaction.cc#L7848-L7878"
+      ],
+      "published": "2026-09-26T01:17:00.043"
+    },
+    {
+      "id": "CVE-2026-100531",
+      "description": "The @openclaw/slack npm package before 2026.8.1 contains an authorization flaw in its Slack download-file handler: when a file lacks the share metadata used to prove it belongs to the requested conversation, the conversation-authorization check fails open. An authenticated caller restricted to a sin",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-v7hh-7676-rg67",
+        "https://www.vulncheck.com/advisories/openclaw-slack-before-2026.8.1-authorization-bypass"
+      ],
+      "published": "2026-09-26T03:16:58.513"
+    },
+    {
+      "id": "CVE-2026-100536",
+      "description": "OpenClaw versions before 2026.8.1 fail to validate all source fields in structured message attachments, allowing attackers to hide unvalidated host paths behind allowed attachment sources. Attackers can exploit this by providing multiple source fields to bypass sandbox path validation and cause Tele",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-fphf-69cp-h5xw",
+        "https://www.vulncheck.com/advisories/openclaw-before-2026.8.1-path-traversal-via-structured-attachments"
+      ],
+      "published": "2026-09-26T03:16:59.247"
+    },
+    {
+      "id": "CVE-2026-100529",
+      "description": "OpenClaw versions before 2026.8.1 contain an authorization scope widening vulnerability in file-transfer allow-always approvals that allows attackers to reuse standing grants for unreviewed paths. Attackers can exploit glob metacharacter interpretation and node display name reuse to access sibling p",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-7jfq-rmfm-29wp",
+        "https://www.vulncheck.com/advisories/openclaw-before-2026.8.1-authorization-scope-widening-via-file-transfer"
+      ],
+      "published": "2026-09-26T03:16:58.217"
+    },
+    {
+      "id": "CVE-2026-100521",
+      "description": "Cotonti through 1.0.0 contains a reflected cross-site scripting vulnerability in the search plugin highlight parameter that performs no HTML or JavaScript escaping. Attackers can craft malicious links with injected JavaScript in the highlight parameter that executes in the browser of any visitor who",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/Cotonti/Cotonti",
+        "https://github.com/Cotonti/Cotonti/blob/1.0.0/plugins/search/search.header.php",
+        "https://github.com/Cotonti/Cotonti/blob/1.0.0/plugins/search/search.page.first.php"
+      ],
+      "published": "2026-09-26T01:17:00.517"
+    },
+    {
+      "id": "CVE-2026-100522",
+      "description": "Cotonti through 1.0.0 contains a reflected cross-site scripting vulnerability in message.php where the lng parameter is not properly escaped before output in the confirmation dialog. Unauthenticated attackers can craft malicious links with script payloads in the lng parameter to execute arbitrary Ja",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/Cotonti/Cotonti",
+        "https://github.com/Cotonti/Cotonti/blob/1.0.0/message.php",
+        "https://github.com/Cotonti/Cotonti/issues/1907"
+      ],
+      "published": "2026-09-26T01:17:00.700"
+    },
+    {
+      "id": "CVE-2026-100523",
+      "description": "Cotonti through 1.0.0 contains an open redirect vulnerability in message.php that base64-decodes the redirect parameter without domain validation. Unauthenticated attackers can craft malicious links with encoded external URLs to redirect users to arbitrary sites via meta refresh tags for phishing at",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-601"
+      ],
+      "references": [
+        "https://github.com/Cotonti/Cotonti",
+        "https://github.com/Cotonti/Cotonti/blob/1.0.0/message.php",
+        "https://github.com/Cotonti/Cotonti/blob/1.0.0/system/common.php"
+      ],
+      "published": "2026-09-26T01:17:00.870"
+    },
+    {
+      "id": "CVE-2026-100524",
+      "description": "Cotonti through 1.0.0 contains a cross-site request forgery vulnerability in the extensions manager that allows attackers to perform state-changing actions without anti-CSRF token validation. Attackers can craft links or embed images to force administrators to install, update, pause, or unpause exte",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://github.com/Cotonti/Cotonti",
+        "https://github.com/Cotonti/Cotonti/blob/1.0.0/system/admin/admin.extensions.php",
+        "https://github.com/Cotonti/Cotonti/issues/1907"
+      ],
+      "published": "2026-09-26T01:17:01.040"
+    },
+    {
+      "id": "CVE-2026-100528",
+      "description": "OpenClaw (npm package 'openclaw') before 2026.8.1 could send third-party provider credentials to the wrong endpoint. In affected versions, when a third-party provider uses an OpenAI-compatible API and the resolved model metadata lacks a concrete base URL, a pinned session that continues after a mode",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-vhpg-cq3w-v8p9",
+        "https://www.vulncheck.com/advisories/openclaw-before-2026.8.1-credential-disclosure-via-provider-endpoint"
+      ],
+      "published": "2026-09-26T03:16:58.057"
+    },
+    {
+      "id": "CVE-2026-100526",
+      "description": "OpenClaw's Discord integration (npm package @openclaw/discord) before version 2026.9.3 could lose the sender-scoped media policy in the emoji and sticker upload actions before loading a local file. A sender permitted to invoke those actions could cause OpenClaw to read a host path that the same send",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-xvwp-wmh2-fq48",
+        "https://www.vulncheck.com/advisories/vulnerability-in-discord"
+      ],
+      "published": "2026-09-26T03:16:57.750"
+    },
+    {
+      "id": "CVE-2026-100527",
+      "description": "OpenClaw before 2026.8.2 contains a denial of service vulnerability in the Browser extension relay that allows unauthenticated network sources to exhaust pending-authentication capacity. Attackers can hold every pending slot by maintaining silent WebSocket upgrades, preventing paired extensions from",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-m78m-7h3q-q938",
+        "https://www.vulncheck.com/advisories/openclaw-before-2026.8.2-denial-of-service-via-browser-relay"
+      ],
+      "published": "2026-09-26T03:16:57.910"
+    },
+    {
+      "id": "CVE-2026-100533",
+      "description": "OpenClaw versions before 2026.8.1 contain a path traversal vulnerability in the tools.fs.workspaceOnly feature where Unicode filename fallback can normalize validated parent directory components. Admitted requesters can exploit canonically equivalent sibling directories to read files outside the con",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-5rx7-34fw-64qg",
+        "https://www.vulncheck.com/advisories/openclaw-before-2026.8.1-path-traversal-via-unicode-fallback"
+      ],
+      "published": "2026-09-26T03:16:58.813"
+    },
+    {
+      "id": "CVE-2026-100505",
+      "description": "Ghidra versions 11.2 through 12.1.4 contain a heap out-of-bounds read vulnerability in StringManager::getCodepoint when decoding multi-byte UTF-8, UTF-16, or UTF-32 characters without validating remaining buffer length. Attackers can craft malicious binaries with constant byte stores ending in multi",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/NationalSecurityAgency/ghidra",
+        "https://github.com/NationalSecurityAgency/ghidra/blob/8b6bbb857accdfa20dc5b2f5dea471178c2e9fbc/Ghidra/Features/Decompiler/src/decompile/cpp/stringmanage.cc#L324-L410",
+        "https://github.com/NationalSecurityAgency/ghidra/commit/e37c57f3d9c29511a1860f0a735df53131d403d7"
+      ],
+      "published": "2026-09-26T01:17:00.200"
+    },
+    {
+      "id": "CVE-2026-100525",
+      "description": "The OpenClaw Prometheus diagnostics plugin (@openclaw/diagnostics-prometheus) before version 2026.9.3 does not enforce the operator.read scope on its authenticated metrics endpoint. In deployments using an identity-bearing Gateway authentication mode such as trusted-proxy, a caller whose effective r",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-rx8p-qcpv-c7vr",
+        "https://www.vulncheck.com/advisories/openclaw-diagnostics-prometheus-before-2026.9.3-authentication-bypass"
+      ],
+      "published": "2026-09-26T03:16:57.563"
+    },
+    {
+      "id": "CVE-2026-100503",
+      "description": "Ghidra versions through 12.1.4 contain a heap use-after-free vulnerability in the decompiler's Funcdata::opInsertAfter function caused by stale INDIRECT effect-op references. Attackers can craft a malicious binary with a specific x86-64 sequence that triggers the vulnerability during decompilation, ",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/NationalSecurityAgency/ghidra",
+        "https://github.com/NationalSecurityAgency/ghidra/blob/8b6bbb857accdfa20dc5b2f5dea471178c2e9fbc/Ghidra/Features/Decompiler/src/decompile/cpp/merge.cc#L462-L472",
+        "https://github.com/NationalSecurityAgency/ghidra/blob/8b6bbb857accdfa20dc5b2f5dea471178c2e9fbc/Ghidra/Features/Decompiler/src/decompile/cpp/subflow.cc#L2717-L2745"
+      ],
+      "published": "2026-09-26T01:16:59.880"
+    },
+    {
+      "id": "CVE-2026-100534",
+      "description": "OpenClaw versions before 2026.8.1 contain an authorization bypass vulnerability in webhook TaskFlow cancellation that allows attackers to cancel unrelated sessions. An attacker with a webhook route secret can supply an arbitrary child session key to cancel ACP or subagent work outside the route's co",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/openclaw/openclaw/security/advisories/GHSA-g24w-m94m-59qc",
+        "https://www.vulncheck.com/advisories/openclaw-before-2026.8.1-session-cancellation-authorization-bypass"
+      ],
+      "published": "2026-09-26T03:16:58.957"
+    }
+  ]
+}
