@@ -1,0 +1,374 @@
+{
+  "timestamp": "2026-09-30T08:44:49.604922+00:00",
+  "scan_id": "2ec6ad572d",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 5,
+      "MEDIUM": 13,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        4
+      ],
+      [
+        "CWE-89",
+        4
+      ],
+      [
+        "CWE-918",
+        3
+      ],
+      [
+        "CWE-119",
+        2
+      ],
+      [
+        "CWE-404",
+        2
+      ]
+    ],
+    "threat_index": 301.6,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 301.6,
+        "yesterday": 370.4,
+        "change_pct": -18.6
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 2,
+        "change_pct": -50.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-100896",
+      "description": "A weakness has been identified in TOTOLINK N150RT 3.4.0-B20201030. The affected element is the function system of the file /boafrm/formWlSiteSurvey of the component Web Management Interface. This manipulation of the argument wlanif causes os command injection. Remote exploitation of the attack is po",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://gist.github.com/H3rmesk1t/c071a62375f38b629f67653428a8f25a",
+        "https://vuldb.com/cve/CVE-2026-100896",
+        "https://vuldb.com/submit/918574"
+      ],
+      "published": "2026-09-28T02:17:19.617"
+    },
+    {
+      "id": "CVE-2026-100888",
+      "description": "A weakness has been identified in Trusted Domain Project OpenDKIM up to 2.11.0. This affects the function dkim_canon_selecthdrs of the file libopendkim/dkim-canon.c of the component DKIM Signature Header Selection. Executing a manipulation of the argument h can lead to out-of-bounds write. The attac",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-787"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-100888",
+        "https://vuldb.com/submit/917015",
+        "https://vuldb.com/vuln/410837"
+      ],
+      "published": "2026-09-28T00:16:32.473"
+    },
+    {
+      "id": "CVE-2026-100889",
+      "description": "A vulnerability was detected in Trusted Domain Project OpenDKIM up to 2.11.0. Affected is the function dkim_qp_decode of the file util.c of the component Decoder. The manipulation results in off-by-one. The attack may be performed from remote. The exploit is now public and may be used. The vendor wa",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-189",
+        "CWE-193"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-100889",
+        "https://vuldb.com/submit/917063",
+        "https://vuldb.com/vuln/410839"
+      ],
+      "published": "2026-09-28T00:16:32.647"
+    },
+    {
+      "id": "CVE-2026-100891",
+      "description": "A vulnerability has been found in Trusted Domain Project OpenDMARC up to 1.4.2. Affected by this issue is the function opendmarc_policy_query_dmarc in the library libopendmarc/opendmarc_policy.c of the component Internationalized Domain Name Handler. Such manipulation leads to encoding error. It is ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-172"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-100891",
+        "https://vuldb.com/submit/917215",
+        "https://vuldb.com/vuln/410841"
+      ],
+      "published": "2026-09-28T01:16:28.367"
+    },
+    {
+      "id": "CVE-2026-100893",
+      "description": "A vulnerability was determined in Privoce VoceChat Server up to 0.5.36. This vulnerability affects the function open_graph::fetch of the file src/api/resource.rs of the component open_graphic_parse Endpoint. Executing a manipulation of the argument url can lead to server-side request forgery. The at",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://is.yuum.me/posts/2026-08-06-ssrf-vulnerability-in-vocechat-server-v0520/",
+        "https://vuldb.com/cve/CVE-2026-100893",
+        "https://vuldb.com/submit/917632"
+      ],
+      "published": "2026-09-28T02:17:19.020"
+    },
+    {
+      "id": "CVE-2026-100901",
+      "description": "A vulnerability was found in athlon1600 youtube-downloader up to 4.0.1. Affected by this vulnerability is the function stream of the file public/stream.php. The manipulation of the argument url results in server-side request forgery. It is possible to launch the attack remotely. The exploit has been",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://gist.github.com/qianqiusujiu/87a7d7d8bd7fb53cf8529e0bafbeafba",
+        "https://vuldb.com/cve/CVE-2026-100901",
+        "https://vuldb.com/submit/919147"
+      ],
+      "published": "2026-09-28T03:16:38.803"
+    },
+    {
+      "id": "CVE-2026-100902",
+      "description": "A vulnerability was determined in Barco ClickShare CX-20 Gen2 up to 02.26.00.0007. Affected by this issue is some unknown functionality of the file /wallpaper of the component Wallpaper Upload. This manipulation of the argument wallpaper causes improper validation of syntactic correctness of input. ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-20",
+        "CWE-1286"
+      ],
+      "references": [
+        "https://github.com/0xWKZER/-security-disclosures/blob/main/Barco001.md",
+        "https://vuldb.com/cve/CVE-2026-100902",
+        "https://vuldb.com/submit/919384"
+      ],
+      "published": "2026-09-28T04:16:56.207"
+    },
+    {
+      "id": "CVE-2026-100887",
+      "description": "A security flaw has been discovered in amirsanni Mini-Inventory-and-Sales-Management-System up to 81bf0b55f5933f3b0dbb1583204a612e06605b95. The impacted element is the function order_by of the file DB_query_builder.php of the component Database Query Builder. Performing a manipulation of the argumen",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://gist.github.com/qianqiusujiu/d1b22995e74ba21c8fb776ce3b1cddef",
+        "https://vuldb.com/cve/CVE-2026-100887",
+        "https://vuldb.com/submit/916821"
+      ],
+      "published": "2026-09-28T00:16:32.273"
+    },
+    {
+      "id": "CVE-2026-100894",
+      "description": "A vulnerability was identified in mathurvishal CloudClassroom-PHP-Project up to 5dadec098bfbbf3300d60c3494db3fb95b66e7be. This issue affects some unknown processing of the file updateguest.php. The manipulation of the argument gname leads to sql injection. The attack may be initiated remotely. The e",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/JaconiasDev/Advisory-CloundClassroom-PHP-Project-1.0.git",
+        "https://vuldb.com/cve/CVE-2026-100894",
+        "https://vuldb.com/submit/917723"
+      ],
+      "published": "2026-09-28T02:17:19.260"
+    },
+    {
+      "id": "CVE-2026-100898",
+      "description": "A vulnerability was detected in DevaslanPHP project-management 1.2.1/1.2.2/1.2.3/1.2.4/2.0.0-beta1. This affects the function whereRaw of the file app/Filament/Widgets/Timesheet/ActivitiesReport.php of the component Timesheet Dashboard. Performing a manipulation of the argument filter results in sql",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/dddwmr/CVE/blob/main/Timesheet%20Dashboard%20Chart%20Filter%20SQL%20Injection%20(ActivitiesReport).md",
+        "https://vuldb.com/cve/CVE-2026-100898",
+        "https://vuldb.com/submit/919133"
+      ],
+      "published": "2026-09-28T02:17:19.973"
+    },
+    {
+      "id": "CVE-2026-100899",
+      "description": "A flaw has been found in DevaslanPHP project-management 1.2.1/1.2.2/1.2.3/1.2.4/v2.0.0-beta1. This impacts the function whereRaw of the file app/Filament/Widgets/Timesheet/MonthlyReport.php of the component Timesheet Dashboard. Executing a manipulation of the argument filter can lead to sql injectio",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/dddwmr/CVE/blob/main/Timesheet%20Dashboard%20Chart%20Filter%20SQL%20Injection%20(MonthlyReport).md",
+        "https://vuldb.com/cve/CVE-2026-100899",
+        "https://vuldb.com/submit/919134"
+      ],
+      "published": "2026-09-28T03:16:38.447"
+    },
+    {
+      "id": "CVE-2026-100897",
+      "description": "A security vulnerability has been detected in fuzui StudentInfo up to fcc42a639ec7cef620651bfd0f07ebb660529e3f. The impacted element is an unknown function of the file /StudentInfo/StudentHandler/moditypasswordstu of the component Password Change Endpoint. Such manipulation of the argument sid/tid l",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-100897",
+        "https://vuldb.com/submit/919090",
+        "https://vuldb.com/vuln/410847"
+      ],
+      "published": "2026-09-28T02:17:19.800"
+    },
+    {
+      "id": "CVE-2026-100900",
+      "description": "A vulnerability has been found in DevaslanPHP project-management 1.2.1/1.2.2/1.2.3/1.2.4/v2.0.0-beta1. Affected is the function updateJiraProjects of the file /jira-import of the component Jira Import. The manipulation of the argument host/username/token leads to server-side request forgery. It is p",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/dddwmr/CVE/blob/main/Server-Side%20Request%20Forgery%20in%20Jira%20Import%20via%20Controllable%20Host%20and%20Missing%20canAccess%20.md",
+        "https://vuldb.com/cve/CVE-2026-100900",
+        "https://vuldb.com/submit/919154"
+      ],
+      "published": "2026-09-28T03:16:38.630"
+    },
+    {
+      "id": "CVE-2026-100890",
+      "description": "A flaw has been found in Trusted Domain Project OpenDMARC up to 1.4.2. Affected by this vulnerability is the function opendmarc_spf_ipv6_explode in the library libopendmarc/opendmarc_spf.c of the component SPF Parser. This manipulation of the argument cp causes null pointer dereference. It is possib",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-100890",
+        "https://vuldb.com/submit/917188",
+        "https://vuldb.com/vuln/410840"
+      ],
+      "published": "2026-09-28T01:16:28.047"
+    },
+    {
+      "id": "CVE-2026-100892",
+      "description": "A vulnerability was found in aligungr UERANSIM up to 3.3.0. This affects the function ULInformationTransfer of the file src/gnb/rrc/handler.cpp of the component nr-gnb. Performing a manipulation of the argument dedicatedNASMessage results in memory corruption. The attack can be initiated remotely. T",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://gist.github.com/centauruszzz/c69a6bd152f45d9ca8db981f7da34bed",
+        "https://vuldb.com/cve/CVE-2026-100892",
+        "https://vuldb.com/submit/917313"
+      ],
+      "published": "2026-09-28T01:16:28.583"
+    },
+    {
+      "id": "CVE-2026-100895",
+      "description": "A security flaw has been discovered in Trusted Domain Project OpenARC up to 1.0.0.Beta1. Impacted is the function arc_parse_canon_t in the library libopenarc/arc-canon.c of the component libopenarc. The manipulation results in null pointer dereference. The attack may be launched remotely. The exploi",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/trusteddomainproject/OpenARC/releases/tag/v1.0.0.Beta0",
+        "https://vuldb.com/cve/CVE-2026-100895",
+        "https://vuldb.com/submit/917187"
+      ],
+      "published": "2026-09-28T02:17:19.437"
+    },
+    {
+      "id": "CVE-2026-100903",
+      "description": "A vulnerability was identified in \u041e\u041e\u041e \u041d\u041f\u041e \u0420\u0438\u0442\u043c GEOritm up to 2.45.1. This affects an unknown part of the file /restapi/objects/obj-groups of the component REST API. Such manipulation of the argument objectId leads to missing authentication. The attack can be launched remotely. The exploit is publicl",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/4ybrick/CVE-2026-100903",
+        "https://pastebin.com/3VsEG3Rg",
+        "https://ritm.ru/contacts/"
+      ],
+      "published": "2026-09-28T04:17:07.690"
+    },
+    {
+      "id": "CVE-2026-100906",
+      "description": "A vulnerability was detected in Eyeplus 57.0.0.0308. The affected element is the function GetUsers of the file /onvif/Device of the component ONVIF. The manipulation results in information disclosure. The attack can be executed remotely. The exploit is now public and may be used.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/devjanger/iot-advisories/blob/main/EYEPLUS-GetUsers-Unauth-Plaintext-Password.md",
+        "https://vuldb.com/cve/CVE-2026-100906",
+        "https://vuldb.com/submit/919771"
+      ],
+      "published": "2026-09-28T04:17:08.120"
+    },
+    {
+      "id": "CVE-2026-100907",
+      "description": "A flaw has been found in Eyeplus 57.0.0.0308. The impacted element is an unknown function of the file /snapshot of the component p2pcam Service. This manipulation causes information disclosure. The attack is possible to be carried out remotely. The exploit has been published and may be used.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/devjanger/iot-advisories/blob/main/EYEPLUS-8001-Unauth-Snapshot-Disclosure.md",
+        "https://vuldb.com/cve/CVE-2026-100907",
+        "https://vuldb.com/submit/919784"
+      ],
+      "published": "2026-09-28T05:16:28.140"
+    },
+    {
+      "id": "CVE-2026-100904",
+      "description": "A security vulnerability has been detected in amirsanni mini-inventory-and-sales-management-system up to 81bf0b55f5933f3b0dbb1583204a612e06605b95. Impacted is an unknown function of the file application/controllers/Items.php of the component Items Management Module. The manipulation of the argument ",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-100904",
+        "https://vuldb.com/submit/918487",
+        "https://vuldb.com/vuln/410856"
+      ],
+      "published": "2026-09-28T04:17:07.910"
+    }
+  ]
+}
