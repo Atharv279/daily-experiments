@@ -1,0 +1,363 @@
+{
+  "timestamp": "2026-10-01T00:00:33.787014+00:00",
+  "scan_id": "a2de1e7654",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 3,
+      "HIGH": 2,
+      "MEDIUM": 13,
+      "LOW": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-306",
+        3
+      ],
+      [
+        "CWE-287",
+        3
+      ],
+      [
+        "CWE-74",
+        2
+      ],
+      [
+        "CWE-77",
+        2
+      ],
+      [
+        "CWE-290",
+        1
+      ]
+    ],
+    "threat_index": 312.0,
+    "critical_count": 3
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 312.0,
+        "yesterday": 301.6,
+        "change_pct": 3.4
+      },
+      "critical_count": {
+        "today": 3,
+        "yesterday": 1,
+        "change_pct": 200.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-101263",
+      "description": "A vulnerability was found in Ziroom ZHOME A0101 1.0.1.0. This issue affects some unknown processing of the file /api/ZRQos/set_online_client. The manipulation of the argument mac results in command injection. It is possible to launch the attack remotely. The exploit has been made public and could be",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/waltz-sketch/Ziroom/blob/main/set_online_client_mac_command_injection.md",
+        "https://vuldb.com/cve/CVE-2026-101263",
+        "https://vuldb.com/submit/914645"
+      ],
+      "published": "2026-09-29T00:17:01.540"
+    },
+    {
+      "id": "CVE-2026-101264",
+      "description": "A vulnerability was determined in Ziroom ZHOME A0101 1.0.1.0. Impacted is an unknown function of the file /api/ZRnetwork/set_passwd. This manipulation of the argument password1 causes command injection. The attack can be initiated remotely. The exploit has been publicly disclosed and may be utilized",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/waltz-sketch/Ziroom/blob/main/set_passwd_password1_command_injection.md",
+        "https://vuldb.com/cve/CVE-2026-101264",
+        "https://vuldb.com/submit/914646"
+      ],
+      "published": "2026-09-29T00:17:02.663"
+    },
+    {
+      "id": "CVE-2026-102361",
+      "description": "mall4j through 4.0 contains a missing authentication vulnerability in the PUT /user/updatePwd endpoint that allows unauthenticated attackers to reset any storefront account password. Attackers can supply a target username in the request body to overwrite passwords without verification, enabling acco",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/LinYuanyi1/cve-request-poc/blob/114b3f0d149e50a7678f591bf8043399fc9ac96c/mall4j/A01_updatepwd_account_takeover.py",
+        "https://github.com/gz-yami/mall4j",
+        "https://github.com/gz-yami/mall4j/blob/ffc672fc1aa4320ce02d0b93853bb456ae0a4dae/yami-shop-api/src/main/java/com/yami/shop/api/controller/UserRegisterController.java#L78-L100"
+      ],
+      "published": "2026-09-29T00:17:03.183"
+    },
+    {
+      "id": "CVE-2026-101280",
+      "description": "A vulnerability was detected in Trusted Domain Project OpenDMARC up to 1.4.2. Affected is the function opendmarc_policy_query_dmarc of the component Multi-Record Set Handler. The manipulation results in authentication bypass by spoofing. The attack can be executed remotely. The exploit is now public",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287",
+        "CWE-290"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-101280",
+        "https://vuldb.com/submit/918282",
+        "https://vuldb.com/vuln/411037"
+      ],
+      "published": "2026-09-29T01:16:44.193"
+    },
+    {
+      "id": "CVE-2026-101281",
+      "description": "A flaw has been found in Trusted Domain Project OpenDMARC up to 1.4.2. Affected by this vulnerability is the function opendmarc_sp2_find_mailfrom_domain of the file libopendmarc/opendmarc_spf.c of the component SPF Macro Handler. This manipulation causes improper authentication. The attack is possib",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/trusteddomainproject/OpenDMARC/commit/c48a74c758677fc5272a73eff15ffdbf8afda1a6",
+        "https://github.com/trusteddomainproject/OpenDMARC/issues/262",
+        "https://github.com/trusteddomainproject/OpenDMARC/pull/328"
+      ],
+      "published": "2026-09-29T01:16:44.367"
+    },
+    {
+      "id": "CVE-2026-18747",
+      "description": "The MCUmgr SMP-over-console transport decodes a base64 frame, reads a 16-bit packet length from it, verifies a CRC and then unconditionally strips the trailing CRC with rx_ctxt->nb->len -= 2U; in mcumgr_serial_process_frag() (subsys/mgmt/mcumgr/transport/src/serial_util.c). mcumgr_serial_extract_len",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-125",
+        "CWE-191"
+      ],
+      "references": [
+        "https://github.com/zephyrproject-rtos/zephyr/commit/f7fc3e779a59c68c96eaf63a6b03ac7489f5e4a5",
+        "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-g6cx-xj75-hvfw"
+      ],
+      "published": "2026-09-29T00:17:04.473"
+    },
+    {
+      "id": "CVE-2026-101277",
+      "description": "A security flaw has been discovered in Trusted Domain Project OpenDKIM up to 2.11.0. The impacted element is the function dkim_process_set of the file dkim.c of the component Tag Tokenizer. Performing a manipulation results in use of less trusted source. The attack may be initiated remotely. The exp",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-348"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-101277",
+        "https://vuldb.com/submit/918270",
+        "https://vuldb.com/vuln/411034"
+      ],
+      "published": "2026-09-29T00:17:03.010"
+    },
+    {
+      "id": "CVE-2026-102365",
+      "description": "mall4j through 4.0 fails to enforce authorization checks on GET endpoints in UserAddrController that retrieve customer address data. Authenticated attackers can call /user/addr/page and /user/addr/info endpoints to harvest all customer addresses including names, phone numbers, and postal information",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/LinYuanyi1/cve-request-poc/blob/114b3f0d149e50a7678f591bf8043399fc9ac96c/mall4j/A02_admin_useraddr_bfla.py",
+        "https://github.com/gz-yami/mall4j",
+        "https://github.com/gz-yami/mall4j/blob/ffc672fc1aa4320ce02d0b93853bb456ae0a4dae/yami-shop-admin/src/main/java/com/yami/shop/admin/controller/UserAddrController.java#L46-L61"
+      ],
+      "published": "2026-09-29T00:17:03.777"
+    },
+    {
+      "id": "CVE-2026-18417",
+      "description": "The native BSD-socket layer recorded a pending asynchronous socket error by type-punning it into struct net_context's void user_data field (ctx->user_data = INT_TO_POINTER(-status) in zsock_accepted_cb(), zsock_received_cb(), zsock_connected_cb() and zsock_close_ctx() in subsys/net/lib/sockets/socke",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-843"
+      ],
+      "references": [
+        "https://github.com/zephyrproject-rtos/zephyr/commit/ef370a57d07637aaee8cec7b0bcebf4002ac8f54",
+        "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-p8r8-8mw8-3wf9"
+      ],
+      "published": "2026-09-29T00:17:04.207"
+    },
+    {
+      "id": "CVE-2026-101279",
+      "description": "A security vulnerability has been detected in Trusted Domain Project OpenDMARC up to 1.4.2. This impacts an unknown function of the file libopendmarc/opendmarc_policy.c of the component DMARC Parser. The manipulation of the argument pct leads to integer overflow. Remote exploitation of the attack is",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-189",
+        "CWE-190"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-101279",
+        "https://vuldb.com/submit/918280",
+        "https://vuldb.com/vuln/411036"
+      ],
+      "published": "2026-09-29T01:16:43.997"
+    },
+    {
+      "id": "CVE-2026-102373",
+      "description": "GestSup versions before 3.2.62 fail to validate ticket ownership when loading comments via the threadedit parameter in thread.php. Authenticated attackers can enumerate sequential comment IDs to read private comments from other users' tickets without proper authorization checks.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://blog.spiizn.xyz/articles/remote-code-execution-turning-a-ticket-into-a-new-issue/",
+        "https://gestsup.fr/index.php?page=changelog",
+        "https://gestsup.fr/index.php?page=download"
+      ],
+      "published": "2026-09-29T01:16:44.757"
+    },
+    {
+      "id": "CVE-2026-102372",
+      "description": "GestSup versions before 3.2.61 fail to properly sanitize HTML email bodies in the IMAP LOGIN connector, allowing unauthenticated attackers to store arbitrary JavaScript in ticket descriptions and replies. Attackers can send emails to the monitored mailbox containing script tags and event handlers th",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://blog.spiizn.xyz/articles/remote-code-execution-turning-a-ticket-into-a-new-issue/",
+        "https://gestsup.fr/index.php?page=changelog",
+        "https://gestsup.fr/index.php?page=download"
+      ],
+      "published": "2026-09-29T01:16:44.593"
+    },
+    {
+      "id": "CVE-2026-18746",
+      "description": "parse_write_op() in subsys/net/lib/lwm2m/lwm2m_message_handling.c handles inbound CoAP WRITE/CREATE requests that carry a Block1 option. For the first block of a transfer it called init_block_ctx() and then immediately stored the peer-selected block size with block_ctx->ctx.block_size = block_size b",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/zephyrproject-rtos/zephyr/commit/e61790f776863032925e96819f84cafc9a958b8a",
+        "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-4q9g-2mhh-m7w7"
+      ],
+      "published": "2026-09-29T00:17:04.347"
+    },
+    {
+      "id": "CVE-2026-102364",
+      "description": "mall4j through 4.0 fails to validate the sysType field in sa-token sessions, allowing storefront customers to authenticate as back-office users by reusing their session tokens. Attackers can register on the public storefront and use their customer session token to access admin endpoints lacking @Pre",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/LinYuanyi1/cve-request-poc/blob/114b3f0d149e50a7678f591bf8043399fc9ac96c/mall4j/A05_sys_menu_missing_perm.py",
+        "https://github.com/LinYuanyi1/cve-request-poc/blob/114b3f0d149e50a7678f591bf8043399fc9ac96c/mall4j/A09_admin_read_endpoints_bfla.py",
+        "https://github.com/gz-yami/mall4j"
+      ],
+      "published": "2026-09-29T00:17:03.633"
+    },
+    {
+      "id": "CVE-2026-102367",
+      "description": "mall4j through 4.0 contains an insufficient session expiration vulnerability in the token refresh endpoint that fails to validate the enabled flag when issuing new sessions. Disabled user accounts can indefinitely renew their sessions through the POST /token/refresh endpoint, retaining access that a",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-613"
+      ],
+      "references": [
+        "https://github.com/LinYuanyi1/cve-request-poc/blob/114b3f0d149e50a7678f591bf8043399fc9ac96c/mall4j/T02_refresh_token_enabled_bypass.py",
+        "https://github.com/gz-yami/mall4j",
+        "https://github.com/gz-yami/mall4j/blob/ffc672fc1aa4320ce02d0b93853bb456ae0a4dae/yami-shop-security/yami-shop-security-common/src/main/java/com/yami/shop/security/common/controller/TokenController.java#L38-L44"
+      ],
+      "published": "2026-09-29T00:17:04.060"
+    },
+    {
+      "id": "CVE-2026-102362",
+      "description": "mall4j through 4.0 fails to implement authentication controls on the DELETE /prodComm endpoint in ProdCommController. Unauthenticated attackers can delete arbitrary product reviews by supplying the prodCommId parameter without authorization checks.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/LinYuanyi1/cve-request-poc/blob/114b3f0d149e50a7678f591bf8043399fc9ac96c/mall4j/A04_prodcomm_delete_anonymous.py",
+        "https://github.com/gz-yami/mall4j",
+        "https://github.com/gz-yami/mall4j/blob/ffc672fc1aa4320ce02d0b93853bb456ae0a4dae/yami-shop-api/src/main/java/com/yami/shop/api/controller/ProdCommController.java#L84-L89"
+      ],
+      "published": "2026-09-29T00:17:03.337"
+    },
+    {
+      "id": "CVE-2026-102366",
+      "description": "mall4j through 4.0 contains an unrestricted file upload vulnerability in FileController endpoints that lack authorization checks and accept arbitrary file types without validation. Attackers with any authenticated token can upload HTML or SVG files that execute scripts in administrator browsers when",
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/LinYuanyi1/cve-request-poc/blob/114b3f0d149e50a7678f591bf8043399fc9ac96c/mall4j/A03_admin_file_upload_xss.py",
+        "https://github.com/gz-yami/mall4j",
+        "https://github.com/gz-yami/mall4j/blob/ffc672fc1aa4320ce02d0b93853bb456ae0a4dae/yami-shop-admin/src/main/java/com/yami/shop/admin/controller/FileController.java#L44-L64"
+      ],
+      "published": "2026-09-29T00:17:03.917"
+    },
+    {
+      "id": "CVE-2026-101278",
+      "description": "A weakness has been identified in Trusted Domain Project OpenDMARC up to 1.4.2. This affects the function opendmarc_get_tld of the file libopendmarc/opendmarc_tld.c : of the component PSL Wildcard Handler. Executing a manipulation can lead to origin validation error. The attack may be launched remot",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-345",
+        "CWE-346"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-101278",
+        "https://vuldb.com/submit/918273",
+        "https://vuldb.com/vuln/411035"
+      ],
+      "published": "2026-09-29T01:16:43.787"
+    },
+    {
+      "id": "CVE-2026-102363",
+      "description": "mall4j through 4.0 contains a missing authentication vulnerability in the DeliveryController checkDelivery endpoint that allows unauthenticated attackers to read shipment tracking information by supplying an order number parameter. Attackers can access carrier names, waybill numbers, and complete lo",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/LinYuanyi1/cve-request-poc/blob/114b3f0d149e50a7678f591bf8043399fc9ac96c/mall4j/A08_delivery_check_anonymous.py",
+        "https://github.com/gz-yami/mall4j",
+        "https://github.com/gz-yami/mall4j/blob/ffc672fc1aa4320ce02d0b93853bb456ae0a4dae/yami-shop-api/src/main/java/com/yami/shop/api/controller/DeliveryController.java#L47-L63"
+      ],
+      "published": "2026-09-29T00:17:03.483"
+    },
+    {
+      "id": "CVE-2026-101265",
+      "description": "A vulnerability was identified in Intelbras TIP 125i 4.3.35/4.3.41. The affected element is an unknown function of the component B\u00e1sico Page. Such manipulation leads to inclusion of sensitive information in source code. The attack can be launched remotely. A high complexity level is associated with ",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-200",
+        "CWE-540"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-101265",
+        "https://vuldb.com/submit/916125",
+        "https://vuldb.com/vuln/411033"
+      ],
+      "published": "2026-09-29T00:17:02.833"
+    }
+  ]
+}
