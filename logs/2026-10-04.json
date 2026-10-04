@@ -1,0 +1,350 @@
+{
+  "timestamp": "2026-10-04T08:34:15.571445+00:00",
+  "scan_id": "6d2aa6d14e",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 6,
+      "HIGH": 8,
+      "MEDIUM": 4,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-89",
+        4
+      ],
+      [
+        "CWE-74",
+        3
+      ],
+      [
+        "CWE-287",
+        2
+      ],
+      [
+        "CWE-312",
+        2
+      ],
+      [
+        "CWE-540",
+        2
+      ]
+    ],
+    "threat_index": 455.1,
+    "critical_count": 6
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 455.1,
+        "yesterday": 203.0,
+        "change_pct": 124.2
+      },
+      "critical_count": {
+        "today": 6,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-103764",
+      "description": "Mooncake transfer engine before 0.3.13 contains an untrusted pointer dereference in ServerSession::readHeader that allows unauthenticated attackers to read and write arbitrary process memory via the TCP transport data port. Attackers can send a crafted SessionHeader with arbitrary addr and size valu",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-822"
+      ],
+      "references": [
+        "https://github.com/kvcache-ai/Mooncake",
+        "https://github.com/kvcache-ai/Mooncake/blob/6041a609a8c3af35e778f70db344f145c2914980/mooncake-transfer-engine/src/transport/tcp_transport/tcp_transport.cpp#L209",
+        "https://github.com/kvcache-ai/Mooncake/commit/a2933849417259e562fc9cbad63c618d464dfb2d"
+      ],
+      "published": "2026-10-02T00:16:59.253"
+    },
+    {
+      "id": "CVE-2026-14378",
+      "description": "The DevKit Pro plugin for WordPress is vulnerable to Authentication Bypass Leading to Administrator Account Takeover in all versions up to, and including, 2.3.0 This is due to the `revert_switch` handler trusting the attacker-controlled `original_user_id` cookie as the privileged identity: `verify_n",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://docs.dplugins.com/devkit/changelog",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/2ab3986a-69e0-442f-8e79-35b1bc5376d9?source=cve"
+      ],
+      "published": "2026-10-02T04:18:06.277"
+    },
+    {
+      "id": "CVE-2026-19660",
+      "description": "The Divi Membership plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 2.3.0. The `process_paypal_callback` function, hooked to the `init` action, accepts a base64-encoded `paypal_param` GET parameter with no IPN validation, no cryptographic signature c",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://diviengine.com/divi-membership-changelog/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/3d650cda-341f-4772-9b67-1bac200e3fb7?source=cve"
+      ],
+      "published": "2026-10-02T05:16:38.430"
+    },
+    {
+      "id": "CVE-2026-103765",
+      "description": "Mooncake through 0.3.13.post1 contains a missing authentication vulnerability in the HTTP metadata server /metadata handler that allows unauthenticated attackers to read, overwrite, and delete transfer engine metadata keys. Attackers can poison segment descriptors such as tcp_data_port or re-create ",
+      "severity": "CRITICAL",
+      "score": 9.4,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/kvcache-ai/Mooncake",
+        "https://github.com/kvcache-ai/Mooncake/blob/719735896c86b56fabec6cf3e825fb2ea640597a/mooncake-wheel/mooncake/http_metadata_server.py#L61-L106",
+        "https://github.com/kvcache-ai/Mooncake/issues/4444"
+      ],
+      "published": "2026-10-02T00:16:59.663"
+    },
+    {
+      "id": "CVE-2026-15896",
+      "description": "The Super Forms \u2013 Drag & Drop Form Builder plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 6.3.316 via the parse_request function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can con",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-26"
+      ],
+      "references": [
+        "https://github.com/RensTillmann/super-forms/pull/205",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/dc3df045-1020-403f-8e10-a1b75261b769?source=cve"
+      ],
+      "published": "2026-10-02T06:16:40.773"
+    },
+    {
+      "id": "CVE-2026-86345",
+      "description": "A flaw was found in 389-ds-base. The server does not discard plaintext bytes already buffered from a client connection when negotiating StartTLS, allowing an on-path attacker to inject a crafted LDAP message that is processed after the TLS upgrade and whose response is delivered to the client in pla",
+      "severity": "CRITICAL",
+      "score": 9.0,
+      "cwes": [
+        "CWE-923"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-86345",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2529332"
+      ],
+      "published": "2026-10-02T00:17:04.180"
+    },
+    {
+      "id": "CVE-2026-103096",
+      "description": "API\nkey is hardcoded and retrievable from the application package. Since Android\napplications can be reverse engineered, embedding sensitive API credentials\ndirectly in the client application may allow unauthorized users to extract and\nmisuse the key.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-312",
+        "CWE-540",
+        "CWE-798"
+      ],
+      "references": [
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-10-02T01:16:42.930"
+    },
+    {
+      "id": "CVE-2026-103097",
+      "description": "An API key is\nhardcoded and retrievable from the application package. Since Android\napplications can be reverse engineered, embedding sensitive API credentials\ndirectly in the client application may allow unauthorized users to extract and\nmisuse the key.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-312",
+        "CWE-540",
+        "CWE-798"
+      ],
+      "references": [
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-10-02T01:16:43.070"
+    },
+    {
+      "id": "CVE-2026-103098",
+      "description": "Transmission of a sensitive key in the URL\nover an unencrypted HTTP connection.\u00a0 The\nrequest is sent over HTTP rather than HTTPS, meaning the key is transmitted in\nplaintext across the network. An attacker with the ability to monitor network\ntraffic could intercept the request and obtain the key",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-319"
+      ],
+      "references": [
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-10-02T01:16:43.193"
+    },
+    {
+      "id": "CVE-2026-104120",
+      "description": "A security vulnerability has been detected in modelcontextprotocol mcp-server-fetch and mcp-server-everything up to 2026.6.4. Affected is the function fetch_url of the file mcp_server_fetch/server.py of the component Fetch Tool. The manipulation of the argument url/path leads to server-side request ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/modelcontextprotocol/servers/issues/4492",
+        "https://github.com/modelcontextprotocol/servers/pull/4890",
+        "https://vuldb.com/cve/CVE-2026-104120"
+      ],
+      "published": "2026-10-02T03:16:38.840"
+    },
+    {
+      "id": "CVE-2026-104123",
+      "description": "A vulnerability was detected in SourceCodester Online Reviewer Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /reviewer_0/admins/assessments/activities/btn_functions.php?action=activity. The manipulation of the argument Title results in sql injection. T",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/lemssh77/cve/issues/1",
+        "https://vuldb.com/cve/CVE-2026-104123",
+        "https://vuldb.com/submit/961692"
+      ],
+      "published": "2026-10-02T03:16:39.047"
+    },
+    {
+      "id": "CVE-2026-103766",
+      "description": "ClipBucket v5 through 5.5.3-#197 contains an sql injection vulnerability that allows authenticated users with ad_manager_access permission to inject SQL via the delete parameter in admin_area/ads_manager.php. Attackers can supply time-based blind payloads concatenated into AdsManager::DeleteAd queri",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/MacWarrior/clipbucket-v5",
+        "https://github.com/MacWarrior/clipbucket-v5/blob/f15cef1a2431786c31ffd79e81f55d6eeca4ebc0/upload/includes/classes/ads.class.php#L102-L110",
+        "https://github.com/MacWarrior/clipbucket-v5/pull/925"
+      ],
+      "published": "2026-10-02T00:16:59.820"
+    },
+    {
+      "id": "CVE-2026-93367",
+      "description": "The Visitors Traffic Real Time Statistics Pro plugin for WordPress is vulnerable to unauthenticated stored Cross-Site Scripting in all versions up to, and including, 11.22 via the page_title parameter of the ahcpro_track_visitor AJAX action. The action is registered for logged-out callers (wp_ajax_n",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/a72261e5-7376-4a34-9264-27bd4f27e938?source=cve",
+        "https://www.wp-buy.com/product/visitors-traffic-real-time-statistics-pro/"
+      ],
+      "published": "2026-10-02T04:18:09.573"
+    },
+    {
+      "id": "CVE-2026-10026",
+      "description": "The CTX Feed Pro plugin for WordPress is vulnerable to Code Injection in all versions up to, and including, 7.6.12. This is due to insufficient input validation on the 'Feed Config' field which is passed directly to the eval() function. This makes it possible for authenticated attackers, with Admini",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://webappick.com/plugin/woocommerce-product-feed-pro/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/50aa4bff-60dd-469c-a8f0-be6dd2dfa91e?source=cve"
+      ],
+      "published": "2026-10-02T05:16:36.503"
+    },
+    {
+      "id": "CVE-2026-13718",
+      "description": "The Tabs Responsive  WordPress plugin through 2.5 does not sanitize the content of WooCommerce product tabs before storing and rendering it, allowing a shop manager to store JavaScript that executes when any user, including an administrator, views the product page.",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/ff0da7b7-f415-466e-9f6e-4c559d2699a9/"
+      ],
+      "published": "2026-10-02T06:16:40.123"
+    },
+    {
+      "id": "CVE-2026-104052",
+      "description": "A vulnerability was determined in itsourcecode Pet Shop Management System 1.0. The affected element is an unknown function of the file admin_reject_completed.php. This manipulation of the argument ID causes sql injection. It is possible to initiate the attack remotely. The exploit has been publicly ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Useless-Noob-hub/cve/issues/1",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-104052"
+      ],
+      "published": "2026-10-02T02:17:01.327"
+    },
+    {
+      "id": "CVE-2026-104053",
+      "description": "A vulnerability was identified in itsourcecode Pet Shop Management System 1.0. The impacted element is an unknown function of the file admin_reservefilter.php. Such manipulation of the argument filter leads to sql injection. It is possible to launch the attack remotely. The exploit is publicly avail",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/LAt-forever/vuldb-docs/issues/1",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-104053"
+      ],
+      "published": "2026-10-02T02:17:01.560"
+    },
+    {
+      "id": "CVE-2026-104054",
+      "description": "A security flaw has been discovered in calcom cal.diy up to 6.2.0. This affects the function doesUserIdHaveAccessToBooking of the file BookingAccessService.ts of the component PBAC Permission Engine. Performing a manipulation results in missing authorization. The attack can be initiated remotely. Th",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-862",
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/calcom/cal.diy/",
+        "https://github.com/calcom/cal.diy/issues/29802",
+        "https://github.com/calcom/cal.diy/pull/30253"
+      ],
+      "published": "2026-10-02T02:17:01.740"
+    },
+    {
+      "id": "CVE-2026-104480",
+      "description": "Discord libdave before 1.2.0 did not reject an MLS Welcome message when the resulting group roster contained an unrecognized participant. An attacker in control of the DAVE signaling path (the voice gateway, or an equivalent position able to add, alter, or withhold signaling messages to a client) co",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-390",
+        "CWE-863"
+      ],
+      "references": [
+        "https://daveprotocol.com/",
+        "https://github.com/discord/libdave",
+        "https://github.com/discord/libdave/commit/9686fbaea864aa19f0675e486672b6a77811b6a1"
+      ],
+      "published": "2026-10-02T02:17:02.007"
+    },
+    {
+      "id": "CVE-2026-21140",
+      "description": "Improper access control in ManagedProvisioning prior to SMR Sep-2026 Release 1 allows local attackers to install arbitrary applications.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=09"
+      ],
+      "published": "2026-10-02T02:17:02.157"
+    }
+  ]
+}
