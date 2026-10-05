@@ -1,0 +1,360 @@
+{
+  "timestamp": "2026-10-05T09:15:04.114994+00:00",
+  "scan_id": "7d917e188a",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 4,
+      "MEDIUM": 12,
+      "LOW": 1,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        7
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-200",
+        2
+      ],
+      [
+        "CWE-829",
+        1
+      ],
+      [
+        "CWE-125",
+        1
+      ]
+    ],
+    "threat_index": 271.4,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 271.4,
+        "yesterday": 455.1,
+        "change_pct": -40.4
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 6,
+        "change_pct": -83.3
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-105080",
+      "description": "In ConvertX before 0.19.0, converters/calibre.ts does not block recipe files, and instead passes them to the ebook-convert program from Calibre. This affects executable code in a .recipe or .downloaded_recipe file.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-829"
+      ],
+      "references": [
+        "https://github.com/C4illin/ConvertX/commit/0ca17dad7fa65e2e34823b59b95dd00bb1066b66",
+        "https://github.com/C4illin/ConvertX/releases/tag/v0.19.0",
+        "https://github.com/C4illin/ConvertX/security/advisories/GHSA-m4hh-rqmf-c8hw"
+      ],
+      "published": "2026-10-03T01:17:23.650"
+    },
+    {
+      "id": "CVE-2026-104433",
+      "description": "Mooncake transfer engine before 0.3.12 contains an out-of-bounds read vulnerability in the readString function of include/common.h that allows unauthenticated attackers to crash the service by sending a zero-length handshake frame. Attackers can connect to the handshake port listening on all interfa",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/kvcache-ai/Mooncake",
+        "https://github.com/kvcache-ai/Mooncake/commit/c142b40590259360196d8e504b2193382529e7b4",
+        "https://github.com/kvcache-ai/Mooncake/issues/4452"
+      ],
+      "published": "2026-10-03T00:16:35.253"
+    },
+    {
+      "id": "CVE-2026-93428",
+      "description": "The Ultimate Member \u2013 User Profile, Registration, Login, Member Directory, Content Restriction & Membership Plugin plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.13.1 This is due to the plugin not properly verifying that a user is authorized to per",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/ultimatemember/ultimatemember/releases/tag/2.14.0",
+        "https://plugins.trac.wordpress.org/browser/ultimate-member/tags/2.13.1/includes/core/class-ajax-common.php#L61",
+        "https://plugins.trac.wordpress.org/browser/ultimate-member/tags/2.13.1/includes/core/class-fields.php#L144"
+      ],
+      "published": "2026-10-03T03:16:37.067"
+    },
+    {
+      "id": "CVE-2026-96270",
+      "description": "The Ultimate Member \u2013 User Profile, Registration, Login, Member Directory, Content Restriction & Membership Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'form_id' parameter in all versions up to, and including, 2.13.1 due to insufficient input sanitization and out",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/ultimatemember/ultimatemember/releases/tag/2.14.0",
+        "https://plugins.trac.wordpress.org/browser/ultimate-member/tags/2.13.1/includes/admin/core/class-admin-builder.php#L1090",
+        "https://plugins.trac.wordpress.org/browser/ultimate-member/tags/2.13.1/includes/core/class-form.php#L422"
+      ],
+      "published": "2026-10-03T03:16:37.687"
+    },
+    {
+      "id": "CVE-2026-104478",
+      "description": "Formwork before 2.3.13 contains a path traversal vulnerability in BackupController that allows authenticated panel users to read or delete arbitrary files. Attackers with backup download or delete permission can supply a base64-encoded backslash-separated traversal payload that bypasses PHP basename",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/getformwork/formwork",
+        "https://github.com/getformwork/formwork/commit/89e7821a6fcee89474cd401b3dde0c1dccb0687f",
+        "https://www.vulncheck.com/advisories/formwork-before-2.3.13-path-traversal-via-backupcontroller-download-and-delete"
+      ],
+      "published": "2026-10-03T00:16:36.083"
+    },
+    {
+      "id": "CVE-2026-104474",
+      "description": "OpenLiteSpeed before 1.9.3 contains a local privilege escalation vulnerability in admin/misc/lsup.sh that runs unverified update packages from a nobody-writable directory as root. Attackers controlling the nobody web process can replace the package in /usr/local/lsws/autoupdate/ before extraction, s",
+      "severity": "MEDIUM",
+      "score": 6.7,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://github.com/litespeedtech/openlitespeed/blob/v1.9.2/dist/admin/misc/lsup.sh#L538",
+        "https://github.com/litespeedtech/openlitespeed/commit/468523ce84388cea9ba6633c26517bc05b3e2bc1",
+        "https://openlitespeed.org/release-log/version-1-9-x/"
+      ],
+      "published": "2026-10-03T00:16:35.413"
+    },
+    {
+      "id": "CVE-2026-94539",
+      "description": "The SupportCandy \u2013 AI Customer Support Ticket System & Live Chatbot Agent plugin for WordPress is vulnerable to time-based SQL Injection via the 'sort_by' parameter in all versions up to, and including, 3.5.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparat",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.svn.wordpress.org/supportcandy/",
+        "https://plugins.trac.wordpress.org/browser/supportcandy/tags/3.5.3/includes/admin/tickets/class-wpsc-ticket-list.php#L2367",
+        "https://plugins.trac.wordpress.org/browser/supportcandy/tags/3.5.3/includes/class-wpsc-functions.php#L279"
+      ],
+      "published": "2026-10-03T03:16:37.383"
+    },
+    {
+      "id": "CVE-2026-95865",
+      "description": "The Beaver Builder Page Builder \u2013 Drag and Drop Website Builder plugin for WordPress is vulnerable to blind SQL Injection via 'fields[][value]' Parameter in all versions up to, and including, 2.11.0.5 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on t",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/beaver-builder-lite-version/tags/2.11.0.5/classes/class-fl-builder-ajax.php#L151",
+        "https://plugins.trac.wordpress.org/browser/beaver-builder-lite-version/tags/2.11.0.5/classes/class-fl-builder-ajax.php#L241",
+        "https://plugins.trac.wordpress.org/browser/beaver-builder-lite-version/tags/2.11.0.5/classes/class-fl-builder-auto-suggest.php#L167"
+      ],
+      "published": "2026-10-03T03:16:37.533"
+    },
+    {
+      "id": "CVE-2026-94378",
+      "description": "The SupportCandy \u2013 AI Customer Support Ticket System & Live Chatbot Agent plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'name' parameter in all versions up to, and including, 3.5.3 due to insufficient input sanitization and output escaping. This makes it possible for auth",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.svn.wordpress.org/supportcandy/",
+        "https://plugins.trac.wordpress.org/browser/supportcandy/tags/3.5.3/includes/admin/recent-activities/class-wpsc-ra-logs.php#L207",
+        "https://plugins.trac.wordpress.org/browser/supportcandy/tags/3.5.3/includes/custom-field-types/class-wpsc-df-agent-created.php#L492"
+      ],
+      "published": "2026-10-03T03:16:37.230"
+    },
+    {
+      "id": "CVE-2026-104477",
+      "description": "Showdown through 2.1.0 contains a cross-site scripting vulnerability in the makehtml link and image subparsers, which fail to escape double quotes in destination URLs placed into href and src attributes. Attackers can craft markdown links or images containing a double quote followed by onerror or on",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/showdownjs/showdown",
+        "https://github.com/showdownjs/showdown/commit/4fb992cd26631c108ec0410342630c80207ec7c6",
+        "https://www.vulncheck.com/advisories/showdown-through-2.1.0-xss-via-unescaped-quote-in-href-and-src-attributes"
+      ],
+      "published": "2026-10-03T00:16:35.920"
+    },
+    {
+      "id": "CVE-2026-92243",
+      "description": "The Ivory Search \u2013 WordPress Search Plugin plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 's' parameter in all versions up to, and including, 5.5.18 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to injec",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/add-search-to-menu/tags/5.5.18/public/class-is-public.php#L114",
+        "https://plugins.trac.wordpress.org/browser/add-search-to-menu/tags/5.5.18/public/class-is-public.php#L139",
+        "https://plugins.trac.wordpress.org/browser/add-search-to-menu/tags/5.5.18/public/js/is-highlight.js#L23"
+      ],
+      "published": "2026-10-03T03:16:36.910"
+    },
+    {
+      "id": "CVE-2026-104476",
+      "description": "Backdrop CMS before 1.35.1 contains an information disclosure vulnerability that allows unauthenticated attackers to retrieve configuration export archives left on the server after transfer. Attackers can download compressed archives generated by users with configuration export permission to obtain ",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://backdropcms.org/security/backdrop-sa-core-2026-006",
+        "https://github.com/backdrop/backdrop",
+        "https://github.com/backdrop/backdrop/commit/1ae67061d9d487bb6cb3b8611191354052f34749"
+      ],
+      "published": "2026-10-03T00:16:35.747"
+    },
+    {
+      "id": "CVE-2026-104475",
+      "description": "IDURAR ERP CRM through 4.1.1 contains a stored cross-site scripting vulnerability that allows authenticated users to inject scripts by uploading unsanitized SVG files. Attackers can upload JavaScript-laden SVGs via the profile update or settings upload endpoints, which execute in victims' browsers w",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/idurar/idurar-erp-crm",
+        "https://github.com/idurar/idurar-erp-crm/blob/4.1.1/backend/src/middlewares/uploadMiddleware/utils/fileFilterMiddleware.js",
+        "https://github.com/idurar/idurar-erp-crm/issues/1414"
+      ],
+      "published": "2026-10-03T00:16:35.583"
+    },
+    {
+      "id": "CVE-2026-104479",
+      "description": "Shopclass before 6.2.0 contains a stored cross-site scripting vulnerability that allows self-registered non-admin users to inject scripts into item listing descriptions when frontend TinyMCE is enabled. Attackers can submit malicious JavaScript, which ItemActions.php saves without tag stripping, cau",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/mindstellar/shopclass",
+        "https://github.com/mindstellar/shopclass/commit/c196f70906522c9b9172c24f1b42cd0a02357422",
+        "https://www.vulncheck.com/advisories/shopclass-before-6.2.0-stored-xss-via-listing-description-field"
+      ],
+      "published": "2026-10-03T00:16:36.273"
+    },
+    {
+      "id": "CVE-2026-100180",
+      "description": "The Jeg Kit for Elementor \u2013 Powerful Addons for Elementor, Widgets & Templates for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Comment in all versions up to, and including, 3.2.19 due to insufficient input sanitization and output escaping. This makes it possible f",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/jeg-elementor-kit/tags/3.2.19/assets/js/elements/nav-menu.js",
+        "https://plugins.trac.wordpress.org/browser/jeg-elementor-kit/tags/3.2.19/assets/js/elements/video-button.js",
+        "https://plugins.trac.wordpress.org/browser/jeg-elementor-kit/tags/3.2.19/helper.php#L863"
+      ],
+      "published": "2026-10-03T03:16:36.713"
+    },
+    {
+      "id": "CVE-2026-105030",
+      "description": "Kener 4.0.0 before 4.1.6 contains an information disclosure vulnerability that allows unauthenticated attackers to retrieve hidden or inactive monitor data by querying dashboard API handlers lacking visibility filters. Attackers can supply a known or guessed monitor tag to endpoints such as monitor-",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://github.com/rajnandan1/kener",
+        "https://github.com/rajnandan1/kener/commit/e8ce31898bf73ffe6be07c9b299da2a7330ddba5",
+        "https://github.com/rajnandan1/kener/issues/848"
+      ],
+      "published": "2026-10-03T00:16:36.743"
+    },
+    {
+      "id": "CVE-2026-105029",
+      "description": "UVdesk support-center-bundle before 1.1.3.3 contains an insecure direct object reference vulnerability in the rateTicket action of Controller/Ticket.php that allows authenticated customers to rate other customers' tickets. Attackers can supply arbitrary ticket IDs, which are loaded without an owners",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/uvdesk/support-center-bundle",
+        "https://github.com/uvdesk/support-center-bundle/commit/3fa884a3adf0f317f354f83a1f9fa531234a551f",
+        "https://hackmd.io/@leediay/idor-rate-ticket_uvdesk"
+      ],
+      "published": "2026-10-03T00:16:36.463"
+    },
+    {
+      "id": "CVE-2026-105083",
+      "description": "ImageMagick before 7.1.2-32 and 6.9.13-57 contains a policy bypass vulnerability in LoadPolicyCache that silently skips security policy rules when policy.xml uses an alternate DOCTYPE. A valid DOCTYPE not ending in ']>' makes the parser consume the rest of the file, so no policy rules are applied an",
+      "severity": "LOW",
+      "score": 3.9,
+      "cwes": [
+        "CWE-693"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick",
+        "https://github.com/ImageMagick/ImageMagick/blob/7.1.2-31/MagickCore/policy.c#L1138-L1145",
+        "https://github.com/ImageMagick/ImageMagick/commit/1926ccf119141c26274c120d1899dffae19b0c71"
+      ],
+      "published": "2026-10-03T02:17:18.170"
+    },
+    {
+      "id": "CVE-2026-79113",
+      "description": "OpenAPV before 1.1.1.0 has a read_bitstream heap-based buffer overflow.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://aswf.io",
+        "https://github.com/AcademySoftwareFoundation/openapv/commit/b5cc54bc786040ba3ac54020e7320e0add51e107",
+        "https://github.com/AcademySoftwareFoundation/openapv/compare/v0.3.0.0...v1.1.1.0"
+      ],
+      "published": "2026-10-03T01:17:25.287"
+    },
+    {
+      "id": "CVE-2026-105090",
+      "description": "Formbricks before 5.4.4 and 6 before 6.0.1 allows stored XSS. The survey-level Custom Head Scripts feature did not enforce the documented Manage permission boundary. A workspace member holding only readWrite permission could configure Custom Head Scripts on a survey, an operation the documentation r",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/formbricks/formbricks/pull/9432",
+        "https://github.com/formbricks/formbricks/releases/tag/5.4.4",
+        "https://github.com/formbricks/formbricks/releases/tag/6.0.1"
+      ],
+      "published": "2026-10-03T02:17:18.370"
+    }
+  ]
+}
