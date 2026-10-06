@@ -1,0 +1,359 @@
+{
+  "timestamp": "2026-10-06T01:20:58.703884+00:00",
+  "scan_id": "dd93cb8d60",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 4,
+      "MEDIUM": 10,
+      "LOW": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        4
+      ],
+      [
+        "CWE-639",
+        3
+      ],
+      [
+        "CWE-94",
+        2
+      ],
+      [
+        "CWE-863",
+        2
+      ],
+      [
+        "CWE-285",
+        2
+      ]
+    ],
+    "threat_index": 298.2,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 298.2,
+        "yesterday": 271.4,
+        "change_pct": 9.9
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 1,
+        "change_pct": 100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-105134",
+      "description": "A flaw has been found in Ahsay AhsayCBS up to 10.3.2. This vulnerability affects unknown code of the file /rps/api/json/UpdateReceivers.do of the component Replication Receiver. Executing a manipulation of the argument random can lead to os command injection. It is possible to launch the attack remo",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-105134",
+        "https://vuldb.com/submit/942743",
+        "https://vuldb.com/vuln/413351"
+      ],
+      "published": "2026-10-04T07:16:33.480"
+    },
+    {
+      "id": "CVE-2026-105135",
+      "description": "A vulnerability has been found in InternLM MindSearch 0.1.0. This issue affects the function ExecutionAction.run of the file mindsearch/agent/graph.py of the component Planner Agent. The manipulation of the argument inputs leads to code injection. The attack can be initiated remotely. The exploit ha",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-74",
+        "CWE-94"
+      ],
+      "references": [
+        "https://gist.github.com/DReazer/7ad46df9da73d0cf414276e4195b2183",
+        "https://vuldb.com/cve/CVE-2026-105135",
+        "https://vuldb.com/submit/943315"
+      ],
+      "published": "2026-10-04T07:16:33.693"
+    },
+    {
+      "id": "CVE-2026-105123",
+      "description": "W (vincent-peugnet/wcms) through 3.18.0 contains a remote code execution vulnerability that allows authenticated editors to write arbitrary files by abusing the unvalidated path in POST /api/v0/media/upload/[*:path]. Attackers can upload .php files executed by the web server, use encoded ../ sequenc",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/vincent-peugnet/wcms",
+        "https://github.com/vincent-peugnet/wcms/blob/cda5bcdb95dbdb1e804fdfe0e5fd2e2b2f8a90e2/app/class/Controllerapimedia.php#L24-L44",
+        "https://github.com/vincent-peugnet/wcms/blob/cda5bcdb95dbdb1e804fdfe0e5fd2e2b2f8a90e2/app/class/Media.php#L98"
+      ],
+      "published": "2026-10-04T00:16:35.703"
+    },
+    {
+      "id": "CVE-2026-88779",
+      "description": "Vulnerability in NetScaler ADC and NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 FIPS, and before 13.1-37.282; Gateway: before 14.1-73.41 and before 13.1-64.28.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://support.citrix.com/support-home/kbsearch/article?articleNumber=CTX697174",
+        "https://community.citrix.com/techzone-blogs/110_security-updates/understanding-and-addressing-cve-2026-88779-in-citrix-netscaler-adc-and-citrix-netscaler-gateway/",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-88779"
+      ],
+      "published": "2026-10-04T04:16:43.680"
+    },
+    {
+      "id": "CVE-2026-105133",
+      "description": "A vulnerability was detected in Ahsay AhsayCBS up to 10.3.2. This affects the function checkSysPwd of the file com/ahsay/obs/api/ApiStructsAction.java of the component API. Performing a manipulation of the argument random results in improper authentication. It is possible to initiate the attack remo",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-105133",
+        "https://vuldb.com/submit/942688",
+        "https://vuldb.com/vuln/413350"
+      ],
+      "published": "2026-10-04T07:16:33.087"
+    },
+    {
+      "id": "CVE-2026-105126",
+      "description": "LaraDashboard before 1.4.8 contains an improper privilege management vulnerability that allows authenticated Admin users to escalate to Superadmin by editing or renaming roles. Attackers with role.edit can rename their role to Superadmin or grant user.login_as permissions to take over accounts and r",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://github.com/laradashboard/laradashboard",
+        "https://github.com/laradashboard/laradashboard/blob/v1.4.2/app/Http/Controllers/Backend/RoleController.php#L144",
+        "https://github.com/laradashboard/laradashboard/blob/v1.4.2/app/Http/Controllers/Backend/RoleController.php#L180"
+      ],
+      "published": "2026-10-04T00:16:36.217"
+    },
+    {
+      "id": "CVE-2026-17005",
+      "description": "The Horizontal scrolling announcements WordPress plugin through 2.6 does not sanitise and escape one of its announcement settings before outputting it into an attribute context on the front end, allowing users granted access to the announcement management page (Contributor and above, once permitted)",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/e3973475-18c4-46a0-b0ca-24e4d2cd58ca/"
+      ],
+      "published": "2026-10-04T07:16:33.907"
+    },
+    {
+      "id": "CVE-2026-105129",
+      "description": "LaraDashboard before 1.4.8 contains an incorrect authorization vulnerability that allows authenticated users with only settings.view permission to read stored secrets through the settings API. Attackers can query GET /api/settings or /api/settings/{option_name} to retrieve plaintext AI provider API ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/laradashboard/laradashboard",
+        "https://github.com/laradashboard/laradashboard/blob/v1.4.2/app/Http/Controllers/Api/SettingController.php#L23-L50",
+        "https://github.com/laradashboard/laradashboard/blob/v1.4.2/app/Http/Resources/SettingResource.php#L17-L26"
+      ],
+      "published": "2026-10-04T00:16:36.730"
+    },
+    {
+      "id": "CVE-2026-105096",
+      "description": "A vulnerability was determined in Omega Solution CoinEx Crypto 2025. This affects an unknown function of the file /customer/ of the component Customer Profile API. Executing a manipulation of the argument ID can lead to authorization bypass. The attack may be launched remotely. The exploit has been ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/4m3rr0r/PoCVulDb/issues/24",
+        "https://vuldb.com/cve/CVE-2026-105096",
+        "https://vuldb.com/submit/894320"
+      ],
+      "published": "2026-10-04T02:16:28.740"
+    },
+    {
+      "id": "CVE-2026-105124",
+      "description": "W (vincent-peugnet/wcms) through 3.18.0 contains a stored cross-site scripting vulnerability that allows unauthenticated attackers to inject scripts via the login user field and visitor comment website field. Attackers can submit failed logins rendered unescaped in the adminlog.php log viewer, or co",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/vincent-peugnet/wcms",
+        "https://github.com/vincent-peugnet/wcms/blob/cda5bcdb95dbdb1e804fdfe0e5fd2e2b2f8a90e2/app/class/Controllerconnect.php#L56",
+        "https://github.com/vincent-peugnet/wcms/blob/cda5bcdb95dbdb1e804fdfe0e5fd2e2b2f8a90e2/app/view/templates/adminlog.php#L71"
+      ],
+      "published": "2026-10-04T00:16:35.853"
+    },
+    {
+      "id": "CVE-2026-105128",
+      "description": "LaraDashboard before 1.4.8 contains an open redirect vulnerability that allows remote attackers to redirect users by supplying an unvalidated redirect_url parameter to EmailTemplateController builder and builderEdit. Attackers can send crafted builder links to logged-in users with email template per",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-601"
+      ],
+      "references": [
+        "https://github.com/laradashboard/laradashboard",
+        "https://github.com/laradashboard/laradashboard/blob/v1.4.2/app/Http/Controllers/Backend/EmailTemplateController.php#L142",
+        "https://github.com/laradashboard/laradashboard/blob/v1.4.2/app/Http/Controllers/Backend/EmailTemplateController.php#L159"
+      ],
+      "published": "2026-10-04T00:16:36.563"
+    },
+    {
+      "id": "CVE-2026-105131",
+      "description": "ezBookkeeping 1.2.0 before 2.0.1 contains a privilege escalation vulnerability that allows attackers holding an API token to obtain a full session token via /api/v1/tokens/refresh.json. Because TokenRefreshHandler never checks token type, attackers can exchange short-lived or IP-restricted API token",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/mayswind/ezbookkeeping",
+        "https://github.com/mayswind/ezbookkeeping/blob/v2.0.0/pkg/api/tokens.go#L327-L380",
+        "https://github.com/mayswind/ezbookkeeping/commit/9a92b07be8a7034665abfdb35b036210a1d57bf9"
+      ],
+      "published": "2026-10-04T02:16:33.600"
+    },
+    {
+      "id": "CVE-2026-105127",
+      "description": "LaraDashboard 1.4.2 before 1.4.8 applies advanced email validation to unauthenticated forgot-password and reset-password requests, triggering DNS lookups and paid AbstractAPI verification calls. Unauthenticated attackers can submit arbitrary addresses to exhaust the verification quota, making valida",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/laradashboard/laradashboard",
+        "https://github.com/laradashboard/laradashboard/blob/v1.4.2/app/Http/Requests/Auth/ForgotPasswordRequest.php#L22-L27",
+        "https://github.com/laradashboard/laradashboard/blob/v1.4.2/app/Http/Requests/Auth/ResetPasswordRequest.php#L23-L30"
+      ],
+      "published": "2026-10-04T00:16:36.397"
+    },
+    {
+      "id": "CVE-2026-104118",
+      "description": "The Razorpay for WooCommerce WordPress plugin before 4.8.8 does not perform ownership or authorization checks on a REST API route used during checkout, allowing unauthenticated attackers to modify the shipping information stored on arbitrary orders.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/d94ebc87-c404-4b30-8291-26c4bc2eb63b/"
+      ],
+      "published": "2026-10-04T07:16:31.933"
+    },
+    {
+      "id": "CVE-2026-105097",
+      "description": "A vulnerability was identified in Omega Solution CoinEx Crypto 2025. This impacts an unknown function of the file /customer-currency/ of the component Customer Information API. The manipulation of the argument ID leads to authorization bypass. Remote exploitation of the attack is possible. The explo",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/4m3rr0r/PoCVulDb/issues/25",
+        "https://vuldb.com/cve/CVE-2026-105097",
+        "https://vuldb.com/submit/894322"
+      ],
+      "published": "2026-10-04T03:16:49.460"
+    },
+    {
+      "id": "CVE-2026-105098",
+      "description": "A security flaw has been discovered in Omega Solution CoinEx Crypto 2025. Affected is an unknown function of the file /ticket/customer of the component Support Ticket API. The manipulation of the argument status/page/count results in information disclosure. The attack can be executed remotely. The e",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-200",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/4m3rr0r/PoCVulDb/issues/26",
+        "https://vuldb.com/cve/CVE-2026-105098",
+        "https://vuldb.com/submit/894324"
+      ],
+      "published": "2026-10-04T04:16:36.140"
+    },
+    {
+      "id": "CVE-2026-105125",
+      "description": "LaraDashboard before 1.4.8 contains a path traversal vulnerability that allows unauthenticated attackers to read JSON files by manipulating the {lang} route segment. On Windows hosts, attackers can send URL-encoded backslash sequences like ..%5C to escape resources/lang and read composer.json or oth",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/laradashboard/laradashboard",
+        "https://github.com/laradashboard/laradashboard/blob/v1.4.2/routes/api.php#L36-L46",
+        "https://github.com/laradashboard/laradashboard/commit/aa5d33a32ccef07618ae8687247540d73a21505e"
+      ],
+      "published": "2026-10-04T00:16:35.990"
+    },
+    {
+      "id": "CVE-2026-105130",
+      "description": "LaraDashboard from 1.4.0 before 1.4.8 contains a race condition vulnerability in RegisterController::register that allows unauthenticated attackers to bypass the per-IP daily registration limit. Attackers can send many concurrent registration requests from one IP so all pass RegistrationGuardService",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://github.com/laradashboard/laradashboard",
+        "https://github.com/laradashboard/laradashboard/blob/v1.4.2/app/Http/Controllers/Auth/RegisterController.php#L175-L188",
+        "https://github.com/laradashboard/laradashboard/blob/v1.4.2/app/Services/Auth/RegistrationGuardService.php#L77-L105"
+      ],
+      "published": "2026-10-04T00:16:36.893"
+    },
+    {
+      "id": "CVE-2026-105099",
+      "description": "A weakness has been identified in Omega Solution CoinEx Crypto 2025. Affected by this vulnerability is an unknown functionality of the file /user/ticket of the component Ticket Attachment Upload. This manipulation causes cross site scripting. The attack is possible to be carried out remotely. The ex",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/4m3rr0r/PoCVulDb/issues/27",
+        "https://vuldb.com/cve/CVE-2026-105099",
+        "https://vuldb.com/submit/894325"
+      ],
+      "published": "2026-10-04T05:16:26.010"
+    },
+    {
+      "id": "CVE-2026-104119",
+      "description": "The Simple Shopping Cart WordPress plugin before 5.2.6 does not escape some of its settings field values before outputting them on an admin settings page, allowing high-privilege users such as administrators to perform Stored Cross-Site Scripting attacks, which is notably impactful on multisite inst",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/d6ee7720-9c2d-48b3-b238-0da4fed398a3/"
+      ],
+      "published": "2026-10-04T07:16:32.963"
+    }
+  ]
+}
