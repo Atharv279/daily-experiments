@@ -1,0 +1,361 @@
+{
+  "timestamp": "2026-10-08T00:16:45.539065+00:00",
+  "scan_id": "c4f9dc4795",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 5,
+      "MEDIUM": 11,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        3
+      ],
+      [
+        "CWE-89",
+        2
+      ],
+      [
+        "CWE-772",
+        2
+      ],
+      [
+        "CWE-147",
+        1
+      ],
+      [
+        "CWE-522",
+        1
+      ]
+    ],
+    "threat_index": 312.4,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 312.4,
+        "yesterday": 318.6,
+        "change_pct": -1.9
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-82989",
+      "description": "There is an input injection in vCast exposed network services in ViewSonic ViewBoard that allows a remote, unauthenticated attacker to inject arbitrary input into service endpoints via network-based HTTP requests to unauthenticated endpoints",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-74",
+        "CWE-147"
+      ],
+      "references": [
+        "https://blog.l3afs.space/posts/Vcast-Viewsonic-RCE-chain/",
+        "https://kb.cert.org/vuls/id/234131"
+      ],
+      "published": "2026-10-06T00:16:37.097"
+    },
+    {
+      "id": "CVE-2026-105763",
+      "description": "Twenty is an open-source CRM (customer relationship management) platform. From 1.20.10 until 2.7.0, the /metadata GraphQL connectedAccounts query returned connectionParameters from ConnectedAccountDTO for every connected account in a workspace, including plaintext IMAP, SMTP, and CalDAV passwords, b",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://github.com/twentyhq/twenty/commit/57f13c9b9230f3c4c293ea6f3d8901990e6902c4",
+        "https://github.com/twentyhq/twenty/pull/20673",
+        "https://github.com/twentyhq/twenty/security/advisories/GHSA-mq5c-qp77-2cv3"
+      ],
+      "published": "2026-10-06T00:16:33.247"
+    },
+    {
+      "id": "CVE-2026-105762",
+      "description": "Dify is an open-source LLM app development platform. Prior to 1.13.0, the /console/api/remote-files/upload endpoint in api/controllers/web/remote_files.py accepted an attacker-controlled URL without authentication and caused the Dify server to retrieve it. A remote attacker could use the endpoint to",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/langgenius/dify/commit/2f87ecc0ce1d05ab3ef9537f29b84a5fa5823017",
+        "https://github.com/langgenius/dify/pull/32236",
+        "https://github.com/langgenius/dify/releases/tag/1.13.0"
+      ],
+      "published": "2026-10-06T00:16:33.090"
+    },
+    {
+      "id": "CVE-2026-105783",
+      "description": "Joplin is an open source note-taking and to-do application that organises notes and lists into notebooks. Prior to 3.7.13, when Joplin Desktop is running with the opt-in Web Clipper server enabled, the server in packages/lib/ClipperServer.ts sends Access-Control-Allow-Origin: * and allows an arbitra",
+      "severity": "HIGH",
+      "score": 8.0,
+      "cwes": [
+        "CWE-346",
+        "CWE-352"
+      ],
+      "references": [
+        "https://github.com/laurent22/joplin/commit/27ae5c0d404ee47ad24862cce917dda6eb2930b7",
+        "https://github.com/laurent22/joplin/pull/16276",
+        "https://github.com/laurent22/joplin/releases/tag/v3.7.13"
+      ],
+      "published": "2026-10-06T00:16:33.770"
+    },
+    {
+      "id": "CVE-2026-105782",
+      "description": "Scrapy is a high-level web crawling and scraping framework for Python. From 1.4.0 until 2.14.2, RefererMiddleware in scrapy/spidermiddlewares/referer.py treated a Referrer-Policy response-header value that resembled a Python import path as a referrer policy class, imported the referenced object, and",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-470"
+      ],
+      "references": [
+        "https://github.com/scrapy/scrapy/commit/945b787a263586cb5803c01c6da57daad8997ae5",
+        "https://github.com/scrapy/scrapy/commit/b6e5c58ae707a3d4bb491537b5519534050047e0",
+        "https://github.com/scrapy/scrapy/releases/tag/2.14.2"
+      ],
+      "published": "2026-10-06T00:16:33.613"
+    },
+    {
+      "id": "CVE-2026-82988",
+      "description": "There exists an arbitrary file download in vCast APK delivery mechanism in ViewSonic ViewBoard unknown allows a remote, unauthenticated attacker to trigger unprivileged APK installation via serving a malicious APK URL through an unauthenticated download endpoint",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-287",
+        "CWE-434",
+        "CWE-502"
+      ],
+      "references": [
+        "https://blog.l3afs.space/posts/Vcast-Viewsonic-RCE-chain/",
+        "https://kb.cert.org/vuls/id/234131"
+      ],
+      "published": "2026-10-06T00:16:36.973"
+    },
+    {
+      "id": "CVE-2026-105471",
+      "description": "A security flaw has been discovered in girishsaraf Online-Appointment-Booking-System up to f427b4757128ca253d33d0cc4e87bbb9c999a4d5. Impacted is an unknown function of the file signup.php of the component Registration Handler. The manipulation of the argument fname results in sql injection. The atta",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/girishsaraf/Online-Appointment-Booking-System/",
+        "https://github.com/girishsaraf/Online-Appointment-Booking-System/issues/9",
+        "https://vuldb.com/cve/CVE-2026-105471"
+      ],
+      "published": "2026-10-06T00:16:32.920"
+    },
+    {
+      "id": "CVE-2026-105472",
+      "description": "A weakness has been identified in girishsaraf Online-Appointment-Booking-System up to f427b4757128ca253d33d0cc4e87bbb9c999a4d5. The affected element is an unknown function of the file book.php of the component Booking Handler. This manipulation of the argument Doctor/appointment causes sql injection",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/girishsaraf/Online-Appointment-Booking-System/",
+        "https://github.com/girishsaraf/Online-Appointment-Booking-System/issues/10",
+        "https://vuldb.com/cve/CVE-2026-105472"
+      ],
+      "published": "2026-10-06T01:16:35.017"
+    },
+    {
+      "id": "CVE-2026-104038",
+      "description": "A flaw was found in sssd. A remote attacker can cause a denial of service (DoS) by submitting a certificate that lacks an expected Security Identifier (SID) extension. In deployments configured with SID-based certificate mapping rules, the service fails to verify the presence of the extension before",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-104038",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2478980",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2478980"
+      ],
+      "published": "2026-10-06T01:16:34.853"
+    },
+    {
+      "id": "CVE-2026-104036",
+      "description": "A flaw was found in SSSD's NFS idmap plugin. When retrieving cached user or group names, the plugin detects if an entry exceeds the destination buffer size but fails to abort before copying data. A local attacker can trigger this vulnerability by requesting identity lookups that resolve to oversized",
+      "severity": "MEDIUM",
+      "score": 5.8,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-104036",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2479057"
+      ],
+      "published": "2026-10-06T01:16:34.567"
+    },
+    {
+      "id": "CVE-2026-104031",
+      "description": "A flaw was found in SSSD. In configurations where the autofs responder service is enabled, memory allocated during successful request processing is not released until the client connection terminates. A local attacker can exploit this vulnerability by maintaining an open connection and repeatedly su",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-772"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-104031",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2479418"
+      ],
+      "published": "2026-10-06T01:16:33.843"
+    },
+    {
+      "id": "CVE-2026-104032",
+      "description": "A flaw was found in SSSD. An unprivileged local user can repeatedly request master automount map updates through the autofs responder due to missing authorization checks. This triggers global cache invalidation and forces repeated lookups to backend directory providers, leading to a Denial of Servic",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-408"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-104032",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2479381"
+      ],
+      "published": "2026-10-06T01:16:33.997"
+    },
+    {
+      "id": "CVE-2026-104035",
+      "description": "A flaw was found in SSSD. An issue in the Kerberos Credential Manager (KCM) responder allows a local user to cause a Denial of Service (DoS) by maintaining a persistent connection and repeatedly storing and destroying credentials. Because the service fails to release cached objects from memory when ",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-772"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-104035",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2479107"
+      ],
+      "published": "2026-10-06T01:16:34.420"
+    },
+    {
+      "id": "CVE-2026-104037",
+      "description": "A flaw was found in SSSD. A local attacker can exploit this issue by sending a specially crafted request with an invalid packet length to the autofs responder UNIX socket. This causes an integer underflow and an out-of-bounds memory read, which can crash the responder process and result in a denial ",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-104037",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2479030",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2479030"
+      ],
+      "published": "2026-10-06T01:16:34.707"
+    },
+    {
+      "id": "CVE-2026-104033",
+      "description": "A flaw was found in SSSD. When configured to enforce account expiration using LDAP (Lightweight Directory Access Protocol) shadow attributes, SSSD fails to treat an expiration value of zero as an expired account. A user with valid credentials for an expired account can exploit this flaw to bypass ac",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-193"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-104033",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2479271",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2479271"
+      ],
+      "published": "2026-10-06T01:16:34.143"
+    },
+    {
+      "id": "CVE-2026-105785",
+      "description": "Joplin is an open source note-taking and to-do application that organises notes and lists into notebooks. Prior to Joplin Server 3.7.2, packages/server/src/models/TokenModel.ts stores CSRF, account-confirmation, email-change, and password-reset tokens without a purpose, and packages/server/src/model",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-620",
+        "CWE-640"
+      ],
+      "references": [
+        "https://github.com/laurent22/joplin/commit/7766eefa11fa006b6a1971da24e0c820cf1d2118",
+        "https://github.com/laurent22/joplin/pull/16274",
+        "https://github.com/laurent22/joplin/security/advisories/GHSA-8qm8-mp6h-qf35"
+      ],
+      "published": "2026-10-06T00:16:34.107"
+    },
+    {
+      "id": "CVE-2026-104034",
+      "description": "A flaw was found in SSSD. A use-after-free vulnerability exists in the Kerberos Credential Manager (KCM) responder during Kerberos ticket-granting ticket (TGT) renewal, where a deferred callback accesses memory that has already been released. An authenticated local user with a renewable Kerberos tic",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-825"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-104034",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2479178"
+      ],
+      "published": "2026-10-06T01:16:34.273"
+    },
+    {
+      "id": "CVE-2026-105784",
+      "description": "Joplin is an open source note-taking and to-do application that organises notes and lists into notebooks. Prior to 3.7.13, selecting a note containing a jsoncanvas fence causes the whiteboard text and file-node components in packages/app-desktop/gui/NoteEditor/NoteBody/WhiteboardEditor/nodes/TextNod",
+      "severity": "MEDIUM",
+      "score": 4.6,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/laurent22/joplin/commit/7fb9ec93e47cec39a548a76e03d7ad660ca0f123",
+        "https://github.com/laurent22/joplin/pull/16275",
+        "https://github.com/laurent22/joplin/releases/tag/v3.7.13"
+      ],
+      "published": "2026-10-06T00:16:33.940"
+    },
+    {
+      "id": "CVE-2026-105764",
+      "description": "Immich is a high-performance self-hosted photo and video management solution. Prior to 3.2.4, an authenticated non-admin user could upload SVG files that thumbnail-generation code in server/src/repositories/media.repository.ts passed to libvips. Files that bypassed libvips' native SVG loader fell th",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/immich-app/immich/releases/tag/v3.2.4",
+        "https://github.com/immich-app/immich/security/advisories/GHSA-q89f-h332-8q2h",
+        "https://github.com/immich-app/immich/security/advisories/GHSA-q89f-h332-8q2h"
+      ],
+      "published": "2026-10-06T00:16:33.450"
+    },
+    {
+      "id": "CVE-2026-105786",
+      "description": "Joplin is an open source note-taking and to-do application that organises notes and lists into notebooks. Prior to 3.7.13, packages/server/src/models/ApplicationModel.ts accepts a caller-chosen application authorization identifier, applications/:id/confirm binds that identifier to a logged-in user t",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-306",
+        "CWE-330",
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/laurent22/joplin/commit/1a0a50afc96d4c228c736293d53de96aa23f4d00",
+        "https://github.com/laurent22/joplin/pull/16270",
+        "https://github.com/laurent22/joplin/releases/tag/v3.7.13"
+      ],
+      "published": "2026-10-06T00:16:34.283"
+    }
+  ]
+}
