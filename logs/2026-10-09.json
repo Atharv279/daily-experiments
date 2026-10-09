@@ -1,0 +1,321 @@
+{
+  "timestamp": "2026-10-09T00:30:37.033887+00:00",
+  "scan_id": "b702c2400d",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 12,
+      "MEDIUM": 5,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-94",
+        7
+      ],
+      [
+        "CWE-22",
+        3
+      ],
+      [
+        "CWE-284",
+        2
+      ],
+      [
+        "CWE-440",
+        1
+      ],
+      [
+        "CWE-522",
+        1
+      ]
+    ],
+    "threat_index": 433.2,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 433.2,
+        "yesterday": 312.4,
+        "change_pct": 38.7
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 2,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-104334",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper control of code generation.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:34.223"
+    },
+    {
+      "id": "CVE-2026-93674",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:35.187"
+    },
+    {
+      "id": "CVE-2026-104335",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper access control.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T00:17:20.553"
+    },
+    {
+      "id": "CVE-2026-88962",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of code generation.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:34.377"
+    },
+    {
+      "id": "CVE-2026-93675",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to an expected dependency confusion.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-440"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:35.320"
+    },
+    {
+      "id": "CVE-2026-97655",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to an incomplete blocklist in the code security scanner.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:35.833"
+    },
+    {
+      "id": "CVE-2026-93449",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of code generation.",
+      "severity": "HIGH",
+      "score": 8.5,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:35.057"
+    },
+    {
+      "id": "CVE-2026-103360",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to improper limitation of a pathname to a restricted directory.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:34.087"
+    },
+    {
+      "id": "CVE-2026-93445",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of generation of code.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:34.657"
+    },
+    {
+      "id": "CVE-2026-101331",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to insufficiently protected credentials.",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:33.957"
+    },
+    {
+      "id": "CVE-2026-93677",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to exposure of sensitive information to an unauthorized actor.",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:35.457"
+    },
+    {
+      "id": "CVE-2026-93678",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to improper authorization.",
+      "severity": "HIGH",
+      "score": 7.6,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:35.580"
+    },
+    {
+      "id": "CVE-2026-93443",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in code.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:34.523"
+    },
+    {
+      "id": "CVE-2026-93447",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow an attacker with access to the server secret and Redis write access to submit a malicious serialized cache value. When the value was retrieved, deserialization could have executed attacker-controlled code with the privileges of the service process.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:34.787"
+    },
+    {
+      "id": "CVE-2026-101329",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to improper access control.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:32.837"
+    },
+    {
+      "id": "CVE-2026-93448",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to improper limitation of a pathname to a restricted directory.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:34.927"
+    },
+    {
+      "id": "CVE-2026-97671",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to a path traversal vulnerability.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:35.980"
+    },
+    {
+      "id": "CVE-2026-80048",
+      "description": "A flaw was found in `sssd-kcm`. A local user or process able to connect to the `sssd-kcm` UNIX socket can exploit this vulnerability. By sending a large request length header and then stalling the connection, an attacker can cause the system to preallocate significant memory. This leads to memory ex",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-80048",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2479377",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2479377"
+      ],
+      "published": "2026-10-07T00:17:21.067"
+    },
+    {
+      "id": "CVE-2026-93679",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to cause a denial of service due to uncontrolled resource consumption during ZIP file extraction.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7290694"
+      ],
+      "published": "2026-10-07T01:16:35.710"
+    },
+    {
+      "id": "CVE-2026-106583",
+      "description": "In ssh in OpenSSH before 10.6, a $ or \\ character can occur in a command-line username, leading to injection.",
+      "severity": "LOW",
+      "score": 2.5,
+      "cwes": [
+        "CWE-99"
+      ],
+      "references": [
+        "https://www.openssh.org/releasenotes.html#10.6"
+      ],
+      "published": "2026-10-07T00:17:20.743"
+    }
+  ]
+}
