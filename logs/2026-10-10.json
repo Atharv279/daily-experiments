@@ -1,0 +1,325 @@
+{
+  "timestamp": "2026-10-10T00:07:44.568030+00:00",
+  "scan_id": "158fad16a2",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 1,
+      "MEDIUM": 5,
+      "LOW": 1,
+      "UNKNOWN": 13
+    },
+    "top_cwes": [
+      [
+        "CWE-121",
+        3
+      ],
+      [
+        "CWE-787",
+        2
+      ],
+      [
+        "CWE-78",
+        2
+      ],
+      [
+        "CWE-502",
+        1
+      ],
+      [
+        "CWE-79",
+        1
+      ]
+    ],
+    "threat_index": 84.8,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 84.8,
+        "yesterday": 433.2,
+        "change_pct": -80.4
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 2,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-82627",
+      "description": "The Uncanny Automator \u2013 AI + Automation for WordPress | AI Agent, AI Page Builder, Free AI Usage Included plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 7.6.1.1 via deserialization of untrusted input. This makes it possible for authenticated attacker",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3721435/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/ce918263-dc4a-4db1-a506-a9e6c8125741?source=cve"
+      ],
+      "published": "2026-10-08T02:16:54.263"
+    },
+    {
+      "id": "CVE-2017-20283",
+      "description": "NXP MQX Classic before 5.0 contains an out-of-bounds write vulnerability in the RTCS UDP recvfrom() implementation. Improper enforcement of the application-supplied receive buffer length may allow a crafted UDP packet to overflow the destination buffer, resulting in memory corruption, or denial of s",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://community.nxp.com/t5/MQX-Software-Solutions/Horrible-memory-leak-in-recvfrom-that-has-gone-completely/m-p/705993"
+      ],
+      "published": "2026-10-08T03:16:32.343"
+    },
+    {
+      "id": "CVE-2026-94154",
+      "description": "The Aurora Heatmap plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018url\u2019 parameter in all versions up to, and including, 1.7.2 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3712276/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/1b0094ed-1066-44da-b317-de8db91fa013?source=cve"
+      ],
+      "published": "2026-10-08T00:16:35.333"
+    },
+    {
+      "id": "CVE-2024-8122",
+      "description": "The WSO2 Identity Server fails to enforce a default expiry time for SMS One-Time Passwords (OTPs) used in multi-factor authentication (MFA). This allows unused OTPs to remain valid indefinitely, presenting an opportunity for malicious actors to conduct brute force attacks by repeatedly guessing the ",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-613"
+      ],
+      "references": [
+        "https://security.docs.wso2.com/en/latest/security-announcements/security-advisories/2026/WSO2-2024-3149/"
+      ],
+      "published": "2026-10-08T01:16:32.037"
+    },
+    {
+      "id": "CVE-2026-17538",
+      "description": "The LatePoint - Appointment Booking & Reservation plugin for WordPress is vulnerable to Insecure Direct Object Reference in versions up to, and including, 5.6.9. This is due to the process_step_customer() function using is_user_logged_in() as the sole gate before merging POSTed customer data into an",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3631493/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/83cdc51f-b5e1-42b9-972a-7e781f97b43e?source=cve"
+      ],
+      "published": "2026-10-08T00:16:35.153"
+    },
+    {
+      "id": "CVE-2026-107315",
+      "description": "pgjdbc, the PostgreSQL JDBC Driver, versions 42.7.4 through 42.7.13 pads a value that is shorter than its declared length with bytes left in its send buffer instead of zeros, and the server stores those bytes as part of the value. The bytes are messages the driver sent earlier on the same connection",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-201",
+        "CWE-226"
+      ],
+      "references": [
+        "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-f64h-wr5q-3qf3",
+        "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-f64h-wr5q-3qf3"
+      ],
+      "published": "2026-10-08T00:16:33.690"
+    },
+    {
+      "id": "CVE-2026-87726",
+      "description": "Insufficient API bounds checking in phalFelica in NXP NXPNfcRdLib RC663 through 07.14.00_Pub may allow an attacker with privileges or an untrusted third party to access unintended memory regions, potentially leading to limited loss of confidentiality, integrity, and availability. All software versio",
+      "severity": "LOW",
+      "score": 3.9,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://community.nxp.com/t5/Other-NXP-Products/NXPNfcRdLib-vulnerability-in-module-phalFelica-CVE-2026-87726/m-p/2414096#M33365",
+        "https://www.nxp.com/support/support/product-security-vulnerability:PSIRT"
+      ],
+      "published": "2026-10-08T02:16:54.713"
+    },
+    {
+      "id": "CVE-2026-87679",
+      "description": "When Brocade Fabric OS versions before 10.0.1 processes trunk configuration operations, the application parses user-supplied list strings into dynamically allocated heap arrays without enforcing boundary checks on the maximum allowable number of elements. An authenticated administrator can exploit t",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://support.broadcom.com/external/content/SecurityAdvisories/0/39073"
+      ],
+      "published": "2026-10-08T01:16:32.313"
+    },
+    {
+      "id": "CVE-2026-87680",
+      "description": "A command injection vulnerability in the REST API management interface of Brocade Fabric OS versions before 10.0.1 allows an authenticated user to execute arbitrary system commands via crafted input parameters.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://support.broadcom.com/external/content/SecurityAdvisories/0/39074"
+      ],
+      "published": "2026-10-08T01:16:32.480"
+    },
+    {
+      "id": "CVE-2026-87681",
+      "description": "An Access Control Bypass vulnerability exists in the Role-Based Access Control (RBAC) validation engine of Brocade Fabric OS versions before 10.0.1. When processing certain management protocol operations, the RBAC engine incorrectly categorizes non-standard action opcodes during permission checks. T",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://support.broadcom.com/external/content/SecurityAdvisories/0/39075"
+      ],
+      "published": "2026-10-08T01:16:32.620"
+    },
+    {
+      "id": "CVE-2026-102488",
+      "description": "In affected versions, Octopus Server incorrectly evaluates multiple scoped permission assignments, allowing a highly privileged user to obtain deployment permissions beyond those actually granted to them.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://advisories.octopus.com/post/2026/sa2026-12"
+      ],
+      "published": "2026-10-08T02:16:53.003"
+    },
+    {
+      "id": "CVE-2026-87682",
+      "description": "Multiple OS Command Injection vulnerabilities exist in the management interface and session processing routines of Brocade Fabric OS versions before 10.0.1. Input processing flaws during remote management connection validation and session verification for directory-based user accounts allow untruste",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://support.broadcom.com/external/content/SecurityAdvisories/0/39076"
+      ],
+      "published": "2026-10-08T02:16:54.420"
+    },
+    {
+      "id": "CVE-2026-87683",
+      "description": "Multiple stack-based buffer overflow vulnerabilities exist in the REST API management component of Brocade Fabric OS versions prior to 10.0.1. When processing API request payloads (such as device configuration attributes or port mapping requests) the REST API service fails to properly validate incom",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://support.broadcom.com/external/content/SecurityAdvisories/0/39077"
+      ],
+      "published": "2026-10-08T02:16:54.563"
+    },
+    {
+      "id": "CVE-2026-87659",
+      "description": "A critical authorization bypass vulnerability exists in the Management Server handling of Brocade Fabric OS versions before 10.0.1. A compromised switch connected to the fabric can transmit crafted inband Fibre Channel vendor-unique CT (Common Transport) management requests to bypass administrative ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://support.broadcom.com/external/content/SecurityAdvisories/0/39153"
+      ],
+      "published": "2026-10-08T03:16:35.820"
+    },
+    {
+      "id": "CVE-2026-87665",
+      "description": "A stack-based buffer overflow vulnerability exists in the Internet Key Exchange (IKEv2) protocol handler on Brocade Fabric OS versions before 10.0.1. The vulnerability occurs when processing initial IKE key exchange requests on extension switches or blades running IPsec-enabled Fibre Channel over IP",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://support.broadcom.com/external/content/SecurityAdvisories/0/39148"
+      ],
+      "published": "2026-10-08T03:16:35.960"
+    },
+    {
+      "id": "CVE-2026-87668",
+      "description": "A stack-based buffer overflow vulnerability exists in the diagnostic execution utility of Brocade Fabric OS versions before 10.0.1. When processing command arguments for diagnostic operations, the utility tokenizes user-supplied input into an internal argument array without enforcing boundary checks",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://support.broadcom.com/external/content/SecurityAdvisories/0/39152"
+      ],
+      "published": "2026-10-08T03:16:36.100"
+    },
+    {
+      "id": "CVE-2026-87669",
+      "description": "A missing authorization check in Brocade Fabric OS versions before 10.0.1 REST API interface of affected platform releases allows an authenticated user, regardless of their assigned role or administrative scope, to retrieve complete Monitoring and Alerting Policy Suite (MAPS) violation data across a",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://support.broadcom.com/external/content/SecurityAdvisories/0/39139"
+      ],
+      "published": "2026-10-08T03:16:36.237"
+    },
+    {
+      "id": "CVE-2026-87670",
+      "description": "An authorization logic vulnerability exists in the Brocade Fabric OS versions before 10.0.1 REST API gateway. The internal gate guarding restricted management endpoints relies exclusively on client-controlled HTTP headers. An authenticated user with any valid REST session can spoof these headers to ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-290"
+      ],
+      "references": [
+        "https://support.broadcom.com/external/content/SecurityAdvisories/0/39140"
+      ],
+      "published": "2026-10-08T03:16:36.403"
+    },
+    {
+      "id": "CVE-2026-87671",
+      "description": "An out-of-bounds memory read vulnerability exists in the web management daemon of Brocade Fabric OS versions before 10.0.1. Unauthenticated HTTP endpoints process specific URL query parameters without validating array index boundaries or performing numerical range checks. An unauthenticated remote a",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://support.broadcom.com/external/content/SecurityAdvisories/0/39141"
+      ],
+      "published": "2026-10-08T03:16:36.650"
+    },
+    {
+      "id": "CVE-2026-87672",
+      "description": "An information disclosure vulnerability exists in the SupportLink diagnostic collection utilities of Brocade Fabric OS versions before 10.0.1. When SupportLink is configured to use an authenticated HTTP proxy, the system stores the full proxy URL. Anyone with access to the diagnostic support bundle,",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-532"
+      ],
+      "references": [
+        "https://support.broadcom.com/external/content/SecurityAdvisories/0/39142"
+      ],
+      "published": "2026-10-08T03:16:36.810"
+    }
+  ]
+}
