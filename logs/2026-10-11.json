@@ -1,0 +1,342 @@
+{
+  "timestamp": "2026-10-11T09:04:40.773259+00:00",
+  "scan_id": "61ba04c0a6",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 4,
+      "HIGH": 5,
+      "MEDIUM": 5,
+      "LOW": 5,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-415",
+        2
+      ],
+      [
+        "CWE-787",
+        2
+      ],
+      [
+        "CWE-770",
+        2
+      ],
+      [
+        "CWE-476",
+        2
+      ],
+      [
+        "CWE-416",
+        1
+      ]
+    ],
+    "threat_index": 343.4,
+    "critical_count": 4
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 343.4,
+        "yesterday": 84.8,
+        "change_pct": 305.0
+      },
+      "critical_count": {
+        "today": 4,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-5759",
+      "description": "A double free and use-after-free vulnerability in the RdbLoadDeletedNodes function of the RDB graph decoders (src/serializers/decoders/*/decode_graph_entities.c) in FalkorDB before 4.18.1 allows a remote attacker who can issue Redis replication commands (for example, against an instance with no pass",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-415",
+        "CWE-416"
+      ],
+      "references": [
+        "https://github.com/FalkorDB/FalkorDB/commit/523d98ac7ffe99f11a9c95c258025c235f0dff4c",
+        "https://github.com/FalkorDB/FalkorDB/pull/1843",
+        "https://github.com/FalkorDB/FalkorDB/releases/tag/v4.18.1"
+      ],
+      "published": "2026-10-09T05:16:44.920"
+    },
+    {
+      "id": "CVE-2026-107908",
+      "description": "A heap-based out-of-bounds write in the BoltReadHandler function (src/bolt/bolt_api.c) in FalkorDB before 4.20.0 allows a remote unauthenticated attacker to cause a denial of service and possibly execute arbitrary code by sending a Bolt RESET message with an attacker-chosen chunk size to the Bolt po",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/FalkorDB/FalkorDB/commit/0b11a00b34b25c4d4fdfe55f0a35c8a00593bd7d",
+        "https://github.com/FalkorDB/FalkorDB/pull/2170",
+        "https://github.com/FalkorDB/FalkorDB/releases/tag/v4.20.0"
+      ],
+      "published": "2026-10-09T06:17:10.777"
+    },
+    {
+      "id": "CVE-2026-7826",
+      "description": "A heap-based out-of-bounds read in the BufferSerializerIOv2_ReadBuffer function (src/serializers/serializer_io.c) in FalkorDB before 4.18.4 allows a remote attacker who can issue Redis replication commands (for example, against an instance with no password configured) to cause a denial of service or",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/FalkorDB/FalkorDB/commit/55d986f45ecd5d80f7a9e5e138e8b0f96535b48c",
+        "https://github.com/FalkorDB/FalkorDB/pull/1972",
+        "https://github.com/FalkorDB/FalkorDB/releases/tag/v4.18.4"
+      ],
+      "published": "2026-10-09T05:16:45.150"
+    },
+    {
+      "id": "CVE-2026-107909",
+      "description": "A heap-based out-of-bounds write in the ws_read_frame function (src/bolt/ws.c) and the buffer_apply_mask function (src/bolt/buffer.c) in FalkorDB before 4.20.0 allows a remote unauthenticated attacker to cause a denial of service and possibly corrupt heap memory by sending a WebSocket frame with a 6",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/FalkorDB/FalkorDB/commit/0b11a00b34b25c4d4fdfe55f0a35c8a00593bd7d",
+        "https://github.com/FalkorDB/FalkorDB/pull/2170",
+        "https://github.com/FalkorDB/FalkorDB/releases/tag/v4.20.0"
+      ],
+      "published": "2026-10-09T06:17:12.303"
+    },
+    {
+      "id": "CVE-2025-15700",
+      "description": "The AWP Classifieds WordPress plugin before 4.4.9 does not validate the type of files extracted from an uploaded ZIP archive during its listing-import feature, allowing users with the AWP Classifieds WordPress plugin before 4.4.9's management capability to upload arbitrary PHP files to a publicly ac",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/6d3e7721-41d4-4e5f-9a44-c601f0cdfe50/"
+      ],
+      "published": "2026-10-09T07:17:16.640"
+    },
+    {
+      "id": "CVE-2026-7827",
+      "description": "A stack-based buffer overflow in the _RdbLoadEntity function of the RDB graph decoders (src/serializers/decoders/*/decode_graph_entities.c) in FalkorDB before 4.18.4 allows a remote attacker who can issue Redis replication commands (for example, against an instance with no password configured) to ca",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/FalkorDB/FalkorDB/commit/7d15431aadf37588fadc2578b90c3afb5e8daa94",
+        "https://github.com/FalkorDB/FalkorDB/pull/1973",
+        "https://github.com/FalkorDB/FalkorDB/releases/tag/v4.18.4"
+      ],
+      "published": "2026-10-09T05:16:45.327"
+    },
+    {
+      "id": "CVE-2026-107910",
+      "description": "An improper authentication vulnerability in the is_authenticated function (src/bolt/bolt_api.c) in FalkorDB before 4.20.0 allows a remote unauthenticated attacker to execute graph queries without credentials through the Bolt endpoint. The function decides whether a password is required by issuing an",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/FalkorDB/FalkorDB/commit/0b11a00b34b25c4d4fdfe55f0a35c8a00593bd7d",
+        "https://github.com/FalkorDB/FalkorDB/pull/2170",
+        "https://github.com/FalkorDB/FalkorDB/releases/tag/v4.20.0"
+      ],
+      "published": "2026-10-09T06:17:12.457"
+    },
+    {
+      "id": "CVE-2026-107914",
+      "description": "Backdrop CMS 1.34 before 1.34.5 and 1.35 before 1.35.1 doesn't sufficiently protect configuration exports when delivering a compressed archive. This vulnerability is mitigated by the fact that an export must have been previously requested by someone with the \"Synchronize, import, and export configur",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-459"
+      ],
+      "references": [
+        "https://backdropcms.org/security/backdrop-sa-core-2026-006",
+        "https://github.com/backdrop/backdrop/commit/1ae67061d9d487bb6cb3b8611191354052f34749",
+        "https://github.com/backdrop/backdrop/commit/347c8e558254633205f431ce5c12321a7ae9248e"
+      ],
+      "published": "2026-10-09T06:17:12.777"
+    },
+    {
+      "id": "CVE-2026-107911",
+      "description": "A type confusion vulnerability in the _read_flags function (src/commands/cmd_dispatcher.c) in FalkorDB before 4.20.0 allows a remote authenticated attacker who can run GRAPH.QUERY to cause a denial of service and possibly disclose or corrupt memory. The function accepts a --bolt argument from any cl",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-843"
+      ],
+      "references": [
+        "https://github.com/FalkorDB/FalkorDB/commit/0b11a00b34b25c4d4fdfe55f0a35c8a00593bd7d",
+        "https://github.com/FalkorDB/FalkorDB/pull/2170",
+        "https://github.com/FalkorDB/FalkorDB/releases/tag/v4.20.0"
+      ],
+      "published": "2026-10-09T06:17:12.620"
+    },
+    {
+      "id": "CVE-2026-106097",
+      "description": "The Code Snippets WordPress plugin before 3.10.0 does not sanitise and escape a user-supplied parameter before using it in a SQL query in some of its snippet-migration import endpoints, which are accessible to any user holding site-administration capabilities; on a WordPress Multisite network those ",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/f5206366-2e9c-42d5-90b9-ddfaf39aa02f/"
+      ],
+      "published": "2026-10-09T07:17:17.997"
+    },
+    {
+      "id": "CVE-2026-107889",
+      "description": "A flaw was found in the login theme rendering component of Keycloak. The issue occurs because the security filter responsible for cleaning user input can be bypassed, allowing a realm administrator to store malicious scripts in display fields. This could result in unauthorized JavaScript execution i",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-107889",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2548355"
+      ],
+      "published": "2026-10-09T05:16:44.583"
+    },
+    {
+      "id": "CVE-2026-87109",
+      "description": "An authenticated Ops Manager organization member can retrieve another member's pending authenticator enrollment seed through user-listing endpoints while that member's enrollment is unconfirmed. This results in disclosure of secret authentication material to another member of the same organization o",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-201"
+      ],
+      "references": [
+        "https://www.mongodb.com/docs/ops-manager/current/release-notes/application/#ops-manager-server-8027"
+      ],
+      "published": "2026-10-09T06:17:13.140"
+    },
+    {
+      "id": "CVE-2026-87110",
+      "description": "An unauthenticated user with network access to the Ops Manager web port can repeatedly request monitoring endpoints that perform costly work without rate limiting. This can temporarily slow other traffic served by the same process while requests continue.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://www.mongodb.com/docs/ops-manager/current/release-notes/application/#ops-manager-server-8027"
+      ],
+      "published": "2026-10-09T06:17:13.280"
+    },
+    {
+      "id": "CVE-2026-107888",
+      "description": "OpenPrinting CUPS before 2.4.20 contains a NULL pointer dereference in cupsdCheckJobs() when a job marked job-held-on-create refers to a temporary printer that has been automatically deleted. Temporary-printer cleanup can remove the destination without canceling its held jobs, and the scheduler dere",
+      "severity": "MEDIUM",
+      "score": 5.1,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/OpenPrinting/cups/security/advisories/GHSA-qqm8-4q5h-jg55"
+      ],
+      "published": "2026-10-09T05:16:44.407"
+    },
+    {
+      "id": "CVE-2026-107885",
+      "description": "OpenPrinting CUPS through 2.4.20 contains a resource-exhaustion vulnerability in the submission-timeout handling of cupsdCheckJobs(). The scheduler suppresses timeout processing for all pending jobs whenever any client connection has an in-flight Send-Document operation, without matching that connec",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/OpenPrinting/cups/security/advisories/GHSA-hhw5-qqmc-p6rg",
+        "https://github.com/OpenPrinting/cups/security/advisories/GHSA-hhw5-qqmc-p6rg"
+      ],
+      "published": "2026-10-09T04:18:04.940"
+    },
+    {
+      "id": "CVE-2026-107890",
+      "description": "OpenPrinting CUPS before 2.4.20 contains a NULL pointer dereference caused by repeated IPP group tags in job-creation requests. IPP parsing creates unnamed separator attributes with IPP_TAG_ZERO, but add_job() converts these separators to IPP_TAG_JOB. During job startup, get_options()/ipp_length() s",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/OpenPrinting/cups/security/advisories/GHSA-wjc4-qhjr-5m5x"
+      ],
+      "published": "2026-10-09T05:16:44.730"
+    },
+    {
+      "id": "CVE-2026-106095",
+      "description": "The Code Snippets WordPress plugin before 3.10.0 does not perform a capability check on one of its snippet-management actions and derives the network scope of the targeted snippet from the request instead of from the stored record, allowing an administrator of a single subsite on a multisite network",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/4aeddbb6-d7a9-48cb-96ea-5898586bce04/"
+      ],
+      "published": "2026-10-09T07:17:17.897"
+    },
+    {
+      "id": "CVE-2026-87108",
+      "description": "An authenticated Ops Manager user with a read-only project role can retrieve a daily host monitoring record associated with a different project when they possess the required record identifier. Insufficient ownership validation can expose deployment metadata, including host and configuration details",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://www.mongodb.com/docs/ops-manager/current/release-notes/application/#ops-manager-server-8027"
+      ],
+      "published": "2026-10-09T06:17:12.980"
+    },
+    {
+      "id": "CVE-2026-107886",
+      "description": "OpenPrinting CUPS before 2.4.20 contains a double-free in printer-class management. When CUPS-Add-Modify-Class replaces an existing class member list, add_class() frees pclass->printers without clearing the pointer. If subsequent validation fails, the class retains the dangling pointer; CUPS-Delete-",
+      "severity": "LOW",
+      "score": 2.3,
+      "cwes": [
+        "CWE-415"
+      ],
+      "references": [
+        "https://github.com/OpenPrinting/cups/security/advisories/GHSA-pwg4-pv39-8c22",
+        "https://github.com/OpenPrinting/cups/security/advisories/GHSA-pwg4-pv39-8c22"
+      ],
+      "published": "2026-10-09T04:18:05.163"
+    },
+    {
+      "id": "CVE-2026-101028",
+      "description": "Incorrect Authorization vulnerability in ash-project ash allows an actor to infer data in related records they cannot read via Ash.count/2, Ash.exists/2 and Ash.aggregate/3.\n\nAsh.Actions.Aggregate.run/4 (lib/ash/actions/aggregate.ex) applied only the root resource's read policy before running the ag",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-101028.html",
+        "https://github.com/ash-project/ash/commit/30eaf1c6e8524527b703e3c4bfeff7967ee0b37c",
+        "https://github.com/ash-project/ash/commit/80936187b27ee94f15cd875affd3141b5cb23185"
+      ],
+      "published": "2026-10-09T07:17:17.627"
+    }
+  ]
+}
