@@ -1,0 +1,354 @@
+{
+  "timestamp": "2026-10-12T09:26:27.145617+00:00",
+  "scan_id": "da053f991b",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 5,
+      "HIGH": 2,
+      "MEDIUM": 12,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        6
+      ],
+      [
+        "CWE-269",
+        3
+      ],
+      [
+        "CWE-287",
+        2
+      ],
+      [
+        "CWE-434",
+        2
+      ],
+      [
+        "CWE-200",
+        2
+      ]
+    ],
+    "threat_index": 377.9,
+    "critical_count": 5
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 377.9,
+        "yesterday": 343.4,
+        "change_pct": 10.0
+      },
+      "critical_count": {
+        "today": 5,
+        "yesterday": 4,
+        "change_pct": 25.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-108474",
+      "description": "In JetBrains Exposed before 1.5.1 sQL injection was possible via unescaped string arguments of several SQL functions",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://www.jetbrains.com/privacy-security/issues-fixed/"
+      ],
+      "published": "2026-10-10T00:17:03.673"
+    },
+    {
+      "id": "CVE-2026-104732",
+      "description": "The Advanced IP Blocker plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 8.13.13 The vulnerability exists because `handle_login_action()` performs no server-side check \u2014 via transient, session marker, or equivalent \u2014 that a requester completed step-1 ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/advanced-ip-blocker/tags/8.13.13/includes/class-advaipbl-2fa-manager.php#L71",
+        "https://plugins.trac.wordpress.org/browser/advanced-ip-blocker/tags/8.13.13/includes/class-advaipbl-main.php#L519",
+        "https://plugins.trac.wordpress.org/browser/advanced-ip-blocker/tags/8.13.13/includes/class-advaipbl-main.php#L6875"
+      ],
+      "published": "2026-10-10T04:18:08.493"
+    },
+    {
+      "id": "CVE-2026-94589",
+      "description": "The Extensions For CF7 (Contact form 7 Database, Conditional Fields and Redirection) plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 3.4.5 via the extcf7_submit function. This is due to missing file extension, MIME type, and size validation in the si",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/extensions-for-cf7/tags/3.4.5/admin/include/class.cf7-signature.php#L222",
+        "https://plugins.trac.wordpress.org/browser/extensions-for-cf7/tags/3.4.5/admin/include/class.cf7-signature.php#L82",
+        "https://plugins.trac.wordpress.org/browser/extensions-for-cf7/tags/3.4.5/includes/class.cf7-extensions.php#L289"
+      ],
+      "published": "2026-10-10T04:18:19.713"
+    },
+    {
+      "id": "CVE-2026-103889",
+      "description": "The 3D Product configurator for WooCommerce plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.16.2 via the 'xpv_image' parameter parameter. This is due to missing authentication and nonce checks on the wp_loaded handler combined with no sanitization ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/expivi/tags/2.16.2/classes/pdf/class-pdf.php#L34",
+        "https://plugins.trac.wordpress.org/browser/expivi/tags/2.16.2/classes/woocommerce/class-expivi-cart-manager.php#L212",
+        "https://plugins.trac.wordpress.org/browser/expivi/tags/2.16.2/classes/woocommerce/class-expivi-cart-manager.php#L238"
+      ],
+      "published": "2026-10-10T05:16:39.130"
+    },
+    {
+      "id": "CVE-2026-107645",
+      "description": "The Blocksy Companion plugin for WordPress is vulnerable to privilege escalation in versions up to, and including, 2.1.58 This is due to the implement_user_registration() AJAX handler explicitly disabling Dokan's vendor-registration nonce check (via add_filter('dokan_register_nonce_check', '__return",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/blocksy-companion/tags/2.1.58/framework/features/account-auth.php#L181",
+        "https://plugins.trac.wordpress.org/browser/blocksy-companion/tags/2.1.58/framework/features/account-auth.php#L24",
+        "https://plugins.trac.wordpress.org/browser/blocksy-companion/tags/2.1.58/framework/features/account-auth.php#L241"
+      ],
+      "published": "2026-10-10T04:18:10.090"
+    },
+    {
+      "id": "CVE-2026-104797",
+      "description": "The Advanced Form Integration \u2014 Connect Forms to 300+ Apps plugin for WordPress is vulnerable to Authentication Bypass via Unverified Password Change in all versions up to, and including, 2.9.0 The `adfoin_ultimatememberac_send_data` function, which powers the Ultimate Member \"Update Profile Field\" ",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/advanced-form-integration/",
+        "https://plugins.trac.wordpress.org/browser/advanced-form-integration/tags/2.9.0/includes/triggers/cf7/cf7.php#L38",
+        "https://plugins.trac.wordpress.org/browser/advanced-form-integration/tags/2.9.0/platforms/ultimatememberac/ultimatememberac.php#L169"
+      ],
+      "published": "2026-10-10T04:18:08.677"
+    },
+    {
+      "id": "CVE-2026-104021",
+      "description": "The Fastcache by Host.it plugin for WordPress is vulnerable to Code Injection in all versions up to, and including, 1.7.4 via the `fastcache_settings[cache_cookie_exclude][]` parameter. This is due to the plugin registering the `cache_cookie_exclude` setting via `register_setting()` without a `sanit",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/fastcache-by-host-it/tags/1.7.4/src/Admin.php#L73",
+        "https://plugins.trac.wordpress.org/browser/fastcache-by-host-it/tags/1.7.4/src/Core/Platform/Utility.php#L420",
+        "https://plugins.trac.wordpress.org/browser/fastcache-by-host-it/tags/1.7.4/src/Core/Platform/Utility.php#L521"
+      ],
+      "published": "2026-10-10T05:16:39.503"
+    },
+    {
+      "id": "CVE-2026-104898",
+      "description": "The Online Scheduling and Appointment Booking System \u2013 Bookly plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 28.4 via the 'id, wp_user_id' parameter due to missing validation on a user controlled key. This makes it possible for authentica",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/bookly-responsive-appointment-booking-tool/tags/28.4/backend/components/dialogs/staff/edit/Ajax.php#L111",
+        "https://plugins.trac.wordpress.org/browser/bookly-responsive-appointment-booking-tool/tags/28.4/backend/components/dialogs/staff/edit/Ajax.php#L364",
+        "https://plugins.trac.wordpress.org/browser/bookly-responsive-appointment-booking-tool/tags/28.4/backend/components/dialogs/staff/edit/Ajax.php#L93"
+      ],
+      "published": "2026-10-10T04:18:08.847"
+    },
+    {
+      "id": "CVE-2026-104915",
+      "description": "The Academy LMS \u2013 AI Course Builder, Quizzes, Certificates & eLearning plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 4.0.3. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for a",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/academy/tags/4.0.2/includes/ajax/miscellaneous.php#L469",
+        "https://plugins.trac.wordpress.org/browser/academy/tags/4.0.2/includes/ajax/miscellaneous.php#L477",
+        "https://plugins.trac.wordpress.org/browser/academy/tags/4.0.2/includes/ajax/miscellaneous.php#L480"
+      ],
+      "published": "2026-10-10T03:17:04.107"
+    },
+    {
+      "id": "CVE-2026-93883",
+      "description": "The Advanced Classifieds & Directory Pro plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'phone' parameter in all versions up to, and including, 3.4.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with custom",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/advanced-classifieds-and-directory-pro/tags/3.4.4/includes/helpers/html.php#L404",
+        "https://plugins.trac.wordpress.org/browser/advanced-classifieds-and-directory-pro/tags/3.4.4/public/user.php#L887",
+        "https://plugins.trac.wordpress.org/changeset/3728695/advanced-classifieds-and-directory-pro/trunk/includes/helpers/html.php"
+      ],
+      "published": "2026-10-10T03:17:08.797"
+    },
+    {
+      "id": "CVE-2026-96743",
+      "description": "The Table Field Add-on for ACF and SCF plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Table Field Value in all versions up to, and including, 1.4.1-RC2 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscrib",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/advanced-custom-fields-table-field/tags/1.4.0/classes/Field.php#L275",
+        "https://plugins.trac.wordpress.org/browser/advanced-custom-fields-table-field/tags/1.4.0/classes/Field.php#L463",
+        "https://plugins.trac.wordpress.org/changeset/3732330/advanced-custom-fields-table-field/trunk/classes/Field.php"
+      ],
+      "published": "2026-10-10T04:18:20.080"
+    },
+    {
+      "id": "CVE-2026-102401",
+      "description": "The Download Manager plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'regurl' parameter in all versions up to, and including, 3.3.71 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/download-manager/",
+        "https://plugins.trac.wordpress.org/browser/download-manager/tags/3.3.71/src/User/Login.php#L126",
+        "https://plugins.trac.wordpress.org/browser/download-manager/tags/3.3.71/src/User/Login.php#L132"
+      ],
+      "published": "2026-10-10T05:16:38.880"
+    },
+    {
+      "id": "CVE-2026-103998",
+      "description": "The Form Maker by 10Web \u2013 Mobile-Friendly Drag & Drop Contact Form Builder plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'inputs (array key)' parameter in all versions up to, and including, 1.15.48 due to insufficient input sanitization and output escaping. This makes ",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.48/form-maker.php#L207",
+        "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.48/frontend/controllers/form_maker.php#L255",
+        "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.48/frontend/controllers/form_maker.php#L339"
+      ],
+      "published": "2026-10-10T05:16:39.380"
+    },
+    {
+      "id": "CVE-2026-108501",
+      "description": "ZTE Z80 Ultra has a system interface permission verification defect. The interface lacks necessary access control, and relevant information can be read by reflectively invoking the interface.",
+      "severity": "MEDIUM",
+      "score": 5.7,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/1450988451697172601"
+      ],
+      "published": "2026-10-10T04:18:10.283"
+    },
+    {
+      "id": "CVE-2026-104022",
+      "description": "The Academy LMS \u2013 AI Course Builder, Quizzes, Certificates & eLearning plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 4.0.3. This is due to the `add_child()` function calling `add_role('academy_student')` on any existing account resolved from the att",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/academy/tags/4.0.2/includes/guardian/rest-api.php#L138",
+        "https://plugins.trac.wordpress.org/browser/academy/tags/4.0.2/includes/guardian/rest-api.php#L160",
+        "https://plugins.trac.wordpress.org/browser/academy/tags/4.0.2/includes/guardian/rest-api.php#L85"
+      ],
+      "published": "2026-10-10T03:17:03.953"
+    },
+    {
+      "id": "CVE-2026-103424",
+      "description": "The Anti-Spam by CleanTalk \u2013 Spam Protection Without CAPTCHA plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment' parameter in all versions up to, and including, 6.88 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/cleantalk-spam-protect/tags/6.88/cleantalk.php#L248",
+        "https://plugins.trac.wordpress.org/browser/cleantalk-spam-protect/tags/6.88/lib/Cleantalk/ApbctWP/ContactsEncoder/ContactsEncoder.php#L97",
+        "https://plugins.trac.wordpress.org/browser/cleantalk-spam-protect/tags/6.88/lib/Cleantalk/Common/ContactsEncoder/ContactsEncoder.php#L273"
+      ],
+      "published": "2026-10-10T05:16:39.003"
+    },
+    {
+      "id": "CVE-2026-103365",
+      "description": "The Bookly \u2013 Online Scheduling and Appointment Booking System plugin for WordPress is vulnerable to Sensitive Information Exposure in versions up to, and including, 28.4 via the classic booking form's Details step. The endpoint bookly_render_details is registered for both wp_ajax and wp_ajax_nopriv,",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/bookly-responsive-appointment-booking-tool/tags/28.3/frontend/components/booking/InfoText.php#L389",
+        "https://plugins.trac.wordpress.org/browser/bookly-responsive-appointment-booking-tool/tags/28.3/frontend/modules/booking/Ajax.php#L15",
+        "https://plugins.trac.wordpress.org/browser/bookly-responsive-appointment-booking-tool/tags/28.3/frontend/modules/booking/Ajax.php#L1515"
+      ],
+      "published": "2026-10-10T04:18:08.297"
+    },
+    {
+      "id": "CVE-2026-101324",
+      "description": "The Fluent Forms \u2013 Customizable Contact Forms, Survey, Quiz, & Conversational Form Builder plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'any attacker-chosen name matching the {get.NAME} placeholder (PoC uses 'proof')' parameter in all versions up to, and including, 6.",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/fluentform/tags/6.2.14/app/Modules/Component/Component.php#L890",
+        "https://plugins.trac.wordpress.org/browser/fluentform/tags/6.2.14/app/Services/FormBuilder/Components/CustomHtml.php#L40",
+        "https://plugins.trac.wordpress.org/browser/fluentform/tags/6.2.14/app/Services/FormBuilder/EditorShortcodeParser.php#L169"
+      ],
+      "published": "2026-10-10T05:16:38.733"
+    },
+    {
+      "id": "CVE-2026-103964",
+      "description": "The Download Manager plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.3.71 via the 'first_name' parameter. This makes it possible for authenticated attackers, with subscriber-level access and above, to extract the administrator's full Cooki",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/download-manager/",
+        "https://plugins.trac.wordpress.org/browser/download-manager/tags/3.3.71/src/User/UserController.php#L151",
+        "https://plugins.trac.wordpress.org/browser/download-manager/tags/3.3.71/src/User/UserController.php#L180"
+      ],
+      "published": "2026-10-10T05:16:39.257"
+    },
+    {
+      "id": "CVE-2026-101947",
+      "description": "ExifTool for photo and video 5.0.1-gms by CellHubs constructs shell command strings from file paths and invokes /system/bin/sh -c. In the CSV-export path, the selected media path is merely surrounded with single quotes; embedded single quotes are not escaped.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://fluidattacks.com/advisories/saturn",
+        "https://play.google.com/store/apps/details?id=com.exiftool.free"
+      ],
+      "published": "2026-10-10T04:18:06.413"
+    }
+  ]
+}
