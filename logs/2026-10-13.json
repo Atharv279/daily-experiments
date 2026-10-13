@@ -1,0 +1,358 @@
+{
+  "timestamp": "2026-10-13T02:08:58.240443+00:00",
+  "scan_id": "840972c364",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 4,
+      "MEDIUM": 15
+    },
+    "top_cwes": [
+      [
+        "CWE-862",
+        9
+      ],
+      [
+        "CWE-639",
+        3
+      ],
+      [
+        "CWE-287",
+        2
+      ],
+      [
+        "CWE-783",
+        2
+      ],
+      [
+        "CWE-863",
+        1
+      ]
+    ],
+    "threat_index": 282.4,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 282.4,
+        "yesterday": 377.9,
+        "change_pct": -25.3
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 5,
+        "change_pct": -80.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-108707",
+      "description": "Wukong_HRM through commit 186115e contains an authentication bypass vulnerability in ParamAspect that allows unauthenticated attackers to call every HRM API endpoint by omitting the AUTH-TOKEN header. Attackers gain HR administrator access to read payslips, salary history and employee personal data,",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/Wukong_HRM/poc_attachment_download_idor.py",
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/Wukong_HRM/poc_employee_export_pii.py",
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/Wukong_HRM/poc_salary_slip_detail_read.py"
+      ],
+      "published": "2026-10-11T02:16:39.477"
+    },
+    {
+      "id": "CVE-2026-108708",
+      "description": "Wukong_HRM through commit 186115e contains a missing authorization vulnerability because EmployeeAspect assigns every caller the HR administrator role and EmployeeUtil data-scope checks return all employees. Any authenticated low-privileged employee can read payslips, salary records, bank cards and ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/Wukong_HRM/poc_payroll_card_social_security.py",
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/Wukong_HRM/poc_salary_archives_history.py",
+        "https://github.com/WuKongOpenSource/Wukong_HRM/blob/186115e1a5a0b827ad9596ff8c2f3a876fb0cc55/hrm/hrm-web/src/main/java/com/kakarote/hrm/common/EmployeeAspect.java#L28-L45"
+      ],
+      "published": "2026-10-11T02:16:39.650"
+    },
+    {
+      "id": "CVE-2026-108522",
+      "description": "A vulnerability was found in Studio-Saelix Sencho up to 0.94.1. This affects an unknown part of the file /api/auth/login of the component Login Endpoint. Performing a manipulation of the argument X-Forwarded-For results in improper authentication. The attack is possible to be carried out remotely. T",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://gist.github.com/jovair1994/839c8aaca1f37567cdd02e107a389f6a",
+        "https://github.com/Studio-Saelix/sencho/",
+        "https://github.com/Studio-Saelix/sencho/commit/79b86ddcd4aefdd6941f098e35990ab397b13c72"
+      ],
+      "published": "2026-10-11T04:17:31.737"
+    },
+    {
+      "id": "CVE-2026-108695",
+      "description": "MultiVendorX WordPress plugin through 5.0.19 contains an incorrect authorization vulnerability that allows vendor accounts to modify marketplace-wide settings via the settings REST endpoint. Attackers with the store_owner role can send POST requests to /wp-json/multivendorx/v1/settings, gated only b",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/multivendorx/multivendorx",
+        "https://github.com/multivendorx/multivendorx/blob/8a717799b02f698e4b2b61a282062a41fbe15183/plugins/multivendorx/classes/RestAPI/Controllers/Settings.php#L157-L172",
+        "https://github.com/multivendorx/multivendorx/blob/8a717799b02f698e4b2b61a282062a41fbe15183/plugins/multivendorx/classes/RestAPI/Controllers/Settings.php#L77-L80"
+      ],
+      "published": "2026-10-11T02:16:37.957"
+    },
+    {
+      "id": "CVE-2026-108693",
+      "description": "ImageMagick on Windows through 7.1.2-33 and 6.9.13-58 contains an uncontrolled search path vulnerability in NTGhostscriptEXE() that launches gswin64c.exe by bare name when Ghostscript is unregistered. Attackers can plant a malicious gswin64c.exe in the working directory to execute code with ImageMag",
+      "severity": "HIGH",
+      "score": 7.0,
+      "cwes": [
+        "CWE-427"
+      ],
+      "references": [
+        "https://github.com/ImageMagick/ImageMagick",
+        "https://github.com/ImageMagick/ImageMagick/blob/211e5b975a0019a88dcef5f84c1193f46738d815/MagickCore/nt-base.c#L1469-L1511",
+        "https://github.com/ImageMagick/ImageMagick/blob/211e5b975a0019a88dcef5f84c1193f46738d815/MagickCore/nt-base.c#L2829-L2832"
+      ],
+      "published": "2026-10-11T02:16:37.607"
+    },
+    {
+      "id": "CVE-2026-108692",
+      "description": "1Panel-dev CordysCRM from 1.9.0 before 1.9.2 contains a missing authorization vulnerability in eight ModuleFieldController /field/source data-source endpoints lacking permission checks. Authenticated users denied module permission can page through organization-wide leads, contacts, quotations, contr",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/1Panel-dev/CordysCRM/blob/a0ef69d31fd98c338199579353840f34ef679197/backend/crm/src/main/java/cn/cordys/common/service/DataScopeService.java#L100-L110",
+        "https://github.com/1Panel-dev/CordysCRM/blob/a0ef69d31fd98c338199579353840f34ef679197/backend/crm/src/main/java/cn/cordys/crm/system/controller/ModuleFieldController.java#L133-L266",
+        "https://github.com/1Panel-dev/CordysCRM/commit/a31fa16fb2dc86ab6b0fdc1ee58a204af424f38d"
+      ],
+      "published": "2026-10-11T02:16:37.360"
+    },
+    {
+      "id": "CVE-2026-108694",
+      "description": "ConvertX through 0.19.0 contains an arbitrary file read vulnerability that allows authenticated users to read server files because src/converters/pandoc.ts invokes Pandoc without the --sandbox flag. Attackers can upload a reStructuredText document with an include directive naming an absolute path, c",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-73"
+      ],
+      "references": [
+        "https://github.com/C4illin/ConvertX",
+        "https://github.com/C4illin/ConvertX/blob/710bc7c71712af04198a39f003e3ea1aa5168a31/src/converters/pandoc.ts#L123-L152",
+        "https://github.com/C4illin/ConvertX/issues/668"
+      ],
+      "published": "2026-10-11T02:16:37.777"
+    },
+    {
+      "id": "CVE-2026-108700",
+      "description": "1Panel-dev CordysCRM before 1.9.2 contains a missing authorization vulnerability that allows authenticated users to list business titles by calling POST /field/source/business-title without permission checks. Users lacking CONTRACT_BUSINESS_TITLE_READ can retrieve organization invoicing entities, ex",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/1Panel-dev/CordysCRM/blob/a0ef69d31fd98c338199579353840f34ef679197/backend/crm/src/main/java/cn/cordys/crm/system/controller/ModuleFieldController.java#L253-L257",
+        "https://github.com/1Panel-dev/CordysCRM/commit/a31fa16fb2dc86ab6b0fdc1ee58a204af424f38d",
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/CordysCRM/poc_field_source_family.py"
+      ],
+      "published": "2026-10-11T02:16:38.277"
+    },
+    {
+      "id": "CVE-2026-108689",
+      "description": "Wukong AICRM through 20260610 contains a missing authorization vulnerability that allows authenticated users to write into other users' AI chat sessions by supplying an arbitrary sessionId to POST /chat/send. Attackers can append messages to a victim's conversation and receive streamed assistant rep",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/Wukong-AICRM/poc_chat_send.py",
+        "https://github.com/WuKongOpenSource/Wukong-AICRM/blob/cdd1fbc3187d2bcbf2cdf2be7d50c988959da356/backend/src/main/java/com/kakarote/ai_crm/service/impl/ChatServiceImpl.java#L270-L283",
+        "https://www.vulncheck.com/advisories/wukong-aicrm-through-20260610-authorization-bypass-via-user-controlled-session-id-in-post-chat-send"
+      ],
+      "published": "2026-10-11T02:16:36.887"
+    },
+    {
+      "id": "CVE-2026-108691",
+      "description": "mall4j through 4.0 contains an improper authorization vulnerability that allows authenticated storefront customers to delete other shoppers' cart items through an operator precedence error in the cleanExpiryProdList SQL statement. Attackers can send one DELETE request to /p/shopCart/cleanExpiryProdL",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-783"
+      ],
+      "references": [
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/mall4j/poc_shopcart_clean_expiry_prodlist.py",
+        "https://github.com/gz-yami/mall4j/blob/ffc672fc1aa4320ce02d0b93853bb456ae0a4dae/yami-shop-api/src/main/java/com/yami/shop/api/controller/ShopCartController.java#L188-L194",
+        "https://github.com/gz-yami/mall4j/blob/ffc672fc1aa4320ce02d0b93853bb456ae0a4dae/yami-shop-service/src/main/resources/mapper/BasketMapper.xml#L49-L62"
+      ],
+      "published": "2026-10-11T02:16:37.210"
+    },
+    {
+      "id": "CVE-2026-108703",
+      "description": "CordysCRM through 1.9.3 contains a missing authorization vulnerability in POST /approval-resource/push that allows authenticated users to submit any resource for approval without ownership checks. Low-privileged attackers can supply arbitrary resourceId values for contracts, invoices, quotations or ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/1Panel-dev/CordysCRM/blob/0d7ae06fe94f4ce33ec7f65b9d82a07ae05c2d94/backend/crm/src/main/java/cn/cordys/crm/approval/controller/ApprovalResourceController.java#L32-L43",
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/CordysCRM/poc_approval_resource_push.py",
+        "https://www.vulncheck.com/advisories/cordyscrm-through-1.9.3-missing-authorization-via-approval-resource-push"
+      ],
+      "published": "2026-10-11T02:16:38.803"
+    },
+    {
+      "id": "CVE-2026-108521",
+      "description": "A vulnerability has been found in Studio-Saelix Sencho up to 0.97.1. Affected by this issue is the function isValidRemoteUrl of the file backend/src/utils/validation.ts of the component Add Remote Node API Endpoint. Such manipulation leads to server-side request forgery. The attack can be executed r",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://gist.github.com/jovair1994/db23594d74428d38606e8000beb867d4",
+        "https://vuldb.com/cve/CVE-2026-108521",
+        "https://vuldb.com/submit/893356"
+      ],
+      "published": "2026-10-11T03:16:39.350"
+    },
+    {
+      "id": "CVE-2026-108688",
+      "description": "Eladmin through 2.7 contains a missing authorization vulnerability in the LocalStorageController uploadPicture handler that allows low-privileged authenticated users to bypass the storage:add permission. Attackers can send POST requests with image-named files to /api/localStorage/pictures to write f",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/eladmin/poc_localStorage_pictures.py",
+        "https://github.com/elunez/eladmin/blob/39d480938d27a9630d632578c3ef60cf3647a79e/eladmin-tools/src/main/java/me/zhengjie/rest/LocalStorageController.java#L72-L82",
+        "https://www.vulncheck.com/advisories/eladmin-through-2.7-missing-authorization-via-api-localstorage-pictures-upload"
+      ],
+      "published": "2026-10-11T02:16:35.100"
+    },
+    {
+      "id": "CVE-2026-108690",
+      "description": "mall4j through 4.0 contains an information disclosure vulnerability that allows authenticated customers to read other shoppers' cart items due to an operator precedence error in the getShopCartExpiryItems SQL filter. Attackers with any storefront account can request GET /p/shopCart/expiryProdList to",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-783"
+      ],
+      "references": [
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/mall4j/poc_shopcart_expiry_prodlist.py",
+        "https://github.com/gz-yami/mall4j/blob/ffc672fc1aa4320ce02d0b93853bb456ae0a4dae/yami-shop-api/src/main/java/com/yami/shop/api/controller/ShopCartController.java#L162-L186",
+        "https://github.com/gz-yami/mall4j/blob/ffc672fc1aa4320ce02d0b93853bb456ae0a4dae/yami-shop-service/src/main/resources/mapper/BasketMapper.xml#L41-L48"
+      ],
+      "published": "2026-10-11T02:16:37.057"
+    },
+    {
+      "id": "CVE-2026-108696",
+      "description": "CoreShop through 1.5.5 contains an authorization bypass vulnerability in the OrderController that allows authenticated customers to act on other customers' orders by supplying user-controlled ids. Attackers can omit the data field in OrderConfirm or supply another reshipId to SendReship to confirm r",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/CoreUnion/CoreShop",
+        "https://github.com/CoreUnion/CoreShop/blob/ca7408b025bc5f3fd5957a79618ffe991c4e91ab/CoreCms.Net.Services/Order/CoreCmsOrderServices.cs#L2048-L2060",
+        "https://github.com/CoreUnion/CoreShop/blob/ca7408b025bc5f3fd5957a79618ffe991c4e91ab/CoreCms.Net.Web.WebApi/Controllers/OrderController.cs#L281-L294"
+      ],
+      "published": "2026-10-11T02:16:38.123"
+    },
+    {
+      "id": "CVE-2026-108701",
+      "description": "1Panel-dev CordysCRM before 1.9.2 contains a missing authorization vulnerability in the ContractController sortModule handler for POST /contract/sort, which lacks any permission annotation. Authenticated users without contract update permission can supply a dragNodeId, stage and field values to modi",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/1Panel-dev/CordysCRM/blob/a0ef69d31fd98c338199579353840f34ef679197/backend/crm/src/main/java/cn/cordys/crm/contract/controller/ContractController.java#L279-L283",
+        "https://github.com/1Panel-dev/CordysCRM/commit/98e2615569b402063bc02f369274a05f40217d6e",
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/CordysCRM/poc_contract_sort_write_bfla.py"
+      ],
+      "published": "2026-10-11T02:16:38.437"
+    },
+    {
+      "id": "CVE-2026-108702",
+      "description": "1Panel-dev CordysCRM through 1.9.3 lacks a PROCESS_SETTING permission check on POST /approval-flow/webhook/test, allowing any authenticated user to trigger server-side requests to attacker-supplied URLs. Attackers can redirect GET requests from a controlled host to bypass SSRFValidator and probe int",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/1Panel-dev/CordysCRM/blob/0d7ae06fe94f4ce33ec7f65b9d82a07ae05c2d94/backend/crm/src/main/java/cn/cordys/crm/approval/controller/ApprovalFlowController.java#L101-L105",
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/CordysCRM/poc_approval_flow_webhook_test_ssrf.py",
+        "https://www.vulncheck.com/advisories/cordyscrm-through-1.9.3-missing-authorization-and-blind-ssrf-via-webhook-test"
+      ],
+      "published": "2026-10-11T02:16:38.627"
+    },
+    {
+      "id": "CVE-2026-108704",
+      "description": "CordysCRM through 1.9.3 contains an authorization bypass vulnerability that allows low-privileged authenticated users to skip permission checks by setting the owner field to their own user id. Attackers can send requests to the follow/record/add endpoints to add follow-up records and overwrite follo",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/1Panel-dev/CordysCRM/blob/0d7ae06fe94f4ce33ec7f65b9d82a07ae05c2d94/backend/crm/src/main/java/cn/cordys/crm/clue/controller/ClueFollowRecordController.java#L33-L39",
+        "https://github.com/1Panel-dev/CordysCRM/blob/0d7ae06fe94f4ce33ec7f65b9d82a07ae05c2d94/backend/crm/src/main/java/cn/cordys/crm/customer/controller/CustomerFollowRecordController.java#L35-L41",
+        "https://github.com/1Panel-dev/CordysCRM/blob/0d7ae06fe94f4ce33ec7f65b9d82a07ae05c2d94/backend/crm/src/main/java/cn/cordys/crm/follow/controller/FollowUpRecordController.java#L85-L91"
+      ],
+      "published": "2026-10-11T02:16:38.980"
+    },
+    {
+      "id": "CVE-2026-108705",
+      "description": "CordysCRM through 1.9.3 contains a missing authorization vulnerability in the POST /custom-form/data/import endpoint that allows authenticated users to import data into any custom form by customFormId. Low-privileged attackers can upload Excel files with importType ADD or UPDATE to create records in",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/1Panel-dev/CordysCRM/blob/0d7ae06fe94f4ce33ec7f65b9d82a07ae05c2d94/backend/crm/src/main/java/cn/cordys/crm/form/controller/CustomFormDataController.java#L148-L154",
+        "https://github.com/1Panel-dev/CordysCRM/blob/0d7ae06fe94f4ce33ec7f65b9d82a07ae05c2d94/backend/crm/src/main/java/cn/cordys/crm/form/service/CustomFormDataService.java#L874-L893",
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/CordysCRM/poc_custom_form_data_import.py"
+      ],
+      "published": "2026-10-11T02:16:39.160"
+    },
+    {
+      "id": "CVE-2026-108706",
+      "description": "eladmin through commit 55fbf70 contains a missing authorization vulnerability in the downloadS3Storage handler that allows any authenticated user to retrieve stored object URLs without storage permissions. Attackers can enumerate sequential ids against GET /api/s3Storage/download/{id} to collect URL",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/AnkesKasty/cve-request-poc/blob/a7b6d1423555812d8efa26c91c5d0683164b31e5/eladmin/poc_s3Storage_download.py",
+        "https://github.com/elunez/eladmin/blob/55fbf705956949697dbd68bf9003776609d3d029/eladmin-tools/src/main/java/me/zhengjie/rest/S3StorageController.java#L80-L94",
+        "https://www.vulncheck.com/advisories/eladmin-through-commit-55fbf70-missing-authorization-via-s3-storage-download-endpoint"
+      ],
+      "published": "2026-10-11T02:16:39.330"
+    }
+  ]
+}
