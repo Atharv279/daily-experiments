@@ -1,0 +1,347 @@
+{
+  "timestamp": "2026-10-16T07:20:43.741537+00:00",
+  "scan_id": "713897dc99",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 4,
+      "HIGH": 10,
+      "MEDIUM": 4,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-434",
+        2
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-269",
+        2
+      ],
+      [
+        "CWE-79",
+        2
+      ],
+      [
+        "CWE-78",
+        1
+      ]
+    ],
+    "threat_index": 429.9,
+    "critical_count": 4
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 429.9,
+        "yesterday": 255.2,
+        "change_pct": 68.5
+      },
+      "critical_count": {
+        "today": 4,
+        "yesterday": 1,
+        "change_pct": 300.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-110392",
+      "description": "Improper neutralization of special elements used in an OS command ('OS command injection') vulnerability in Samsung Open Source QA-Board allows : OS Command Injection.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/Samsung/qaboard/commit/05789e67c5d022f2403b9340fc8d82dc99dc3707"
+      ],
+      "published": "2026-10-14T02:16:59.653"
+    },
+    {
+      "id": "CVE-2026-93388",
+      "description": "The Printcart Store (PCDesigner / NB Designer) plugin for WooCommerce is vulnerable to unauthenticated arbitrary file upload leading to remote code execution in all versions up to, and including, 2.9.1 The nbdesigner_copy_image_from_url AJAX action is registered for logged-out callers (wp_ajax_nopri",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3716244/printcart-integration/trunk/includes/class.nbdesigner.php",
+        "https://plugins.trac.wordpress.org/changeset?reponame=&new=3716244%40printcart-integration%2Ftags%2F2.9.2&old=3715643%40printcart-integration%2Ftags%2F2.9.1",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/788461ba-2cf2-49d2-bbaa-a02de15f33ae?source=cve"
+      ],
+      "published": "2026-10-14T02:17:01.720"
+    },
+    {
+      "id": "CVE-2026-110002",
+      "description": "The Snazzy Social Media Feed plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.5 via the (file scope) function. This is due to missing WordPress bootstrap, authentication, capability, and nonce checks in the standalone save-to-cache.php script, combi",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/snazzy-cacheable-facebook-feed/trunk/functions/save-to-cache.php#L311",
+        "https://plugins.trac.wordpress.org/browser/snazzy-cacheable-facebook-feed/trunk/functions/save-to-cache.php#L315",
+        "https://plugins.trac.wordpress.org/browser/snazzy-cacheable-facebook-feed/trunk/functions/save-to-cache.php#L328"
+      ],
+      "published": "2026-10-14T03:17:20.220"
+    },
+    {
+      "id": "CVE-2026-92097",
+      "description": "The Click to Chat for WhatsApp plugin for WordPress is vulnerable to Arbitrary Shortcode Execution in versions up to, and including, 4.44 This is due to the greetings_dialog() function building the {url} template placeholder from a sanitize_text_field()-filtered $_SERVER['REQUEST_URI'] on archive pa",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/click-to-chat-for-whatsapp/tags/4.44/new/inc/greetings/class-ht-ctc-chat-greetings.php#L111",
+        "https://plugins.trac.wordpress.org/browser/click-to-chat-for-whatsapp/tags/4.44/new/inc/greetings/class-ht-ctc-chat-greetings.php#L224",
+        "https://plugins.trac.wordpress.org/browser/click-to-chat-for-whatsapp/tags/4.44/new/inc/greetings/greetings-1.php#L22"
+      ],
+      "published": "2026-10-14T02:17:01.397"
+    },
+    {
+      "id": "CVE-2026-92817",
+      "description": "The Ignition Perspective module does not properly validate session privileges when determining Designer-level access. An authenticated user with access to a Vision project could provide their valid Vision session identifier and gain Designer-level privileges. An attacker could exploit these elevated",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-286-01.json",
+        "https://security.inductiveautomation.com/?tcuUid=34477620-731d-4b70-b22b-9450f9a659a3",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-01"
+      ],
+      "published": "2026-10-14T00:17:13.290"
+    },
+    {
+      "id": "CVE-2026-104995",
+      "description": "The BP Profile Search plugin for WordPress is vulnerable to Local File Inclusion in versions up to, and including, 5.9 via the 'ajax_template' value parsed from the client-controlled 'bps_directory' cookie during BuddyPress AJAX directory requests. The bps_directory_ajax() filter (hooked onto bp_leg",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-98"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/bp-profile-search/tags/5.9/bps-directory.php#L186",
+        "https://plugins.trac.wordpress.org/browser/bp-profile-search/tags/5.9/bps-directory.php#L408",
+        "https://plugins.trac.wordpress.org/browser/bp-profile-search/tags/5.9/bps-search.php#L6"
+      ],
+      "published": "2026-10-14T02:16:56.500"
+    },
+    {
+      "id": "CVE-2026-17092",
+      "description": "The Directorist: AI-Powered Business Directory, Listings & Classified Ads plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 8.10.2.1. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/directorist/tags/8.7.3/includes/asset-loader/localized_data.php#L92",
+        "https://plugins.trac.wordpress.org/browser/directorist/tags/8.7.3/includes/classes/class-ajax-handler.php#L1256",
+        "https://plugins.trac.wordpress.org/browser/directorist/tags/8.7.3/includes/classes/class-ajax-handler.php#L1260"
+      ],
+      "published": "2026-10-14T02:16:59.783"
+    },
+    {
+      "id": "CVE-2026-82715",
+      "description": "Insecure Temporary File vulnerability in Hitachi Disk Array Driver for AIX and Hitachi Disk Array Driver for Virtual I/O Server.\n\nThis issue affects Hitachi Disk Array Driver for AIX: from 01-00 before 01-23-/A; Hitachi Disk Array Driver for Virtual I/O Server: from 01-04 before 01-23-/A.",
+      "severity": "HIGH",
+      "score": 7.9,
+      "cwes": [
+        "CWE-377"
+      ],
+      "references": [
+        "https://www.hitachi.com/products/it/software/security/info/vuls/hitachi-sec-2026-137/index.html"
+      ],
+      "published": "2026-10-14T02:17:00.863"
+    },
+    {
+      "id": "CVE-2026-110359",
+      "description": "Hyland Desktop Host for Windows before 25.1.1 is vulnerable to local privilege escalation. This is caused by a privileged service running from the %PROGRAMDATA%\\Hyland\\DesktopHost\\bin folder with weak permissions. A local user can exploit this to escalate privileges.",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-276"
+      ],
+      "references": [
+        "https://github.com/JNDataRT/Vulns/blob/main/Advisories/2026/1.md"
+      ],
+      "published": "2026-10-14T01:17:06.203"
+    },
+    {
+      "id": "CVE-2026-103423",
+      "description": "The Booking Package plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.7.29 This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to retrieve personally ide",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/booking-package/tags/1.7.29/index.php#L241",
+        "https://plugins.trac.wordpress.org/browser/booking-package/tags/1.7.29/index.php#L4383",
+        "https://plugins.trac.wordpress.org/browser/booking-package/tags/1.7.29/lib/Schedule.php#L10030"
+      ],
+      "published": "2026-10-14T02:16:54.710"
+    },
+    {
+      "id": "CVE-2026-104749",
+      "description": "The Bit integrations \u2013 Form Integration, Webhook, Spreadsheets, CRM, LMS & Email Automation plugin for WordPress is vulnerable to Privilege Escalation via Log Re-execution in all versions up to, and including, 2.10.6 The vulnerability exists because `IntegrationHandler::executeWithCapture()` stores ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/bit-integrations/tags/2.10.6/backend/Actions/Registration/RegistrationController.php#L309",
+        "https://plugins.trac.wordpress.org/browser/bit-integrations/tags/2.10.6/backend/Core/Integration/IntegrationHandler.php#L39",
+        "https://plugins.trac.wordpress.org/browser/bit-integrations/tags/2.10.6/backend/Log/LogHandler.php#L290"
+      ],
+      "published": "2026-10-14T02:16:56.223"
+    },
+    {
+      "id": "CVE-2026-104767",
+      "description": "The Membership & User Roles for WooCommerce (Automatic Role Changer) plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 20260828. This is due to the `maybe_add_role_to_user()` function unconditionally re-assigning every role stored in the `dfxwcrc_foreign_ro",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/dfx-woo-role-changer/trunk/dfx-woo-role-changer.php#L351",
+        "https://plugins.trac.wordpress.org/browser/dfx-woo-role-changer/trunk/dfx-woo-role-changer.php#L414",
+        "https://plugins.trac.wordpress.org/browser/dfx-woo-role-changer/trunk/dfx-woo-role-changer.php#L427"
+      ],
+      "published": "2026-10-14T02:16:56.360"
+    },
+    {
+      "id": "CVE-2026-102251",
+      "description": "The Abandoned Cart Pro for WooCommerce plugin for WordPress is vulnerable to generic SQL Injection via the 'validate' parameter in all versions up to, and including, 10.8.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://www.tychesoftwares.com/docs/docs/abandoned-cart-pro-for-woocommerce-new/changelog-abandoned-cart-pro/",
+        "https://www.tychesoftwares.com/products/woocommerce-abandoned-cart-pro-plugin/",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/a656312d-1ddf-48d5-81bf-180c67b32e39?source=cve"
+      ],
+      "published": "2026-10-14T03:17:12.513"
+    },
+    {
+      "id": "CVE-2026-103422",
+      "description": "The AnyComment plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'email' parameter in versions up to, and including, 0.3.6. This is due to insufficient input sanitization on the public /wp-json/anycomment/v1/subscribe REST endpoint and missing output escaping in AnyCommentSub",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/anycomment/tags/0.3.6/includes/Admin/Tables/AnyCommentSubscriptionsTable.php#L107",
+        "https://plugins.trac.wordpress.org/browser/anycomment/tags/0.3.6/includes/Models/AnyCommentSubscriptions.php#L311",
+        "https://plugins.trac.wordpress.org/browser/anycomment/tags/0.3.6/includes/Rest/AnyCommentRestSubscriptions.php#L124"
+      ],
+      "published": "2026-10-14T03:17:14.037"
+    },
+    {
+      "id": "CVE-2026-103425",
+      "description": "The Booking Package plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'id' parameter in all versions up to, and including, 1.7.29 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and ",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/booking-package/tags/1.7.29/index.php#L1099",
+        "https://plugins.trac.wordpress.org/browser/booking-package/tags/1.7.29/index.php#L1789",
+        "https://plugins.trac.wordpress.org/browser/booking-package/tags/1.7.29/index.php#L1802"
+      ],
+      "published": "2026-10-14T02:16:55.793"
+    },
+    {
+      "id": "CVE-2026-107652",
+      "description": "The Database Addon for Contact Form 7 \u2013 CFDB7 plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to, and including, 1.4.1. This is due to the plugin storing arbitrary (non-form-tag) submission fields in its db7_forms row and the process_bulk_action() delete handler then mat",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/contact-form-cfdb7/tags/1.4.0/contact-form-cfdb-7.php#L170",
+        "https://plugins.trac.wordpress.org/browser/contact-form-cfdb7/tags/1.4.0/inc/admin-subpage.php#L325",
+        "https://plugins.trac.wordpress.org/browser/contact-form-cfdb7/tags/1.4.0/inc/admin-subpage.php#L329"
+      ],
+      "published": "2026-10-14T02:16:57.297"
+    },
+    {
+      "id": "CVE-2026-86573",
+      "description": "Out-of-bounds write vulnerability in Hitachi Disk Array Driver for AIX and Hitachi Disk Array Driver for Virtual I/O Server.\n\nThis issue affects Hitachi Disk Array Driver for AIX: from 01-00 before 01-23-/A; Hitachi Disk Array Driver for Virtual I/O Server: from 01-04 before 01-23-/A.",
+      "severity": "MEDIUM",
+      "score": 5.1,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://www.hitachi.com/products/it/software/security/info/vuls/hitachi-sec-2026-137/index.html"
+      ],
+      "published": "2026-10-14T02:17:01.147"
+    },
+    {
+      "id": "CVE-2026-86607",
+      "description": "Internal Application Information Exposure Vulnerability in Hitachi Ops Center Administrator.\n\n\nThis issue affects Hitachi Ops Center Administrator: before 11.0.9-01.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-209"
+      ],
+      "references": [
+        "https://www.hitachi.com/products/it/software/security/info/vuls/hitachi-sec-2026-138/index.html"
+      ],
+      "published": "2026-10-14T02:17:01.270"
+    },
+    {
+      "id": "CVE-2026-108473",
+      "description": "Multiple\nKasa devices contain an improper authentication vulnerability in the local\ndevice-management protocol. An unauthenticated adjacent attacker may send\nmanagement instructions to an affected device without adequate authentication\nor authorization, allowing modification of the device state or m",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://www.tp-link.com/en/support/download/",
+        "https://www.tp-link.com/us/support/download/",
+        "https://www.tp-link.com/us/support/faq/5342/"
+      ],
+      "published": "2026-10-14T01:17:06.030"
+    },
+    {
+      "id": "CVE-2026-110385",
+      "description": "A remote code execution vulnerability in ONLYOFFICE Document Server versions before10.0.0 allows an authenticated attacker with a valid Inbox-compatible JWT to execute arbitrary operating system commands as the ds service account. The Document Builder API improperly processes user-controlled convert",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-73"
+      ],
+      "references": [
+        "https://github.com/ONLYOFFICE/DocumentServer/blob/master/CHANGELOG.md"
+      ],
+      "published": "2026-10-14T01:17:06.337"
+    }
+  ]
+}
