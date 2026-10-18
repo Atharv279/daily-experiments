@@ -1,0 +1,335 @@
+{
+  "timestamp": "2026-10-18T07:18:12.046995+00:00",
+  "scan_id": "ef04771436",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 4,
+      "MEDIUM": 12,
+      "UNKNOWN": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-125",
+        4
+      ],
+      [
+        "CWE-94",
+        3
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-95",
+        2
+      ],
+      [
+        "CWE-502",
+        1
+      ]
+    ],
+    "threat_index": 217.3,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 217.3,
+        "yesterday": 365.6,
+        "change_pct": -40.6
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-75941",
+      "description": "A potential vulnerability was reported in the Lenovo Legion Zone application, distributed exclusively in the Chinese market, that could allow an attacker on the same logical network to execute arbitrary code.",
+      "severity": "HIGH",
+      "score": 8.0,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://iknow.lenovo.com.cn/detail/442627"
+      ],
+      "published": "2026-10-16T00:17:05.420"
+    },
+    {
+      "id": "CVE-2026-111210",
+      "description": "A vulnerability was determined in bitcoinj up to 0.17. Affected is the function url.openConnection of the file PaymentSession.java of the component Payment Request Handler. Executing a manipulation of the argument pki_type can lead to server-side request forgery. It is possible to launch the attack ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/bitcoinj/bitcoinj/",
+        "https://github.com/bitcoinj/bitcoinj/issues/4386",
+        "https://github.com/bitcoinj/bitcoinj/security/advisories/GHSA-cqq6-f9cp-chrp"
+      ],
+      "published": "2026-10-16T00:17:04.180"
+    },
+    {
+      "id": "CVE-2026-92629",
+      "description": "A potential improper authorization vulnerability was reported in Lenovo Baiying PC Client, distributed exclusively in the Chinese market,\u00a0that could allow a local authenticated user to execute arbitrary code with elevated privileges.",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://iknow.lenovo.com.cn/detail/442628"
+      ],
+      "published": "2026-10-16T00:17:07.190"
+    },
+    {
+      "id": "CVE-2026-84823",
+      "description": "A flaw was found in WildFly. A user with the `Monitor` role, which is the lowest standard Role-Based Access Control (RBAC) role, can exploit a path traversal vulnerability in the `take-snapshot` operation. By manipulating the `name` parameter, this user can write a copy of the server configuration t",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-84823",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2527902"
+      ],
+      "published": "2026-10-16T00:17:05.573"
+    },
+    {
+      "id": "CVE-2026-89057",
+      "description": "A potential authentication bypass vulnerability was reported in some Lenovo tablets that could allow a user with physical access to gain unauthorized device access.",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-288"
+      ],
+      "references": [
+        "https://support.lenovo.com/us/en/product_security/LEN-218699"
+      ],
+      "published": "2026-10-16T00:17:06.417"
+    },
+    {
+      "id": "CVE-2026-92777",
+      "description": "A potential vulnerability was reported in some Lenovo Tablets that could allow a user with physical access to an unlocked tablet to bypass device protections and execute arbitrary code.",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-1394"
+      ],
+      "references": [
+        "https://support.lenovo.com/us/en/product_security/LEN-221035"
+      ],
+      "published": "2026-10-16T00:17:07.333"
+    },
+    {
+      "id": "CVE-2026-89062",
+      "description": "A potential out-of-bounds write vulnerability was reported in the Lenovo Energy Management driver that could allow a local authenticated user to cause a blue screen error.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://support.lenovo.com/us/en/product_security/LEN-218444"
+      ],
+      "published": "2026-10-16T00:17:07.037"
+    },
+    {
+      "id": "CVE-2026-16755",
+      "description": "A potential vulnerability was reported in Lenovo Smart Camera C33, distributed exclusively in the Chinese market,\u00a0that could allow an unauthorized remote user to disclose sensitive information.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-1393"
+      ],
+      "references": [
+        "https://iknow.lenovo.com.cn/detail/442625"
+      ],
+      "published": "2026-10-16T00:17:05.220"
+    },
+    {
+      "id": "CVE-2026-111237",
+      "description": "A weakness has been identified in Ultralytics FastSAM up to b4ed20c2fed75eadc5aa7d8b09fedd137b873b52. This affects the function session.get_modelmeta.custom_metadata_map of the file ultralytics/nn/autobackend.py of the component AutoBackend Model Loading. This manipulation of the argument imgsz/name",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-94",
+        "CWE-95"
+      ],
+      "references": [
+        "https://github.com/CASIA-LMC-Lab/FastSAM/issues/288",
+        "https://vuldb.com/cve/CVE-2026-111237",
+        "https://vuldb.com/submit/1004882"
+      ],
+      "published": "2026-10-16T03:18:03.880"
+    },
+    {
+      "id": "CVE-2026-111373",
+      "description": "FreeRDP before 3.32.0 contains a NULL pointer dereference vulnerability in the websocket transport that allows a malicious gateway to crash clients by sending zero-length pings. When the payload length is zero, websocket_reply_pong passes a nullptr stream to websocket_reply_close, triggering an asse",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-83g2-gf92-5c4g",
+        "https://www.vulncheck.com/advisories/freerdp-before-3.32.0-null-dereference-via-zero-length-websocket-ping"
+      ],
+      "published": "2026-10-16T03:18:04.063"
+    },
+    {
+      "id": "CVE-2026-111374",
+      "description": "FreeRDP from 3.30.0 before 3.32.0 contains a resource exhaustion vulnerability in the rdpecam client that lets malicious RDP servers request unadvertised camera media types. Attackers can send a StartStreamsRequest with oversized dimensions to force large pending-sample allocations and reconfigure t",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-xq87-9rrm-6wqw",
+        "https://www.vulncheck.com/advisories/freerdp-from-3.30.0-before-3.32.0-resource-exhaustion-via-rdpecam-startstreamsrequest",
+        "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-xq87-9rrm-6wqw"
+      ],
+      "published": "2026-10-16T03:18:04.223"
+    },
+    {
+      "id": "CVE-2026-111376",
+      "description": "FreeRDP from 3.30.0 before 3.32.0 contains a heap out-of-bounds read vulnerability in the Windows client's CliprdrStream_New that allows malicious RDP servers to trigger invalid memory reads via short clipboard responses. Attackers can answer a FILECONTENTS_SIZE request with a cbRequested of fewer t",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-pvgq-84w2-93ph",
+        "https://www.vulncheck.com/advisories/freerdp-3.30.0-before-3.32.0-heap-over-read-via-windows-cliprdr-filecontents-size",
+        "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-pvgq-84w2-93ph"
+      ],
+      "published": "2026-10-16T03:18:04.510"
+    },
+    {
+      "id": "CVE-2026-16754",
+      "description": "A potential improper certificate validation vulnerability was reported in Lenovo Smart Camera C33, distributed exclusively in the Chinese market, that could allow an adjacent user to intercept or manipulate network communications.",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-295"
+      ],
+      "references": [
+        "https://iknow.lenovo.com.cn/detail/442625"
+      ],
+      "published": "2026-10-16T00:17:05.020"
+    },
+    {
+      "id": "CVE-2026-100159",
+      "description": "The Popup Box plugin for WordPress is vulnerable to Arbitrary Shortcode Execution in versions 6.4.1 to 6.4.2. This is due to the ays_popup_get_user_ip() function reading the client-controlled Client-IP / X-Forwarded-For / Forwarded / X-Forwarded / Forwarded-For request headers, sanitizing them only ",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/ays-popup-box/tags/6.4.2/includes/class-ays-pb-data.php#L79",
+        "https://plugins.trac.wordpress.org/browser/ays-popup-box/tags/6.4.2/public/class-ays-pb-public.php#L3389",
+        "https://plugins.trac.wordpress.org/browser/ays-popup-box/tags/6.4.2/public/partials/ays-pb-public-templates.php#L4299"
+      ],
+      "published": "2026-10-16T03:17:58.000"
+    },
+    {
+      "id": "CVE-2026-111212",
+      "description": "A security flaw has been discovered in ImprintLab Medical-SAM-Adapter 0.1.0-alpha/0.1.0. Affected by this issue is the function session.get_modelmeta.custom_metadata_map of the file models/MobileSAMv2/ultralytics/nn/autobackend.py of the component AutoBackend Model Loading. The manipulation of the a",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-94",
+        "CWE-95"
+      ],
+      "references": [
+        "https://github.com/ImprintLab/Medical-SAM-Adapter/",
+        "https://github.com/ImprintLab/Medical-SAM-Adapter/issues/145",
+        "https://vuldb.com/cve/CVE-2026-111212"
+      ],
+      "published": "2026-10-16T03:18:03.650"
+    },
+    {
+      "id": "CVE-2026-111375",
+      "description": "FreeRDP from 3.0.0 before 3.32.0 contains an out-of-bounds read vulnerability in the Windows RAIL client that allows malicious RDP servers to trigger heap over-reads by sending non-NUL-terminated window titles. Attackers can send a full-length WINDOW_ORDER_FIELD_TITLE update that wf_rail_window_comm",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-3rvr-qvx8-rj23",
+        "https://www.vulncheck.com/advisories/freerdp-3.0.0-before-3.32.0-out-of-bounds-read-via-rail-window-title"
+      ],
+      "published": "2026-10-16T03:18:04.363"
+    },
+    {
+      "id": "CVE-2026-105227",
+      "description": "This vulnerability allows remote attackers to disclose sensitive information on affected installations of Delta ISPSoft.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://filecenter.deltaww.com/news/download/doc/Delta-PCSA-2026-00016_ISPSoft%20Out-of-Bounds%20Read%20Vulnerability.pdf"
+      ],
+      "published": "2026-10-16T03:17:58.357"
+    },
+    {
+      "id": "CVE-2026-105228",
+      "description": "This vulnerability allows remote attackers to disclose sensitive information on affected installations of Delta ISPSoft.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://filecenter.deltaww.com/news/download/doc/Delta-PCSA-2026-00016_ISPSoft%20Out-of-Bounds%20Read%20Vulnerability.pdf"
+      ],
+      "published": "2026-10-16T03:17:58.517"
+    },
+    {
+      "id": "CVE-2026-109812",
+      "description": "A missing authorization vulnerability exists in the internal API `/api/v1/secrets/` of some of Moxa's\u00a0industrial computing products. A low-privileged authenticated attacker with adjacent network access could exploit this vulnerability to access sensitive information, potentially resulting in the dis",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://www.moxa.com/en/support/product-support/security-advisory/mpsa-262560-cve-2026-109812,-cve-2026-109813-vulnerabilities-in-industrial-computing-products"
+      ],
+      "published": "2026-10-16T03:18:02.120"
+    },
+    {
+      "id": "CVE-2026-109813",
+      "description": "A hard-coded cryptographic key vulnerability exists in the `/usr/bin/sysman` of some of Moxa's\u00a0industrial computing products. An unauthenticated attacker with adjacent network access could exploit the exposed private key material to compromise the confidentiality and integrity of communications.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-321"
+      ],
+      "references": [
+        "https://www.moxa.com/en/support/product-support/security-advisory/mpsa-262560-cve-2026-109812,-cve-2026-109813-vulnerabilities-in-industrial-computing-products"
+      ],
+      "published": "2026-10-16T03:18:02.277"
+    }
+  ]
+}
