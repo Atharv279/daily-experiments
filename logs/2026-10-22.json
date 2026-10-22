@@ -1,0 +1,338 @@
+{
+  "timestamp": "2026-10-22T07:45:36.963366+00:00",
+  "scan_id": "a250f5aae7",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 9,
+      "MEDIUM": 7,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-653",
+        2
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-269",
+        2
+      ],
+      [
+        "CWE-284",
+        2
+      ],
+      [
+        "CWE-306",
+        1
+      ]
+    ],
+    "threat_index": 379.3,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 379.3,
+        "yesterday": 208.7,
+        "change_pct": 81.7
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 1,
+        "change_pct": 100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-109442",
+      "description": "piflow 2.0.0 through 2.0.1 contains a remote code execution vulnerability in its DeepAgents chat agent, whose POST /chat and POST /chat/stream endpoints lack authentication. Attackers can instruct the agent to call the exec_shell tool, which runs arbitrary commands via subprocess.run without human a",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/cas-bigdatalab/piflow/blob/ad8d0108a54a4257307d4946dc9250e26f24c63f/agents/tools.py#L114",
+        "https://github.com/cas-bigdatalab/piflow/blob/ad8d0108a54a4257307d4946dc9250e26f24c63f/server.py#L615",
+        "https://www.lasso.security/vulnerability-database/cve-2026-109442"
+      ],
+      "published": "2026-10-20T01:17:10.383"
+    },
+    {
+      "id": "CVE-2026-109395",
+      "description": "Ning compress-lzf before 1.2.0 contains an out-of-bounds memory access vulnerability in the sun.misc.Unsafe based UnsafeChunkDecoder that fails to validate back-references and literal runs. Attackers can supply crafted LZF streams to applications using the default LZFDecoder to leak unrelated JVM he",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/github/securitylab/discussions/970",
+        "https://github.com/ning/compress",
+        "https://github.com/ning/compress/blob/compress-lzf-1.1.3/src/main/java/com/ning/compress/lzf/impl/UnsafeChunkDecoder.java#L104"
+      ],
+      "published": "2026-10-20T01:17:09.957"
+    },
+    {
+      "id": "CVE-2026-107400",
+      "description": "IBM TRIRIGA Application Platform 5.0.0 through 5.0.8 could allow a remote authenticated attacker to execute arbitrary code due to improper authentication.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7292418"
+      ],
+      "published": "2026-10-20T00:17:25.790"
+    },
+    {
+      "id": "CVE-2026-109126",
+      "description": "IBM Verify Identity Access 11.0.3.1 and IBM Security Verify Access 10.0.9.3 Appliance could allow a physically proximate attacker to gain elevated privileges due to the use of hard-coded credentials.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-798"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7292606"
+      ],
+      "published": "2026-10-20T00:17:30.370"
+    },
+    {
+      "id": "CVE-2026-109443",
+      "description": "JoySafeter through 1.0.0 contains a remote code execution vulnerability that allows authenticated users to run operating system commands via an unsandboxed execute tool in Copilot standard mode. Attackers can self-register, select standard mode in the WebSocket chat.start extension, and have the age",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-653"
+      ],
+      "references": [
+        "https://github.com/jd-opensource/JoySafeter/blob/12234a11a9d96acef85577afb1fa5682169d6171/backend/app/core/agent/backends/utils/command_executor.py#L110",
+        "https://github.com/jd-opensource/JoySafeter/blob/12234a11a9d96acef85577afb1fa5682169d6171/backend/app/services/copilot_service.py#L106",
+        "https://www.lasso.security/vulnerability-database/cve-2026-109443"
+      ],
+      "published": "2026-10-20T01:17:10.527"
+    },
+    {
+      "id": "CVE-2026-109444",
+      "description": "OpenSRE through 0.1.2026.10.19 contains an approval gate bypass vulnerability that allows attackers to execute shell_run commands without confirmation because the headless presenter's execution_allowed() always returns True. Attackers can inject instructions into alerts or Slack messages triaged by ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/Tracer-Cloud/opensre/blob/8eba8c9301fa954d9eecb1693b7e2021215ec2ec/gateway/transports/slack/processing/dispatcher.py#L276",
+        "https://github.com/Tracer-Cloud/opensre/blob/8eba8c9301fa954d9eecb1693b7e2021215ec2ec/tools/interactive_shell/subprocess_presenter.py#L41",
+        "https://www.lasso.security/vulnerability-database/cve-2026-109444"
+      ],
+      "published": "2026-10-20T01:17:10.673"
+    },
+    {
+      "id": "CVE-2026-105453",
+      "description": "IBM Sterling Connect Direct for Unix 6.3.0.0 through 6.3.0.7 and\u00a06.4.0.0 through 6.4.0.6 could allow a local attacker to gain elevated privileges due to improper privilege management.",
+      "severity": "HIGH",
+      "score": 8.4,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7292735"
+      ],
+      "published": "2026-10-20T00:17:23.400"
+    },
+    {
+      "id": "CVE-2026-107366",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.4 contains three message endpoints that perform no ownership verification. Any authenticated user can bulk-delete another user's messages, overwrite message content to inject malicious prompts, or hijack an entire conversation session by reassigning its session ID",
+      "severity": "HIGH",
+      "score": 8.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7293016"
+      ],
+      "published": "2026-10-20T00:17:25.640"
+    },
+    {
+      "id": "CVE-2026-109440",
+      "description": "LangAlpha through 2026.09.07 contains an indirect prompt injection vulnerability that allows remote attackers to execute shell commands or Python by planting instructions in web content retrieved by the agent. Because Bash and ExecuteCode lack an allow-list and human-in-the-loop approval, attackers ",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [],
+      "references": [
+        "https://github.com/ginlix-ai/LangAlpha/blob/435a5a44fabdeb33e409a62d233a936d96241c86/src/ptc_agent/agent/agent.py#L524",
+        "https://www.lasso.security/vulnerability-database/cve-2026-109440",
+        "https://www.vulncheck.com/advisories/langalpha-through-2026.09.07-indirect-prompt-injection-rce-via-bash-and-executecode"
+      ],
+      "published": "2026-10-20T01:17:10.103"
+    },
+    {
+      "id": "CVE-2026-28853",
+      "description": "The issue was addressed with improved checks. This issue is fixed in macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to elevate privileges.",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/149042",
+        "https://support.apple.com/en-us/149043"
+      ],
+      "published": "2026-10-20T01:17:11.460"
+    },
+    {
+      "id": "CVE-2026-105297",
+      "description": "Summary\n\n\n\nBefore version 0.8.1, Pingora's HTTP/2 server used the h2 crate's default limits unless the application set its own 16 MiB decoded header-list size and no limit on concurrent streams. A remote, unauthenticated client can send 1-byte HPACK references to a near-empty header, making the serv",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/cloudflare/pingora"
+      ],
+      "published": "2026-10-20T01:17:09.613"
+    },
+    {
+      "id": "CVE-2026-112373",
+      "description": "A security vulnerability has been detected in H3C Magic NX15 NX15V100R017. This impacts the function sub_416874 of the file /usr/bin/usrlist. Such manipulation leads to stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/XxingGoD/H3C-NX15-R017-Vulns/tree/main/H3C/NX15R017/usrlist_stack_overflow_dos",
+        "https://vuldb.com/cve/CVE-2026-112373",
+        "https://vuldb.com/submit/983540"
+      ],
+      "published": "2026-10-20T00:17:30.750"
+    },
+    {
+      "id": "CVE-2026-109441",
+      "description": "LangAlpha through 2026.09.07 contains an improper isolation vulnerability that places all tenants' sandbox containers on Docker's shared default bridge network with inter-container communication enabled. Authenticated users with code execution in their own sandbox can connect directly to other tenan",
+      "severity": "MEDIUM",
+      "score": 5.8,
+      "cwes": [
+        "CWE-653"
+      ],
+      "references": [
+        "https://github.com/ginlix-ai/LangAlpha/blob/435a5a44fabdeb33e409a62d233a936d96241c86/src/ptc_agent/config/core.py#L295",
+        "https://www.lasso.security/vulnerability-database/cve-2026-109441",
+        "https://www.vulncheck.com/advisories/langalpha-through-2026.09.07-cross-tenant-sandbox-exposure-via-shared-docker-bridge"
+      ],
+      "published": "2026-10-20T01:17:10.240"
+    },
+    {
+      "id": "CVE-2026-28850",
+      "description": "An authorization issue was addressed with improved state management. This issue is fixed in visionOS 27. An app may be able to access sensitive user data.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/149038"
+      ],
+      "published": "2026-10-20T01:17:11.347"
+    },
+    {
+      "id": "CVE-2026-65356",
+      "description": "An access issue was addressed with improved access controls. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to access sensitive user data.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/149035",
+        "https://support.apple.com/en-us/149042",
+        "https://support.apple.com/en-us/149043"
+      ],
+      "published": "2026-10-20T01:17:16.570"
+    },
+    {
+      "id": "CVE-2026-65379",
+      "description": "The issue was addressed with improved handling of secure input state. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to access sensitive user data.",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-200",
+        "CWE-284"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/149035",
+        "https://support.apple.com/en-us/149042",
+        "https://support.apple.com/en-us/149043"
+      ],
+      "published": "2026-10-20T01:17:17.860"
+    },
+    {
+      "id": "CVE-2026-8355",
+      "description": "IBM ContextForge MCP Gateway 0.1.0 through 1.0.5 is vulnerable to a server-side request Forgery (SSRF) that allows authenticated users with gateway creation privileges to perform arbitrary HTTP POST requests to internal network resources and cloud metadata endpoints. The vulnerability occurs during ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://www.ibm.com/support/pages/node/7285723"
+      ],
+      "published": "2026-10-20T00:19:20.530"
+    },
+    {
+      "id": "CVE-2026-65372",
+      "description": "A race condition was addressed with additional validation. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. A malicious application may be able to bypass Privacy preferences.",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-362"
+      ],
+      "references": [
+        "https://support.apple.com/en-us/149035",
+        "https://support.apple.com/en-us/149042",
+        "https://support.apple.com/en-us/149043"
+      ],
+      "published": "2026-10-20T01:17:17.313"
+    },
+    {
+      "id": "CVE-2026-105298",
+      "description": "Summary\n\n\n\nBefore version 0.9.0, Pingora accepted HTTP/2 requests whose Host header differed from the :authority pseudo-header. Request filters, cache keys, and logs that read the request URI (session.req_header().uri) saw the :authority value, but the upstream received the client-supplied Host valu",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-444"
+      ],
+      "references": [
+        "https://github.com/cloudflare/pingora"
+      ],
+      "published": "2026-10-20T01:17:09.787"
+    },
+    {
+      "id": "CVE-2026-28854",
+      "description": "The issue was addressed with additional app bundle integrity checks. This issue is fixed in macOS Golden Gate 27. A maliciously modified app may not be prevented from launching.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149035"
+      ],
+      "published": "2026-10-20T01:17:11.563"
+    }
+  ]
+}
