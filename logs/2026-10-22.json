@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-10-22T18:38:27.904815+00:00",
-  "scan_id": "ad5364bc84",
+  "timestamp": "2026-10-22T23:28:37.269024+00:00",
+  "scan_id": "7a96dfc33a",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
-      "CRITICAL": 2,
-      "HIGH": 9,
+      "CRITICAL": 3,
+      "HIGH": 8,
       "MEDIUM": 7,
       "UNKNOWN": 2
     },
     "top_cwes": [
       [
-        "CWE-653",
+        "CWE-862",
         2
       ],
       [
-        "CWE-862",
+        "CWE-653",
         2
       ],
       [
@@ -31,8 +31,8 @@
         1
       ]
     ],
-    "threat_index": 379.3,
-    "critical_count": 2
+    "threat_index": 394.2,
+    "critical_count": 3
   },
   "delta": {
     "status": "compared",
@@ -43,14 +43,14 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 379.3,
+        "today": 394.2,
         "yesterday": 208.7,
-        "change_pct": 81.7
+        "change_pct": 88.9
       },
       "critical_count": {
-        "today": 2,
+        "today": 3,
         "yesterday": 1,
-        "change_pct": 100.0
+        "change_pct": 200.0
       }
     }
   },
@@ -69,6 +69,21 @@
         "https://www.lasso.security/vulnerability-database/cve-2026-109442"
       ],
       "published": "2026-10-20T01:17:10.383"
+    },
+    {
+      "id": "CVE-2026-109444",
+      "description": "OpenSRE through 0.1.2026.10.19 contains an approval gate bypass vulnerability that allows attackers to execute shell_run commands without confirmation because the headless presenter's execution_allowed() always returns True. Attackers can inject instructions into alerts or Slack messages triaged by ",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/Tracer-Cloud/opensre/blob/8eba8c9301fa954d9eecb1693b7e2021215ec2ec/gateway/transports/slack/processing/dispatcher.py#L276",
+        "https://github.com/Tracer-Cloud/opensre/blob/8eba8c9301fa954d9eecb1693b7e2021215ec2ec/tools/interactive_shell/subprocess_presenter.py#L41",
+        "https://www.lasso.security/vulnerability-database/cve-2026-109444"
+      ],
+      "published": "2026-10-20T01:17:10.673"
     },
     {
       "id": "CVE-2026-109395",
@@ -112,6 +127,19 @@
       "published": "2026-10-20T00:17:30.370"
     },
     {
+      "id": "CVE-2026-109440",
+      "description": "LangAlpha through 2026.09.07 contains an indirect prompt injection vulnerability that allows remote attackers to execute shell commands or Python by planting instructions in web content retrieved by the agent. Because Bash and ExecuteCode lack an allow-list and human-in-the-loop approval, attackers ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [],
+      "references": [
+        "https://github.com/ginlix-ai/LangAlpha/blob/435a5a44fabdeb33e409a62d233a936d96241c86/src/ptc_agent/agent/agent.py#L524",
+        "https://www.lasso.security/vulnerability-database/cve-2026-109440",
+        "https://www.vulncheck.com/advisories/langalpha-through-2026.09.07-indirect-prompt-injection-rce-via-bash-and-executecode"
+      ],
+      "published": "2026-10-20T01:17:10.103"
+    },
+    {
       "id": "CVE-2026-109443",
       "description": "JoySafeter through 1.0.0 contains a remote code execution vulnerability that allows authenticated users to run operating system commands via an unsandboxed execute tool in Copilot standard mode. Attackers can self-register, select standard mode in the WebSocket chat.start extension, and have the age",
       "severity": "HIGH",
@@ -125,21 +153,6 @@
         "https://www.lasso.security/vulnerability-database/cve-2026-109443"
       ],
       "published": "2026-10-20T01:17:10.527"
-    },
-    {
-      "id": "CVE-2026-109444",
-      "description": "OpenSRE through 0.1.2026.10.19 contains an approval gate bypass vulnerability that allows attackers to execute shell_run commands without confirmation because the headless presenter's execution_allowed() always returns True. Attackers can inject instructions into alerts or Slack messages triaged by ",
-      "severity": "HIGH",
-      "score": 8.8,
-      "cwes": [
-        "CWE-862"
-      ],
-      "references": [
-        "https://github.com/Tracer-Cloud/opensre/blob/8eba8c9301fa954d9eecb1693b7e2021215ec2ec/gateway/transports/slack/processing/dispatcher.py#L276",
-        "https://github.com/Tracer-Cloud/opensre/blob/8eba8c9301fa954d9eecb1693b7e2021215ec2ec/tools/interactive_shell/subprocess_presenter.py#L41",
-        "https://www.lasso.security/vulnerability-database/cve-2026-109444"
-      ],
-      "published": "2026-10-20T01:17:10.673"
     },
     {
       "id": "CVE-2026-105453",
@@ -166,19 +179,6 @@
         "https://www.ibm.com/support/pages/node/7293016"
       ],
       "published": "2026-10-20T00:17:25.640"
-    },
-    {
-      "id": "CVE-2026-109440",
-      "description": "LangAlpha through 2026.09.07 contains an indirect prompt injection vulnerability that allows remote attackers to execute shell commands or Python by planting instructions in web content retrieved by the agent. Because Bash and ExecuteCode lack an allow-list and human-in-the-loop approval, attackers ",
-      "severity": "HIGH",
-      "score": 8.1,
-      "cwes": [],
-      "references": [
-        "https://github.com/ginlix-ai/LangAlpha/blob/435a5a44fabdeb33e409a62d233a936d96241c86/src/ptc_agent/agent/agent.py#L524",
-        "https://www.lasso.security/vulnerability-database/cve-2026-109440",
-        "https://www.vulncheck.com/advisories/langalpha-through-2026.09.07-indirect-prompt-injection-rce-via-bash-and-executecode"
-      ],
-      "published": "2026-10-20T01:17:10.103"
     },
     {
       "id": "CVE-2026-28853",
