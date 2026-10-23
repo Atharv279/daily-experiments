@@ -1,0 +1,348 @@
+{
+  "timestamp": "2026-10-23T07:43:06.451320+00:00",
+  "scan_id": "0f5ab31a83",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 1,
+      "MEDIUM": 12,
+      "LOW": 4,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-787",
+        3
+      ],
+      [
+        "CWE-22",
+        3
+      ],
+      [
+        "CWE-918",
+        2
+      ],
+      [
+        "CWE-258",
+        1
+      ],
+      [
+        "CWE-259",
+        1
+      ]
+    ],
+    "threat_index": 210.8,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 210.8,
+        "yesterday": 394.2,
+        "change_pct": -46.5
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 3,
+        "change_pct": -66.7
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-113736",
+      "description": "A vulnerability has been found in D-Link DHP-W610AV 1.02EUb03. The impacted element is the function login_prepare_hnap of the file etc/defnodes/defaultvalue.xml of the component HNAP Login. The manipulation of the argument Password leads to empty password in configuration file. The attack can be ini",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-258",
+        "CWE-259"
+      ],
+      "references": [
+        "https://github.com/XueDugu/dlink-dhp-w610av-empty-admin-password-evidence",
+        "https://github.com/XueDugu/dlink-dhp-w610av-empty-admin-password-evidence/blob/main/poc/poc_dhp610av_login.py",
+        "https://vuldb.com/cve/CVE-2026-113736"
+      ],
+      "published": "2026-10-21T01:17:25.187"
+    },
+    {
+      "id": "CVE-2021-48018",
+      "description": "Vyper from 0.2.13 before 0.2.15 allocates storage slots for @nonreentrant reentrancy locks at the same locations as contract storage variables. When a function using @nonreentrant is called, setting the lock overwrites the overlapping storage variable, corrupting contract state and breaking the cont",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/vyperlang/vyper/security/advisories/GHSA-7f92-rr6w-cq64",
+        "https://www.vulncheck.com/advisories/vyper-0.2.13-before-0.2.15-storage-corruption-via-nonreentrant-decorator"
+      ],
+      "published": "2026-10-21T01:17:18.983"
+    },
+    {
+      "id": "CVE-2020-37286",
+      "description": "Vyper from 0.1.0b4 before 0.3.0 contains a memory corruption vulnerability caused by an incorrect stack tip pointer when internal function calls appear inside tuples or nested calls. Contracts using such calls as tuple elements, call arguments, or builtin arguments like concat or ecrecover can retur",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/vyperlang/vyper/security/advisories/GHSA-2r3x-4mrv-mcxf",
+        "https://www.vulncheck.com/advisories/vyper-0.1-0b4-before-0.3.0-memory-corruption-via-nested-internal-function-calls"
+      ],
+      "published": "2026-10-21T01:17:18.010"
+    },
+    {
+      "id": "CVE-2021-48020",
+      "description": "Vyper from 0.1.0b4 before 0.3.0 contains a memory corruption vulnerability caused by an incorrect stack tip pointer when internal function calls are performed inside arrays. Contracts placing internal calls in nested array elements, external call arguments, struct literals, or raw_log topics can hav",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/vyperlang/vyper/security/advisories/GHSA-22wc-c9wj-6q2v",
+        "https://www.vulncheck.com/advisories/vyper-before-0.3.0-memory-corruption-via-internal-function-calls-in-arrays"
+      ],
+      "published": "2026-10-21T01:17:19.300"
+    },
+    {
+      "id": "CVE-2025-71437",
+      "description": "Astral uv before 0.8.22 contains a path traversal vulnerability in source distribution (sdist) tar extraction that allows a specially crafted sequence of symlinks to redirect file writes outside the intended extraction prefix. Attackers can publish a malicious sdist that, when installed by a victim,",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/astral-sh/uv/security/advisories/GHSA-7j9j-68r2-f35q",
+        "https://www.vulncheck.com/advisories/astral-uv-through-0.8.21-path-traversal-via-symlinks-in-sdist-tar-extraction"
+      ],
+      "published": "2026-10-21T01:17:19.493"
+    },
+    {
+      "id": "CVE-2026-113738",
+      "description": "A vulnerability has been found in R6410418 Jackrong-llm-finetuning-guide up to ef2b17f2798cd18cd85375080c35a58397ad0d09. This vulnerability affects the function extract_mtp_heads of the file qwen-mtp-gguf/scripts/qwen_mtp_gguf_pipeline.py of the component MTP weight_map Handler. The manipulation of ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/R6410418/Jackrong-llm-finetuning-guide/",
+        "https://github.com/R6410418/Jackrong-llm-finetuning-guide/issues/16",
+        "https://github.com/user-attachments/files/33115067/poc.zip"
+      ],
+      "published": "2026-10-21T01:17:25.563"
+    },
+    {
+      "id": "CVE-2026-113740",
+      "description": "A flaw has been found in itsourcecode Online Cake Ordering System 1.0. Affected by this vulnerability is an unknown functionality of the file /deletecustomer.php. This manipulation of the argument ID causes sql injection. The attack is possible to be carried out remotely. The exploit has been publis",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/milo417/submit/issues/1",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-113740"
+      ],
+      "published": "2026-10-21T01:17:25.737"
+    },
+    {
+      "id": "CVE-2020-37287",
+      "description": "Vyper before 0.2.6 contains a call stack corruption vulnerability that causes incorrect function outputs when complex types with non-base members are passed as arguments. Contracts passing multi-dimensional arrays or structs to internal or external functions receive corrupted values because the comp",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-131"
+      ],
+      "references": [
+        "https://github.com/vyperlang/vyper/security/advisories/GHSA-4v7v-gqf9-ww2g",
+        "https://www.vulncheck.com/advisories/vyper-before-0.2.6-call-stack-corruption-via-complex-type-function-arguments"
+      ],
+      "published": "2026-10-21T01:17:18.540"
+    },
+    {
+      "id": "CVE-2026-113737",
+      "description": "A flaw has been found in R6410418 Jackrong-llm-finetuning-guide up to ef2b17f2798cd18cd85375080c35a58397ad0d09. This affects the function validate_indexed_tensors of the file qwen-mtp-gguf/scripts/qwen_mtp_gguf_pipeline.py. Executing a manipulation of the argument weight_map can lead to path travers",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/R6410418/Jackrong-llm-finetuning-guide/",
+        "https://github.com/R6410418/Jackrong-llm-finetuning-guide/issues/15",
+        "https://github.com/user-attachments/files/33114736/poc.zip"
+      ],
+      "published": "2026-10-21T01:17:25.383"
+    },
+    {
+      "id": "CVE-2026-113707",
+      "description": "A security flaw has been discovered in a2aproject a2a-rs up to 0.4.4. The affected element is the function InMemoryTaskStore::update of the file a2a-server/src/task_store/inmemory.rs. The manipulation results in race condition. The attack may be performed from remote. The patch is identified as 7050",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-362"
+      ],
+      "references": [
+        "https://github.com/a2aproject/a2a-rs/",
+        "https://github.com/a2aproject/a2a-rs/commit/7050c7d329238539424ee46440e23b91c4825bee",
+        "https://github.com/a2aproject/a2a-rs/pull/126"
+      ],
+      "published": "2026-10-21T00:17:49.157"
+    },
+    {
+      "id": "CVE-2021-48019",
+      "description": "Vyper before 0.2.9 deploys forwarder proxies through the built-in create_forwarder_to function that report a fixed 4096-byte RETURNDATASIZE rather than the actual return data size. Calls through these proxies can yield corrupted data when a function returns more than 4096 bytes without return data s",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-805"
+      ],
+      "references": [
+        "https://github.com/vyperlang/vyper/security/advisories/GHSA-375m-5fvv-xq23",
+        "https://www.vulncheck.com/advisories/vyper-before-0.2.9-incorrect-returndatasize-in-create-forwarder-to-proxies"
+      ],
+      "published": "2026-10-21T01:17:19.130"
+    },
+    {
+      "id": "CVE-2026-109681",
+      "description": "The FTP client trusts the server's PASV response IP:port without validation against the control connection target. A rogue FTP server can specify any IP:port in the 227 Passive Mode response, causing the operator's machine to open a TCP connection to an arbitrary host.",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/rapid7/metasploit-framework/pull/21994"
+      ],
+      "published": "2026-10-21T00:17:17.830"
+    },
+    {
+      "id": "CVE-2026-109682",
+      "description": "Metasploit Framework versions before 6.5.7 allow HTTP requests made through send_request_cgi! to follow redirects to a different host without restricting the redirect destination. A malicious HTTP server can cause the system running Metasploit to make requests to arbitrary HTTP services reachable fr",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/rapid7/metasploit-framework/pull/21979"
+      ],
+      "published": "2026-10-21T00:17:18.357"
+    },
+    {
+      "id": "CVE-2026-113741",
+      "description": "A vulnerability has been found in itsourcecode Online Cake Ordering System 1.0. Affected by this issue is some unknown functionality of the file /404.php. Such manipulation of the argument useruid leads to cross site scripting. The attack may be performed from remote. The exploit has been disclosed ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/milo417/submit/issues/2",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-113741"
+      ],
+      "published": "2026-10-21T01:17:25.923"
+    },
+    {
+      "id": "CVE-2026-113735",
+      "description": "A vulnerability was determined in D-Link DCS-6501LH 3.03.02. Affected by this vulnerability is the function mydlink_set_root_pwd of the file /mnt/mtd/aoni_ipc. Executing a manipulation can lead to use of weak credentials. The attack may be launched remotely. The attack requires a high level of compl",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-1391"
+      ],
+      "references": [
+        "https://github.com/XueDugu/dlink-dcs6501lh-predictable-telnet-root-evidence",
+        "https://github.com/XueDugu/dlink-dcs6501lh-predictable-telnet-root-evidence/tree/main/poc",
+        "https://vuldb.com/cve/CVE-2026-113735"
+      ],
+      "published": "2026-10-21T00:17:49.333"
+    },
+    {
+      "id": "CVE-2020-37288",
+      "description": "Vyper from 0.1.0b10 before 0.2.3 generates incorrect code for a return statement inside a for loop in an internal function called two or more internal calls deep, producing an invalid jump destination (stack underflow). Affected contracts revert such calls unnecessarily, which in limited circumstanc",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-670"
+      ],
+      "references": [
+        "https://github.com/vyperlang/vyper/security/advisories/GHSA-vg88-3v92-rjx2",
+        "https://www.vulncheck.com/advisories/vyper-0.1-0b10-before-0.2.3-invalid-jump-destination-via-return-in-nested-loops"
+      ],
+      "published": "2026-10-21T01:17:18.683"
+    },
+    {
+      "id": "CVE-2020-37289",
+      "description": "Vyper before 0.3.1 lacks a uint8 type, allowing interface return values declared as uint8, such as ERC20.decimals(), to be stored in uint256 variables without bounds checking. Malicious contracts can return values greater than 255 to manipulate or bypass contract logic that relies on these values.",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://github.com/vyperlang/vyper/security/advisories/GHSA-mr6r-mvw4-736g",
+        "https://www.vulncheck.com/advisories/vyper-before-0.3.1-improper-input-validation-of-uint8-interface-return-values"
+      ],
+      "published": "2026-10-21T01:17:18.830"
+    },
+    {
+      "id": "CVE-2026-113706",
+      "description": "A vulnerability was identified in a2aproject a2a-rs up to 0.4.3. Impacted is an unknown function of the file a2a-server/src/task_store/inmemory.rs. The manipulation of the argument historyLength leads to information disclosure. The attack is possible to be carried out remotely. The identifier of the",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-200",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/a2aproject/a2a-rs/",
+        "https://github.com/a2aproject/a2a-rs/commit/68f1b7e772ae5d6c9e581ac9b48bcddd10fe70eb",
+        "https://github.com/a2aproject/a2a-rs/pull/122"
+      ],
+      "published": "2026-10-21T00:17:48.957"
+    },
+    {
+      "id": "CVE-2026-105044",
+      "description": "Improper Neutralization of Special Elements used in an OS Command in\u00a0Security Toolbox versions before\u00a020260929 in\u00a0Qingteng Host Adaptive Security Platform (Host Monitoring) V3.0 allows an authenticated console administrator to execute arbitrary commands on attached clients via OS command injection",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/mandiant/Vulnerability-Disclosures/blob/master/2026/MNDT-2026-0038.md"
+      ],
+      "published": "2026-10-21T01:17:19.890"
+    },
+    {
+      "id": "CVE-2026-111943",
+      "description": "On most platforms, Go uses the given system root certificates. However, in some narrower cases, the system trust stores may not be updated without further action. To defend against the narrower set of cases that may remain affected, a denylist was added in crypto/x509 to return an error when calling",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://go.dev/cl/851047",
+        "https://go.dev/issue/82345",
+        "https://groups.google.com/g/golang-announce/c/66pojueaQek"
+      ],
+      "published": "2026-10-21T01:17:20.797"
+    }
+  ]
+}
