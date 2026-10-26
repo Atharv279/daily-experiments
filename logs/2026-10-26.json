@@ -1,0 +1,322 @@
+{
+  "timestamp": "2026-10-26T07:55:40.958841+00:00",
+  "scan_id": "197fe50af8",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 3,
+      "MEDIUM": 14,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        4
+      ],
+      [
+        "CWE-862",
+        4
+      ],
+      [
+        "CWE-284",
+        2
+      ],
+      [
+        "CWE-200",
+        2
+      ],
+      [
+        "CWE-502",
+        1
+      ]
+    ],
+    "threat_index": 313.1,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 313.1,
+        "yesterday": 270.1,
+        "change_pct": 15.9
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 2,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-115806",
+      "description": "The Prime Mover \u2013 Backup and Migration plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.2.1 via deserialization of untrusted input in the migration search-and-replace routine (recursiveUnserializeReplace()). An unauthenticated attacker can store a cr",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/prime-mover/tags/2.2.1/utilities/PrimeMoverSearchReplace.php#L1281",
+        "https://plugins.trac.wordpress.org/browser/prime-mover/tags/2.2.1/utilities/PrimeMoverSearchReplace.php#L391",
+        "https://plugins.trac.wordpress.org/browser/prime-mover/tags/2.2.1/utilities/PrimeMoverSearchReplace.php#L422"
+      ],
+      "published": "2026-10-24T05:17:04.900"
+    },
+    {
+      "id": "CVE-2026-110956",
+      "description": "The asVereinbase  WordPress plugin before 1.1.8 does not require a valid password or a genuine second factor before authenticating a user, treating an empty stored value as a match, so an unauthenticated attacker can log in as any user, including an administrator.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/95501052-9f20-4391-9171-184cd2e4a445/"
+      ],
+      "published": "2026-10-24T06:16:36.010"
+    },
+    {
+      "id": "CVE-2026-113673",
+      "description": "The GeoDirectory  WordPress plugin before 2.8.194 does not properly escape administrator-defined text before writing it into a generated PHP file in its own folder, allowing high privilege users such as a subsite administrator on a multisite network, who cannot otherwise run code, to achieve Remote ",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/7ef117ed-1fd6-48e6-b242-87a7b65d3477/"
+      ],
+      "published": "2026-10-24T06:16:36.907"
+    },
+    {
+      "id": "CVE-2026-115807",
+      "description": "The User Profile Builder \u2013 Beautiful User Registration Forms, User Profiles & User Role Editor plugin for WordPress is vulnerable to Limited Privilege Escalation in all versions up to, and including, 4.0.3. This is due to the Gutenberg Register block passing the attacker-controlled Assigned Role att",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3741133/profile-builder",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/21931b7b-3c3d-4297-878e-bc0f187557a0?source=cve"
+      ],
+      "published": "2026-10-24T05:17:06.500"
+    },
+    {
+      "id": "CVE-2026-112207",
+      "description": "The Download Monitor WordPress plugin before 5.3.4 does not properly validate that a clicked link belongs to the site before fetching it client-side and rendering part of the response in the page, which allows unauthenticated attackers to execute arbitrary JavaScript in the browser of any user who i",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/03d5e83b-3119-4862-b1be-8c6fe53f9963/"
+      ],
+      "published": "2026-10-24T06:16:36.143"
+    },
+    {
+      "id": "CVE-2026-115929",
+      "description": "MongoDB Compass relies on Electron, a third-party runtime that carries its own TLS root certificate store. This root certificate store has the\u00a0recoverable\u00a0eMudhra intermediate CA certificates.\u00a0Issue is\u00a0resolved by updating to Compass 1.53.1, which includes Electron 44.9.1.",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-295"
+      ],
+      "references": [
+        "https://blog.mozilla.org/security/2026/10/20/protecting-firefox-users-following-the-compromise-of-emudhra-intermediate-certificates/",
+        "https://github.com/mongodb-js/compass/releases/tag/v1.53.1",
+        "https://releases.electronjs.org/release/v44.9.1"
+      ],
+      "published": "2026-10-24T01:17:08.250"
+    },
+    {
+      "id": "CVE-2026-105199",
+      "description": "The Pixel Tag Manager for WooCommerce  WordPress plugin before 2.2.3 does not perform a capability check in one of its AJAX actions, and exposes the nonce protecting it to any user able to access the admin dashboard, allowing users with a role as low as Contributor to overwrite the Pixel Tag Manager",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/69d7c59c-77d1-422d-8ad7-6066dad59013/"
+      ],
+      "published": "2026-10-24T06:16:34.453"
+    },
+    {
+      "id": "CVE-2026-113493",
+      "description": "The GeoDirectory  WordPress plugin before 2.8.194 does not sanitise and escape some of its map shortcode attributes before outputting them within a style attribute, allowing users with the Contributor role and above to perform Stored Cross-Site Scripting attacks that execute in the context of any us",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/a46bd6e9-4037-4213-b36d-e418a2ed41b7/"
+      ],
+      "published": "2026-10-24T06:16:36.773"
+    },
+    {
+      "id": "CVE-2026-114429",
+      "description": "The WPVR  WordPress plugin before 9.0.3 does not properly sanitise and escape some of its tour hotspot content before storing it and outputting it on the front end, which could allow users with the Contributor role and above to perform Stored Cross-Site Scripting attacks that execute in the browser ",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/30409336-b8ed-49f7-bc40-96c21f494155/"
+      ],
+      "published": "2026-10-24T06:16:37.173"
+    },
+    {
+      "id": "CVE-2026-108013",
+      "description": "BigFix Platform uses Mozilla CA certificate bundle (PEM). Versions of the bundle dated before 2026/10/20 still trust certificates whose private keys have been compromised. When BigFix Platform validates servers using such a bundle, an on-path attacker can impersonate remote servers and tamper with f",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [],
+      "references": [
+        "https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0134758"
+      ],
+      "published": "2026-10-24T07:16:44.990"
+    },
+    {
+      "id": "CVE-2026-107907",
+      "description": "The MAS Videos WordPress plugin through 1.3.4 does not perform any capability or ownership check when handling its front-end video and playlist deletion requests, and the nonce it verifies is tied only to a static action rather than to the targeted object, allowing any authenticated user with a mini",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/00de2695-275a-471e-bd64-9a8c54235c23/"
+      ],
+      "published": "2026-10-24T06:16:35.877"
+    },
+    {
+      "id": "CVE-2026-87835",
+      "description": "The Front End Users WordPress plugin through 3.2.35 does not restrict which account attributes a visitor may set when registering through its front-end forms, allowing unauthenticated users to assign themselves an arbitrary membership level and to mark their own account as approved, confirmed and pa",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/9a761c19-1608-43f7-9ab3-f92f3fc0aadf/"
+      ],
+      "published": "2026-10-24T06:16:37.320"
+    },
+    {
+      "id": "CVE-2026-113491",
+      "description": "The GeoDirectory  WordPress plugin before 2.8.194 does not validate a user-supplied image URL before using it as a local file path when saving a front-end listing, allowing users with Subscriber-level access and above to read files from outside the web root and to delete files on the server, limited",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/ba2114a5-01e3-40e7-a7f6-673674b6501d/"
+      ],
+      "published": "2026-10-24T06:16:36.503"
+    },
+    {
+      "id": "CVE-2026-107887",
+      "description": "The Advanced Twenty Seventeen WordPress plugin through 1.3.1 does not perform any capability or nonce check on the action that creates and activates its bundled child , allowing any authenticated user such as a subscriber to switch the site's active  site-wide, and allowing the same action to be tri",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/e252c7ee-368d-4bfb-a964-06804747c162/"
+      ],
+      "published": "2026-10-24T06:16:35.727"
+    },
+    {
+      "id": "CVE-2026-97353",
+      "description": "The News Kit Addons For Elementor WordPress plugin through 1.4.7 does not perform capability or ownership checks before updating post metadata in one of its authenticated AJAX actions, allowing users with subscriber-level access and above to write arbitrary post meta, under attacker-chosen keys, to ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/4114e6a4-d8ed-4456-a15f-4d47034ae75f/"
+      ],
+      "published": "2026-10-24T06:16:37.610"
+    },
+    {
+      "id": "CVE-2026-113490",
+      "description": "The GeoDirectory  WordPress plugin before 2.8.194 does not perform any status or ownership check when rendering a listing's map-popup through one of its single-item REST routes, allowing unauthenticated users to read the title, permalink and card fields of non-public (draft, pending, private and tra",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/2901f8f3-0b35-4565-b248-6c0dfc5de894/"
+      ],
+      "published": "2026-10-24T06:16:36.383"
+    },
+    {
+      "id": "CVE-2026-113492",
+      "description": "The GeoDirectory  WordPress plugin before 2.8.194 does not perform status, ownership or password checks when loading listings for one of its unauthenticated AJAX handlers, allowing unauthenticated users to disclose the content of non-public (draft, pending and private) listings by supplying their ID",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/5a1c17a0-c513-4f64-91c7-09c0f1878c71/"
+      ],
+      "published": "2026-10-24T06:16:36.617"
+    },
+    {
+      "id": "CVE-2026-113489",
+      "description": "The GeoDirectory  WordPress plugin before 2.8.194 does not verify that a referenced attachment belongs to the listing being saved, allowing users with Subscriber-level access and above to modify the title, caption, moderation status and featured flag of images belonging to other users' listings, and",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/2f539d43-6f95-494f-b399-21697145591e/"
+      ],
+      "published": "2026-10-24T06:16:36.260"
+    },
+    {
+      "id": "CVE-2026-97352",
+      "description": "The News Kit Addons For Elementor WordPress plugin before 1.4.9 does not perform a capability check on one of its AJAX actions, allowing authenticated users with subscriber-level access and above to install and activate a specific News Kit Addons For Elementor WordPress plugin before 1.4.9 from the ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/36f192be-f684-494c-8b37-9dd006407b6f/"
+      ],
+      "published": "2026-10-24T06:16:37.443"
+    },
+    {
+      "id": "CVE-2026-113674",
+      "description": "The GeoDirectory  WordPress plugin before 2.8.194 does not correctly verify ownership of listings submitted by logged-out users before allowing them to be edited, allowing unauthenticated attackers to modify, unpublish, attach images to, or reassign any guest-submitted listing when guest posting is ",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/23e66ca1-50eb-4ac1-9f5f-f830235c5af0/"
+      ],
+      "published": "2026-10-24T06:16:37.027"
+    }
+  ]
+}
