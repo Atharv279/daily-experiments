@@ -1,0 +1,376 @@
+{
+  "timestamp": "2026-10-28T08:44:27.758988+00:00",
+  "scan_id": "6c20fde5cc",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 4,
+      "MEDIUM": 12,
+      "LOW": 4
+    },
+    "top_cwes": [
+      [
+        "CWE-74",
+        4
+      ],
+      [
+        "CWE-94",
+        4
+      ],
+      [
+        "CWE-284",
+        3
+      ],
+      [
+        "CWE-266",
+        2
+      ],
+      [
+        "CWE-89",
+        2
+      ]
+    ],
+    "threat_index": 244.6,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 244.6,
+        "yesterday": 232.1,
+        "change_pct": 5.4
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-116116",
+      "description": "A vulnerability was detected in Yoosee GM8135S Camera 21.00.01.36. Affected is an unknown function of the component Secure Boot. Performing a manipulation results in improper verification of cryptographic signature. The attack needs to be approached locally. The exploit is now public and may be used",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-345",
+        "CWE-347"
+      ],
+      "references": [
+        "https://akosibrylle.me/writeups/yoosee-cve",
+        "https://vuldb.com/cve/CVE-2026-116116",
+        "https://vuldb.com/submit/1004712"
+      ],
+      "published": "2026-10-26T04:17:55.047"
+    },
+    {
+      "id": "CVE-2026-116106",
+      "description": "A security vulnerability has been detected in HeyCyan App 1.0.103 on Android. Affected by this vulnerability is an unknown functionality of the component FileProvider. The manipulation leads to improper access controls. The attack may be initiated remotely. The vendor was contacted early about this ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/ohackercego/heycyan-vulnerabilitys",
+        "https://vuldb.com/cve/CVE-2026-116106",
+        "https://vuldb.com/submit/1002851"
+      ],
+      "published": "2026-10-26T02:17:06.493"
+    },
+    {
+      "id": "CVE-2026-116110",
+      "description": "A vulnerability was found in GiantappMan LiveWallPaper 2.6.8.0 on Windows. This issue affects some unknown processing of the file /LiveWallpaper/UploadFile of the component SignalR Hub. Performing a manipulation results in missing authentication. The attack is possible to be carried out remotely. Th",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/GiantappMan/livewallpaper/",
+        "https://github.com/GiantappMan/livewallpaper/commit/b62f878899adbfc2968e3345442f3a3df91b774d",
+        "https://github.com/GiantappMan/livewallpaper/issues/185"
+      ],
+      "published": "2026-10-26T03:17:11.417"
+    },
+    {
+      "id": "CVE-2026-116112",
+      "description": "A vulnerability was identified in HashenUdara edoc-doctor-appointment-system up to cc258425b915d1af9e298777ccd26d160493e68d. The affected element is an unknown function of the file admin/add-new.php. The manipulation of the argument spec leads to sql injection. It is possible to initiate the attack ",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://gist.github.com/asdfghjkl12345678910111/1519ad5b24ad2441cca911ecbfaa9acb",
+        "https://vuldb.com/cve/CVE-2026-116112",
+        "https://vuldb.com/submit/1003917"
+      ],
+      "published": "2026-10-26T03:17:11.780"
+    },
+    {
+      "id": "CVE-2026-116098",
+      "description": "A vulnerability was detected in SteelRaven7 Ravenfield 25407073. This vulnerability affects the function cacheCoverPoints of the component RFL Custom Map Handler/RFLD Custom Map Handler. Performing a manipulation results in deserialization. Remote exploitation of the attack is possible. The patch is",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-20",
+        "CWE-502"
+      ],
+      "references": [
+        "https://drbloop.dev/blog/9-year-old-one-click-remote-code-execution-in-ravenfield",
+        "https://steamcommunity.com/app/636480/events/590690402783479125",
+        "https://vuldb.com/cve/CVE-2026-116098"
+      ],
+      "published": "2026-10-26T00:17:14.430"
+    },
+    {
+      "id": "CVE-2026-116099",
+      "description": "A flaw has been found in Fusion Creators Studio SCP Containment Breach Multiplayer up to 1.295. This issue affects the function BlitzBanks of the component Skynet++ Virtual Machine. Executing a manipulation can lead to out-of-bounds write. The attack can be executed remotely. The exploit has been pu",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-787"
+      ],
+      "references": [
+        "https://drbloop.dev/blog/one-click-remote-code-execution-in-scp-containment-breach-mutiplayer",
+        "https://github.com/drbloop2000/SCP-CBM-RCE/tree/main",
+        "https://steamdb.info/patchnotes/25701366/"
+      ],
+      "published": "2026-10-26T00:17:14.613"
+    },
+    {
+      "id": "CVE-2026-116101",
+      "description": "A vulnerability was found in itsourcecode Online Cake Ordering System 1.0. The affected element is an unknown function of the file /deletetransac.php. The manipulation of the argument ID results in sql injection. The attack may be performed from remote. The exploit has been made public and could be ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/RyanCarter9527/submit/issues/1",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-116101"
+      ],
+      "published": "2026-10-26T01:17:15.203"
+    },
+    {
+      "id": "CVE-2026-116102",
+      "description": "A vulnerability was determined in QuantGeekDev docker-mcp 0.1.0/0.2.0. The impacted element is the function _build_windows_command of the file docker_executor.py. This manipulation of the argument project_name causes os command injection. It is possible to initiate the attack remotely.",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-116102",
+        "https://vuldb.com/submit/1002791",
+        "https://vuldb.com/vuln/426170"
+      ],
+      "published": "2026-10-26T01:17:15.377"
+    },
+    {
+      "id": "CVE-2026-116103",
+      "description": "A vulnerability was identified in Sony Neural Network Libraries up to 1.39.0. This affects the function load_param_in_txt of the file python/src/nnabla/utils/cli/encode_decode_param.py of the component Encode Param Command Handler. Such manipulation leads to code injection. It is possible to launch ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/3em0/cve_repo/blob/main/2026/Neural-Network-Libraries-(nnabla)%E2%89%A4v1.39.0-Python-eval()-Code-Injection-in-'nnabla_cli%20encode_param'-Leading-to-Arbitrary-Command-Execution.md",
+        "https://vuldb.com/cve/CVE-2026-116103",
+        "https://vuldb.com/submit/1003039"
+      ],
+      "published": "2026-10-26T01:17:15.553"
+    },
+    {
+      "id": "CVE-2026-116104",
+      "description": "A security flaw has been discovered in Sony Neural Network Libraries up to 1.39.0. This impacts the function func_set_nnabla_version_decorate of the file python/src/nnabla/utils/converter/utils.py of the component NNP Converter. Performing a manipulation of the argument function.type results in code",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/3em0/cve_repo/blob/main/2026/Sony-NNabla-1.39.0-Code-Injection-in-NNP-Converter-('function.type'-eval()).md",
+        "https://vuldb.com/cve/CVE-2026-116104",
+        "https://vuldb.com/submit/1003040"
+      ],
+      "published": "2026-10-26T01:17:15.753"
+    },
+    {
+      "id": "CVE-2026-116109",
+      "description": "A vulnerability has been found in continuedev Continue 2.0.0. This vulnerability affects the function MCPManagerSingleton.setConnections of the file core/config/ConfigHandler.ts of the component MCP Server Transport. Such manipulation leads to os command injection. The attack can be executed remotel",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-116109",
+        "https://vuldb.com/submit/1003288",
+        "https://vuldb.com/vuln/426177"
+      ],
+      "published": "2026-10-26T03:17:10.337"
+    },
+    {
+      "id": "CVE-2026-116111",
+      "description": "A vulnerability was determined in 2K Games Civilization V 1.0.3.144. Impacted is the function loadstring of the component Lua Sandbox. Executing a manipulation can lead to type confusion. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized. The vendor",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-843"
+      ],
+      "references": [
+        "https://drbloop.dev/blog/three-click-rce-in-civi-v",
+        "https://github.com/drbloop2000/Sid-Meier-s-Civilization-V-RCE/blob/main/exploit.lua",
+        "https://vuldb.com/cve/CVE-2026-116111"
+      ],
+      "published": "2026-10-26T03:17:11.603"
+    },
+    {
+      "id": "CVE-2026-116113",
+      "description": "A security flaw has been discovered in GouGuOA up to 6.1.2. The impacted element is the function chunkUpload of the file app/disk/controller/Api.php. The manipulation of the argument file_extension results in unrestricted upload. It is possible to launch the attack remotely. The exploit has been rel",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/Gum29/rrrreeeeeeee-readme/blob/main/images/img/GouguOA-RCE-Standard-Vuln-Report-EN.md",
+        "https://vuldb.com/cve/CVE-2026-116113",
+        "https://vuldb.com/submit/1003776"
+      ],
+      "published": "2026-10-26T04:17:47.653"
+    },
+    {
+      "id": "CVE-2026-116107",
+      "description": "A vulnerability was detected in Datafeedr Product Sets Plugin up to 1.3.24 on WordPress. Affected by this issue is the function dfrps_ajax_delete_saved_search of the file functions/ajax.php of the component AJAX Handlers. The manipulation results in missing authorization. The attack may be launched ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862",
+        "CWE-863"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-116107",
+        "https://vuldb.com/submit/1002663",
+        "https://vuldb.com/vuln/426175"
+      ],
+      "published": "2026-10-26T02:17:06.677"
+    },
+    {
+      "id": "CVE-2026-116097",
+      "description": "A security vulnerability has been detected in CloudClassroom-PHP-Project. This affects an unknown part of the file addnewstudent.php. Such manipulation of the argument fname leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed publicly and may be used. T",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/vinniboy021-blip/Advisory/blob/main/addnewstudent-stored-xss.md",
+        "https://vuldb.com/cve/CVE-2026-116097",
+        "https://vuldb.com/submit/1001271"
+      ],
+      "published": "2026-10-26T00:17:14.260"
+    },
+    {
+      "id": "CVE-2026-116108",
+      "description": "A flaw has been found in openbq-org OpenBB up to 4.7.2/5.0.0. This affects an unknown part of the file openbb_platform/core/openbb_core/app/model/api_settings.py of the component Local API Server. This manipulation causes improper access controls. Remote exploitation of the attack is possible. The e",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-116108",
+        "https://vuldb.com/submit/1003285",
+        "https://vuldb.com/vuln/426176"
+      ],
+      "published": "2026-10-26T02:17:06.867"
+    },
+    {
+      "id": "CVE-2026-116105",
+      "description": "A weakness has been identified in HeyCyan App 1.0.103 on Android. Affected is an unknown function of the file AndroidManifest.xml of the component Network Security Configuration. Executing a manipulation can lead to cleartext transmission of sensitive information. The attack can be launched remotely",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-310",
+        "CWE-319"
+      ],
+      "references": [
+        "https://github.com/ohackercego/heycyan-vulnerabilitys",
+        "https://vuldb.com/cve/CVE-2026-116105",
+        "https://vuldb.com/submit/1002850"
+      ],
+      "published": "2026-10-26T02:17:06.317"
+    },
+    {
+      "id": "CVE-2026-116114",
+      "description": "A weakness has been identified in Yoosee GM8135S Camera 21.00.01.36. This affects an unknown function of the file /npc/npc of the component Live UDP H.264 Video Stream Handler. This manipulation causes cleartext transmission of sensitive information. The attack can be initiated remotely. The attack'",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-310",
+        "CWE-319"
+      ],
+      "references": [
+        "https://akosibrylle.me/writeups/yoosee-cve",
+        "https://vuldb.com/cve/CVE-2026-116114",
+        "https://vuldb.com/submit/1004708"
+      ],
+      "published": "2026-10-26T04:17:54.187"
+    },
+    {
+      "id": "CVE-2026-116115",
+      "description": "A security vulnerability has been detected in Yoosee GM8135S Camera 21.00.01.36. This impacts an unknown function of the file wpa_supplicantX.conf of the component WiFi Configuration. Such manipulation leads to improper initialization. The attack can only be initiated within the local network. This ",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-665"
+      ],
+      "references": [
+        "https://akosibrylle.me/writeups/yoosee-cve",
+        "https://vuldb.com/cve/CVE-2026-116115",
+        "https://vuldb.com/submit/1004711"
+      ],
+      "published": "2026-10-26T04:17:54.830"
+    },
+    {
+      "id": "CVE-2026-116100",
+      "description": "A vulnerability has been found in gougucms up to 4.08.18. Impacted is the function Add of the file app/admin/controller/Level.php of the component User Level Handler. The manipulation of the argument Title leads to cross site scripting. The attack is possible to be carried out remotely. The exploit ",
+      "severity": "LOW",
+      "score": 2.4,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/yuhuixiaowu/cve/blob/main/gougucms_v4.08.18_XSS.md",
+        "https://vuldb.com/cve/CVE-2026-116100",
+        "https://vuldb.com/submit/1002525"
+      ],
+      "published": "2026-10-26T01:17:15.023"
+    }
+  ]
+}
