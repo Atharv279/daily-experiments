@@ -1,12 +1,11 @@
 {
-  "timestamp": "2026-10-29T08:40:19.935507+00:00",
-  "scan_id": "a0dbc841a4",
+  "timestamp": "2026-10-29T15:17:34.820048+00:00",
+  "scan_id": "d6af533092",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
-      "HIGH": 2,
-      "MEDIUM": 17,
-      "UNKNOWN": 1
+      "HIGH": 3,
+      "MEDIUM": 17
     },
     "top_cwes": [
       [
@@ -26,11 +25,11 @@
         2
       ],
       [
-        "CWE-94",
+        "CWE-78",
         1
       ]
     ],
-    "threat_index": 242.2,
+    "threat_index": 268.6,
     "critical_count": 0
   },
   "delta": {
@@ -42,9 +41,9 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 242.2,
+        "today": 268.6,
         "yesterday": 244.6,
-        "change_pct": -1.0
+        "change_pct": 9.8
       },
       "critical_count": {
         "today": 0,
@@ -54,6 +53,21 @@
     }
   },
   "cves": [
+    {
+      "id": "CVE-2026-111422",
+      "description": "In apache-airflow-providers-ssh before 7.0.1, SSHRemoteJobOperator quoted the values of its templated `environment` parameter only once, although they are placed inside an already-quoted wrapper script, so shell syntax such as `$(...)` in a value was executed on the remote SSH host. In a Dag that pa",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://airflow.apache.org/docs/apache-airflow-providers-ssh/7.0.1/changelog.html",
+        "https://github.com/apache/airflow/pull/74810",
+        "https://lists.apache.org/thread/k159xrq1tbgmkvl24j63g12qh0mczk79"
+      ],
+      "published": "2026-10-27T00:17:09.197"
+    },
     {
       "id": "CVE-2026-116811",
       "description": "OpenPanel before 3.0.0 contains a sandbox escape vulnerability in the js-runtime validator that allows a project member to bypass the AST allowlist by aliasing the Function constructor. Attackers with write access can read payload.constructor.constructor into a local and call it to run arbitrary cod",
@@ -332,21 +346,6 @@
         "https://www.vulncheck.com/advisories/openpanel-before-3.0.0-improper-clickhouse-escaping-in-sankey-service-ts"
       ],
       "published": "2026-10-27T00:17:15.427"
-    },
-    {
-      "id": "CVE-2026-111422",
-      "description": "In apache-airflow-providers-ssh before 7.0.1, SSHRemoteJobOperator quoted the values of its templated `environment` parameter only once, although they are placed inside an already-quoted wrapper script, so shell syntax such as `$(...)` in a value was executed on the remote SSH host. In a Dag that pa",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [
-        "CWE-78"
-      ],
-      "references": [
-        "https://airflow.apache.org/docs/apache-airflow-providers-ssh/7.0.1/changelog.html",
-        "https://github.com/apache/airflow/pull/74810",
-        "https://lists.apache.org/thread/k159xrq1tbgmkvl24j63g12qh0mczk79"
-      ],
-      "published": "2026-10-27T00:17:09.197"
     }
   ]
 }
