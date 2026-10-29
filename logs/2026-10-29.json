@@ -1,0 +1,352 @@
+{
+  "timestamp": "2026-10-29T00:05:56.614105+00:00",
+  "scan_id": "777f54f81b",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 2,
+      "MEDIUM": 17,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-89",
+        4
+      ],
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-306",
+        2
+      ],
+      [
+        "CWE-284",
+        2
+      ],
+      [
+        "CWE-94",
+        1
+      ]
+    ],
+    "threat_index": 242.2,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 242.2,
+        "yesterday": 244.6,
+        "change_pct": -1.0
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-116811",
+      "description": "OpenPanel before 3.0.0 contains a sandbox escape vulnerability in the js-runtime validator that allows a project member to bypass the AST allowlist by aliasing the Function constructor. Attackers with write access can read payload.constructor.constructor into a local and call it to run arbitrary cod",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/Openpanel-dev/openpanel/commit/42fc8623b5c5c30f0b89686451c0c5ab13046b81",
+        "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-mc99-9jf5-22cq",
+        "https://www.vulncheck.com/advisories/openpanel-before-3.0.0-sandbox-escape-rce-via-webhook-javascript-template"
+      ],
+      "published": "2026-10-27T00:17:14.263"
+    },
+    {
+      "id": "CVE-2026-116808",
+      "description": "OpenPanel before 3.0.0 contains an sql injection vulnerability that allows authenticated users to read cross-tenant data by supplying a crafted property parameter to profile.values. Attackers can inject a SELECT expression with their own FROM/WHERE clauses and comment out the project_id scope to exf",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Openpanel-dev/openpanel/commit/a2aa053cb23e92967e812d3be5fb0f1d606d9fdc",
+        "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-4j6c-j6vc-xq96",
+        "https://www.vulncheck.com/advisories/openpanel-before-3.0.0-clickhouse-sql-injection-via-profile-values"
+      ],
+      "published": "2026-10-27T00:17:13.347"
+    },
+    {
+      "id": "CVE-2026-116604",
+      "description": "A vulnerability has been found in SourceCodester Online Food Ordering System 1.0. The affected element is an unknown function of the file admin/delete_admin.php. The manipulation of the argument ID leads to missing authentication. It is possible to initiate the attack remotely. The exploit has been ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/CyberShailendra/SourceCodesterAuthenticationonAdminDeleteEndpoints",
+        "https://vuldb.com/cve/CVE-2026-116604",
+        "https://vuldb.com/submit/1022963"
+      ],
+      "published": "2026-10-27T00:17:10.770"
+    },
+    {
+      "id": "CVE-2026-116807",
+      "description": "OpenPanel before 3.0.0 contains an sql injection vulnerability that allows authenticated users to bypass tenant scoping by injecting unescaped profile filter names into a JOIN subquery. Attackers can supply a crafted filter name with a trailing comment to bypass the project_id WHERE clause and read ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Openpanel-dev/openpanel/commit/a2aa053cb23e92967e812d3be5fb0f1d606d9fdc",
+        "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-pc3q-gw7f-p2x2",
+        "https://www.vulncheck.com/advisories/openpanel-before-3.0.0-clickhouse-sql-injection-via-event-events-trpc-query"
+      ],
+      "published": "2026-10-27T00:17:13.040"
+    },
+    {
+      "id": "CVE-2026-116812",
+      "description": "OpenPanel before 3.0.0 contains a sql injection vulnerability in profileColumnAccess in cohort.service.ts that allows project-read members to inject SQL by supplying unescaped profile filter column names. Attackers can submit a cohort.preview filter whose name contains a subquery spliced into argMax",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-gvwr-5684-wjqc",
+        "https://www.vulncheck.com/advisories/openpanel-before-3.0.0-clickhouse-sql-injection-via-cohort-preview-profile-filter"
+      ],
+      "published": "2026-10-27T00:17:14.560"
+    },
+    {
+      "id": "CVE-2026-116813",
+      "description": "OpenPanel before 3.0.0 contains an sql injection vulnerability in ConversionService.getConversion that allows project-read members and share-link holders to inject ClickHouse SQL through unescaped event names and dates. Attackers can break out of string literals in series names or startDate/endDate ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-7fm7-rprq-g8rm",
+        "https://www.vulncheck.com/advisories/openpanel-before-3.0.0-clickhouse-sql-injection-via-conversion-service-ts"
+      ],
+      "published": "2026-10-27T00:17:14.853"
+    },
+    {
+      "id": "CVE-2026-116814",
+      "description": "OpenPanel before 3.0.0 contains an information exposure vulnerability that writes database connection URLs and email template data to standard output logs. Users with log access can obtain database credentials from migration startup logs and password-reset tokens logged when SMTP_HOST and RESEND_API",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-532"
+      ],
+      "references": [
+        "https://github.com/Openpanel-dev/openpanel/commit/337b4ff8fe268c769a075a2e53206d54045cb2d5",
+        "https://github.com/Openpanel-dev/openpanel/commit/b197f024388060e37ef3b3dad43451a3d0a5d501",
+        "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-xr2x-w49w-hp2c"
+      ],
+      "published": "2026-10-27T00:17:15.140"
+    },
+    {
+      "id": "CVE-2026-116817",
+      "description": "OpenPanel before 3.0.0 contains a missing authentication vulnerability that allows unauthenticated attackers to access the Bull Board dashboard served on the worker HTTP port. Attackers can query /api/queues and call mutating Bull Board APIs to add, retry, or clean jobs and read queue data, metrics,",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/Openpanel-dev/openpanel/commit/193e1e3ae01aa5208b3bee754ddee2c7ce33b38d",
+        "https://github.com/Openpanel-dev/openpanel/commit/fb0b56977c82aa1ade61449df86726b0c1490f54",
+        "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-r627-6vrh-65p9"
+      ],
+      "published": "2026-10-27T00:17:15.713"
+    },
+    {
+      "id": "CVE-2026-116800",
+      "description": "WWBN AVideo before 29.5.0 contains a local file inclusion vulnerability that allows unauthenticated attackers to include PHP files outside the locale directory via a crafted Accept-Language header. Attackers can use overlapping traversal sequences like ....// to bypass single-pass removal in setLang",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/WWBN/AVideo/commit/22e8c734ec89bb793d09dcc83f630e42d5fcaa8a",
+        "https://github.com/WWBN/AVideo/releases/tag/v29.5.0",
+        "https://github.com/WWBN/AVideo/security/advisories/GHSA-r3jc-85h3-h7g2"
+      ],
+      "published": "2026-10-27T00:17:11.070"
+    },
+    {
+      "id": "CVE-2026-116802",
+      "description": "DOMPurify before 3.4.17 contains a cross-site scripting vulnerability that allows attackers to bypass the SMIL attributeName=href guard when PARSER_MEDIA_TYPE is application/xhtml+xml, because transformCaseFunc does not lowercase attribute names. Attackers can submit SVG with an animate or set eleme",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/cure53/DOMPurify/security/advisories/GHSA-c6gr-qvv4-5v3f",
+        "https://www.vulncheck.com/advisories/dompurify-before-3.4.17-xss-via-smil-attributename-guard-bypass-in-xhtml-mode"
+      ],
+      "published": "2026-10-27T00:17:11.637"
+    },
+    {
+      "id": "CVE-2026-116803",
+      "description": "DOMPurify before 3.4.17 contains a cross-site scripting vulnerability that allows attackers to keep event handlers armed when an IN_PLACE hook removes a parent or sibling node. Attacker markup in detached subtrees is never walked or neutralized, so handlers like img onerror fire after sanitize() ret",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/cure53/DOMPurify/security/advisories/GHSA-mrv2-3pqr-j5jr",
+        "https://www.vulncheck.com/advisories/dompurify-before-3.4.17-dom-xss-via-in-place-hook-detached-subtrees"
+      ],
+      "published": "2026-10-27T00:17:11.913"
+    },
+    {
+      "id": "CVE-2026-116804",
+      "description": "DOMPurify from 3.4.4 before 3.4.17 contains a SAFE_FOR_TEMPLATES bypass that lets attackers preserve template expressions in attached shadow roots when using RETURN_DOM, RETURN_DOM_FRAGMENT, or IN_PLACE modes. Attackers can split expressions across text nodes separated by disallowed elements, which ",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/cure53/DOMPurify/security/advisories/GHSA-cg2g-xh64-v4q7",
+        "https://www.vulncheck.com/advisories/dompurify-from-3.4.4-before-3.4.17-safe-for-templates-bypass-via-shadow-root-content"
+      ],
+      "published": "2026-10-27T00:17:12.193"
+    },
+    {
+      "id": "CVE-2026-116806",
+      "description": "OpenPanel before 3.0.0 contains a missing authorization vulnerability in the onboarding.project tRPC mutation that allows non-admin organization members to create projects and mint write-type ingestion credentials, bypassing the admin-only policy. Attackers can repeatedly call the endpoint with a me",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://github.com/Openpanel-dev/openpanel/commit/35c2a138fb9f8dde67dadfd426892f3762b25b78",
+        "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-5f38-q67m-mcmp",
+        "https://www.vulncheck.com/advisories/openpanel-before-3.0.0-privilege-escalation-via-onboarding-project-trpc-mutation"
+      ],
+      "published": "2026-10-27T00:17:12.753"
+    },
+    {
+      "id": "CVE-2026-116809",
+      "description": "OpenPanel before 3.0.0 contains a missing authorization vulnerability in the event.bots tRPC procedure that allows unauthenticated attackers to read bot events by only checking shareOverview row existence. Attackers can send anonymous requests with a projectId to retrieve bot-event names, types, and",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-r4g5-vgpj-923m",
+        "https://www.vulncheck.com/advisories/openpanel-before-3.0.0-missing-authorization-in-event-bots-trpc-procedure"
+      ],
+      "published": "2026-10-27T00:17:13.630"
+    },
+    {
+      "id": "CVE-2026-116810",
+      "description": "OpenPanel before 3.0.0 contains a missing authorization vulnerability that allows unauthenticated attackers to read any project's annotations by calling the public reference.getChartReferences tRPC procedure. Attackers can send requests with guessable slug-based project IDs to dump cross-tenant anno",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/Openpanel-dev/openpanel/commit/7b88523798dcd2dcba53c39ca00f8a8c448377c3",
+        "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-c98x-mph7-r6vp",
+        "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-vrrm-p9p4-2gfg"
+      ],
+      "published": "2026-10-27T00:17:13.933"
+    },
+    {
+      "id": "CVE-2026-116603",
+      "description": "A flaw has been found in SourceCodester Online Food Ordering System 1.0. Impacted is an unknown function of the file admin/add_food.php. Executing a manipulation of the argument image can lead to unrestricted upload. The attack may be performed from remote. The exploit has been published and may be ",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/CyberShailendra/SourceCodesterUnrestrictedFileUploadLeadingtoRemoteCode-Execution",
+        "https://vuldb.com/cve/CVE-2026-116603",
+        "https://vuldb.com/submit/1022954"
+      ],
+      "published": "2026-10-27T00:17:10.460"
+    },
+    {
+      "id": "CVE-2026-116801",
+      "description": "Parse Server before 8.6.105 and 9.0.0 before 9.10.5-alpha.6 does not validate the owning object reference in $relatedTo relation queries, so supplying a query operator instead of an object ID bypasses the owning-object ACL check. A client with read access to at least one object of the owning class c",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-943"
+      ],
+      "references": [
+        "https://github.com/parse-community/parse-server/security/advisories/GHSA-58m4-cqvw-4vgh",
+        "https://www.vulncheck.com/advisories/parse-server-9.0.0-before-9.10.5-alpha.6-acl-bypass-via-relatedto-query"
+      ],
+      "published": "2026-10-27T00:17:11.370"
+    },
+    {
+      "id": "CVE-2026-116805",
+      "description": "OpenPanel before 3.0.0 contains an information disclosure vulnerability that allows read-level project members to obtain argon2id hashes of ingestion credentials through the client.list tRPC query. Attackers can request client.list with a project ID and receive full Client rows including the secret ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://github.com/Openpanel-dev/openpanel/commit/e37d15cc2a2c908667593ff7a2ee40750f74ab5b",
+        "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-78w9-wwff-vxqc",
+        "https://www.vulncheck.com/advisories/openpanel-before-3.0.0-information-disclosure-of-ingestion-secret-hashes-via-client-list"
+      ],
+      "published": "2026-10-27T00:17:12.463"
+    },
+    {
+      "id": "CVE-2026-116815",
+      "description": "OpenPanel before 3.0.0 contains an improper escaping vulnerability in sankey.service.ts that allows authenticated project members to break ClickHouse string literals by supplying backslashes in event names. Attackers with read access can submit crafted events[].name values to the chart.sankey proced",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-116"
+      ],
+      "references": [
+        "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-gvr5-22f4-pj6g",
+        "https://www.vulncheck.com/advisories/openpanel-before-3.0.0-improper-clickhouse-escaping-in-sankey-service-ts"
+      ],
+      "published": "2026-10-27T00:17:15.427"
+    },
+    {
+      "id": "CVE-2026-111422",
+      "description": "In apache-airflow-providers-ssh before 7.0.1, SSHRemoteJobOperator quoted the values of its templated `environment` parameter only once, although they are placed inside an already-quoted wrapper script, so shell syntax such as `$(...)` in a value was executed on the remote SSH host. In a Dag that pa",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://airflow.apache.org/docs/apache-airflow-providers-ssh/7.0.1/changelog.html",
+        "https://github.com/apache/airflow/pull/74810",
+        "https://lists.apache.org/thread/k159xrq1tbgmkvl24j63g12qh0mczk79"
+      ],
+      "published": "2026-10-27T00:17:09.197"
+    }
+  ]
+}
