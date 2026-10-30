@@ -1,0 +1,353 @@
+{
+  "timestamp": "2026-10-30T00:01:03.690716+00:00",
+  "scan_id": "ca8f9e021c",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 6,
+      "MEDIUM": 12
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-287",
+        2
+      ],
+      [
+        "CWE-190",
+        2
+      ],
+      [
+        "CWE-639",
+        2
+      ],
+      [
+        "CWE-502",
+        1
+      ]
+    ],
+    "threat_index": 348.9,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 348.9,
+        "yesterday": 268.6,
+        "change_pct": 29.9
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-110879",
+      "description": "jackson-databind validates the outer class of a class-name type ID but accepts attacker-selected classes inside its generic arguments, even when those classes violate the declared type or would be rejected as direct type IDs. This bypasses the generic-argument validation added for CVE-2026-54512 (GH",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-j3rv-43j4-c7qm",
+        "https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-m8xf-2cr7-77ph",
+        "https://www.cve.org/CVERecord?id=CVE-2026-54512"
+      ],
+      "published": "2026-10-28T01:16:55.180"
+    },
+    {
+      "id": "CVE-2026-106013",
+      "description": "The Jupiter X Core plugin for WordPress is vulnerable to Authentication Bypass via the Twitter/X Social Login handler in all versions up to and including 4.61.0. The vulnerability exists within the verify_twitter_callback function because after exchanging the visitor's oauth_verifier for their acces",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/changeset/3759312/jupiterx-core/trunk/includes/extensions/raven/includes/modules/forms/classes/social-login-handler/twitter.php",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/1ad42de2-9ed1-4cf6-a031-22789be4cbe2?source=cve"
+      ],
+      "published": "2026-10-28T02:17:01.303"
+    },
+    {
+      "id": "CVE-2014-125138",
+      "description": "C97net qEngine CMS through 6.0.0, Kemana Directory through 1.5.6, and Cart Engine through 3.0.0 contain an unrestricted file upload vulnerability in administrative image fields. Editor-role users can upload PHP scripts via the page_image or cat_image parameters to the web-accessible /public/image di",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/32503",
+        "https://www.exploit-db.com/exploits/32507",
+        "https://www.exploit-db.com/exploits/32511"
+      ],
+      "published": "2026-10-28T03:17:08.043"
+    },
+    {
+      "id": "CVE-2015-20129",
+      "description": "CrushFTP before 7.3.0 contains a cross-site request forgery vulnerability that allows attackers to perform administrative actions because CSRF protection is disabled by default. Attackers can lure an authenticated administrator to a malicious page that submits POST requests to commands like setUserI",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://www.crushftp.com/version7.html",
+        "https://www.exploit-db.com/exploits/36126",
+        "https://www.vulncheck.com/advisories/crushftp-before-7.3.0-cross-site-request-forgery-via-webinterface-function"
+      ],
+      "published": "2026-10-28T03:17:08.223"
+    },
+    {
+      "id": "CVE-2026-104016",
+      "description": "ProtobufParser parses length-prefixed protobuf string and bytes fields by checking (_inputPtr + len) <= _inputEnd and then, on the fast path, calling _finishShortText(len). Both use 32-bit signed integer arithmetic. When an attacker supplies a varint decoding to a length near Integer.MAX_VALUE, _inp",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/FasterXML/jackson-dataformats-binary/security/advisories/GHSA-c2rq-mcfv-jw29"
+      ],
+      "published": "2026-10-28T00:17:10.530"
+    },
+    {
+      "id": "CVE-2026-104895",
+      "description": "The asynchronous Smile parser (NonBlockingByteArrayParser) uses a raw-binary length prefix taken from untrusted input to allocate a byte[] before the body is read, with no upper bound and no overflow check. On the raw-binary marker 0xFD, _decodeVInt() computes (value << 6) + (i & 0x3F) without the (",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-789"
+      ],
+      "references": [
+        "https://github.com/FasterXML/jackson-dataformats-binary/security/advisories/GHSA-h3c2-2m49-r49w"
+      ],
+      "published": "2026-10-28T00:17:11.357"
+    },
+    {
+      "id": "CVE-2026-110747",
+      "description": "ProtobufParser._readStringKey() reads the length prefix of a protobuf map entry's string key into an attacker-controlled int and then checks (_inputPtr + len) <= _inputEnd using signed arithmetic. For values near Integer.MAX_VALUE the addition overflows to a negative value and the check passes even ",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/FasterXML/jackson-dataformats-binary/security/advisories/GHSA-fv7v-rrmh-4qcv"
+      ],
+      "published": "2026-10-28T01:16:55.017"
+    },
+    {
+      "id": "CVE-2013-20007",
+      "description": "Linksys WAG200G through 1.01.06 contains an OS command injection vulnerability that allows authenticated attackers to execute commands by injecting backtick-delimited input into the timer_interval parameter. Attackers can send a crafted POST request to setup.cgi to start telnetd or download and run ",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/24476",
+        "https://www.s3cur1ty.de/m1adv2013-016",
+        "https://www.vulncheck.com/advisories/linksys-wag200g-through-1.01.06-os-command-injection-via-timer-interval-in-setup-cgi"
+      ],
+      "published": "2026-10-28T03:17:07.210"
+    },
+    {
+      "id": "CVE-2013-20008",
+      "description": "Linksys WAG200G through 1.01.06 contains a weak password change mechanism that allows attackers to change the administrator password without supplying the current password. Attackers with access to an authenticated administrator browser session can set a new password to lock out the legitimate admin",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-620"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/24476",
+        "https://www.s3cur1ty.de/m1adv2013-016",
+        "https://www.vulncheck.com/advisories/linksys-wag200g-through-1.01.06-admin-password-change-without-current-password"
+      ],
+      "published": "2026-10-28T03:17:07.390"
+    },
+    {
+      "id": "CVE-2014-125137",
+      "description": "C97net qEngine CMS through 6.0.0, Kemana Directory through 1.5.6, and Cart Engine through 3.0.0 contain a local file inclusion vulnerability in the run parameter of admin/task.php. Authenticated administrators can supply directory traversal sequences in the run parameter to include and disclose loca",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-98"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/32504",
+        "https://www.exploit-db.com/exploits/32508",
+        "https://www.exploit-db.com/exploits/32511"
+      ],
+      "published": "2026-10-28T03:17:07.877"
+    },
+    {
+      "id": "CVE-2026-107625",
+      "description": "The Ultimate Member \u2013 User Profile, Registration, Login, Member Directory, Content Restriction & Membership Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'user_url' parameter in all versions up to, and including, 2.14.0 due to insufficient input sanitization and ou",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/ultimatemember/ultimatemember/releases/tag/2.14.1",
+        "https://plugins.trac.wordpress.org/browser/ultimate-member/tags/2.14.0/includes/core/class-form.php#L896",
+        "https://plugins.trac.wordpress.org/browser/ultimate-member/tags/2.14.0/includes/core/um-filters-fields.php#L519"
+      ],
+      "published": "2026-10-28T03:17:08.890"
+    },
+    {
+      "id": "CVE-2026-109209",
+      "description": "The All-in-One Video Gallery \u2013 Video Player & Galleries for YouTube, Vimeo & Self-Hosted Videos plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'custom_fields[embedcode]' parameter in all versions up to, and including, 4.9.7 due to insufficient input sanitization and output",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/all-in-one-video-gallery/tags/4.9.7/admin/videos.php#L254",
+        "https://plugins.trac.wordpress.org/browser/all-in-one-video-gallery/tags/4.9.7/includes/player/base.php#L1028",
+        "https://plugins.trac.wordpress.org/browser/all-in-one-video-gallery/tags/4.9.7/includes/player/base.php#L277"
+      ],
+      "published": "2026-10-28T03:17:09.183"
+    },
+    {
+      "id": "CVE-2026-118129",
+      "description": "A vulnerability was found in jeremyckahn Chitchatter up to f82538633813c854a81a8b2112a2f6ba17b39cbc. The affected element is the function isConfigMessageEvent of the file src/Bootstrap.tsx of the component PostMessage Handler. Performing a manipulation of the argument parentDomain results in imprope",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://github.com/0xGenesi/CVE/blob/main/Chitchatter_SDK_postMessage_Identity_Key_Injection.md",
+        "https://github.com/jeremyckahn/chitchatter/",
+        "https://github.com/jeremyckahn/chitchatter/commit/e3babb5cd83bfe3b99f1d82358ac5c1ea8e8a688"
+      ],
+      "published": "2026-10-28T00:17:11.520"
+    },
+    {
+      "id": "CVE-2014-125136",
+      "description": "C97net qEngine CMS through 6.0.0, Kemana Directory through 1.5.6, and Cart Engine through 3.0.0 contain an information disclosure vulnerability that exposes database backups in the web-accessible /admin/backup directory. Unauthenticated attackers can list the directory or guess date-based names like",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-530"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/32505",
+        "https://www.exploit-db.com/exploits/32509",
+        "https://www.exploit-db.com/exploits/32511"
+      ],
+      "published": "2026-10-28T03:17:07.707"
+    },
+    {
+      "id": "CVE-2013-20009",
+      "description": "Linksys WAG200G through 1.01.06 contains a stored cross-site scripting vulnerability that allows authenticated attackers to inject scripts via the policy_name parameter in setup.cgi. Attackers can save a malicious policy name from the AccessRes.htm page that executes in administrators' browsers when",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.exploit-db.com/exploits/24476",
+        "https://www.s3cur1ty.de/m1adv2013-016",
+        "https://www.vulncheck.com/advisories/linksys-wag200g-through-1.01.06-stored-xss-via-policy-name-parameter"
+      ],
+      "published": "2026-10-28T03:17:07.540"
+    },
+    {
+      "id": "CVE-2026-118271",
+      "description": "A security vulnerability has been detected in a2ui-project a2ui up to 0.10.6. This impacts an unknown function of the file renderers/web_core/src/v0_9/rendering/data-context.ts of the component data-context Resolver. Such manipulation leads to resource consumption. The attack may be performed from r",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-404"
+      ],
+      "references": [
+        "https://github.com/a2ui-project/a2ui/",
+        "https://github.com/a2ui-project/a2ui/commit/eb314e14fabd29cfb4a74e1202afc4fe2081efa2",
+        "https://github.com/a2ui-project/a2ui/issues/2384"
+      ],
+      "published": "2026-10-28T02:17:07.300"
+    },
+    {
+      "id": "CVE-2026-118272",
+      "description": "A vulnerability was detected in a2ui-project a2ui up to 0.10.6. Affected is the function DataContext.dispatchExpressionError of the file renderers/web_core/src/v0_9/rendering/data-context.ts of the component Error Handler. Performing a manipulation results in information exposure through error messa",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-200",
+        "CWE-209"
+      ],
+      "references": [
+        "https://github.com/a2ui-project/a2ui/",
+        "https://github.com/a2ui-project/a2ui/commit/8f149a1c7b0ce1fa8e93ac3adfa5fda960faeb01",
+        "https://github.com/a2ui-project/a2ui/issues/2385"
+      ],
+      "published": "2026-10-28T02:17:07.497"
+    },
+    {
+      "id": "CVE-2026-105272",
+      "description": "GROWI contains an authorization bypass vulnerability in its page viewing and commenting functionality due to improper use of a user-controlled key. By exploiting this vulnerability, an authenticated attacker may obtain the contents and comments of pages without the required read permission.",
+      "severity": "MEDIUM",
+      "score": 4.2,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/growilabs/growi/security/advisories/GHSA-m72c-xgjf-56ww",
+        "https://growi.co.jp/news/48/",
+        "https://jvn.jp/en/jp/JVN51223238/"
+      ],
+      "published": "2026-10-28T03:17:08.717"
+    },
+    {
+      "id": "CVE-2026-107745",
+      "description": "The AI Engine \u2013 The Chatbot, AI Framework & MCP for WordPress plugin for WordPress is vulnerable to limited media file deletion due to insufficient file path validation in the upload_file function in all versions up to, and including, 3.8.4 This makes it possible for authenticated attackers, with su",
+      "severity": "MEDIUM",
+      "score": 4.2,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/ai-engine/tags/3.8.3/classes/api.php#L1040",
+        "https://plugins.trac.wordpress.org/browser/ai-engine/tags/3.8.3/classes/api.php#L689",
+        "https://plugins.trac.wordpress.org/browser/ai-engine/tags/3.8.3/classes/modules/files.php#L1071"
+      ],
+      "published": "2026-10-28T03:17:09.037"
+    },
+    {
+      "id": "CVE-2026-109848",
+      "description": "GROWI contains an authorization bypass vulnerability in its tag update API and the page update API due to improper use of a user-controlled key. By exploiting this vulnerability, an attacker who can log in to the product may obtain the contents of pages without the required read permission and save ",
+      "severity": "MEDIUM",
+      "score": 4.2,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/growilabs/growi/security/advisories/GHSA-pqx5-gx68-83h4",
+        "https://growi.co.jp/news/48/",
+        "https://jvn.jp/en/jp/JVN51223238/"
+      ],
+      "published": "2026-10-28T03:17:09.333"
+    }
+  ]
+}
