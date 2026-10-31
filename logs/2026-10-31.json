@@ -1,0 +1,338 @@
+{
+  "timestamp": "2026-10-31T08:33:27.565112+00:00",
+  "scan_id": "ea057927af",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 1,
+      "MEDIUM": 7,
+      "LOW": 1,
+      "UNKNOWN": 9
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-285",
+        2
+      ],
+      [
+        "CWE-400",
+        2
+      ],
+      [
+        "CWE-789",
+        2
+      ],
+      [
+        "CWE-611",
+        2
+      ]
+    ],
+    "threat_index": 181.5,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 181.5,
+        "yesterday": 348.9,
+        "change_pct": -48.0
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 2,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-109516",
+      "description": "The Bot for Telegram on WooCommerce plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all versions up to, and including, 1.3.0. The `/wp-json/woo-telegram/v1/main/` REST endpoint is registered with `permission_callback => '__return_true'` and performs no Tele",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/bot-for-telegram-on-woocommerce/tags/1.3.0/includes/BFTOW_Telegram.php#L91",
+        "https://plugins.trac.wordpress.org/browser/bot-for-telegram-on-woocommerce/tags/1.3.0/includes/BFTOW_Telegram.php#L98",
+        "https://plugins.trac.wordpress.org/browser/bot-for-telegram-on-woocommerce/tags/1.3.0/includes/BFTOW_User.php#L149"
+      ],
+      "published": "2026-10-29T04:18:22.763"
+    },
+    {
+      "id": "CVE-2026-42922",
+      "description": "A authorization bypass vulnerability exists in the /nodered functionality of FUXA (version(s): 1.3.2-2809). A specially crafted HTTP request can lead to a arbitrary code execution. An attacker can make an unauthenticated HTTP request to trigger this vulnerability.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2419"
+      ],
+      "published": "2026-10-29T04:18:36.777"
+    },
+    {
+      "id": "CVE-2026-113387",
+      "description": "The Ortto plugin for WordPress before 1.0.25 did not authenticate configuration update requests, relying only on a secret exposed in public HTML. An unauthenticated threat actor could overwrite the plugin's configuration to serve arbitrary scripts.",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://trust.canva.com?tcuUid=acddc58b-886d-487c-b2d4-837fde87ddc8"
+      ],
+      "published": "2026-10-29T02:16:49.937"
+    },
+    {
+      "id": "CVE-2026-42949",
+      "description": "A authorization bypass vulnerability exists in the /api/runscript functionality of FUXA (version(s): 1.3.2-2809). A specially crafted HTTP request can lead to execute priviledged operation. An attacker can make an unauthenticated HTTP request to trigger this vulnerability.",
+      "severity": "MEDIUM",
+      "score": 5.6,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2417"
+      ],
+      "published": "2026-10-29T04:18:36.973"
+    },
+    {
+      "id": "CVE-2026-118586",
+      "description": "A security flaw has been discovered in dfm feedfinder2 up to 0.0.4. This issue affects the function find_feeds of the file feedfinder2.py. Performing a manipulation results in server-side request forgery. Remote exploitation of the attack is possible. The project was informed of the problem early th",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/dfm/feedfinder2/",
+        "https://github.com/dfm/feedfinder2/issues/16",
+        "https://vuldb.com/cve/CVE-2026-118586"
+      ],
+      "published": "2026-10-29T00:17:26.123"
+    },
+    {
+      "id": "CVE-2026-118589",
+      "description": "A weakness has been identified in nschloe meshio up to 5.3.5. Impacted is an unknown function of the file meshio/_vtk_42.py of the component VTK Reader. Executing a manipulation of the argument DIMENSIONS can lead to uncontrolled memory allocation. The attack can be executed remotely. The project wa",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-789"
+      ],
+      "references": [
+        "https://github.com/nschloe/meshio/",
+        "https://github.com/nschloe/meshio/issues/1576",
+        "https://vuldb.com/cve/CVE-2026-118589"
+      ],
+      "published": "2026-10-29T00:17:26.320"
+    },
+    {
+      "id": "CVE-2026-118590",
+      "description": "A security vulnerability has been detected in nipy nibabel up to 5.4.2. The affected element is the function array_from_file of the file nibabel/volumeutils.py of the component Header Handler. The manipulation leads to uncontrolled memory allocation. The attack is possible to be carried out remotely",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-789"
+      ],
+      "references": [
+        "https://github.com/nipy/nibabel/",
+        "https://github.com/nipy/nibabel/issues/1566",
+        "https://github.com/nipy/nibabel/pull/1587"
+      ],
+      "published": "2026-10-29T01:17:22.900"
+    },
+    {
+      "id": "CVE-2026-114173",
+      "description": "The Ortto plugin for WordPress before 1.0.25 did not filter the WooCommerce product data it embedded in public storefront pages. An unauthenticated threat actor could read product passwords and private product metadata from an affected store.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-201"
+      ],
+      "references": [
+        "https://trust.canva.com?tcuUid=acddc58b-886d-487c-b2d4-837fde87ddc8"
+      ],
+      "published": "2026-10-29T02:16:50.187"
+    },
+    {
+      "id": "CVE-2026-40063",
+      "description": "A information disclosure vulnerability exists in the /nodered/fuxa/scripts functionality of FUXA (version(s): 1.3.2-2809). A specially crafted HTTP request can lead to an information leak. An attacker can make an unauthenticated HTTP request to trigger this vulnerability.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://talosintelligence.com/vulnerability_reports/TALOS-2026-2418"
+      ],
+      "published": "2026-10-29T04:18:36.300"
+    },
+    {
+      "id": "CVE-2026-113409",
+      "description": "The Ortto plugin for WordPress before 1.0.25 did not escape stored settings on its admin settings page, leading to stored cross-site scripting. A threat actor able to modify the plugin's configuration could execute arbitrary JavaScript in an administrator's session when they visited the impacted pag",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://trust.canva.com?tcuUid=acddc58b-886d-487c-b2d4-837fde87ddc8"
+      ],
+      "published": "2026-10-29T02:16:50.070"
+    },
+    {
+      "id": "CVE-2026-118585",
+      "description": "A vulnerability was identified in configuroweb inventariobasico c9377cdba474deb3eb5a0704d197b5733af16b47/f9db0c0a04d79ad931c218140df4fb23809d4fab. This vulnerability affects unknown code of the file addlist.php of the component Add Product Page. Such manipulation of the argument product name leads t",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/configuroweb/inventariobasico/",
+        "https://github.com/configuroweb/inventariobasico/issues/1",
+        "https://vuldb.com/cve/CVE-2026-118585"
+      ],
+      "published": "2026-10-29T00:17:25.920"
+    },
+    {
+      "id": "CVE-2026-113957",
+      "description": "An attacker who controls the registry, a mirror, or the network path to it may be able to serve arbitrary image content in response to a pull by digest, so that a user runs an image other than the one they pinned. The fix compares the returned digest to the pinned digest and fails the pull on a mism",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://github.com/apple/containerization/security/advisories/GHSA-vgrw-36j7-r93w"
+      ],
+      "published": "2026-10-29T01:17:22.333"
+    },
+    {
+      "id": "CVE-2026-21157",
+      "description": "Improper input validation in Bixby prior to version 4.0.85.6 allows privileged local attackers to launch arbitrary activity.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=07"
+      ],
+      "published": "2026-10-29T01:17:23.187"
+    },
+    {
+      "id": "CVE-2026-16889",
+      "description": "In openEQUELLA before 2026.1, the pre-login notice image upload endpoint (PUT /api/preloginnotice/image/{name}) does not validate the type of uploaded files and serves them with a Content-Type derived from the supplied filename. A user holding the EDIT_SYSTEM_SETTINGS permission can upload an HTML f",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://github.com/openequella/openEQUELLA/security/advisories/GHSA-q2xv-rffq-mj5w",
+        "https://openequella.github.io/guides/"
+      ],
+      "published": "2026-10-29T02:16:51.803"
+    },
+    {
+      "id": "CVE-2026-66088",
+      "description": "In openEQUELLA before 2026.1, the system.execute() function available to the scripting engine runs supplied operating system commands without validation or an allow-list of permitted executables. A user able to create or edit scripts can use it to execute arbitrary commands with the privileges of th",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-78",
+        "CWE-749"
+      ],
+      "references": [
+        "https://github.com/openequella/openEQUELLA/security/advisories/GHSA-q8xp-w3fr-hj4v",
+        "https://openequella.github.io/guides/"
+      ],
+      "published": "2026-10-29T02:16:52.523"
+    },
+    {
+      "id": "CVE-2026-66089",
+      "description": "In openEQUELLA before 2026.1, the SOAP API parses XML supplied in the stopEdit operation with a parser that resolves external entities. This allows an attacker to read arbitrary files accessible to the openEQUELLA service or cause the server to issue requests to attacker-specified locations (SSRF).",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-611"
+      ],
+      "references": [
+        "https://github.com/openequella/openEQUELLA/security/advisories/GHSA-f9wv-5rpf-rq45",
+        "https://openequella.github.io/guides/"
+      ],
+      "published": "2026-10-29T02:16:52.663"
+    },
+    {
+      "id": "CVE-2026-66090",
+      "description": "In openEQUELLA before 2026.1, the XML parser used for item metadata does not disable external entity resolution. A user permitted to create items (CREATE_ITEM) can submit crafted XML to POST /api/item and cause the server to read arbitrary files accessible to the openEQUELLA service, or make request",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-611"
+      ],
+      "references": [
+        "https://github.com/openequella/openEQUELLA/security/advisories/GHSA-668q-3hpr-6c96",
+        "https://openequella.github.io/guides/"
+      ],
+      "published": "2026-10-29T02:16:52.803"
+    },
+    {
+      "id": "CVE-2026-66091",
+      "description": "In openEQUELLA before 2026.1, the GET /api/userquery/userinfobackup endpoint performs no authentication or authorisation check. An unauthenticated attacker who supplies another user's uniqueId can retrieve that user's stored personal details (username, first name, last name and email address) within",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/openequella/openEQUELLA/security/advisories/GHSA-mxj9-pmpw-j4xw",
+        "https://openequella.github.io/guides/"
+      ],
+      "published": "2026-10-29T02:16:52.933"
+    },
+    {
+      "id": "CVE-2026-66092",
+      "description": "In openEQUELLA before 2026.2, the pre-login notice is stored as HTML and rendered on the legacy logon page without encoding or sanitisation. A user holding the EDIT_SYSTEM_SETTINGS permission can set a notice containing an arbitrary script (PUT /api/preloginnotice), resulting in stored cross-site sc",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/openequella/openEQUELLA/security/advisories/GHSA-9jhj-7h37-3j2c",
+        "https://openequella.github.io/guides/"
+      ],
+      "published": "2026-10-29T02:16:53.057"
+    },
+    {
+      "id": "CVE-2026-118426",
+      "description": "In affected versions of Octopus Server with the LDAP authentication provider enabled, any authenticated user could call the LDAP user search and LDAP group search.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://advisories.octopus.com/post/2026/sa2026-18"
+      ],
+      "published": "2026-10-29T04:18:35.260"
+    }
+  ]
+}
