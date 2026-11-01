@@ -1,0 +1,333 @@
+{
+  "timestamp": "2026-11-01T09:25:02.899786+00:00",
+  "scan_id": "6c3cabacde",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 11,
+      "MEDIUM": 5,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-119",
+        5
+      ],
+      [
+        "CWE-416",
+        5
+      ],
+      [
+        "CWE-20",
+        3
+      ],
+      [
+        "CWE-190",
+        1
+      ],
+      [
+        "CWE-122",
+        1
+      ]
+    ],
+    "threat_index": 419.8,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 419.8,
+        "yesterday": 181.5,
+        "change_pct": 131.3
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 2,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-119261",
+      "description": "Improper input validation in Skia in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/574213633"
+      ],
+      "published": "2026-10-30T01:16:44.797"
+    },
+    {
+      "id": "CVE-2026-119263",
+      "description": "Memory corruption in GarbageCollection in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "CRITICAL",
+      "score": 9.6,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/575143870"
+      ],
+      "published": "2026-10-30T01:16:45.047"
+    },
+    {
+      "id": "CVE-2026-119260",
+      "description": "Use after free in Frames in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/573264074"
+      ],
+      "published": "2026-10-30T01:16:44.663"
+    },
+    {
+      "id": "CVE-2026-119262",
+      "description": "Improper input validation in V8 in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/574660146"
+      ],
+      "published": "2026-10-30T01:16:44.920"
+    },
+    {
+      "id": "CVE-2026-119264",
+      "description": "Memory corruption in Dawn in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/575150692"
+      ],
+      "published": "2026-10-30T01:16:45.177"
+    },
+    {
+      "id": "CVE-2026-119265",
+      "description": "Memory corruption in Quota in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/575201795"
+      ],
+      "published": "2026-10-30T01:16:45.303"
+    },
+    {
+      "id": "CVE-2026-119266",
+      "description": "Use after free in Quota in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/575202553"
+      ],
+      "published": "2026-10-30T01:16:45.430"
+    },
+    {
+      "id": "CVE-2026-119267",
+      "description": "Memory corruption in DOM in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/576203565"
+      ],
+      "published": "2026-10-30T01:16:45.553"
+    },
+    {
+      "id": "CVE-2026-119268",
+      "description": "Integer overflow in Editing in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/576984708"
+      ],
+      "published": "2026-10-30T01:16:45.680"
+    },
+    {
+      "id": "CVE-2026-119269",
+      "description": "Use after free in Blink in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/577072000"
+      ],
+      "published": "2026-10-30T01:16:45.807"
+    },
+    {
+      "id": "CVE-2026-119270",
+      "description": "Improper input validation in CacheStorage in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/577333729"
+      ],
+      "published": "2026-10-30T01:16:45.937"
+    },
+    {
+      "id": "CVE-2026-119271",
+      "description": "Use after free in Skia in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/577403270"
+      ],
+      "published": "2026-10-30T01:16:46.063"
+    },
+    {
+      "id": "CVE-2026-76025",
+      "description": "Use after free in FileSystem in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/559780982"
+      ],
+      "published": "2026-10-30T01:16:46.970"
+    },
+    {
+      "id": "CVE-2026-76024",
+      "description": "Memory corruption in MediaStream in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially read memory inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/576215540"
+      ],
+      "published": "2026-10-30T01:16:46.840"
+    },
+    {
+      "id": "CVE-2026-110133",
+      "description": "A flaw was found in Ghostscript. When processing a specially crafted TrueType font or document embedding one, an accounting error during font rendering can bypass buffer size checks, triggering a heap-based buffer overflow. A remote attacker could exploit this by enticing a victim or automated servi",
+      "severity": "MEDIUM",
+      "score": 5.8,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-110133",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2461973"
+      ],
+      "published": "2026-10-30T01:16:43.730"
+    },
+    {
+      "id": "CVE-2026-118959",
+      "description": "A flaw was found in the required action provider mechanism of Keycloak. The issue occurs when an authorization request includes the kc_action query parameter set to a mandatory action already assigned to the user, such as profile verification or terms and conditions. Due to incorrect handling of app",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-118959",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2563288"
+      ],
+      "published": "2026-10-30T01:16:44.510"
+    },
+    {
+      "id": "CVE-2026-118947",
+      "description": "A flaw was found in the UMA resource registration endpoint of the keycloak-services component, which provides the core logic for Keycloak's authorization and identity services. The issue occurs when remote resource management is enabled, allowing an authenticated user with specific permissions to up",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-118947",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2563274"
+      ],
+      "published": "2026-10-30T01:16:44.347"
+    },
+    {
+      "id": "CVE-2026-119272",
+      "description": "Out of bounds read in FileSystem in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to read memory inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+        "https://issues.chromium.org/issues/569012543"
+      ],
+      "published": "2026-10-30T01:16:46.200"
+    },
+    {
+      "id": "CVE-2026-112602",
+      "description": "An authorization issue was addressed with improved state management. This issue is fixed in Xcode 27.2. An app may be able to access sensitive user data.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149589"
+      ],
+      "published": "2026-10-30T01:16:43.960"
+    },
+    {
+      "id": "CVE-2026-112605",
+      "description": "This issue was addressed with improved handling of symlinks. This issue is fixed in Xcode 27.2. An app may be able to read arbitrary files.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149589"
+      ],
+      "published": "2026-10-30T01:16:44.087"
+    }
+  ]
+}
