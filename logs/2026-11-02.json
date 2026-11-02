@@ -1,0 +1,338 @@
+{
+  "timestamp": "2026-11-02T09:40:08.404981+00:00",
+  "scan_id": "630ee8d8d7",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 8,
+      "MEDIUM": 8,
+      "LOW": 1,
+      "UNKNOWN": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        5
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-94",
+        2
+      ],
+      [
+        "CWE-200",
+        2
+      ],
+      [
+        "CWE-367",
+        1
+      ]
+    ],
+    "threat_index": 269.2,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 269.2,
+        "yesterday": 419.8,
+        "change_pct": -35.9
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 2,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-119977",
+      "description": "WordPress Core is vulnerable to Remote Code Execution in versions 4.7 through 7.1.3. This is due to predictable, web-accessible staging paths used during full-package core upgrades. This makes it possible for unauthenticated attackers to execute code on the server during the upgrade window.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-367"
+      ],
+      "references": [
+        "https://core.trac.wordpress.org/browser/tags/7.1.3/src/wp-admin/includes/class-core-upgrader.php#L162",
+        "https://core.trac.wordpress.org/browser/tags/7.1.3/src/wp-admin/includes/class-wp-upgrader.php#L378",
+        "https://core.trac.wordpress.org/browser/tags/7.1.3/src/wp-admin/includes/update-core.php#L1549"
+      ],
+      "published": "2026-10-31T06:16:34.550"
+    },
+    {
+      "id": "CVE-2026-118185",
+      "description": "The Security Optimizer  WordPress plugin before 1.6.9 does not limit the number of two-factor authentication codes that can be submitted for a pending login, allowing an attacker who already knows a user's password to brute force the second factor and take over the account.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/253fe868-0e85-496f-8b01-a8b5107db217/"
+      ],
+      "published": "2026-10-31T06:16:33.503"
+    },
+    {
+      "id": "CVE-2026-118638",
+      "description": "The Mapster WP Maps WordPress plugin before 2.0.6 does not perform any authorization check on a REST API route that writes post data, allowing unauthenticated attackers to overwrite the title of arbitrary posts, create arbitrary published posts, and overwrite the Mapster WP Maps WordPress plugin bef",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/3d3004f1-46f1-479d-bae6-754e56d3aa7e/"
+      ],
+      "published": "2026-10-31T06:16:34.330"
+    },
+    {
+      "id": "CVE-2026-116755",
+      "description": "Improper Neutralization of Special Elements used in a Command ('Command Injection') in the Orchestrator component of SoftIron HyperCloud allows an authenticated user with access to the management plane to execute arbitrary operating system commands on hypervisor hosts as the privileged orchestration",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://advisories.softiron.cloud/"
+      ],
+      "published": "2026-10-31T02:17:33.957"
+    },
+    {
+      "id": "CVE-2026-109234",
+      "description": "The Meow Lightbox plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'post_content (bbPress reply body)' parameter in all versions up to, and including, 5.6.4 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to in",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/meow-lightbox/tags/5.6.2/classes/core.php#L1115",
+        "https://plugins.trac.wordpress.org/browser/meow-lightbox/tags/5.6.2/classes/core.php#L1142",
+        "https://plugins.trac.wordpress.org/browser/meow-lightbox/tags/5.6.2/classes/core.php#L1276"
+      ],
+      "published": "2026-10-31T06:16:31.510"
+    },
+    {
+      "id": "CVE-2026-109997",
+      "description": "The Ninja Forms \u2013 Contact Form Builder with Calculators, Quizzes, Signatures & AI Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'formData.extra' parameter in all versions up to, and including, 3.15.5 due to insufficient input sanitization and output escaping.",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.15.5/includes/AJAX/Controllers/Submission.php#L428",
+        "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.15.5/includes/AJAX/Controllers/Submission.php#L52",
+        "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.15.5/includes/Actions/Save.php#L311"
+      ],
+      "published": "2026-10-31T06:16:31.853"
+    },
+    {
+      "id": "CVE-2026-116520",
+      "description": "The PPWP \u2013 Password Protect Pages plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment / shortcode attribute desc_below_form (and placeholder as the marker-smuggling helper)' parameter in all versions up to, and including, 1.9.26 due to insufficient input sanitization a",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/password-protect-page/tags/1.9.26/includes/services/class-ppw-shortcode.php#L202",
+        "https://plugins.trac.wordpress.org/browser/password-protect-page/tags/1.9.26/includes/services/class-ppw-shortcode.php#L587",
+        "https://plugins.trac.wordpress.org/browser/password-protect-page/tags/1.9.26/includes/services/class-ppw-shortcode.php#L598"
+      ],
+      "published": "2026-10-31T06:16:32.630"
+    },
+    {
+      "id": "CVE-2026-118043",
+      "description": "The Bulk Media Register WordPress plugin before 2.01 does not properly validate a user-supplied path before moving a file on the server, allowing users with the Author role to move or rename arbitrary files, including outside the WordPress root, which can defeat directory-level access controls and d",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/bcb6cb6b-d1bc-4c92-8c3b-4ad48348a2b1/"
+      ],
+      "published": "2026-10-31T06:16:33.080"
+    },
+    {
+      "id": "CVE-2026-118438",
+      "description": "The Firelight Lightbox WordPress plugin before 2.3.24 does not properly escape image attribute values before processing them in the browser, which could allow users with contributor-level access and above to inject arbitrary web scripts that execute when another user views or previews the affected c",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/ddf2cb3f-3aa6-4994-8682-cdb2f4fc086e/"
+      ],
+      "published": "2026-10-31T06:16:33.923"
+    },
+    {
+      "id": "CVE-2026-100155",
+      "description": "The The Ninja Forms \u2013 Contact Form Builder with Calculators, Quizzes, Signatures & AI Form Builder plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.15.5 This is due to the software allowing users to execute an action that does not properly v",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.15.4/includes/AJAX/Controllers/Submission.php#L52",
+        "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.15.4/includes/AJAX/Controllers/Submission.php#L60",
+        "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.15.4/includes/Abstracts/MergeTags.php#L64"
+      ],
+      "published": "2026-10-31T06:16:29.350"
+    },
+    {
+      "id": "CVE-2026-101326",
+      "description": "The The Ninja Forms \u2013 Contact Form Builder with Calculators, Quizzes, Signatures & AI Form Builder plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.15.5 This is due to the software allowing users to execute an action that does not properly v",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-94"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.15.4/includes/Abstracts/MergeTags.php#L94",
+        "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.15.4/includes/Config/MergeTagsWP.php#L128",
+        "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.15.4/includes/Display/Render.php#L268"
+      ],
+      "published": "2026-10-31T06:16:31.217"
+    },
+    {
+      "id": "CVE-2026-116563",
+      "description": "The Photo Gallery, Sliders, Proofing and Themes \u2013 NextGEN Gallery plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'comment' parameter in all versions up to, and including, 4.5.4 due to insufficient input sanitization and output escaping. This makes it possible for",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/nextgen-gallery/tags/4.5.4/static/Lightbox/shutter/nextgen_shutter.js#L120",
+        "https://plugins.trac.wordpress.org/browser/nextgen-gallery/tags/4.5.4/static/Lightbox/shutter/shutter.js#L197",
+        "https://plugins.trac.wordpress.org/browser/nextgen-gallery/tags/4.5.4/static/Lightbox/shutter/shutter.js#L67"
+      ],
+      "published": "2026-10-31T06:16:32.860"
+    },
+    {
+      "id": "CVE-2026-118184",
+      "description": "The Premium Packages  WordPress plugin before 7.2.2 does not prevent unauthenticated visitors from overwriting the stored price of items in their shopping cart, allowing them to create orders for any product at an arbitrary total of their choosing.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/38c4d58a-20a3-4309-ace7-5b567257c80e/"
+      ],
+      "published": "2026-10-31T06:16:33.253"
+    },
+    {
+      "id": "CVE-2026-118629",
+      "description": "The All-in-One Video Gallery  WordPress plugin before 5.0.0 does not check a video's publication status before rendering it on its player page, allowing unauthenticated users to view the title and source URLs of private, draft, pending, scheduled and trashed videos by their ID.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/a17559f9-f2d6-434f-8dd0-db4d1d9766d2/"
+      ],
+      "published": "2026-10-31T06:16:34.133"
+    },
+    {
+      "id": "CVE-2026-110042",
+      "description": "The Payment Forms for Paystack WordPress plugin before 4.0.6 does not properly restrict access to a page that displays its stored configuration, allowing users with the Contributor role and above to view secret payment-gateway API credentials, both the live and test secret keys, which grant full acc",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/49c8fecd-b944-4290-af2f-57a3d4cb06e1/"
+      ],
+      "published": "2026-10-31T06:16:32.120"
+    },
+    {
+      "id": "CVE-2026-110808",
+      "description": "The Essential Addons for Elementor  WordPress plugin before 6.8.8 does not correctly restrict who may set the role assigned to accounts created through its registration form, allowing authenticated users with Author-level access and above to cause newly registered accounts, including those created b",
+      "severity": "MEDIUM",
+      "score": 4.2,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/aea51ee6-e1cd-4110-8d07-76cf8f87b2e4/"
+      ],
+      "published": "2026-10-31T06:16:32.377"
+    },
+    {
+      "id": "CVE-2026-118437",
+      "description": "The BuddyForms WordPress plugin before 2.10.1 does not properly verify ownership before deleting guest-uploaded attachments, allowing unauthenticated attackers to permanently delete media files uploaded by other unauthenticated visitors.",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-73"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/20a483cf-7003-4d5a-9abb-afcc3f985ee4/"
+      ],
+      "published": "2026-10-31T06:16:33.703"
+    },
+    {
+      "id": "CVE-2026-117656",
+      "description": "Acceptance of Extraneous Untrusted Data With Trusted Data vulnerability in the Sign in with Apple strategy in pow-auth Assent allows an unauthenticated remote attacker to impersonate another user via the user parameter of the authorization callback.\n\nApple posts the user's name to the callback endpo",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-290",
+        "CWE-349"
+      ],
+      "references": [
+        "https://cna.erlef.org/cves/CVE-2026-117656.html",
+        "https://github.com/pow-auth/assent/commit/18898bde0296152165ae470078490e5798329b1b",
+        "https://github.com/pow-auth/assent/commit/a2d331e8c51376d6c0b04a81aad31e0b4d4d64a3"
+      ],
+      "published": "2026-10-31T00:16:51.340"
+    },
+    {
+      "id": "CVE-2026-77152",
+      "description": "Improper Authorization vulnerability in Drupal Field Collection for Drupal 7 allows a user with the \"edit field collections\" permission to bypass access control on the parent (host) entity.\n\nThe access check for field collection items (field_collection_item_access()) granted edit and delete access t",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-285"
+      ],
+      "references": [
+        "https://d7es.tag1.com/security-advisories?field_project_target_id=96",
+        "https://www.herodevs.com/vulnerability-directory/cve-2026-77152"
+      ],
+      "published": "2026-10-31T00:16:51.597"
+    },
+    {
+      "id": "CVE-2026-110176",
+      "description": "The File Force Download module for Drupal 7 implements hook_file_download() to add a Content-Disposition header when a file URL carries the download query parameter. In Drupal 7, returning a non-empty header array from that hook is itself a grant of access to the file.\n\n\n\nIn versions 7.1.0 through 7",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://d7es.tag1.com/security-advisories/file-force-download-critical-access-bypass",
+        "https://www.herodevs.com/vulnerability-directory/cve-2026-110176"
+      ],
+      "published": "2026-10-31T01:17:05.153"
+    }
+  ]
+}
