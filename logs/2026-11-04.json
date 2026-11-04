@@ -1,0 +1,363 @@
+{
+  "timestamp": "2026-11-04T00:43:12.714135+00:00",
+  "scan_id": "5319c7e193",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 8,
+      "HIGH": 5,
+      "MEDIUM": 5,
+      "LOW": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-77",
+        5
+      ],
+      [
+        "CWE-78",
+        5
+      ],
+      [
+        "CWE-22",
+        4
+      ],
+      [
+        "CWE-119",
+        2
+      ],
+      [
+        "CWE-121",
+        2
+      ]
+    ],
+    "threat_index": 502.6,
+    "critical_count": 8
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 502.6,
+        "yesterday": 322.6,
+        "change_pct": 55.8
+      },
+      "critical_count": {
+        "today": 8,
+        "yesterday": 4,
+        "change_pct": 100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-120276",
+      "description": "A weakness has been identified in WAVLINK WN536AX6-A V260507_2.0.0. This vulnerability affects the function sub_416760 of the file /bin/ioos of the component Web Management Interface. This manipulation of the argument group_name causes os command injection. It is possible to initiate the attack remo",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/senxitoyshuyi-ui/HACKALL/blob/main/WAVLINK_WN536AX6-A%20Router/WAVLINK_WN536AX6-A_openvpn_cli_group_command_injection.md",
+        "https://vuldb.com/cve/CVE-2026-120276",
+        "https://vuldb.com/submit/919502"
+      ],
+      "published": "2026-11-02T00:18:09.897"
+    },
+    {
+      "id": "CVE-2026-120277",
+      "description": "A security vulnerability has been detected in WAVLINK WN536AX6-A V260507_2.0.0. This issue affects the function sub_41a1d8 of the file /bin/ioos of the component WireGuard CLI Group Handler. Such manipulation of the argument group_name leads to os command injection. It is possible to launch the atta",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/senxitoyshuyi-ui/HACKALL/blob/main/WAVLINK_WN536AX6-A%20Router/WAVLINK_WN536AX6-A_wireguard_cli_group_command_injection.md",
+        "https://vuldb.com/cve/CVE-2026-120277",
+        "https://vuldb.com/submit/919503"
+      ],
+      "published": "2026-11-02T00:18:10.810"
+    },
+    {
+      "id": "CVE-2026-120279",
+      "description": "A flaw has been found in WAVLINK WN536AX6-A V260507. The affected element is an unknown function of the file /protocol.csp of the component openvpn_cli Handler. Executing a manipulation of the argument file_id can lead to os command injection. The attack can be launched remotely. The exploit has bee",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/pipiyyb/cve/blob/main/WAVLINK%20WN536AX6-A/WN536AX6-A_file_id.md",
+        "https://vuldb.com/cve/CVE-2026-120279",
+        "https://vuldb.com/submit/919788"
+      ],
+      "published": "2026-11-02T01:17:26.677"
+    },
+    {
+      "id": "CVE-2026-120280",
+      "description": "A vulnerability has been found in WAVLINK WN536AX6-A V260507. The impacted element is the function wireguard_cli_group handler of the file /protocol.csp of the component WireGuard. The manipulation of the argument group_id/group_name leads to os command injection. The attack may be initiated remotel",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/pipiyyb/cve/blob/main/WAVLINK%20WN536AX6-A/WN536AX6-A_group_id.md",
+        "https://vuldb.com/cve/CVE-2026-120280",
+        "https://vuldb.com/submit/919789"
+      ],
+      "published": "2026-11-02T01:17:26.873"
+    },
+    {
+      "id": "CVE-2026-120281",
+      "description": "A vulnerability was found in WAVLINK WN536AX6-A V260507. This affects the function strcpy of the file /protocol.csp of the component OpenVPN Handler. The manipulation of the argument openvpn_ip results in stack-based buffer overflow. The attack may be launched remotely. The exploit has been made pub",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://github.com/F-yyjy/cve/blob/main/WN536AX6-A_openvpn_ip.md",
+        "https://vuldb.com/cve/CVE-2026-120281",
+        "https://vuldb.com/submit/919790"
+      ],
+      "published": "2026-11-02T01:17:27.070"
+    },
+    {
+      "id": "CVE-2026-120283",
+      "description": "A vulnerability was identified in Linksys E8450 1.2.00.360516. Affected is the function strcpy of the file /www/cgi-bin/portal.cgi. Such manipulation of the argument hidden_timezone leads to stack-based buffer overflow. The attack can be executed remotely. The vendor was contacted early about this d",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-120283",
+        "https://vuldb.com/submit/1014924",
+        "https://vuldb.com/vuln/429627"
+      ],
+      "published": "2026-11-02T01:17:27.500"
+    },
+    {
+      "id": "CVE-2026-120282",
+      "description": "A vulnerability was determined in WAVLINK WN536AX6-A V260507. This impacts the function host_black of the file /protocol.csp. This manipulation of the argument mac causes os command injection. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized.",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/pipiyyb/cve/blob/main/WAVLINK%20WN536AX6-A/WN536AX6-A_mac.md",
+        "https://vuldb.com/cve/CVE-2026-120282",
+        "https://vuldb.com/submit/919791"
+      ],
+      "published": "2026-11-02T01:17:27.293"
+    },
+    {
+      "id": "CVE-2026-120322",
+      "description": "A vulnerability was identified in Termix-SSH Termix up to 2.9.2. This issue affects some unknown processing of the file /plugin-api/file-manager/transferToHost. The manipulation of the argument destPath leads to path traversal. The attack may be initiated remotely. The exploit is publicly available ",
+      "severity": "CRITICAL",
+      "score": 9.9,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/0xGenesi/CVE/blob/main/Termix_FileManager_transferToHost_Arbitrary_File_Write.md",
+        "https://vuldb.com/cve/CVE-2026-120322",
+        "https://vuldb.com/submit/1015028"
+      ],
+      "published": "2026-11-02T02:18:47.550"
+    },
+    {
+      "id": "CVE-2026-120311",
+      "description": "Network-AI from 5.13.4 before 5.15.5 contains a path traversal vulnerability in FileJobStore that allows attackers to read or delete arbitrary .json files by supplying traversal sequences in the job id. Attackers controlling the id passed to FileJobStore.get(), FileJobStore.delete(), or JobQueue.get",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-23"
+      ],
+      "references": [
+        "https://github.com/Jovancoding/Network-AI/security/advisories/GHSA-v64j-mc7x-c7x7",
+        "https://www.vulncheck.com/advisories/network-ai-5.13.4-before-5.15.5-path-traversal-via-filejobstore-job-id"
+      ],
+      "published": "2026-11-02T03:17:28.663"
+    },
+    {
+      "id": "CVE-2026-120312",
+      "description": "Network-AI from 5.13.4 before 5.15.5 contains a path traversal vulnerability in AgentVCR that allows attackers controlling the cassette name to read or write arbitrary .json files. Attackers can pass traversal sequences to load() or save() to disclose sensitive JSON data or overwrite policy files su",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-23"
+      ],
+      "references": [
+        "https://github.com/Jovancoding/Network-AI/security/advisories/GHSA-mfxv-jg44-xj48",
+        "https://www.vulncheck.com/advisories/network-ai-5.13.4-before-5.15.5-path-traversal-via-agentvcr-cassette-name"
+      ],
+      "published": "2026-11-02T03:17:28.863"
+    },
+    {
+      "id": "CVE-2026-120315",
+      "description": "LobeHub Chat from 1.84.26 before 2.1.49 contains a path traversal vulnerability that allows authenticated users to write arbitrary files by supplying unsanitized file names to writeTempFile(). Attackers can create a file record via file.createFile with a traversal name, then trigger document parsing",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/lobehub/lobehub/security/advisories/GHSA-2g9j-v25c-4j97",
+        "https://www.vulncheck.com/advisories/lobehub-chat-1.84.26-before-2.1.49-path-traversal-rce-via-writetempfile"
+      ],
+      "published": "2026-11-02T03:17:29.457"
+    },
+    {
+      "id": "CVE-2026-120313",
+      "description": "Network-AI before 5.15.5 contains a path traversal vulnerability in InputSanitizer.sanitizePath() that allows attackers to escape the base directory using sibling-directory paths. Attackers can supply paths whose directory name shares a string prefix with the base, bypassing the unanchored startsWit",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/Jovancoding/Network-AI/security/advisories/GHSA-5mm5-4mh4-6gm6",
+        "https://www.vulncheck.com/advisories/network-ai-before-5.15.5-path-traversal-via-inputsanitizer-sanitizepath",
+        "https://github.com/Jovancoding/Network-AI/security/advisories/GHSA-5mm5-4mh4-6gm6"
+      ],
+      "published": "2026-11-02T03:17:29.053"
+    },
+    {
+      "id": "CVE-2026-120314",
+      "description": "Network-AI from 5.14.0 before 5.15.5 contains a missing authentication vulnerability in the A2AServer class that allows unauthenticated attackers to access task operations when no secret is configured. Attackers can send JSON-RPC requests to tasks/send, tasks/get, and tasks/cancel without a Bearer t",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/Jovancoding/Network-AI/security/advisories/GHSA-qvf5-9prv-7r9c",
+        "https://www.vulncheck.com/advisories/network-ai-5.14.0-before-5.15.5-missing-authentication-in-a2aserver-task-operations"
+      ],
+      "published": "2026-11-02T03:17:29.260"
+    },
+    {
+      "id": "CVE-2026-120319",
+      "description": "A vulnerability was found in Sanluan PublicCMS 4.x/5.x/6.x. This affects the function TradeRefundService.updateAmound of the file publiccms-parent/publiccms-trade/src/main/java/com/publiccms/logic/service/trade/TradeRefundService.java of the component publiccms-trade. Performing a manipulation of th",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-120319",
+        "https://vuldb.com/submit/1016201",
+        "https://vuldb.com/vuln/429652"
+      ],
+      "published": "2026-11-02T02:18:47.090"
+    },
+    {
+      "id": "CVE-2026-120316",
+      "description": "http4k before 6.62.0.0-ee contains a path traversal vulnerability in ThymeleafTemplates Caching and HotReload that allows unauthenticated attackers to read files outside baseTemplateDir by supplying ../ segments in ViewModel.template() values. Attackers can influence request-driven template selectio",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/http4k/http4k/security/advisories/GHSA-wq4x-r858-gmmj",
+        "https://www.vulncheck.com/advisories/http4k-before-6.62.0.0-ee-path-traversal-via-thymeleaftemplates-template-resolution"
+      ],
+      "published": "2026-11-02T03:17:29.760"
+    },
+    {
+      "id": "CVE-2026-120278",
+      "description": "A vulnerability was detected in WAVLINK WN536AX6-A V260507_2.0.0. Impacted is the function sub_416d48/sub_41a7c0 of the file /bin/ioos of the component VPN Client List Handler. Performing a manipulation of the argument opt results in missing authentication. The attack can be initiated remotely. The ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/senxitoyshuyi-ui/HACKALL/blob/main/WAVLINK_WN536AX6-A%20Router/WAVLINK_WN536AX6-A_vpn_list_info_disclosure.md",
+        "https://vuldb.com/cve/CVE-2026-120278",
+        "https://vuldb.com/submit/919506"
+      ],
+      "published": "2026-11-02T00:18:11.003"
+    },
+    {
+      "id": "CVE-2026-120320",
+      "description": "A vulnerability was determined in jxxghp MoviePilot up to 3.1.2. This vulnerability affects the function WorkflowExecutor.restore_context of the file app/chain/workflow.py of the component Workflow Fork Endpoint. Executing a manipulation can lead to deserialization. The attack can be launched remote",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-20",
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/0xGenesi/CVE/blob/main/MoviePilot_Workflow_Fork_Pickle_Deserialization_RCE.md",
+        "https://github.com/jxxghp/MoviePilot/",
+        "https://github.com/jxxghp/MoviePilot/commit/6034dcc880c13079aeb398dbe32c346ebcd3a6d2"
+      ],
+      "published": "2026-11-02T02:18:47.327"
+    },
+    {
+      "id": "CVE-2026-120323",
+      "description": "A security flaw has been discovered in samanhappy MCPHub up to 1.0.45/1.1.7. Impacted is an unknown function of the file src/utils/passthroughHeaders.ts. The manipulation of the argument passthroughHeaders results in information disclosure. The attack may be launched remotely. Upgrading to version 1",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-200",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/0xGenesi/CVE/blob/main/MCPHub_OpenAPI_passthroughHeaders_Credential_Exfiltration.md",
+        "https://github.com/samanhappy/mcphub/",
+        "https://github.com/samanhappy/mcphub/commit/040f7b9ae004070bdfe5084cde6bc2c609f78e76"
+      ],
+      "published": "2026-11-02T02:18:47.757"
+    },
+    {
+      "id": "CVE-2026-120309",
+      "description": "Nuxt from 4.6.0 before 4.6.2 contains a route parameter confusion vulnerability in getRouterParam and getRouterParams that lets attackers return a parameter value different from the one h3 matched by sending paths containing an encoded question mark (%3F). Attackers can craft requests where authoriz",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-436"
+      ],
+      "references": [
+        "https://github.com/nuxt/nuxt/security/advisories/GHSA-w7gw-66vg-99gq",
+        "https://www.vulncheck.com/advisories/nuxt-4.6.0-before-4.6.2-route-param-confusion-via-getrouterparam"
+      ],
+      "published": "2026-11-02T03:17:28.217"
+    },
+    {
+      "id": "CVE-2026-120310",
+      "description": "Parse Server before 8.6.109 and 9.0.0 before 9.10.6-alpha.1 returns stored field values in object update responses without checking read access, so clients whose class-level permissions or object ACLs allow update but not read can see object data. Attackers can update such objects to read atomic ope",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://github.com/parse-community/parse-server/security/advisories/GHSA-2rcp-jc67-vq74",
+        "https://www.vulncheck.com/advisories/parse-server-before-8.6.109-and-9.0.0-before-9.10.6-alpha.1-information-disclosure-via-object-update-response"
+      ],
+      "published": "2026-11-02T03:17:28.417"
+    }
+  ]
+}
