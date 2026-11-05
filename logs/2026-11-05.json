@@ -1,0 +1,353 @@
+{
+  "timestamp": "2026-11-05T00:56:57.830098+00:00",
+  "scan_id": "13f0888505",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 2,
+      "HIGH": 8,
+      "MEDIUM": 10
+    },
+    "top_cwes": [
+      [
+        "CWE-22",
+        3
+      ],
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-787",
+        2
+      ],
+      [
+        "CWE-287",
+        2
+      ],
+      [
+        "CWE-89",
+        2
+      ]
+    ],
+    "threat_index": 380.1,
+    "critical_count": 2
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 380.1,
+        "yesterday": 502.6,
+        "change_pct": -24.4
+      },
+      "critical_count": {
+        "today": 2,
+        "yesterday": 8,
+        "change_pct": -75.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-120534",
+      "description": "The Advanced Custom Fields: Extended PRO plugin for WordPress is vulnerable to Limited Code Injection in all versions up to, and including, 0.9.2.6 via the render_field function. This is due to insufficient validation of form configuration parameters before merging into field settings and passing to",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://www.acf-extended.com/changelog",
+        "https://www.wordfence.com/threat-intel/vulnerabilities/id/b8a7a925-2b9e-43bc-b649-c7ec518e063c?source=cve"
+      ],
+      "published": "2026-11-03T05:18:31.987"
+    },
+    {
+      "id": "CVE-2026-120518",
+      "description": "The BuddyPress XProfile Image Field plugin for WordPress is vulnerable to arbitrary file deletion in all versions up to, and including, 3.1.0. This is due to bpxp_image_field_update_on_user_activation() calling unlink() on a path built from visitor-supplied signup metadata with no realpath() resolut",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-48158",
+        "https://plugins.trac.wordpress.org/browser/buddypress-xprofile-image-field/tags/3.1.0/bp-xprofile-image-field.php#L488",
+        "https://plugins.trac.wordpress.org/browser/buddypress-xprofile-image-field/tags/3.1.0/bp-xprofile-image-field.php#L494"
+      ],
+      "published": "2026-11-03T05:18:31.380"
+    },
+    {
+      "id": "CVE-2026-107441",
+      "description": "An out-of-bounds write vulnerability in the CGI program of Zyxel GS1900-24E firmware versions through 2.90(AAHK.2)C0 could allow an unauthenticated adjacent attacker  to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-out-of-bounds-write-vulnerability-in-gs1900-series-switches-11-03-2026"
+      ],
+      "published": "2026-11-03T02:16:52.617"
+    },
+    {
+      "id": "CVE-2026-76955",
+      "description": "A buffer overflow vulnerability in the zdp_wtp binary in Zyxel NWA110AX firmware versions through 7.12(ABTG.0)C0 could allow a LAN-based attacker to escalate privileges on an affected device.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-120"
+      ],
+      "references": [
+        "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-buffer-overflow-vulnerability-in-certain-aps-fwa7-and-security-routers-11-03-2026"
+      ],
+      "published": "2026-11-03T02:16:53.720"
+    },
+    {
+      "id": "CVE-2026-120538",
+      "description": "The Easy Digital Downloads plugin for WordPress is vulnerable to authentication bypass leading to administrator account takeover in all versions up to, and including, 3.7.2. During a PayPal guest checkout, the email address entered in the guest-checkout field is trusted as proof of identity: edd_get",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/easy-digital-downloads/tags/3.7.0/includes/customers/customer-actions.php#L49",
+        "https://plugins.trac.wordpress.org/browser/easy-digital-downloads/tags/3.7.0/includes/gateways/paypal/checkout-actions.php#L681",
+        "https://plugins.trac.wordpress.org/browser/easy-digital-downloads/tags/3.7.0/includes/orders/functions/orders.php#L798"
+      ],
+      "published": "2026-11-03T05:18:32.193"
+    },
+    {
+      "id": "CVE-2026-120574",
+      "description": "The SureCart plugin for WordPress is vulnerable to unauthenticated account takeover in all versions up to, and including, 4.9.5. The passwordless one-time-code login REST route (VerificationCodeController::verify(), whose permission callback returns true) resolves an attacker-supplied login to any W",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://plugins.svn.wordpress.org/surecart/trunk/app/src/Controllers/Rest/VerificationCodeController.php",
+        "https://plugins.svn.wordpress.org/surecart/trunk/app/src/Models/User.php",
+        "https://plugins.svn.wordpress.org/surecart/trunk/app/src/Rest/VerificationCodeRestServiceProvider.php"
+      ],
+      "published": "2026-11-03T05:18:33.840"
+    },
+    {
+      "id": "CVE-2026-120833",
+      "description": "labbench before 0.46.1 contains a deserialization of untrusted data vulnerability in read() and read_relational() that passes any file with a .p or .pickle extension to pandas.read_pickle based on the extension alone. Attackers who supply a crafted data file or relational data archive can execute ar",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://github.com/usnistgov/labbench",
+        "https://github.com/usnistgov/labbench/blob/0.46.0/src/labbench/_data.py#L1664-L1666",
+        "https://github.com/usnistgov/labbench/blob/0.46.1/ChangeLog.md"
+      ],
+      "published": "2026-11-03T01:16:52.260"
+    },
+    {
+      "id": "CVE-2026-120559",
+      "description": "The Contact Form Extender for Divi Builder plugin for WordPress is vulnerable to Arbitrary File Deletion due to insufficient file path validation in the cfefd_remove_uploaded_file() function in all versions up to, and including, 1.0.6. This makes it possible for unauthenticated attackers to delete a",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/contact-form-extender-for-divi-builder/tags/1.0.3/includes/module/addons/divi-4/file-upload/class-cfefd-file-upload-ajax.php#L159",
+        "https://plugins.trac.wordpress.org/browser/contact-form-extender-for-divi-builder/tags/1.0.3/includes/module/addons/divi-4/file-upload/class-cfefd-file-upload-ajax.php#L18",
+        "https://plugins.trac.wordpress.org/browser/contact-form-extender-for-divi-builder/tags/1.0.7/includes/module/addons/divi-4/file-upload/class-cfefd-file-upload-ajax.php#L166"
+      ],
+      "published": "2026-11-03T05:18:33.230"
+    },
+    {
+      "id": "CVE-2026-120830",
+      "description": "A flaw was found in libslirp in icmp_forward_error(). When building an ICMP error response, the length of the quoted original IPv4 packet was taken from the IP header without clamping it to the actual buffer length. A truncated or malformed packet could cause an out-of-bounds heap read, leaking host",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-120830",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2565424",
+        "https://gitlab.freedesktop.org/slirp/libslirp/-/commit/21b33a6c5588af9f58d15e528fdc1019452708e4"
+      ],
+      "published": "2026-11-03T00:17:18.947"
+    },
+    {
+      "id": "CVE-2026-120558",
+      "description": "The Advanced Shipment Tracking for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the `tracking_provider` parameter of the `POST /wp-json/wc-ast/v3/orders/<order_id>/shipment-trackings` REST endpoint in all versions up to, and including, 3.9. This is due to insufficient escaping",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/woo-advanced-shipment-tracking/tags/3.9.1/includes/api/class-wc-advanced-shipment-tracking-rest-api-controller.php#L116",
+        "https://plugins.trac.wordpress.org/browser/woo-advanced-shipment-tracking/tags/3.9.1/includes/api/class-wc-advanced-shipment-tracking-rest-api-controller.php#L224",
+        "https://plugins.trac.wordpress.org/browser/woo-advanced-shipment-tracking/tags/3.9.1/includes/class-wc-advanced-shipment-tracking-admin.php#L2144"
+      ],
+      "published": "2026-11-03T05:18:33.030"
+    },
+    {
+      "id": "CVE-2026-120831",
+      "description": "A flaw was found in libslirp in if_output(). When moving a session from the fast queue to the batch queue, the code unlinked and reinserted an arbitrary packet via ifm->m_nextpkt instead of the session queue head, corrupting queue pointers. A guest generating burst traffic could crash the host netwo",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-120831",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2565425",
+        "https://gitlab.freedesktop.org/slirp/libslirp/-/commit/bad35bd3b529dc47aa109980a69a36da7848ab76"
+      ],
+      "published": "2026-11-03T02:16:53.393"
+    },
+    {
+      "id": "CVE-2026-120524",
+      "description": "The News Kit Addons For Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'formData' parameter in all versions up to, and including, 1.4.8 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/news-kit-elementor-addons/tags/1.4.7/admin/admin.php#L1578",
+        "https://plugins.trac.wordpress.org/browser/news-kit-elementor-addons/tags/1.4.7/admin/admin.php#L1582",
+        "https://plugins.trac.wordpress.org/browser/news-kit-elementor-addons/tags/1.4.7/admin/admin.php#L732"
+      ],
+      "published": "2026-11-03T05:18:31.760"
+    },
+    {
+      "id": "CVE-2026-120552",
+      "description": "The SEO Engine \u2013 Smart SEO with AI, Schema & Redirection for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'title' parameter in all versions up to, and including, 0.9.9 due to insufficient input sanitization and output escaping. This makes it possible for authen",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/seo-engine/tags/0.9.9/app/index.js",
+        "https://plugins.trac.wordpress.org/browser/seo-engine/tags/0.9.9/classes/core.php#L739",
+        "https://plugins.trac.wordpress.org/browser/seo-engine/tags/0.9.9/classes/core.php#L744"
+      ],
+      "published": "2026-11-03T05:18:32.837"
+    },
+    {
+      "id": "CVE-2026-120575",
+      "description": "The Photo Engine (Media Organizer & Lightroom) plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'hierarchy[].name' parameter in all versions up to, and including, 6.5.7 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attac",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wplr-sync/tags/6.5.6/classes/admin.php#L80",
+        "https://plugins.trac.wordpress.org/browser/wplr-sync/tags/6.5.6/classes/api.php#L116",
+        "https://plugins.trac.wordpress.org/browser/wplr-sync/tags/6.5.6/classes/api.php#L290"
+      ],
+      "published": "2026-11-03T05:18:34.060"
+    },
+    {
+      "id": "CVE-2026-111464",
+      "description": "The WP Fastest Cache plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.5.3. The plugin caches the response of Core\u2019s wp-activate.php without honoring its no-store/no-cache headers, the wp-activate-* cookie, or the WP_INSTALLING state, writin",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-524"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-fastest-cache/tags/1.5.2/inc/cache.php#L1027",
+        "https://plugins.trac.wordpress.org/browser/wp-fastest-cache/tags/1.5.2/inc/cache.php#L1400",
+        "https://plugins.trac.wordpress.org/browser/wp-fastest-cache/tags/1.5.2/inc/cache.php#L452"
+      ],
+      "published": "2026-11-03T03:16:42.977"
+    },
+    {
+      "id": "CVE-2026-105770",
+      "description": "Octo STS (github.com/octo-sts/app) before 0.11.2 returns trust policy configuration to callers whose OIDC token does not satisfy that policy. TrustPolicy.CheckToken included the policy's issuer, subject and audience values or patterns and claim_pattern names and regular expressions in its Permission",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-209"
+      ],
+      "references": [
+        "https://github.com/octo-sts/app/commit/88c6432adc4f497ec69b574e1ce162a564a9e71a",
+        "https://github.com/octo-sts/app/releases/tag/v0.11.2",
+        "https://github.com/octo-sts/app/security/advisories/GHSA-h5p6-j8m9-xx4p"
+      ],
+      "published": "2026-11-03T01:16:44.147"
+    },
+    {
+      "id": "CVE-2026-120551",
+      "description": "The WP Compress \u2013 Instant Performance & Speed Optimization plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 7.22.01. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthentic",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-compress-image-optimizer/tags/7.21.27/classes/connect.class.php#L103",
+        "https://plugins.trac.wordpress.org/browser/wp-compress-image-optimizer/tags/7.21.27/classes/mainwp.class.php#L29",
+        "https://plugins.trac.wordpress.org/browser/wp-compress-image-optimizer/tags/7.21.27/classes/mainwp.class.php#L9"
+      ],
+      "published": "2026-11-03T05:18:32.637"
+    },
+    {
+      "id": "CVE-2026-120561",
+      "description": "The JetFormBuilder \u2014 Dynamic Blocks Form Builder plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'do_action' function in the 'Update_Options' action class in all versions up to, and including, 3.6.2. This makes it possible for unauthen",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/jetformbuilder/tags/3.3.12/compatibility/jet-engine/actions/update-options.php#L50",
+        "https://plugins.trac.wordpress.org/browser/jetformbuilder/tags/3.3.12/compatibility/jet-engine/actions/update-options.php#L75",
+        "https://plugins.trac.wordpress.org/browser/jetformbuilder/tags/3.3.12/compatibility/jet-engine/actions/update-options.php#L82"
+      ],
+      "published": "2026-11-03T05:18:33.447"
+    },
+    {
+      "id": "CVE-2026-120563",
+      "description": "The WooCommerce Multilingual & Multicurrency with WPML plugin for WordPress is vulnerable to SQL Injection in all versions up to, and including, 5.5.7. This is due to insufficient input validation on the currency exchange rate parameter in the save_currency() AJAX handler, which lacks capability che",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/woocommerce-multilingual/tags/5.5.5/classes/Multicurrency/WpQueryMcPrice/PriceOrderByPostMeta.php#L74",
+        "https://plugins.trac.wordpress.org/browser/woocommerce-multilingual/tags/5.5.5/inc/currencies/class-wcml-multi-currency-configuration.php#L136",
+        "https://plugins.trac.wordpress.org/browser/woocommerce-multilingual/tags/5.5.5/inc/currencies/class-wcml-multi-currency-configuration.php#L182"
+      ],
+      "published": "2026-11-03T05:18:33.647"
+    },
+    {
+      "id": "CVE-2026-120544",
+      "description": "The Academy LMS \u2013 AI Course Builder, Quizzes, Certificates & eLearning plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 4.0.1 via the 'id' parameter. This makes it possible for authenticated attackers, with contributor-level access and above, to read th",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/academy/tags/4.0.1/includes/frontend/template/block.php#L12",
+        "https://plugins.trac.wordpress.org/browser/academy/tags/4.0.1/includes/frontend/template/block.php#L267",
+        "https://plugins.trac.wordpress.org/browser/academy/tags/4.0.1/includes/frontend/template/block.php#L30"
+      ],
+      "published": "2026-11-03T05:18:32.427"
+    }
+  ]
+}
