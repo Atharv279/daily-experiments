@@ -1,0 +1,344 @@
+{
+  "timestamp": "2026-11-06T00:59:56.623268+00:00",
+  "scan_id": "1b314cc668",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 4,
+      "MEDIUM": 5,
+      "UNKNOWN": 10
+    },
+    "top_cwes": [
+      [
+        "CWE-862",
+        3
+      ],
+      [
+        "CWE-601",
+        3
+      ],
+      [
+        "CWE-502",
+        2
+      ],
+      [
+        "CWE-1333",
+        2
+      ],
+      [
+        "CWE-122",
+        1
+      ]
+    ],
+    "threat_index": 193.9,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 193.9,
+        "yesterday": 380.1,
+        "change_pct": -49.0
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 2,
+        "change_pct": -50.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-114549",
+      "description": "NoMachine nxwebrunner Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NoMachine. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the web se",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-786/"
+      ],
+      "published": "2026-11-04T00:17:22.627"
+    },
+    {
+      "id": "CVE-2026-118628",
+      "description": "MLflow get-artifacts Server-Side Request Forgery Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of MLflow. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the ",
+      "severity": "HIGH",
+      "score": 8.2,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-844/"
+      ],
+      "published": "2026-11-04T00:17:24.037"
+    },
+    {
+      "id": "CVE-2026-114550",
+      "description": "libwebsockets MQTT Protocol PUBACK Packet Handling Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of libwebsockets. Authentication is not required to exploit this vulnerability.\n\nThe specific fla",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/warmcat/libwebsockets/commit/c9e8e1834d7f13038c82963086b90e2ee9c5b44c",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-792/"
+      ],
+      "published": "2026-11-04T00:17:22.783"
+    },
+    {
+      "id": "CVE-2026-118623",
+      "description": "MLflow PickleEvaluationArtifact Deserialization of Untrusted Data Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of MLflow. User interaction is required to exploit this vulnerability in that the target must visit a ",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-839/"
+      ],
+      "published": "2026-11-04T00:17:23.273"
+    },
+    {
+      "id": "CVE-2026-118627",
+      "description": "MLflow SHAP load_explainer Deserialization of Untrusted Data Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of MLflow. User interaction is required to exploit this vulnerability in that the target must visit a malic",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-843/"
+      ],
+      "published": "2026-11-04T00:17:23.890"
+    },
+    {
+      "id": "CVE-2026-114552",
+      "description": "MailEnable parseObjectResponse XML External Entity Processing Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of MailEnable. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exist",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-611"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-811/"
+      ],
+      "published": "2026-11-04T00:17:23.133"
+    },
+    {
+      "id": "CVE-2026-118625",
+      "description": "MLflow Tracking Server Missing Authorization Privilege Escalation Vulnerability. This vulnerability allows remote attackers to escalate privileges on affected installations of MLflow. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the get_endpoints functio",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-841/"
+      ],
+      "published": "2026-11-04T00:17:23.580"
+    },
+    {
+      "id": "CVE-2026-114551",
+      "description": "MailEnable Auth Cleartext Storage Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of MailEnable. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-312"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-810/"
+      ],
+      "published": "2026-11-04T00:17:22.943"
+    },
+    {
+      "id": "CVE-2026-118624",
+      "description": "MLflow Tracking Server Jobs Missing Authorization Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of MLflow. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the _fi",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-840/"
+      ],
+      "published": "2026-11-04T00:17:23.423"
+    },
+    {
+      "id": "CVE-2026-118626",
+      "description": "MLflow Tracking Server Issues Missing Authorization Privilege Escalation Vulnerability. This vulnerability allows remote attackers to escalate privileges on affected installations of MLflow. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the configuration ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-842/"
+      ],
+      "published": "2026-11-04T00:17:23.737"
+    },
+    {
+      "id": "CVE-2026-120631",
+      "description": "CGI::Cookie versions from 4.67 before 5.00 for Perl allow denial of service via the client cookie expires value used as a regex in parse.\n\nCGI's cookie method reads the Cookie request header through parse, which interpolates the header's expires value unescaped into the substitution pattern that rem",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-625",
+        "CWE-1333"
+      ],
+      "references": [
+        "https://github.com/leejo/CGI.pm/commit/95e044af2ec24d99a61e99d6291580ad47aff641.patch",
+        "https://metacpan.org/release/LEEJO/CGI-4.72/source/lib/CGI/Cookie.pm",
+        "https://metacpan.org/release/LEEJO/CGI-5.00/changes"
+      ],
+      "published": "2026-11-04T00:17:24.187"
+    },
+    {
+      "id": "CVE-2026-120632",
+      "description": "CGI versions before 5.00 for Perl allow CPU exhaustion via a backtracking regex on the XForms multipart/related Content-Type.\n\nWhen a POST Content-Type contains multipart/related, the boundary and start parameters are extracted with an unanchored pattern that puts .+ on either side of the boundary c",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-1333"
+      ],
+      "references": [
+        "https://github.com/leejo/CGI.pm/commit/1e529c7ac8d410a51b4b04ab9d6cc00d51ef33c0.patch",
+        "https://metacpan.org/release/LEEJO/CGI-4.72/source/lib/CGI.pm",
+        "https://metacpan.org/release/LEEJO/CGI-5.00/changes"
+      ],
+      "published": "2026-11-04T00:17:24.320"
+    },
+    {
+      "id": "CVE-2026-120633",
+      "description": "CGI versions before 5.00 for Perl trust the client X-Forwarded-Host header in url, self_url, virtual_host and virtual_port.\n\nThese take the host name and port from the X-Forwarded-Host request header when present, and otherwise from Host, without validating either. The URLs from url and self_url are",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-348",
+        "CWE-601"
+      ],
+      "references": [
+        "https://github.com/leejo/CGI.pm/commit/d76752a5e8dfd365b0fe3a0b9a7da6c054e856af.patch",
+        "https://metacpan.org/release/LEEJO/CGI-4.72/source/lib/CGI.pm",
+        "https://metacpan.org/release/LEEJO/CGI-5.00/changes"
+      ],
+      "published": "2026-11-04T00:17:24.450"
+    },
+    {
+      "id": "CVE-2026-120634",
+      "description": "CGI::Carp versions before 5.00 for Perl leak warnings across requests in persistent environments via the warningsToBrowser buffer.\n\nWarnings are held in a package-level buffer until warningsToBrowser writes them into the page as HTML comments, and the buffer is never cleared between requests. Under ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-488"
+      ],
+      "references": [
+        "https://github.com/leejo/CGI.pm/commit/604a83fec105f75fe06f1a75026c4c34fd5a1f61.patch",
+        "https://metacpan.org/release/LEEJO/CGI-4.72/source/lib/CGI/Carp.pm",
+        "https://metacpan.org/release/LEEJO/CGI-5.00/changes"
+      ],
+      "published": "2026-11-04T00:17:24.577"
+    },
+    {
+      "id": "CVE-2026-120635",
+      "description": "CGI versions before 5.00 for Perl allow form fields to be smuggled past proxies and WAFs via multipart parsing that differs from the RFCs.\n\nThe multipart/form-data parser matches the boundary anywhere rather than at the start of a line, uses the boundary without its leading -- for some client-suppli",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-436"
+      ],
+      "references": [
+        "https://github.com/leejo/CGI.pm/commit/cbf04979f9974458ac223793bbd9d0b6a772aa66.patch",
+        "https://github.com/leejo/CGI.pm/commit/e0ef8f4248c6ae3025749040d8595d206b6a1b49.patch",
+        "https://github.com/leejo/CGI.pm/commit/f719fc08e8756708bcd4f1e357d5c0f8702f85dd.patch"
+      ],
+      "published": "2026-11-04T00:17:24.730"
+    },
+    {
+      "id": "CVE-2026-120636",
+      "description": "CGI versions before 5.00 for Perl allow open redirects and script injection via URLs built from REQUEST_URI in url and start_form.\n\nurl(-absolute=>1), url(-relative=>1) and the default start_form action are built from the client-supplied REQUEST_URI without validation. The result can be protocol-rel",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79",
+        "CWE-601"
+      ],
+      "references": [
+        "https://github.com/leejo/CGI.pm/commit/9405ef3909ee94991a3474167aa53b9051bd8765.patch",
+        "https://metacpan.org/release/LEEJO/CGI-4.72/source/lib/CGI.pm",
+        "https://metacpan.org/release/LEEJO/CGI-5.00/changes"
+      ],
+      "published": "2026-11-04T00:17:24.867"
+    },
+    {
+      "id": "CVE-2026-120637",
+      "description": "CGI versions before 5.00 for Perl take request parameters from the process command line arguments for an unrecognised REQUEST_METHOD.\n\nFor a REQUEST_METHOD such as OPTIONS, CGI falls through to its offline debugging mode, which is on by default, and builds the parameters and path_info from the proce",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-489"
+      ],
+      "references": [
+        "https://github.com/leejo/CGI.pm/commit/b753ff75a3bc4554c075cc37c1db605a55297029.patch",
+        "https://metacpan.org/release/LEEJO/CGI-4.72/source/lib/CGI.pm",
+        "https://metacpan.org/release/LEEJO/CGI-5.00/changes"
+      ],
+      "published": "2026-11-04T00:17:24.997"
+    },
+    {
+      "id": "CVE-2026-120638",
+      "description": "CGI versions before 5.00 for Perl allow open redirects via HTML entity decoding of the URL after application validation in redirect.\n\nredirect decodes HTML entities in its URL before writing the Location header, so a URL the application has already validated can change meaning. For example, /&#47;ev",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-180",
+        "CWE-601"
+      ],
+      "references": [
+        "https://github.com/leejo/CGI.pm/commit/7733c2753f4f240012097507cda2b6e87ae46db4.patch",
+        "https://metacpan.org/release/LEEJO/CGI-4.72/source/lib/CGI.pm",
+        "https://metacpan.org/release/LEEJO/CGI-5.00/changes"
+      ],
+      "published": "2026-11-04T00:17:25.137"
+    },
+    {
+      "id": "CVE-2026-120639",
+      "description": "CGI versions before 5.00 for Perl allow HTTP header injection via entity decoding after the newline check in header and unchecked values in multipart_start and do_push.\n\nWith autoEscape off, header decodes HTML entities in extra header values after its newline check, so an encoded CR or LF reaches t",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-113"
+      ],
+      "references": [
+        "https://github.com/leejo/CGI.pm/commit/69955309d371c8093d11cf12e3ddef491537ffad.patch",
+        "https://github.com/leejo/CGI.pm/commit/7733c2753f4f240012097507cda2b6e87ae46db4.patch",
+        "https://metacpan.org/release/LEEJO/CGI-4.72/source/lib/CGI.pm"
+      ],
+      "published": "2026-11-04T00:17:25.263"
+    },
+    {
+      "id": "CVE-2026-120640",
+      "description": "CGI versions before 5.00 for Perl allow the POSTDATA, PUTDATA, PATCHDATA and XForms:Model parameters to be set from the query string or form fields.\n\nCGI stores a non-form request body under POSTDATA, PUTDATA or PATCHDATA, and an XForms body under XForms:Model, but also accepts these names from the ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://github.com/leejo/CGI.pm/commit/bc4022f553301014e522133ba1e1f4e49e3bef08.patch",
+        "https://metacpan.org/release/LEEJO/CGI-4.72/source/lib/CGI.pm",
+        "https://metacpan.org/release/LEEJO/CGI-5.00/changes"
+      ],
+      "published": "2026-11-04T00:17:25.390"
+    }
+  ]
+}
