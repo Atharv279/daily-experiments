@@ -1,0 +1,359 @@
+{
+  "timestamp": "2026-11-07T00:10:08.546188+00:00",
+  "scan_id": "4c309cf547",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 2,
+      "MEDIUM": 11,
+      "LOW": 1,
+      "UNKNOWN": 5
+    },
+    "top_cwes": [
+      [
+        "CWE-754",
+        3
+      ],
+      [
+        "CWE-74",
+        2
+      ],
+      [
+        "CWE-77",
+        2
+      ],
+      [
+        "CWE-119",
+        2
+      ],
+      [
+        "CWE-266",
+        2
+      ]
+    ],
+    "threat_index": 209.3,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 209.3,
+        "yesterday": 193.9,
+        "change_pct": 7.9
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 1,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-122051",
+      "description": "A flaw has been found in Edimax BR-6208AC 1.32. Affected by this vulnerability is an unknown functionality of the file /goform/mp. Executing a manipulation can lead to command injection. The attack may be launched remotely. The exploit has been published and may be used. The vendor was contacted ear",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "references": [
+        "https://github.com/fizz-is-on-the-way/Iot_vuls/tree/main/BR-6208AC/RCE_mp",
+        "https://vuldb.com/cve/CVE-2026-122051",
+        "https://vuldb.com/submit/1025459"
+      ],
+      "published": "2026-11-05T00:17:24.013"
+    },
+    {
+      "id": "CVE-2026-122050",
+      "description": "A vulnerability was found in Campcodes Complete Sales and Inventory System with Credit Management 1.0. This issue affects some unknown processing of the file /ahira/login.php. Performing a manipulation of the argument branch results in sql injection. The attack is possible to be carried out remotely",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://tracexlabs.com/releases/campcodes-complete-sales-and-inventory-system-login-sqli.html",
+        "https://vuldb.com/cve/CVE-2026-122050",
+        "https://vuldb.com/submit/1025183"
+      ],
+      "published": "2026-11-05T00:17:23.783"
+    },
+    {
+      "id": "CVE-2026-122146",
+      "description": "A weakness has been identified in 101arrowz fflate up to 0.8.3. This issue affects the function unzipSync of the file esm/index.mjs. This manipulation causes memory corruption. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for att",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://github.com/ictrun/java/issues/9",
+        "https://vuldb.com/cve/CVE-2026-122146",
+        "https://vuldb.com/submit/1027352"
+      ],
+      "published": "2026-11-05T01:17:22.143"
+    },
+    {
+      "id": "CVE-2026-109849",
+      "description": "Incorrect privilege assignment issue exists in Hinemos. If this vulnerability is exploited, an attacker who can access the password change API with specific permissions that can be assigned to non-administrative users may change the password of an administrative user.",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-266"
+      ],
+      "references": [
+        "https://jvn.jp/en/jp/JVN46901199/",
+        "https://www.hinemos.info/news/hinemos-vulnerability-20261104"
+      ],
+      "published": "2026-11-05T01:17:21.490"
+    },
+    {
+      "id": "CVE-2026-122157",
+      "description": "A vulnerability was identified in Purocean Yank Note 3.93.0. Affected by this vulnerability is the function checkPermission of the file src/main/server/index.ts of the component Terminal Handler. Such manipulation leads to os command injection. The attack can be executed remotely. The exploit is pub",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "references": [
+        "https://github.com/purocean/yn/commit/59f85d48f17a70a402ad59dcecacdbec20f954df",
+        "https://github.com/purocean/yn/issues/531",
+        "https://github.com/purocean/yn/pull/535"
+      ],
+      "published": "2026-11-05T02:16:58.240"
+    },
+    {
+      "id": "CVE-2026-122159",
+      "description": "A weakness has been identified in Edge0-AI Audio8_TTS up to 1d64afcc2da56222b41ddcf53de7b8bc54be1fb6. This affects the function ArkTtsRuntime.__init__ of the file onnx_runtime_0_1b_int8/arktts_runtime/runtime.py of the component Model Path Resolution. Executing a manipulation of the argument slow_de",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/Edge0-AI/Audio8_TTS/",
+        "https://github.com/Edge0-AI/Audio8_TTS/issues/41",
+        "https://github.com/user-attachments/files/33392182/poc.zip"
+      ],
+      "published": "2026-11-05T03:17:20.920"
+    },
+    {
+      "id": "CVE-2026-122160",
+      "description": "A security vulnerability has been detected in myshell-ai AIlice up to 0.4.0. This vulnerability affects the function LoadModel_PEFT of the file ailice/core/llm/AModelCausalLM.py of the component HuggingFace Model Wrapper. The manipulation of the argument base_model_name_or_path leads to inclusion of",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-829"
+      ],
+      "references": [
+        "https://github.com/myshell-ai/AIlice/",
+        "https://github.com/myshell-ai/AIlice/issues/77",
+        "https://github.com/user-attachments/files/33392335/poc.zip"
+      ],
+      "published": "2026-11-05T03:17:21.133"
+    },
+    {
+      "id": "CVE-2026-122188",
+      "description": "A flaw has been found in DeepGraphLearning KnowledgeGraphEmbedding up to 2e440e0f9c687314d5ff67ead68ce985dc446e3a. Impacted is the function override_config of the file codes/run.py of the component Checkpoint Loading. This manipulation of the argument data_path causes path traversal. The attack can ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding/",
+        "https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding/issues/59",
+        "https://github.com/user-attachments/files/33392669/poc.zip"
+      ],
+      "published": "2026-11-05T03:17:21.360"
+    },
+    {
+      "id": "CVE-2026-122189",
+      "description": "A vulnerability has been found in OpenPPL ppl.nn up to bb84dc9952809b3a5a0036858a3d9f68af1c83d5. The affected element is the function OptGraph::InitQuantization of the file src/ppl/nn/engines/cuda/optimizer/opt_graph.cc of the component CUDA Optimizer. Such manipulation of the argument per_channel/b",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/OpenPPL/ppl.nn/",
+        "https://github.com/OpenPPL/ppl.nn/issues/975",
+        "https://github.com/user-attachments/files/33393000/poc.zip"
+      ],
+      "published": "2026-11-05T03:17:21.577"
+    },
+    {
+      "id": "CVE-2026-122154",
+      "description": "A vulnerability was found in purocean Yank Note 3.93.0. This impacts the function config.getAll of the file src/main/server/index.ts of the component Settings Endpoint. The manipulation results in information disclosure. The attack may be launched remotely. The exploit has been made public and could",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/purocean/yn/commit/59f85d48f17a70a402ad59dcecacdbec20f954df",
+        "https://github.com/purocean/yn/issues/532",
+        "https://github.com/purocean/yn/pull/535"
+      ],
+      "published": "2026-11-05T02:16:57.990"
+    },
+    {
+      "id": "CVE-2026-122158",
+      "description": "A security flaw has been discovered in InvoiceShelf up to 2.4.3/3.0.0-alpha.3. Affected by this issue is the function MemberService::create of the file app/Domains/Accounts/Application/MemberService.php. Performing a manipulation of the argument companies[].id/companies[].role results in improper ac",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://github.com/InvoiceShelf/InvoiceShelf/",
+        "https://github.com/InvoiceShelf/InvoiceShelf/commit/c798b513c3ab6e672a1678774720fbb282f4d0c6",
+        "https://github.com/InvoiceShelf/InvoiceShelf/pull/822"
+      ],
+      "published": "2026-11-05T02:16:58.490"
+    },
+    {
+      "id": "CVE-2026-122052",
+      "description": "A vulnerability has been found in laspy up to 2.7.0. Affected by this issue is some unknown functionality of the file laspy/lasreader.py of the component LAS File Handler. The manipulation leads to uncontrolled memory allocation. Remote exploitation of the attack is possible.",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-400",
+        "CWE-789"
+      ],
+      "references": [
+        "https://github.com/laspy/laspy/",
+        "https://github.com/laspy/laspy/issues/378",
+        "https://github.com/laspy/laspy/issues/378#issuecomment-6146934274"
+      ],
+      "published": "2026-11-05T01:17:21.670"
+    },
+    {
+      "id": "CVE-2026-122144",
+      "description": "A security flaw has been discovered in nliautaud pico-content-editor up to 02d5ad6c820c5050c542ab9505819b5e0a0ba1af. This vulnerability affects unknown code. The manipulation results in cross-site request forgery. The attack may be performed from remote. The exploit has been released to the public a",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352",
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/vinniboy021-blip/Advisory/blob/main/csrf-pico-save-upload.md",
+        "https://vuldb.com/cve/CVE-2026-122144",
+        "https://vuldb.com/submit/1026976"
+      ],
+      "published": "2026-11-05T01:17:21.893"
+    },
+    {
+      "id": "CVE-2026-122151",
+      "description": "A security vulnerability has been detected in Presenton up to 0.9.11-beta. Impacted is the function JSON.parse of the file /api/user-config of the component User Configuration Handler. Such manipulation leads to cross-site request forgery. It is possible to launch the attack remotely. The exploit ha",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352",
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/presenton/presenton/",
+        "https://github.com/presenton/presenton/commit/44c8a61122b21f17642d717b0c4d6f2c54c0f180",
+        "https://github.com/presenton/presenton/issues/975"
+      ],
+      "published": "2026-11-05T01:17:22.360"
+    },
+    {
+      "id": "CVE-2026-122049",
+      "description": "A flaw has been found in Campcodes Bitcoin Wallet System 1.0. This affects the function random_int of the file core/app/Http/Controllers/Auth/ForgotPasswordController.php. This manipulation causes improper restriction of excessive authentication attempts. Remote exploitation of the attack is possibl",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-307",
+        "CWE-799"
+      ],
+      "references": [
+        "https://tracexlabs.com/releases/campcodes-bitcoin-wallet-reset-code-flaws.html",
+        "https://vuldb.com/cve/CVE-2026-122049",
+        "https://vuldb.com/submit/1025182"
+      ],
+      "published": "2026-11-05T00:17:22.390"
+    },
+    {
+      "id": "CVE-2025-66364",
+      "description": "Continuously sending control\u2011plane messages causes the baseband to crashes.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-754"
+      ],
+      "references": [
+        "https://semiconductor.samsung.com/support/quality-support/product-security-updates/"
+      ],
+      "published": "2026-11-05T02:16:57.817"
+    },
+    {
+      "id": "CVE-2025-66365",
+      "description": "Incorrect handling of SIP packets leads to baseband crashes",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-754"
+      ],
+      "references": [
+        "https://semiconductor.samsung.com/support/quality-support/product-security-updates/"
+      ],
+      "published": "2026-11-05T03:17:17.663"
+    },
+    {
+      "id": "CVE-2025-66366",
+      "description": "Incorrect handling of unauthenticated downlink RRC\u202fSetup messages can cause the baseband to crash",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-129"
+      ],
+      "references": [
+        "https://semiconductor.samsung.com/support/quality-support/product-security-updates/"
+      ],
+      "published": "2026-11-05T03:17:17.793"
+    },
+    {
+      "id": "CVE-2025-66367",
+      "description": "Improper handling of NAS DLTransport messages may lead to a baseband crash.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://semiconductor.samsung.com/support/quality-support/product-security-updates/"
+      ],
+      "published": "2026-11-05T03:17:17.913"
+    },
+    {
+      "id": "CVE-2025-66368",
+      "description": "Incorrect handling of SDP payload leads to a Denial of Service",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-754"
+      ],
+      "references": [
+        "https://semiconductor.samsung.com/support/quality-support/product-security-updates/"
+      ],
+      "published": "2026-11-05T03:17:18.040"
+    }
+  ]
+}
