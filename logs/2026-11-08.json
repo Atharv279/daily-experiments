@@ -1,0 +1,333 @@
+{
+  "timestamp": "2026-11-08T09:13:05.258961+00:00",
+  "scan_id": "3904ffdc70",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 5,
+      "HIGH": 8,
+      "MEDIUM": 3,
+      "LOW": 2,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-89",
+        3
+      ],
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-269",
+        2
+      ],
+      [
+        "CWE-918",
+        2
+      ],
+      [
+        "CWE-119",
+        2
+      ]
+    ],
+    "threat_index": 427.4,
+    "critical_count": 5
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 427.4,
+        "yesterday": 209.3,
+        "change_pct": 104.2
+      },
+      "critical_count": {
+        "today": 5,
+        "yesterday": 1,
+        "change_pct": 400.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-110955",
+      "description": "The Wurdey WordPress plugin through 1.0.0 does not verify a request signature before logging a user in, allowing unauthenticated attackers to authenticate as an administrator knowing only the administrator's username.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/3a1a4bb4-01ce-4b4b-8493-4b1a857d2c03/"
+      ],
+      "published": "2026-11-06T06:16:39.830"
+    },
+    {
+      "id": "CVE-2026-113584",
+      "description": "The placester WordPress plugin through 1.4.3 does not perform any capability, nonce or ownership check on an AJAX action that updates account details, allowing unauthenticated attackers to overwrite any user's email address, including an administrator's, and take over the account through the standar",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/f8261325-51d6-477e-af17-11b6de10c232/"
+      ],
+      "published": "2026-11-06T06:16:39.943"
+    },
+    {
+      "id": "CVE-2026-113615",
+      "description": "The GS JWT Authentication for WP REST API WordPress plugin through 1.0.0 does not sanitize or parameterize a request value before using it in SQL queries on several unauthenticated REST routes, allowing unauthenticated attackers to perform SQL injection and obtain an administrator session.",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/40e0b8d1-8e13-4c4c-a09a-9ec07c578662/"
+      ],
+      "published": "2026-11-06T06:16:40.053"
+    },
+    {
+      "id": "CVE-2026-63017",
+      "description": "Incorrect authorization in PowerSYSTEM Center allows a low-privileged, authenticated user to access resources normally limited to administrators.",
+      "severity": "CRITICAL",
+      "score": 9.0,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-307-01.json",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01"
+      ],
+      "published": "2026-11-06T01:17:50.297"
+    },
+    {
+      "id": "CVE-2026-63774",
+      "description": "Insufficient input validation in the PowerSYSTEM Center report designer allows an authenticated user to execute unauthorized SQL commands.",
+      "severity": "CRITICAL",
+      "score": 9.0,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-307-01.json",
+        "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01"
+      ],
+      "published": "2026-11-06T01:17:50.470"
+    },
+    {
+      "id": "CVE-2026-110525",
+      "description": "The MCB  WordPress plugin through 1.0.0 does not sanitise or escape request header values before storing them and later rendering them in the administrator statistics grid, allowing unauthenticated attackers to store malicious JavaScript that executes in an administrator's browser session when the s",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/4be75329-7348-4e4a-a541-6c53256d92eb/"
+      ],
+      "published": "2026-11-06T06:16:39.460"
+    },
+    {
+      "id": "CVE-2026-119432",
+      "description": "A stored cross-site scripting (XSS) vulnerability exists in the Foxit Workspace's file share preview functionality. An attacker could upload a crafted file and share it with a victim. When the victim opens or previews the file, the embedded script executes in the application's origin, potentially ac",
+      "severity": "HIGH",
+      "score": 8.7,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.foxit.com/support/security-bulletins.html"
+      ],
+      "published": "2026-11-06T05:18:20.830"
+    },
+    {
+      "id": "CVE-2026-110532",
+      "description": "The Mail Mage WordPress plugin through 0.0.25 does not properly sanitise and escape a user-supplied value before using it in a SQL statement, allowing unauthenticated attackers to perform SQL injection attacks.",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/86a2c9d4-5567-41b9-9cb5-21acf815f992/"
+      ],
+      "published": "2026-11-06T06:16:39.597"
+    },
+    {
+      "id": "CVE-2026-119431",
+      "description": "A server-side request forgery (SSRF) vulnerability exists in Foxit Workspace's file-upload functionality. Insufficient validation of user-supplied links may allow a remote attacker to induce the server to access internal resources and return their contents, potentially resulting in sensitive informa",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://www.foxit.com/support/security-bulletins.html"
+      ],
+      "published": "2026-11-06T05:18:20.677"
+    },
+    {
+      "id": "CVE-2026-119433",
+      "description": "A server-side request forgery (SSRF) vulnerability exists in an undocumented API endpoint of Foxit Workspace due to insufficient validation of user-supplied URL and network parameters. A remote attacker could exploit this issue to induce the server to send requests to arbitrary internal or external ",
+      "severity": "HIGH",
+      "score": 7.7,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://www.foxit.com/support/security-bulletins.html"
+      ],
+      "published": "2026-11-06T05:18:20.970"
+    },
+    {
+      "id": "CVE-2025-71458",
+      "description": "FTS3 Web Monitoring (fts-monitoring) versions 3.12.0 through 3.13.2 and 3.14.0 contain an unauthenticated sql injection vulnerability in the /linkinfo endpoint handled by get_linkinfo. Remote attackers can inject SQL through the source_se and dest_se query parameters to perform blind injection and r",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://advisories.egi.eu/Advisory-EGI-SVG-2025-09",
+        "https://github.com/cern-fts/fts-monitoring",
+        "https://github.com/cern-fts/fts-monitoring/blob/v3.14.0/src/apps/ftsmon/views/linkinfo.py#L27-L60"
+      ],
+      "published": "2026-11-06T01:17:47.737"
+    },
+    {
+      "id": "CVE-2026-77299",
+      "description": "Regexp2 is a feature-rich RegExp engine for Go. Prior to version 2.3.0, when regexp2 compiles and matches a pattern containing a large fixed-count quantifier applied to a zero-width subexpression \u2014 e.g. (?:){50000000} \u2014 the match engine executes the empty loop body m-1 times, pushing two integers on",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/dlclark/regexp2/commit/6e446cb3a57a0f20112bc24353604fd00bdb309a",
+        "https://github.com/dlclark/regexp2/releases/tag/v2.3.0",
+        "https://github.com/dlclark/regexp2/security/advisories/GHSA-wq9v-j77v-qr26"
+      ],
+      "published": "2026-11-06T02:17:52.893"
+    },
+    {
+      "id": "CVE-2026-110813",
+      "description": "The Advanced Custom Fields (ACF\u00ae) WordPress plugin before 6.8.11 does not properly sanitize a stored field definition that can be modified through its comment handling, allowing unauthenticated users to inject a payload that is emitted as an HTML attribute name and executed as JavaScript in the brow",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/f7373dad-036e-47f4-b8a5-584341f66560/"
+      ],
+      "published": "2026-11-06T06:16:39.717"
+    },
+    {
+      "id": "CVE-2026-109081",
+      "description": "A flaw was found in Keycloak. The Dynamic Client Registration (DCR) endpoint does not properly validate authorization when processing the deprecated defaultRoles field. An authenticated attacker with client creation privileges or an Initial Access Token (IAT) can inject excessive roles into the real",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://access.redhat.com/errata/RHSA-2026:95761",
+        "https://access.redhat.com/errata/RHSA-2026:95762",
+        "https://access.redhat.com/security/cve/CVE-2026-109081"
+      ],
+      "published": "2026-11-06T06:16:39.290"
+    },
+    {
+      "id": "CVE-2026-107124",
+      "description": "A flaw was found in the OIDC logout endpoint of the keycloak-services component, which handles user session termination in Red Hat Build of Keycloak. The issue occurs because the system sets a session cookie based on an unvalidated token hint before completing security checks. An attacker can use th",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-384"
+      ],
+      "references": [
+        "https://access.redhat.com/errata/RHSA-2026:95761",
+        "https://access.redhat.com/errata/RHSA-2026:95762",
+        "https://access.redhat.com/security/cve/CVE-2026-107124"
+      ],
+      "published": "2026-11-06T06:16:37.437"
+    },
+    {
+      "id": "CVE-2026-89142",
+      "description": "In the Wi-Fi NPU FW, there is a possible out-of-bounds write due to an incorrect bounds check. This could lead to local denial of service with user execution privileges needed. User interaction is not needed for exploitation.",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://www.airoha.com/product-security-bulletin#CVE-2026-89142"
+      ],
+      "published": "2026-11-06T04:16:35.437"
+    },
+    {
+      "id": "CVE-2026-123268",
+      "description": "A security vulnerability has been detected in libyal libvmdk up to 3fdd7839758e9f44ef95e1dfccde8552b860a4fc. Affected is the function libvmdk_extent_table_get_extent_data_file_path of the file libvmdk/libvmdk_extent_table.c of the component Extent Data File Handler. The manipulation leads to memory ",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-119"
+      ],
+      "references": [
+        "https://github.com/libyal/libvmdk/",
+        "https://github.com/libyal/libvmdk/commit/175d3fc0a0b961f362f16e7560a6169d7213e16b",
+        "https://github.com/libyal/libvmdk/issues/39"
+      ],
+      "published": "2026-11-06T01:17:48.573"
+    },
+    {
+      "id": "CVE-2026-123269",
+      "description": "A vulnerability was detected in libyal libvmdk. Affected by this vulnerability is the function libvmdk_descriptor_file_read_header of the file libvmdk/libvmdk_descriptor_file.c of the component Descriptor File Parser. The manipulation results in out-of-bounds read. The attack must be initiated from ",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/libyal/libvmdk/",
+        "https://github.com/libyal/libvmdk/commit/175d3fc0a0b961f362f16e7560a6169d7213e16b",
+        "https://github.com/libyal/libvmdk/issues/41"
+      ],
+      "published": "2026-11-06T01:17:48.783"
+    },
+    {
+      "id": "CVE-2026-107492",
+      "description": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [],
+      "published": "2026-11-06T01:17:48.350"
+    },
+    {
+      "id": "CVE-2026-114366",
+      "description": "An information disclosure vulnerability in the Qt Framework QWebSocket authentication handling of the Qt WebSockets module.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-226"
+      ],
+      "references": [
+        "https://codereview.qt-project.org/c/qt/qtwebsockets/+/772273",
+        "https://wiki.qt.io/List_of_known_vulnerabilities_in_Qt_products#CVE-2026-114366"
+      ],
+      "published": "2026-11-06T05:18:20.220"
+    }
+  ]
+}
