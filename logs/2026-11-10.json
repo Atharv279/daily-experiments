@@ -1,0 +1,335 @@
+{
+  "timestamp": "2026-11-10T02:49:13.776569+00:00",
+  "scan_id": "be6e56ffc3",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "MEDIUM": 14,
+      "LOW": 6
+    },
+    "top_cwes": [
+      [
+        "CWE-276",
+        2
+      ],
+      [
+        "CWE-532",
+        2
+      ],
+      [
+        "CWE-352",
+        2
+      ],
+      [
+        "CWE-770",
+        2
+      ],
+      [
+        "CWE-319",
+        1
+      ]
+    ],
+    "threat_index": 171.4,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 171.4,
+        "yesterday": 280.5,
+        "change_pct": -38.9
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-123497",
+      "description": "Vikunja veans before 2.7.1 contains a protocol downgrade vulnerability in serverCandidates that allows on-path attackers to force plain HTTP during veans init and login. Attackers can block HTTPS ports so discovery accepts an unverified HTTP response, capturing passwords, TOTP codes or bot tokens an",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-319"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-wqw2-rgwv-99qx",
+        "https://www.vulncheck.com/advisories/vikunja-veans-before-2.7.1-https-to-http-downgrade-in-server-discovery"
+      ],
+      "published": "2026-11-08T02:16:37.160"
+    },
+    {
+      "id": "CVE-2026-123501",
+      "description": "Vikunja before 2.7.1 contains an uncontrolled resource consumption vulnerability that allows authenticated users to exhaust server memory through concurrent image decodes in avatar and background uploads. Attackers can send several parallel tiny, highly compressible PNGs decoded at up to 50 megapixe",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-9hxw-pxcq-4q8q",
+        "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-memory-exhaustion-dos-via-unbounded-image-decodes"
+      ],
+      "published": "2026-11-08T02:16:37.853"
+    },
+    {
+      "id": "CVE-2026-123500",
+      "description": "Vikunja before 2.7.1 contains an insecure file permissions vulnerability that allows local users to read dump archives created with umask permissions by the vikunja dump command. Local attackers on a shared host can read the world-readable zip in the rootpath to obtain config, password hashes, TOTP ",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-276"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-rp64-xg8g-9mpr",
+        "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-insecure-permissions-on-dump-archive-via-vikunja-dump"
+      ],
+      "published": "2026-11-08T02:16:37.680"
+    },
+    {
+      "id": "CVE-2026-123512",
+      "description": "Vikunja before 2.7.1 embeds live password-reset, email-confirmation and account-deletion tokens in the URL query string of emailed links, so the full request URI, including the token, is written to Vikunja's HTTP access log and any reverse-proxy logs when a user clicks the link. Attackers with read ",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-532"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-qf5p-grf5-wcq4",
+        "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-sensitive-token-exposure-via-url-query-in-access-logs"
+      ],
+      "published": "2026-11-08T02:16:39.847"
+    },
+    {
+      "id": "CVE-2026-123499",
+      "description": "Vikunja veans before 2.7.1 contains a credential exposure vulnerability that allows malicious repository authors to capture API tokens by specifying an attacker-controlled server in .veans.yml. When veans runs in an untrusted checkout, it sends VEANS_TOKEN as a Bearer token, or login passwords, TOTP",
+      "severity": "MEDIUM",
+      "score": 5.9,
+      "cwes": [
+        "CWE-346"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-3rrq-h284-5vpx",
+        "https://www.vulncheck.com/advisories/vikunja-veans-before-2.7.1-credential-leak-via-repo-controlled-veans-yml-server"
+      ],
+      "published": "2026-11-08T02:16:37.510"
+    },
+    {
+      "id": "CVE-2026-123505",
+      "description": "Vikunja before 2.7.1 contains an insecure file permissions vulnerability that allows local users to read stored data because localStorage.Write creates blobs world-readable. Local attackers on a shared host can read attachments, project backgrounds and exports, and copy the SQLite database to crack ",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-276"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-9rfw-7hv4-3vv3",
+        "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-world-readable-local-file-storage-and-sqlite-database"
+      ],
+      "published": "2026-11-08T02:16:38.607"
+    },
+    {
+      "id": "CVE-2026-123493",
+      "description": "Vikunja from 2.4.0 before 2.7.1 contains an authentication bypass vulnerability that allows disabled or locked users to retain access through API tokens owned by their bot users. Because token validation only checks the bot's own status, attackers holding pre-minted bot tokens can keep reading and m",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-613"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-5fc2-w2j4-6r8w",
+        "https://www.vulncheck.com/advisories/vikunja-from-2.4.0-before-2.7.1-authentication-bypass-via-bot-api-tokens"
+      ],
+      "published": "2026-11-08T02:16:36.183"
+    },
+    {
+      "id": "CVE-2026-123503",
+      "description": "Vikunja before 2.7.1 contains an improper authorization vulnerability in canDoBucket that allows users with project write access to delete buckets via a mismatched view ID. Attackers can request deletion through another view's bucket endpoint to bypass the last-bucket rule, leaving dangling default/",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-9xh7-5jg8-mf43",
+        "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-improper-authorization-in-kanban-bucket-deletion"
+      ],
+      "published": "2026-11-08T02:16:38.240"
+    },
+    {
+      "id": "CVE-2026-123506",
+      "description": "Vikunja from 2.2.0 before 2.7.1 contains an authorization bypass vulnerability that allows holders of tokens scoped only to projects_webhooks to manage the owner's user-level webhooks by supplying user_id in request bodies. Attackers can register user webhooks to their own receiver to obtain reminde",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-5f6v-j6xm-wwj9",
+        "https://www.vulncheck.com/advisories/vikunja-2.2.0-before-2.7.1-token-scope-bypass-via-project-webhook-endpoints"
+      ],
+      "published": "2026-11-08T02:16:38.783"
+    },
+    {
+      "id": "CVE-2026-123502",
+      "description": "Vikunja before 2.7.1 contains an information exposure vulnerability that allows log readers to obtain link-share hashes because the request logger records the raw URI of the /shares/:share/auth route. Attackers with access to Vikunja or reverse proxy access logs can reuse non-expiring, non-password-",
+      "severity": "MEDIUM",
+      "score": 5.2,
+      "cwes": [
+        "CWE-532"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-ff52-3296-2fvr",
+        "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-link-share-hash-exposure-via-request-path-logging"
+      ],
+      "published": "2026-11-08T02:16:38.040"
+    },
+    {
+      "id": "CVE-2026-123495",
+      "description": "Vikunja 2.0.0 before 2.7.1 accepts form-encoded bodies on the /api/v2 login and OIDC callback endpoints without CSRF or Origin checks, enabling login cross-site request forgery. An attacker with an account can lure a victim to a page posting the attacker's credentials or OIDC code, switching the vic",
+      "severity": "MEDIUM",
+      "score": 4.6,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-frf4-3prf-3vch",
+        "https://www.vulncheck.com/advisories/vikunja-2.0.0-before-2.7.1-login-csrf-via-api-v2-login-and-oidc-callback"
+      ],
+      "published": "2026-11-08T02:16:36.800"
+    },
+    {
+      "id": "CVE-2026-123504",
+      "description": "Vikunja from 0.22.0 before 2.7.1 contains an information disclosure vulnerability that allows read-only project members to view full webhook target URLs by listing project webhooks. Attackers can extract incoming-webhook tokens or API keys embedded in target_url values to post to receiving channels ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-586f-48mj-3rwr",
+        "https://www.vulncheck.com/advisories/vikunja-0.22.0-before-2.7.1-webhook-url-credential-exposure-to-read-only-members"
+      ],
+      "published": "2026-11-08T02:16:38.430"
+    },
+    {
+      "id": "CVE-2026-123509",
+      "description": "Vikunja before 2.7.1 contains an uncontrolled resource consumption vulnerability that allows project writers or view admins to create unlimited kanban buckets due to missing count caps. Attackers can create thousands of buckets so every kanban read runs a task SELECT and COUNT per bucket, generating",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-p697-wq4x-grpj",
+        "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-denial-of-service-via-unbounded-kanban-bucket-count"
+      ],
+      "published": "2026-11-08T02:16:39.313"
+    },
+    {
+      "id": "CVE-2026-123511",
+      "description": "Vikunja before 2.7.1 contains an uncontrolled resource consumption vulnerability that allows authenticated CalDAV clients to create unbounded dummy tasks by sending VTODOs with thousands of RELATED-TO properties. Attackers can repeat unknown related UIDs in a single PUT request to generate thousands",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-c934-xjq2-mrg3",
+        "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-resource-exhaustion-via-caldav-vtodo-related-to-entries"
+      ],
+      "published": "2026-11-08T02:16:39.670"
+    },
+    {
+      "id": "CVE-2026-123498",
+      "description": "Vikunja veans before 2.7.1 contains a prompt injection vulnerability that allows project members with write access to inject instructions by setting project titles or task content rendered verbatim inside the coding agent's authoritative instruction block. Attackers can craft ProjectTitle or task de",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-cvh3-hf56-g9xm",
+        "https://www.vulncheck.com/advisories/vikunja-veans-before-2.7.1-prompt-injection-via-project-and-task-metadata"
+      ],
+      "published": "2026-11-08T02:16:37.340"
+    },
+    {
+      "id": "CVE-2026-123494",
+      "description": "Vikunja before 2.7.1 contains a cross-site request forgery vulnerability that allows attackers to import their data into a victim's account because the Todoist, Microsoft To Do, and Trello migration OAuth callbacks lack a bound state parameter. Attackers can authorize their own account, keep the unu",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-xgw3-ccqg-f6ww",
+        "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-login-csrf-via-migration-oauth-callbacks"
+      ],
+      "published": "2026-11-08T02:16:36.413"
+    },
+    {
+      "id": "CVE-2026-123496",
+      "description": "Vikunja veans before 2.7.1 contains a symlink following vulnerability that allows attackers to make veans init write files outside the repository via crafted repo symlinks. Attackers can ship symlinked .veans.yml, .claude, or .opencode entries to overwrite user files like ~/.bashrc or install veans ",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-59"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-rxwp-q2qg-98vw",
+        "https://www.vulncheck.com/advisories/vikunja-veans-before-2.7.1-symlink-following-in-veans-init"
+      ],
+      "published": "2026-11-08T02:16:36.977"
+    },
+    {
+      "id": "CVE-2026-123510",
+      "description": "Vikunja before 2.7.1 fails to re-anchor PluginsDir and LogPath to service.rootpath, allowing plugins to load from and logs to be written in the startup working directory. Local attackers able to write to that directory can plant plugins loaded into the server when plugins are enabled, or read mispla",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-427"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-hrw2-p27j-8mj8",
+        "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-plugin-and-log-directories-not-anchored-to-rootpath"
+      ],
+      "published": "2026-11-08T02:16:39.487"
+    },
+    {
+      "id": "CVE-2026-123508",
+      "description": "Vikunja before 2.7.1 contains a supply chain vulnerability in its mage release targets that fetch the xgo module and Docker image by mutable latest references. Attackers who compromise the upstream xgo module, image, or registry can inject malicious code into subsequently built release binaries ship",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-494"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-h8wj-3gwg-jjjg",
+        "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-supply-chain-risk-via-unpinned-xgo-release-toolchain"
+      ],
+      "published": "2026-11-08T02:16:39.140"
+    },
+    {
+      "id": "CVE-2026-123507",
+      "description": "Vikunja from 0.24.0 before 2.7.1 contains a nil pointer dereference vulnerability that allows project admins to break project views by saving a filter-mode bucket configuration with a null filter. Because validateProjectViewFilters skips nil entries, every subsequent read of the view panics in kanba",
+      "severity": "LOW",
+      "score": 2.7,
+      "cwes": [
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-hm4w-h7v8-ch43",
+        "https://www.vulncheck.com/advisories/vikunja-0.24.0-before-2.7.1-denial-of-service-via-nil-bucket-filter"
+      ],
+      "published": "2026-11-08T02:16:38.960"
+    }
+  ]
+}
