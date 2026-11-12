@@ -1,0 +1,360 @@
+{
+  "timestamp": "2026-11-12T01:57:01.156213+00:00",
+  "scan_id": "d9ac26c7d9",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 5,
+      "MEDIUM": 13,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-918",
+        4
+      ],
+      [
+        "CWE-639",
+        3
+      ],
+      [
+        "CWE-269",
+        2
+      ],
+      [
+        "CWE-321",
+        1
+      ],
+      [
+        "CWE-1385",
+        1
+      ]
+    ],
+    "threat_index": 296.3,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 296.3,
+        "yesterday": 322.6,
+        "change_pct": -8.2
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 2,
+        "change_pct": -50.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-125370",
+      "description": "Kubero 3.0.0 through 3.1.1 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to forge administrative JWTs by using a hardcoded fallback signing secret when JWT_SECRET is unset. Attackers can sign tokens with arbitrary role, userGroups and permissions claims",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-321"
+      ],
+      "references": [
+        "https://github.com/kubero-dev/kubero",
+        "https://github.com/kubero-dev/kubero/blob/bcb52376b19347b8c36bc445ddf3e4bff4a5c168/server/src/auth/strategies/jwt.strategy.ts#L13-L32",
+        "https://github.com/kubero-dev/kubero/issues/786"
+      ],
+      "published": "2026-11-10T00:17:09.237"
+    },
+    {
+      "id": "CVE-2026-125358",
+      "description": "Universal-modder before commit e88f6876745427321eb755ebc98276063a962d8a contains a missing WebSocket Origin validation vulnerability in the HostLink class of its passthrough example mods that allows remote attackers to execute Minecraft commands. Any web page open in the player's browser can connect",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-1385"
+      ],
+      "references": [
+        "https://github.com/rehan-remade/universal-modder/blob/edf45f6a26cb047886d9d7bcba392c328fc3d317/examples/minecraft-gta5-passthrough/mc/src/client/java/dev/rehan/passthrough/client/HostLink.java#L54-L72",
+        "https://github.com/rehan-remade/universal-modder/commit/e88f6876745427321eb755ebc98276063a962d8a",
+        "https://github.com/rehan-remade/universal-modder/security/advisories/GHSA-wjf6-3h6v-4gq9"
+      ],
+      "published": "2026-11-10T00:17:07.180"
+    },
+    {
+      "id": "CVE-2026-125364",
+      "description": "frab through 0.9.1 contains a privilege escalation vulnerability that allows authenticated crew users to grant themselves orga roles by submitting unchecked nested conference_users_attributes. Attackers can abuse UsersController#update or #create, which skip filter_conference_users, to gain orga on ",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://github.com/frab/frab",
+        "https://github.com/frab/frab/blob/0.9.1/app/controllers/users_controller.rb#L51",
+        "https://github.com/frab/frab/commit/8d14d491ac73f2e19030e95a86b6575106270eeb"
+      ],
+      "published": "2026-11-10T00:17:08.220"
+    },
+    {
+      "id": "CVE-2026-125368",
+      "description": "OmniAgent through commit 12b98c5 contains an approval bypass vulnerability in ReflexionAgent._is_safe_bash_command that treats any command starting with find as safe without inspecting -execdir arguments. Prompt-injected agents can run find with -execdir to invoke binaries like dd, nc, perl or opens",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-184"
+      ],
+      "references": [
+        "https://github.com/YeQing17-2026/OmniAgent",
+        "https://github.com/YeQing17-2026/OmniAgent/blob/12b98c520959eff88a6cfa3dd233497084360ab0/omniagent/agents/reflexion.py#L1379",
+        "https://github.com/YeQing17-2026/OmniAgent/issues/67"
+      ],
+      "published": "2026-11-10T00:17:08.907"
+    },
+    {
+      "id": "CVE-2026-125076",
+      "description": "A vulnerability was found in SourceCodester Smart Attendance System with QR Code Scanner 1.0. Affected is an unknown function of the file api/attendance_handler.php of the component JSON Endpoint. Performing a manipulation of the argument student_code results in missing authentication. It is possibl",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://github.com/yuechuya/sourcecodester-vuln-reports/blob/main/reports/VULN-03-Unauthenticated-Attendance-Write.md",
+        "https://vuldb.com/cve/CVE-2026-125076",
+        "https://vuldb.com/submit/1041014"
+      ],
+      "published": "2026-11-10T00:17:06.357"
+    },
+    {
+      "id": "CVE-2026-125360",
+      "description": "Storyden through 1.26.16 contains a privilege escalation vulnerability that allows users holding MANAGE_ROLES to grant the ADMINISTRATOR permission without being administrators. Attackers can call AccountAddRole on another controlled account or use RoleCreate and RoleUpdate to create administrator r",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-269"
+      ],
+      "references": [
+        "https://github.com/Southclaws/storyden",
+        "https://github.com/Southclaws/storyden/blob/v1.26.16/app/transports/http/bindings/accounts.go#L703-L713",
+        "https://github.com/Southclaws/storyden/commit/bf9d872179dad727f1315b409298677e77355229"
+      ],
+      "published": "2026-11-10T00:17:07.530"
+    },
+    {
+      "id": "CVE-2026-125365",
+      "description": "DollarDollar through 4.4 contains a missing authorization vulnerability in add_expense() that allows authenticated users to modify other users' account balances by supplying foreign account_id values. Attackers can submit sequential account_id, destination_account_id, and group_id values to /add_exp",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/harung1993/dollardollar",
+        "https://github.com/harung1993/dollardollar/blob/v4.4/app.py#L4298",
+        "https://github.com/harung1993/dollardollar/issues/125"
+      ],
+      "published": "2026-11-10T00:17:08.387"
+    },
+    {
+      "id": "CVE-2026-125078",
+      "description": "A security flaw has been discovered in SourceCodester Smart Attendance System with QR Code Scanner 1.0. This affects an unknown part of the file login.php. The manipulation results in session fixiation. The attack can be launched remotely. The exploit has been released to the public and may be used ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-384"
+      ],
+      "references": [
+        "https://github.com/yuechuya/sourcecodester-vuln-reports/blob/main/reports/VULN-06-Session-Fixation.md",
+        "https://vuldb.com/cve/CVE-2026-125078",
+        "https://vuldb.com/submit/1041017"
+      ],
+      "published": "2026-11-10T00:17:06.777"
+    },
+    {
+      "id": "CVE-2026-125361",
+      "description": "Tencent BrowserSkill through 0.4.2 contains a missing authentication vulnerability that allows local attackers to impersonate the bsk daemon because remoteSocket() connects to the loopback WebSocket without credentials or peer verification. Attackers who bind the daemon port before it starts or afte",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-923"
+      ],
+      "references": [
+        "https://github.com/Tencent/BrowserSkill",
+        "https://github.com/Tencent/BrowserSkill/blob/ext-v0.4.2/apps/extension/src/transport/remote-endpoint.ts#L79-L85",
+        "https://github.com/Tencent/BrowserSkill/commit/7e862a44d19d0c1e492901fe29562cc7d79af590"
+      ],
+      "published": "2026-11-10T00:17:07.717"
+    },
+    {
+      "id": "CVE-2026-117477",
+      "description": "KUSANAGI provided by GMO Prime Strategy Co., Ltd. contains an HTTP header injection vulnerability that may allow arbitrary HTTP headers to be injected into the HTTP response when a user accesses a specially crafted URL.",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-113"
+      ],
+      "references": [
+        "https://jvn.jp/en/vu/JVNVU92635551/",
+        "https://kusanagi.tokyo/en/releases/27995/"
+      ],
+      "published": "2026-11-10T00:17:05.140"
+    },
+    {
+      "id": "CVE-2026-125363",
+      "description": "MikroDash before 0.8.79 contains a server-side request forgery vulnerability that allows any signed-in user, including the viewer role, to target internal addresses through notification channels. Attackers can set webhook or mail destinations to loopback, LAN or link-local addresses and call POST /a",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/SecOps-7/MikroDash/blob/v0.8.78/internal/server/notify_channels_api.go#L457",
+        "https://github.com/SecOps-7/MikroDash/commit/4a40d104faa9f6d7b7539a3ce78fb91509d40cce",
+        "https://github.com/SecOps-7/MikroDash/releases/tag/v0.8.79"
+      ],
+      "published": "2026-11-10T00:17:08.057"
+    },
+    {
+      "id": "CVE-2026-125366",
+      "description": "Omnom through 0.9.0 contains a server-side request forgery vulnerability that allows authenticated users to make server requests to arbitrary hosts by submitting feed URLs to /add_feed. Attackers can supply internal addresses that getFeedInfo, gofeed ParseURL, and fetchImageAsInlineURL fetch without",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/asciimoo/omnom",
+        "https://github.com/asciimoo/omnom/blob/v0.9.0/feed/feed.go#L421",
+        "https://github.com/asciimoo/omnom/commit/01c45510ab06c51bc952901514735b457a492f10"
+      ],
+      "published": "2026-11-10T00:17:08.577"
+    },
+    {
+      "id": "CVE-2026-125367",
+      "description": "Pico through 4.1.2 contains a server-side request forgery vulnerability in the feeds service that allows signed-up users to make the server fetch arbitrary URLs via the run SSH command. Attackers can upload a feeds digest post listing internal URLs and trigger immediate fetching through Fetcher.Pars",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/picosh/pico",
+        "https://github.com/picosh/pico/blob/v4.1.2/pkg/apps/feeds/cron.go#L358",
+        "https://github.com/picosh/pico/commit/48a85d6"
+      ],
+      "published": "2026-11-10T00:17:08.747"
+    },
+    {
+      "id": "CVE-2026-125357",
+      "description": "Munin munin-httpd 2.99.1 through 2.999.18 contains a path traversal vulnerability in the static file handler of Munin::Master::HTML::handle_request that allows unauthenticated attackers to read files outside the static directory. Attackers can request /static/../<file> to bypass the '/../' substring",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/munin-monitoring/munin",
+        "https://github.com/munin-monitoring/munin/blob/2.999.18/lib/Munin/Master/HTML.pm#L30-L58",
+        "https://github.com/munin-monitoring/munin/commit/e7b6f452ccca04cff8a0e7285c1279b116a768e1"
+      ],
+      "published": "2026-11-10T00:17:07.017"
+    },
+    {
+      "id": "CVE-2026-125369",
+      "description": "Bitpoll through 0.11.0 contains an insecure direct object reference vulnerability that allows unauthenticated attackers to read votes and comments from other polls via unscoped object lookups in views.py. Attackers can pair any public poll slug with sequential vote or comment IDs in vote, vote_delet",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/fsinfuhh/Bitpoll",
+        "https://github.com/fsinfuhh/Bitpoll/blob/0.11.0/bitpoll/poll/views.py#L994",
+        "https://github.com/fsinfuhh/Bitpoll/commit/71013d36a4d587e672eba225d94f7b94cd412ef9"
+      ],
+      "published": "2026-11-10T00:17:09.073"
+    },
+    {
+      "id": "CVE-2026-125371",
+      "description": "Tinyproxy through 1.11.3 contains an access control bypass vulnerability in acl_string_processing() in src/acl.c that compares only trailing hostname characters without checking DNS label boundaries. Attackers controlling the PTR record for their source IP, such as untrusted.net, can satisfy an 'All",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-187"
+      ],
+      "references": [
+        "https://github.com/tinyproxy/tinyproxy",
+        "https://github.com/tinyproxy/tinyproxy/blob/1.11.3/src/acl.c#L156-L174",
+        "https://github.com/tinyproxy/tinyproxy/commit/3991ac8f98c6a9f05b3265018b812dbf2ca92c28"
+      ],
+      "published": "2026-11-10T00:17:09.420"
+    },
+    {
+      "id": "CVE-2026-125077",
+      "description": "A vulnerability was determined in SourceCodester Smart Attendance System with QR Code Scanner 1.0. Affected by this vulnerability is an unknown functionality. Executing a manipulation can lead to cross-site request forgery. It is possible to launch the attack remotely. The exploit has been publicly ",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-352",
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/yuechuya/sourcecodester-vuln-reports/blob/main/reports/VULN-05-CSRF-Student-Deletion.md",
+        "https://vuldb.com/cve/CVE-2026-125077",
+        "https://vuldb.com/submit/1041016"
+      ],
+      "published": "2026-11-10T00:17:06.570"
+    },
+    {
+      "id": "CVE-2026-125359",
+      "description": "Mediary Scout before 2026.11.05 contains a server-side request forgery vulnerability that allows any authenticated user, including non-owner accounts, to set an arbitrary PanSou base URL via savePanSouBaseUrlAction without role checks. Attackers can trigger probePanSou() to send server-side POST req",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://github.com/fancydirty/mediary-scout",
+        "https://github.com/fancydirty/mediary-scout/blob/v2026.10.29/apps/web/lib/pansou-probe.ts#L18-L34",
+        "https://github.com/fancydirty/mediary-scout/commit/9cb9ab5eea492bc8f61f5c4d63f9c6b6800f7e1f"
+      ],
+      "published": "2026-11-10T00:17:07.367"
+    },
+    {
+      "id": "CVE-2026-125372",
+      "description": "REBUILD before 4.5.3 contains an authorization bypass vulnerability in FeedsListController fetchDetails and fetchComments that skips privilege filtering and FeedsHelper.checkReadable checks. Authenticated attackers can enumerate sequential IDs via the feeds-details and comments-list endpoints to rea",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/getrebuild/rebuild",
+        "https://github.com/getrebuild/rebuild/blob/af00afcc22476b889c06c3db6032fd94a1454cfa/src/main/java/com/rebuild/web/feeds/FeedsListController.java#L190-L194",
+        "https://github.com/getrebuild/rebuild/commit/03959a464164e12e87443c689043ceccf56044f3"
+      ],
+      "published": "2026-11-10T00:17:09.597"
+    },
+    {
+      "id": "CVE-2026-125362",
+      "description": "Seahub through 14.0.10 contains a weak randomness vulnerability in MultiShareLinksBatch.post() that generates batch share link passwords using Python's non-cryptographic random.choices(). Authenticated users permitted to create share links can request many generated passwords via the multi-share-lin",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-338"
+      ],
+      "references": [
+        "https://github.com/haiwen/seahub",
+        "https://github.com/haiwen/seahub/blob/v14.0.10-pro/seahub/api2/endpoints/multi_share_links.py#L502-L512",
+        "https://github.com/haiwen/seahub/commit/dd3ba0341031fd29cabe4855b548badde861df52"
+      ],
+      "published": "2026-11-10T00:17:07.877"
+    }
+  ]
+}
