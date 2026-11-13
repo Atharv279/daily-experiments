@@ -1,0 +1,360 @@
+{
+  "timestamp": "2026-11-13T01:16:33.115586+00:00",
+  "scan_id": "4a694c0f2e",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 6,
+      "MEDIUM": 11,
+      "LOW": 1,
+      "UNKNOWN": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        6
+      ],
+      [
+        "CWE-639",
+        2
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-290",
+        1
+      ],
+      [
+        "CWE-636",
+        1
+      ]
+    ],
+    "threat_index": 290.3,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 290.3,
+        "yesterday": 296.3,
+        "change_pct": -2.0
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 1,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-126542",
+      "description": "WWBN AVideo 6.5 through 29.7.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user via Hybridauth social login display names. Attackers can set their X, Facebook, Yahoo or LinkedIn display name to a victim's username and withhold email, causing",
+      "severity": "CRITICAL",
+      "score": 9.8,
+      "cwes": [
+        "CWE-290"
+      ],
+      "references": [
+        "https://github.com/WWBN/AVideo/blob/v29.7.1/objects/login.json.php#L133-L145",
+        "https://github.com/WWBN/AVideo/blob/v29.7.1/plugin/MobileManager/oauth2.php#L90-L102",
+        "https://github.com/WWBN/AVideo/commit/d34ccf23b37a127a68478d66ac00b450b5788bad"
+      ],
+      "published": "2026-11-11T01:17:15.547"
+    },
+    {
+      "id": "CVE-2026-126539",
+      "description": "Directus before 12.1.0 contains an authorization bypass vulnerability that allows unauthenticated attackers to skip permission checks by sending a failed auth message on public-mode WebSocket connections. Attackers can send an invalid token so handleAuthRequest sets accountability to null, then read",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-636"
+      ],
+      "references": [
+        "https://github.com/directus/directus/blob/v12.0.2/api/src/websocket/controllers/base.ts#L381-L397",
+        "https://github.com/directus/directus/commit/8d4cd86783bcbf5444eaf290e8dcecb33929300e",
+        "https://github.com/directus/directus/releases/tag/v12.1.0"
+      ],
+      "published": "2026-11-11T01:17:15.173"
+    },
+    {
+      "id": "CVE-2026-126541",
+      "description": "WWBN AVideo through 29.7.1 contains a missing authorization vulnerability in Live plugin restream endpoints that allows authenticated streamers to obtain other users' stream keys by supplying arbitrary live_transmitions_history_id values. Attackers can redeem the issued action tokens at verifyTokenF",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/WWBN/AVideo/blob/v29.7.1/plugin/Live/view/Live_restreams/verifyTokenForAction.json.php#L30-L56",
+        "https://github.com/WWBN/AVideo/blob/v29.7.1/plugin/Live/view/getRestream.json.php#L27-L48",
+        "https://github.com/WWBN/AVideo/commit/be9d70199279aafe5062744d319fd4df4e5f7a48"
+      ],
+      "published": "2026-11-11T01:17:15.357"
+    },
+    {
+      "id": "CVE-2026-126497",
+      "description": "LibreCAD through 2.2.1.6 contains a heap-based out-of-bounds write vulnerability in the bundled libdxfrw dwgReader18::parseDataPage() function due to unchecked buffer size and page offsets. Attackers can craft an AC1018 (R2004) DWG file with malicious startOffset values that cause decompress18 to wr",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/LibreCAD/LibreCAD",
+        "https://github.com/LibreCAD/LibreCAD/blob/v2.2.1.6/libraries/libdxfrw/src/intern/dwgreader18.cpp#L113-L173",
+        "https://github.com/LibreCAD/LibreCAD/commit/17ba2b273b89cc9c8b6fcf71882e327ccf1eebf6"
+      ],
+      "published": "2026-11-11T01:17:14.597"
+    },
+    {
+      "id": "CVE-2026-126543",
+      "description": "WWBN AVideo through 29.7.1 contains an improper payment verification vulnerability in plugin/PayPalYPT/ipnV2.php that credits wallets from PayPal IPNs not bound to the site's merchant account. Unauthenticated attackers can forward genuine VERIFIED recurring-payment IPNs from their own PayPal account",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-345"
+      ],
+      "references": [
+        "https://github.com/WWBN/AVideo/blob/v29.7.1/plugin/PayPalYPT/ipnV2.php#L87-L125",
+        "https://github.com/WWBN/AVideo/commit/98406b7944e035e72082665ac886d78fc3af0a7f",
+        "https://github.com/WWBN/AVideo/security/advisories/GHSA-5gg3-9jhh-xf86"
+      ],
+      "published": "2026-11-11T01:17:15.727"
+    },
+    {
+      "id": "CVE-2026-126499",
+      "description": "Jellyfin before 12.0 contains a path traversal vulnerability in the DELETE /Library/VirtualFolders and POST /Library/VirtualFolders/Name endpoints that allows attackers to delete or move directories via unvalidated library names. Unauthenticated attackers can supply names like .. or absolute paths b",
+      "severity": "HIGH",
+      "score": 7.4,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/jellyfin/jellyfin/blob/v10.11.11/Emby.Server.Implementations/Library/LibraryManager.cs#L3255-L3275",
+        "https://github.com/jellyfin/jellyfin/blob/v10.11.11/Jellyfin.Api/Controllers/LibraryStructureController.cs#L127-L176",
+        "https://github.com/jellyfin/jellyfin/commit/0c560b22ce73323329645b836c9910abc257ce4e"
+      ],
+      "published": "2026-11-11T01:17:14.963"
+    },
+    {
+      "id": "CVE-2026-126561",
+      "description": "Semantic MediaWiki 2.5.0 before 7.4.1 contains a missing authorization vulnerability that allows editors without the edit-protection right to lock pages by adding an Is edit protected annotation. Attackers can add [[Is edit protected::true]] to pages or #set it in widely transcluded templates, so th",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/blob/7.4.0/src/Protection/ProtectionValidator.php#L293-L311",
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/commit/ca81329c74aa64077f367e02ad00c079458ef10a",
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/releases/tag/7.4.1"
+      ],
+      "published": "2026-11-11T03:16:50.217"
+    },
+    {
+      "id": "CVE-2026-126495",
+      "description": "MQTTX desktop through 1.13.3 contains a stored cross-site scripting vulnerability that allows attackers to inject script by publishing malicious MQTT topic names or payloads rendered unescaped in tooltips. Attackers controlling a broker or publishing to subscribed topics can execute script in the El",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/emqx/MQTTX",
+        "https://github.com/emqx/MQTTX/blob/v1.13.3/src/background.ts#L276-L283",
+        "https://github.com/emqx/MQTTX/blob/v1.13.3/src/widgets/JSONViewer.vue#L175-L184"
+      ],
+      "published": "2026-11-11T01:17:14.187"
+    },
+    {
+      "id": "CVE-2026-126563",
+      "description": "Semantic MediaWiki 2.4.0 before 7.4.1 contains a reflected cross-site scripting vulnerability in TimeValueFormatter::getCaptionFromFreeFormat(), which emits free-format date captions in HTML without escaping. Unauthenticated attackers can craft a Special:Ask URL with HTML markup in a date printout f",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/blob/7.4.0/src/DataValues/ValueFormatters/TimeValueFormatter.php#L312-L340",
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/commit/01cb81a6da7af743d2a5eb334db10e52b7318c56",
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/releases/tag/7.4.1"
+      ],
+      "published": "2026-11-11T03:16:50.567"
+    },
+    {
+      "id": "CVE-2026-126498",
+      "description": "WriteFreely before 0.17.3 contains a stored cross-site scripting vulnerability that allows authenticated authors to inject HTML by supplying a malicious post slug via the CreatePost API. The raw slug is concatenated into an anchor by augmentReadingDestination() for paid-shortcode posts, executing sc",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/writefreely/writefreely/blob/v0.17.2/database.go#L702-L705",
+        "https://github.com/writefreely/writefreely/blob/v0.17.2/postrender.go#L117-L121",
+        "https://github.com/writefreely/writefreely/commit/d7231d81a914f1314a218d5e8fde6e0341391ccd"
+      ],
+      "published": "2026-11-11T01:17:14.790"
+    },
+    {
+      "id": "CVE-2026-126560",
+      "description": "Semantic MediaWiki 3.0.0 before 7.4.1 contains a stored cross-site scripting vulnerability in the DataTables integration that initialises author-written smw-datatable tables unchanged. Users with page-edit rights can add HTML entity-encoded markup in data-search or data-filter cell attributes, execu",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/blob/7.4.0/res/smw/printer/ext.smw.tableprinter.js#L349-L357",
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/commit/db7f59461a7815416a719b71ce48fb76481ecaf2",
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/releases/tag/7.4.1"
+      ],
+      "published": "2026-11-11T03:16:49.987"
+    },
+    {
+      "id": "CVE-2026-126564",
+      "description": "Semantic MediaWiki 2.5.0 before 7.4.1 contains a stored cross-site scripting vulnerability in ValueFormatter::getFormattedSubject() that renders property label segments after a literal &nbsp; as unescaped markup. Users with page-edit rights can set a preferred property label containing an img onerro",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/blob/7.4.0/src/MediaWiki/Specials/Browse/ValueFormatter.php#L34-L55",
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/commit/c9bf9f25549bb2f5eab916339b267a1732002c4c",
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/releases/tag/7.4.1"
+      ],
+      "published": "2026-11-11T03:16:50.723"
+    },
+    {
+      "id": "CVE-2026-126559",
+      "description": "Semantic MediaWiki 4.2.0 before 7.4.1 contains a stored cross-site scripting vulnerability in OptionsBuilder::profiles() that allows users with the smw-schemaedit right to inject markup. Attackers can save FACETEDSEARCH_PROFILE_SCHEMA profile keys or labels that break out of option elements, executi",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/blob/7.4.0/src/MediaWiki/Specials/FacetedSearch/OptionsBuilder.php#L27-L52",
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/commit/92999fc0de74324aaa35bfd3676cd4d145d2ac06",
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/releases/tag/7.4.1"
+      ],
+      "published": "2026-11-11T03:16:49.797"
+    },
+    {
+      "id": "CVE-2026-126496",
+      "description": "1Panel-dev CordysCRM before 1.9.6 contains an authorization bypass vulnerability in CustomerContactController.get that allows authenticated users to read other users' contacts because no organization, owner or data-scope check is applied. Attackers holding ordinary contact or customer read permissio",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/1Panel-dev/CordysCRM",
+        "https://github.com/1Panel-dev/CordysCRM/blob/v1.9.5/backend/crm/src/main/java/cn/cordys/crm/customer/controller/CustomerContactController.java#L96-L102",
+        "https://github.com/1Panel-dev/CordysCRM/blob/v1.9.5/backend/crm/src/main/java/cn/cordys/crm/customer/service/CustomerContactService.java#L220-L226"
+      ],
+      "published": "2026-11-11T01:17:14.350"
+    },
+    {
+      "id": "CVE-2026-126544",
+      "description": "WWBN AVideo 6.5 through 29.7.1 contains an email verification bypass vulnerability in User::verifyCode() in objects/user.php caused by PHP loose comparison of the recoverPass token. Registered users can reuse the installation-wide salt from their own verification link and craft a code with arbitrary",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-1024"
+      ],
+      "references": [
+        "https://github.com/WWBN/AVideo/blob/v29.7.1/objects/user.php#L3293-L3307",
+        "https://github.com/WWBN/AVideo/commit/115116813611f2cbabfee3f5d9b49ce6f25ae959",
+        "https://github.com/WWBN/AVideo/security/advisories/GHSA-f72w-prhp-h385"
+      ],
+      "published": "2026-11-11T01:17:15.903"
+    },
+    {
+      "id": "CVE-2026-126545",
+      "description": "WWBN AVideo through 29.7.1 contains a missing authorization vulnerability in API::get_api_tags() in plugin/API/API.php that allows registered users to access restricted video data by querying the tags API. Attackers can subscribe to a tag and query APIName=tags to obtain filenames, titles and stored",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/WWBN/AVideo/blob/v29.7.1/plugin/API/API.php#L958-L976",
+        "https://github.com/WWBN/AVideo/blob/v29.7.1/plugin/VideoTags/Objects/TagsHasVideos.php#L172-L180",
+        "https://github.com/WWBN/AVideo/commit/a8d1e0e484d655556422841d08b2b0fb64332721"
+      ],
+      "published": "2026-11-11T01:17:16.120"
+    },
+    {
+      "id": "CVE-2026-126546",
+      "description": "Viber for iOS through 29.4.0.24 fails to validate the logical screen width and height in received GIF headers, allowing attackers to crash the app. Attackers can send a crafted GIF with zero dimensions that triggers an uncaught NSInternalInconsistencyException, aborting the app with SIGABRT when ope",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-248"
+      ],
+      "references": [
+        "https://www.viber.com",
+        "https://www.vulncheck.com/advisories/viber-for-ios-through-29.4.0.24-denial-of-service-via-malformed-gif",
+        "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2026-6039.php"
+      ],
+      "published": "2026-11-11T01:17:16.420"
+    },
+    {
+      "id": "CVE-2026-126562",
+      "description": "Semantic MediaWiki 3.0.0 before 7.4.1 contains an uncontrolled recursion vulnerability in the ElasticStore ConceptDescriptionInterpreter that only detects directly self-referencing concepts. Users with page-edit rights can create mutually referencing concept pages, causing concept page views, Specia",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/blob/7.4.0/src/Elastic/QueryEngine/DescriptionInterpreters/ConceptDescriptionInterpreter.php#L34-L75",
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/commit/35d8f8c9c7b48a476751ca0b795b78b648756828",
+        "https://github.com/SemanticMediaWiki/SemanticMediaWiki/releases/tag/7.4.1"
+      ],
+      "published": "2026-11-11T03:16:50.393"
+    },
+    {
+      "id": "CVE-2026-126188",
+      "description": "Active Storage makes it simple to upload and reference files in cloud services and attach those files to Active Record objects. Prior to 8.0.5.2 and from 8.1 until 8.1.4.1, Active Storage's ActiveStorage::Previewer::VideoPreviewer, ActiveStorage::Analyzer::VideoAnalyzer, and ActiveStorage::Analyzer:",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://github.com/rails/rails/commit/3b1f2627538dc597cd973530c08514a26c2b0282",
+        "https://github.com/rails/rails/commit/69aff80d115bbb9d1e82fd6c6f2fd3ddeafb958b",
+        "https://github.com/rails/rails/releases/tag/v8.0.5.2"
+      ],
+      "published": "2026-11-11T00:18:47.267"
+    },
+    {
+      "id": "CVE-2026-116645",
+      "description": "LimeSurvey Community Edition 7.8.0 contains an SQL injection vulnerability in the survey-archive participant import and SPSS-response export workflow. An authenticated user with global surveys.create permission can import a crafted .lsa archive whose participant XML creates an attacker-named attribu",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://fluidattacks.com/es/advisories/pantera",
+        "https://github.com/LimeSurvey/LimeSurvey/",
+        "https://github.com/LimeSurvey/LimeSurvey/blob/master/application/helpers/admin/import_helper.php"
+      ],
+      "published": "2026-11-11T03:16:48.630"
+    }
+  ]
+}
