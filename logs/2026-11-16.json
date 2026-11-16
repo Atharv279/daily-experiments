@@ -1,30 +1,38 @@
 {
-  "timestamp": "2026-11-16T09:55:30.782123+00:00",
-  "scan_id": "9217325633",
+  "timestamp": "2026-11-16T18:40:29.339778+00:00",
+  "scan_id": "194a8aa377",
   "trends": {
     "total_cves": 20,
     "severity_distribution": {
-      "CRITICAL": 1,
-      "HIGH": 1,
-      "MEDIUM": 1,
-      "UNKNOWN": 17
+      "CRITICAL": 2,
+      "HIGH": 5,
+      "MEDIUM": 10,
+      "LOW": 3
     },
     "top_cwes": [
       [
         "CWE-862",
+        6
+      ],
+      [
+        "CWE-200",
+        4
+      ],
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-352",
         1
       ],
       [
-        "CWE-502",
-        1
-      ],
-      [
-        "CWE-20",
+        "CWE-287",
         1
       ]
     ],
-    "threat_index": 72.3,
-    "critical_count": 1
+    "threat_index": 312.4,
+    "critical_count": 2
   },
   "delta": {
     "status": "compared",
@@ -35,12 +43,12 @@
         "change_pct": 0.0
       },
       "threat_index": {
-        "today": 72.3,
+        "today": 312.4,
         "yesterday": 160.5,
-        "change_pct": -55.0
+        "change_pct": 94.6
       },
       "critical_count": {
-        "today": 1,
+        "today": 2,
         "yesterday": 0,
         "change_pct": 0
       }
@@ -62,6 +70,71 @@
       "published": "2026-11-14T05:18:37.750"
     },
     {
+      "id": "CVE-2026-116528",
+      "description": "The Chargely Free Subscriptions For Woocommernce WordPress plugin through 1.0 does not perform any authorization check on a REST API route that returns its stored configuration, allowing unauthenticated attackers to retrieve the live WooCommerce REST API consumer key and secret it holds, which grant",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/423af746-a5a6-4eb5-a4ac-dcd0396882d4/"
+      ],
+      "published": "2026-11-14T07:17:17.223"
+    },
+    {
+      "id": "CVE-2026-123046",
+      "description": "The SEOJuice WordPress plugin before 2.12.0 does not correctly restrict a REST API authentication filter, disabling WordPress's REST nonce protection for the whole site and allowing unauthenticated attackers to perform any cookie-authenticated REST action, including creating a new administrator acco",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-352"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/4b34187c-bf0d-468e-8e8d-e5297fffeb82/"
+      ],
+      "published": "2026-11-14T07:17:19.350"
+    },
+    {
+      "id": "CVE-2026-123122",
+      "description": "The Checkout Files Upload for WooCommerce WordPress plugin before 2.4.1 does not verify that a file uploaded at checkout is really one of its allowed image types, and serves stored uploads inline using their detected content type, allowing unauthenticated users to upload an HTML file disguised as an",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/b9bd26b4-5334-4d40-9854-bfbf146f8fa8/"
+      ],
+      "published": "2026-11-14T07:17:19.513"
+    },
+    {
+      "id": "CVE-2026-119258",
+      "description": "The Swipe WordPress plugin through 1.4 does not properly authenticate a login request before issuing a WordPress session cookie, allowing unauthenticated attackers to log in as an existing user, including an administrator, when that user has an active app session.",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/2bb54d38-4fda-4f14-b27e-f50eca1287a3/"
+      ],
+      "published": "2026-11-14T07:17:19.140"
+    },
+    {
+      "id": "CVE-2026-124649",
+      "description": "The Lightbox with PhotoSwipe WordPress plugin before 5.19.0 does not properly sanitise link titles and other caption sources before inserting them as HTML into the image lightbox caption, allowing unauthenticated users to perform Stored Cross-Site Scripting attacks via comments.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/c2c4ba65-7e51-4ec1-b7a9-8248071c86de/"
+      ],
+      "published": "2026-11-14T07:17:19.700"
+    },
+    {
       "id": "CVE-2026-124969",
       "description": "The Optimole \u2013 Optimize Images | Convert WebP & AVIF | CDN & Lazy Load | Image Optimization plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the replace_urls_in_value function in all versions up to, and including, 4.2.19. This makes it possibl",
       "severity": "HIGH",
@@ -75,6 +148,32 @@
         "https://plugins.trac.wordpress.org/browser/optimole-wp/tags/4.2.19/inc/media_rename/attachment_db_renamer.php#L548"
       ],
       "published": "2026-11-14T05:18:32.480"
+    },
+    {
+      "id": "CVE-2026-111033",
+      "description": "The Countdown, Coming Soon, Maintenance  WordPress plugin through 3.0.8 does not perform authorization or nonce checks when saving countdown data on post save, and its output-sanitization allowlist permits script tags, allowing users with Author-level access and above to store arbitrary web scripts ",
+      "severity": "MEDIUM",
+      "score": 6.8,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/7f5c11a9-86dd-495b-83ae-3f53cac275b9/"
+      ],
+      "published": "2026-11-14T07:17:16.417"
+    },
+    {
+      "id": "CVE-2026-105983",
+      "description": "The Email Marketing 4Dem WordPress plugin through 2.0.5 does not perform authorization or capability checks on several of its AJAX actions and REST routes, allowing unauthenticated users to disclose the Email Marketing 4Dem WordPress plugin through 2.0.5's stored configuration and data and to modify",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/9f280371-d1de-4bf9-8200-44b8e3e4b71d/"
+      ],
+      "published": "2026-11-14T07:17:12.540"
     },
     {
       "id": "CVE-2026-129319",
@@ -91,99 +190,65 @@
       "published": "2026-11-14T07:17:21.370"
     },
     {
-      "id": "CVE-2026-105983",
-      "description": "The Email Marketing 4Dem WordPress plugin through 2.0.5 does not perform authorization or capability checks on several of its AJAX actions and REST routes, allowing unauthenticated users to disclose the Email Marketing 4Dem WordPress plugin through 2.0.5's stored configuration and data and to modify",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/9f280371-d1de-4bf9-8200-44b8e3e4b71d/"
+      "id": "CVE-2026-126697",
+      "description": "The Quick Page/Post Redirect Plugin WordPress plugin before 5.2.4 was distributed with a hidden update mechanism that fetched Quick Page/Post Redirect Plugin WordPress plugin before 5.2.4 updates from its author's own server instead of WordPress.org, which was used to push a backdoored build to site",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-912"
       ],
-      "published": "2026-11-14T07:17:12.540"
+      "references": [
+        "https://wpscan.com/vulnerability/9eb3f68c-f8ce-493f-8b0f-ddab376e0f3b/"
+      ],
+      "published": "2026-11-14T07:17:21.043"
     },
     {
       "id": "CVE-2026-105984",
       "description": "The Email Marketing 4Dem WordPress plugin through 2.0.5 does not perform authorization or capability checks on several of its AJAX actions, allowing unauthenticated users to destroy its stored configuration and delete its records.",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
       "references": [
         "https://wpscan.com/vulnerability/cd7a147a-b2e9-45b5-a06a-68c3bea771d8/"
       ],
       "published": "2026-11-14T07:17:16.137"
     },
     {
-      "id": "CVE-2026-111033",
-      "description": "The Countdown, Coming Soon, Maintenance  WordPress plugin through 3.0.8 does not perform authorization or nonce checks when saving countdown data on post save, and its output-sanitization allowlist permits script tags, allowing users with Author-level access and above to store arbitrary web scripts ",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/7f5c11a9-86dd-495b-83ae-3f53cac275b9/"
-      ],
-      "published": "2026-11-14T07:17:16.417"
-    },
-    {
-      "id": "CVE-2026-111034",
-      "description": "The Countdown, Coming Soon, Maintenance  WordPress plugin through 3.0.8 does not check that the user is allowed to browse content before returning post titles from one of its AJAX actions, allowing any authenticated user, such as a subscriber, to list the titles of published entries of any post type",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/c2e4111d-b222-41a2-9abc-86d18445eb08/"
-      ],
-      "published": "2026-11-14T07:17:17.023"
-    },
-    {
-      "id": "CVE-2026-116528",
-      "description": "The Chargely Free Subscriptions For Woocommernce WordPress plugin through 1.0 does not perform any authorization check on a REST API route that returns its stored configuration, allowing unauthenticated attackers to retrieve the live WooCommerce REST API consumer key and secret it holds, which grant",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/423af746-a5a6-4eb5-a4ac-dcd0396882d4/"
-      ],
-      "published": "2026-11-14T07:17:17.223"
-    },
-    {
       "id": "CVE-2026-117487",
       "description": "The Flatsome WordPress theme before 3.20.13 does not perform a capability or nonce check on an AJAX action available to unauthenticated users, and does not restrict the status of the posts it returns by ID, allowing unauthenticated users to disclose the content of unpublished (draft and pending) pos",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200"
+      ],
       "references": [
         "https://wpscan.com/vulnerability/0a75e026-f7dd-4436-8fc1-0614d320a8b8/"
       ],
       "published": "2026-11-14T07:17:17.850"
     },
     {
-      "id": "CVE-2026-117490",
-      "description": "The Flatsome WordPress theme before 3.20.13 does not enforce the acting user's publish and post-type restrictions on an AJAX save action, allowing users with a role as low as Contributor to publish their own content and change its post type (for example to a product) without holding the required cap",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/152c9cda-ec73-42e3-b7a3-3a133338db8b/"
+      "id": "CVE-2026-126640",
+      "description": "The WP Ultimate CSV Importer  WordPress plugin before 9.3 does not escape values from imported files before using them in SQL queries when importing LifterLMS content, allowing high privilege users such as admin, including the administrator of a single site on a multisite network, to perform SQL inj",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-89"
       ],
-      "published": "2026-11-14T07:17:18.140"
-    },
-    {
-      "id": "CVE-2026-118181",
-      "description": "The Duplicate Post WordPress plugin before 1.5.8 does not perform a capability check when saving its global settings, relying only on its own role-access list, which allows users of any role an administrator has given Duplicate Post WordPress plugin before 1.5.8 access to, as low as Subscriber, to o",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
       "references": [
-        "https://wpscan.com/vulnerability/f9dba94c-7073-4c7e-a146-e2e4507a76d2/"
+        "https://wpscan.com/vulnerability/95bbf4ab-c0aa-4d6c-b2fa-f7f2f25ece0b/"
       ],
-      "published": "2026-11-14T07:17:18.333"
+      "published": "2026-11-14T07:17:20.820"
     },
     {
       "id": "CVE-2026-118182",
       "description": "The Duplicate Post WordPress plugin before 1.5.8 does not check that a user duplicating a post is allowed to edit it, which, when the slug takeover option is enabled, allows users of a role an administrator has given Duplicate Post WordPress plugin before 1.5.8 access to, such as Contributor, to mov",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-863"
+      ],
       "references": [
         "https://wpscan.com/vulnerability/8369be28-e7ef-4cdc-9265-9acc19692f6c/"
       ],
@@ -192,90 +257,67 @@
     {
       "id": "CVE-2026-118183",
       "description": "The Duplicate Post WordPress plugin before 1.5.8 does not check whether a user may publish posts when duplicating one, allowing users of a role an administrator has given Duplicate Post WordPress plugin before 1.5.8 access to, such as Contributors, to create published posts, including posts attribut",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
+      "severity": "MEDIUM",
+      "score": 4.4,
+      "cwes": [
+        "CWE-862"
+      ],
       "references": [
         "https://wpscan.com/vulnerability/a71cdd9f-3dc1-4034-97ce-45591b961716/"
       ],
       "published": "2026-11-14T07:17:18.760"
     },
     {
-      "id": "CVE-2026-119258",
-      "description": "The Swipe WordPress plugin through 1.4 does not properly authenticate a login request before issuing a WordPress session cookie, allowing unauthenticated attackers to log in as an existing user, including an administrator, when that user has an active app session.",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/2bb54d38-4fda-4f14-b27e-f50eca1287a3/"
+      "id": "CVE-2026-111034",
+      "description": "The Countdown, Coming Soon, Maintenance  WordPress plugin through 3.0.8 does not check that the user is allowed to browse content before returning post titles from one of its AJAX actions, allowing any authenticated user, such as a subscriber, to list the titles of published entries of any post type",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-200"
       ],
-      "published": "2026-11-14T07:17:19.140"
-    },
-    {
-      "id": "CVE-2026-123046",
-      "description": "The SEOJuice WordPress plugin before 2.12.0 does not correctly restrict a REST API authentication filter, disabling WordPress's REST nonce protection for the whole site and allowing unauthenticated attackers to perform any cookie-authenticated REST action, including creating a new administrator acco",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
       "references": [
-        "https://wpscan.com/vulnerability/4b34187c-bf0d-468e-8e8d-e5297fffeb82/"
+        "https://wpscan.com/vulnerability/c2e4111d-b222-41a2-9abc-86d18445eb08/"
       ],
-      "published": "2026-11-14T07:17:19.350"
-    },
-    {
-      "id": "CVE-2026-123122",
-      "description": "The Checkout Files Upload for WooCommerce WordPress plugin before 2.4.1 does not verify that a file uploaded at checkout is really one of its allowed image types, and serves stored uploads inline using their detected content type, allowing unauthenticated users to upload an HTML file disguised as an",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/b9bd26b4-5334-4d40-9854-bfbf146f8fa8/"
-      ],
-      "published": "2026-11-14T07:17:19.513"
-    },
-    {
-      "id": "CVE-2026-124649",
-      "description": "The Lightbox with PhotoSwipe WordPress plugin before 5.19.0 does not properly sanitise link titles and other caption sources before inserting them as HTML into the image lightbox caption, allowing unauthenticated users to perform Stored Cross-Site Scripting attacks via comments.",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/c2c4ba65-7e51-4ec1-b7a9-8248071c86de/"
-      ],
-      "published": "2026-11-14T07:17:19.700"
+      "published": "2026-11-14T07:17:17.023"
     },
     {
       "id": "CVE-2026-126639",
       "description": "The WP Ultimate CSV Importer  WordPress plugin before 9.2, WP Ultimate CSV Importer Pro WordPress plugin before 9.0.7 do not protect the files created by their single post export feature, writing them to a publicly accessible location under a predictable name, allowing unauthenticated attackers to d",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-200"
+      ],
       "references": [
         "https://wpscan.com/vulnerability/d80fe4f1-ee4f-40db-a16b-5a3dc44e8cf7/"
       ],
       "published": "2026-11-14T07:17:20.567"
     },
     {
-      "id": "CVE-2026-126640",
-      "description": "The WP Ultimate CSV Importer  WordPress plugin before 9.3 does not escape values from imported files before using them in SQL queries when importing LifterLMS content, allowing high privilege users such as admin, including the administrator of a single site on a multisite network, to perform SQL inj",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/95bbf4ab-c0aa-4d6c-b2fa-f7f2f25ece0b/"
+      "id": "CVE-2026-118181",
+      "description": "The Duplicate Post WordPress plugin before 1.5.8 does not perform a capability check when saving its global settings, relying only on its own role-access list, which allows users of any role an administrator has given Duplicate Post WordPress plugin before 1.5.8 access to, as low as Subscriber, to o",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-862"
       ],
-      "published": "2026-11-14T07:17:20.820"
+      "references": [
+        "https://wpscan.com/vulnerability/f9dba94c-7073-4c7e-a146-e2e4507a76d2/"
+      ],
+      "published": "2026-11-14T07:17:18.333"
     },
     {
-      "id": "CVE-2026-126697",
-      "description": "The Quick Page/Post Redirect Plugin WordPress plugin before 5.2.4 was distributed with a hidden update mechanism that fetched Quick Page/Post Redirect Plugin WordPress plugin before 5.2.4 updates from its author's own server instead of WordPress.org, which was used to push a backdoored build to site",
-      "severity": "UNKNOWN",
-      "score": 0.0,
-      "cwes": [],
-      "references": [
-        "https://wpscan.com/vulnerability/9eb3f68c-f8ce-493f-8b0f-ddab376e0f3b/"
+      "id": "CVE-2026-117490",
+      "description": "The Flatsome WordPress theme before 3.20.13 does not enforce the acting user's publish and post-type restrictions on an AJAX save action, allowing users with a role as low as Contributor to publish their own content and change its post type (for example to a product) without holding the required cap",
+      "severity": "LOW",
+      "score": 2.7,
+      "cwes": [
+        "CWE-862"
       ],
-      "published": "2026-11-14T07:17:21.043"
+      "references": [
+        "https://wpscan.com/vulnerability/152c9cda-ec73-42e3-b7a3-3a133338db8b/"
+      ],
+      "published": "2026-11-14T07:17:18.140"
     }
   ]
 }
