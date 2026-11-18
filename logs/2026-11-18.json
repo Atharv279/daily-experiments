@@ -1,0 +1,336 @@
+{
+  "timestamp": "2026-11-18T02:29:32.638296+00:00",
+  "scan_id": "5d37c7b02e",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 7,
+      "MEDIUM": 8,
+      "LOW": 2,
+      "UNKNOWN": 3
+    },
+    "top_cwes": [
+      [
+        "CWE-79",
+        4
+      ],
+      [
+        "CWE-20",
+        2
+      ],
+      [
+        "CWE-613",
+        2
+      ],
+      [
+        "CWE-89",
+        1
+      ],
+      [
+        "CWE-863",
+        1
+      ]
+    ],
+    "threat_index": 262.8,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 262.8,
+        "yesterday": 358.3,
+        "change_pct": -26.7
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 3,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-129540",
+      "description": "VoAPI 1.0.0 through 1.2.0 contains a sql injection vulnerability that allows authenticated users to inject SQL by supplying crafted column names as search[...] filter keys on list endpoints such as GET /api/log. Attackers can read the HS256 JWT signing secret from the option table and forge a manage",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/VoAPI/VoAPI/issues/78",
+        "https://vul.yulun.ac.cn/20261115/voapi/",
+        "https://www.vulncheck.com/advisories/voapi-1.0.0-through-1.2.0-sql-injection-via-search-filter-key"
+      ],
+      "published": "2026-11-16T02:17:12.100"
+    },
+    {
+      "id": "CVE-2026-82156",
+      "description": "Dell PowerStore contains an authorization-bypass vulnerability. A low-privileged attacker could exploit it, potentially leading to elevation of privilege to administrator.",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://www.dell.com/support/kbdoc/en-us/000527640/dsa-2026-479-dell-powerstore-t-security-update-for-multiple-vulnerabilities"
+      ],
+      "published": "2026-11-16T04:16:44.230"
+    },
+    {
+      "id": "CVE-2026-102448",
+      "description": "A vulnerability has been identified in Rexroth IndraWorks. This flaw allows an attacker to execute arbitrary code on the user\u2019s system by parsing a manipulated file, because the file parser fails to properly sanitize the path name(s) or references embedded in the manipulated file. Exploitation requi",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://psirt.bosch.com/security-advisories/BOSCH-SA-591522.html"
+      ],
+      "published": "2026-11-16T10:16:45.307"
+    },
+    {
+      "id": "CVE-2026-129493",
+      "description": "Bolo (bolo-solo) 1.7 through 2.6.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read article view passwords via the public GET /articles endpoint. Attackers can retrieve the plaintext articleViewPwd field returned by ArticleProcessor.getArticlesByPage and",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-201"
+      ],
+      "references": [
+        "https://github.com/bolo-blog/bolo-solo/blob/e0ab6b1f57a4ba66b4a42a7b6ceafb87c33290cc/src/main/java/org/b3log/solo/processor/ArticleProcessor.java#L442-L478",
+        "https://github.com/bolo-blog/bolo-solo/issues/331",
+        "https://vul.yulun.ac.cn/20261115/bolo-solo/"
+      ],
+      "published": "2026-11-16T01:17:19.897"
+    },
+    {
+      "id": "CVE-2026-129494",
+      "description": "CloudPaste 1.1.0 through 1.9.1 contains an information disclosure vulnerability that allows unauthenticated attackers to obtain WebDAV storage credentials through the unauthenticated /api/proxy/link endpoint. Attackers who know a public share slug can retrieve the Basic Authorization header containi",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-522"
+      ],
+      "references": [
+        "https://github.com/ling-drag0n/CloudPaste/blob/282ea1c7fbbcd4fab40527664bf7479fd5bb922d/backend/src/routes/proxyLinkRoutes.js#L139-L167",
+        "https://github.com/ling-drag0n/CloudPaste/blob/282ea1c7fbbcd4fab40527664bf7479fd5bb922d/backend/src/storage/drivers/webdav/WebDavStorageDriver.js#L800-L819",
+        "https://github.com/ling-drag0n/CloudPaste/issues/223"
+      ],
+      "published": "2026-11-16T01:17:20.053"
+    },
+    {
+      "id": "CVE-2026-124672",
+      "description": "The Burst Statistics WordPress plugin before 3.7.5 does not verify that a request is actually being routed to its own REST API before unloading every other active plugin for that request, allowing unauthenticated attackers to have requests processed with other plugins' protections (such as REST acce",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/9ed32c00-5685-42a4-8eb9-4aef8c18eaba/"
+      ],
+      "published": "2026-11-16T09:17:13.160"
+    },
+    {
+      "id": "CVE-2026-129606",
+      "description": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability in Samsung Open Source mTower allows Overflow Buffers.",
+      "severity": "HIGH",
+      "score": 7.1,
+      "cwes": [
+        "CWE-120"
+      ],
+      "references": [
+        "https://github.com/Samsung/mTower/pull/254"
+      ],
+      "published": "2026-11-16T06:16:49.183"
+    },
+    {
+      "id": "CVE-2026-129539",
+      "description": "SSCMS 7.2.0 through 7.4.0 contains an arbitrary file read vulnerability that allows any registered user-center account to copy server files by supplying source paths to the layerImageUpload endpoint. Attackers can send siteId 0 with crafted filePaths entries to copy configuration files into their pu",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-73"
+      ],
+      "references": [
+        "https://github.com/siteserver/cms/blob/09ab59b9dd422782d9e1fe54f05088645f7c93e7/src/SSCMS.Web/Controllers/Home/Common/Form/LayerImageUploadController.Submit.cs#L114-L130",
+        "https://github.com/siteserver/cms/issues/3909",
+        "https://vul.yulun.ac.cn/20261114/siteserver-cms/"
+      ],
+      "published": "2026-11-16T02:17:11.940"
+    },
+    {
+      "id": "CVE-2026-129543",
+      "description": "Access of resource using incompatible type ('type confusion') vulnerability in Samsung Open Source Starfish allows Input Data Manipulation.",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-843"
+      ],
+      "references": [
+        "https://github.com/Samsung/starfish"
+      ],
+      "published": "2026-11-16T02:17:12.557"
+    },
+    {
+      "id": "CVE-2026-129492",
+      "description": "Bolo (bolo-solo) 1.7 through 2.6.4 contains a stored cross-site scripting vulnerability that allows unauthenticated attackers to inject scripts via the unsanitized commentOriginalCommentName parameter. Attackers can post a comment to /article/comments with a short payload that steals non-HttpOnly se",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/bolo-blog/bolo-solo/blob/e0ab6b1f57a4ba66b4a42a7b6ceafb87c33290cc/src/main/java/org/b3log/solo/service/CommentMgmtService.java#L299-L306",
+        "https://github.com/bolo-blog/bolo-solo/blob/e0ab6b1f57a4ba66b4a42a7b6ceafb87c33290cc/src/main/webapp/skins/bolo-nexmoe/common-comment.ftl#L29-L34",
+        "https://github.com/bolo-blog/bolo-solo/issues/331"
+      ],
+      "published": "2026-11-16T01:17:19.737"
+    },
+    {
+      "id": "CVE-2026-129491",
+      "description": "Qbian61 forum-java commit 20f7e68 through commit 63152c4 contains a stored cross-site scripting vulnerability that allows authenticated users to inject script by posting unsanitized comment content rendered via jQuery .html() in the reply dialog. Attackers can post comments with img onerror payloads",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/Qbian61/forum-java/blob/63152c49c71ad8121bda6e9a03a7ba7dc39ae52c/forum-portal/src/main/resources/templates/include/comment-list.html#L56-L60",
+        "https://github.com/Qbian61/forum-java/blob/63152c49c71ad8121bda6e9a03a7ba7dc39ae52c/forum-portal/src/main/resources/templates/include/posts-script.html#L30-L34",
+        "https://github.com/Qbian61/forum-java/issues/25"
+      ],
+      "published": "2026-11-16T01:17:18.857"
+    },
+    {
+      "id": "CVE-2026-129541",
+      "description": "EdgeChat 2.5.0 through 2.21.0 contains a cross-site scripting vulnerability that allows invited users to inject HTML through unescaped usernames in the Vditor @-mention autocomplete. Attackers can register with a username containing an img onerror payload that executes when mentioned, stealing the l",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/aozorae/Edgechat/blob/6719ca1a9d50c74285867f9c0e8209983391b8d5/frontend/src/components/chat/VditorComposerEditor.vue#L112-L117",
+        "https://github.com/aozorae/Edgechat/blob/6719ca1a9d50c74285867f9c0e8209983391b8d5/frontend/src/components/chat/VditorComposerEditor.vue#L42-L54",
+        "https://github.com/aozorae/Edgechat/issues/60"
+      ],
+      "published": "2026-11-16T02:17:12.273"
+    },
+    {
+      "id": "CVE-2026-107520",
+      "description": "Dell PowerStore contains a stored cross-site scripting (XSS) vulnerability. A low-privileged authenticated attacker could exploit this vulnerability, potentially leading to execution of malicious script in a higher-privileged user's session.",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.dell.com/support/kbdoc/en-us/000527640/dsa-2026-479-dell-powerstore-t-security-update-for-multiple-vulnerabilities"
+      ],
+      "published": "2026-11-16T04:16:44.033"
+    },
+    {
+      "id": "CVE-2026-121786",
+      "description": "The Social Viral Downloader WordPress plugin through 2.0.3 does not have authorisation or nonce checks on a log export action available to unauthenticated users, which could allow them to export the download log, including registered users' email addresses and IP addresses, to a publicly accessible ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/e4fa58bd-9f97-40b0-b56b-ee8ffcaa5392/"
+      ],
+      "published": "2026-11-16T06:16:48.253"
+    },
+    {
+      "id": "CVE-2026-121787",
+      "description": "The Social Viral Downloader WordPress plugin through 2.0.3 does not have authorisation or nonce checks on a log deletion action available to unauthenticated users, which could allow them to delete the Social Viral Downloader WordPress plugin through 2.0.3's entire download log.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/992a2040-f44f-42a2-a6f4-cc978828d717/"
+      ],
+      "published": "2026-11-16T06:16:49.073"
+    },
+    {
+      "id": "CVE-2026-114453",
+      "description": "The Kadence Memberships WordPress plugin before 4.0.6 does not check that the membership level submitted when renewing a membership matches the level being renewed, pricing the renewal from the submitted level while activating the membership at its own level, allowing unauthenticated users to activa",
+      "severity": "LOW",
+      "score": 3.7,
+      "cwes": [
+        "CWE-20"
+      ],
+      "references": [
+        "https://wpscan.com/vulnerability/c14f6590-0a01-43c1-8c33-99e8c610cec8/"
+      ],
+      "published": "2026-11-16T09:17:12.997"
+    },
+    {
+      "id": "CVE-2026-129542",
+      "description": "Files or directories accessible to external parties vulnerability in Samsung Open Source Starfish allows Probe System Files.",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-552"
+      ],
+      "references": [
+        "https://github.com/Samsung/starfish"
+      ],
+      "published": "2026-11-16T02:17:12.427"
+    },
+    {
+      "id": "CVE-2026-105925",
+      "description": "A denial of service vulnerability in the Qt QXmlSimpleReader class of the Qt 5 Core Compatibility APIs module (Qt 6) and the Qt XML module (Qt 5).",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-776"
+      ],
+      "references": [
+        "https://codereview.qt-project.org/c/qt/qt5compat/+/761591",
+        "https://codereview.qt-project.org/c/qt/qt5compat/+/768372",
+        "https://codereview.qt-project.org/c/qt/qt5compat/+/768810"
+      ],
+      "published": "2026-11-16T08:16:48.180"
+    },
+    {
+      "id": "CVE-2026-129703",
+      "description": "In the vulnerability-lookup web application, the authentication decorators for feed-key requests (auth_feedkey_func in website/decorators.py) and API-key requests (auth_func in website/web/api/v1/common.py) called Flask-Login's login_user() function. This caused the HTTP response to a request authen",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-287",
+        "CWE-613"
+      ],
+      "references": [
+        "https://github.com/vulnerability-lookup/vulnerability-lookup/commit/3605d5b65d340343cc4b612d40d454afed84302b"
+      ],
+      "published": "2026-11-16T09:17:13.293"
+    },
+    {
+      "id": "CVE-2026-129706",
+      "description": "In the vulnerability-lookup web application, the Flask-Login session identifier was set to the bare numeric user ID (User.get_id() returned self.id). Because the session ID contained no component derived from the user's credential, it remained valid indefinitely regardless of any subsequent password",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-613"
+      ],
+      "references": [
+        "https://github.com/vulnerability-lookup/vulnerability-lookup/commit/d762810fb3b9d1ee34938a71cd8cbee544c1527d"
+      ],
+      "published": "2026-11-16T09:17:13.487"
+    }
+  ]
+}
