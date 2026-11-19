@@ -1,0 +1,356 @@
+{
+  "timestamp": "2026-11-19T01:56:04.436235+00:00",
+  "scan_id": "baecb1e73c",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 2,
+      "MEDIUM": 11,
+      "LOW": 7
+    },
+    "top_cwes": [
+      [
+        "CWE-863",
+        4
+      ],
+      [
+        "CWE-639",
+        4
+      ],
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-89",
+        2
+      ]
+    ],
+    "threat_index": 173.1,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 173.1,
+        "yesterday": 262.8,
+        "change_pct": -34.1
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-12487",
+      "description": "An incorrect authorization vulnerability in the SNMP parameter of Zyxel EE5301-00 customized firmware version 5.63(ACLD.2)b3_D0 could allow an unauthenticated attacker to cause a denial-of-service (DoS) condition on an affected device.",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-incorrect-authorization-vulnerability-in-the-snmp-parameter-of-customized-firmware-for-the-ee5301-00-ethernet-cpe-11-17-2026"
+      ],
+      "published": "2026-11-17T02:17:13.527"
+    },
+    {
+      "id": "CVE-2026-130351",
+      "description": "phpMyFAQ from 4.2.0-alpha before 4.2.0-RC.2 contains an authorization bypass vulnerability in the multisite Redis configuration store that is not tenant-scoped. As a result, tenant administrators can read and overwrite the master instance's effective configuration. Attackers can save configuration t",
+      "severity": "HIGH",
+      "score": 7.2,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.2.0-RC.2",
+        "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-6795-wmwp-422x",
+        "https://www.vulncheck.com/advisories/phpmyfaq-4.2.0-alpha-before-4.2.0-rc.2-cross-tenant-configuration-overwrite-via-redis-store"
+      ],
+      "published": "2026-11-17T02:17:16.963"
+    },
+    {
+      "id": "CVE-2026-130341",
+      "description": "phpMyFAQ before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains a stored cross-site scripting vulnerability that allows registered users to inject javascript: links via FAQ comments. When the comment editor is enabled, Utils::parseUrl() strips https:// from sanitized hrefs, turning an allowed http",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/thorsten/phpMyFAQ/commit/b78abdf889d18ebc1bc507fe1f5cbd9d7db8b143",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.1.12",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.2.0-RC.2"
+      ],
+      "published": "2026-11-17T02:17:15.200"
+    },
+    {
+      "id": "CVE-2026-130348",
+      "description": "phpMyFAQ 4.1.0 before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains a missing authorization vulnerability that exposes restricted and inactive category metadata to unauthenticated visitors. Attackers can enumerate category IDs via /category/{id}/{slug}.html or query /api/v4.0/categories to read ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/thorsten/phpMyFAQ/commit/6049d3e9798ea0292ca27a21c29d8d7e8f3428c0",
+        "https://github.com/thorsten/phpMyFAQ/commit/baf88a067a873c11074690ce547a3221a3f280cd",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.1.12"
+      ],
+      "published": "2026-11-17T02:17:16.423"
+    },
+    {
+      "id": "CVE-2026-130352",
+      "description": "phpMyFAQ before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an information disclosure vulnerability that allows unauthenticated attackers to read editor-only Private Notes by querying the public FAQ list API. Attackers can page through GET /api/v4.0/faqs or /api/v3.1/faqs without credentials t",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-201"
+      ],
+      "references": [
+        "https://github.com/thorsten/phpMyFAQ/commit/f32b27d02b8606ada6b74d148539f662398dc1d3",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.1.12",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.2.0-RC.2"
+      ],
+      "published": "2026-11-17T02:17:17.153"
+    },
+    {
+      "id": "CVE-2026-130353",
+      "description": "phpMyFAQ before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an information disclosure vulnerability in its public FAQ REST API that exposes author names and e-mail addresses to unauthenticated callers. Attackers can query the faq and paginated faqs endpoints to bulk-harvest e-mails and de-anon",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-359"
+      ],
+      "references": [
+        "https://github.com/thorsten/phpMyFAQ/commit/579d6606f7d7f723ab74b69bd31a8dee1f859013",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.1.12",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.2.0-RC.2"
+      ],
+      "published": "2026-11-17T02:17:17.353"
+    },
+    {
+      "id": "CVE-2026-130354",
+      "description": "phpMyFAQ 4.1.0 before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an authentication bypass vulnerability in POST /api/webauthn/prepare that creates accounts as active, bypassing manual activation and domain whitelisting. Anonymous attackers can obtain the freely issued CSRF token and register ",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-288"
+      ],
+      "references": [
+        "https://github.com/thorsten/phpMyFAQ/commit/a707f76b3db760f15a15ca0860ea36e30ab1deea",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.1.12",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.2.0-RC.2"
+      ],
+      "published": "2026-11-17T02:17:17.510"
+    },
+    {
+      "id": "CVE-2026-130347",
+      "description": "phpMyFAQ before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an authentication bypass in password reset, letting external-identity accounts receive local passwords. Attackers with mailbox access can request reset tokens for OIDC, Keycloak, Entra ID, LDAP, SSO, or WebAuthn accounts and log in lo",
+      "severity": "MEDIUM",
+      "score": 4.8,
+      "cwes": [
+        "CWE-640"
+      ],
+      "references": [
+        "https://github.com/thorsten/phpMyFAQ/commit/631c0765ee14a591a2bdafeacb1346bd03b27ea3",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.1.12",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.2.0-RC.2"
+      ],
+      "published": "2026-11-17T02:17:16.247"
+    },
+    {
+      "id": "CVE-2026-130338",
+      "description": "AdminNeo before 5.9.1 contains a stored sql injection vulnerability in the MySQL driver that allows database users with table creation rights to inject SQL through unescaped geometry column names in unconvert_field(). Attackers can craft a column name containing an SQL expression that executes with ",
+      "severity": "MEDIUM",
+      "score": 4.6,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/adminneo-org/adminneo/releases/tag/v5.9.1",
+        "https://github.com/adminneo-org/adminneo/security/advisories/GHSA-2rwm-w499-38rq",
+        "https://www.vulncheck.com/advisories/adminneo-before-5.9.1-stored-sql-injection-via-geometry-column-name"
+      ],
+      "published": "2026-11-17T02:17:14.600"
+    },
+    {
+      "id": "CVE-2026-130339",
+      "description": "phpMyFAQ before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an information disclosure vulnerability that allows authenticated low-privilege users to read unpublished FAQ titles via bookmark_action. Attackers can request FAQ detail pages with bookmark_action=add across sequential ids, then view",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/thorsten/phpMyFAQ/commit/48a161cac5f8a4bc3ec7bdde6488e87433247699",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.1.12",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.2.0-RC.2"
+      ],
+      "published": "2026-11-17T02:17:14.817"
+    },
+    {
+      "id": "CVE-2026-130349",
+      "description": "phpMyFAQ from 4.2.0-alpha.2 before 4.2.0-RC.2 contains an incorrect authorization vulnerability that allows category- or language-restricted editors to bypass scoped rights via public REST write endpoints. Attackers with a scoped right and the shared API token can use PUT faq/update, POST faq/create",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.2.0-RC.2",
+        "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-5jwr-95r2-5ch5",
+        "https://www.vulncheck.com/advisories/phpmyfaq-4.2.0-alpha.2-before-4.2.0-rc.2-authorization-bypass-via-rest-api"
+      ],
+      "published": "2026-11-17T02:17:16.620"
+    },
+    {
+      "id": "CVE-2026-130355",
+      "description": "phpMyFAQ from 4.2.0-alpha.2 before 4.2.0-RC.2 contains an incorrect authorization vulnerability in POST /admin/api/faq/import that lets FAQ_ADD users bypass the FAQ_PUBLISH right. Authenticated contributors can upload a CSV with column 8 set to true to publish unreviewed, optionally sticky FAQs such",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.2.0-RC.2",
+        "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-97h8-wpxm-vcqp",
+        "https://www.vulncheck.com/advisories/phpmyfaq-4.2.0-alpha.2-before-4.2.0-rc.2-authorization-bypass-via-faq-csv-import"
+      ],
+      "published": "2026-11-17T02:17:17.683"
+    },
+    {
+      "id": "CVE-2026-130342",
+      "description": "phpMyFAQ before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an improper reference counting flaw on multisite deployments, allowing editors to delete other instances' attachment files. Because linkedRecords() counts only the local faqattachment table, deleting an attachment with shared md5 cont",
+      "severity": "MEDIUM",
+      "score": 4.2,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/thorsten/phpMyFAQ/commit/4f0239a3b63b1a7ef5482d2c71c7e163de7f0bdb",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.1.12",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.2.0-RC.2"
+      ],
+      "published": "2026-11-17T02:17:15.367"
+    },
+    {
+      "id": "CVE-2026-130350",
+      "description": "phpMyFAQ before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an incorrect authorization vulnerability that allows delegated group or user admins to remove rights they do not hold by submitting empty rights lists. Attackers can send an empty rightIds or userRights array to group/permissions or u",
+      "severity": "LOW",
+      "score": 3.8,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/thorsten/phpMyFAQ/commit/097f27f9667ea3fe4bfbbb7d8e1ba9e2ff2f9e92",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.1.12",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.2.0-RC.2"
+      ],
+      "published": "2026-11-17T02:17:16.790"
+    },
+    {
+      "id": "CVE-2026-130343",
+      "description": "phpMyFAQ 3.2.5 before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an authorization bypass vulnerability in the user/request-removal API endpoint that lets authenticated users file account removal requests as other users. The ownership check calls getUserById() with the attacker-supplied userId",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/thorsten/phpMyFAQ/commit/30997574d7c00b4e2d7121cf1653fb244c63dd9e",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.1.12",
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.2.0-RC.2"
+      ],
+      "published": "2026-11-17T02:17:15.543"
+    },
+    {
+      "id": "CVE-2026-130345",
+      "description": "phpMyFAQ 4.2.0-alpha before 4.2.0-RC.2 contains an information disclosure vulnerability that allows authenticated frontend users to receive restricted FAQ titles by subscribing to Web Push notifications. When editors publish user/group-restricted FAQs, WebPushService::sendToAll() delivers the questi",
+      "severity": "LOW",
+      "score": 3.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://github.com/thorsten/phpMyFAQ/releases/tag/4.2.0-RC.2",
+        "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-4p88-4cq9-786r",
+        "https://www.vulncheck.com/advisories/phpmyfaq-4.2.0-alpha-before-4.2.0-rc.2-information-disclosure-via-web-push-broadcast"
+      ],
+      "published": "2026-11-17T02:17:15.907"
+    },
+    {
+      "id": "CVE-2026-130346",
+      "description": "AdminNeo before 5.9.1 contains an sql injection vulnerability in the ClickHouse driver because idf_escape() doubles backticks but does not escape backslashes in identifiers. Attackers can lure a logged-in user into opening a GET link with a column name ending in a backslash in columns, where, or ord",
+      "severity": "LOW",
+      "score": 3.1,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/adminneo-org/adminneo/releases/tag/v5.9.1",
+        "https://github.com/adminneo-org/adminneo/security/advisories/GHSA-4xh5-8hm7-7829",
+        "https://www.vulncheck.com/advisories/adminneo-before-5.9.1-sql-injection-via-clickhouse-driver-column-names"
+      ],
+      "published": "2026-11-17T02:17:16.077"
+    },
+    {
+      "id": "CVE-2026-130340",
+      "description": "AdminNeo before 5.9.1 contains a stored HTML injection vulnerability that allows database users to inject markup into another user's session via column type names rendered with innerHTML. Attackers can create a PostgreSQL type or table with markup in its name to render live elements in the help popu",
+      "severity": "LOW",
+      "score": 3.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/adminneo-org/adminneo/releases/tag/v5.9.1",
+        "https://github.com/adminneo-org/adminneo/security/advisories/GHSA-379j-gvff-q6mw",
+        "https://www.vulncheck.com/advisories/adminneo-before-5.9.1-stored-html-injection-via-column-type-help-popup"
+      ],
+      "published": "2026-11-17T02:17:15.000"
+    },
+    {
+      "id": "CVE-2026-130344",
+      "description": "AdminNeo before 5.9.1 contains a stored cross-site scripting vulnerability in Admin::printTablePartitions() that allows authenticated users to inject HTML by placing markup in partition column names. Attackers with CREATE or ALTER privileges can create a partitioned table whose unescaped partition e",
+      "severity": "LOW",
+      "score": 3.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://github.com/adminneo-org/adminneo/releases/tag/v5.9.1",
+        "https://github.com/adminneo-org/adminneo/security/advisories/GHSA-4f2v-6gqh-mrrr",
+        "https://www.vulncheck.com/advisories/adminneo-before-5.9.1-stored-xss-via-printtablepartitions-partition-expression"
+      ],
+      "published": "2026-11-17T02:17:15.727"
+    },
+    {
+      "id": "CVE-2026-130335",
+      "description": "Info-ZIP Zip 3.0 (and 3.1 beta through 3.1c) allows OS command injection by an attacker who controls the command line. The victim must use the -T option followed by a filename containing shell metacharacters, on a platform (such as Linux) where a suitable shell is run. This occurs because the system",
+      "severity": "LOW",
+      "score": 2.9,
+      "cwes": [
+        "CWE-78"
+      ],
+      "references": [
+        "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1143866",
+        "https://github.com/apple-oss-distributions/zip/blob/zip-11.1/zip/patch-Apple",
+        "https://infozip.sourceforge.net/Zip.html"
+      ],
+      "published": "2026-11-17T00:17:26.777"
+    }
+  ]
+}
