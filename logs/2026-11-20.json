@@ -1,0 +1,328 @@
+{
+  "timestamp": "2026-11-20T01:48:55.075691+00:00",
+  "scan_id": "ad82d287ec",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 15,
+      "MEDIUM": 3,
+      "LOW": 1
+    },
+    "top_cwes": [
+      [
+        "CWE-22",
+        4
+      ],
+      [
+        "CWE-190",
+        3
+      ],
+      [
+        "CWE-862",
+        2
+      ],
+      [
+        "CWE-122",
+        2
+      ],
+      [
+        "CWE-331",
+        1
+      ]
+    ],
+    "threat_index": 442.7,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 442.7,
+        "yesterday": 173.1,
+        "change_pct": 155.7
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-126969",
+      "description": "SmarterTools SmarterMail Insufficient Entropy Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of SmarterTools SmarterMail. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within",
+      "severity": "CRITICAL",
+      "score": 9.1,
+      "cwes": [
+        "CWE-331"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-997/"
+      ],
+      "published": "2026-11-18T00:18:37.280"
+    },
+    {
+      "id": "CVE-2026-118630",
+      "description": "Winmate HotTab Exposed Dangerous Function Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Winmate devices. An attacker must first obtain the ability to execute low-privileged code on the target system in order to",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-749"
+      ],
+      "references": [
+        "https://www.winmate.com/en/Support/security-advisories",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-961/"
+      ],
+      "published": "2026-11-18T00:18:36.207"
+    },
+    {
+      "id": "CVE-2026-126962",
+      "description": "open62541 Subscription Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of open62541. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of subscript",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-416"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-990/"
+      ],
+      "published": "2026-11-18T00:18:36.357"
+    },
+    {
+      "id": "CVE-2026-126966",
+      "description": "SmarterTools SmarterMail Missing Authorization Privilege Escalation Vulnerability. This vulnerability allows remote attackers to escalate privileges on affected installations of SmarterTools SmarterMail. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the s",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-995/"
+      ],
+      "published": "2026-11-18T00:18:36.867"
+    },
+    {
+      "id": "CVE-2026-126967",
+      "description": "SmarterTools SmarterMail File Edit API Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of SmarterTools SmarterMail. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exi",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-994/"
+      ],
+      "published": "2026-11-18T00:18:36.993"
+    },
+    {
+      "id": "CVE-2026-126978",
+      "description": "Philips Hue Bridge hap_pair_setup_handler Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Philips Hue Bridge. Authentication is not required to exploit this vulnerability.\n\nThe",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-963/"
+      ],
+      "published": "2026-11-18T00:18:38.467"
+    },
+    {
+      "id": "CVE-2026-126979",
+      "description": "Philips Hue Bridge HomeKit Accessory Protocol chacha20_decrypt Integer Underflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Philips Hue Bridge. Authentication is not required to exploit this vulnera",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-191"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-964/"
+      ],
+      "published": "2026-11-18T00:18:38.590"
+    },
+    {
+      "id": "CVE-2026-126977",
+      "description": "Philips Hue Bridge HomeKit Pair-Setup Default Password Authentication Bypass Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of Philips Hue Bridge. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw ",
+      "severity": "HIGH",
+      "score": 8.1,
+      "cwes": [
+        "CWE-1393"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-962/"
+      ],
+      "published": "2026-11-18T00:18:38.347"
+    },
+    {
+      "id": "CVE-2026-126970",
+      "description": "KiCad Altium SCHLIB File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of KiCad. User interaction is required to exploit this vulnerability in that the target must visit a malicious page",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://gitlab.com/kicad/code/kicad/-/commit/b2f51d113425cf12398eb44dd97dfc30309beccf",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-956/"
+      ],
+      "published": "2026-11-18T00:18:37.417"
+    },
+    {
+      "id": "CVE-2026-126971",
+      "description": "KiCad Project Archive File Handling Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of KiCad. User interaction is required to exploit this vulnerability in that the target must visit a malicious p",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://gitlab.com/kicad/code/kicad/-/commit/e60c1fc0838339200742cc1ac9fcc1302cbedec5",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-957/"
+      ],
+      "published": "2026-11-18T00:18:37.570"
+    },
+    {
+      "id": "CVE-2026-126972",
+      "description": "KiCad Plugin Directory Traversal Remote Code Execution   Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of KiCad. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicio",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://gitlab.com/kicad/code/kicad/-/commit/e60c1fc0838339200742cc1ac9fcc1302cbedec5",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-958/"
+      ],
+      "published": "2026-11-18T00:18:37.690"
+    },
+    {
+      "id": "CVE-2026-126973",
+      "description": "KDE Gwenview PNG File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of KDE Gwenview. User interaction is required to exploit this vulnerability in that the target must visit a malicious pag",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://invent.kde.org/graphics/gwenview/-/merge_requests/401/diffs",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-955/"
+      ],
+      "published": "2026-11-18T00:18:37.807"
+    },
+    {
+      "id": "CVE-2026-126974",
+      "description": "llama.cpp GGUF File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of llama.cpp. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or ",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/ggml-org/llama.cpp/pull/31336",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-975/"
+      ],
+      "published": "2026-11-18T00:18:37.943"
+    },
+    {
+      "id": "CVE-2026-126975",
+      "description": "llama.cpp GGUF File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of llama.cpp. User interaction is required to exploit this vulnerability in that the target must visit a maliciou",
+      "severity": "HIGH",
+      "score": 7.8,
+      "cwes": [
+        "CWE-122"
+      ],
+      "references": [
+        "https://github.com/ggml-org/llama.cpp/pull/31336",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-976/"
+      ],
+      "published": "2026-11-18T00:18:38.080"
+    },
+    {
+      "id": "CVE-2026-126963",
+      "description": "Hinemos Agent Improper Certificate Validation Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Hinemos Agent. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-295"
+      ],
+      "references": [
+        "https://github.com/hinemos/hinemos/discussions/19",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-991/"
+      ],
+      "published": "2026-11-18T00:18:36.483"
+    },
+    {
+      "id": "CVE-2026-126976",
+      "description": "llama.cpp MTMD Multimodal GGUF File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of llama.cpp. User interaction is required to exploit this vulnerability in that the target must open a mal",
+      "severity": "HIGH",
+      "score": 7.0,
+      "cwes": [
+        "CWE-190"
+      ],
+      "references": [
+        "https://github.com/ggml-org/llama.cpp/commit/e2e7a9b2d04e0404131e551243d4bd399ccfe606",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-954/"
+      ],
+      "published": "2026-11-18T00:18:38.210"
+    },
+    {
+      "id": "CVE-2026-126968",
+      "description": "SmarterTools SmarterMail Missing Authorization Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of SmarterTools SmarterMail. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-996/"
+      ],
+      "published": "2026-11-18T00:18:37.130"
+    },
+    {
+      "id": "CVE-2026-126980",
+      "description": "Philips Hue Bridge HomeKit Observable Discrepancy Information Disclosure Vulnerability. This vulnerability allows network-adjacent attackers to disclose sensitive information on affected installations of Philips Hue Bridge. Authentication is not required to exploit this vulnerability.\n\nThe specific ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-203"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-965/"
+      ],
+      "published": "2026-11-18T00:18:38.713"
+    },
+    {
+      "id": "CVE-2026-126964",
+      "description": "ATEN eco DC fwDeletes.json Directory Traversal Arbitrary File Deletion Vulnerability. This vulnerability allows remote attackers to delete arbitrary files on affected installations of ATEN eco DC. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the handling",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-992/"
+      ],
+      "published": "2026-11-18T00:18:36.617"
+    },
+    {
+      "id": "CVE-2026-126965",
+      "description": "ATEN eco DC chartDefine SQL Injection Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of ATEN eco DC. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the handling o",
+      "severity": "LOW",
+      "score": 2.7,
+      "cwes": [
+        "CWE-89"
+      ],
+      "references": [
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-993/"
+      ],
+      "published": "2026-11-18T00:18:36.743"
+    }
+  ]
+}
