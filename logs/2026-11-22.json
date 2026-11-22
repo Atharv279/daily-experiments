@@ -1,0 +1,351 @@
+{
+  "timestamp": "2026-11-22T00:31:25.434690+00:00",
+  "scan_id": "b865a88f3e",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 9,
+      "MEDIUM": 7,
+      "LOW": 2,
+      "UNKNOWN": 2
+    },
+    "top_cwes": [
+      [
+        "CWE-407",
+        4
+      ],
+      [
+        "CWE-787",
+        3
+      ],
+      [
+        "CWE-1284",
+        2
+      ],
+      [
+        "CWE-674",
+        2
+      ],
+      [
+        "CWE-789",
+        2
+      ]
+    ],
+    "threat_index": 290.1,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 290.1,
+        "yesterday": 272.8,
+        "change_pct": 6.3
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-133528",
+      "description": "BeamNG.drive before 0.40.6 contains an out-of-bounds write vulnerability because JIT-compiled LuaJIT traces omit FFI array bounds checks, letting untrusted Lua escape the sandbox. Attackers supplying a malicious mod can JIT-compile an FFI store loop, write out of range using a tostring() address lea",
+      "severity": "HIGH",
+      "score": 8.6,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/drbloop2000/BeamNG-Drive-RCE",
+        "https://store.steampowered.com/news/app/284160/view/681890829846973542",
+        "https://www.vulncheck.com/advisories/beamng-drive-before-0.40.6-luajit-ffi-sandbox-escape-via-jit-bounds-check-bypass"
+      ],
+      "published": "2026-11-20T01:17:10.633"
+    },
+    {
+      "id": "CVE-2026-126540",
+      "description": "Convert::ASN1 versions before 0.37 for Perl allow CPU exhaustion via quadratic bigint loop in os2ip.\n\nEvery INTEGER or ENUMERATED longer than four content octets reaches os2ip, which iterates over each content octet with $result = ($result * 256) + $octet. Each multiplication operates on a bigint th",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-407"
+      ],
+      "references": [
+        "https://github.com/cpan-authors/perl-Convert-ASN1/commit/49b362c527e0af05fca9be1e97e4a340d95afa75.patch",
+        "https://github.com/cpan-authors/perl-Convert-ASN1/issues",
+        "https://metacpan.org/release/TIMLEGGE/Convert-ASN1-0.37/changes"
+      ],
+      "published": "2026-11-20T01:17:08.843"
+    },
+    {
+      "id": "CVE-2026-126568",
+      "description": "Convert::ASN1 versions before 0.37 for Perl allow memory exhaustion via unbounded MSG_PEEK buffer doubling in asn_recv.\n\nasn_recv peeks the socket in a loop, doubling the buffer size on each pass until a tag and length can be decoded. An inverted boolean guard ($tb || rather than $tb &&) prevents th",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-835"
+      ],
+      "references": [
+        "https://github.com/cpan-authors/perl-Convert-ASN1/commit/a30eae1dc6a977716b76f79f228fa0432e28bc5a.patch",
+        "https://github.com/cpan-authors/perl-Convert-ASN1/issues",
+        "https://metacpan.org/release/TIMLEGGE/Convert-ASN1-0.37/changes"
+      ],
+      "published": "2026-11-20T01:17:08.970"
+    },
+    {
+      "id": "CVE-2026-126576",
+      "description": "Convert::ASN1 versions before 0.37 for Perl allow CPU exhaustion via unchecked exponent length in binary REAL decoding.\n\nBinary REAL decoding never bounds-checks the exponent length against the available content. For a minimal one-byte binary REAL, the exponent byte is read from outside the element,",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-130",
+        "CWE-407"
+      ],
+      "references": [
+        "https://github.com/cpan-authors/perl-Convert-ASN1/commit/6158dbb33cc3d248a95b4ab4948a135e18141b51.patch",
+        "https://github.com/cpan-authors/perl-Convert-ASN1/issues",
+        "https://metacpan.org/release/TIMLEGGE/Convert-ASN1-0.37/changes"
+      ],
+      "published": "2026-11-20T01:17:09.083"
+    },
+    {
+      "id": "CVE-2026-126682",
+      "description": "Convert::ASN1 versions before 0.37 for Perl allow CPU exhaustion via exponent-notation string in INTEGER encoding.\n\nThe encoder routes any value with abs >= 2**31 to i2osp without validating that it is an integer. A string in exponent notation such as \"1e8000\" passes that threshold. Math::BigInt exp",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-407",
+        "CWE-1284"
+      ],
+      "references": [
+        "https://github.com/cpan-authors/perl-Convert-ASN1/commit/f259213110a90f38cfd1c7e7ff6789178ce9105f.patch",
+        "https://github.com/cpan-authors/perl-Convert-ASN1/issues",
+        "https://metacpan.org/release/TIMLEGGE/Convert-ASN1-0.37/changes"
+      ],
+      "published": "2026-11-20T01:17:09.197"
+    },
+    {
+      "id": "CVE-2026-126819",
+      "description": "Convert::ASN1 versions before 0.37 for Perl allow memory exhaustion via zero-length BIT STRING content.\n\nA BIT STRING with zero content octets passes -1 to substr as the length. Perl reads a negative length as an offset from the end of the string, so the decoded value is nearly all of the input that",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-1284"
+      ],
+      "references": [
+        "https://github.com/cpan-authors/perl-Convert-ASN1/commit/a369bb1c39061d67454216a6a1d0eae11932806e.patch",
+        "https://github.com/cpan-authors/perl-Convert-ASN1/issues",
+        "https://metacpan.org/release/TIMLEGGE/Convert-ASN1-0.37/changes"
+      ],
+      "published": "2026-11-20T01:17:09.313"
+    },
+    {
+      "id": "CVE-2026-126956",
+      "description": "Convert::ASN1 versions before 0.37 for Perl allow memory exhaustion via unlimited recursion depth in constructed-form string decoding.\n\nAny constructed-form string element causes the decoder to recurse on the element's contents. The BER encoding controls nesting depth at four bytes per level, with n",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://github.com/cpan-authors/perl-Convert-ASN1/commit/99a96139a322ba0a5183c7e40a8857f3550daace.patch",
+        "https://github.com/cpan-authors/perl-Convert-ASN1/issues",
+        "https://metacpan.org/release/TIMLEGGE/Convert-ASN1-0.37/changes"
+      ],
+      "published": "2026-11-20T01:17:09.427"
+    },
+    {
+      "id": "CVE-2026-131868",
+      "description": "Convert::ASN1 versions before 0.37 for Perl allow memory exhaustion via a declared element length passed unchecked to sysread in asn_read and asn_get.\n\nThe length an element declares in its BER header is passed to sysread as the read size. Perl grows the target buffer to that size before reading, so",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-789"
+      ],
+      "references": [
+        "https://github.com/cpan-authors/perl-Convert-ASN1/commit/88bd86b5a3ce3430ebb8b78fe5307f234198bf16.patch",
+        "https://metacpan.org/release/TIMLEGGE/Convert-ASN1-0.37/changes"
+      ],
+      "published": "2026-11-20T01:17:09.543"
+    },
+    {
+      "id": "CVE-2026-131877",
+      "description": "Convert::ASN1 versions before 0.37 for Perl allow CPU exhaustion via unbounded arc length in OBJECT IDENTIFIER decoding and encoding.\n\nThe content of an OBJECT IDENTIFIER or RELATIVE-OID element is passed to unpack \"w*\" on decode, and the arcs of an OID string to pack \"w*\" on encode. Perl converts e",
+      "severity": "HIGH",
+      "score": 7.5,
+      "cwes": [
+        "CWE-407"
+      ],
+      "references": [
+        "https://github.com/cpan-authors/perl-Convert-ASN1/commit/805a7ee7d6c01a7dd6e0479fabcaadd7f9116e70.patch",
+        "https://github.com/cpan-authors/perl-Convert-ASN1/issues",
+        "https://metacpan.org/release/TIMLEGGE/Convert-ASN1-0.37/changes"
+      ],
+      "published": "2026-11-20T01:17:09.660"
+    },
+    {
+      "id": "CVE-2025-71473",
+      "description": "lwext4 through 1.0.0 contains a heap buffer overflow in ext4_fs_init_inode_bitmap() in src/ext4_fs.c because it does not validate s_inodes_per_group against the inode bitmap size. Attackers can supply a crafted ext4 image with an oversized s_inodes_per_group so memset writes past the heap buffer, co",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/Aladdin-R-D/lwext4/commit/2f5714d42f729fbdf3e65fd24d57149619fa1f33",
+        "https://github.com/gkostka/lwext4",
+        "https://github.com/gkostka/lwext4/blob/v1.0.0/src/ext4_fs.c#L401-L405"
+      ],
+      "published": "2026-11-20T01:17:07.597"
+    },
+    {
+      "id": "CVE-2025-71474",
+      "description": "lwext4 through 1.0.0 contains an out-of-bounds write vulnerability in ext4_fs_init_block_bitmap() that allows attackers to corrupt heap memory via crafted superblock geometry fields. Attackers can supply an ext4 image with oversized s_reserved_gdt_blocks and BLOCK_UNINIT groups to write past the bit",
+      "severity": "MEDIUM",
+      "score": 6.1,
+      "cwes": [
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/Aladdin-R-D/lwext4/commit/2f5714d42f729fbdf3e65fd24d57149619fa1f33",
+        "https://github.com/gkostka/lwext4",
+        "https://github.com/gkostka/lwext4/blob/v1.0.0/include/ext4_bitmap.h#L53-L56"
+      ],
+      "published": "2026-11-20T01:17:08.690"
+    },
+    {
+      "id": "CVE-2026-133519",
+      "description": "FFmpeg 7.0 through 9.0.2 contains an out-of-bounds read vulnerability in dvdvideo_menu_next_ps_block() in libavformat/dvdvideodec.c when demuxing DVD menu domains. Attackers can craft a DVD image whose last cell sector and NAV next-VOBU pointer bypass the end-of-cell check, overreading pgc->cell_pla",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/FFmpeg/FFmpeg",
+        "https://github.com/FFmpeg/FFmpeg/blob/n9.0.2/libavformat/dvdvideodec.c#L417-L424",
+        "https://github.com/FFmpeg/FFmpeg/commit/1fae5d173c4ae2df239d427f2099bf0727e2cdf7"
+      ],
+      "published": "2026-11-20T01:17:10.133"
+    },
+    {
+      "id": "CVE-2026-133521",
+      "description": "Bar Assistant 3.0.0 before 6.11.0 contains an authorization bypass vulnerability in BarController::join that allows authenticated users to join bars without a valid invite code. Attackers can send POST requests to /api/bars/join omitting invite_code, matching invite-disabled bars with NULL codes, to",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-639"
+      ],
+      "references": [
+        "https://github.com/karlomikus/bar-assistant",
+        "https://github.com/karlomikus/bar-assistant/blob/v6.10.1/app/Http/Controllers/BarController.php#L227-L229",
+        "https://github.com/karlomikus/bar-assistant/commit/82bd923a25906bc6dd31093ffc49c7731077ab16"
+      ],
+      "published": "2026-11-20T01:17:10.480"
+    },
+    {
+      "id": "CVE-2026-133224",
+      "description": "A flaw was found in Keycloak. When an administrator revokes tokens by setting a not-before revocation cutoff, Keycloak fails to enforce this boundary when processing User-Managed Access (UMA) grant requests using ID token claims. An authenticated remote user with an active session can submit a previ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-324"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-133224",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2577140"
+      ],
+      "published": "2026-11-20T02:17:16.640"
+    },
+    {
+      "id": "CVE-2026-133225",
+      "description": "A flaw was found in Keycloak. When processing token requests using the User-Managed Access (UMA) grant, Keycloak fails to verify whether a target client or resource server is enabled before issuing an authorization token. An authenticated remote user can exploit this flaw to obtain valid Requesting ",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-358"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-133225",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2577141"
+      ],
+      "published": "2026-11-20T02:17:16.820"
+    },
+    {
+      "id": "CVE-2026-133520",
+      "description": "Dokploy 0.28.0 before 0.31.1 contains a path traversal vulnerability in the patch.readRepoDirectories tRPC procedure that allows authenticated organization members to list tracked files of arbitrary git repositories. Attackers with service read permission can supply a crafted repoPath, which is pass",
+      "severity": "MEDIUM",
+      "score": 5.0,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/Dokploy/dokploy",
+        "https://github.com/Dokploy/dokploy/blob/v0.31.0/apps/dokploy/server/api/routers/patch.ts#L181-L202",
+        "https://github.com/Dokploy/dokploy/commit/4b582856b36a0d037ff43ecbed2026d93f22ecc6"
+      ],
+      "published": "2026-11-20T01:17:10.303"
+    },
+    {
+      "id": "CVE-2026-133406",
+      "description": "A vulnerability was determined in aoiflux mutant 2.3.0/2.4.0/2.5.0. This vulnerability affects unknown code of the file builtin/hive_builtins.go of the component Forensic Parser. This manipulation of the argument Count causes uncontrolled memory allocation. It is possible to launch the attack on the",
+      "severity": "LOW",
+      "score": 3.3,
+      "cwes": [
+        "CWE-770",
+        "CWE-789"
+      ],
+      "references": [
+        "https://github.com/aoiflux/mutant/",
+        "https://github.com/aoiflux/mutant/blob/main/docs/advisories/MVF-2026-0012.md",
+        "https://github.com/aoiflux/mutant/commit/c4b1a7dec6c603115e2a05d1e8970a142f0b9774"
+      ],
+      "published": "2026-11-20T01:17:09.923"
+    },
+    {
+      "id": "CVE-2026-82091",
+      "description": "The Canva Desktop App before 1.128.0 stores encrypted application state on disk. The encryption key is hardcoded as a plaintext string in the main.js file and is identical across all Canva installations on Windows and macOS.",
+      "severity": "LOW",
+      "score": 3.2,
+      "cwes": [
+        "CWE-321"
+      ],
+      "references": [
+        "https://trust.canva.com?tcuUid=7dbbda5b-5285-496b-823b-5d92f7964e33"
+      ],
+      "published": "2026-11-20T01:17:10.807"
+    },
+    {
+      "id": "CVE-2026-22062",
+      "description": "StorageGRID (formerly StorageGRID Webscale) versions 12.1.0 and higher are susceptible to an information exposure vulnerability which allows a remote unauthenticated attacker to acquire low-sensitivity credentials via a Man-in-the-middle attack when certain non-default features are enabled.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://security.netapp.com/advisory/NTAP-20261119-0025"
+      ],
+      "published": "2026-11-20T00:17:26.170"
+    },
+    {
+      "id": "CVE-2026-102430",
+      "description": "An uncontrolled recursion vulnerability exists in the LINE iOS app prior to version 26.19.0.\n\nThe Flex Message processing component does not adequately validate the structure of externally supplied message content.\n\nAs a result, an attacker who is able to send a crafted message to a victim could cau",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-674"
+      ],
+      "references": [
+        "https://line.github.io/security-advisory-blog/CVE-2026-102430/"
+      ],
+      "published": "2026-11-20T02:17:16.100"
+    }
+  ]
+}
