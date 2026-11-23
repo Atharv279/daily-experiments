@@ -1,0 +1,296 @@
+{
+  "timestamp": "2026-11-23T00:58:58.144411+00:00",
+  "scan_id": "c872ff4912",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 1,
+      "MEDIUM": 2,
+      "UNKNOWN": 17
+    },
+    "top_cwes": [
+      [
+        "CWE-434",
+        1
+      ],
+      [
+        "CWE-79",
+        1
+      ],
+      [
+        "CWE-918",
+        1
+      ]
+    ],
+    "threat_index": 50.2,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 50.2,
+        "yesterday": 290.1,
+        "change_pct": -82.7
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-19793",
+      "description": "The WP Import Export Lite plugin for WordPress is vulnerable to Limited Code Injection in all versions up to, and including, 3.9.32 via the 'comment' parameter. This is due to a two-stage shortcode check that evaluates the raw mapping placeholder before data substitution, causing the neutralizer to ",
+      "severity": "HIGH",
+      "score": 8.8,
+      "cwes": [
+        "CWE-434"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/wp-import-export-lite/trunk/includes/classes/class-wpie-general.php#L586",
+        "https://plugins.trac.wordpress.org/browser/wp-import-export-lite/trunk/includes/classes/export/class-wpie-comment.php#L409",
+        "https://plugins.trac.wordpress.org/browser/wp-import-export-lite/trunk/includes/classes/import/class-wpie-comment.php#L67"
+      ],
+      "published": "2026-11-21T04:17:20.800"
+    },
+    {
+      "id": "CVE-2026-131651",
+      "description": "The rtMedia for WordPress, BuddyPress and bbPress plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'media_title' parameter in all versions up to, and including, 4.7.18 due to insufficient input sanitization and output escaping. This makes it possible for authentica",
+      "severity": "MEDIUM",
+      "score": 6.4,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/buddypress-media/tags/4.7.18/app/assets/js/rtMedia.backbone.js#L463",
+        "https://plugins.trac.wordpress.org/browser/buddypress-media/tags/4.7.18/app/main/controllers/media/RTMediaMedia.php#L249",
+        "https://plugins.trac.wordpress.org/browser/buddypress-media/tags/4.7.18/app/main/controllers/template/RTMediaTemplate.php#L310"
+      ],
+      "published": "2026-11-21T04:17:20.330"
+    },
+    {
+      "id": "CVE-2026-133958",
+      "description": "A flaw was found in Quay. Insufficient validation of repository notification webhook URLs allows an authenticated administrator to trigger Server-Side Request Forgery (SSRF). By specifying an internal URL or a redirect to an internal destination, an attacker can force the Quay worker to issue unauth",
+      "severity": "MEDIUM",
+      "score": 5.5,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-133958",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2579590"
+      ],
+      "published": "2026-11-21T05:18:22.503"
+    },
+    {
+      "id": "CVE-2026-112465",
+      "description": "An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, tvOS 27.2, visionOS 27.2. An app may be able to cause unexpected system termination or read kernel memory.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149230",
+        "https://support.apple.com/en-us/149521",
+        "https://support.apple.com/en-us/149524"
+      ],
+      "published": "2026-11-21T00:17:43.960"
+    },
+    {
+      "id": "CVE-2026-112603",
+      "description": "A logic issue was addressed with improved checks. This issue is fixed in Xcode 27.2. An app may be able to gain root privileges.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149589"
+      ],
+      "published": "2026-11-21T00:17:44.323"
+    },
+    {
+      "id": "CVE-2026-112662",
+      "description": "A race condition was addressed with additional validation. This issue is fixed in iOS 27.2 and iPadOS 27.2. An app may be able to access sensitive user data.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149230"
+      ],
+      "published": "2026-11-21T00:17:44.447"
+    },
+    {
+      "id": "CVE-2026-113953",
+      "description": "An integer overflow was addressed with improved input validation. This issue is fixed in iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2, tvOS 27.2, visionOS 27.2. Processing a maliciously crafted USD file may lead to unexpected app termination.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149230",
+        "https://support.apple.com/en-us/149521",
+        "https://support.apple.com/en-us/149522"
+      ],
+      "published": "2026-11-21T00:17:44.570"
+    },
+    {
+      "id": "CVE-2026-113954",
+      "description": "A use-after-free issue was addressed with improved memory management. This issue is fixed in iOS 27.2 and iPadOS 27.2. Processing a maliciously crafted file may lead to unexpected app termination.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149230"
+      ],
+      "published": "2026-11-21T00:17:44.697"
+    },
+    {
+      "id": "CVE-2026-113955",
+      "description": "A cross-origin issue was addressed with improved tracking of security origins. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2. Processing maliciously crafted web content may disclose sensitive user information.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149227"
+      ],
+      "published": "2026-11-21T00:17:44.820"
+    },
+    {
+      "id": "CVE-2026-114021",
+      "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. Connecting to a malicious NFS server may lead to kernel memory corruption.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149521",
+        "https://support.apple.com/en-us/149522",
+        "https://support.apple.com/en-us/149523"
+      ],
+      "published": "2026-11-21T00:17:44.940"
+    },
+    {
+      "id": "CVE-2026-114022",
+      "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. An app may be able to cause unexpected system termination.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149522",
+        "https://support.apple.com/en-us/149523"
+      ],
+      "published": "2026-11-21T00:17:45.057"
+    },
+    {
+      "id": "CVE-2026-114023",
+      "description": "A path handling issue was addressed with improved validation. This issue is fixed in macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. Processing web content may lead to arbitrary code execution.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149521",
+        "https://support.apple.com/en-us/149522",
+        "https://support.apple.com/en-us/149523"
+      ],
+      "published": "2026-11-21T00:17:45.177"
+    },
+    {
+      "id": "CVE-2026-114024",
+      "description": "This issue was addressed with improved checks. This issue is fixed in iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, visionOS 27.2, watchOS 27.2. An app may be able to access sensitive user data.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149230",
+        "https://support.apple.com/en-us/149521",
+        "https://support.apple.com/en-us/149525"
+      ],
+      "published": "2026-11-21T00:17:45.300"
+    },
+    {
+      "id": "CVE-2026-114025",
+      "description": "An out-of-bounds write was addressed with improved input validation. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2, tvOS 27.2. A user may be able to cause unexpected app termination or arbitrary code ex",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149227",
+        "https://support.apple.com/en-us/149230",
+        "https://support.apple.com/en-us/149521"
+      ],
+      "published": "2026-11-21T00:17:45.423"
+    },
+    {
+      "id": "CVE-2026-114026",
+      "description": "An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, tvOS 27.2, visionOS 27.2, watchOS 27.2. Processing a maliciously crafted font may result in the disclosure of process memory.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149230",
+        "https://support.apple.com/en-us/149521",
+        "https://support.apple.com/en-us/149524"
+      ],
+      "published": "2026-11-21T00:17:45.550"
+    },
+    {
+      "id": "CVE-2026-132475",
+      "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in macOS Golden Gate 27.2. An app may be able to cause unexpected system termination or corrupt kernel memory.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://support.apple.com/en-us/149521"
+      ],
+      "published": "2026-11-21T00:17:45.870"
+    },
+    {
+      "id": "CVE-2026-111067",
+      "description": "The UpdraftPlus: WP Backup & Migration Plugin WordPress plugin before 1.26.10, UpdraftPlus: WP Backup & Migration Plugin WordPress plugin before 2.26.10.26 does not guard all execution paths of its database restore process against second-order SQL injection, allowing a Subscriber-level user who has ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/20ece3e4-3c28-4ec3-9890-1739d9aee01e/"
+      ],
+      "published": "2026-11-21T06:16:31.253"
+    },
+    {
+      "id": "CVE-2026-111975",
+      "description": "The GiveWP  WordPress plugin before 4.19.2.1 does not exclude donors who chose to give anonymously from one of its public REST API listings, allowing unauthenticated users to retrieve those donors' names.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/45665973-3bbf-4900-9a52-5b08b3cef4be/"
+      ],
+      "published": "2026-11-21T06:16:32.293"
+    },
+    {
+      "id": "CVE-2026-114434",
+      "description": "The Video Conferencing with Zoom WordPress plugin before 4.7.0 does not check that the requester is authorized to join a meeting before issuing a Zoom Meeting SDK signature for it, allowing unauthenticated users to obtain a valid signed join credential for an arbitrary meeting.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/adeadbd6-c2ec-4719-b4c6-286c03acbc27/"
+      ],
+      "published": "2026-11-21T06:16:32.417"
+    },
+    {
+      "id": "CVE-2026-114435",
+      "description": "The Video Conferencing with Zoom WordPress plugin before 4.7.0 does not check authorization, or whether a meeting is restricted to logged-in users, password-protected or unpublished, before returning a meeting's join links, allowing unauthenticated users to obtain the passcode-embedded join links of",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [],
+      "references": [
+        "https://wpscan.com/vulnerability/03f396e4-6305-4183-9ccb-2fe572bc47ab/"
+      ],
+      "published": "2026-11-21T06:16:32.520"
+    }
+  ]
+}
