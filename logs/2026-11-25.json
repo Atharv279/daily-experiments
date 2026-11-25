@@ -1,0 +1,371 @@
+{
+  "timestamp": "2026-11-25T03:37:10.897778+00:00",
+  "scan_id": "bd9e59ba61",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "HIGH": 3,
+      "MEDIUM": 17
+    },
+    "top_cwes": [
+      [
+        "CWE-119",
+        5
+      ],
+      [
+        "CWE-787",
+        4
+      ],
+      [
+        "CWE-345",
+        3
+      ],
+      [
+        "CWE-918",
+        2
+      ],
+      [
+        "CWE-770",
+        2
+      ]
+    ],
+    "threat_index": 248.1,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 248.1,
+        "yesterday": 216.4,
+        "change_pct": 14.6
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 0,
+        "change_pct": 0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-134789",
+      "description": "A weakness has been identified in DumbWareio DumbAssets up to 1.0.11. Affected by this vulnerability is an unknown functionality of the file server.js of the component Settings API. Executing a manipulation of the argument appriseUrl can lead to dynamically-determined object attributes. The attack c",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-913",
+        "CWE-915"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-134789",
+        "https://vuldb.com/submit/1054181",
+        "https://vuldb.com/vuln/442157"
+      ],
+      "published": "2026-11-23T03:17:08.373"
+    },
+    {
+      "id": "CVE-2026-134850",
+      "description": "A security vulnerability has been detected in aceberg WatchYourLAN up to 2.1.4. Affected by this issue is the function getPortState of the file backend/internal/api/api-network.go of the component Web API. The manipulation of the argument addr leads to server-side request forgery. The attack is poss",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-134850",
+        "https://vuldb.com/submit/1054184",
+        "https://vuldb.com/vuln/442158"
+      ],
+      "published": "2026-11-23T04:17:58.940"
+    },
+    {
+      "id": "CVE-2026-134851",
+      "description": "A vulnerability was detected in leonkhoo123 self-hosting-file-uploader up to 473e38ff8fba494f33a485730c6d95c5d8c536ea. This affects an unknown part of the file routes/generator.js of the component Admin Generator API. The manipulation results in missing authentication. The attack may be performed fr",
+      "severity": "HIGH",
+      "score": 7.3,
+      "cwes": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-134851",
+        "https://vuldb.com/submit/1054188",
+        "https://vuldb.com/vuln/442159"
+      ],
+      "published": "2026-11-23T04:17:59.133"
+    },
+    {
+      "id": "CVE-2026-134784",
+      "description": "A vulnerability was found in DumbWareio DumbDrop up to ff8f813f493e89c7da056e7a3101ce2ef48e3960. Affected by this vulnerability is the function isPathWithinUploadDir of the file src/routes/files.js of the component Files API. The manipulation results in improper access controls. The attack may be la",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-134784",
+        "https://vuldb.com/submit/1053822",
+        "https://vuldb.com/vuln/442135"
+      ],
+      "published": "2026-11-23T02:16:37.800"
+    },
+    {
+      "id": "CVE-2026-134731",
+      "description": "A vulnerability was detected in itsourcecode Insurance Management System 1.0. The impacted element is an unknown function of the file /insertClient.php. The manipulation of the argument client_id results in sql injection. The attack can be executed remotely. The exploit is now public and may be used",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "references": [
+        "https://github.com/q251995379/submit/issues/1",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-134731"
+      ],
+      "published": "2026-11-23T00:17:02.567"
+    },
+    {
+      "id": "CVE-2026-134783",
+      "description": "A vulnerability has been found in xuxueli xxl-job 3.5.0/3.5.1-SNAPSHOT. Affected is the function difyWorkflowJobHandler of the file xxl-job-executor-sample-springboot-ai/src/main/java/com/xxl/job/executor/jobhandler/AIXxlJob.java of the component AI Executor. The manipulation of the argument baseUrl",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-918"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-134783",
+        "https://vuldb.com/submit/1053807",
+        "https://vuldb.com/vuln/442134"
+      ],
+      "published": "2026-11-23T02:16:37.607"
+    },
+    {
+      "id": "CVE-2026-134732",
+      "description": "A flaw has been found in Open Asset Import Library Assimp up to 6.0.5. This affects the function ASEImporter::InternReadFile of the file code/AssetLib/ASE/ASELoader.cpp of the component ASE File Importer. This manipulation causes out-of-bounds write. The attack is possible to be carried out remotely",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-119",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/PassMoon/CVE-application/tree/main/assimp-2-ase-heap-corruption",
+        "https://github.com/assimp/assimp/commit/7ccc44a338dcdcc81023484388126ab1a8250e94",
+        "https://github.com/assimp/assimp/releases/tag/v6.0.6"
+      ],
+      "published": "2026-11-23T00:17:03.253"
+    },
+    {
+      "id": "CVE-2026-134779",
+      "description": "A weakness has been identified in Open Asset Import Library Assimp up to 6.0.6. The affected element is the function Assimp::ColladaLoader::CreateAnimation of the file code/AssetLib/Collada/ColladaLoader.cpp of the component Collada Loader. This manipulation of the argument mSize causes out-of-bound",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-119",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/PassMoon/CVE-application/tree/main/assimp-3-copy-move-oob-write",
+        "https://github.com/assimp/assimp/pull/6961",
+        "https://vuldb.com/cve/CVE-2026-134779"
+      ],
+      "published": "2026-11-23T01:17:10.337"
+    },
+    {
+      "id": "CVE-2026-134780",
+      "description": "A security vulnerability has been detected in Open Asset Import Library Assimp up to 6.0.6. The impacted element is the function Assimp::JoinVerticesProcess::ProcessMesh of the file code/PostProcessing/JoinVerticesProcess.cpp of the component PostProcessing JoinVerticesProcess. Such manipulation lea",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-119",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/PassMoon/CVE-application/tree/main/assimp-4-joinvertices-oob-write",
+        "https://vuldb.com/cve/CVE-2026-134780",
+        "https://vuldb.com/submit/1053804"
+      ],
+      "published": "2026-11-23T01:17:10.550"
+    },
+    {
+      "id": "CVE-2026-134781",
+      "description": "A vulnerability was detected in Open Asset Import Library Assimp up to 6.0.5. This affects the function Assimp::PretransformVertices::BuildMeshRefCountArray of the file PretransformVertices.cpp. Performing a manipulation results in out-of-bounds write. The attack can be initiated remotely. The explo",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-119",
+        "CWE-787"
+      ],
+      "references": [
+        "https://github.com/PassMoon/CVE-application/tree/main/assimp-5-pretransform-oob-write",
+        "https://vuldb.com/cve/CVE-2026-134781",
+        "https://vuldb.com/submit/1053805"
+      ],
+      "published": "2026-11-23T01:17:10.750"
+    },
+    {
+      "id": "CVE-2026-134786",
+      "description": "A vulnerability has been found in Xuxueli xxl-job 3.5.0/3.5.1-SNAPSHOT. The affected element is an unknown function of the file JobLogController.java of the component Job Termination Endpoint. The manipulation leads to incorrect authorization. The attack can be initiated remotely. The vendor was con",
+      "severity": "MEDIUM",
+      "score": 5.4,
+      "cwes": [
+        "CWE-285",
+        "CWE-863"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-134786",
+        "https://vuldb.com/submit/1053839",
+        "https://vuldb.com/vuln/442152"
+      ],
+      "published": "2026-11-23T03:17:07.713"
+    },
+    {
+      "id": "CVE-2026-134734",
+      "description": "A vulnerability was found in Webkul Bagisto up to 2.4.13. Affected is the function RazorpayController::paymentSuccess of the file packages/Webkul/Razorpay/src/Http/Controllers/RazorpayController.php of the component Payment Gateway Success/Callback Controllers. Performing a manipulation results in i",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-345"
+      ],
+      "references": [
+        "https://github.com/bagisto/bagisto/releases/tag/v2.4.14",
+        "https://vuldb.com/cve/CVE-2026-134734",
+        "https://vuldb.com/submit/1053791"
+      ],
+      "published": "2026-11-23T00:17:03.620"
+    },
+    {
+      "id": "CVE-2026-134735",
+      "description": "A vulnerability was determined in Webkul Bagisto up to 2.4.12. Affected by this vulnerability is the function Success of the file packages/Webkul/PayU/src/Http/Controllers/PayUController.php of the component Payu Payment Gateway. Executing a manipulation of the argument Status can lead to insufficie",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-345"
+      ],
+      "references": [
+        "https://github.com/bagisto/bagisto/releases/tag/v2.4.13",
+        "https://vuldb.com/cve/CVE-2026-134735",
+        "https://vuldb.com/submit/1053792"
+      ],
+      "published": "2026-11-23T01:17:09.210"
+    },
+    {
+      "id": "CVE-2026-134785",
+      "description": "A vulnerability was identified in Bagisto MangoPay Payment Gateway up to c061edcc7973cb37a77a9f9ae523db170c3e28ed. Affected by this vulnerability is the function MangoPayStandardController::success of the file src/Http/Controllers/Shop/MangoPayStandardController.php of the component Success Callback",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-345"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-134785",
+        "https://vuldb.com/submit/1053838",
+        "https://vuldb.com/vuln/442146"
+      ],
+      "published": "2026-11-23T02:16:38.007"
+    },
+    {
+      "id": "CVE-2026-134787",
+      "description": "A vulnerability was identified in code-projects Intern Record System 1.0. This impacts an unknown function of the file /department.sql. Such manipulation leads to file and directory information exposure. The attack may be launched remotely. The exploit is publicly available and might be used.",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-200",
+        "CWE-538"
+      ],
+      "references": [
+        "https://code-projects.org/",
+        "https://github.com/KaranParelkar/intern",
+        "https://vuldb.com/cve/CVE-2026-134787"
+      ],
+      "published": "2026-11-23T03:17:07.937"
+    },
+    {
+      "id": "CVE-2026-134788",
+      "description": "A security flaw has been discovered in warpdesign pcx-js up to 1.1.1. Affected is the function decode8bpp/decode4bpp of the file js/pcx.js of the component PCX Pixel Buffer Decoder. Performing a manipulation results in uncontrolled memory allocation. Remote exploitation of the attack is possible. Th",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-770",
+        "CWE-789"
+      ],
+      "references": [
+        "https://gist.github.com/saidkarimovs/49f9411cd190abbd8a9f48e4445a5780",
+        "https://vuldb.com/cve/CVE-2026-134788",
+        "https://vuldb.com/submit/1053954"
+      ],
+      "published": "2026-11-23T03:17:08.163"
+    },
+    {
+      "id": "CVE-2026-134852",
+      "description": "A flaw has been found in shaozilee bmp-js up to 0.1.0. This vulnerability affects the function BmpDecoder.parseRGBA of the file lib/decoder.js. This manipulation causes uncontrolled memory allocation. It is possible to initiate the attack remotely. The exploit has been published and may be used. The",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-770",
+        "CWE-789"
+      ],
+      "references": [
+        "https://github.com/shaozilee/bmp-js/",
+        "https://github.com/shaozilee/bmp-js/issues/42",
+        "https://vuldb.com/cve/CVE-2026-134852"
+      ],
+      "published": "2026-11-23T04:17:59.340"
+    },
+    {
+      "id": "CVE-2026-129830",
+      "description": "When the rsyslog's `imuxsock` is parsing the TAG field from a message with a accepted shorter timestamp, the cursor used to read the message fields and the remaining message length to be read are left in a inconsistent state in relation to the content in the raw message, leading the module to read o",
+      "severity": "MEDIUM",
+      "score": 4.7,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2026-129830",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2571856",
+        "http://www.openwall.com/lists/oss-security/2026/11/17/26"
+      ],
+      "published": "2026-11-23T04:17:58.760"
+    },
+    {
+      "id": "CVE-2026-134733",
+      "description": "A vulnerability has been found in itsourcecode Event Management System 1.0. This impacts an unknown function of the file booking.php. Such manipulation of the argument venue_id leads to cross site scripting. The attack may be performed from remote. The exploit has been disclosed to the public and ma",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-79",
+        "CWE-94"
+      ],
+      "references": [
+        "https://github.com/ckkkkj/submit/issues/3",
+        "https://itsourcecode.com/",
+        "https://vuldb.com/cve/CVE-2026-134733"
+      ],
+      "published": "2026-11-23T00:17:03.437"
+    },
+    {
+      "id": "CVE-2026-134782",
+      "description": "A flaw has been found in Open Asset Import Library Assimp up to 6.0.6. This impacts the function Assimp::ColladaLoader::CreateMesh of the file code/AssetLib/Collada/ColladaLoader.cpp. Executing a manipulation can lead to out-of-bounds read. The attack can be launched remotely. The exploit has been p",
+      "severity": "MEDIUM",
+      "score": 4.3,
+      "cwes": [
+        "CWE-119",
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/PassMoon/CVE-application/tree/main/assimp-6-colladaloader-785",
+        "https://github.com/assimp/assimp/pull/6922",
+        "https://vuldb.com/cve/CVE-2026-134782"
+      ],
+      "published": "2026-11-23T02:16:37.397"
+    }
+  ]
+}
