@@ -1,0 +1,358 @@
+{
+  "timestamp": "2026-11-27T02:59:30.920974+00:00",
+  "scan_id": "cde6f2c887",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 1,
+      "MEDIUM": 12,
+      "LOW": 1,
+      "UNKNOWN": 5
+    },
+    "top_cwes": [
+      [
+        "CWE-770",
+        3
+      ],
+      [
+        "CWE-863",
+        2
+      ],
+      [
+        "CWE-400",
+        2
+      ],
+      [
+        "CWE-125",
+        2
+      ],
+      [
+        "CWE-287",
+        1
+      ]
+    ],
+    "threat_index": 212.9,
+    "critical_count": 1
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 212.9,
+        "yesterday": 389.5,
+        "change_pct": -45.3
+      },
+      "critical_count": {
+        "today": 1,
+        "yesterday": 1,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-136136",
+      "description": "A vulnerability was identified in Netis WF2409E up to 20261026. Affected by this issue is some unknown functionality of the file /cgi-bin/skk_set.cgi of the component CGI Interface. The manipulation of the argument app/password/new_pwd_confirm/passwd_set/mode_name/wl_link leads to improper authentic",
+      "severity": "CRITICAL",
+      "score": 10.0,
+      "cwes": [
+        "CWE-287"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-136136",
+        "https://vuldb.com/submit/1056731",
+        "https://vuldb.com/vuln/442884"
+      ],
+      "published": "2026-11-25T00:17:10.560"
+    },
+    {
+      "id": "CVE-2026-133462",
+      "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. From 0.6.49 before 0.11.0, the MCPToolBlock auto-lookup allows a shared agent's author to use the MCP credentials of the user who runs it. Anyone who ran a shared agent containi",
+      "severity": "HIGH",
+      "score": 8.7,
+      "cwes": [
+        "CWE-441",
+        "CWE-863"
+      ],
+      "references": [
+        "https://github.com/Significant-Gravitas/AutoGPT/commit/a10e5b2333aa2fbd2b385686e85605c24a7841d2",
+        "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.11.0",
+        "https://github.com/Significant-Gravitas/AutoGPT/security/advisories/GHSA-rjgp-whm3-w5mj"
+      ],
+      "published": "2026-11-25T00:17:10.413"
+    },
+    {
+      "id": "CVE-2026-132255",
+      "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. From 0.3.4 before 0.11.0, LLM and other dynamically priced blocks run without charge when a priced input is left at its schema default. An account with a credit balance of zero ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-682"
+      ],
+      "references": [
+        "https://github.com/Significant-Gravitas/AutoGPT/commit/af1d0731496e7ba9cf30abfc0b62d83412f01416",
+        "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.11.0",
+        "https://github.com/Significant-Gravitas/AutoGPT/security/advisories/GHSA-4jw5-mmcx-c2rr"
+      ],
+      "published": "2026-11-25T01:16:48.337"
+    },
+    {
+      "id": "CVE-2026-132256",
+      "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. Prior to 0.10.0, the format Jinja filter in TextFormatter accepts an unbounded width. An authenticated user who can author or run a workflow, or supply its input, can trigger a ",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-400"
+      ],
+      "references": [
+        "https://github.com/Significant-Gravitas/AutoGPT/commit/0a1c060a39e8b54020be17ad717b8ee3622fe998",
+        "https://github.com/Significant-Gravitas/AutoGPT/pull/16241",
+        "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.10.0"
+      ],
+      "published": "2026-11-25T01:16:48.497"
+    },
+    {
+      "id": "CVE-2026-132260",
+      "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. From 0.4.2 before 0.11.0, the E2B code-execution blocks ExecuteCodeBlock, InstantiateCodeSandboxBlock, and ClaudeCodeBlock can leave sandboxes running on the operator's shared E",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/Significant-Gravitas/AutoGPT/commit/41b8eb61159814e16e9bfcf72e5241b3ccc37ca4",
+        "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.11.0",
+        "https://github.com/Significant-Gravitas/AutoGPT/security/advisories/GHSA-6jc8-g72m-gf95"
+      ],
+      "published": "2026-11-25T01:16:48.647"
+    },
+    {
+      "id": "CVE-2026-132271",
+      "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. Prior to 0.11.0, template rendering is not bounded in size or time. Any signed-up user who can reach a block that takes a format string, such as Fill Text Template or Agent Outp",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-400",
+        "CWE-770",
+        "CWE-1322"
+      ],
+      "references": [
+        "https://github.com/Significant-Gravitas/AutoGPT/commit/1d9ee0ebc8d805140dce0fc501b4978cde7a95db",
+        "https://github.com/Significant-Gravitas/AutoGPT/pull/16493",
+        "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.11.0"
+      ],
+      "published": "2026-11-25T01:16:48.807"
+    },
+    {
+      "id": "CVE-2026-136139",
+      "description": "A vulnerability was determined in Zefan-Cai R-KV up to 6715468b9872442be72e5c97322e4d9c9a2abf55. This impacts the function _shard_files of the file FlashInfer/rkv/loader.py of the component FlashInfer weight loader. This manipulation of the argument weight_map causes path traversal. The attack can b",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-22"
+      ],
+      "references": [
+        "https://github.com/Zefan-Cai/R-KV/",
+        "https://github.com/Zefan-Cai/R-KV/commit/0fdff6ed12b58ad4c33aab5a63f66e04555cafb6",
+        "https://github.com/Zefan-Cai/R-KV/issues/65"
+      ],
+      "published": "2026-11-25T00:17:10.760"
+    },
+    {
+      "id": "CVE-2026-136141",
+      "description": "A vulnerability was identified in Backdrop CMS up to 1.35.2. Affected is the function get_argument of the file core/modules/views/plugins/views_plugin_argument_default_php.inc of the component Views Module. Such manipulation leads to incorrect authorization. The attack can be launched remotely. The ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-285",
+        "CWE-863"
+      ],
+      "references": [
+        "https://backdropcms.org/security-advisory-policy#vulnerabilities-which-require-advanced-permissions",
+        "https://github.com/Gum29/rrrreeeeeeee-readme/blob/main/images/img/Backdrop-RCE-Standard-Vuln-Report-EN.md",
+        "https://vuldb.com/cve/CVE-2026-136141"
+      ],
+      "published": "2026-11-25T00:17:10.970"
+    },
+    {
+      "id": "CVE-2026-136147",
+      "description": "A weakness has been identified in DWS Antik Browser 1.17.0. Affected by this issue is some unknown functionality of the file src/server/index.ts of the component Local API Server. Executing a manipulation can lead to origin validation error. The attack may be launched remotely. The exploit has been ",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-345",
+        "CWE-346"
+      ],
+      "references": [
+        "https://drive.google.com/drive/folders/1_TDjalqWp_WQhc6OXzV8gYt-aBq3TV7c?usp=drive_link",
+        "https://vuldb.com/cve/CVE-2026-136147",
+        "https://vuldb.com/submit/1056802"
+      ],
+      "published": "2026-11-25T01:16:49.703"
+    },
+    {
+      "id": "CVE-2026-136444",
+      "description": "A vulnerability was detected in JaguarJack catch-admin up to 5.4.1. The affected element is the function Store/Update of the file modules/User/Http/Controllers/UserController.php of the component User Management. Performing a manipulation results in dynamically-determined object attributes. It is po",
+      "severity": "MEDIUM",
+      "score": 6.3,
+      "cwes": [
+        "CWE-913",
+        "CWE-915"
+      ],
+      "references": [
+        "https://github.com/JaguarJack/catch-admin/",
+        "https://github.com/JaguarJack/catch-admin/commit/3ae60d57ea6840bb33456596ad799b0a39ca94a2",
+        "https://github.com/JaguarJack/catch-admin/issues/86"
+      ],
+      "published": "2026-11-25T01:16:49.917"
+    },
+    {
+      "id": "CVE-2026-16667",
+      "description": "The Cypress/PSoC6 flash-map backend in boot/cypress/cy_flash_pal/cy_flash_map.c guards every flash access with assert() against the wrong struct field. flash_area_read(), flash_area_write(), and flash_area_erase() check assert(off < fa->fa_off) and assert(off + len < fa->fa_off), comparing the area-",
+      "severity": "MEDIUM",
+      "score": 6.2,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/mcu-tools/mcuboot/security/advisories/GHSA-hmjp-wh26-xc9h"
+      ],
+      "published": "2026-11-25T00:17:11.790"
+    },
+    {
+      "id": "CVE-2026-16666",
+      "description": "When MCUboot resumes an interrupted image swap it takes the number of bytes to move straight from the flash-resident status trailer. In boot_swap_image() (boot/bootutil/src/loader.c) the fresh-swap branch recomputes copy_size from the image headers and is bounded \u2014 swap_run() in boot/bootutil/src/sw",
+      "severity": "MEDIUM",
+      "score": 5.7,
+      "cwes": [
+        "CWE-129"
+      ],
+      "references": [
+        "https://github.com/mcu-tools/mcuboot/security/advisories/GHSA-ggxc-7xvp-98v3"
+      ],
+      "published": "2026-11-25T00:17:11.647"
+    },
+    {
+      "id": "CVE-2026-136146",
+      "description": "A security flaw has been discovered in vanna-ai vanna 2.0.0/2.0.1/2.0.2. Affected by this vulnerability is the function _load_index of the file src/vanna/integrations/faiss/agent_memory.py of the component FAISS AgentMemory Integration. Performing a manipulation results in deserialization. The attac",
+      "severity": "MEDIUM",
+      "score": 5.3,
+      "cwes": [
+        "CWE-20",
+        "CWE-502"
+      ],
+      "references": [
+        "https://vuldb.com/cve/CVE-2026-136146",
+        "https://vuldb.com/submit/1056742",
+        "https://vuldb.com/vuln/442894"
+      ],
+      "published": "2026-11-25T01:16:49.313"
+    },
+    {
+      "id": "CVE-2026-16670",
+      "description": "MCUboot's PSA-crypto ECDSA adapter parses the RFC 5480 DER signature with parse_signature_from_rfc5480_encoding() in boot/bootutil/include/bootutil/crypto/ecdsa.h, which takes no length argument. bootutil_ecdsa_verify() explicitly discards the signature length ((void)slen;) and the parser walks the ",
+      "severity": "MEDIUM",
+      "score": 4.0,
+      "cwes": [
+        "CWE-125"
+      ],
+      "references": [
+        "https://github.com/mcu-tools/mcuboot/security/advisories/GHSA-rgg7-2fx4-qpqg"
+      ],
+      "published": "2026-11-25T00:17:12.100"
+    },
+    {
+      "id": "CVE-2026-16669",
+      "description": "MCUboot's Espressif port omits zeroization of two sensitive stack buffers in boot/espressif/hal/src/flash_encrypt.c. In check_and_generate_encryption_keys(), the freshly generated XTS-AES flash-encryption key is held in the stack array keys[BLOCKS_NEEDED][32] (flash_encrypt.c:216), written to eFuse ",
+      "severity": "LOW",
+      "score": 2.0,
+      "cwes": [
+        "CWE-226"
+      ],
+      "references": [
+        "https://github.com/mcu-tools/mcuboot/security/advisories/GHSA-jwgx-96h6-4m8v"
+      ],
+      "published": "2026-11-25T00:17:11.970"
+    },
+    {
+      "id": "CVE-2026-133459",
+      "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. From 0.6.63 before 0.11.0, the Office preview expands an embedded ZIP thumbnail without a size limit. A signed-in user with access to workspace file previews can exhaust the mem",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-409",
+        "CWE-770"
+      ],
+      "references": [
+        "https://github.com/Significant-Gravitas/AutoGPT/pull/16497",
+        "https://github.com/Significant-Gravitas/AutoGPT/pull/16499",
+        "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.11.0"
+      ],
+      "published": "2026-11-25T00:17:10.270"
+    },
+    {
+      "id": "CVE-2026-122093",
+      "description": "Strong::Random versions through 0.96 for Perl allow every later rand output to be predicted from three earlier ones.\n\nThe generator keeps its state in a single number. Each call multiplies the state by a factor derived from it, and the returned digits encode that factor, so three consecutive outputs",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-327"
+      ],
+      "references": [
+        "https://metacpan.org/release/TRUNAEV/Strong-Random-0.96/source/lib/Strong/Random.pm",
+        "http://www.openwall.com/lists/oss-security/2026/11/25/1",
+        "http://www.openwall.com/lists/oss-security/2026/11/26/2"
+      ],
+      "published": "2026-11-25T01:16:48.210"
+    },
+    {
+      "id": "CVE-2026-133461",
+      "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. Prior to 0.10.0, the OAuth authorize endpoint redirects to unvalidated error redirect targets. An attacker can craft a link on the platform's own domain that redirects a signed-",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-601"
+      ],
+      "references": [
+        "https://github.com/Significant-Gravitas/AutoGPT/commit/413807bf22fe5ab19ce24ee9b1dfc3e25159dce4",
+        "https://github.com/Significant-Gravitas/AutoGPT/pull/15057",
+        "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.10.0"
+      ],
+      "published": "2026-11-25T01:16:48.973"
+    },
+    {
+      "id": "CVE-2026-134875",
+      "description": "An unencrypted RSA private key for a default HTTPS certificate is included in GeoVision GV-EBD4700 firmware V1.11 (A02-GV-EBD4700_V1.11_2026_10_13.zip) at /program/www/ssl_cert.pem and copied to /config/ssl_cert.pem during initialization. When HTTPS is enabled using the default certificate, a networ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-321"
+      ],
+      "references": [
+        "https://www.geovision.com.tw/cyber_security.php"
+      ],
+      "published": "2026-11-25T01:16:49.143"
+    },
+    {
+      "id": "CVE-2026-126536",
+      "description": "Akaunting 3.3.0 contains a stored cross-site scripting vulnerability in the XLSX tax-import workflow. An authenticated Manager can import HTML in a tax name and associate the tax with an item. When an Administrator attempts to disable that tax, Akaunting renders the original stored name in an error ",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://fluidattacks.com/advisories/taxman",
+        "https://github.com/akaunting/akaunting",
+        "https://github.com/akaunting/akaunting/blob/3.3.0/app/Imports/Settings/Taxes.php"
+      ],
+      "published": "2026-11-25T02:17:39.200"
+    }
+  ]
+}
