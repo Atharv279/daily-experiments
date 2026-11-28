@@ -1,0 +1,330 @@
+{
+  "timestamp": "2026-11-28T02:50:27.284890+00:00",
+  "scan_id": "2804943cd4",
+  "trends": {
+    "total_cves": 20,
+    "severity_distribution": {
+      "MEDIUM": 5,
+      "UNKNOWN": 15
+    },
+    "top_cwes": [
+      [
+        "CWE-404",
+        4
+      ],
+      [
+        "CWE-476",
+        4
+      ],
+      [
+        "CWE-863",
+        4
+      ],
+      [
+        "CWE-79",
+        3
+      ],
+      [
+        "CWE-862",
+        3
+      ]
+    ],
+    "threat_index": 52.2,
+    "critical_count": 0
+  },
+  "delta": {
+    "status": "compared",
+    "deltas": {
+      "total_cves": {
+        "today": 20,
+        "yesterday": 20,
+        "change_pct": 0.0
+      },
+      "threat_index": {
+        "today": 52.2,
+        "yesterday": 212.9,
+        "change_pct": -75.5
+      },
+      "critical_count": {
+        "today": 0,
+        "yesterday": 1,
+        "change_pct": -100.0
+      }
+    }
+  },
+  "cves": [
+    {
+      "id": "CVE-2026-114507",
+      "description": "LightRAG provides simple and fast retrieval-augmented generation. Prior to 1.5.5, query responses are cached under a key that omits conversation_history, so an unauthenticated attacker can poison the cached answers returned to other users who send the same query. This issue is fixed in version 1.5.5",
+      "severity": "MEDIUM",
+      "score": 6.5,
+      "cwes": [
+        "CWE-349"
+      ],
+      "references": [
+        "https://github.com/HKUDS/LightRAG/releases/tag/v1.5.5",
+        "https://github.com/HKUDS/LightRAG/security/advisories/GHSA-597m-w632-p8qv"
+      ],
+      "published": "2026-11-26T01:17:04.733"
+    },
+    {
+      "id": "CVE-2026-136872",
+      "description": "A vulnerability was found in GL.iNet GL-A1300, GL-AR300M, GL-AR300M16, GL-AX1800, GL-AXT1800, GL-B3000, GL-BE3600, GL-BE6500, GL-BE9300, GL-BE10000, GL-BE14000, GL-E750, GL-E750V2, GL-E5800, GL-MT300N-V2, GL-MT1300, GL-MT2500, GL-MT2500A, GL-MT3000, GL-MT3600BE, GL-MT5000, GL-MT6000, GL-SFT1200, GL-",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/gl-inet/CVE-issues/blob/main/4.0.0/ovpn-client.set_group%20Null%20Pointer%20Dereference%20Denial-of-Service%20Vulnerability%20After%20Authentication.md",
+        "https://vuldb.com/cve/CVE-2026-136872",
+        "https://vuldb.com/submit/933787"
+      ],
+      "published": "2026-11-26T00:17:29.277"
+    },
+    {
+      "id": "CVE-2026-136873",
+      "description": "A vulnerability was determined in GL.iNet GL-A1300, GL-AR300M, GL-AR300M16, GL-AX1800, GL-AXT1800, GL-B3000, GL-BE3600, GL-BE6500, GL-BE9300, GL-BE10000, GL-BE14000, GL-E750, GL-E750V2, GL-E5800, GL-MT300N-V2, GL-MT1300, GL-MT2500, GL-MT2500A, GL-MT3000, GL-MT3600BE, GL-MT5000, GL-MT6000, GL-SFT1200",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/gl-inet/CVE-issues/blob/main/4.0.0/plugins.get_package_info%20Null%20Pointer%20Dereference%20Denial-of-Service%20Vulnerability%20After%20Authentication.md",
+        "https://vuldb.com/cve/CVE-2026-136873",
+        "https://vuldb.com/submit/933788"
+      ],
+      "published": "2026-11-26T00:17:29.527"
+    },
+    {
+      "id": "CVE-2026-136874",
+      "description": "A vulnerability was identified in GL.iNet GL-A1300, GL-AR300M, GL-AR300M16, GL-AX1800, GL-AXT1800, GL-B3000, GL-BE3600, GL-BE6500, GL-BE9300, GL-BE10000, GL-BE14000, GL-E750, GL-E750V2, GL-E5800, GL-MT300N-V2, GL-MT1300, GL-MT2500, GL-MT2500A, GL-MT3000, GL-MT3600BE, GL-MT5000, GL-MT6000, GL-SFT1200",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/gl-inet/CVE-issues/blob/main/4.0.0/plugins.install_package%20Null%20Pointer%20Dereference%20Denial-of-Service%20Vulnerability%20After%20Authentication.md",
+        "https://vuldb.com/cve/CVE-2026-136874",
+        "https://vuldb.com/submit/933791"
+      ],
+      "published": "2026-11-26T00:17:29.777"
+    },
+    {
+      "id": "CVE-2026-136875",
+      "description": "A security flaw has been discovered in GL.iNet GL-A1300, GL-AR300M, GL-AR300M16, GL-AX1800, GL-AXT1800, GL-B3000, GL-BE3600, GL-BE6500, GL-BE9300, GL-BE10000, GL-BE14000, GL-E750, GL-E750V2, GL-E5800, GL-MT300N-V2, GL-MT1300, GL-MT2500, GL-MT2500A, GL-MT3000, GL-MT3600BE, GL-MT5000, GL-MT6000, GL-SF",
+      "severity": "MEDIUM",
+      "score": 4.9,
+      "cwes": [
+        "CWE-404",
+        "CWE-476"
+      ],
+      "references": [
+        "https://github.com/gl-inet/CVE-issues/blob/main/4.0.0/plugins.set_config%20Null%20Pointer%20Dereference%20Denial-of-Service%20Vulnerability%20After%20Authentication.md",
+        "https://vuldb.com/cve/CVE-2026-136875",
+        "https://vuldb.com/submit/933792"
+      ],
+      "published": "2026-11-26T00:17:30.030"
+    },
+    {
+      "id": "CVE-2026-118547",
+      "description": "Deserialization of Untrusted Data vulnerability in Drupal Content Synchronizer allows Object Injection. This issue affects Content Synchronizer versions: from 0.0.0 to 4.1.1.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-502"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-293"
+      ],
+      "published": "2026-11-26T01:17:04.910"
+    },
+    {
+      "id": "CVE-2026-118566",
+      "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal Content Synchronizer allows Cross-Site Scripting (XSS). This issue affects Content Synchronizer versions: from 0.0.0 to 4.1.1.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-294"
+      ],
+      "published": "2026-11-26T01:17:05.030"
+    },
+    {
+      "id": "CVE-2026-122057",
+      "description": "Missing Authorization vulnerability in Drupal S3 File System CORS Upload allows Forceful Browsing. This issue affects S3 File System CORS Upload versions: from 0.0.0 to 1.3.0.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-295"
+      ],
+      "published": "2026-11-26T01:17:05.143"
+    },
+    {
+      "id": "CVE-2026-122058",
+      "description": "Incorrect Authorization vulnerability in Drupal Simple OAuth (OAuth2) & OpenID Connect allows Forceful Browsing. This issue affects Simple OAuth (OAuth2) & OpenID Connect versions: from 0.0.0 to 5.2.6, from 6.0.0 to 6.0.10, from 6.1.0 to 6.1.4.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-296"
+      ],
+      "published": "2026-11-26T01:17:05.263"
+    },
+    {
+      "id": "CVE-2026-122066",
+      "description": "Missing Authorization vulnerability in Drupal Workflow Notifications allows Forceful Browsing. This issue affects Workflow Notifications versions: from 0.0.0 to 3.0.3.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-297"
+      ],
+      "published": "2026-11-26T01:17:05.380"
+    },
+    {
+      "id": "CVE-2026-122067",
+      "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal REST & JSON API Authentication for Drupal allows Authentication Bypass. This issue affects REST & JSON API Authentication for Drupal versions: from 0.0.0 to 3.2.1.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-288"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-298"
+      ],
+      "published": "2026-11-26T01:17:05.497"
+    },
+    {
+      "id": "CVE-2026-122068",
+      "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal Highlight Js syntax highlighter allows Reflected XSS. This issue affects Highlight Js syntax highlighter versions: from 0.0.0 to 1.3.1.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-299"
+      ],
+      "published": "2026-11-26T01:17:05.610"
+    },
+    {
+      "id": "CVE-2026-122069",
+      "description": "Improper Verification of Cryptographic Signature vulnerability in Drupal AlternativeCommerce PayPal Checkout allows Signature Spoof. This issue affects AlternativeCommerce PayPal Checkout versions: from 0.0.0 to 1.1.1.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-300"
+      ],
+      "published": "2026-11-26T01:17:05.720"
+    },
+    {
+      "id": "CVE-2026-122070",
+      "description": "Missing Authorization vulnerability in Drupal Commerce Product Alternative allows Forceful Browsing. This issue affects Commerce Product Alternative versions: from 0.0.0 to 1.0.1.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-862"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-301"
+      ],
+      "published": "2026-11-26T01:17:05.840"
+    },
+    {
+      "id": "CVE-2026-122071",
+      "description": "Improper Verification of Cryptographic Signature vulnerability in Drupal Commerce Escrow allows Signature Spoof. This issue affects Commerce Escrow versions: from 0.0.0 to 1.1.0.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-347"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-302"
+      ],
+      "published": "2026-11-26T01:17:05.947"
+    },
+    {
+      "id": "CVE-2026-122072",
+      "description": "Incorrect Authorization vulnerability in Drupal Forum Access allows Forceful Browsing. This issue affects Forum Access versions: from 0.0.0 to 2.0.3.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-303"
+      ],
+      "published": "2026-11-26T01:17:06.067"
+    },
+    {
+      "id": "CVE-2026-122073",
+      "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal Name Field allows Stored XSS. This issue affects Name Field versions: from 0.0.0 to 1.6.0.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-79"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-304"
+      ],
+      "published": "2026-11-26T01:17:06.180"
+    },
+    {
+      "id": "CVE-2026-122074",
+      "description": "Incorrect Authorization vulnerability in Drupal Reset Password Email/SMS OTP allows Forceful Browsing. This issue affects Reset Password Email/SMS OTP versions: from 0.0.0 to 1.0.5.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-305"
+      ],
+      "published": "2026-11-26T01:17:06.300"
+    },
+    {
+      "id": "CVE-2026-122075",
+      "description": "Incorrect Authorization vulnerability in Drupal Scheduler allows Forceful Browsing. This issue affects Scheduler versions: from 0.0.0 to 1.7.0, from 2.2.0 to 2.2.3, from 0.0.0 to 2.0.*, from 0.0.0 to 2.1.*, from 2.3.0 to 2.3.1.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-863"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-306"
+      ],
+      "published": "2026-11-26T01:17:06.410"
+    },
+    {
+      "id": "CVE-2026-122076",
+      "description": "Unverified Password Change vulnerability in Drupal Password Separate Form allows Functionality Bypass. This issue affects Password Separate Form versions: from 0.0.0 to 2.0.3.",
+      "severity": "UNKNOWN",
+      "score": 0.0,
+      "cwes": [
+        "CWE-620"
+      ],
+      "references": [
+        "https://www.drupal.org/sa-contrib-2026-307"
+      ],
+      "published": "2026-11-26T01:17:06.527"
+    }
+  ]
+}
